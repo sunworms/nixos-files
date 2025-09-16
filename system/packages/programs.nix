@@ -14,6 +14,7 @@
   environment.systemPackages = with pkgs; [
     fastfetch
     brightnessctl
+    wl-clipboard
   ];
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
