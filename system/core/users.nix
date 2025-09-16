@@ -5,6 +5,7 @@
     ./boot.nix
     ./network.nix
     ./timelocale.nix
+    ./virtualbox.nix
   ];
 
   users.users.sunny = {
