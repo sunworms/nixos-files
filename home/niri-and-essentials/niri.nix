@@ -157,6 +157,7 @@
       spawn-at-startup = [
         { sh = "mako"; }
         { sh = "swww-daemon"; }
+        { sh = "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1"; }
         { sh = "sleep 2 && swww img ~/Pictures/walls/basement.jpg"; }
         { sh = "swaybg -m fill -i ~/Pictures/walls/disco.png"; }
         { sh = "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"; }
