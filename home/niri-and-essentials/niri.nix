@@ -50,9 +50,7 @@
           enable = true;
           display.color = "#1e1e2e";
         };
-        default-column-width = [
-          { proportion = 1. / 2.; }
-        ];
+        default-column-width = { proportion = 1. / 2.; };
         preset-column-widths = [
           { proportion = 1. / 3.; }
           { proportion = 1. / 2.; }
