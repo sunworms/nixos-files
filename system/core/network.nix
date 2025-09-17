@@ -6,6 +6,15 @@
     firewall.enable = false;
   };
 
+  services.cloudflare-warp.enable = true;
+
+  services.resolved = {
+    enable = true;
+    extraConfig = ''
+      ResolveUnicastSingleLabel=yes
+    '';
+  };
+
   networking.networkmanager.ensureProfiles.profiles = {
     "brain worms den" = {
       connection = {
