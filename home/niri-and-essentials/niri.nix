@@ -9,6 +9,10 @@
     ./portals.nix
   ];
 
+  home.packages = with pkgs; [
+    pantheon.pantheon-agent-polkit
+  ];
+
   programs.niri = {
     package = pkgs.niri-unstable;
 
@@ -157,7 +161,7 @@
       spawn-at-startup = [
         { sh = "mako"; }
         { sh = "swww-daemon"; }
-        { sh = "${pkgs.kdePackages.polkit-kde-agent-1}/libexec/polkit-kde-authentication-agent-1"; }
+        { sh = "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon//io.elementary.desktop.agent-polkit"; }
         { sh = "sleep 2 && swww img ~/Pictures/walls/basement.jpg"; }
         { sh = "swaybg -m fill -i ~/Pictures/walls/disco.png"; }
         { sh = "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"; }
