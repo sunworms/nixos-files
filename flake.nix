@@ -16,7 +16,15 @@
     nixcord.url = "github:kaylorben/nixcord";
   };
 
-  outputs = { self, nixpkgs, home-manager, niri, catppuccin, spicetify-nix, nixcord, ... }@inputs: {
+  outputs = {
+  self,
+  nixpkgs,
+  home-manager,
+  niri,
+  catppuccin,
+  spicetify-nix,
+  nixcord,
+  ... }@inputs: {
     nixosConfigurations = {
       hpprobook-nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
