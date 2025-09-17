@@ -3,6 +3,7 @@
 {
   imports = [
     ./wine.nix
+    ./archiver.nix
   ];
 
   home.packages = with pkgs; [
