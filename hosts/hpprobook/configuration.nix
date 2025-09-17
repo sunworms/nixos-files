@@ -4,9 +4,11 @@
   imports =
     [
       ./hardware-configuration.nix
-      ./core/users.nix
-      ./packages/programs.nix
+      ../../system/core/users.nix
+      ../../system/packages/programs.nix
     ];
+
+  networking.hostName = "hpprobook-nixos";
 
   nixpkgs.config.allowUnfree = true;
   nixpkgs.overlays = [ inputs.niri.overlays.niri ];

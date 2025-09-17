@@ -17,29 +17,31 @@
   };
 
   outputs = { self, nixpkgs, home-manager, niri, catppuccin, spicetify-nix, nixcord, ... }@inputs: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; };
-      modules = [
-        ./system/configuration.nix
-        niri.nixosModules.niri
-        catppuccin.nixosModules.catppuccin
-        home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              users.sunny = {
-                imports = [
-                  ./home/home.nix
-                  catppuccin.homeModules.catppuccin
-                  spicetify-nix.homeManagerModules.spicetify
-                  nixcord.homeModules.nixcord
-                ];
+    nixosConfigurations = {
+      hpprobook-nixos = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hosts/hpprobook/configuration.nix
+          niri.nixosModules.niri
+          catppuccin.nixosModules.catppuccin
+          home-manager.nixosModules.home-manager
+            {
+              home-manager = {
+                useGlobalPkgs = true;
+                useUserPackages = true;
+                users.sunny = {
+                  imports = [
+                    ./home/home.nix
+                    catppuccin.homeModules.catppuccin
+                    spicetify-nix.homeManagerModules.spicetify
+                    nixcord.homeModules.nixcord
+                  ];
+                };
+                extraSpecialArgs = { inherit inputs; };
               };
-              extraSpecialArgs = { inherit inputs; };
-            };
-          }
-      ];
+            }
+        ];
+      };
     };
   };
 }

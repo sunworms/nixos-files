@@ -22,7 +22,7 @@
     imagemagick
     nemo
     jamesdsp
-    xwayland-satellite
+    xwayland-satellite-unstable
     kdePackages.kate
     kdePackages.okular
   ];
