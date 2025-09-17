@@ -15,6 +15,7 @@
 
   environment.systemPackages = with pkgs; [
     fastfetch
+    hyfetch
     brightnessctl
     wl-clipboard
   ];
