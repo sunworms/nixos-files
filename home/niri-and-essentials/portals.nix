@@ -8,9 +8,8 @@
         "gnome"
         "gtk"
       ];
-      "org.freedesktop.impl.portal.Secret" = [
-        "gnome-keyring"
-      ];
+      "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
+      "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
     };
     extraPortals = with pkgs; [
       xdg-desktop-portal-gnome
