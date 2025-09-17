@@ -11,7 +11,6 @@
   home.packages = with pkgs; [
     ghostty
     firefox
-    p7zip
     waybar
     swaybg
     swww
