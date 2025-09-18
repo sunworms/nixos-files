@@ -23,15 +23,5 @@
       categories = [ "Audio" "Music" "Player" "AudioVideo" ];
     };
 
-    vmware-workstation = {
-      name = "VMware Workstation";
-      comment = "Run and manage virtual machines";
-      exec = "env GDK_BACKEND=x11vmware %U";
-      terminal = false;
-      type = "Application";
-      icon = "vmware-workstation";
-      categories = [ "System" ];
-      mimeType = [ "application/x-vmware-vm" "application/x-vmware-team" "application/x-vmware-enc-vm" "x-scheme-handler/vmrc" ];
-    };
   };
 }

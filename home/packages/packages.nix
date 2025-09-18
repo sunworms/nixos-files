@@ -19,6 +19,7 @@
     playerctl
     imagemagick
     nemo
+    file-roller
     nemo-fileroller
     jamesdsp
     xwayland-satellite-unstable
