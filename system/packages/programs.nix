@@ -11,7 +11,10 @@
 
   programs.git.enable = true;
 
-  hardware.graphics.enable32Bit = true;
+  services.gvfs = {
+    enable = true;
+    package = pkgs.gvfs;
+  };
 
   environment.systemPackages = with pkgs; [
     fastfetch
@@ -19,8 +22,6 @@
     brightnessctl
     wl-clipboard
   ];
-
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
 }

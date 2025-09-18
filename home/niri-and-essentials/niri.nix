@@ -175,7 +175,7 @@
 
         "Mod+Shift+Slash".action = show-hotkey-overlay;
         "Mod+A".action = spawn "fuzzel";
-        "Mod+T".action = spawn "ghostty";
+        "Mod+T".action = sh "foot";
         "Mod+Shift+Space".action = spawn "pkill" "waybar";
         "Mod+Space".action = spawn "waybar";
         "Mod+D".action = sh "pkill -SIGUSR1 waybar";

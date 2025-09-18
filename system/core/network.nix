@@ -31,6 +31,28 @@
         psk = "brainworms69$";
       };
     };
+
+    "eduroam" = {
+      connection = {
+        id = "eduroam";
+        type = "wifi";
+        autoconnect = true;
+      };
+      wifi = {
+        ssid = "eduroam";
+        mode = "infrastructure";
+      };
+      wifi-security = {
+        key-mgmt = "wpa-eap";
+      };
+      "802-1x" = {
+        eap = "ttls";
+        identity = "mayuri.bhowmick@niser.ac.in";
+        password = "Shashipassword69$";
+        phase2-auth = "pap";
+        system-ca-certs = false;
+      };
+    };
   };
 
 }

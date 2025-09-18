@@ -9,7 +9,6 @@
     ./gaming/emulators.nix
   ];
   home.packages = with pkgs; [
-    ghostty
     firefox
     waybar
     swaybg
