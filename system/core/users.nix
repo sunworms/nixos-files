@@ -5,7 +5,6 @@
     ./boot.nix
     ./network.nix
     ./timelocale.nix
-    ./virtualbox.nix
     ./security.nix
   ];
 
