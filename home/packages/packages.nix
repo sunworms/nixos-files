@@ -19,6 +19,7 @@
     playerctl
     imagemagick
     nemo
+    nemo-fileroller
     jamesdsp
     xwayland-satellite-unstable
     kdePackages.kate

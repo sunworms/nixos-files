@@ -21,8 +21,6 @@
     hyfetch
     brightnessctl
     wl-clipboard
-    qemu
-    quickemu
   ];
 
   environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
