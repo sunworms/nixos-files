@@ -6,6 +6,14 @@ in
 {
   programs.spicetify = {
     enable = true;
+    enabledExtensions = with spicePkgs.extensions; [
+      autoSkipVideo
+      seekSong
+      playNext
+      adblock
+      hidePodcasts
+      shuffle
+    ];
     theme = spicePkgs.themes.comfy;
     colorScheme = "catppuccin-mocha";
   };
