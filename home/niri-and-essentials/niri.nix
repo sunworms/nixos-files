@@ -162,7 +162,7 @@
         { sh = "mako"; }
         { sh = "swww-daemon"; }
         { sh = "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon//io.elementary.desktop.agent-polkit"; }
-        { sh = "sleep 2 && swww img ~/Pictures/walls/basement.jpg"; }
+        { sh = "swww img ~/Pictures/walls/basement.jpg"; }
         { sh = "swaybg -m fill -i ~/Pictures/walls/disco.png"; }
         { sh = "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"; }
         { sh = "wl-paste --watch cliphist store"; }
@@ -175,7 +175,7 @@
 
         "Mod+Shift+Slash".action = show-hotkey-overlay;
         "Mod+A".action = spawn "fuzzel";
-        "Mod+T".action = sh "foot";
+        "Mod+T".action = sh "kitty";
         "Mod+Shift+Space".action = spawn "pkill" "waybar";
         "Mod+Space".action = spawn "waybar";
         "Mod+D".action = sh "pkill -SIGUSR1 waybar";

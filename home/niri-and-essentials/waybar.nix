@@ -83,7 +83,7 @@
             format-wifi  = "wifi {bandwidthDownBytes}";
             format-ethernet = "enth {bandwidthDownBytes}";
             format-disconnected  = "no network";
-            on-click = "foot nmtui";
+            on-click = "kitty -e nmtui";
             interval = 5;
             tooltip = false;
         };
