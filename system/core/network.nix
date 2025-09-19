@@ -4,8 +4,6 @@
   networking = {
     networkmanager.enable = true;
     firewall.enable = false;
-    bridges.br0.interfaces = [ "wlp2s0" ];
-    interfaces.br0.useDHCP = true;
   };
 
   services.cloudflare-warp.enable = true;
