@@ -10,10 +10,12 @@
     enable = true;
     settings = {
       main = {
-        terminal = "{pkgs.ghostty}/bin/ghostty";
+        terminal = "{pkgs.kitty}/bin/kitty";
         font = "D2CodingLigature Nerd Font:size=13";
         icon-theme = "Tela-circle-dracula-dark";
         anchor = "bottom-left";
+        x-margin = 6;
+        y-margin = 6;
       };
       colors = {
         background = "1e1e2edd";

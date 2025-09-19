@@ -230,11 +230,11 @@
         background-color: @base;
         border: 0px;
         font-size: 2px;
-      color: @text;
+        color: @text;
     }
 
     tooltip label {
-      margin: 8px;
+        margin: 8px;
     }
 
     window#waybar.empty #window {
@@ -260,7 +260,7 @@
     #pulseaudio {
         margin: 6px 6px 6px 0px;
         padding: 3px 7px;
-      border-radius: 4px;
+        border-radius: 4px;
     }
 
     #cava,
@@ -325,7 +325,7 @@
     }
 
     #image,
-    #cava,
+    #taskbar,
     #idle_inhibitor,
     #temperature,
     #window,
@@ -343,6 +343,9 @@
     }
 
     #cava {
+        background-color: @crust;
+        border: 0px;
+        color: @text;
         margin-left: 4px;
         padding-right: 0px;
         padding-left: 7px;
