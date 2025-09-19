@@ -25,8 +25,8 @@
         };
 
         "image" = {
-          path = "/home/sunny/Pictures/walls/haruta.jpg";
-          size = 20;
+          path = "/home/sunny/Pictures/walls/NixOS.png";
+          size = 22;
           on-click = "exec fuzzel";
           on-click-right = "exec logout-menu";
         };
@@ -48,7 +48,7 @@
 
         "mpris" = {
           format = "{player_icon} {dynamic}";
-          max-length = 40;
+          max-length = 50;
           player-icons = {
             spotify = "";
             firefox = "";
@@ -70,7 +70,7 @@
           framerate = 60;
           sleep_timer = 5;
           autosens = 1;
-          bars = 20;
+          bars = 30;
           lower_cutoff_freq = 50;
           higher_cutoff_freq = 10000;
           method = "pipewire";
@@ -101,7 +101,7 @@
 
         "niri/window" = {
           format = "{title}";
-          max-length = 40;
+          max-length = 50;
         };
 
         "tray" = {
