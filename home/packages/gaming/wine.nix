@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    wineWow64Packages.wayland
+    wineWow64Packages.staging
     winetricks
   ];
 }
