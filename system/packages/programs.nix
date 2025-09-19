@@ -21,6 +21,7 @@
     fastfetch
     hyfetch
     brightnessctl
+    wl-clipboard
   ];
 
   environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
