@@ -12,16 +12,96 @@
         spacing = 0;
         height = 0;
 
-        modules-left = [ "clock" "cpu" "memory" "temperature" ];
+        modules-left = [ "image" "niri/workspaces" "wlr/taskbar" ];
 
-        modules-center = [ "wlr/taskbar" ];
+        modules-center = [ "cava" ];
 
-        modules-right = [ "tray" "battery" "network" "backlight" "pulseaudio" ];
+        modules-right = [ "idle_inhibitor" "mpris" ];
 
         "wlr/taskbar" = {
             format = "{icon}";
             icon-size = 22;
             on-click = "activate";
+        };
+
+        "image" = {
+          path = "/home/sunny/Pictures/walls/haruta.jpg";
+          size = 20;
+          on-click = "exec fuzzel";
+          on-click-right = "exec logout-menu";
+        };
+
+        "niri/workspaces" = {
+          disable-scroll = true;
+          all-outputs = true;
+          tooltip = false;
+        };
+
+        "idle_inhibitor" = {
+          format = "{icon}";
+          format-icons = {
+            activated = "";
+            deactivated = "";
+          };
+          tooltip = false;
+        };
+
+        "mpris" = {
+          format = "{player_icon} {dynamic}";
+          max-length = 40;
+          player-icons = {
+            spotify = "";
+            firefox = "";
+            vlc = "󰕼";
+            mpv = "";
+            default = "🎜";
+          };
+          status-icons = {
+            paused = "⏸";
+          };
+          escape = true;
+          on-click = "playerctl play-pause";
+          on-click-right = "playerctl next";
+          on-click-middle = "playerctl previous";
+          tooltip = false;
+        };
+
+        "cava" = {
+          framerate = 60;
+          sleep_timer = 5;
+          autosens = 1;
+          bars = 20;
+          lower_cutoff_freq = 50;
+          higher_cutoff_freq = 10000;
+          method = "pipewire";
+          source = "auto";
+          stereo = true;
+          reverse = false;
+          bar_delimiter = 0;
+          monstercat = false;
+          waves = false;
+          noise_reduction = 0.77;
+          input_delay = 2;
+          format-icons  = [ "▁ " "▂ " "▃ " "▄ " "▅ " "▆ " "▇ " "█ " ];
+        };
+
+      };
+
+      secondBar = {
+        layer = "top";
+        position = "top";
+        spacing = 0;
+        height = 0;
+
+        modules-left = [ "clock" "cpu" "memory" "temperature" ];
+
+        modules-center = [ "niri/window" ];
+
+        modules-right = [ "tray" "battery" "network" "backlight" "pulseaudio" ];
+
+        "niri/window" = {
+          format = "{title}";
+          max-length = 40;
         };
 
         "tray" = {
@@ -97,86 +177,6 @@
             nospacing = 1;
             on-click = "pavucontrol";
             tooltip = false;
-        };
-
-      };
-
-      secondBar = {
-        layer = "top";
-        position = "top";
-        spacing = 0;
-        height = 0;
-
-        modules-left = [ "image" "niri/workspaces" "cava" ];
-
-        modules-center = [ "niri/window" ];
-
-        modules-right = [ "idle_inhibitor" "mpris" ];
-
-        "image" = {
-          path = "/home/sunny/Pictures/walls/haruta.jpg";
-          size = 20;
-          on-click = "exec fuzzel";
-          on-click-right = "exec logout-menu";
-        };
-
-        "niri/workspaces" = {
-          disable-scroll = true;
-          all-outputs = true;
-          tooltip = false;
-        };
-
-        "niri/window" = {
-          format = "{title}";
-          max-length = 40;
-        };
-
-        "idle_inhibitor" = {
-          format = "{icon}";
-          format-icons = {
-            activated = "";
-            deactivated = "";
-          };
-          tooltip = false;
-        };
-
-        "mpris" = {
-          format = "{player_icon} {dynamic}";
-          max-length = 40;
-          player-icons = {
-            spotify = "";
-            firefox = "";
-            vlc = "󰕼";
-            mpv = "";
-            default = "🎜";
-          };
-          status-icons = {
-            paused = "⏸";
-          };
-          escape = true;
-          on-click = "playerctl play-pause";
-          on-click-right = "playerctl next";
-          on-click-middle = "playerctl previous";
-          tooltip = false;
-        };
-
-        "cava" = {
-          framerate = 60;
-          sleep_timer = 5;
-          autosens = 1;
-          bars = 20;
-          lower_cutoff_freq = 50;
-          higher_cutoff_freq = 10000;
-          method = "pipewire";
-          source = "auto";
-          stereo = true;
-          reverse = false;
-          bar_delimiter = 0;
-          monstercat = false;
-          waves = false;
-          noise_reduction = 0.77;
-          input_delay = 2;
-          format-icons  = [ "▁ " "▂ " "▃ " "▄ " "▅ " "▆ " "▇ " "█ " ];
         };
       };
     };

@@ -13,7 +13,7 @@
         terminal = "{pkgs.ghostty}/bin/ghostty";
         font = "D2CodingLigature Nerd Font:size=13";
         icon-theme = "Tela-circle-dracula-dark";
-        anchor = "top-left";
+        anchor = "bottom-left";
       };
       colors = {
         background = "1e1e2edd";
