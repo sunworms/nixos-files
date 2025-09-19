@@ -263,7 +263,11 @@
         border-radius: 4px;
     }
 
-    #cava,
+    #cava {
+        margin: 0px;
+        padding: 0px;
+    }
+
     #idle_inhibitor {
         margin: 6px 6px 6px 0px;
         padding: 3px 7px;
@@ -306,8 +310,8 @@
 
     #workspaces button.urgent {
         background-color: @base;
-      color: @red;
-      border: 0px;
+        color: @red;
+        border: 0px;
     }
 
     #cava.silent,
@@ -346,9 +350,6 @@
         background-color: @crust;
         border: 0px;
         color: @text;
-        margin-left: 4px;
-        padding-right: 0px;
-        padding-left: 7px;
     }
 
     #taskbar button {
@@ -358,7 +359,7 @@
     }
 
     #network {
-      min-width: 90px;
+        min-width: 90px;
     }
 
     #cpu,
@@ -366,7 +367,7 @@
     #battery,
     #backlight,
     #pulseaudio {
-      min-width: 50px;
+        min-width: 50px;
     }
 
     #temperature.critical,
