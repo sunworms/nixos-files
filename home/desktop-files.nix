@@ -23,7 +23,7 @@
       categories = [ "Audio" "Music" "Player" "AudioVideo" ];
     };
 
-    pcsx2 = {
+    PCSX2 = {
       terminal = false;
       type = "Application";
       name = "PCSX2";
