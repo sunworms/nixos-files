@@ -287,13 +287,13 @@
     #network,
     #idle_inhibitor,
     #pulseaudio {
-        padding: 4px 4px;
+        padding: 4px 2px;
         border-radius: 4px;
     }
 
     #window,
     #mpris {
-        padding: 2px 4px;
+        padding: 2px 2px;
         border-radius: 4px;
     }
 
@@ -306,7 +306,7 @@
         all: initial;
         min-width: 0;
         box-shadow: inset 0 -3px transparent;
-        padding: 3px 5px;
+        padding: 3px 2px;
         color: @lavender;
         background-color: @crust;
         border: 0px;
