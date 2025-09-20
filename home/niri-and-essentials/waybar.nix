@@ -52,7 +52,7 @@
         };
 
         "mpris" = {
-          rotate = 90;
+          rotate = 270;
           format = "{player_icon} {dynamic}";
           max-length = 30;
           player-icons = {
@@ -107,7 +107,7 @@
         modules-right = [ "tray" "battery" "network" "backlight" "pulseaudio" ];
 
         "niri/window" = {
-          rotate = 270;
+          rotate = 90;
           format = "{title}";
           max-length = 30;
         };
@@ -119,7 +119,7 @@
         };
 
         "clock" = {
-            rotate = 270;
+            rotate = 90;
             format = "{:%H:%M}" ;
             format-alt = "{%a, %d %b %Y}";
             tooltip-format = "<tt><small>{calendar}</small></tt>";
