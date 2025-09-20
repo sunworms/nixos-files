@@ -275,6 +275,7 @@
         border-radius: 4px;
     }
 
+    #clock,
     #temperature,
     #cava,
     #tray,
@@ -289,7 +290,6 @@
         border-radius: 4px;
     }
 
-    #clock,
     #window,
     #mpris {
         padding: 2px 2px;
