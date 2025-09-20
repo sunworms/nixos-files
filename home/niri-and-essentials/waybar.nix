@@ -272,13 +272,11 @@
     }
 
     #image {
-        padding: 2px 2px;
         border-radius: 4px;
     }
 
     #temperature,
     #cava,
-    #clock,
     #tray,
     #cpu,
     #backlight,
@@ -291,6 +289,7 @@
         border-radius: 4px;
     }
 
+    #clock,
     #window,
     #mpris {
         padding: 2px 2px;
@@ -306,8 +305,8 @@
         all: initial;
         min-width: 0;
         box-shadow: inset 0 -3px transparent;
-        padding: 3px 2px;
         color: @lavender;
+        padding: 3px 2px;
         background-color: @crust;
         border: 0px;
         border-radius: 4px;
@@ -358,13 +357,14 @@
 
     #cava {
         padding-right: 0px;
-        padding-left: 4px;
+        padding-left: 6px;
     }
 
     #taskbar button {
-        padding: 0px;
-        padding-top: 1px;
-        padding-bottom: 1px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 2px;
+        padding-bottom: 2px;
     }
 
     #temperature.critical,
@@ -379,6 +379,14 @@
     #battery.urgent {
         color: @red;
         border: 0px;
+    }
+
+    #window {
+        min-width: 20px;
+    }
+
+    #cava {
+        min-width: 20px;
     }
     '';
   };
