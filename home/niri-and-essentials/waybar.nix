@@ -8,7 +8,7 @@
     settings = {
       mainBar = {
         layer = "top";
-        position = "bottom";
+        position = "right";
         spacing = 0;
         height = 0;
 
@@ -20,18 +20,23 @@
 
         "wlr/taskbar" = {
             format = "{icon}";
-            icon-size = 22;
+            icon-size = 16;
             on-click = "activate";
         };
 
         "image" = {
           path = "/home/sunny/Pictures/walls/NixOS.png";
-          size = 22;
+          size = 16;
           on-click = "exec fuzzel";
           on-click-right = "exec logout-menu";
         };
 
         "niri/workspaces" = {
+          format = "{icon}";
+          format-icons = {
+            default = "";
+            active = "";
+          };
           disable-scroll = true;
           all-outputs = true;
           tooltip = false;
@@ -47,8 +52,9 @@
         };
 
         "mpris" = {
+          rotate = 90;
           format = "{player_icon} {dynamic}";
-          max-length = 50;
+          max-length = 30;
           player-icons = {
             spotify = "";
             firefox = "";
@@ -67,10 +73,11 @@
         };
 
         "cava" = {
+          rotate = 90;
           framerate = 60;
           sleep_timer = 5;
           autosens = 1;
-          bars = 30;
+          bars = 20;
           lower_cutoff_freq = 50;
           higher_cutoff_freq = 10000;
           method = "pipewire";
@@ -89,7 +96,7 @@
 
       secondBar = {
         layer = "top";
-        position = "top";
+        position = "left";
         spacing = 0;
         height = 0;
 
@@ -100,8 +107,9 @@
         modules-right = [ "tray" "battery" "network" "backlight" "pulseaudio" ];
 
         "niri/window" = {
+          rotate = 270;
           format = "{title}";
-          max-length = 50;
+          max-length = 30;
         };
 
         "tray" = {
@@ -111,31 +119,47 @@
         };
 
         "clock" = {
-            format = "{:%H:%M - %a, %d %b %Y}";
-            tooltip = false;
+            rotate = 270;
+            format = "{:%H:%M}" ;
+            format-alt = "{%a, %d %b %Y}";
+            tooltip-format = "<tt><small>{calendar}</small></tt>";
+            calendar = {
+                mode = "year";
+                mode-mon-col = 3;
+                weeks-pos = "right";
+                on-scroll = 1;
+                on-click-right = "mode";
+                format = {
+                    months = "<span color='#ffead3'><b>{}</b></span>";
+                    days = "<span color='#ecc6d9'><b>{}</b></span>";
+                    weeks = "<span color='#99ffdd'><b>W{}</b></span>";
+                    weekdays = "<span color='#ffcc66'><b>{}</b></span>";
+                    today = "<span color='#ff6699'><b><u>{}</u></b></span>";
+              };
+            };
         };
 
         "temperature" = {
-            format = "temp {temperatureC}°C";
+            format = "{icon}";
+            format-icons = [ "" "" "" "" "" ];
             interval = 5;
             warning-threshold = 75;
             critical-threshold = 90;
-            tooltip = false;
         };
 
         "cpu" = {
-            format = "cpu {usage}%";
+            format = "{icon}";
+            format-icons = [ "" ];
             interval = 2;
-
             states = {
                 critical = 90;
             };
         };
 
         "memory" = {
-            format = "mem {percentage}%";
+            format = "{icon}";
+            format-icons = [ "" ];
             interval = 2;
-
             states = {
                 critical = 80;
             };
@@ -143,40 +167,43 @@
 
         "backlight" = {
             device = "intel_backlight";
-            format = "lux {percent}%";
+            format = "{icon}";
+            format-icons = [ "󰛩" "󱩎" "󱩏" "󱩐" "󱩑" "󱩒" "󱩓" "󱩔" "󱩕" "󱩖" "󰛨" ];
             on-scroll-up = "brightnessctl set +1%";
             on-scroll-down = "brightnessctl set 1%-";
-            tooltip = false;
+            tooltip-format = "{percent}%";
         };
 
         "battery" = {
-            format = "bat {capacity}%";
+            format = "{icon}";
+            format-icons = [ "󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹" ];
             interval = 5;
             states = {
-                warning = 20;
-                critical = 10;
+                warning = 30;
+                critical = 15;
             };
-            tooltip = false;
         };
 
         "network" = {
-            format-wifi  = "wifi {bandwidthDownBytes}";
-            format-ethernet = "enth {bandwidthDownBytes}";
-            format-disconnected  = "no network";
+            format-wifi  = "󰖩";
+            format-ethernet = "󰈀";
+            format-disconnected  = "󰖪";
             on-click = "kitty -e nmtui";
             interval = 5;
-            tooltip = false;
+            tooltip-format = "{ifname} {bandwidthDownBytes}";
+            tooltip-format-wifi = "{essid} {bandwidthDownBytes} ";
+            tooltip-format-ethernet = "{ifname} {bandwidthDownBytes} 󰈀";
+            tooltip-format-disconnected = "Disconnected";
         };
 
         "pulseaudio" = {
             scroll-step = 5;
             max-volume = 150;
-            format = "vol {volume}%";
-            format-bluetooth = "vol {volume}%";
-            format-muted = "muted";
+            format = "{icon}";
+            format-icons = [ "󰕿" "󰖀" "󰕾"];
+            format-muted = "󰝟";
             nospacing = 1;
             on-click = "pavucontrol";
-            tooltip = false;
         };
       };
     };
@@ -218,6 +245,7 @@
         font-size: 13px;
         letter-spacing: -1px;
         padding: 0px;
+        margin: 2px;
     }
 
     window#waybar {
@@ -234,7 +262,7 @@
     }
 
     tooltip label {
-        margin: 8px;
+        margin: 2px;
     }
 
     window#waybar.empty #window {
@@ -244,7 +272,6 @@
     }
 
     #image {
-        margin: 6px 0px 6px 6px;
         padding: 2px 2px;
         border-radius: 4px;
     }
@@ -258,32 +285,20 @@
     #memory,
     #battery,
     #network,
+    #idle_inhibitor,
     #pulseaudio {
-        margin: 6px 6px 6px 0px;
-        padding: 3px 7px;
-        border-radius: 4px;
-    }
-
-    #idle_inhibitor {
-        margin: 6px 6px 6px 0px;
-        padding: 3px 7px;
+        padding: 4px 4px;
         border-radius: 4px;
     }
 
     #window,
     #mpris {
-        margin: 6px 6px 6px 0px;
-        padding: 0px 7px;
+        padding: 2px 4px;
         border-radius: 4px;
     }
 
-    #taskbar {
-        margin: 6px 6px 6px 0px;
-        border-radius: 4px;
-    }
-
+    #taskbar,
     #workspaces {
-        margin: 6px 0px 6px 6px;
         border-radius: 4px;
     }
 
@@ -296,7 +311,6 @@
         background-color: @crust;
         border: 0px;
         border-radius: 4px;
-        margin-right: 2px;
     }
 
     #workspaces button.active {
@@ -321,7 +335,6 @@
         background-color: @base;
         border: 0px;
         color: @text;
-        margin-left: 5px;
     }
 
     #image,
@@ -350,20 +363,8 @@
 
     #taskbar button {
         padding: 0px;
-        padding-right: 2px;
-        padding-left: 2px;
-    }
-
-    #network {
-        min-width: 90px;
-    }
-
-    #cpu,
-    #memory,
-    #battery,
-    #backlight,
-    #pulseaudio {
-        min-width: 50px;
+        padding-top: 1px;
+        padding-bottom: 1px;
     }
 
     #temperature.critical,

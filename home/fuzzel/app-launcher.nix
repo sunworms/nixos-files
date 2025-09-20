@@ -13,7 +13,7 @@
         terminal = "{pkgs.kitty}/bin/kitty";
         font = "D2CodingLigature Nerd Font:size=13";
         icon-theme = "Tela-circle-dracula-dark";
-        anchor = "bottom-left";
+        anchor = "top-right";
         x-margin = 6;
         y-margin = 6;
       };
