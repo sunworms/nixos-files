@@ -14,7 +14,7 @@
 
         modules-left = [ "image" "niri/workspaces" "wlr/taskbar" ];
 
-        modules-center = [ ];
+        modules-center = [ "cava" ];
 
         modules-right = [ "idle_inhibitor" "mpris" ];
 
@@ -64,6 +64,25 @@
           on-click-right = "playerctl next";
           on-click-middle = "playerctl previous";
           tooltip = false;
+        };
+
+        "cava" = {
+          framerate = 60;
+          sleep_timer = 5;
+          autosens = 1;
+          bars = 30;
+          lower_cutoff_freq = 50;
+          higher_cutoff_freq = 10000;
+          method = "pipewire";
+          source = "auto";
+          stereo = true;
+          reverse = false;
+          bar_delimiter = 0;
+          monstercat = false;
+          waves = false;
+          noise_reduction = 0.77;
+          input_delay = 2;
+          format-icons  = [ "▁ " "▂ " "▃ " "▄ " "▅ " "▆ " "▇ " "█ " ];
         };
 
       };
@@ -160,39 +179,6 @@
             tooltip = false;
         };
       };
-
-      thirdBar = {
-        layer = "top";
-        position = "left";
-        spacing = 0;
-        height = 0;
-
-        modules-left = [ ];
-
-        modules-center = [ "cava" ];
-
-        modules-right = [ ];
-
-        "cava" = {
-          rotate = 270;
-          framerate = 60;
-          sleep_timer = 5;
-          autosens = 1;
-          bars = 58;
-          lower_cutoff_freq = 50;
-          higher_cutoff_freq = 10000;
-          method = "pipewire";
-          source = "auto";
-          stereo = true;
-          reverse = false;
-          bar_delimiter = 0;
-          monstercat = false;
-          waves = false;
-          noise_reduction = 0.77;
-          input_delay = 2;
-          format-icons  = [ "▁ " "▂ " "▃ " "▄ " "▅ " "▆ " "▇ " "█ " ];
-        };
-      };
     };
 
     style = ''
@@ -264,6 +250,7 @@
     }
 
     #temperature,
+    #cava,
     #clock,
     #tray,
     #cpu,
@@ -275,11 +262,6 @@
         margin: 6px 6px 6px 0px;
         padding: 3px 7px;
         border-radius: 4px;
-    }
-
-    #cava {
-        margin: 0px 6px 0px 0px;
-        padding: 0px;
     }
 
     #idle_inhibitor {
@@ -343,6 +325,7 @@
     }
 
     #image,
+    #cava,
     #taskbar,
     #idle_inhibitor,
     #temperature,
@@ -361,9 +344,8 @@
     }
 
     #cava {
-        background-color: @crust;
-        border: 0px;
-        color: @text;
+        padding-right: 0px;
+        padding-left: 4px;
     }
 
     #taskbar button {

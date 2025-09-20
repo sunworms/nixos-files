@@ -5,7 +5,7 @@
     enable = true;
     enableKvm = true;
     addNetworkInterface = false;
-    package = pkgs.virtualboxKvm;
+    enableHardening = false;
   };
   users.extraGroups.vboxusers.members = [ "sunny" ];
   boot.kernelModules = [ "vboxdrv" "vboxnetflt" "vboxnetadp" ];
