@@ -7,7 +7,6 @@
     ./terminal.nix
     ./waybar.nix
     ./portals.nix
-    ./quickshell.nix
   ];
 
   home.packages = with pkgs; [
