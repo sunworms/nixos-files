@@ -3,6 +3,7 @@
 {
   fileSystems = {
     "/".options = [ "compress-force=zstd:5" ];
+    "/home".options = [ "compress-force=zstd:5" ];
   };
 
   zramSwap = {
