@@ -2,6 +2,6 @@
 
 {
   fileSystems = {
-    "/".options = [ "compress=zstd:5" ];
+    "/".options = [ "compress-force=zstd:5" ];
   };
 }
