@@ -6,7 +6,6 @@
     ./bluetooth.nix
     ./catppuccin.nix
     ./desktop.nix
-    ./virtualbox.nix
     ./swaylock.nix
   ];
 
