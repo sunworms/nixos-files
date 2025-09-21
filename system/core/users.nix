@@ -3,6 +3,7 @@
 {
   imports = [
     ./boot.nix
+    ./btrfs.nix
     ./network.nix
     ./timelocale.nix
     ./security.nix
