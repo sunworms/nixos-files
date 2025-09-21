@@ -6,7 +6,7 @@
     settings = {
       daemonize = true;
       ignore-empty-password = true;
-      image = "/data/Pictures/walls/bsod.png";
+      image = "$HOME/Pictures/walls/bsod.png";
       font = "D2CodingLigature Nerd Font";
       font-size = 14;
       color = "1e1e2e";
