@@ -21,6 +21,7 @@
     nemo
     file-roller
     nemo-fileroller
+    xdg-user-dirs
     jamesdsp
     kdePackages.kate
     kdePackages.okular

@@ -95,7 +95,7 @@
 
         modules-center = [ "niri/window" ];
 
-        modules-right = [ "idle-inhibitor" "battery" "network" "backlight" "pulseaudio" ];
+        modules-right = [ "idle_inhibitor" "battery" "network" "backlight" "pulseaudio" ];
 
         "idle_inhibitor" = {
           format = "{icon}";

@@ -10,12 +10,12 @@
   ];
 
   home.packages = with pkgs; [
-    xwayland-satellite
+    xwayland-satellite-unstable
     pantheon.pantheon-agent-polkit
   ];
 
   programs.niri = {
-    package = pkgs.niri;
+    package = pkgs.niri-unstable;
 
     settings = {
 
