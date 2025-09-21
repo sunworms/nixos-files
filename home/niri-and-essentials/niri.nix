@@ -162,7 +162,7 @@
         { sh = "mako"; }
         { sh = "swww-daemon"; }
         { sh = "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon//io.elementary.desktop.agent-polkit"; }
-        { sh = "swww img ~/Pictures/walls/basement.jpg"; }
+        { sh = "sleep 2 && swww img ~/Pictures/walls/basement.jpg"; }
         { sh = "swaybg -m fill -i ~/Pictures/walls/disco.png"; }
         { sh = "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"; }
         { sh = "wl-paste --watch cliphist store"; }
