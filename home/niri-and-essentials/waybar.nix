@@ -12,20 +12,14 @@
         spacing = 0;
         height = 0;
 
-        modules-left = [ "image" "niri/workspaces" "wlr/taskbar" ];
+        modules-left = [ "image" "tray" "niri/workspaces" ];
 
         modules-center = [ "cava" ];
 
-        modules-right = [ "idle_inhibitor" "mpris" ];
-
-        "wlr/taskbar" = {
-            format = "{icon}";
-            icon-size = 16;
-            on-click = "activate";
-        };
+        modules-right = [ "mpris" ];
 
         "image" = {
-          path = "/home/sunny/Pictures/walls/NixOS.png";
+          path = "/data/Pictures/walls/NixOS.png";
           size = 16;
           on-click = "exec fuzzel";
           on-click-right = "exec logout-menu";
@@ -34,20 +28,11 @@
         "niri/workspaces" = {
           format = "{icon}";
           format-icons = {
-            default = "";
-            active = "";
+            default = "";
+            active = "";
           };
           disable-scroll = true;
           all-outputs = true;
-          tooltip = false;
-        };
-
-        "idle_inhibitor" = {
-          format = "{icon}";
-          format-icons = {
-            activated = "";
-            deactivated = "";
-          };
           tooltip = false;
         };
 
@@ -77,7 +62,7 @@
           framerate = 60;
           sleep_timer = 5;
           autosens = 1;
-          bars = 20;
+          bars = 15;
           lower_cutoff_freq = 50;
           higher_cutoff_freq = 10000;
           method = "pipewire";
@@ -92,6 +77,12 @@
           format-icons  = [ "▁ " "▂ " "▃ " "▄ " "▅ " "▆ " "▇ " "█ " ];
         };
 
+        "tray" = {
+            icon-size = 13;
+            spacing = 10;
+            tooltip = false;
+        };
+
       };
 
       secondBar = {
@@ -104,18 +95,21 @@
 
         modules-center = [ "niri/window" ];
 
-        modules-right = [ "tray" "battery" "network" "backlight" "pulseaudio" ];
+        modules-right = [ "idle-inhibitor" "battery" "network" "backlight" "pulseaudio" ];
+
+        "idle_inhibitor" = {
+          format = "{icon}";
+          format-icons = {
+            activated = "";
+            deactivated = "";
+          };
+          tooltip = false;
+        };
 
         "niri/window" = {
           rotate = 90;
           format = "{title}";
-          max-length = 30;
-        };
-
-        "tray" = {
-            icon-size = 13;
-            spacing = 10;
-            tooltip = false;
+          max-length = 40;
         };
 
         "clock" = {
@@ -292,7 +286,7 @@
 
     #window,
     #mpris {
-        padding: 2px 2px;
+        padding: 4px 2px;
         border-radius: 4px;
     }
 
