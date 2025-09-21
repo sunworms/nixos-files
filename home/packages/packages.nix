@@ -23,6 +23,5 @@
     jamesdsp
     xwayland-satellite
     kdePackages.kate
-    kdePackages.okular
   ];
 }
