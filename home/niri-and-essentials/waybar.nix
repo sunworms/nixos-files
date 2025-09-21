@@ -19,7 +19,7 @@
         modules-right = [ "mpris" ];
 
         "image" = {
-          path = "/data/Pictures/walls/NixOS.png";
+          path = "/home/sunny/Pictures/walls/NixOS.png";
           size = 16;
           on-click = "exec fuzzel";
           on-click-right = "exec logout-menu";
