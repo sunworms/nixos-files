@@ -10,6 +10,7 @@
   ];
 
   home.packages = with pkgs; [
+    xwayland-satellite
     pantheon.pantheon-agent-polkit
   ];
 
