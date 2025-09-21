@@ -22,7 +22,6 @@
     file-roller
     nemo-fileroller
     jamesdsp
-    xwayland-satellite
     kdePackages.kate
     kdePackages.okular
   ];
