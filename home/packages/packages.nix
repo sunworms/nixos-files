@@ -6,6 +6,7 @@
     ./blueman.nix
     ./discord.nix
     ./spotify.nix
+    ./gaming.nix
   ];
   home.packages = with pkgs; [
     firefox
@@ -23,5 +24,6 @@
     jamesdsp
     xwayland-satellite
     kdePackages.kate
+    kdePackages.okular
   ];
 }
