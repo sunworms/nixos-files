@@ -6,7 +6,6 @@
     ./blueman.nix
     ./discord.nix
     ./spotify.nix
-    ./gaming/emulators.nix
   ];
   home.packages = with pkgs; [
     firefox
@@ -22,7 +21,7 @@
     file-roller
     nemo-fileroller
     jamesdsp
-    xwayland-satellite-unstable
+    xwayland-satellite
     kdePackages.kate
     kdePackages.okular
   ];
