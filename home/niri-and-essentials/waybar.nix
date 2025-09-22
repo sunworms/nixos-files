@@ -113,9 +113,7 @@
         };
 
         "clock" = {
-            rotate = 90;
-            format = "{:%H:%M}" ;
-            format-alt = "{%a, %d %b %Y}";
+            format = "{:%H\n%M}" ;
             tooltip-format = "<tt><small>{calendar}</small></tt>";
             calendar = {
                 mode = "year";
