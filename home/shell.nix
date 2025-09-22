@@ -9,7 +9,7 @@
     
     shellAliases = {
       clear-cache = "sudo nix-collect-garbage -d";
-      update-sys = "sudo nix flake update && sudo nixos-rebuild switch --flake .#hpprobook-nixos";
+      update-sys = "sudo nix flake update && sudo nixos-rebuild switch --impure --flake .#hpprobook-nixos";
     };
     
     plugins = [
