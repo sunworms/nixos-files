@@ -3,9 +3,11 @@
 {
   environment.systemPackages = with pkgs; [
     qemu
-    virtiofsd
   ];
-  programs.virt-manager.enable = true;
+  programs.virt-manager = {
+    enable = true;
+    qemu.vhostUserPackages = with pkgs; [ virtiofsd ];
+  };
   users.groups.libvirtd.members = [ "sunny" ];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
