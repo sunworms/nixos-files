@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     qemu
+    virtiofsd
   ];
   programs.virt-manager.enable = true;
   users.groups.libvirtd.members = [ "sunny" ];
