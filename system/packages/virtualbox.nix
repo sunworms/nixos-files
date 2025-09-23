@@ -7,4 +7,8 @@
     enableHardening = false;
     addNetworkInterface = false;
   };
+
+  users.extraGroups.vboxusers.members = [ "sunny" ];
+  boot.kernelModules = [ "vboxdrv" "vboxnetadp" "vboxnetflt" ];
+
 }
