@@ -95,7 +95,7 @@
 
         modules-center = [ "niri/window" ];
 
-        modules-right = [ "idle_inhibitor" "battery" "network" "backlight" "pulseaudio" ];
+        modules-right = [ "idle_inhibitor" "battery" "network" "backlight" "wireplumber#sink" "wireplumber#source" ];
 
         "idle_inhibitor" = {
           format = "{icon}";
@@ -188,15 +188,27 @@
             tooltip-format-disconnected = "Disconnected";
         };
 
-        "pulseaudio" = {
-            scroll-step = 5;
-            max-volume = 150;
+        "wireplumber#sink" = {
+            scroll-step = 1;
+            max-volume = 200;
             format = "{icon}";
+            tooltip-format = "{volume}%";
             format-icons = [ "󰕿" "󰖀" "󰕾"];
             format-muted = "󰝟";
-            nospacing = 1;
             on-click = "pavucontrol";
+	    on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
         };
+        
+	"wireplumber#source" = {
+	    node-type = "Audio/Source";
+    	    format = "";
+    	    format-muted = "";
+	    tooltip-format = "{volume}%";
+            on-click = "pavucontrol";
+    	    on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
+            scroll-step = 1;
+	    max-volume = 200;
+	};
       };
     };
 
@@ -277,7 +289,7 @@
     #battery,
     #network,
     #idle_inhibitor,
-    #pulseaudio {
+    #wireplumber {
         padding: 4px 2px;
         border-radius: 4px;
     }
@@ -339,7 +351,7 @@
     #backlight,
     #memory,
     #network,
-    #pulseaudio,
+    #wireplumber,
     #battery,
     #tray {
         background-color: @base;
