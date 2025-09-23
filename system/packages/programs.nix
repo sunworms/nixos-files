@@ -7,7 +7,7 @@
     ./catppuccin.nix
     ./desktop.nix
     ./swaylock.nix
-    ./virt-manager.nix
+    ./virtualbox.nix
   ];
 
   programs.git.enable = true;
