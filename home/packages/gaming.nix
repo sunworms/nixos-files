@@ -3,9 +3,9 @@
 {
   home.packages = with pkgs; [
     # for running games
+    pcsx2
     wineWow64Packages.staging
     winetricks
-    pcsx2
     ppsspp-sdl-wayland
     melonDS
     mgba

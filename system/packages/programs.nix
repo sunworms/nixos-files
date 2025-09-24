@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./overlays.nix
     ./audio.nix
     ./bluetooth.nix
     ./catppuccin.nix
@@ -9,6 +10,8 @@
     ./swaylock.nix
     ./virtualbox.nix
   ];
+
+  nixpkgs.config.allowUnfree = true;
 
   programs.git.enable = true;
 

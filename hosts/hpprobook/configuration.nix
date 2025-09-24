@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports =
@@ -9,9 +9,6 @@
     ];
 
   networking.hostName = "hpprobook-nixos";
-
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [ inputs.niri.overlays.niri ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
