@@ -13,7 +13,6 @@
     };
     catppuccin.url = "github:catppuccin/nix";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-    nixcord.url = "github:kaylorben/nixcord";
   };
 
   outputs = {
@@ -23,7 +22,6 @@
   niri,
   catppuccin,
   spicetify-nix,
-  nixcord,
   ... }@inputs: {
     nixosConfigurations = {
       hpprobook-nixos = nixpkgs.lib.nixosSystem {
@@ -42,7 +40,6 @@
                     ./home/home.nix
                     catppuccin.homeModules.catppuccin
                     spicetify-nix.homeManagerModules.spicetify
-                    nixcord.homeModules.nixcord
                   ];
                 };
                 extraSpecialArgs = { inherit inputs; };

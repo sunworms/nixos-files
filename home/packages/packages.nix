@@ -4,6 +4,7 @@
   imports = [
     ./fonts.nix
     ./blueman.nix
+    # ./nixcord.nix
     ./discord.nix
     ./spotify.nix
     ./gaming.nix
