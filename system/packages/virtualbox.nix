@@ -1,7 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  boot.extraModulePackages = with config.boot.kernelPackages; [
+  /*
+    boot.extraModulePackages = with config.boot.kernelPackages; [
     virtualbox
   ];
 
@@ -10,6 +11,7 @@
     "vboxnetflt"
     "vboxnetadp"
   ];
+  */
   virtualisation.virtualbox.host = {
     enable = true;
     enableKvm = true;
