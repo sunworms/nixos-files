@@ -21,6 +21,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    nh
     fastfetch
     hyfetch
     brightnessctl
