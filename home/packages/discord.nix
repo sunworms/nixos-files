@@ -4,6 +4,7 @@
   home.packages = [
     (pkgs.discord.override {
       withVencord = true;
+      withOpenASAR = true;
     })
   ];
 }
