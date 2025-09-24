@@ -8,7 +8,7 @@
     ./catppuccin.nix
     ./desktop.nix
     ./swaylock.nix
-    # ./virtualbox.nix
+    ./virtualbox.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
