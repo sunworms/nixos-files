@@ -22,5 +22,16 @@
       mimeType = [ "x-scheme-handler/spotify" ];
       categories = [ "Audio" "Music" "Player" "AudioVideo" ];
     };
+
+    PCSX2 = {
+      terminal = false;
+      type = "Application";
+      name = "PCSX2";
+      genericName = "PlayStation 2 Emulator";
+      comment = "Sony PlayStation 2 emulator";
+      exec = "pcsx2";
+      icon = "PCSX2";
+      categories = [ "Game" "Emulator" ];
+    };
   };
 }
