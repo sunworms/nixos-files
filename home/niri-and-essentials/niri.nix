@@ -163,7 +163,7 @@
 
       spawn-at-startup = [
         { sh = "mako"; }
-        { sh = "sfwbar"; }
+        { sh = "sleep 3 && sfwbar"; }
         { sh = "swww-daemon"; }
         { sh = "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"; }
         { sh = "sleep 2 && swww img $HOME/Pictures/walls/basement.jpg"; }
@@ -182,7 +182,7 @@
         "Mod+T".action = sh "kitty";
         "Mod+Shift+Space".action = spawn "pkill" "sfwbar";
         "Mod+Space".action = spawn "sfwbar";
-        "Mod+D".action = sh "pkill -SIGUSR1 waybar";
+        "Alt+Tab".action = sh "pkill -SIGUSR1 sfwbar";
         "Mod+Escape".action = spawn "logout-menu";
         "Mod+X".action = spawn "cliphist-fuzzel-img";
         "Mod+P".action = sh "niri-color-picker";
