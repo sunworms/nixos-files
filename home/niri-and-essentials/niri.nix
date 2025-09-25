@@ -7,6 +7,7 @@
     ./terminal.nix
     ./waybar.nix
     ./portals.nix
+    ./niri-color-picker.nix
   ];
 
   home.packages = with pkgs; [
@@ -183,7 +184,7 @@
         "Mod+Escape".action = spawn "logout-menu";
         "Mod+X".action = spawn "cliphist-fuzzel-img";
         "Mod+Alt+L".action = spawn "swaylock";
-        "Mod+P".action = sh ''niri msg pick-color | awk '$1 == "Hex:" { printf "%s", $2 }' | wl-copy"'';
+        "Mod+P".action = sh "niri-color-picker";
 
         "XF86AudioRaiseVolume" = {
           allow-when-locked = true;
