@@ -9,5 +9,9 @@
         nix-path = lib.mapAttrsToList (n: _: "${n}=flake:${n}") inputs;
         flake-registry = ""; # optional, ensures flakes are truly self-contained
     };
+    settings = {
+      trusted-users = [ "root" "sunny" ];
+      experimental-features = [ "nix-command" "flakes" ];
+    };
   };
 }
