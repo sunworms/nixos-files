@@ -8,15 +8,23 @@
     settings = {
       mainBar = {
         layer = "top";
-        position = "right";
+        position = "bottom";
         spacing = 0;
         height = 0;
 
-        modules-left = [ "image" "tray" "niri/workspaces" ];
+        modules-left = [ "image" "niri/workspaces"  "wlr/taskbar" ];
 
-        modules-center = [ "cava" ];
+        modules-center = [ ];
 
-        modules-right = [ "mpris" ];
+        modules-right = [ "tray" "idle_inhibitor" "cpu" "memory" "temperature" "battery" "network" "backlight" "wireplumber#sink" "wireplumber#source" "clock" ];
+
+        "wlr/taskbar" = {
+          format = "{icon}";
+          icon-size = 16;
+          icon-theme = "Tela-circle-dracula-dark";
+          tooltip-format = "{title}";
+          on-click = "activate";
+        };
 
         "image" = {
           path = "/home/sunny/Pictures/walls/NixOS.png";
@@ -37,7 +45,6 @@
         };
 
         "mpris" = {
-          rotate = 270;
           format = "{player_icon} {dynamic}";
           max-length = 30;
           player-icons = {
@@ -58,7 +65,6 @@
         };
 
         "cava" = {
-          rotate = 90;
           framerate = 60;
           sleep_timer = 5;
           autosens = 1;
@@ -83,20 +89,6 @@
             tooltip = false;
         };
 
-      };
-
-      secondBar = {
-        layer = "top";
-        position = "left";
-        spacing = 0;
-        height = 0;
-
-        modules-left = [ "clock" "cpu" "memory" "temperature" ];
-
-        modules-center = [ "niri/window" ];
-
-        modules-right = [ "idle_inhibitor" "battery" "network" "backlight" "wireplumber#sink" "wireplumber#source" ];
-
         "idle_inhibitor" = {
           format = "{icon}";
           format-icons = {
@@ -113,7 +105,7 @@
         };
 
         "clock" = {
-            format = "{:%H\n%M}" ;
+            format = "{:%H:%M}" ;
             tooltip-format = "<tt><small>{calendar}</small></tt>";
             calendar = {
                 mode = "year";
@@ -196,19 +188,20 @@
             format-icons = [ "󰕿" "󰖀" "󰕾"];
             format-muted = "󰝟";
             on-click = "pavucontrol";
-	    on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
+	        on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
         };
-        
-	"wireplumber#source" = {
-	    node-type = "Audio/Source";
+
+	    "wireplumber#source" = {
+	        node-type = "Audio/Source";
     	    format = "";
     	    format-muted = "";
-	    tooltip-format = "{volume}%";
+	        tooltip-format = "{volume}%";
             on-click = "pavucontrol";
     	    on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
             scroll-step = 1;
-	    max-volume = 200;
-	};
+	        max-volume = 200;
+	    };
+
       };
     };
 
@@ -290,18 +283,19 @@
     #network,
     #idle_inhibitor,
     #wireplumber {
-        padding: 4px 2px;
+        padding: 2px 6px;
         border-radius: 4px;
     }
 
     #window,
     #mpris {
-        padding: 4px 2px;
+        padding: 2px 6px;
         border-radius: 4px;
     }
 
     #taskbar,
     #workspaces {
+        background-color: @crust;
         border-radius: 4px;
     }
 
@@ -310,7 +304,7 @@
         min-width: 0;
         box-shadow: inset 0 -3px transparent;
         color: @lavender;
-        padding: 3px 2px;
+        padding: 3px 5px;
         background-color: @crust;
         border: 0px;
         border-radius: 4px;
@@ -365,10 +359,10 @@
     }
 
     #taskbar button {
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     #temperature.critical,

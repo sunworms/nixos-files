@@ -5,10 +5,9 @@
     ./lockscreen.nix
     ./notifs.nix
     ./terminal.nix
-    # ./waybar.nix
+    ./waybar.nix
     ./portals.nix
     ./niri-color-picker.nix
-    ./sfwbar.nix
   ];
 
   home.packages = with pkgs; [
@@ -163,7 +162,6 @@
 
       spawn-at-startup = [
         { sh = "mako"; }
-        { sh = "sleep 3 && sfwbar"; }
         { sh = "swww-daemon"; }
         { sh = "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"; }
         { sh = "sleep 2 && swww img $HOME/Pictures/walls/basement.jpg"; }
@@ -180,9 +178,9 @@
         "Mod+Shift+Slash".action = show-hotkey-overlay;
         "Mod+A".action = spawn "fuzzel";
         "Mod+T".action = sh "kitty";
-        "Mod+Shift+Space".action = spawn "pkill" "sfwbar";
+        "Mod+Shift+Space".action = spawn "pkill" "waybar";
         "Mod+Space".action = spawn "sfwbar";
-        "Alt+Tab".action = sh "pkill -SIGUSR1 sfwbar";
+        "Alt+Tab".action = sh "pkill -SIGUSR1 waybar";
         "Mod+Escape".action = spawn "logout-menu";
         "Mod+X".action = spawn "cliphist-fuzzel-img";
         "Mod+P".action = sh "niri-color-picker";
