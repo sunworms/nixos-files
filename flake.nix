@@ -13,24 +13,26 @@
     };
     catppuccin.url = "github:catppuccin/nix";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    nixcord.url = "github:kaylorben/nixcord";
   };
 
   outputs = {
-  self,
-  nixpkgs,
-  home-manager,
-  niri,
-  catppuccin,
-  spicetify-nix,
-  ... }@inputs: {
-    nixosConfigurations = {
-      hpprobook-nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./hosts/hpprobook/configuration.nix
-          niri.nixosModules.niri
-          catppuccin.nixosModules.catppuccin
-          home-manager.nixosModules.home-manager
+    self,
+    nixpkgs,
+    home-manager,
+    niri,
+    catppuccin,
+    spicetify-nix,
+    nixcord,
+    ... }@inputs: {
+      nixosConfigurations = {
+        hpprobook-nixos = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            ./hosts/hpprobook/configuration.nix
+            niri.nixosModules.niri
+            catppuccin.nixosModules.catppuccin
+            home-manager.nixosModules.home-manager
             {
               home-manager = {
                 useGlobalPkgs = true;
@@ -40,6 +42,7 @@
                     ./home/home.nix
                     catppuccin.homeModules.catppuccin
                     spicetify-nix.homeManagerModules.spicetify
+                    nixcord.homeModules.nixcord
                   ];
                 };
                 extraSpecialArgs = { inherit inputs; };
