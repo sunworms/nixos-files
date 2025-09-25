@@ -10,7 +10,7 @@
         flake-registry = ""; # optional, ensures flakes are truly self-contained
     };
     settings = {
-      trusted-users = [ "root" "sunny" ];
+      trusted-users = [ "sunny" ];
       experimental-features = [ "nix-command" "flakes" ];
     };
   };
