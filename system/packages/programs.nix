@@ -26,6 +26,8 @@
     hyfetch
     brightnessctl
     wl-clipboard
+    mpv
+    yt-dlp
   ];
 
   environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
