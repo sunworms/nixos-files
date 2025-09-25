@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./nix-settings.nix
     ./boot.nix
     ./zram-and-fs.nix
     ./network.nix
