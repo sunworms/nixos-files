@@ -6,12 +6,9 @@
     ./blueman.nix
     ./discord.nix
     ./spotify.nix
-    ./gaming.nix
-    ./audio-video.nix
   ];
   home.packages = with pkgs; [
     firefox
-    waybar
     swaybg
     swww
     swayidle
