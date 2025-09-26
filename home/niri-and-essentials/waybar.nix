@@ -16,11 +16,25 @@
 
         modules-center = [ ];
 
-        modules-right = [ "tray" "idle_inhibitor" "cpu" "memory" "temperature" "battery" "network" "backlight" "wireplumber#sink" "wireplumber#source" "clock" ];
+        modules-right = [ "group/info" "tray" "clock" ];
+
+        "group/info" = {
+          orientation = "inherit";
+          drawer = {
+            transition-duration = 300;
+            transition-left-to-right = true;
+          };
+          modules = [ "custom/arrow-left" "idle_inhibitor" "cpu" "memory" "temperature" "battery" "network" "backlight" "wireplumber#sink" "wireplumber#source" ];
+        };
+
+        "custom/arrow-left" = {
+          format ="  ";
+          tooltip = false;
+        };
 
         "wlr/taskbar" = {
           format = "{icon}";
-          icon-size = 16;
+          icon-size = 14;
           icon-theme = "Tela-circle-dracula-dark";
           tooltip-format = "{title}";
           on-click = "activate";
@@ -28,7 +42,7 @@
 
         "image" = {
           path = "/home/sunny/Pictures/walls/NixOS.png";
-          size = 16;
+          size = 14;
           on-click = "exec fuzzel";
           on-click-right = "exec logout-menu";
         };
@@ -273,6 +287,7 @@
     }
 
     #clock,
+    #custom-arrow-left,
     #temperature,
     #cava,
     #tray,
@@ -334,9 +349,9 @@
         color: @text;
     }
 
+    #taskbar button,
     #image,
     #cava,
-    #taskbar,
     #idle_inhibitor,
     #temperature,
     #window,
