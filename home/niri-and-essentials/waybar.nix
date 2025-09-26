@@ -253,8 +253,8 @@
         min-height: 0;
         font-family: "D2CodingLigature Nerd Font Propo";
         font-weight: 500;
-        font-size: 13px;
-        letter-spacing: -1px;
+        font-size: 12px;
+        letter-spacing: -0.5px;
         padding: 0px;
         margin: 2px;
     }
