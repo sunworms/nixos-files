@@ -179,8 +179,8 @@
         "Mod+A".action = spawn "fuzzel";
         "Mod+T".action = sh "kitty";
         "Mod+Shift+Space".action = spawn "pkill" "waybar";
-        "Mod+Space".action = spawn "sfwbar";
-        "Alt+Tab".action = sh "pkill -SIGUSR1 waybar";
+        "Mod+Space".action = spawn "waybar";
+        "Mod+D".action = sh "pkill -SIGUSR1 waybar";
         "Mod+Escape".action = spawn "logout-menu";
         "Mod+X".action = spawn "cliphist-fuzzel-img";
         "Mod+P".action = sh "niri-color-picker";
