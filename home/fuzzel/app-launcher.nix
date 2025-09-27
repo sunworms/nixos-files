@@ -12,7 +12,7 @@
       main = {
         terminal = "{pkgs.kitty}/bin/kitty";
         font = "D2CodingLigature Nerd Font:size=11";
-        icon-theme = "Tela-circle-grey-dark";
+        icon-theme = "Tela-circle-black-dark";
         anchor = "bottom-left";
         x-margin = 6;
         y-margin = 6;
