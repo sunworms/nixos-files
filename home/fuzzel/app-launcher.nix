@@ -12,23 +12,30 @@
       main = {
         terminal = "{pkgs.kitty}/bin/kitty";
         font = "D2CodingLigature Nerd Font:size=11";
-        icon-theme = "Tela-circle-dracula-dark";
+        icon-theme = "Tela-circle-grey-dark";
         anchor = "bottom-left";
         x-margin = 6;
         y-margin = 6;
       };
       colors = {
-        background = "11111bdd";
-        text = "cdd6f4ff";
-        prompt = "bac2deff";
-        placeholder = "7f849cff";
-        input = "cdd6f4ff";
-        match = "89dcebff";
-        selection = "585b70ff";
-        selection-text = "cdd6f4ff";
-        selection-match = "89dcebff";
-        counter = "7f849cff";
-        border = "b4befeff";
+        background = "161616dd";
+        text = "f2f4f8ff";
+        # Using a soft blue for the prompt
+        prompt = "78a9ffff";
+        # Using a subtle light gray for placeholder text
+        placeholder = "a2a9b4ff";
+        input = "f2f4f8ff";
+        # Match uses Accent Green
+        match = "42be65ff";
+        # Selection uses a subtle dark background color
+        selection = "393939ff";
+        selection-text = "f2f4f8ff";
+        # Selection match uses Accent Green
+        selection-match = "42be65ff";
+        # Counter uses the same subtle light gray as the placeholder
+        counter = "a2a9b4ff";
+        # Border uses Accent Blue
+        border = "33b1ffff";
       };
     };
   };

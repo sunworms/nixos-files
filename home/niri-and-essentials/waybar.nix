@@ -3,8 +3,10 @@
 {
   programs.waybar = {
     enable = true;
-    systemd.enable = true;
-    systemd.target = "graphical-session.target";
+    systemd = {
+      enable = true;
+      target = "graphical-session.target";
+    };
     settings = {
       mainBar = {
         layer = "top";
@@ -220,33 +222,23 @@
     };
 
     style = ''
-    @define-color rosewater #f5e0dc;
-    @define-color flamingo #f2cdcd;
-    @define-color pink #f5c2e7;
-    @define-color mauve #cba6f7;
-    @define-color red #f38ba8;
-    @define-color maroon #eba0ac;
-    @define-color peach #fab387;
-    @define-color yellow #f9e2af;
-    @define-color green #a6e3a1;
-    @define-color teal #94e2d5;
-    @define-color sky #89dceb;
-    @define-color sapphire #74c7ec;
-    @define-color blue #89b4fa;
-    @define-color lavender #adb6f4;
-    @define-color purple #9da5e1;
-    @define-color text #cdd6f4;
-    @define-color subtext1 #bac2de;
-    @define-color subtext0 #a6adc8;
-    @define-color overlay2 #9399b2;
-    @define-color overlay1 #7f849c;
-    @define-color overlay0 #6c7086;
-    @define-color surface2 #585b70;
-    @define-color surface1 #45475a;
-    @define-color surface0 #313244;
-    @define-color base #1e1e2e;
-    @define-color mantle #181825;
-    @define-color crust #11111b;
+    /* Oxocarbon Dark Palette */
+    @define-color base00	#161616;
+    @define-color base01	#262626;
+    @define-color base02	#393939;
+    @define-color base03	#525252;
+    @define-color base04	#dde1e6;
+    @define-color base05	#f2f4f8;
+    @define-color base06	#ffffff;
+    @define-color base07	#08bdb9;
+    @define-color base08	#3ddbd9;
+    @define-color base09	#78a9ff;
+    @define-color base0A	#ee5396;
+    @define-color base0B	#33b1ff;
+    @define-color base0C	#ff7eb6;
+    @define-color base0D	#42be65;
+    @define-color base0E	#be95ff;
+    @define-color base0F	#82cfff;
 
     * {
         border: none;
@@ -260,16 +252,16 @@
     }
 
     window#waybar {
-        background: @crust;
+        background: @base00;
         border: 0px;
         border-radius: 4px;
     }
 
     tooltip {
-        background-color: @base;
+        background-color: @base01;
         border: 0px;
         font-size: 2px;
-        color: @text;
+        color: @base05;
     }
 
     tooltip label {
@@ -310,7 +302,7 @@
 
     #taskbar,
     #workspaces {
-        background-color: @crust;
+        background-color: @base00;
         border-radius: 4px;
     }
 
@@ -320,19 +312,19 @@
         box-shadow: inset 0 -3px transparent;
         color: @lavender;
         padding: 3px 5px;
-        background-color: @crust;
+        background-color: @base00;
         border: 0px;
         border-radius: 4px;
     }
 
     #workspaces button.active {
-        color: @text;
-        background-color: @base;
+        color: @base05;
+        background-color: @base01;
     }
 
     #workspaces button.urgent {
-        background-color: @base;
-        color: @red;
+        background-color: @base01;
+        color: @base0A;
         border: 0px;
     }
 
@@ -344,9 +336,9 @@
     }
 
     #clock {
-        background-color: @base;
+        background-color: @base01;
         border: 0px;
-        color: @text;
+        color: @base05;
     }
 
     #taskbar button,
@@ -363,9 +355,9 @@
     #wireplumber,
     #battery,
     #tray {
-        background-color: @base;
+        background-color: @base01;
         border: 0px;
-        color: @text;
+        color: @base05;
     }
 
     #cava {
@@ -383,14 +375,14 @@
     #temperature.critical,
     #cpu.critical,
     #memory.critical {
-        color: @red;
+        color: @base0A;
         border: 0px;
     }
 
     #battery.warning,
     #battery.critical,
     #battery.urgent {
-        color: @red;
+        color: @base0A;
         border: 0px;
     }
 

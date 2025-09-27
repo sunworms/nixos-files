@@ -85,7 +85,7 @@
       cursor = {
         hide-after-inactive-ms = null;
         hide-when-typing = false;
-        theme = "catppuccin-mocha-dark-cursors";
+        theme = "Vimix Cursors";
         size = 24;
       };
 
@@ -164,8 +164,8 @@
         { sh = "mako"; }
         { sh = "swww-daemon"; }
         { sh = "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"; }
-        { sh = "sleep 2 && swww img $HOME/Pictures/walls/basement.jpg"; }
-        { sh = "swaybg -m fill -i $HOME/Pictures/walls/disco.png"; }
+        { sh = "sleep 2 && swww img $HOME/Pictures/walls/material-nix.jpg"; }
+        { sh = "swaybg -m fill -i $HOME/Pictures/walls/nix-blur.png"; }
         { sh = "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"; }
         { sh = "wl-paste --watch cliphist store"; }
         { sh = "jamesdsp --tray"; }

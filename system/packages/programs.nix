@@ -5,7 +5,6 @@
     ./overlays.nix
     ./audio.nix
     ./bluetooth.nix
-    ./catppuccin.nix
     ./desktop.nix
     ./swaylock.nix
   ];

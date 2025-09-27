@@ -2,29 +2,24 @@
 
 {
   imports = [
-    ./catppuccin.nix
     ./kvantum.nix
   ];
 
   gtk = {
     enable = true;
     theme = {
-      name = "catppuccin-mocha-lavender-compact";
-      package = pkgs.catppuccin-gtk.override {
-        accents = [ "lavender" ];
-        size = "compact";
-        variant = "mocha";
-      };
+      name = "Materia-dark";
+      package = pkgs.materia-theme;
     };
     iconTheme = lib.mkForce({
-      name = "Tela-circle-dracula-dark";
+      name = "Tela-circle-grey-dark";
       package = pkgs.tela-circle-icon-theme.override {
-        colorVariants = [ "dracula" ];
+        colorVariants = [ "grey" ];
       };
     });
     cursorTheme = {
-      name = "catppuccin-mocha-dark-cursors";
-      package = pkgs.catppuccin-cursors.mochaDark;
+      name = "Vimix Cursors";
+      package = pkgs.vimix-cursors;
       size = 24;
     };
   };
