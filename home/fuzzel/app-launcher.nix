@@ -34,8 +34,8 @@
         selection-match = "42be65ff";
         # Counter uses the same subtle light gray as the placeholder
         counter = "a2a9b4ff";
-        # Border uses Accent Blue
-        border = "33b1ffff";
+        # Accent color
+        border = "f2f4f8ff";
       };
     };
   };

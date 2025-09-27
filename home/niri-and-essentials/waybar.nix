@@ -274,10 +274,6 @@
         background-color: transparent;
     }
 
-    #image {
-        border-radius: 4px;
-    }
-
     #clock,
     #custom-arrow-left,
     #temperature,
@@ -294,9 +290,8 @@
         border-radius: 4px;
     }
 
-    #window,
-    #mpris {
-        padding: 2px 6px;
+    #image {
+        padding: 2px 4px;
         border-radius: 4px;
     }
 
@@ -311,7 +306,7 @@
         min-width: 0;
         box-shadow: inset 0 -3px transparent;
         color: @lavender;
-        padding: 3px 5px;
+        padding: 3px 4px;
         background-color: @base00;
         border: 0px;
         border-radius: 4px;
@@ -366,8 +361,8 @@
     }
 
     #taskbar button {
-        padding-left: 2px;
-        padding-right: 2px;
+        padding-left: 1px;
+        padding-right: 1px;
         padding-top: 0px;
         padding-bottom: 0px;
     }
