@@ -3,6 +3,6 @@
 {
   nixpkgs.overlays = [
     inputs.niri.overlays.niri
-    inputs.nur.overlays.default
+    (import ./overlays/pcsx2-overlay.nix)
   ];
 }

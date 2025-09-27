@@ -11,10 +11,6 @@
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nixcord.url = "github:kaylorben/nixcord";
   };
@@ -24,7 +20,6 @@
     nixpkgs,
     home-manager,
     niri,
-    nur,
     spicetify-nix,
     nixcord,
     ... }@inputs: {

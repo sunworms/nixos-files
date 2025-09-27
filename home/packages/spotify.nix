@@ -15,5 +15,6 @@ in
       shuffle
     ];
     theme = spicePkgs.themes.dreary;
+    colorScheme = "BIB";
   };
 }
