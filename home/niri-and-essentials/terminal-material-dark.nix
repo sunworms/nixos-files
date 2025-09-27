@@ -2,7 +2,7 @@
 
 {
   xdg.configFile."kitty/material-dark.conf".text = ''
-    background            #222221
+    background            #161616
     foreground            #e4e4e4
     cursor                #16aec9
     selection_background  #dedede
