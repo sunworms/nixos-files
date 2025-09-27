@@ -14,7 +14,7 @@ in
       hidePodcasts
       shuffle
     ];
-    theme = spicePkgs.themes.dreary;
-    colorScheme = "BIB";
+    theme = spicePkgs.themes.fluent;
+    colorScheme = "dark";
   };
 }
