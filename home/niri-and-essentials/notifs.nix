@@ -7,13 +7,13 @@
       default-timeout = 10000;
       font = "D2CodingLigatureNerdFont 11";
       border-size = 1;
-      background-color = "#1e1e2e";
-      text-color = "#cdd6f4";
-      border-color = "#b4befe";
-      progress-color= "over #313244";
+      background-color = "#212121";
+      text-color = "#d8d8d8";
+      border-color = "#383838";
+      progress-color= "over #454545";
     };
     extraConfig = ''
     [urgency=high]
-    border-color=#fab387 '';
+    border-color=#b7141e '';
   };
 }
