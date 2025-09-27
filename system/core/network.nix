@@ -53,6 +53,22 @@
         system-ca-certs = false;
       };
     };
+
+    "Airtel_jaya_2754" = {
+      connection = {
+        id = "Airtel_jaya_2754";
+        type = "wifi";
+        autoconnect = true;
+      };
+      wifi = {
+        ssid = "Airtel_jaya_2754";
+        mode = "infrastructure";
+      };
+      wifi-security = {
+        key-mgmt = "wpa-psk";
+        psk = "Air@99807";
+      };
+    };
   };
 
 }

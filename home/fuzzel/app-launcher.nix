@@ -11,14 +11,14 @@
     settings = {
       main = {
         terminal = "{pkgs.kitty}/bin/kitty";
-        font = "D2CodingLigature Nerd Font:size=13";
+        font = "D2CodingLigature Nerd Font:size=11";
         icon-theme = "Tela-circle-dracula-dark";
         anchor = "bottom-left";
         x-margin = 6;
         y-margin = 6;
       };
       colors = {
-        background = "1e1e2edd";
+        background = "11111bdd";
         text = "cdd6f4ff";
         prompt = "bac2deff";
         placeholder = "7f849cff";
