@@ -8,6 +8,7 @@
     ./network.nix
     ./timelocale.nix
     ./security.nix
+    ./virtualisation.nix
   ];
 
   users.users.sunny = {
