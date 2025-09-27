@@ -13,6 +13,7 @@
   home.packages = with pkgs; [
     xwayland-satellite-unstable
     pantheon.pantheon-agent-polkit
+    vimix-cursors
   ];
 
   programs.niri = {
@@ -85,7 +86,7 @@
       cursor = {
         hide-after-inactive-ms = null;
         hide-when-typing = false;
-        theme = "Vimix Cursors";
+        theme = "Vimix-cursors";
         size = 24;
       };
 

@@ -12,9 +12,9 @@
       package = pkgs.materia-theme;
     };
     iconTheme = lib.mkForce({
-      name = "Tela-circle-grey-dark";
+      name = "Tela-circle-black-dark";
       package = pkgs.tela-circle-icon-theme.override {
-        colorVariants = [ "grey" ];
+        colorVariants = [ "black" ];
       };
     });
     cursorTheme = {
