@@ -49,14 +49,14 @@
         focus-ring = {
           enable = true;
           width = 1;
-          active.color = "#adb6f4";
-          inactive.color = "#bac2de";
-          urgent.color = "#f38ba8";
+          active.color = "#f2f4f8";
+          inactive.color = "#dde1e6";
+          urgent.color = "#ee5396";
         };
         shadow.enable = false;
         insert-hint = {
           enable = true;
-          display.color = "#1e1e2e";
+          display.color = "#161616";
         };
         default-column-width = { proportion = 1. / 2.; };
         preset-column-widths = [

@@ -20,11 +20,11 @@
         --divider-thickness: 2px;
     }
     :root {
-        --purple-1: hsl(232, 76%, 87%);
-        --purple-2: hsl(232, 76%, 85%);
-        --purple-3: hsl(232, 76%, 82%);
-        --purple-4: hsl(232, 76%, 79%);
-        --purple-5: hsl(232, 76%, 76%);
+        --purple-1: hsl(220, 30%, 96%);
+        --purple-2: hsl(220, 30%, 92%);
+        --purple-3: hsl(220, 30%, 88%);
+        --purple-4: hsl(220, 30%, 84%);
+        --purple-5: hsl(220, 30%, 80%);
     }
     /* theme config end */
 
