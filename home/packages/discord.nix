@@ -50,7 +50,7 @@
       disableMinSize = true;
       useQuickCss = true;
       themeLinks = [
-        "https://raw.githubusercontent.com/refact0r/system24/refs/heads/main/theme/flavors/system24-catppuccin-mocha.theme.css"
+        "https://refact0r.github.io/system24/build/system24.css"
         "https://raw.githubusercontent.com/mudrhiod/discord-iconpacks/refs/heads/master/vencord/solar/solar.css"
         "https://raw.githubusercontent.com/mudrhiod/discord-iconpacks/refs/heads/master/vencord/solar/moreicons.css"
       ];

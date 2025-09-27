@@ -14,7 +14,6 @@ in
       hidePodcasts
       shuffle
     ];
-    theme = spicePkgs.themes.comfy;
-    colorScheme = "catppuccin-mocha";
+    theme = spicePkgs.themes.dreary;
   };
 }
