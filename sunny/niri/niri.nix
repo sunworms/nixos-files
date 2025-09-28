@@ -212,7 +212,7 @@
   spawn-sh-at-startup "mako"
   spawn-sh-at-startup "sleep 2 && waybar"
   spawn-sh-at-startup "swww-daemon"
-  spawn-sh-at-startup "/nix/store/hnm5ahqp35m8h1ghf39yl5jdvy5a6x9z-pantheon-agent-polkit-8.0.1/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
+  spawn-sh-at-startup "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
   spawn-sh-at-startup "sleep 2 && swww img $HOME/Pictures/walls/material-nix.jpg"
   spawn-sh-at-startup "swaybg -m fill -i $HOME/Pictures/walls/nix-blur.png"
   spawn-sh-at-startup "swayidle -w timeout 600 'niri msg action power-off-monitors' timeout 300 'swaylock' before-sleep 'swaylock'"
