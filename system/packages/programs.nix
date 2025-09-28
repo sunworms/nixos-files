@@ -27,6 +27,7 @@
     hyfetch
     brightnessctl
     wl-clipboard
+    gnome-keyring
   ];
 
   environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
