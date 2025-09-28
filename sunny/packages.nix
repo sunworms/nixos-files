@@ -24,9 +24,6 @@
     p7zip
 
     firefox
-    xdg-desktop-portal-gnome
-    xdg-desktop-portal-gtk
-    gnome-keyring
 
     swaybg
     swww

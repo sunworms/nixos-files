@@ -8,6 +8,7 @@
     ./desktop.nix
     ./swaylock.nix
     ./fonts.nix
+    ./portals.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

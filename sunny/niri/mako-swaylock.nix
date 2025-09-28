@@ -15,13 +15,6 @@
     border-color=#b7141e
     '';
 
-    ".config/xdg-desktop-portal/portals.conf".text = ''
-    [preferred]
-    default=gnome;gtk
-    org.freedesktop.impl.portal.FileChooser=gtk
-    org.freedesktop.impl.portal.Secret=gnome-keyring
-    '';
-
     ".config/swaylock/config".text = ''
     daemonize
     ignore-empty-password

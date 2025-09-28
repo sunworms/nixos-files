@@ -3,7 +3,7 @@
 {
   imports = [
     ./waybar.nix
-    ./mako-swaylock-portals.nix
+    ./mako-swaylock.nix
     ./kitty.nix
   ];
 
@@ -209,7 +209,6 @@
       XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "set" "5%-"; }
       XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "set" "5%+"; }
   }
-  spawn-sh-at-startup "systemctl --user start xdg-desktop-portal-gtk xdg-desktop-portal-gnome"
   spawn-sh-at-startup "mako"
   spawn-sh-at-startup "sleep 1 && waybar"
   spawn-sh-at-startup "swww-daemon"
