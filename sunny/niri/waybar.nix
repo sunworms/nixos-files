@@ -82,7 +82,8 @@
             "states": {
                 "critical": 15,
                 "warning": 30
-            }
+            },
+            "tooltip-format": "{capacity}% {timeTo}",
             "events": {
                 "on-discharging-warning": "notify-send -u normal 'Low Battery'",
                 "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",

@@ -184,13 +184,12 @@
       Mod+Shift+R { switch-preset-window-height; }
       Mod+Shift+Right { focus-monitor-right; }
       Mod+Shift+Slash { show-hotkey-overlay; }
-      Mod+Shift+Space { spawn "pkill" "waybar"; }
       Mod+Shift+T { move-workspace-down; }
       Mod+Shift+Up { focus-monitor-up; }
       Mod+Shift+V { switch-focus-between-floating-and-tiling; }
       Mod+Shift+WheelScrollDown { focus-column-right; }
       Mod+Shift+WheelScrollUp { focus-column-left; }
-      Mod+Space { spawn "waybar"; }
+      Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
       Mod+T { spawn "sh" "-c" "kitty"; }
       Mod+Up { focus-window-up; }
       Mod+V { toggle-window-floating; }
