@@ -89,7 +89,9 @@
   binds {
       Ctrl+Alt+Delete { quit; }
       Ctrl+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
-      Ctrl+Print { screenshot-window; }
+      Print { screenshot; }
+      Alt+Print { screenshot-window; }
+      Ctrl+Print { screenshot-screen; }
       Mod+1 { focus-workspace 1; }
       Mod+2 { focus-workspace 2; }
       Mod+3 { focus-workspace 3; }
@@ -200,7 +202,6 @@
       Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
       Mod+X { spawn "cliphist-fuzzel-img"; }
       Mod+Y { focus-workspace-up; }
-      Print { screenshot; }
       XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
       XF86AudioMicMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
       XF86AudioMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
