@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
+  packages = with pkgs; [
     (writeShellScriptBin "logout-menu" ''
     # Define menu options
     options=" Lock\n󰍃 Logout\n⏾ Suspend\n Reboot\n Shutdown"
@@ -18,5 +18,6 @@
         *) exit 0 ;;
     esac
     '')
+    (writeShellScriptBin "cliphist-fuzzel-img" (builtins.readFile ./cliphist-fuzzel-img))
   ];
 }

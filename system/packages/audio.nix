@@ -1,5 +1,12 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
+let
+     # For Flakeless:
+     # spicePkgs = spicetify-nix.packages;
+
+     # With flakes:
+  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.system};
+in
 {
   services.pipewire = {
     enable = true;
@@ -17,4 +24,17 @@
       KERNEL=="rtc0", GROUP="audio"
       KERNEL=="hpet", GROUP="audio"
   '';
+
+  programs.spicetify = {
+     enable = true;
+     enabledExtensions = with spicePkgs.extensions; [
+       adblock
+       hidePodcasts
+       shuffle
+       seekSong
+       goToSong
+       playNext
+     ];
+     theme = spicePkgs.themes.text;
+   };
 }
