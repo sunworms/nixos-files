@@ -209,7 +209,7 @@
       XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessctl" "set" "5%+"; }
   }
   spawn-sh-at-startup "mako"
-  spawn-sh-at-startup "waybar"
+  spawn-sh-at-startup "sleep 1 && waybar"
   spawn-sh-at-startup "swww-daemon"
   spawn-sh-at-startup "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
   spawn-sh-at-startup "sleep 2 && swww img $HOME/Pictures/walls/material-nix.jpg"
