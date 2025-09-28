@@ -21,6 +21,7 @@
 
   environment.systemPackages = with pkgs; [
     nh
+    libnotify
     fastfetch
     hyfetch
     brightnessctl

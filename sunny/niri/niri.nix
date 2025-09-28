@@ -3,7 +3,7 @@
 {
   imports = [
     ./waybar.nix
-    ./mako-and-portals.nix
+    ./mako-swaylock-portals.nix
     ./kitty.nix
   ];
 
