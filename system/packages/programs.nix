@@ -20,6 +20,11 @@
     package = pkgs.gvfs;
   };
 
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [ vpl-gpu-rt vaapiIntel intel-media-driver ];
+  };
+
   environment.systemPackages = with pkgs; [
     nh
     libnotify
