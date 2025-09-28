@@ -11,11 +11,6 @@
     xwayland-satellite-unstable
     pantheon.pantheon-agent-polkit
 
-    nerd-fonts.d2coding
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-color-emoji
-
     wineWow64Packages.stable
     winetricks
     pcsx2

@@ -7,6 +7,7 @@
     ./bluetooth.nix
     ./desktop.nix
     ./swaylock.nix
+    ./fonts.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
