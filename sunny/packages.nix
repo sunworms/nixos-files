@@ -39,6 +39,7 @@
 
     imagemagick
     cliphist
+    waybar
     fuzzel
     kitty
     mako
