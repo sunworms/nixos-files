@@ -14,6 +14,7 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.git.enable = true;
+  programs.gpu-screen-recorder.enable = true;
 
   services.gvfs = {
     enable = true;
