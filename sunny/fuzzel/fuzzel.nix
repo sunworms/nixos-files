@@ -26,5 +26,10 @@
   terminal=${pkgs.kitty}/bin/kitty
   x-margin=6
   y-margin=6
+  horizontal-pad=10
+  vertical-pad=5
+
+  [border]
+  radius=4
   '';
 }
