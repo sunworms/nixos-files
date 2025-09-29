@@ -37,9 +37,7 @@
     kitty
     mako
 
-    nemo
-    file-roller
-    nemo-fileroller
+    nemo-with-extensions
     xdg-user-dirs
 
     kdePackages.kate
