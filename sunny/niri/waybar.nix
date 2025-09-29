@@ -164,8 +164,8 @@
         },
 
         "image": {
-            "on-click": "exec fuzzel",
-            "on-click-right": "exec logout-menu",
+            "on-click": "exec rofi -show drun -location 7",
+            "on-click-right": "exec rofi -show power-menu -modi power-menu:rofi-power-menu -location 7",
             "path": "/home/sunny/Pictures/walls/NixOS.png",
             "size": 14
         },

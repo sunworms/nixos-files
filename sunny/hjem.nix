@@ -3,7 +3,7 @@
 {
   imports = [
     ./git.nix
-    ./fuzzel/fuzzel.nix
+    ./rofi/rofi.nix
     ./niri/niri.nix
     ./packages.nix
     ./theming.nix

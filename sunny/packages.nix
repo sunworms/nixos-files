@@ -31,10 +31,9 @@
     playerctl
     jamesdsp
 
-    imagemagick
     cliphist
     waybar
-    fuzzel
+    rofi
     kitty
     mako
 

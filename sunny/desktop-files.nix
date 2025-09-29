@@ -2,18 +2,6 @@
 
 {
   files = {
-    ".local/share/applications/discord.desktop".text = ''
-    [Desktop Entry]
-    Categories=Network;InstantMessaging
-    Exec=discord --ozone-platform-hint=auto
-    GenericName=All-in-one cross-platform voice and text chat for gamers
-    Icon=discord
-    MimeType=x-scheme-handler/discord
-    Name=Discord
-    Terminal=false
-    Type=Application
-    '';
-
     ".local/share/applications/spotify.desktop".text = ''
     [Desktop Entry]
     Categories=Audio;Music;Player;AudioVideo

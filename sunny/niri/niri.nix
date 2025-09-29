@@ -101,8 +101,6 @@
       Mod+7 { focus-workspace 7; }
       Mod+8 { focus-workspace 8; }
       Mod+9 { focus-workspace 9; }
-      Mod+A { spawn "fuzzel"; }
-      Mod+Alt+L allow-when-locked=true { spawn "swaylock"; }
       Mod+BracketLeft { consume-or-expel-window-left; }
       Mod+BracketRight { consume-or-expel-window-right; }
       Mod+C { center-column; }
@@ -139,11 +137,9 @@
       Mod+Ctrl+WheelScrollLeft { move-column-left; }
       Mod+Ctrl+WheelScrollRight { move-column-right; }
       Mod+Ctrl+WheelScrollUp cooldown-ms=150 { move-column-to-workspace-up; }
-      Mod+D { spawn "sh" "-c" "pkill -SIGUSR1 waybar"; }
       Mod+Down { focus-window-down; }
       Mod+End { focus-column-last; }
       Mod+Equal { set-column-width "+10%"; }
-      Mod+Escape { spawn "logout-menu"; }
       Mod+F { maximize-column; }
       Mod+H { focus-workspace-down; }
       Mod+Home { focus-column-first; }
@@ -154,7 +150,6 @@
       Mod+Left { focus-column-left; }
       Mod+Minus { set-column-width "-10%"; }
       Mod+O repeat=false { toggle-overview; }
-      Mod+P { spawn "sh" "-c" "niri-color-picker"; }
       "Mod+Page_Down" { focus-workspace-down; }
       "Mod+Page_Up" { focus-workspace-up; }
       Mod+Period { expel-window-from-column; }
@@ -191,8 +186,6 @@
       Mod+Shift+V { switch-focus-between-floating-and-tiling; }
       Mod+Shift+WheelScrollDown { focus-column-right; }
       Mod+Shift+WheelScrollUp { focus-column-left; }
-      Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
-      Mod+T { spawn "sh" "-c" "kitty"; }
       Mod+Up { focus-window-up; }
       Mod+V { toggle-window-floating; }
       Mod+W { toggle-column-tabbed-display; }
@@ -200,8 +193,18 @@
       Mod+WheelScrollLeft { focus-column-left; }
       Mod+WheelScrollRight { focus-column-right; }
       Mod+WheelScrollUp cooldown-ms=150 { focus-workspace-up; }
-      Mod+X { spawn "cliphist-fuzzel-img"; }
       Mod+Y { focus-workspace-up; }
+      Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
+      Mod+T { spawn "kitty"; }
+      Mod+X { spawn "rofi" "-modi" "clipboard:cliphist-rofi-img" "-show" "clipboard" "-show-icons"; }
+      Mod+P { spawn "sh" "-c" "niri-color-picker"; }
+      Mod+D { spawn "sh" "-c" "pkill -SIGUSR1 waybar"; }
+      Mod+A { spawn "rofi" "-show" "drun"; }
+      Mod+Alt+L allow-when-locked=true { spawn "swaylock"; }
+      Alt+Tab { spawn "rofi" "-show" "window"; }
+      Alt+R { spawn "rofi" "-show" "run"; }
+      Alt+B { spawn "rofi" "-show" "filebrowser"; }
+      Mod+Escape { spawn "rofi" "-show" "power-menu" "-modi" "power-menu:rofi-power-menu"; }
       XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
       XF86AudioMicMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
       XF86AudioMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
