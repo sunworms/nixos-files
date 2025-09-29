@@ -11,7 +11,7 @@
     xwayland-satellite-unstable
     pantheon.pantheon-agent-polkit
 
-    wineWow64Packages.stable
+    /* wineWow64Packages.stable
     winetricks
     pcsx2
     ppsspp-sdl-wayland
@@ -21,7 +21,7 @@
     sameboy
 
     unrar
-    p7zip
+    p7zip */
 
     firefox
 
