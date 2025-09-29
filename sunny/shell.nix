@@ -31,7 +31,7 @@
   alias grep='grep --color=auto'
   alias warpon='warp-cli connect'
   alias warpoff='warp-cli disconnect && sudo systemctl restart systemd-resolved'
-  alias update-sys='sudo nix flake update && sudo nixos-rebuild switch --impure --flake .#hpprobook-nixos'
+  alias update-sys='sudo nix flake update && sudo nixos-rebuild switch --flake .#hpprobook-nixos'
 
   source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
   source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
