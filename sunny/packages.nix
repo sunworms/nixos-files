@@ -2,10 +2,7 @@
 
 {
   packages = with pkgs; [
-    (discord.override {
-      withOpenASAR = true;
-      withVencord = true;
-    })
+    vesktop
     blueman
 
     xwayland-satellite-unstable
