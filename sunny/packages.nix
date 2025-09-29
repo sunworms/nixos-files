@@ -5,7 +5,8 @@
     vesktop
     blueman
 
-    xwayland-satellite-unstable
+    niri
+    xwayland-satellite
     pantheon.pantheon-agent-polkit
 
     wineWow64Packages.stable

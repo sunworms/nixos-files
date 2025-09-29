@@ -1,0 +1,31 @@
+{
+  "pins": {
+    "nix-maid": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "viperML",
+        "repo": "nix-maid"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "78b85366c15da8b2c76cc9850cc522faa292e849",
+      "url": "https://github.com/viperML/nix-maid/archive/78b85366c15da8b2c76cc9850cc522faa292e849.tar.gz",
+      "hash": "0qla88xsb483nx7p4mmvmhk15zc6pjhmjli9wbxfrnbfj06jb3bx"
+    },
+    "nixpkgs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "NixOS",
+        "repo": "nixpkgs"
+      },
+      "branch": "nixos-unstable",
+      "submodules": false,
+      "revision": "e9f00bd893984bc8ce46c895c3bf7cac95331127",
+      "url": "https://github.com/NixOS/nixpkgs/archive/e9f00bd893984bc8ce46c895c3bf7cac95331127.tar.gz",
+      "hash": "0s2mhbrgzxlgkg2yxb0q0hpk8lby1a7w67dxvfmaz4gsmc0bnvfj"
+    }
+  },
+  "version": 5
+}
