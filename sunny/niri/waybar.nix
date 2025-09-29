@@ -317,13 +317,11 @@
 
     window#waybar {
         background: @base00;
-        border: 0px;
         border-radius: 4px;
     }
 
     tooltip {
         background-color: @base01;
-        border: 0px;
         font-size: 2px;
         color: @base05;
     }
@@ -334,7 +332,6 @@
 
     window#waybar.empty #window {
         font-size: 0px;
-        border: 0px;
         background-color: transparent;
     }
 
@@ -372,7 +369,6 @@
         color: @lavender;
         padding: 3px 4px;
         background-color: @base00;
-        border: 0px;
         border-radius: 4px;
     }
 
@@ -384,19 +380,16 @@
     #workspaces button.urgent {
         background-color: @base01;
         color: @base0A;
-        border: 0px;
     }
 
     #cava.silent,
     #workspaces button.empty {
         background-color: transparent;
         color: transparent;
-        border: 0px;
     }
 
     #clock {
         background-color: @base01;
-        border: 0px;
         color: @base05;
     }
 
@@ -415,7 +408,6 @@
     #battery,
     #tray {
         background-color: @base01;
-        border: 0px;
         color: @base05;
     }
 
@@ -433,21 +425,19 @@
 
     #taskbar button.active {
         background-color: @base02;
-        border-bottom: 2px @base05;
+        border-bottom: 1px solid @base05;
     }
 
     #temperature.critical,
     #cpu.critical,
     #memory.critical {
         color: @base0A;
-        border: 0px;
     }
 
     #battery.warning,
     #battery.critical,
     #battery.urgent {
         color: @base0A;
-        border: 0px;
     }
 
     #window {
