@@ -431,6 +431,11 @@
         padding-bottom: 0px;
     }
 
+    #taskbar button.active {
+        background-color: @base02;
+        border-bottom: 2px @base05;
+    }
+
     #temperature.critical,
     #cpu.critical,
     #memory.critical {
