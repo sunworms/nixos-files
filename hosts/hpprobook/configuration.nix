@@ -4,7 +4,7 @@
   imports =
     [
       ./hardware-configuration.nix
-      ../../system/core/users.nix
+      ../../system/core/imports.nix
       ../../system/packages/programs.nix
     ];
 

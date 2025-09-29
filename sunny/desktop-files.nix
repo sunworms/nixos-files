@@ -1,8 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  files = {
-    ".local/share/applications/spotify.desktop".text = ''
+  file.home.".local/share/applications/spotify.desktop".text = ''
     [Desktop Entry]
     Categories=Audio;Music;Player;AudioVideo
     Exec=spotify %U --ozone-platform-hint=auto
@@ -13,5 +12,4 @@
     Terminal=false
     Type=Application
     '';
-  };
 }

@@ -1,8 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  files = {
-    ".config/kitty/material-dark.conf".text = ''
+  file.xdg_config = {
+    "kitty/material-dark.conf".text = ''
     background            #161616
     foreground            #e4e4e4
     cursor                #16aec9
@@ -26,7 +26,7 @@
     selection_foreground #222221
     '';
 
-    ".config/kitty/kitty.conf".text = ''
+    "kitty/kitty.conf".text = ''
     font_family D2CodingLigature Nerd Font Mono
     font_size 11
     shell_integration no-rc

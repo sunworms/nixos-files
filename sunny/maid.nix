@@ -10,7 +10,4 @@
     ./desktop-files.nix
     ./shell.nix
   ];
-  enable = true;
-  user = "sunny";
-  directory = "/home/sunny";
 }

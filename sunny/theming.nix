@@ -14,15 +14,23 @@
     })
   ];
 
-  files = {
-    ".gtkrc-2.0".text = ''
+  dconf.settings = {
+    "/org/gnome/desktop/interface/color-scheme" = "prefer-dark";
+    "/org/gnome/desktop/interface/cursor-theme" = "Vimix Cursors";
+    "/org/gnome/desktop/interface/cursor-size" = 24;
+    "/org/gnome/desktop/interface/gtk-theme" = "Materia-dark";
+    "/org/gnome/desktop/interface/icon-theme" = "Tela-circle-black-dark";
+  };
+
+  file.home.".gtkrc-2.0".text = ''
     gtk-cursor-theme-name = "Vimix Cursors"
     gtk-cursor-theme-size = 24
     gtk-icon-theme-name = "Tela-circle-black-dark"
     gtk-theme-name = "Materia-dark"
     '';
 
-    ".config/gtk-3.0/settings.ini".text = ''
+  file.xdg_config = {
+    "gtk-3.0/settings.ini".text = ''
     [Settings]
     gtk-cursor-theme-name=Vimix Cursors
     gtk-cursor-theme-size=24
@@ -30,7 +38,7 @@
     gtk-theme-name=Materia-dark
     '';
 
-    ".config/gtk-4.0/settings.ini".text = ''
+    "gtk-4.0/settings.ini".text = ''
     [Settings]
     gtk-cursor-theme-name=Vimix Cursors
     gtk-cursor-theme-size=24
@@ -38,12 +46,12 @@
     gtk-theme-name=Materia-dark
     '';
 
-    ".config/gtk-4.0/assets".source = "${pkgs.materia-theme}/share/themes/Materia-dark/gtk-4.0/assets";
-    ".config/gtk-4.0/gtk.css".source = "${pkgs.materia-theme}/share/themes/Materia-dark/gtk-4.0/gtk.css";
-    ".config/gtk-4.0/gtk-dark.css".source = "${pkgs.materia-theme}/share/themes/Materia-dark/gtk-4.0/gtk-dark.css";
+    "gtk-4.0/assets".source = "${pkgs.materia-theme}/share/themes/Materia-dark/gtk-4.0/assets";
+    "gtk-4.0/gtk.css".source = "${pkgs.materia-theme}/share/themes/Materia-dark/gtk-4.0/gtk.css";
+    "gtk-4.0/gtk-dark.css".source = "${pkgs.materia-theme}/share/themes/Materia-dark/gtk-4.0/gtk-dark.css";
 
-    ".config/Kvantum/MateriaDark".source = "${pkgs.materia-kde-theme}/share/Kvantum/MateriaDark";
-    ".config/Kvantum/kvantum.kvconfig".text = ''
+    "Kvantum/MateriaDark".source = "${pkgs.materia-kde-theme}/share/Kvantum/MateriaDark";
+    "Kvantum/kvantum.kvconfig".text = ''
     [General]
     theme=MateriaDark
     '';

@@ -7,7 +7,7 @@
     ./kitty.nix
   ];
 
-  files.".config/niri/config.kdl".text = ''
+  file.xdg_config."niri/config.kdl".text = ''
   input {
       keyboard {
           xkb {

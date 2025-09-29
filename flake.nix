@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    hjem.url = "github:feel-co/hjem";
+    nix-maid.url = "github:viperML/nix-maid";
     niri.url = "github:sodiboo/niri-flake";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
@@ -11,7 +11,7 @@
   outputs = {
     self,
     nixpkgs,
-    hjem,
+    nix-maid,
     niri,
     spicetify-nix,
     ... }@inputs: {
@@ -21,12 +21,7 @@
           modules = [
             ./hosts/hpprobook/configuration.nix
             niri.nixosModules.niri
-            hjem.nixosModules.default
-            {
-              hjem.users.sunny = ./sunny/hjem.nix;
-              hjem.clobberByDefault = true;
-              hjem.specialArgs = { inherit inputs; };
-            }
+            nix-maid.nixosModules.default
             spicetify-nix.nixosModules.spicetify
         ];
       };

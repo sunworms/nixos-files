@@ -1,20 +1,15 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [
-    ./nix-settings.nix
-    ./boot.nix
-    ./zram-and-fs.nix
-    ./network.nix
-    ./timelocale.nix
-    ./security.nix
-    ./virtualisation.nix
-  ];
-
   users.users.sunny = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
     shell = pkgs.zsh;
+    maid = {
+      imports = [
+        ../../sunny/maid.nix
+      ];
+    };
   };
 
   programs.zsh.enable = true;

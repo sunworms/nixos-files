@@ -1,8 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  files = {
-    ".config/mako/config".text = ''
+  file.xdg_config = {
+    "mako/config".text = ''
     background-color=#212121
     border-color=#383838
     border-size=1
@@ -15,7 +15,7 @@
     border-color=#b7141e
     '';
 
-    ".config/swaylock/config".text = ''
+    "swaylock/config".text = ''
     daemonize
     ignore-empty-password
     image=$HOME/Pictures/walls/nix-blur.png

@@ -4,11 +4,10 @@
     ./scripts.nix
   ];
 
-  files = {
-    ".config/rofi/config.rasi".text = ''
+  file.xdg_config."rofi/config.rasi".text = ''
     configuration {
-      modes: "drun,window,run,filebrowser";
-      font: "D2CodingLigature Nerd Font Propo" 12";
+    modes: "drun,window,run,filebrowser";
+    font: "D2CodingLigature Nerd Font Propo" 12";
     /*	location: 0;*/
     /*  yoffset: 4;*/
     /*  xoffset: 4;*/
@@ -21,7 +20,7 @@
     /*	on-menu-canceled: ;*/
     /*	on-menu-error: ;*/
     /*	on-screenshot-taken: ;*/
-      terminal: "kitty";
+    terminal: "kitty";
     /*	ssh-client: "ssh";*/
     /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
     /*	run-command: "{cmd}";*/
@@ -176,5 +175,4 @@
     }
     @theme "gruvbox-dark-hard"
     '';
-  };
 }

@@ -1,8 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  files = {
-    ".config/waybar/config".text = ''
+  file.xdg_config = {
+    "waybar/config".text = ''
     [
     {
         "layer": "top",
@@ -286,7 +286,7 @@
     ]
     '';
 
-    ".config/waybar/style.css".text = ''
+    "waybar/style.css".text = ''
     @define-color base00	#161616;
     @define-color base01	#262626;
     @define-color base02	#393939;

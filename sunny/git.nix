@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  files.".config/git/config".text = ''
+  file.xdg_config."git/config".text = ''
   [diff]
       guitool = "kitty.gui"
       tool = "kitty"
