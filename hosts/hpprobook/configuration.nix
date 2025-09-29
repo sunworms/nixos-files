@@ -5,7 +5,7 @@
     [
       ./hardware-configuration.nix
       ../../system/core/imports.nix
-      ../../system/packages/programs.nix
+      ../../system/packages/imports.nix
     ];
 
   networking.hostName = "hpprobook-nixos";

@@ -1,15 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [
-    ./overlays.nix
-    ./audio.nix
-    ./bluetooth.nix
-    ./desktop.nix
-    ./swaylock.nix
-    ./fonts.nix
-    ./portals.nix
-  ];
 
   nixpkgs.config.allowUnfree = true;
 
@@ -27,6 +18,7 @@
 
   environment.systemPackages = with pkgs; [
     nh
+    npins
     libnotify
     fastfetch
     hyfetch
