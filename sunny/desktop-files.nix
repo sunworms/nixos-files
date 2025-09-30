@@ -2,16 +2,17 @@
 
 {
   file.home = {
-    ".local/share/applications/spotify.desktop".text = ''
+    ".local/share/applications/spotify-web.desktop".text = ''
     [Desktop Entry]
-    Categories=Audio;Music;Player;AudioVideo
-    Exec=spotify %U --ozone-platform-hint=auto
-    GenericName=Music Player
-    Icon=spotify-client
-    MimeType=x-scheme-handler/spotify
-    Name=Spotify
+    Name=Spotify Web
+    GenericName=Spotify
+    Comment=Open Spotify in Firefox (Web)
+    Exec=firefox --new-window --kiosk https://open.spotify.com
     Terminal=false
     Type=Application
+    Icon=spotify
+    Categories=Audio;Music;Player;AudioVideo;
+    StartupWMClass=Firefox
     '';
 
     ".local/share/applications/pcsx2.desktop".text = ''
