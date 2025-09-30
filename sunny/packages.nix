@@ -5,8 +5,8 @@
     firefox
     vesktop
 
-    niri
-    xwayland-satellite
+    niri-unstable
+    xwayland-satellite-unstable
     pantheon.pantheon-agent-polkit
 
     wineWow64Packages.stable

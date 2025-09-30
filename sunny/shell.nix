@@ -31,7 +31,7 @@
   alias grep='grep --color=auto'
   alias warpon='warp-cli connect'
   alias warpoff='warp-cli disconnect && sudo systemctl restart systemd-resolved'
-  alias update-sys='update-hashes && npins update && sudo nixos-rebuild switch -I nixpkgs=$(nix eval --raw -f ./npins nixpkgs.outPath) -I nixos-config=./hosts/hpprobook/configuration.nix'
+  alias update-sys='update-hashes && update-niri && npins update && sudo nixos-rebuild switch -I nixpkgs=$(nix eval --raw -f ./npins nixpkgs.outPath) -I nixos-config=./hosts/hpprobook/configuration.nix'
   alias rebuild-switch='sudo nixos-rebuild switch -I nixpkgs=$(nix eval --raw -f ./npins nixpkgs.outPath) -I nixos-config=./hosts/hpprobook/configuration.nix'
   alias clear-cache='sudo rm /nix/var/nix/gcroots/auto/* && nh clean all && sudo nix store optimise'
 
