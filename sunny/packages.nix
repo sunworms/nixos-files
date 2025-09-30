@@ -2,6 +2,7 @@
 
 {
   packages = with pkgs; [
+    firefox
     vesktop
     blueman
 
@@ -20,8 +21,6 @@
 
     unrar
     p7zip
-
-    firefox
 
     swaybg
     swww

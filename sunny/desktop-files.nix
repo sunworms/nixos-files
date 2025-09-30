@@ -7,12 +7,12 @@
     Name=Spotify Web
     GenericName=Spotify
     Comment=Open Spotify in Firefox (Web)
-    Exec=firefox --new-window --kiosk https://open.spotify.com
+    Exec=firefox --name spotify --class spotify --new-window --kiosk https://open.spotify.com
     Terminal=false
     Type=Application
-    Icon=/home/sunny/Pictures/walls/spotify.svg
+    Icon=firefox
     Categories=Audio;Music;Player;AudioVideo;
-    StartupWMClass=Firefox
+    StartupWMClass=spotify
     '';
 
     ".local/share/applications/pcsx2.desktop".text = ''
