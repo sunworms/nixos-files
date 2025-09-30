@@ -10,7 +10,7 @@
     Exec=firefox --new-window --kiosk https://open.spotify.com
     Terminal=false
     Type=Application
-    Icon=spotify
+    Icon=/home/sunny/Pictures/walls/spotify.svg
     Categories=Audio;Music;Player;AudioVideo;
     StartupWMClass=Firefox
     '';
