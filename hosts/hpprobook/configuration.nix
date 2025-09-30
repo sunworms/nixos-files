@@ -5,7 +5,7 @@ let
   pkgs = import sources.nixpkgs {
     system = "x86_64-linux";
   };
-  niri-flake = builtins.getFlake "github:sodiboo/niri-flake?rev=";
+  niri-flake = builtins.getFlake "github:sodiboo/niri-flake?rev=d425163158a96a26924597574316a627d2e982aa";
   spicetify-nix = import (builtins.fetchTarball {
     url = "https://github.com/Gerg-L/spicetify-nix/archive/refs/heads/master.tar.gz";
     sha256 = "0bjfa29arya584zq50w8h5jihz3gdl4aawyjpln83d38syjjy2kx";

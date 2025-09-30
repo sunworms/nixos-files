@@ -30,64 +30,45 @@
     gnome-keyring
 
     (writeShellScriptBin "update-hashes" ''
-    set -e
+    FILE="./hosts/hpprobook/configuration.nix"
 
-    # Files to update
-    NIX_FILES="./hosts/hpprobook/configuration.nix ./system/packages/audio.nix"
+    URL="https://github.com/Gerg-L/spicetify-nix/archive/refs/heads/master.tar.gz"
 
-    # repo-name and URL pairs
-    REPOS_URLS="
-    spicetify-nix https://github.com/Gerg-L/spicetify-nix/archive/refs/heads/master.tar.gz
-    "
+    # run nix-prefetch-url and get the last line (the hash)
+    NEW_SHA=$(nix-prefetch-url --unpack "$URL" 2>/dev/null | tail -n1)
 
-    echo "Updating hashes in $NIX_FILES..."
-
-    for NIX_FILE in $NIX_FILES; do
-        echo "Updating file: $NIX_FILE"
-
-        echo "$REPOS_URLS" | while read repo_name url; do
-            if [ -z "$repo_name" ]; then
-                continue
-            fi
-
-            echo "Fetching latest tarball for $repo_name..."
-            hash=$(nix-prefetch-url --unpack "$url" | tail -n 1)
-            echo "New hash for $repo_name: $hash"
-
-            # Replace hash in nix file matching comment # repo_name
-            sed -i -E "s|(sha256 = \")[^\"]*(\"; # $repo_name)|\1$hash\2|" "$NIX_FILE"
-        done
-    done
-
-    echo "Hashes updated successfully."
-    '')
-
-    (writeShellScriptBin "update-niri" ''
-    NIX_FILE="./hosts/hpprobook/configuration.nix"
-
-    # Get the latest revision from flake metadata
-    NEW_REV=$(nix flake metadata github:sodiboo/niri-flake | awk '/^Revision:/ { print $2 }')
-
-    if [ -z "$NEW_REV" ]; then
-        echo "Error: failed to extract revision" >&2
+    if [ -z "$NEW_SHA" ]; then
+        printf 'Error: could not fetch new sha256\n' >&2
         exit 1
     fi
 
-    # Extract the current revision from the nix file
-    OLD_REV=$(awk -F'rev=' '/sodiboo\/niri-flake/ { sub(/".*/, "", $2); print $2 }' "$NIX_FILE")
+    # replace the line in-place
+    # works for sha256 = "..."; with any spacing
+    sed -i "s#^\([[:space:]]*sha256[[:space:]]*=[[:space:]]*\"\)[^\"]*\"#\1$NEW_SHA\"#" "$FILE"
 
-    if [ "$NEW_REV" = "$OLD_REV" ]; then
-        echo "Already up to date (revision $NEW_REV)"
-        exit 0
+    printf 'Updated spicetify-nix sha256 to %s in %s\n' "$NEW_SHA" "$FILE"
+    '')
+
+    (writeShellScriptBin "update-niri" ''
+    file="./hosts/hpprobook/configuration.nix"
+
+    # Extract latest revision from flake metadata
+    rev=$(nix flake metadata github:sodiboo/niri-flake --json \
+        | grep '"revision":' \
+        | sed -n 's/.*"revision": *"\([0-9a-f]\{40\}\)".*/\1/p')
+
+    if [ -z "$rev" ]; then
+        echo "Error: could not extract revision" >&2
+        exit 1
     fi
 
-    echo "Updating niri-flake revision from $OLD_REV to $NEW_REV"
+    echo "Latest revision: $rev"
+    echo "Updating $file …"
 
-    # Replace the revision in the nix file
-    sed -i.bak "s|\(github:sodiboo/niri-flake?rev=\)[a-f0-9]\+|\1$NEW_REV|g" "$NIX_FILE"
+    # Replace the revision in the getFlake line
+    sed -i "s|niri-flake = builtins.getFlake \"github:sodiboo/niri-flake?rev=[0-9a-f]\{40\}\";|niri-flake = builtins.getFlake \"github:sodiboo/niri-flake?rev=$rev\";|" "$file"
 
-    echo "Updated $NIX_FILE (backup saved as $NIX_FILE.bak)"
-
+    echo "Done. $file now points to revision $rev"
     '')
   ];
 
