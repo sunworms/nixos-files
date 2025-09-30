@@ -1,5 +1,30 @@
 {
   "pins": {
+    "flake-compat": {
+      "type": "Git",
+      "repository": {
+        "type": "Git",
+        "url": "https://git.lix.systems/lix-project/flake-compat/"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "549f2762aebeff29a2e5ece7a7dc0f955281a1d1",
+      "url": null,
+      "hash": "0g4izwn5k7qpavlk3w41a92rhnp4plr928vmrhc75041vzm3vb1l"
+    },
+    "niri-flake": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "sodiboo",
+        "repo": "niri-flake"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "d425163158a96a26924597574316a627d2e982aa",
+      "url": "https://github.com/sodiboo/niri-flake/archive/d425163158a96a26924597574316a627d2e982aa.tar.gz",
+      "hash": "05p0qfjfwwn2qghqf2p864ad2hf5a0p3wrychzybzh0hhgb2n5f6"
+    },
     "nix-maid": {
       "type": "Git",
       "repository": {
@@ -25,6 +50,19 @@
       "revision": "e9f00bd893984bc8ce46c895c3bf7cac95331127",
       "url": "https://github.com/NixOS/nixpkgs/archive/e9f00bd893984bc8ce46c895c3bf7cac95331127.tar.gz",
       "hash": "0s2mhbrgzxlgkg2yxb0q0hpk8lby1a7w67dxvfmaz4gsmc0bnvfj"
+    },
+    "spicetify-nix": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "Gerg-L",
+        "repo": "spicetify-nix"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "f102312235c3628fc3eddfb8cc6d7d0922427f46",
+      "url": "https://github.com/Gerg-L/spicetify-nix/archive/f102312235c3628fc3eddfb8cc6d7d0922427f46.tar.gz",
+      "hash": "0bjfa29arya584zq50w8h5jihz3gdl4aawyjpln83d38syjjy2kx"
     }
   },
   "version": 5

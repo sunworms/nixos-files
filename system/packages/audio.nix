@@ -1,11 +1,9 @@
 { config, lib, pkgs, ... }:
-
 let
-  spicetify-nix = import (builtins.fetchTarball {
-    url = "https://github.com/Gerg-L/spicetify-nix/archive/refs/heads/master.tar.gz";
-    sha256 = "0bjfa29arya584zq50w8h5jihz3gdl4aawyjpln83d38syjjy2kx";
-  }) { inherit pkgs; };
-  spicePkgs = spicetify-nix.packages;
+  sources = import ../../npins;
+  flake-compat = import sources.flake-compat;
+  spicetify-nix = flake-compat { src = sources.spicetify-nix; };
+  spicePkgs = spicetify-nix.defaultNix.legacyPackages.${pkgs.stdenv.system};
 in
 {
   programs.spicetify = {
