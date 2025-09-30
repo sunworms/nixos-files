@@ -2,19 +2,6 @@
 
 {
   file.home = {
-    ".local/share/applications/spotify-web.desktop".text = ''
-    [Desktop Entry]
-    Name=Spotify Web
-    GenericName=Spotify
-    Comment=Open Spotify in Firefox (Web)
-    Exec=firefox --name spotify --class spotify --new-window --kiosk https://open.spotify.com
-    Terminal=false
-    Type=Application
-    Icon=firefox
-    Categories=Audio;Music;Player;AudioVideo;
-    StartupWMClass=spotify
-    '';
-
     ".local/share/applications/pcsx2.desktop".text = ''
     [Desktop Entry]
     Type=Application
