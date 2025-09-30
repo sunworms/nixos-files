@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./overlays.nix
     ./audio.nix
     ./bluetooth.nix
     ./desktop.nix

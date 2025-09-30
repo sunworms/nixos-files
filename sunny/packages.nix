@@ -4,7 +4,7 @@
   packages = with pkgs; [
     firefox
     vesktop
-    blueman
+    (callPackage ./derivations/ice-ssb.nix { })
 
     niri
     xwayland-satellite
@@ -12,7 +12,7 @@
 
     wineWow64Packages.stable
     winetricks
-    pcsx2
+    (callPackage ./derivations/pcsx2.nix { })
     ppsspp-sdl-wayland
     melonDS
     azahar
@@ -30,6 +30,7 @@
     pavucontrol
     playerctl
     jamesdsp
+    blueman
 
     cliphist
     waybar
