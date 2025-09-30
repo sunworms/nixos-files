@@ -4,7 +4,6 @@
   packages = with pkgs; [
     firefox
     vesktop
-    (callPackage ./derivations/ice-ssb.nix { })
 
     niri
     xwayland-satellite
