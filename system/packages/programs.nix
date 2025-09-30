@@ -4,7 +4,10 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  programs.git.enable = true;
+  programs = {
+    git.enable = true;
+    dconf.enable = true;
+  };
 
   services.gvfs = {
     enable = true;

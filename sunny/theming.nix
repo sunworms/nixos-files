@@ -22,6 +22,23 @@
     "/org/gnome/desktop/interface/icon-theme" = "Tela-circle-black-dark";
   };
 
+  gsettings.settings = {
+    org = {
+      gnome = {
+        desktop = {
+          interface = {
+            color-scheme = "prefer-dark";
+            icon-theme = "Tela-circle-black-dark";
+            gtk-theme = "Materia-dark";
+            cursor-theme = "Vimix Cursors";
+            cursor-size = 24;
+          };
+        };
+      };
+      cinnamon.desktop.default-applications.terminal = "exec kitty";
+    };
+  };
+
   file.home.".gtkrc-2.0".text = ''
     gtk-cursor-theme-name = "Vimix Cursors"
     gtk-cursor-theme-size = 24
