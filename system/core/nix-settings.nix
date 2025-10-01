@@ -1,14 +1,20 @@
 { config, lib, pkgs, ... }:
 
 {
+  nixpkgs.overlays = [ (final: prev: {
+    inherit (prev.lixPackageSets.stable)
+      nixpkgs-review
+      nix-eval-jobs
+      nix-fast-build
+      colmena;
+  }) ];
+
   nix = {
+    package = pkgs.lixPackageSets.stable.lix;
     channel.enable = false;
     settings = {
       experimental-features = [ "nix-command" "flakes" ];
       trusted-users = [ "sunny" ];
-      substituters = [ "https://niri.cachix.org" ];
-      trusted-substituters = [ "https://niri.cachix.org" "https://cache.nixos.org" ];
-      trusted-public-keys = [ "niri.cachix.org-1:Wv0OmO7PsuocRKzfDoJ3mulSl7Z6oezYhGhR+3W2964=" ];
     };
   };
 }
