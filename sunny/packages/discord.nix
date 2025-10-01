@@ -79,6 +79,7 @@
           transformCompoundSentence = true;
         };
         fakeProfileThemes.enable = true;
+        favoriteGifSearch.enable = true;
         fixCodeblockGap.enable = true;
         fixImagesQuality.enable = true;
         fixSpotifyEmbeds.enable = true;
@@ -127,6 +128,7 @@
         unindent.enable = true;
         unlockedAvatarZoom.enable = true;
         unsuppressEmbeds.enable = true;
+        userMessagesPronouns.enable = true;
         validReply.enable = true;
         validUser.enable = true;
         viewIcons = {
