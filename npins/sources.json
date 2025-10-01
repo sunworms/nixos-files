@@ -21,9 +21,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "5890176f856dcaf55f3ab56b25d4138657531cbd",
-      "url": "https://github.com/nix-community/home-manager/archive/5890176f856dcaf55f3ab56b25d4138657531cbd.tar.gz",
-      "hash": "0s0q9awsdq0zrz3vcd99yv85gwqw870xmqb7mqwr7g69hrv6hnid"
+      "revision": "004753ae6b04c4b18aa07192c1106800aaacf6c3",
+      "url": "https://github.com/nix-community/home-manager/archive/004753ae6b04c4b18aa07192c1106800aaacf6c3.tar.gz",
+      "hash": "0jyiv7liv4bhspjinpga57wr8iq8vj13hlp96fgx3q3vyr1ggi09"
     },
     "niri-flake": {
       "type": "Git",
