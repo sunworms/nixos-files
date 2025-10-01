@@ -1,17 +1,17 @@
 { config, lib, pkgs, ... }:
 
 {
-  packages = with pkgs; [
-    firefox
-    vesktop
+  imports = [
+    ./spotify.nix
+    ./discord.nix
+  ];
 
-    niri-unstable
-    xwayland-satellite-unstable
-    pantheon.pantheon-agent-polkit
+  home.packages = with pkgs; [
+    firefox
 
     wineWow64Packages.stable
     winetricks
-    (callPackage ./derivations/pcsx2.nix { })
+    (callPackage ../derivations/pcsx2.nix { })
     ppsspp-sdl-wayland
     melonDS
     azahar
@@ -22,20 +22,7 @@
     p7zip
 
     swaybg
-    swww
-    swayidle
-    swaylock
-
-    pavucontrol
-    playerctl
     jamesdsp
-    blueman
-
-    cliphist
-    waybar
-    rofi
-    kitty
-    mako
 
     nemo-with-extensions
     xdg-user-dirs

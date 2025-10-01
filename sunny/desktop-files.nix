@@ -1,20 +1,17 @@
 { config, lib, pkgs, ... }:
 
 {
-  file.home = {
-    ".local/share/applications/pcsx2.desktop".text = ''
-    [Desktop Entry]
-    Type=Application
-    Name=PCSX2
-    GenericName="PlayStation 2 emulator"
-    Comment="PlayStation 2 emulator"
-    TryExec=pcsx2
-    Exec=pcsx2
-    Icon=pcsx2
-    Terminal=false
-    StartupNotify=true
-    StartupWMClass=pcsx2
-    Categories=Game;Emulator;
-    '';
+  xdg.desktopEntries = {
+    "PCSX2" = {
+      type = "Application";
+      name = "PCSX2";
+      genericName = "PlayStation 2 emulator";
+      comment = "PlayStation 2 emulator";
+      exec = "pcsx2";
+      icon = "pcsx2";
+      terminal = false;
+      startupNotify = true;
+      categories = [ "Game" "Emulator" ];
+    };
   };
 }

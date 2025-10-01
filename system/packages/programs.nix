@@ -27,10 +27,8 @@ in
   environment.systemPackages = with pkgs; [
     nh
     npins
-    libnotify
     fastfetch
     hyfetch
-    brightnessctl
     wl-clipboard
     gnome-keyring
   ];

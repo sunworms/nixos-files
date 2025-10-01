@@ -8,12 +8,24 @@ let
   flake-compat = import sources.flake-compat;
   spicetify-nix = flake-compat { src = sources.spicetify-nix; };
   niri-flake = flake-compat { src = sources.niri-flake; };
+  home-manager = flake-compat { src = sources.home-manager; };
+  nixcord = flake-compat { src = sources.nixcord; };
 in
 {
   imports =
     [
-      (import sources.nix-maid).nixosModules.default
-      spicetify-nix.defaultNix.nixosModules.spicetify
       niri-flake.defaultNix.nixosModules.niri
+      home-manager.defaultNix.nixosModules.home-manager
+      {
+        home-manager.useGlobalPkgs = true;
+        home-manager.useUserPackages = true;
+        home-manager.users.sunny = {
+          imports = [
+            ./sunny/home.nix
+            spicetify-nix.defaultNix.homeManagerModules.spicetify
+            nixcord.defaultNix.homeModules.nixcord
+          ];
+        };
+      }
     ];
 }

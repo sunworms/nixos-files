@@ -13,4 +13,5 @@
       };
     };
   };
+  programs.niri.enable = true;
 }

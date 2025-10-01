@@ -12,6 +12,19 @@
       "url": null,
       "hash": "0g4izwn5k7qpavlk3w41a92rhnp4plr928vmrhc75041vzm3vb1l"
     },
+    "home-manager": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-community",
+        "repo": "home-manager"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "5a21f4819ee1be645f46d6b255d49f4271ef6723",
+      "url": "https://github.com/nix-community/home-manager/archive/5a21f4819ee1be645f46d6b255d49f4271ef6723.tar.gz",
+      "hash": "1k9rnxmjv9k6wam3iqn3wi4fk8si1g6ml3gff9k041na8cykhp8v"
+    },
     "niri-flake": {
       "type": "Git",
       "repository": {
@@ -25,18 +38,18 @@
       "url": "https://github.com/sodiboo/niri-flake/archive/d425163158a96a26924597574316a627d2e982aa.tar.gz",
       "hash": "05p0qfjfwwn2qghqf2p864ad2hf5a0p3wrychzybzh0hhgb2n5f6"
     },
-    "nix-maid": {
+    "nixcord": {
       "type": "Git",
       "repository": {
         "type": "GitHub",
-        "owner": "viperML",
-        "repo": "nix-maid"
+        "owner": "KaylorBen",
+        "repo": "nixcord"
       },
-      "branch": "master",
+      "branch": "main",
       "submodules": false,
-      "revision": "7259413a59628ba1e73eda8ae03d0653a9631274",
-      "url": "https://github.com/viperML/nix-maid/archive/7259413a59628ba1e73eda8ae03d0653a9631274.tar.gz",
-      "hash": "1cndmaj2z3sqj04hwcp09b0mxx4im4halvvzcnpdbwvbxgchjbcq"
+      "revision": "f5208da97ba50ecc27cf62a7285a35007ef0bfc5",
+      "url": "https://github.com/KaylorBen/nixcord/archive/f5208da97ba50ecc27cf62a7285a35007ef0bfc5.tar.gz",
+      "hash": "1dz5gfwnp0li7y39dxfzswwl65chs14i9dra1khswai8ngbzxim9"
     },
     "nixpkgs": {
       "type": "Git",
