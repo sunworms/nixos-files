@@ -8,7 +8,6 @@ let
   flake-compat = import sources.flake-compat;
   spicetify-nix = flake-compat { src = sources.spicetify-nix; };
   niri-flake = flake-compat { src = sources.niri-flake; };
-  chaotic-nyx = flake-compat { src = sources.chaotic-nyx; };
 in
 {
   imports =
@@ -16,6 +15,5 @@ in
       (import sources.nix-maid).nixosModules.default
       spicetify-nix.defaultNix.nixosModules.spicetify
       niri-flake.defaultNix.nixosModules.niri
-      chaotic-nyx.defaultNix.nixosModules.default
     ];
 }

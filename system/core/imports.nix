@@ -4,7 +4,7 @@
   imports = [
     ./nix-settings.nix
     ./boot.nix
-    ./zram-and-fs.nix
+    ./zram.nix
     ./network.nix
     ./timelocale.nix
     ./security.nix

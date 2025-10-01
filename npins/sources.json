@@ -1,18 +1,5 @@
 {
   "pins": {
-    "chaotic-nyx": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "chaotic-cx",
-        "repo": "nyx"
-      },
-      "branch": "nyxpkgs-unstable",
-      "submodules": false,
-      "revision": "2bf7f138e42fa8b2133761edab64263505cb83bf",
-      "url": "https://github.com/chaotic-cx/nyx/archive/2bf7f138e42fa8b2133761edab64263505cb83bf.tar.gz",
-      "hash": "0kxp158bmf91fank3za8qhm8gvpwb9s9mp2j2cx362sp9j2mx8dh"
-    },
     "flake-compat": {
       "type": "Git",
       "repository": {

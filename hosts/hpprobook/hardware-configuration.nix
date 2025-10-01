@@ -16,11 +16,13 @@
   fileSystems."/" =
     { device = "/dev/disk/by-label/root";
       fsType = "btrfs";
+      options = [ "compress-force=zstd:5" ];
     };
 
   fileSystems."/home" =
     { device = "/dev/disk/by-label/home";
       fsType = "btrfs";
+      options = [ "compress-force=zstd:5" ];
     };
 
   fileSystems."/boot" =
