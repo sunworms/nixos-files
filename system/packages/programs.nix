@@ -30,7 +30,6 @@ in
     fastfetch
     hyfetch
     wl-clipboard
-    brightnessctl
     gnome-keyring
   ];
 
