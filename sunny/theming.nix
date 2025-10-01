@@ -32,15 +32,15 @@
     enable = true;
     platformTheme.name = "qtct";
     style = {
-      name = "MateriaDark";
+      name = "kvantum";
       package = pkgs.materia-kde-theme;
     };
   };
-  /*xdg.configFile ={
+  xdg.configFile ={
     "Kvantum/MateriaDark".source = "${pkgs.materia-kde-theme}/share/Kvantum/MateriaDark";
     "Kvantum/kvantum.kvconfig".text = ''
     [General]
     theme=MateriaDark
     '';
-  };*/
+  };
 }
