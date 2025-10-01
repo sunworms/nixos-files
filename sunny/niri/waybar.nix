@@ -170,6 +170,7 @@
           icon-size = 14;
           icon-theme = "Tela-circle-dracula-dark";
           on-click = "activate";
+          on-click-right = "close";
           tooltip-format = "{title}";
         };
 
