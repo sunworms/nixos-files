@@ -27,6 +27,7 @@ in
   environment.systemPackages = with pkgs; [
     nh
     npins
+    git-crypt
     fastfetch
     hyfetch
     wl-clipboard
