@@ -21,9 +21,6 @@
     unrar
     p7zip
 
-    swaybg
-    jamesdsp
-
     nemo-with-extensions
     xdg-user-dirs
 

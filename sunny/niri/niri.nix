@@ -100,9 +100,9 @@
     }
 
     spawn-at-startup "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
-    spawn-sh-at-startup "swww img $HOME/Pictures/walls/material-nix.jpg"
-    spawn-sh-at-startup "swaybg -m fill -i $HOME/Pictures/walls/nix-blur.png"
-    spawn-sh-at-startup "jamesdsp --tray"
+    spawn-sh-at-startup "${pkgs.swww}/bin/swww img $HOME/Pictures/walls/material-nix.jpg"
+    spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i $HOME/Pictures/walls/nix-blur.png"
+    spawn-sh-at-startup "${pkgs.jamesdsp}/bin/jamesdsp --tray"
 
     binds {
         Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
