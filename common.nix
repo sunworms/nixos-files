@@ -26,7 +26,7 @@ in
             ./sunny/home.nix
             spicetify-nix.defaultNix.homeManagerModules.spicetify
             nixcord.defaultNix.homeModules.nixcord
-            impermanence.deafultNix.homeManagerModules.impermanence
+            impermanence.defaultNix.homeManagerModules.impermanence
           ];
         };
       }
