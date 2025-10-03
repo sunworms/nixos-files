@@ -17,15 +17,18 @@
     mkdir -p /mnt
     mount -o subvol=@root /dev/disk/by-label/root /mnt
 
+    echo "Processing nested subvolumes inside /@root..."
     btrfs subvolume list /mnt/@root | cut -f9 -d' ' | while read subvolume; do
-      echo "deleting /$subvolume subvolume..."
-      btrfs subvolume delete "/mnt/$subvolume"
-    done &&
+      if [ -n "$subvolume" ]; then
+        echo "Deleting nested subvolume: /@root/$subvolume"
+        btrfs subvolume delete "/mnt/@root/$subvolume"
+      fi
+    done
 
-    echo "deleting /@root subvolume..." &&
+    echo "Deleting /@root subvolume..." &&
     btrfs subvolume delete /mnt/@root
 
-    echo "restoring blank /@root subvolume..."
+    echo "Restoring blank /@root subvolume..."
     btrfs subvolume snapshot /mnt/@root-blank /mnt/@root
 
     umount /mnt
