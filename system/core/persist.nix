@@ -8,9 +8,14 @@
       "/var/log"
       "/var/lib/bluetooth"
       "/var/lib/nixos"
+      "/var/lib/systemd"
     ];
     files = [
       "/etc/machine-id"
+      "/etc/passwd"
+      "/etc/shadow"
+      "/etc/group"
+      "/etc/gshadow"
     ];
     users.sunny = {
       directories = [
