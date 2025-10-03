@@ -18,7 +18,7 @@
     mount -o subvol=@root /dev/disk/by-label/root /mnt
 
     echo "Processing nested subvolumes inside /@root..."
-    btrfs subvolume list /mnt/@root | cut -f9 -d' ' | while read subvolume; do
+    btrfs subvolume list -o /mnt | cut -f9 -d' ' | while read subvolume; do
       if [ -n "$subvolume" ]; then
         echo "Deleting nested subvolume: /@root/$subvolume"
         btrfs subvolume delete "/mnt/@root/$subvolume"
