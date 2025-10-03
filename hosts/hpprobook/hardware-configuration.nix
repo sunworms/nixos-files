@@ -13,60 +13,75 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
-  boot.initrd.postDeviceCommands = pkgs.lib.mkBefore ''
-    mkdir -p /mnt
-    mount -o subvol=@root /dev/disk/by-label/root /mnt
+  boot.initrd.postResumeCommands = lib.mkAfter ''
+      mkdir -p /mnt
+      # We first mount the btrfs root to /mnt
+      # so we can manipulate btrfs subvolumes.
+      mount -o subvol=/ /dev/disk/by-label/root /mnt
+  
+      # While we're tempted to just delete /root and create
+      # a new snapshot from /root-blank, /root is already
+      # populated at this point with a number of subvolumes,
+      # which makes `btrfs subvolume delete` fail.
+      # So, we remove them first.
+      #
+      # /root contains subvolumes:
+      # - /root/var/lib/portables
+      # - /root/var/lib/machines
+      #
+      # I suspect these are related to systemd-nspawn, but
+      # since I don't use it I'm not 100% sure.
+      # Anyhow, deleting these subvolumes hasn't resulted
+      # in any issues so far, except for fairly
+      # benign-looking errors from systemd-tmpfiles.
+      btrfs subvolume list -o /mnt/root |
+      cut -f9 -d' ' |
+      while read subvolume; do
+        echo "deleting /$subvolume subvolume..."
+        btrfs subvolume delete "/mnt/$subvolume"
+      done &&
+      echo "deleting /root subvolume..." &&
+      btrfs subvolume delete /mnt/root
 
-    echo "Processing nested subvolumes inside /@root..."
-    btrfs subvolume list -o /mnt | cut -f9 -d' ' | while read subvolume; do
-      if [ -n "$subvolume" ]; then
-        echo "Deleting nested subvolume: /@root/$subvolume"
-        btrfs subvolume delete "/mnt/@root/$subvolume"
-      fi
-    done
+      echo "restoring blank /root subvolume..."
+      btrfs subvolume snapshot /mnt/root-blank /mnt/root
+  
+      # Once we're done rolling back to a blank snapshot,
+      # we can unmount /mnt and continue on the boot process.
+      umount /mnt
 
-    echo "Deleting /@root subvolume..." &&
-    btrfs subvolume delete /mnt/@root
+      mount -o subvol=/ /dev/disk/by-label/home /mnt
 
-    echo "Restoring blank /@root subvolume..."
-    btrfs subvolume snapshot /mnt/@root-blank /mnt/@root
+      echo "deleting /home subvolume..." &&
+      btrfs subvolume delete /mnt/home
 
-    umount /mnt
-    
-    mount -o subvol=@home /dev/disk/by-label/home /mnt
-
-    echo "deleting /@home subvolume..." &&
-    btrfs subvolume delete /mnt/@home
-
-    echo "restoring blank /@home subvolume..."
-    btrfs subvolume snapshot /mnt/@home-blank /mnt/@home
-
-    umount /mnt
+      echo "restoring blank /root subvolume..."
+      btrfs subvolume snapshot /mnt/home-blank /mnt/home
   '';
 
   fileSystems."/" =
     { device = "/dev/disk/by-label/root";
       fsType = "btrfs";
-      options = [ "subvol=@root" "compress-force=zstd:5" "noatime" ];
+      options = [ "subvol=root" "compress-force=zstd:5" "noatime" ];
     };
 
   fileSystems."/nix" =
     { device = "/dev/disk/by-label/root";
       fsType = "btrfs";
-      options = [ "subvol=@nix" "compress-force=zstd:5" "noatime" ];
+      options = [ "subvol=nix" "compress-force=zstd:5" "noatime" ];
     };
 
   fileSystems."/persist" =
     { device = "/dev/disk/by-label/home";
       fsType = "btrfs";
       neededForBoot = true;
-      options = [ "subvol=@persist" "compress-force=zstd:5" "noatime" ];
+      options = [ "subvol=persist" "compress-force=zstd:5" "noatime" ];
     };
 
   fileSystems."/home" =
     { device = "/dev/disk/by-label/home";
       fsType = "btrfs";
-      options = [ "subvol=@home" "compress-force=zstd:5" "noatime" ];
+      options = [ "subvol=home" "compress-force=zstd:5" "noatime" ];
     };
 
   fileSystems."/boot" =
