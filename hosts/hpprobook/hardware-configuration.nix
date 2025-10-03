@@ -54,7 +54,7 @@
     };
 
   fileSystems."/persist" =
-    { device = "/dev/disk/by-label/root";
+    { device = "/dev/disk/by-label/home";
       fsType = "btrfs";
       neededForBoot = true;
       options = [ "subvol=persist" "compress-force=zstd:5" "noatime" ];
