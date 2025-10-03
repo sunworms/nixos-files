@@ -21,6 +21,7 @@
         "Pictures"
         "Videos"
         "VMs"
+        ".mozilla"
       ];
       files = [
         ".p10k.zsh"
