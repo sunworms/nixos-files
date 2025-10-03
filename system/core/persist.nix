@@ -16,6 +16,7 @@
       directories = [
         "nixos-files"
         "Documents"
+        "Games"
         "Music"
         "Pictures"
         "Videos"
