@@ -48,13 +48,13 @@
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk-bylabel/root";
+    { device = "/dev/disk/by-label/root";
       fsType = "btrfs";
       options = [ "subvol=nix" "compress-force=zstd:5" "noatime" ];
     };
 
   fileSystems."/persist" =
-    { device = "/dev/disk-bylabel/root";
+    { device = "/dev/disk/by-label/root";
       fsType = "btrfs";
       neededForBoot = true;
       options = [ "subvol=persist" "compress-force=zstd:5" "noatime" ];
