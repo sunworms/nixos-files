@@ -4,6 +4,7 @@
   imports = [
     ./spotify.nix
     ./discord.nix
+    ./blueman.nix
   ];
 
   home.packages = with pkgs; [
