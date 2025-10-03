@@ -10,11 +10,13 @@ let
   niri-flake = flake-compat { src = sources.niri-flake; };
   home-manager = flake-compat { src = sources.home-manager; };
   nixcord = flake-compat { src = sources.nixcord; };
+  impermanence = flake-compat { src = sources.impermanence; };
 in
 {
   imports =
     [
       niri-flake.defaultNix.nixosModules.niri
+      impermanence.defaultNix.nixosModules.impermanence
       home-manager.defaultNix.nixosModules.home-manager
       {
         home-manager.useGlobalPkgs = true;

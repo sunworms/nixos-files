@@ -25,6 +25,19 @@
       "url": "https://github.com/nix-community/home-manager/archive/004753ae6b04c4b18aa07192c1106800aaacf6c3.tar.gz",
       "hash": "0jyiv7liv4bhspjinpga57wr8iq8vj13hlp96fgx3q3vyr1ggi09"
     },
+    "impermanence": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-community",
+        "repo": "impermanence"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "4b3e914cdf97a5b536a889e939fb2fd2b043a170",
+      "url": "https://github.com/nix-community/impermanence/archive/4b3e914cdf97a5b536a889e939fb2fd2b043a170.tar.gz",
+      "hash": "04l16szln2x0ajq2x799krb53ykvc6vm44x86ppy1jg9fr82161c"
+    },
     "niri-flake": {
       "type": "Git",
       "repository": {
@@ -34,9 +47,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "c7008abf4b9df7f65991176835628949acb426cd",
-      "url": "https://github.com/sodiboo/niri-flake/archive/c7008abf4b9df7f65991176835628949acb426cd.tar.gz",
-      "hash": "13sa8pkg145888b47dl1n3gw0qq113dzm6ffn3w5hanfrz116rf6"
+      "revision": "773aa140dd70ae4eaafc2bcb7f4384ab32115404",
+      "url": "https://github.com/sodiboo/niri-flake/archive/773aa140dd70ae4eaafc2bcb7f4384ab32115404.tar.gz",
+      "hash": "0zh72xxbqa159hsv4f2iafdyy4a0cyigs0czsspm10sbs71p22nz"
     },
     "nixcord": {
       "type": "Git",
@@ -47,9 +60,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "516e2bfa49862842b839164b686d3e9a7c17bed9",
-      "url": "https://github.com/KaylorBen/nixcord/archive/516e2bfa49862842b839164b686d3e9a7c17bed9.tar.gz",
-      "hash": "1fhf7w2zm335pligs4nmcrn7xrsn6lzn8j6y95b4qhwxfzydxm4d"
+      "revision": "d8b534ae9fb1fccf8e808a69c041a3140e894274",
+      "url": "https://github.com/KaylorBen/nixcord/archive/d8b534ae9fb1fccf8e808a69c041a3140e894274.tar.gz",
+      "hash": "0p42x7c3kypwqqb3d7qhz34rpagy1wpxify4dcifnpm731zznj3h"
     },
     "nixpkgs": {
       "type": "Git",
@@ -60,9 +73,9 @@
       },
       "branch": "nixos-unstable",
       "submodules": false,
-      "revision": "e9f00bd893984bc8ce46c895c3bf7cac95331127",
-      "url": "https://github.com/NixOS/nixpkgs/archive/e9f00bd893984bc8ce46c895c3bf7cac95331127.tar.gz",
-      "hash": "0s2mhbrgzxlgkg2yxb0q0hpk8lby1a7w67dxvfmaz4gsmc0bnvfj"
+      "revision": "7df7ff7d8e00218376575f0acdcc5d66741351ee",
+      "url": "https://github.com/NixOS/nixpkgs/archive/7df7ff7d8e00218376575f0acdcc5d66741351ee.tar.gz",
+      "hash": "02w5j06nl2gddh9ifz1647b8bilhzkqg9c93f14cl4k0kq9c8fl1"
     },
     "spicetify-nix": {
       "type": "Git",
@@ -73,9 +86,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "f102312235c3628fc3eddfb8cc6d7d0922427f46",
-      "url": "https://github.com/Gerg-L/spicetify-nix/archive/f102312235c3628fc3eddfb8cc6d7d0922427f46.tar.gz",
-      "hash": "0bjfa29arya584zq50w8h5jihz3gdl4aawyjpln83d38syjjy2kx"
+      "revision": "e13267e8f3eb1664329fcb78a43b38b985f96f6f",
+      "url": "https://github.com/Gerg-L/spicetify-nix/archive/e13267e8f3eb1664329fcb78a43b38b985f96f6f.tar.gz",
+      "hash": "1qriwhfw7hpl2g9nmmrsd8dvs8699sz6hbflvygq2lywv4wa353g"
     }
   },
   "version": 5
