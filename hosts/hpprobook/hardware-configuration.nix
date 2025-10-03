@@ -22,20 +22,20 @@
       btrfs subvolume delete "/mnt/@root/$subvolume"
     done &&
 
-    echo "deleting /root subvolume..." &&
+    echo "deleting /@root subvolume..." &&
     btrfs subvolume delete /mnt/@root
 
-    echo "restoring blank /root subvolume..."
+    echo "restoring blank /@root subvolume..."
     btrfs subvolume snapshot /mnt/@root-blank /mnt/@root
 
     umount /mnt
     
-    mount -o subvol=home /dev/disk/by-label/home /mnt
+    mount -o subvol=@home /dev/disk/by-label/home /mnt
 
-    echo "deleting /home subvolume..." &&
+    echo "deleting /@home subvolume..." &&
     btrfs subvolume delete /mnt/@home
 
-    echo "restoring blank /home subvolume..."
+    echo "restoring blank /@home subvolume..."
     btrfs subvolume snapshot /mnt/@home-blank /mnt/@home
 
     umount /mnt
