@@ -15,18 +15,18 @@
 
   boot.initrd.postDeviceCommands = pkgs.lib.mkBefore ''
     mkdir -p /mnt
-    mount -o subvol=@ /dev/disk/by-label/root /mnt
+    mount -o subvol=@root /dev/disk/by-label/root /mnt
 
-    btrfs subvolume list -o /mnt/@ | cut -f9 -d' ' | while read subvolume; do
+    btrfs subvolume list -o /mnt/@root | cut -f9 -d' ' | while read subvolume; do
       echo "deleting /$subvolume subvolume..."
-      btrfs subvolume delete "/mnt/@/$subvolume"
+      btrfs subvolume delete "/mnt/@root/$subvolume"
     done &&
 
     echo "deleting /root subvolume..." &&
-    btrfs subvolume delete /mnt/@
+    btrfs subvolume delete /mnt/@root
 
     echo "restoring blank /root subvolume..."
-    btrfs subvolume snapshot /mnt/@blank /mnt/@
+    btrfs subvolume snapshot /mnt/@root-blank /mnt/@root
 
     umount /mnt
     
@@ -44,7 +44,7 @@
   fileSystems."/" =
     { device = "/dev/disk/by-label/root";
       fsType = "btrfs";
-      options = [ "subvol=@" "compress-force=zstd:5" "noatime" ];
+      options = [ "subvol=@root" "compress-force=zstd:5" "noatime" ];
     };
 
   fileSystems."/nix" =
