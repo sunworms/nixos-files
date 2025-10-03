@@ -29,6 +29,12 @@
     btrfs subvolume snapshot /mnt/root-blank /mnt/root
 
     umount /mnt
+    
+    mount -o subvol=home /dev/disk/by-label/home /mnt
+    btrfs subvolume delete /mnt/home
+    btrfs subvolume snapshot /mnt/home-blank /mnt/home
+
+    umount /mnt
   '';
 
   fileSystems."/" =
