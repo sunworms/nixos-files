@@ -17,9 +17,9 @@
     mkdir -p /mnt
     mount -o subvol=@root /dev/disk/by-label/root /mnt
 
-    btrfs subvolume list -o /mnt/@root | cut -f9 -d' ' | while read subvolume; do
+    btrfs subvolume list /mnt/@root | cut -f9 -d' ' | while read subvolume; do
       echo "deleting /$subvolume subvolume..."
-      btrfs subvolume delete "/mnt/@root/$subvolume"
+      btrfs subvolume delete "/mnt/$subvolume"
     done &&
 
     echo "deleting /@root subvolume..." &&
