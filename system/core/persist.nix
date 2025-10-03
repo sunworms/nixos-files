@@ -28,6 +28,9 @@
         ".zsh_history"
         ".config/katerc"
         ".config/discord/Cookies"
+        ".config/jamesdsp/audio.conf"
+        ".config/jamesdsp/application.conf"
+        ".config/spotify/prefs"
       ];
     };
   };
