@@ -31,7 +31,11 @@
     umount /mnt
     
     mount -o subvol=home /dev/disk/by-label/home /mnt
+
+    echo "deleting /home subvolume..." &&
     btrfs subvolume delete /mnt/home
+
+    echo "restoring blank /home subvolume..."
     btrfs subvolume snapshot /mnt/home-blank /mnt/home
 
     umount /mnt
