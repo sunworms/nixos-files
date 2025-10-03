@@ -55,7 +55,7 @@
       echo "deleting /home subvolume..." &&
       btrfs subvolume delete /mnt/home
 
-      echo "restoring blank /root subvolume..."
+      echo "restoring blank /home subvolume..."
       btrfs subvolume snapshot /mnt/home-blank /mnt/home
   '';
 
