@@ -38,9 +38,14 @@
         ".local/share/eden"
         ".local/share/azahar-emu"
       ];
-      files = [
-        ".zsh_history"
-      ];
+      files = [];
     };
   };
+
+  systemd.tmpfiles.rules = [
+    "d /home/sunny      0755  sunny users - -"
+    "d /home/sunny/.config 0755 sunny users - -"
+    "d /home/sunny/.local 0755 sunny users - -"
+    "d /home/sunny/.local/share 0755 sunny users - -"
+  ];
 }
