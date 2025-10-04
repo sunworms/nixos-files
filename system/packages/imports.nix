@@ -9,5 +9,6 @@
     ./fonts.nix
     ./portals.nix
     ./programs.nix
+    ./stylix.nix
   ];
 }

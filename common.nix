@@ -11,6 +11,7 @@ let
   home-manager = flake-compat { src = sources.home-manager; };
   nixcord = flake-compat { src = sources.nixcord; };
   impermanence = flake-compat { src = sources.impermanence; };
+  stylix = import sources.stylix;
 in
 {
   imports =
@@ -18,6 +19,7 @@ in
       niri-flake.defaultNix.nixosModules.niri
       impermanence.defaultNix.nixosModules.impermanence
       home-manager.defaultNix.nixosModules.home-manager
+      stylix.nixosModules.stylix
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;

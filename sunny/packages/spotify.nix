@@ -18,6 +18,5 @@ in
        hidePodcasts
        shuffle
      ];
-     theme = spicePkgs.themes.text;
   };
 }
