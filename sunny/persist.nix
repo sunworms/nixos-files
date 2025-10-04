@@ -3,7 +3,6 @@
 {
   home.persistence."/persist/home/sunny" = {
     directories = [
-      "nixos-files"
       "Documents"
       "Games"
       "Music"
