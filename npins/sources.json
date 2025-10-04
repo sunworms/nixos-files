@@ -21,9 +21,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "004753ae6b04c4b18aa07192c1106800aaacf6c3",
-      "url": "https://github.com/nix-community/home-manager/archive/004753ae6b04c4b18aa07192c1106800aaacf6c3.tar.gz",
-      "hash": "0jyiv7liv4bhspjinpga57wr8iq8vj13hlp96fgx3q3vyr1ggi09"
+      "revision": "5f06ceafc6c9b773a776b9195c3f47bbe1defa43",
+      "url": "https://github.com/nix-community/home-manager/archive/5f06ceafc6c9b773a776b9195c3f47bbe1defa43.tar.gz",
+      "hash": "0wannvsdv1q9kd3bwizba34gr4gigpncr5ghs4q9vwp6807qzd10"
     },
     "impermanence": {
       "type": "Git",
@@ -47,9 +47,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "773aa140dd70ae4eaafc2bcb7f4384ab32115404",
-      "url": "https://github.com/sodiboo/niri-flake/archive/773aa140dd70ae4eaafc2bcb7f4384ab32115404.tar.gz",
-      "hash": "0zh72xxbqa159hsv4f2iafdyy4a0cyigs0czsspm10sbs71p22nz"
+      "revision": "069c3908df7e6caf4eae0eaeba9c1a70ec32ca27",
+      "url": "https://github.com/sodiboo/niri-flake/archive/069c3908df7e6caf4eae0eaeba9c1a70ec32ca27.tar.gz",
+      "hash": "154ribjv6r6758ij6mrdrwx1s94g1hqn9wvlpds6v51k13jyl1n1"
     },
     "nixcord": {
       "type": "Git",
@@ -60,9 +60,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "d8b534ae9fb1fccf8e808a69c041a3140e894274",
-      "url": "https://github.com/KaylorBen/nixcord/archive/d8b534ae9fb1fccf8e808a69c041a3140e894274.tar.gz",
-      "hash": "0p42x7c3kypwqqb3d7qhz34rpagy1wpxify4dcifnpm731zznj3h"
+      "revision": "0a5f5936fa40650e3869c705ddbff6e1a72c89db",
+      "url": "https://github.com/KaylorBen/nixcord/archive/0a5f5936fa40650e3869c705ddbff6e1a72c89db.tar.gz",
+      "hash": "1bx3kd2cmkn07mfqlgdlzgpwsqlqc3smwqapav57gf8glxwxy7v3"
     },
     "nixpkgs": {
       "type": "Git",
