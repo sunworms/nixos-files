@@ -26,7 +26,9 @@
         ".config/discord"
         ".config/spotify"
       ];
-      files = [];
+      files = [
+        ".zsh_history"
+      ];
     };
   };
 }
