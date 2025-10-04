@@ -42,6 +42,18 @@
     };
   };
 
+  systemd.services.fix-sunny-perms = {
+    description = "Fix recursive permissions for ~";
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = ''
+        /run/current-system/sw/bin/chown -R sunny:users /home/sunny
+        /run/current-system/sw/bin/chmod -R 0755 /home/sunny
+      '';
+    };
+  };
+
   systemd.services.fix-config-perms = {
     description = "Fix recursive permissions for ~/.config";
     wantedBy = [ "multi-user.target" ];
