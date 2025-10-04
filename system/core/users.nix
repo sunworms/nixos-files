@@ -11,6 +11,7 @@
 
   fileSystems."/home/sunny" = {
     device = "/persist/home/sunny";
+    fsType = "none";
     options = [ "bind" ];
   };
 }
