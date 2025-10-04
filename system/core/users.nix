@@ -11,7 +11,7 @@
   };
 
   programs.zsh.enable = true;
-  prorgams.starship.enable = true;
+  programs.starship.enable = true;
 
   systemd.tmpfiles.rules = [
     "d /home/sunny      0755  sunny users -"
