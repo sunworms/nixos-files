@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./persist.nix
     ./git.nix
     ./rofi/rofi.nix
     ./niri/niri.nix
