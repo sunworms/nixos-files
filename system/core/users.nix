@@ -18,6 +18,4 @@
     fsType = "none";
     options = [ "bind" ];
   };
-
-  programs.fuse.userAllowOther = true;
 }
