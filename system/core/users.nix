@@ -14,6 +14,7 @@
   programs.starship.enable = true;
 
   systemd.tmpfiles.rules = [
-    "d /home/sunny      0755  sunny users -"
+    "d /home/sunny      0755  sunny users - -"
+    "d /home/sunny/.config 0755 sunny users - -"
   ];
 }
