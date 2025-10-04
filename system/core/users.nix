@@ -12,10 +12,4 @@
   systemd.tmpfiles.rules = [
     "d /home/sunny      0755  sunny users -"
   ];
-
-  fileSystems."/home/sunny" = {
-    device = "/persist/home/sunny";
-    fsType = "none";
-    options = [ "bind" ];
-  };
 }
