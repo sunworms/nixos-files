@@ -25,8 +25,6 @@
         ".mozilla"
       ];
       files = [
-        ".p10k.zsh"
-        ".zsh_history"
         ".config/katerc"
         ".config/discord/Cookies"
         ".config/jamesdsp/audio.conf"

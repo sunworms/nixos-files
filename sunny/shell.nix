@@ -20,7 +20,12 @@
       clear-cache = "sudo rm /nix/var/nix/gcroots/auto/* && nh clean all && sudo nix store optimise";
     };
     initContent = ''
-    [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+      eval "$(starship init zsh)"
     '';
+  };
+
+  programs.starship = {
+    enable = true;
+    enableZshIntegration = true;
   };
 }
