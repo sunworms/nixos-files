@@ -9,6 +9,7 @@
       "/var/lib/bluetooth"
       "/var/lib/nixos"
       "/var/lib/systemd"
+      "/home"
     ];
     files = [
       "/etc/machine-id"
