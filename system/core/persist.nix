@@ -25,6 +25,7 @@
         ".mozilla"
         ".config/discord"
         ".config/spotify"
+        ".wine"
       ];
       files = [
         ".zsh_history"
