@@ -8,4 +8,9 @@
   };
 
   programs.zsh.enable = true;
+
+  fileSystems."/home/sunny" = {
+    device = "/persist/home/sunny";
+    options = [ "bind" ];
+  };
 }
