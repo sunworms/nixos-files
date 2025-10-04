@@ -23,12 +23,10 @@
         "Videos"
         "VMs"
         ".mozilla"
+        ".config/discord"
+        ".config/spotify"
       ];
-      files = [
-        ".config/katerc"
-        ".config/discord/Cookies"
-        ".config/spotify/prefs"
-      ];
+      files = [];
     };
   };
 }
