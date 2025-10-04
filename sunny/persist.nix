@@ -2,7 +2,7 @@
 
 {
   home.persistence."/persist/home/sunny" = {
-    directories = [
+    directories = map (dir: { directory = dir; method = "symlink"; }) [
       "Documents"
       "Games"
       "Music"
