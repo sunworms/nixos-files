@@ -9,7 +9,7 @@
       "/var/lib/bluetooth"
       "/var/lib/nixos"
       "/var/lib/systemd"
-      "/home"
+      "/home/sunny"
     ];
     files = [
       "/etc/machine-id"
