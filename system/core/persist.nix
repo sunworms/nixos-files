@@ -22,10 +22,21 @@
         "Pictures"
         "Videos"
         "VMs"
+
         ".mozilla"
+        ".wine"
+
         ".config/discord"
         ".config/spotify"
-        ".wine"
+        ".config/azahar-emu"
+        ".config/PCSX2"
+        ".config/melonDS"
+        ".config/mgba"
+        ".config/ppsspp"
+        ".config/eden"
+
+        ".local/share/eden"
+        ".local/share/azahar-emu"
       ];
       files = [
         ".zsh_history"
