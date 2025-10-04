@@ -21,6 +21,5 @@
       ".config/jamesdsp/application.conf"
       ".config/spotify/prefs"
     ];
-    allowOther = true;
   };
 }
