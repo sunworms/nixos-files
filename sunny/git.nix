@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 let
-  secrets = builtins.fromJSON (builtins.readFile "/home/sunny/nixos-files/secrets/sunny.json");
+  secrets = builtins.fromJSON (builtins.readFile "/home/sunny/Documents/nixos-files/secrets/sunny.json");
 in
 {
   programs.git = {
