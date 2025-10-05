@@ -3,16 +3,9 @@
 {
   services = {
     libinput.enable = true;
-
-    greetd = {
-      enable = true;
-      settings = {
-        default_session = {
-          command = "${pkgs.tuigreet}/bin/tuigreet --cmd niri-session";
-        };
-      };
-    };
+    displayManager.ly.enable = true;
   };
+
   programs.niri = {
     enable = true;
     package = pkgs.niri-unstable;

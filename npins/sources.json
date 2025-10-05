@@ -47,9 +47,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "069c3908df7e6caf4eae0eaeba9c1a70ec32ca27",
-      "url": "https://github.com/sodiboo/niri-flake/archive/069c3908df7e6caf4eae0eaeba9c1a70ec32ca27.tar.gz",
-      "hash": "154ribjv6r6758ij6mrdrwx1s94g1hqn9wvlpds6v51k13jyl1n1"
+      "revision": "3c44a443d159d6a11280225c2b752ae9a27131ec",
+      "url": "https://github.com/sodiboo/niri-flake/archive/3c44a443d159d6a11280225c2b752ae9a27131ec.tar.gz",
+      "hash": "18l22c1l9scfxlp93b6v5pj2vkb61abm5fk8w2qw3xnldl6zy5xd"
     },
     "nixcord": {
       "type": "Git",
@@ -86,9 +86,9 @@
       },
       "branch": "master",
       "submodules": false,
-      "revision": "e13267e8f3eb1664329fcb78a43b38b985f96f6f",
-      "url": "https://github.com/Gerg-L/spicetify-nix/archive/e13267e8f3eb1664329fcb78a43b38b985f96f6f.tar.gz",
-      "hash": "1qriwhfw7hpl2g9nmmrsd8dvs8699sz6hbflvygq2lywv4wa353g"
+      "revision": "c39a58510e55c4970e57176ab14b722a978e5f01",
+      "url": "https://github.com/Gerg-L/spicetify-nix/archive/c39a58510e55c4970e57176ab14b722a978e5f01.tar.gz",
+      "hash": "1crdg85y15r3nqw41acxizpwwb5iaqkv6qx1iv1lyn4lgpg0ngbf"
     },
     "stylix": {
       "type": "Git",
