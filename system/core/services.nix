@@ -40,7 +40,7 @@
   systemd.services."home-manager-sunny" = {
     serviceConfig = {
       Restart = "on-failure";
-      RestartSec = "2s";
+      RestartSec = "5s";
     };
   };
 }
