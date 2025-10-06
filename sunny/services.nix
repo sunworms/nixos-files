@@ -1,6 +1,28 @@
 { config, lib, pkgs, ... }:
 
 {
+  systemd.tmpfiles.rules = [
+    "d /home/sunny 0755 sunny users -"
+    "d /home/sunny/.config 0755 sunny users -"
+    "d /home/sunny/.icons 0755 sunny users -"
+    "d /home/sunny/.themes 0755 sunny users -"
+    "d /home/sunny/.local 0755 sunny users -"
+    "d /home/sunny/.local/share 0755 sunny users -"
+    "d /home/sunny/.local/state 0755 sunny users -"
+  ];
+
+  /*systemd.services.fix-icon-perms = {
+    description = "Fix recursive permissions for ~";
+    wantedBy = [ "multi-user.target" ];
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = ''
+        /run/current-system/sw/bin/chown -R sunny:users /home/sunny/.icons
+        /run/current-system/sw/bin/chmod -R 0755 /home/sunny/.icons
+      '';
+    };
+  };
+
   systemd.services.fix-sunny-perms = {
     description = "Fix recursive permissions for ~";
     wantedBy = [ "multi-user.target" ];
@@ -42,5 +64,5 @@
       Restart = "on-failure";
       RestartSec = "5s";
     };
-  };
+  };*/
 }
