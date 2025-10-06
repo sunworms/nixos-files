@@ -2,13 +2,13 @@
 
 {
   imports = [
-    ./spotify.nix
     ./discord.nix
     ./blueman.nix
   ];
 
   home.packages = with pkgs; [
     firefox
+    youtube-music
 
     wineWow64Packages.stable
     winetricks

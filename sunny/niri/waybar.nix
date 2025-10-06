@@ -23,6 +23,7 @@
         modules-right = [
             "group/info"
             "tray"
+            "mpris"
             "clock"
         ];
 
@@ -165,6 +166,21 @@
           tooltip = false;
         };
 
+        "mpris" = {
+          format = "{player_icon} {dynamic}";
+          format-paused = "{status_icon} <i>{dynamic}</i>";
+          player-icons = {
+            default = "▶";
+          };
+          status-icons = {
+            paused = "⏸";
+          };
+          max-length = 30;
+          on-click = "${pkgs.playerctl}/bin/playerctl play-pause";
+          on-doucle-click = "${pkgs.playerctl}/bin/playerctl next";
+          on-click-right = "${pkgs.playerctl}/bin/playerctl previous";
+        };
+
         "wlr/taskbar" = {
           format = "{icon}";
           icon-size = 14;
@@ -248,6 +264,7 @@
       }
 
       #clock,
+      #mpris.
       #custom-arrow-left,
       #temperature,
       #cava,
@@ -308,6 +325,7 @@
       #taskbar button,
       #image,
       #cava,
+      #mpris,
       #idle_inhibitor,
       #temperature,
       #window,
