@@ -27,7 +27,7 @@
         ".wine"
 
         ".config/discord"
-        ".config/spotify"
+        ".config/YouTube Music"
         ".config/azahar-emu"
         ".config/PCSX2"
         ".config/melonDS"
