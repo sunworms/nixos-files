@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 let
-  secrets = builtins.fromJSON (builtins.readFile "/persist/$HOME/Documents/nixos-files/secrets/common.json");
+  secrets = builtins.fromJSON (builtins.readFile ../../secrets/common.json);
 in
 {
   networking = {
@@ -55,7 +55,7 @@ in
         phase2-auth = "pap";
         system-ca-certs = false;
       };
-    };brainwormsden
+    };
 
     "Airtel_jaya_2754" = {
       connection = {

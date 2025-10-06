@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./services.nix
     ./persist.nix
     ./nix-settings.nix
     ./boot.nix
