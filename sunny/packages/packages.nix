@@ -4,6 +4,7 @@
   imports = [
     ./discord.nix
     ./blueman.nix
+    ./hyfetch.nix
   ];
 
   home.packages = with pkgs; [

@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../../sunny/services.nix
+    ../../sunny/tmpfiles.nix
   ];
 
   users.users.root.hashedPassword = "$6$St8WQDhQfAAapkrb$gXXk/whalGPU7MMH5IlvHdt/pU88In3o8V8e3ftEy9o55zYYcjJnHHR8krxaOUFPOY8WQR2sLyf4h1JHtGIGv/";
