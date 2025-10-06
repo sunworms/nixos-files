@@ -1,5 +1,8 @@
 { config, lib, pkgs, ... }:
 
+let
+  secrets = builtins.fromJSON (builtins.readFile "/persist/$HOME/Documents/nixos-files/secrets/common.json");
+in
 {
   networking = {
     networkmanager.enable = true;
@@ -28,7 +31,7 @@
       };
       wifi-security = {
         key-mgmt = "wpa-psk";
-        psk = "brainworms69$";
+        psk = "${secrets.brainwormsden.psk}";
       };
     };
 
@@ -48,7 +51,7 @@
       "802-1x" = {
         eap = "ttls";
         identity = "mayuri.bhowmick@niser.ac.in";
-        password = "Shashipassword69$";
+        password = "${secrets.eduroam.password}";
         phase2-auth = "pap";
         system-ca-certs = false;
       };
@@ -66,7 +69,7 @@
       };
       wifi-security = {
         key-mgmt = "wpa-psk";
-        psk = "Air@99807";
+        psk = "${secrets.Airtel_jaya_2754.psk}";
       };
     };
   };
