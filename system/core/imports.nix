@@ -3,6 +3,7 @@
 {
   imports = [
     ./persist.nix
+    ./compress.nix
     ./nix-settings.nix
     ./boot.nix
     ./zram.nix
