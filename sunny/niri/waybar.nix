@@ -19,11 +19,10 @@
             "niri/workspaces"
             "wlr/taskbar"
         ];
-        modules-center = [];
+        modules-center = [ "cava" ];
         modules-right = [
             "group/info"
             "tray"
-            "mpris"
             "clock"
         ];
 
@@ -166,7 +165,7 @@
           tooltip = false;
         };
 
-        "mpris" = {
+        /*"mpris" = {
           format = "{player_icon} {dynamic}";
           format-paused = "{status_icon} <i>{dynamic}</i>";
           player-icons = {
@@ -179,6 +178,25 @@
           on-click = "${pkgs.playerctl}/bin/playerctl play-pause";
           on-doucle-click = "${pkgs.playerctl}/bin/playerctl next";
           on-click-right = "${pkgs.playerctl}/bin/playerctl previous";
+        };*/
+
+        "cava" = {
+          framerate = 60;
+          sleep_timer = 5;
+          autosens = 1;
+          bars = 25;
+          lower_cutoff_freq = 50;
+          higher_cutoff_freq = 10000;
+          method = "pipewire";
+          source = "auto";
+          stereo = true;
+          reverse = false;
+          bar_delimiter = 0;
+          monstercat = true;
+          waves = true;
+          noise_reduction = 0.77;
+          input_delay = 1;
+          format-icons= ["▁ " "▂ " "▃ " "▄ " "▅ " "▆ " "▇ " "█ " ];
         };
 
         "wlr/taskbar" = {
@@ -249,7 +267,7 @@
       }
 
       tooltip {
-          background-color: @base01;
+          background-color: @base00;
           font-size: 2px;
           color: @base05;
       }
@@ -264,7 +282,6 @@
       }
 
       #clock,
-      #mpris.
       #custom-arrow-left,
       #temperature,
       #cava,
@@ -298,6 +315,7 @@
           color: @lavender;
           padding: 3px 4px;
           background-color: @base00;
+          border: 0px;
           border-radius: 4px;
       }
 
@@ -324,12 +342,9 @@
 
       #taskbar button,
       #image,
-      #cava,
-      #mpris,
       #idle_inhibitor,
       #temperature,
       #window,
-      #mpris,
       #cpu,
       #backlight,
       #memory,
@@ -342,6 +357,8 @@
       }
 
       #cava {
+          background-color: @base00;
+          color: @base05;
           padding-right: 0px;
           padding-left: 6px;
       }
