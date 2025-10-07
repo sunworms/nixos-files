@@ -20,8 +20,9 @@
             "image"
             "niri/workspaces"
             "wlr/taskbar"
+            "cava"
         ];
-        modules-center = [ "cava" ];
+        modules-center = [];
         modules-right = [
             "group/info"
             "tray"
@@ -186,7 +187,7 @@
           framerate = 60;
           sleep_timer = 5;
           autosens = 1;
-          bars = 20;
+          bars = 30;
           lower_cutoff_freq = 50;
           higher_cutoff_freq = 10000;
           method = "pipewire";
