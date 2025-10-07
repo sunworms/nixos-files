@@ -1,6 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
+  stylix.targets.waybar.enable = false;
+
   programs.waybar = {
     enable = true;
     systemd = {
@@ -184,7 +186,7 @@
           framerate = 60;
           sleep_timer = 5;
           autosens = 1;
-          bars = 25;
+          bars = 20;
           lower_cutoff_freq = 50;
           higher_cutoff_freq = 10000;
           method = "pipewire";
@@ -192,8 +194,8 @@
           stereo = true;
           reverse = false;
           bar_delimiter = 0;
-          monstercat = true;
-          waves = true;
+          monstercat = false;
+          waves = false;
           noise_reduction = 0.77;
           input_delay = 1;
           format-icons= ["▁ " "▂ " "▃ " "▄ " "▅ " "▆ " "▇ " "█ " ];
@@ -315,18 +317,21 @@
           color: @lavender;
           padding: 3px 4px;
           background-color: @base00;
-          border: 0px;
           border-radius: 4px;
       }
 
       #workspaces button.active {
           color: @base05;
           background-color: @base01;
+          border: 0px;
+          border-bottom: 0px;
       }
 
       #workspaces button.urgent {
           background-color: @base01;
           color: @base0A;
+          border: 0px;
+          border-bottom: 0px;
       }
 
       #cava.silent,
@@ -371,8 +376,7 @@
       }
 
       #taskbar button.active {
-          background-color: @base02;
-          border-bottom: 1px solid @base05;
+          background-color: @base03;
       }
 
       #temperature.critical,
