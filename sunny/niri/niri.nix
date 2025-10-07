@@ -4,7 +4,7 @@
   imports = [
     ./waybar.nix
     ./services.nix
-    ./kitty.nix
+    ./foot.nix
   ];
 
   home.packages = with pkgs; [
@@ -105,7 +105,7 @@
 
     binds {
         Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
-        Mod+T { spawn "kitty"; }
+        Mod+T { spawn "${pkgs.foot}/bin/footclient"; }
         Mod+X { spawn "rofi" "-modi" "clipboard:cliphist-rofi-img" "-show" "clipboard" "-show-icons"; }
         Mod+P { spawn "sh" "-c" "niri-color-picker"; }
         Mod+D { spawn "sh" "-c" "pkill -SIGUSR1 waybar"; }

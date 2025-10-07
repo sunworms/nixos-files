@@ -1,8 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  programs.kitty = {
+  programs.foot = {
     enable = true;
-    enableGitIntegration = true;
+    server.enable = true;
   };
 }

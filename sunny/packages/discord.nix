@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  stylix.targets.vencord.enable = false;
+  stylix.targets.nixcord.enable = false;
 
   programs.nixcord = {
     enable = true;

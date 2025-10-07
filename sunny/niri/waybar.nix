@@ -136,7 +136,7 @@
           format-ethernet = "󰈀";
           format-wifi = "󰖩";
           interval = 5;
-          on-click = "${pkgs.kitty}/bin/kitty -e nmtui";
+          on-click = "${pkgs.foot}/bin/foot -e nmtui";
           tooltip-format = "{ifname} {bandwidthDownBytes}";
           tooltip-format-disconnected = "Disconnected";
           tooltip-format-ethernet = "{ifname} {bandwidthDownBytes} 󰈀";

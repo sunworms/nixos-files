@@ -13,7 +13,7 @@
       "run"
       "filebrowser"
     ];
-    terminal = "${pkgs.kitty}/bin/kitty";
+    terminal = "${pkgs.foot}/bin/foot";
     extraConfig = {
       kb-primary-paste = "Control+V,Shift+Insert";
     };
