@@ -10,7 +10,7 @@
       vencord.enable = true;
     };
     quickCss = ''
-    @import url('https://raw.githubusercontent.com/sunworms/D2Coding-Webfont/refs/heads/master/stylesheet.css');
+    @import url('https://raw.githubusercontent.com/sunworms/D2Coding-Webfont/refs/heads/main/stylesheet.css');
 
     /* theme config start */
     body {
