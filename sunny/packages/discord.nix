@@ -1,6 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
+  stylix.targets.vencord.enable = false;
+
   programs.nixcord = {
     enable = true;
     discord = {
