@@ -381,7 +381,7 @@
       }
 
       #taskbar button.active {
-          background-color: @base03;
+          background-color: @base02;
       }
 
       #temperature.critical,
