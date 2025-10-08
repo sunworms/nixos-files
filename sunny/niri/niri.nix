@@ -53,7 +53,7 @@
         }
         focus-ring {
             width 1
-            urgent-color "#e67e80
+            urgent-color "#e67e80"
             active-color "#a7c080"
             inactive-color "9da9a0"
         }
