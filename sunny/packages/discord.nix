@@ -20,13 +20,13 @@
         --border-thickness: 1px;
         --divider-thickness: 2px;
     }
-    :root {
+    /*:root {
         --purple-1: oklch(97% 0.01 265);
         --purple-2: oklch(92% 0.01 265);
         --purple-3: oklch(87% 0.01 265);
         --purple-4: oklch(82% 0.01 265);
         --purple-5: oklch(77% 0.01 265);
-    }
+    }*/
     /* theme config end */
 
     /* reduce context menu padding */
@@ -50,7 +50,7 @@
       disableMinSize = true;
       useQuickCss = true;
       themeLinks = [
-        "https://refact0r.github.io/system24/build/system24.css"
+        "https://raw.githubusercontent.com/refact0r/system24/refs/heads/main/theme/flavors/system24-everforest.theme.css"
         "https://raw.githubusercontent.com/mudrhiod/discord-iconpacks/refs/heads/master/vencord/solar/solar.css"
         "https://raw.githubusercontent.com/mudrhiod/discord-iconpacks/refs/heads/master/vencord/solar/moreicons.css"
       ];

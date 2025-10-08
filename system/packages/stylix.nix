@@ -3,11 +3,11 @@
 {
   stylix = {
     enable = true;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/oxocarbon-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
     polarity = "dark";
     cursor = {
-      name = "Vimix Cursors";
-      package = pkgs.vimix-cursors;
+      name = "everforest-cursors";
+      package = (pkgs.callPackage ../../sunny/derivations/everforest-cursors.nix {} );
       size = 24;
     };
     icons = {

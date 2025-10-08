@@ -11,6 +11,8 @@
     xwayland-satellite-unstable
   ];
 
+  stylix.targets.niri.enable = true;
+
   programs.niri = {
     package = pkgs.niri-unstable;
     config = ''
@@ -80,7 +82,7 @@
     }
 
     cursor {
-        xcursor-theme "Vimix-cursors"
+        xcursor-theme "everforest-cursors"
         xcursor-size 24
     }
 
@@ -100,8 +102,8 @@
     }
 
     spawn-at-startup "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
-    spawn-sh-at-startup "${pkgs.swww}/bin/swww img $HOME/Pictures/walls/oxocarbon.jpg --transition-type outer --transition-duration=1"
-    spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i $HOME/Pictures/walls/nobara-oxocarbon.png"
+    spawn-sh-at-startup "${pkgs.swww}/bin/swww img $HOME/Pictures/walls/japanese_pedestrian_street.png --transition-type outer --transition-duration=1"
+    spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i $HOME/Pictures/walls/mist_forest_1.png"
 
     binds {
         Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
@@ -141,6 +143,7 @@
         Mod+7 { focus-workspace 7; }
         Mod+8 { focus-workspace 8; }
         Mod+9 { focus-workspace 9; }
+        Mod+0 { focus-workspace 10; }
 
         Mod+BracketLeft { consume-or-expel-window-left; }
         Mod+BracketRight { consume-or-expel-window-right; }

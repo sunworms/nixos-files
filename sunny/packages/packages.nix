@@ -5,11 +5,13 @@
     ./discord.nix
     ./blueman.nix
     ./hyfetch.nix
+    ./helix.nix
   ];
 
   home.packages = with pkgs; [
     firefox
     youtube-music
+    mate.atril
 
     wineWow64Packages.stable
     winetricks
@@ -25,9 +27,6 @@
 
     nemo-with-extensions
     xdg-user-dirs
-
-    kdePackages.kate
-    kdePackages.okular
 
     (writeShellScriptBin "niri-color-picker" ''
     niri msg pick-color | awk '$1 == "Hex:" { printf "%s", $2 }' | wl-copy

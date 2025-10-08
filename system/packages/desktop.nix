@@ -25,7 +25,7 @@ let
       Mod+Shift+R { spawn "systemctl" "reboot"; }
     }
     cursor {
-        xcursor-theme "Vimix-cursors"
+        xcursor-theme "everforest-cursors"
         xcursor-size 24
     }
   '';

@@ -1,8 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-  stylix.targets.waybar.enable = false;
-
   programs.waybar = {
     enable = true;
     systemd = {
@@ -148,8 +146,16 @@
           disable-scroll = true;
           format = "{icon}";
           format-icons = {
-            active = "";
-            default = "";
+            "1" = "1";
+		        "2" = "2";
+		        "3" = "3";
+		        "4" = "4";
+		        "5" = "5";
+		        "6" = "6";
+		        "7" = "7";
+		        "8" = "8";
+		        "9" = "9";
+		        "10" = "10";
           };
           tooltip = false;
         };
@@ -236,23 +242,6 @@
     };
 
     style = ''
-      @define-color base00	#161616;
-      @define-color base01	#262626;
-      @define-color base02	#393939;
-      @define-color base03	#525252;
-      @define-color base04	#dde1e6;
-      @define-color base05	#f2f4f8;
-      @define-color base06	#ffffff;
-      @define-color base07	#08bdb9;
-      @define-color base08	#3ddbd9;
-      @define-color base09	#78a9ff;
-      @define-color base0A	#ee5396;
-      @define-color base0B	#33b1ff;
-      @define-color base0C	#ff7eb6;
-      @define-color base0D	#42be65;
-      @define-color base0E	#be95ff;
-      @define-color base0F	#82cfff;
-
       * {
           border: none;
           min-height: 0;
