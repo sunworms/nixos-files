@@ -4,6 +4,7 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
+    image = ../../../../Pictures/walls/raindrops_1.png;
     polarity = "dark";
     cursor = {
       name = "everforest-cursors";

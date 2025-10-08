@@ -34,7 +34,6 @@
     settings = {
       daemonize = true;
       ignore-empty-password = true;
-      image = "$HOME/Pictures/walls/raindrops_1.png";
       font-size = 14;
     };
   };

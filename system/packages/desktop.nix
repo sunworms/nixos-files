@@ -51,7 +51,6 @@ in
         colorVariants = [ "black" ];
       });
     };
-    theme.name = "adw-gtk3";
   };
 
   programs.niri = {
