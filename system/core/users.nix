@@ -10,10 +10,10 @@
   users.users.sunny = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
     hashedPassword = "$6$sOBnL9kL3l2t2OHa$mc8ujER7TQUTbRyv0PVWF8WWQMNY.4UCEBBriE1KRuQfImesk2Ulg5kVRPZY9eKYkNzJ6urcN3oYTkTrh116u1";
   };
 
-  programs.zsh.enable = true;
+  programs.fish.enable = true;
   programs.starship.enable = true;
 }

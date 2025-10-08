@@ -37,6 +37,7 @@
 
         ".local/share/eden"
         ".local/share/azahar-emu"
+        ".local/share/fish"
       ];
       files = [];
     };

@@ -1,6 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
+  stylix.targets.waybar.enable = false;
+  
   programs.waybar = {
     enable = true;
     systemd = {
@@ -193,7 +195,7 @@
           framerate = 60;
           sleep_timer = 5;
           autosens = 1;
-          bars = 30;
+          bars = 15;
           lower_cutoff_freq = 50;
           higher_cutoff_freq = 10000;
           method = "pipewire";
@@ -242,6 +244,17 @@
     };
 
     style = ''
+      @define-color base00 #272e33; @define-color base01 #2e383c;
+      @define-color base02 #414b50; @define-color base03 #859289;
+      @define-color base04 #9da9a0; @define-color base05 #d3c6aa;
+      @define-color base06 #edeada; @define-color base07 #fffbef;
+
+      @define-color base08 #e67e80; @define-color base09 #e69875;
+      @define-color base0A #dbbc7f; @define-color base0B #a7c080;
+      @define-color base0C #83c092; @define-color base0D #7fbbb3;
+      @define-color base0E #d699b6; @define-color base0F #9da9a0;
+
+
       * {
           border: none;
           min-height: 0;
@@ -328,6 +341,8 @@
       #workspaces button.empty {
           background-color: transparent;
           color: transparent;
+          border: 0px;
+          border-bottom: 0px;
       }
 
       #clock {
