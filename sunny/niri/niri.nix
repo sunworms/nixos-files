@@ -53,9 +53,9 @@
         }
         focus-ring {
             width 1
-            urgent-color "#ee5396"
-            active-color "#f2f4f8"
-            inactive-color "#dde1e6"
+            urgent-color "#e67e80
+            active-color "#a7c080"
+            inactive-color "9da9a0"
         }
         border { off; }
         tab-indicator {
