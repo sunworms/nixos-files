@@ -1,19 +1,23 @@
 { stdenvNoCC,
   lib,
-  fetchurl,
+  fetchFromGitHub,
   python3Packages,
   autoPatchelfHook,
-  pkgs
+  pkgs,
 }:
 
 stdenvNoCC.mkDerivation rec {
   pname = "ice-ssb";
   version = "6.0.8";
 
-  src = fetchurl {
-    url = "https://github.com/peppermintos/ice/archive/v${version}.tar.gz";
-    hash = "sha256-l477L7hEf9HcletclL/4cq/h5D6aaV7vd/JojYL/kLA=";
+  src = fetchFromGitHub {
+    owner = "peppermintos";
+    repo = "ice";
+    tag = "v${version}";
+    hash = "sha256-gVcnNJEzU2rhzyBdO5HJUvh+moQ3q4AxNI4KcSboX5Q=";
   };
+
+  patches = [ ./browser-paths.patch ];
 
   nativeBuildInputs = [
     autoPatchelfHook
@@ -33,28 +37,32 @@ stdenvNoCC.mkDerivation rec {
     requests
   ];
 
-  sourceRoot = ".";
-
   postPatch = ''
-    substituteInPlace ice-${version}/usr/bin/ice \
-      --replace "/usr/share/pixmaps/ice.png" "$out/share/pixmaps/ice.png" \
-      --replace "/usr/bin/firefox" "${pkgs.firefox}/bin/firefox"
-    substituteInPlace ice-${version}/usr/bin/ice-firefox \
-      --replace "/usr/share/pixmaps/ice.png" "$out/share/pixmaps/ice.png" \
-      --replace "/usr/bin/firefox" "${pkgs.firefox}/bin/firefox"
+    substituteInPlace usr/bin/ice \
+      --replace "/usr/share/pixmaps/ice.png" "$out/share/pixmaps/ice.png"
+    substituteInPlace usr/bin/ice-firefox \
+      --replace "/usr/share/pixmaps/ice.png" "$out/share/pixmaps/ice.png"
   '';
 
   installPhase = ''
     mkdir -p $out/bin
-    cp -r -f ice-${version}/usr/bin/* $out/bin
+    cp -r -f usr/bin/* $out/bin
     chmod +x $out/bin/*
 
     mkdir -p $out/lib
-    cp -r -f ice-${version}/usr/lib/* $out/lib
+    cp -r -f usr/lib/* $out/lib
 
     mkdir -p $out/share
-    cp -r -f ice-${version}/usr/share/* $out/share
+    cp -r -f usr/share/* $out/share
 
     wrapPythonProgramsIn $out/bin "$propagatedBuildInputs"
   '';
+
+  meta = {
+    description = "Simple Site Specific Browser (SSB) manager";
+    homepage = "https://github.com/peppermintos/ice";
+    license = lib.licenses.gpl2;
+    platforms = lib.platforms.linux;
+    maintainers = with lib.maintainers; [ sunworms ];
+  };
 }
