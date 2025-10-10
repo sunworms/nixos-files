@@ -1,11 +1,12 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   programs.fish = {
     enable = true;
     shellAliases = {
+      zed = "zeditor";
       grep = "grep --color=auto";
-      warpon ="warp-cli connect";
+      warpon = "warp-cli connect";
       warpoff = "warp-cli disconnect && sudo systemctl restart systemd-resolved";
       update-sys = "npins update && sudo nixos-rebuild switch -I nixpkgs=$(nix eval --raw -f ./npins nixpkgs.outPath) -I nixos-config=./hosts/$(hostname)/configuration.nix";
       rebuild-switch = "sudo nixos-rebuild switch -I nixpkgs=$(nix eval --raw -f ./npins nixpkgs.outPath) -I nixos-config=./hosts/$(hostname)/configuration.nix";

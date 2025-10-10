@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   stylix.targets.nixcord.enable = false;
@@ -10,41 +10,41 @@
       vencord.enable = true;
     };
     quickCss = ''
-    @import url('https://raw.githubusercontent.com/sunworms/D2Coding-Webfont/refs/heads/main/stylesheet.css');
+      @import url('https://raw.githubusercontent.com/sunworms/D2Coding-Webfont/refs/heads/main/stylesheet.css');
 
-    /* theme config start */
-    body {
-        --font: 'D2CodingLigature Nerd Font';
-        font-weight: 400;
-        --code-font: 'D2CodingLigature Nerd Font';
-        --border-thickness: 1px;
-        --divider-thickness: 2px;
-    }
-    /*:root {
-        --purple-1: oklch(97% 0.01 265);
-        --purple-2: oklch(92% 0.01 265);
-        --purple-3: oklch(87% 0.01 265);
-        --purple-4: oklch(82% 0.01 265);
-        --purple-5: oklch(77% 0.01 265);
-    }*/
-    /* theme config end */
+      /* theme config start */
+      body {
+          --font: 'D2CodingLigature Nerd Font';
+          font-weight: 400;
+          --code-font: 'D2CodingLigature Nerd Font';
+          --border-thickness: 1px;
+          --divider-thickness: 2px;
+      }
+      /*:root {
+          --purple-1: oklch(97% 0.01 265);
+          --purple-2: oklch(92% 0.01 265);
+          --purple-3: oklch(87% 0.01 265);
+          --purple-4: oklch(82% 0.01 265);
+          --purple-5: oklch(77% 0.01 265);
+      }*/
+      /* theme config end */
 
-    /* reduce context menu padding */
-    .scroller_c1e9c4{
-        margin: -4px;
-        &::after,.separator_c1e9c4 {
-            margin: 1px 8px !important;
-        }
-        &::after,.wrapper_f563df {
-            padding: 2px !important;
-        }
-        &::after,.item_c1e9c4{
-            /* min-height is 32px as default, change value for desired look */
-            min-height: 32;
-            /* padding is 4px 8px as default, change value for desired look */
-            padding: 4px 8px;
-        }
-    }
+      /* reduce context menu padding */
+      .scroller_c1e9c4{
+          margin: -4px;
+          &::after,.separator_c1e9c4 {
+              margin: 1px 8px !important;
+          }
+          &::after,.wrapper_f563df {
+              padding: 2px !important;
+          }
+          &::after,.item_c1e9c4{
+              /* min-height is 32px as default, change value for desired look */
+              min-height: 32;
+              /* padding is 4px 8px as default, change value for desired look */
+              padding: 4px 8px;
+          }
+      }
     '';
     config = {
       disableMinSize = true;

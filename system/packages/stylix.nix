@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   stylix = {
@@ -8,15 +8,17 @@
     polarity = "dark";
     cursor = {
       name = "everforest-cursors";
-      package = (pkgs.callPackage ../../sunny/derivations/everforest-cursors.nix {} );
+      package = (pkgs.callPackage ../../sunny/derivations/everforest-cursors.nix { });
       size = 24;
     };
     icons = {
       enable = true;
       dark = "Tela circle black dark";
-      package = (pkgs.tela-circle-icon-theme.override {
-        colorVariants = [ "black" ];
-      });
+      package = (
+        pkgs.tela-circle-icon-theme.override {
+          colorVariants = [ "black" ];
+        }
+      );
     };
     fonts = {
       monospace = {

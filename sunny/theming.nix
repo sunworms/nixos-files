@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -12,9 +12,11 @@
     enable = true;
     iconTheme = {
       name = "Tela-circle-black-dark";
-      package = (pkgs.tela-circle-icon-theme.override {
-        colorVariants = [ "black" ];
-      });
+      package = (
+        pkgs.tela-circle-icon-theme.override {
+          colorVariants = [ "black" ];
+        }
+      );
     };
   };
 }

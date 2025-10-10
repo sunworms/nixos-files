@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 {
   imports = [
     ./scripts.nix
@@ -13,7 +13,7 @@
       "run"
       "filebrowser"
     ];
-    terminal = "${pkgs.foot}/bin/foot";
+    terminal = "${pkgs.foot}/bin/footclient";
     extraConfig = {
       kb-primary-paste = "Control+V,Shift+Insert";
     };

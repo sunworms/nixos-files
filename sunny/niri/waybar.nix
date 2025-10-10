@@ -1,8 +1,8 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   stylix.targets.waybar.enable = false;
-  
+
   programs.waybar = {
     enable = true;
     systemd = {
@@ -18,16 +18,16 @@
         start_hidden = true;
 
         modules-left = [
-            "image"
-            "niri/workspaces"
-            "wlr/taskbar"
-            "cava"
+          "image"
+          "niri/workspaces"
+          "wlr/taskbar"
+          "cava"
         ];
-        modules-center = [];
+        modules-center = [ ];
         modules-right = [
-            "group/info"
-            "tray"
-            "clock"
+          "group/info"
+          "tray"
+          "clock"
         ];
 
         "group/info" = {
@@ -58,7 +58,19 @@
         "backlight" = {
           device = "intel_backlight";
           format = "{icon}";
-          format-icons= [ "󰛩" "󱩎" "󱩏" "󱩐" "󱩑" "󱩒" "󱩓" "󱩔" "󱩕" "󱩖" "󰛨" ];
+          format-icons = [
+            "󰛩"
+            "󱩎"
+            "󱩏"
+            "󱩐"
+            "󱩑"
+            "󱩒"
+            "󱩓"
+            "󱩔"
+            "󱩕"
+            "󱩖"
+            "󰛨"
+          ];
           on-scroll-down = "${pkgs.brightnessctl}/bin/brightnessctl set 1%-";
           on-scroll-up = "${pkgs.brightnessctl}/bin/brightnessctl set +1%";
           tooltip-format = "{percent}%";
@@ -66,7 +78,19 @@
 
         "battery" = {
           format = "{icon}";
-          format-icons = [ "󰂎" "󰁺" "󰁻" "󰁼" "󰁽" "󰁾" "󰁿" "󰂀" "󰂁" "󰂂" "󰁹" ];
+          format-icons = [
+            "󰂎"
+            "󰁺"
+            "󰁻"
+            "󰁼"
+            "󰁽"
+            "󰁾"
+            "󰁿"
+            "󰂀"
+            "󰂁"
+            "󰂂"
+            "󰁹"
+          ];
           interval = 5;
           states = {
             critical = 15;
@@ -150,15 +174,15 @@
           format = "{icon}";
           format-icons = {
             "1" = "1";
-		        "2" = "2";
-		        "3" = "3";
-		        "4" = "4";
-		        "5" = "5";
-		        "6" = "6";
-		        "7" = "7";
-		        "8" = "8";
-		        "9" = "9";
-		        "10" = "10";
+            "2" = "2";
+            "3" = "3";
+            "4" = "4";
+            "5" = "5";
+            "6" = "6";
+            "7" = "7";
+            "8" = "8";
+            "9" = "9";
+            "10" = "10";
           };
           tooltip = false;
         };
@@ -166,7 +190,13 @@
         "temperature" = {
           critical-threshold = 90;
           format = "{icon}";
-          format-icons = [ "" "" "" "" "" ];
+          format-icons = [
+            ""
+            ""
+            ""
+            ""
+            ""
+          ];
           interval = 5;
           warning-threshold = 75;
         };
@@ -177,20 +207,22 @@
           tooltip = false;
         };
 
-        /*"mpris" = {
-          format = "{player_icon} {dynamic}";
-          format-paused = "{status_icon} <i>{dynamic}</i>";
-          player-icons = {
-            default = "▶";
+        /*
+          "mpris" = {
+            format = "{player_icon} {dynamic}";
+            format-paused = "{status_icon} <i>{dynamic}</i>";
+            player-icons = {
+              default = "▶";
+            };
+            status-icons = {
+              paused = "⏸";
+            };
+            max-length = 30;
+            on-click = "${pkgs.playerctl}/bin/playerctl play-pause";
+            on-doucle-click = "${pkgs.playerctl}/bin/playerctl next";
+            on-click-right = "${pkgs.playerctl}/bin/playerctl previous";
           };
-          status-icons = {
-            paused = "⏸";
-          };
-          max-length = 30;
-          on-click = "${pkgs.playerctl}/bin/playerctl play-pause";
-          on-doucle-click = "${pkgs.playerctl}/bin/playerctl next";
-          on-click-right = "${pkgs.playerctl}/bin/playerctl previous";
-        };*/
+        */
 
         "cava" = {
           framerate = 60;
@@ -208,7 +240,16 @@
           waves = false;
           noise_reduction = 0.77;
           input_delay = 1;
-          format-icons= ["▁ " "▂ " "▃ " "▄ " "▅ " "▆ " "▇ " "█ " ];
+          format-icons = [
+            "▁ "
+            "▂ "
+            "▃ "
+            "▄ "
+            "▅ "
+            "▆ "
+            "▇ "
+            "█ "
+          ];
         };
 
         "wlr/taskbar" = {
@@ -222,7 +263,11 @@
 
         "wireplumber#sink" = {
           format = "{icon}";
-          format-icons = [ "󰕿" "󰖀" "󰕾" ];
+          format-icons = [
+            "󰕿"
+            "󰖀"
+            "󰕾"
+          ];
           format-muted = "󰝟";
           max-volume = 200;
           on-click = "${pkgs.pavucontrol}/bin/pavucontrol";

@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ ... }:
 
 let
   sources = import ./npins;
@@ -14,22 +14,21 @@ let
   stylix = import sources.stylix;
 in
 {
-  imports =
-    [
-      niri-flake.defaultNix.nixosModules.niri
-      impermanence.defaultNix.nixosModules.impermanence
-      home-manager.defaultNix.nixosModules.home-manager
-      stylix.nixosModules.stylix
-      {
-        home-manager.useGlobalPkgs = true;
-        home-manager.useUserPackages = true;
-        home-manager.users.sunny = {
-          imports = [
-            ./sunny/home.nix
-            spicetify-nix.defaultNix.homeManagerModules.spicetify
-            nixcord.homeModules.nixcord
-          ];
-        };
-      }
-    ];
+  imports = [
+    niri-flake.defaultNix.nixosModules.niri
+    impermanence.defaultNix.nixosModules.impermanence
+    home-manager.defaultNix.nixosModules.home-manager
+    stylix.nixosModules.stylix
+    {
+      home-manager.useGlobalPkgs = true;
+      home-manager.useUserPackages = true;
+      home-manager.users.sunny = {
+        imports = [
+          ./sunny/home.nix
+          spicetify-nix.defaultNix.homeManagerModules.spicetify
+          nixcord.homeModules.nixcord
+        ];
+      };
+    }
+  ];
 }

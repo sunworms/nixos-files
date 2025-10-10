@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   xdg.desktopEntries = {
@@ -11,7 +11,10 @@
       icon = "pcsx2";
       terminal = false;
       startupNotify = true;
-      categories = [ "Game" "Emulator" ];
+      categories = [
+        "Game"
+        "Emulator"
+      ];
     };
   };
 }

@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ ... }:
 
 {
   environment.persistence."/persist" = {
@@ -38,8 +38,9 @@
         ".local/share/eden"
         ".local/share/azahar-emu"
         ".local/share/fish"
+        ".local/share/zed"
       ];
-      files = [];
+      files = [ ];
     };
   };
 }

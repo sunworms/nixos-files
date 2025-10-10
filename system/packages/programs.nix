@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 let
   sources = import ../../npins;
@@ -21,11 +21,17 @@ in
 
   hardware.graphics = {
     enable = true;
-    extraPackages = with pkgs; [ vpl-gpu-rt vaapiIntel intel-media-driver ];
+    extraPackages = with pkgs; [
+      vpl-gpu-rt
+      vaapiIntel
+      intel-media-driver
+    ];
   };
 
   environment.systemPackages = with pkgs; [
     nh
+    nil
+    nixd
     npins
     git-crypt
     fastfetch
@@ -34,5 +40,8 @@ in
     gnome-keyring
   ];
 
-  environment.pathsToLink = [ "/share/xdg-desktop-portal" "/share/applications" ];
+  environment.pathsToLink = [
+    "/share/xdg-desktop-portal"
+    "/share/applications"
+  ];
 }

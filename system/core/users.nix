@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -9,7 +9,10 @@
 
   users.users.sunny = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+    ];
     shell = pkgs.fish;
     hashedPassword = "$6$sOBnL9kL3l2t2OHa$mc8ujER7TQUTbRyv0PVWF8WWQMNY.4UCEBBriE1KRuQfImesk2Ulg5kVRPZY9eKYkNzJ6urcN3oYTkTrh116u1";
   };
