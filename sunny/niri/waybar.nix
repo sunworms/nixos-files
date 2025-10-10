@@ -15,6 +15,7 @@
         position = "bottom";
         spacing = 0;
         height = 0;
+        start_hidden = true;
 
         modules-left = [
             "image"

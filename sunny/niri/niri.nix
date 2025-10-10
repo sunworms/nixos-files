@@ -104,7 +104,6 @@
     spawn-at-startup "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
     spawn-sh-at-startup "${pkgs.swww}/bin/swww img $HOME/Pictures/walls/mist_forest_1.png --transition-duration 0.5"
     spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i $HOME/Pictures/walls/japanese_pedestrian_street.png"
-    spawn-sh-at-startup "sleep 1 && waybar-toggle"
     
     binds {
         Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
