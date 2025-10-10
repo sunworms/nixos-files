@@ -5,12 +5,12 @@
     ./discord.nix
     ./blueman.nix
     ./hyfetch.nix
+    ./spotify.nix
     ./helix.nix
   ];
 
   home.packages = with pkgs; [
     firefox
-    youtube-music
     mate.atril
 
     wineWow64Packages.stable

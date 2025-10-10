@@ -9,7 +9,7 @@ let
   spicetify-nix = flake-compat { src = sources.spicetify-nix; };
   niri-flake = flake-compat { src = sources.niri-flake; };
   home-manager = flake-compat { src = sources.home-manager; };
-  nixcord = flake-compat { src = sources.nixcord; };
+  nixcord = import sources.nixcord;
   impermanence = flake-compat { src = sources.impermanence; };
   stylix = import sources.stylix;
 in
@@ -27,7 +27,7 @@ in
           imports = [
             ./sunny/home.nix
             spicetify-nix.defaultNix.homeManagerModules.spicetify
-            nixcord.defaultNix.homeModules.nixcord
+            nixcord.homeModules.nixcord
           ];
         };
       }
