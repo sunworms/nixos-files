@@ -102,15 +102,16 @@
     }
 
     spawn-at-startup "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
-    spawn-sh-at-startup "${pkgs.swww}/bin/swww img $HOME/Pictures/walls/japanese_pedestrian_street.png --transition-type outer --transition-duration=1"
-    spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i $HOME/Pictures/walls/mist_forest_1.png"
-
+    spawn-sh-at-startup "${pkgs.swww}/bin/swww img $HOME/Pictures/walls/mist_forest_1.png --transition-duration 0.5"
+    spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i $HOME/Pictures/walls/japanese_pedestrian_street.png"
+    spawn-sh-at-startup "sleep 1 && waybar-toggle"
+    
     binds {
         Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
         Mod+T { spawn "${pkgs.foot}/bin/footclient"; }
         Mod+X { spawn "rofi" "-modi" "clipboard:cliphist-rofi-img" "-show" "clipboard" "-show-icons"; }
         Mod+P { spawn "sh" "-c" "niri-color-picker"; }
-        Mod+D { spawn "sh" "-c" "pkill -SIGUSR1 waybar"; }
+        Mod+D { spawn "sh" "-c" "pkill -USR1 waybar"; }
         Mod+A { spawn "rofi" "-show" "drun"; }
         Mod+Alt+L allow-when-locked=true { spawn "swaylock"; }
         Alt+Tab { spawn "rofi" "-show" "window"; }
@@ -125,6 +126,8 @@
         XF86MonBrightnessDown allow-when-locked=true { spawn "${pkgs.brightnessctl}/bin/brightnessctl" "set" "5%-"; }
         XF86MonBrightnessUp allow-when-locked=true { spawn "${pkgs.brightnessctl}/bin/brightnessctl" "set" "5%+"; }
 
+        Mod+O repeat=false { toggle-overview; }
+        
         Ctrl+Alt+Delete { quit; }
         Mod+Shift+E { quit; }
 
@@ -199,7 +202,6 @@
         Mod+L { focus-column-right; }
         Mod+Left { focus-column-left; }
         Mod+Minus { set-column-width "-10%"; }
-        Mod+O repeat=false { toggle-overview; }
         "Mod+Page_Down" { focus-workspace-down; }
         "Mod+Page_Up" { focus-workspace-up; }
         Mod+Period { expel-window-from-column; }
@@ -265,7 +267,7 @@
     }
 
     layer-rule {
-        match namespace="^wallpaper$"
+        match namespace="^swww-daemon$"
         place-within-backdrop true
     }
 
