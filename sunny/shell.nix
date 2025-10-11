@@ -5,6 +5,8 @@
     enable = true;
     shellAbbrs = {
       zed = "zeditor";
+      nixpkgs = "-I nixpkgs=$(nix eval --raw -f ./npins nixpkgs.outPath)";
+      nixconfig = "-I nixos-config=./hosts/$(hostname)/configuration.nix";
     };
     shellAliases = {
       grep = "grep --color=auto";
