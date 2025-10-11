@@ -77,6 +77,19 @@
       "url": "https://github.com/NixOS/nixpkgs/archive/7df7ff7d8e00218376575f0acdcc5d66741351ee.tar.gz",
       "hash": "02w5j06nl2gddh9ifz1647b8bilhzkqg9c93f14cl4k0kq9c8fl1"
     },
+    "nur": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "nix-community",
+        "repo": "nur"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "7c33fa4c49f75a92978cc121370acd8cd047bbed",
+      "url": "https://github.com/nix-community/nur/archive/7c33fa4c49f75a92978cc121370acd8cd047bbed.tar.gz",
+      "hash": "0rk07x62zvgwf4gzasds9sb16lzanxr2f0i49rm8j1wnaywksawa"
+    },
     "spicetify-nix": {
       "type": "Git",
       "repository": {

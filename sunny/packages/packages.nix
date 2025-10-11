@@ -7,10 +7,10 @@
     ./hyfetch.nix
     ./spotify.nix
     ./zed-editor.nix
+    ./firefox.nix
   ];
 
   home.packages = with pkgs; [
-    firefox
     mate.atril
     pavucontrol
 
