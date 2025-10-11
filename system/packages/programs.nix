@@ -36,6 +36,7 @@ in
     nh
     nil
     nixd
+    tree
     npins
     git-crypt
     fastfetch
