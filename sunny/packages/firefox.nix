@@ -1,5 +1,8 @@
 { pkgs, lib, ... }:
 
+let
+  firefoxBg = ../../assets/walls/circuit.jpg;
+in
 {
   stylix.targets.firefox = {
     enable = true;
@@ -14,13 +17,28 @@
     profiles."sunny" = {
       id = 0;
       isDefault = true;
-      settings = {
-        extensions.autoDisableScopes = 0;
-      };
       search = {
         default = "google";
-        privateDefault = "startpage";
+        privateDefault = "https://www.startpage.com/sp/search";
       };
+      settings = {
+        extensions.autoDisableScopes = 0;
+        toolkit.legacyUserProfileCustomizations.stylesheets = true;
+      };
+      extraConfig = ''
+        user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+        user_pref("extensions.autoDisableScopes", 0);
+      '';
+      userContent = ''
+        @-moz-document url-prefix(about:home), url-prefix(about:newtab), url-prefix(about:blank), url-prefix(about:privatebrowsing) {
+          body {
+            background-image: url(file://${firefoxBg}) !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-attachment: fixed !important;
+          }
+      '';
       extensions = {
         force = true;
         packages = with pkgs.nur.repos.rycee.firefox-addons; [
@@ -68,5 +86,5 @@
       };
     };
   };
-  home.file.".mozilla/firefox/sunny/search.json.mozlz4".force = lib.mkForce (true);
+  home.file.".mozilla/firefox/sunny/search.json.mozlz4".force = lib.mkForce true;
 }

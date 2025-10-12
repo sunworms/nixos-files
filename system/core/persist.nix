@@ -25,7 +25,7 @@
         "Videos"
         "VMs"
 
-        ".mozilla"
+        ".mozilla/firefox/sunny"
         ".wine"
 
         ".config/discord"

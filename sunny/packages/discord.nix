@@ -1,5 +1,8 @@
 { ... }:
 
+let
+  discordBg = ../../assets/walls/circuit.jpg;
+in
 {
   stylix.targets.nixcord.enable = false;
 
