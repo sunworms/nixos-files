@@ -2,15 +2,12 @@
 
 let
   sources = import ./npins;
-  pkgs = import sources.nixpkgs {
-    system = "x86_64-linux";
-  };
   flake-compat = import sources.flake-compat;
   spicetify-nix = flake-compat { src = sources.spicetify-nix; };
   niri-flake = flake-compat { src = sources.niri-flake; };
   home-manager = flake-compat { src = sources.home-manager; };
-  nixcord = import sources.nixcord;
   impermanence = flake-compat { src = sources.impermanence; };
+  nixcord = import sources.nixcord;
   stylix = import sources.stylix;
 in
 {

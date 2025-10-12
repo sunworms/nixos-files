@@ -1,17 +1,12 @@
 { ... }:
 
-let
-  discordBg = ../../assets/walls/circuit.jpg;
-in
 {
   stylix.targets.nixcord.enable = false;
 
   programs.nixcord = {
     enable = true;
-    discord = {
-      enable = true;
-      vencord.enable = true;
-    };
+    discord.enable = false;
+    vesktop.enable = true;
     quickCss = ''
       @import url('https://raw.githubusercontent.com/sunworms/D2Coding-Webfont/refs/heads/main/stylesheet.css');
 
@@ -145,6 +140,9 @@ in
         voiceDownload.enable = true;
         voiceMessages.enable = true;
         volumeBooster.enable = true;
+        webContextMenus.enable = true;
+        webKeybinds.enable = true;
+        webScreenShareFixes.enable = true;
         youtubeAdblock.enable = true;
       };
     };

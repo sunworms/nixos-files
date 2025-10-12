@@ -13,10 +13,9 @@
     };
     icons = {
       enable = true;
-      dark = "Tela circle black dark";
       package = (
-        pkgs.tela-circle-icon-theme.override {
-          colorVariants = [ "black" ];
+        pkgs.papirus-icon-theme.override {
+          color = "green";
         }
       );
     };

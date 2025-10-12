@@ -3,9 +3,9 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../common.nix
-    ../../system/core/imports.nix
-    ../../system/packages/imports.nix
+    ../../default.nix
+    ../../system/core/hpprobook.nix
+    ../../system/packages/hpprobook.nix
   ];
 
   networking.hostName = "hpprobook";

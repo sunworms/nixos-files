@@ -11,10 +11,10 @@
   gtk = {
     enable = true;
     iconTheme = {
-      name = "Tela-circle-black-dark";
+      name = "Papirus-Dark";
       package = (
-        pkgs.tela-circle-icon-theme.override {
-          colorVariants = [ "black" ];
+        pkgs.papirus-icon-theme.override {
+          color = "green";
         }
       );
     };
