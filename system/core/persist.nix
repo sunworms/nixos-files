@@ -28,7 +28,7 @@
         ".mozilla/firefox/sunny"
         ".wine"
 
-        ".config/vesktop"
+        ".config/discord"
         ".config/spotify"
         ".config/azahar-emu"
         ".config/PCSX2"
