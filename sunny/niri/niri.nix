@@ -1,5 +1,9 @@
 { pkgs, ... }:
 
+let
+  japanese = ../../assets/walls/japanese_pedestrian_street.jpg;
+  mist = ../../assets/walls/mist_forest.jpg;
+in
 {
   imports = [
     ./waybar.nix
@@ -102,8 +106,8 @@
       }
 
       spawn-at-startup "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
-      spawn-sh-at-startup "${pkgs.swww}/bin/swww img $HOME/Pictures/walls/mist_forest_1.png --transition-duration 0.5"
-      spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i $HOME/Pictures/walls/japanese_pedestrian_street.png"
+      spawn-sh-at-startup "${pkgs.swww}/bin/swww img ${japanese} --transition-duration 0.5"
+      spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i ${mist}"
 
       binds {
           Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
@@ -266,7 +270,7 @@
       }
 
       layer-rule {
-          match namespace="^swww-daemon$"
+          match namespace="^wallpaper$"
           place-within-backdrop true
       }
 

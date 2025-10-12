@@ -1,5 +1,8 @@
 { pkgs, ... }:
 
+let
+  nixos = ../../assets/icons/NixOS.png;
+in
 {
   stylix.targets.waybar.enable = false;
 
@@ -143,7 +146,7 @@
         "image" = {
           on-click = "exec ${pkgs.rofi}/bin/rofi -show drun -location 7";
           on-click-right = "exec ${pkgs.rofi}/bin/rofi -show power-menu -modi power-menu:rofi-power-menu -location 7";
-          path = "/home/sunny/Pictures/walls/NixOS.png";
+          path = "${nixos}";
           size = 14;
         };
 

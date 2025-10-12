@@ -4,11 +4,11 @@
   stylix = {
     enable = true;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/everforest-dark-hard.yaml";
-    image = ../../../../Pictures/walls/raindrops_1.png;
+    image = ../../assets/walls/raindrops.jpg;
     polarity = "dark";
     cursor = {
       name = "everforest-cursors";
-      package = (pkgs.callPackage ../../sunny/derivations/everforest-cursors.nix { });
+      package = (pkgs.callPackage ../derivations/everforest-cursors.nix { });
       size = 24;
     };
     icons = {
@@ -25,8 +25,11 @@
         package = pkgs.nerd-fonts.d2coding;
         name = "D2CodingLigature Nerd Font Mono";
       };
-      serif = config.stylix.fonts.monospace;
-      sansSerif = config.stylix.fonts.monospace;
+      serif = {
+        package = pkgs.nerd-fonts.d2coding;
+        name = "D2CodingLigature Nerd Font Propo";
+      };
+      sansSerif = config.stylix.fonts.serif;
       sizes = {
         applications = 12;
         desktop = 11;

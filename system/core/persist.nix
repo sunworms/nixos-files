@@ -9,6 +9,7 @@
       "/var/lib/bluetooth"
       "/var/lib/nixos"
       "/var/lib/systemd"
+      "/var/lib/cloudflare-warp"
     ];
     files = [
       "/etc/machine-id"
@@ -16,6 +17,7 @@
 
     users.sunny = {
       directories = [
+        "nixos-files"
         "Documents"
         "Games"
         "Music"
@@ -39,6 +41,7 @@
         ".local/share/azahar-emu"
         ".local/share/fish"
         ".local/share/zed"
+        ".local/share/warp"
       ];
       files = [ ];
     };
