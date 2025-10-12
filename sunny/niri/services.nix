@@ -59,20 +59,15 @@
 
     Service = {
       ExecStart = pkgs.writeShellScript "niri-waybar-toggle" ''
-        # Ignore SIGUSR1 so we don't get killed when toggling waybar
         trap "" USR1
 
         niri msg --json event-stream | while read -r event; do
-            # Check if the event is an overview open/close event
             if echo "$event" | jq -e '.OverviewOpenedOrClosed' > /dev/null 2>&1; then
-                # Get the overview state (true = open, false = closed)
                 is_open=$(echo "$event" | jq -r '.OverviewOpenedOrClosed.is_open')
 
                 if [ "$is_open" = "true" ]; then
-                    # Overview opened - show waybar
                     pkill -USR1 waybar
                 else
-                    # Overview closed - hide waybar
                     pkill -USR1 waybar
                 fi
             fi
