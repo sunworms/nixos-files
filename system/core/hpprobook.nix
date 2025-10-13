@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./sops.nix
     ./persist.nix
     ./compress.nix
     ./nix-settings.nix

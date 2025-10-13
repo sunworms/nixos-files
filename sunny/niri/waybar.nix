@@ -19,6 +19,7 @@ in
         spacing = 0;
         height = 0;
         start_hidden = true;
+        exclusive = false;
 
         modules-left = [
           "image"

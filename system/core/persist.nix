@@ -10,6 +10,7 @@
       "/var/lib/nixos"
       "/var/lib/systemd"
       "/var/lib/cloudflare-warp"
+      { directory = "/var/lib/sops-nix"; group = "users"; mode = "u=rw,g=rw,o="; }
     ];
     files = [
       "/etc/machine-id"

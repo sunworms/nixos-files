@@ -1,7 +1,9 @@
-{ ... }:
+{ config, ... }:
 
 let
-  secrets = builtins.fromJSON (builtins.readFile ../../secrets/common.json);
+  brain_worms_den = builtins.readFile config.sops.secrets."wifi/passwords/brain_worms_den".path;
+  eduroam = builtins.readFile config.sops.secrets."wifi/passwords/eduroam".path;
+  Airtel_jaya_2754 = builtins.readFile config.sops.secrets."wifi/passwords/Airtel_jaya_2754".path;
 in
 {
   networking = {
@@ -31,7 +33,7 @@ in
       };
       wifi-security = {
         key-mgmt = "wpa-psk";
-        psk = "${secrets.brainwormsden.psk}";
+        psk = "${brain_worms_den}";
       };
     };
 
@@ -51,7 +53,7 @@ in
       "802-1x" = {
         eap = "ttls";
         identity = "mayuri.bhowmick@niser.ac.in";
-        password = "${secrets.eduroam.password}";
+        password = "${eduroam}";
         phase2-auth = "pap";
         system-ca-certs = false;
       };
@@ -69,7 +71,7 @@ in
       };
       wifi-security = {
         key-mgmt = "wpa-psk";
-        psk = "${secrets.Airtel_jaya_2754.psk}";
+        psk = "${Airtel_jaya_2754}";
       };
     };
   };

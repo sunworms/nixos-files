@@ -35,8 +35,10 @@ in
   environment.systemPackages = with pkgs; [
     nh
     nil
+    age
     nixd
     tree
+    sops
     npins
     git-crypt
     fastfetch

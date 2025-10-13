@@ -1,7 +1,7 @@
-{ ... }:
+{ config, ... }:
 
 let
-  secrets = builtins.fromJSON (builtins.readFile ../secrets/sunny.json);
+  githubToken = builtins.readFile config.sops.secrets."sunny/github/token".path;
 in
 {
   programs.git = {
@@ -10,7 +10,7 @@ in
     userName = "Sunny";
     extraConfig = {
       url = {
-        "https://oauth2:${secrets.github.oauth_token}@github.com" = {
+        "https://oauth2:${githubToken}@github.com" = {
           insteadOf = "https://github.com";
         };
       };

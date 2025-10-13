@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./sops.nix
     ./git.nix
     ./rofi/rofi.nix
     ./niri/niri.nix

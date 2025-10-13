@@ -90,6 +90,19 @@
       "url": "https://github.com/nix-community/nur/archive/7c33fa4c49f75a92978cc121370acd8cd047bbed.tar.gz",
       "hash": "0rk07x62zvgwf4gzasds9sb16lzanxr2f0i49rm8j1wnaywksawa"
     },
+    "sops-nix": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "Mic92",
+        "repo": "sops-nix"
+      },
+      "branch": "master",
+      "submodules": false,
+      "revision": "41fd1f7570c89f645ee0ada0be4e2d3c4b169549",
+      "url": "https://github.com/Mic92/sops-nix/archive/41fd1f7570c89f645ee0ada0be4e2d3c4b169549.tar.gz",
+      "hash": "0rd3ivarxxfyhc5nkhn3rfs6lrrw5jsmmlj83wpwxjfjv15mpbxi"
+    },
     "spicetify-nix": {
       "type": "Git",
       "repository": {
