@@ -3,9 +3,9 @@
 {
   sops = {
     defaultSopsFile = ../secrets.yaml;
-    age.keyFile = "/var/lib/sops-nix/key.txt";
+    age.keyFile = "/persist/var/lib/sops-nix/key.txt";
     secrets = {
-      "sunny/github/token" = {};
+      "sunny/github/token" = { };
     };
   };
 }

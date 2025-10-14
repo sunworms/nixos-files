@@ -10,7 +10,11 @@
       "/var/lib/nixos"
       "/var/lib/systemd"
       "/var/lib/cloudflare-warp"
-      { directory = "/var/lib/sops-nix"; group = "users"; mode = "u=rw,g=rw,o="; }
+      {
+        directory = "/var/lib/sops-nix";
+        group = "users";
+        mode = "u=rw,g=rw,o=";
+      }
     ];
     files = [
       "/etc/machine-id"
@@ -19,6 +23,7 @@
     users.sunny = {
       directories = [
         "nixos-files"
+        "AUR"
         "Documents"
         "Games"
         "Music"
@@ -28,6 +33,7 @@
 
         ".mozilla/firefox/sunny"
         ".wine"
+        ".ssh"
 
         ".config/discord"
         ".config/spotify"
@@ -43,6 +49,7 @@
         ".local/share/fish"
         ".local/share/zed"
         ".local/share/warp"
+        ".local/share/containers"
       ];
       files = [ ];
     };
