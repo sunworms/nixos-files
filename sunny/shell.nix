@@ -5,8 +5,8 @@
     enable = true;
     shellAbbrs = {
       zed = "zeditor";
-      nixpkgs = "-I nixpkgs=$(nix eval --raw -f ./npins nixpkgs.outPath)";
-      nixconfig = "-I nixos-config=./hosts/$(hostname)/configuration.nix";
+      nixpkgs = "-I nixpkgs=$(nix eval --raw -f ~/nixos-files/npins nixpkgs.outPath)";
+      nixconfig = "-I nixos-config=~/nixos-files/hosts/$(hostname)/configuration.nix";
     };
     shellAliases = {
       grep = "grep --color=auto";
@@ -17,9 +17,6 @@
     };
     shellInit = ''
       set -g fish_greeting
-    '';
-    shellInitLast = ''
-      starship init fish | source
     '';
   };
 

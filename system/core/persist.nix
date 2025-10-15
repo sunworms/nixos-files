@@ -22,6 +22,7 @@
 
     users.sunny = {
       directories = [
+        "devShells"
         "nixos-files"
         "AUR"
         "Documents"
