@@ -25,4 +25,8 @@
     enableFishIntegration = true;
     enableTransience = true;
   };
+
+  programs.direnv = {
+    enable = true;
+  };
 }
