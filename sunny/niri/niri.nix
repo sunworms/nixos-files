@@ -194,6 +194,7 @@ in
           Mod+End { focus-column-last; }
           Mod+Equal { set-column-width "+10%"; }
           Mod+F { maximize-column; }
+          Mod+E { maximize-window-to-edges; }
 
           Mod+H { focus-workspace-down; }
           Mod+Y { focus-workspace-up; }
