@@ -10,6 +10,7 @@ in
   nixpkgs.overlays = [
     niri-flake.defaultNix.overlays.niri
     nur.defaultNix.overlays.default
+    # (import ./niri-blur-overlay.nix)
   ];
   nixpkgs.config.allowUnfree = true;
 
