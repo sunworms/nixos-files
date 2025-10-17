@@ -1,16 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
-let
-  sources = import ../../npins;
-  flake-compat = import sources.flake-compat;
-  niri-flake = flake-compat { src = sources.niri-flake; };
-  nur = flake-compat { src = sources.nur; };
-in
 {
   nixpkgs.overlays = [
-    niri-flake.defaultNix.overlays.niri
-    nur.defaultNix.overlays.default
-    # (import ./niri-blur-overlay.nix)
+    inputs.niri-flake.overlays.niri
+    inputs.nur.overlays.default
   ];
   nixpkgs.config.allowUnfree = true;
 

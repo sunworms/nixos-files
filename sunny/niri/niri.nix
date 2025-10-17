@@ -6,7 +6,7 @@ let
 in
 {
   imports = [
-    ./waybar.nix
+    ./waybar-niri.nix
     ./services.nix
     ./foot.nix
   ];
