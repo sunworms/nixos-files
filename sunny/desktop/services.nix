@@ -47,7 +47,8 @@
     };
   };
 
-  systemd.user.services.waybar-toggle = {
+  /*
+    systemd.user.services.waybar-toggle = {
     Unit = {
       Description = "Toggle waybar visibility with niri overview";
       After = [
@@ -80,5 +81,6 @@
     Install = {
       WantedBy = [ "graphical-session.target" ];
     };
-  };
+    };
+  */
 }

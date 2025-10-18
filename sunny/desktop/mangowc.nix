@@ -7,8 +7,18 @@ in
   imports = [
     ./foot.nix
     ./services.nix
-    ./waybar-mango.nix
+    ./waybar.nix
   ];
+
+  home.packages = with pkgs; [
+    grim
+    satty
+    (writeShellScriptBin "screenshot-mango" ''
+      mkdir -p $HOME/Pictures/Screenshots
+      grim  - | satty --filename - --output-filename "$HOME/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png" --early-exit
+    '')
+  ];
+
   wayland.windowManager.mango = {
     enable = true;
     settings = ''
@@ -171,6 +181,16 @@ in
       # menu and terminal
       bind=Alt,space,spawn,rofi -show drun
       bind=Alt,t,spawn,foot
+      bind=Alt,d,spawn,pkill -SIGUSR2 waybar
+      bind=Alt,v,spawn,rofi -modi clipboard:cliphist-rofi-img -show clipboard -show-icons
+      bind=Alt,w,spawn,rofi -show power-menu -modi power-menu:rofi-power-menu-mango
+      bind=none,XF86AudioRaiseVolume,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+      bind=none,XF86AudioLowerVolume,spawn,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+      bind=none,XF86AudioMute,spawn,wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+      bind=none,XF86AudioMicMute,spawn,wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+      bind=none,XF86MonBrightnessUp,spawn,${pkgs.brightnessctl}/bin/brightnessctl set 5%+
+      bind=none,XF86MonBrightnessDown,spawn,${pkgs.brightnessctl}/bin/brightnessctl set 5%-
+      bind=none,Print,spawn,screenshot-mango
 
       # exit
       bind=SUPER,m,quit
@@ -301,7 +321,7 @@ in
       ${pkgs.swaybg}/bin/swaybg -m fill -i ${japanese} &
 
       # top bar
-      waybar &
+      waybar -c $HOME/.config/waybar/config-mango &
 
       # clipboard content manager
       wl-paste --type text --watch cliphist store &

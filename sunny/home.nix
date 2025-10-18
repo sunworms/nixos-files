@@ -5,8 +5,8 @@
     ./sops.nix
     ./git.nix
     ./rofi/rofi.nix
-    # ./niri/niri.nix
-    ./mangowc/mangowc.nix
+    ./desktop/niri.nix
+    ./desktop/mangowc.nix
     ./packages/packages.nix
     ./theming.nix
     ./desktop-files.nix

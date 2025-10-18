@@ -5,6 +5,8 @@
 
   programs.nixcord = {
     enable = true;
+    discord.enable = false;
+    vesktop.enable = true;
     quickCss = ''
       @import url('https://raw.githubusercontent.com/sunworms/D2Coding-Webfont/refs/heads/main/stylesheet.css');
 

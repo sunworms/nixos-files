@@ -6,7 +6,7 @@ let
 in
 {
   imports = [
-    ./waybar-niri.nix
+    ./waybar.nix
     ./services.nix
     ./foot.nix
   ];
@@ -102,13 +102,14 @@ in
         "_JAVA_AWT_WM_NONREPARENTING" "1"
     }
 
+    spawn-sh-at-startup "waybar -c ~/.config/waybar/config-niri"
     spawn-at-startup "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
     spawn-sh-at-startup "${pkgs.swww}/bin/swww img ${japanese} --transition-duration 0.5"
     spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i ${mist}"
 
     binds {
         Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
-        Mod+T { spawn "${pkgs.foot}/bin/footclient"; }
+        Mod+T { spawn "foot"; }
         Mod+X { spawn "rofi" "-modi" "clipboard:cliphist-rofi-img" "-show" "clipboard" "-show-icons"; }
         Mod+P { spawn "sh" "-c" "niri-color-picker"; }
         Mod+D { spawn "sh" "-c" "pkill -USR1 waybar"; }
@@ -117,7 +118,7 @@ in
         Alt+Tab { spawn "rofi" "-show" "window"; }
         Alt+R { spawn "rofi" "-show" "run"; }
         Alt+B { spawn "rofi" "-show" "filebrowser"; }
-        Mod+Escape { spawn "rofi" "-show" "power-menu" "-modi" "power-menu:rofi-power-menu"; }
+        Mod+Escape { spawn "rofi" "-show" "power-menu" "-modi" "power-menu:rofi-power-menu-niri"; }
 
         XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"; }
         XF86AudioMicMute allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
