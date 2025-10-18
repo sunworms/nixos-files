@@ -15,7 +15,7 @@ in
     satty
     (writeShellScriptBin "screenshot-mango" ''
       mkdir -p $HOME/Pictures/Screenshots
-      grim  - | satty --filename - --output-filename "$HOME/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png" --early-exit
+      grim  - | satty --filename - --output-filename "$HOME/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png"
     '')
     (writeShellScriptBin "reload-waybar-mango" ''
       if pgrep -x "waybar" >/dev/null; then
