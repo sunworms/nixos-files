@@ -15,6 +15,9 @@
         "org.freedesktop.impl.portal.ScreenCast" = [
           "wlr"
         ];
+        "org.freedesktop.impl.portal.Secret" = [
+          "gnome-keyring"
+        ];
       };
     };
     extraPortals = with pkgs; [
