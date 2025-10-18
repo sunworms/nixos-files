@@ -36,7 +36,7 @@
         ".wine"
         ".ssh"
 
-        ".config/discord"
+        ".config/vesktop"
         ".config/spotify"
         ".config/azahar-emu"
         ".config/PCSX2"
