@@ -327,8 +327,8 @@ in
       # wallpaper
       ${pkgs.swaybg}/bin/swaybg -m fill -i ${japanese} &
 
-      # top bar
-      waybar -c $HOME/.config/waybar/config-mango &
+      # idle daemon
+      ${pkgs.swayidle}/bin/swayidle -w timeout 300 'swaylock -fF' timeout 600 '${pkgs.wlopm}/bin/wlopm --off \*'	resume '${pkgs.wlopm}/bin/wlopm --on \*' before-sleep 'swaylock -fF'
 
       # clipboard content manager
       wl-paste --type text --watch cliphist store &

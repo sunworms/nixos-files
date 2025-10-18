@@ -9,27 +9,6 @@
     };
   };
 
-  services.swayidle = {
-    enable = true;
-    timeouts = [
-      {
-        timeout = 300;
-        command = "${pkgs.swaylock}/bin/swaylock -fF";
-      }
-      {
-        timeout = 600;
-        command = "${pkgs.systemd}/bin/systemctl suspend";
-      }
-    ];
-    events = [
-      {
-        event = "before-sleep";
-        command = "${pkgs.swaylock}/bin/swaylock -fF";
-      }
-    ];
-    systemdTarget = "graphical-session.target";
-  };
-
   services.cliphist = {
     enable = true;
     allowImages = true;
@@ -47,40 +26,57 @@
     };
   };
 
-  /*
-    systemd.user.services.waybar-toggle = {
+  home.packages = with pkgs; [
+    swayidle
+  ];
+
+  systemd.user.services.swayidle = {
     Unit = {
-      Description = "Toggle waybar visibility with niri overview";
-      After = [
-        "waybar.service"
-        "graphical-session.target"
-      ];
+      Description = "swayidle (conditional per compositor)";
       PartOf = [ "graphical-session.target" ];
+      After = [ "graphical-session.target" ];
     };
 
-    Service = {
-      ExecStart = pkgs.writeShellScript "niri-waybar-toggle" ''
-        trap "" USR1
+    Service =
+      let
+        swayidle-launch = pkgs.writeShellScript "swayidle-launch" ''
+          compositor="''${XDG_CURRENT_DESKTOP:-unknown}"
+          echo "Detected compositor: ''${compositor}"
 
-        niri msg --json event-stream | while read -r event; do
-            if echo "$event" | jq -e '.OverviewOpenedOrClosed' > /dev/null 2>&1; then
-                is_open=$(echo "$event" | jq -r '.OverviewOpenedOrClosed.is_open')
+          case "''${compositor}" in
+            niri)
+              echo "Launching swayidle with Niri timeouts"
+              exec ${pkgs.swayidle}/bin/swayidle -w \
+                timeout 300 '${pkgs.swaylock}/bin/swaylock -fF' \
+                timeout 600 'niri msg action power-off-monitors' \
+                resume 'niri msg action power-on-monitors'
+              ;;
 
-                if [ "$is_open" = "true" ]; then
-                    pkill -USR1 waybar
-                else
-                    pkill -USR1 waybar
-                fi
-            fi
-        done
-      '';
-      Restart = "on-failure";
-      RestartSec = 3;
-    };
+            mango)
+              echo "Launching swayidle with MangoWC settings"
+              exec ${pkgs.swayidle}/bin/swayidle -w \
+                timeout 300 '${pkgs.swaylock}/bin/swaylock -fF' \
+                timeout 600 '${pkgs.wlopm}/bin/wlopm --off *' \
+                resume '${pkgs.wlopm}/bin/wlopm --on *'
+              ;;
 
+            *)
+              echo "Unknown compositor; running default swayidle"
+              exec ${pkgs.swayidle}/bin/swayidle -w \
+                timeout 600 'echo "Idle timeout reached"' \
+                resume 'echo "System resumed"'
+              ;;
+          esac
+        '';
+      in
+      {
+        ExecStart = "${swayidle-launch}";
+
+        Restart = "on-failure";
+        RestartSec = 2;
+      };
     Install = {
       WantedBy = [ "graphical-session.target" ];
     };
-    };
-  */
+  };
 }

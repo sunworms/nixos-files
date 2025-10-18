@@ -1,7 +1,8 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 let
   nixos = ../../assets/icons/NixOS.png;
+  waybarConfigDir = "${config.home.homeDirectory}/.config/waybar";
 in
 {
   stylix.targets.waybar.enable = false;
@@ -10,6 +11,48 @@ in
 
   programs.waybar = {
     enable = true;
+  };
+
+  systemd.user.services.waybar = {
+    Unit = {
+      Description = "Waybar status bar";
+      PartOf = [ "graphical-session.target" ];
+      After = [ "graphical-session.target" ];
+    };
+
+    Service = {
+      ExecStart = pkgs.writeShellScript "waybar-launch" ''
+        export PATH="/etc/profiles/per-user/sunny/bin:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin:$PATH"
+        export GTK_ICON_THEME=Papirus-Dark
+        export XCURSOR_THEME=everforest-cursors
+        export XCURSOR_SIZE=24
+        compositor="''${XDG_CURRENT_DESKTOP:-unknown}"
+
+        case "''$compositor" in
+          niri)
+            cfg="${waybarConfigDir}/config-niri"
+            ;;
+          mango)
+            cfg="${waybarConfigDir}/config-mango"
+            ;;
+          *)
+            cfg="${waybarConfigDir}/config"
+            ;;
+        esac
+
+        style="${waybarConfigDir}/style.css"
+
+        echo "Launching Waybar for compositor: ''$compositor"
+        exec ${pkgs.waybar}/bin/waybar --config "''$cfg" --style "''$style"
+      '';
+
+      Restart = "on-failure";
+      RestartSec = 2;
+    };
+
+    Install = {
+      WantedBy = [ "graphical-session.target" ];
+    };
   };
 
   xdg.configFile."waybar/config-mango".text = ''
