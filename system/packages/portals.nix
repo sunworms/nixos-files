@@ -6,7 +6,6 @@
     config = {
       common = {
         default = [
-          "gnome"
           "gtk"
           "wlr"
         ];
@@ -14,16 +13,11 @@
           "gtk"
         ];
         "org.freedesktop.impl.portal.ScreenCast" = [
-          "gnome"
           "wlr"
-        ];
-        "org.freedesktop.impl.portal.Secret" = [
-          "gnome-keyring"
         ];
       };
     };
     extraPortals = with pkgs; [
-      xdg-desktop-portal-gnome
       xdg-desktop-portal-gtk
       xdg-desktop-portal-wlr
     ];
