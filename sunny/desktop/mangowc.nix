@@ -334,4 +334,7 @@ in
       ${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit &
     '';
   };
+
+  xdg.configFile."mango/autostart.sh".force = true;
+  xdg.configFile."mango/config.conf".force = true;
 }
