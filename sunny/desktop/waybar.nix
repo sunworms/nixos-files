@@ -6,6 +6,8 @@ in
 {
   stylix.targets.waybar.enable = false;
 
+  services.playerctld.enable = true;
+
   programs.waybar = {
     enable = true;
   };
@@ -181,7 +183,9 @@ in
           "critical": 80
         }
       },
-      "modules-center": [],
+      "modules-center": [
+        "mpris"
+      ],
       "modules-left": [
         "image",
         "ext/workspaces",
@@ -193,6 +197,17 @@ in
         "tray",
         "clock"
       ],
+      "mpris": {
+     	  "format": "{player_icon} {dynamic}",
+       	"format-paused": "{status_icon} <i>{dynamic}</i>",
+        "max-length": 30,
+       	"player-icons": {
+      		"default": "▶"
+       	},
+       	"status-icons": {
+      		"paused": "⏸"
+       	},
+      },
       "network": {
         "format-disconnected": "󰖪",
         "format-ethernet": "󰈀",
@@ -431,7 +446,9 @@ in
           "critical": 80
         }
       },
-      "modules-center": [],
+      "modules-center": [
+       "mpris"
+      ],
       "modules-left": [
         "image",
         "ext/workspaces",
@@ -453,6 +470,17 @@ in
         "tooltip-format-disconnected": "Disconnected",
         "tooltip-format-ethernet": "{ifname} {bandwidthDownBytes} 󰈀",
         "tooltip-format-wifi": "{essid} {bandwidthDownBytes} "
+      },
+      "mpris": {
+     	  "format": "{player_icon} {dynamic}",
+       	"format-paused": "{status_icon} <i>{dynamic}</i>",
+        "max-length": 30,
+       	"player-icons": {
+      		"default": "▶"
+       	},
+       	"status-icons": {
+      		"paused": "⏸"
+       	},
       },
       "position": "bottom",
       "spacing": 0,

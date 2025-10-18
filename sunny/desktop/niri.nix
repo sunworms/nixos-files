@@ -13,6 +13,13 @@ in
 
   home.packages = with pkgs; [
     xwayland-satellite-unstable
+    (writeShellScriptBin "reload-waybar-niri" ''
+      if pgrep -x "waybar" >/dev/null; then
+        pkill -x "waybar"
+      fi
+      sleep 1
+      waybar -c $HOME/.config/waybar/config-niri
+    '')
   ];
 
   stylix.targets.niri.enable = true;
@@ -108,10 +115,10 @@ in
     spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i ${mist}"
 
     binds {
-        Mod+Space { spawn "sh" "-c" "pkill -SIGUSR2 waybar"; }
+        Mod+Space { spawn "reload-waybar-niri"; }
         Mod+T { spawn "foot"; }
         Mod+X { spawn "rofi" "-modi" "clipboard:cliphist-rofi-img" "-show" "clipboard" "-show-icons"; }
-        Mod+P { spawn "sh" "-c" "niri-color-picker"; }
+        Mod+P { spawn "niri-color-picker"; }
         Mod+D { spawn "sh" "-c" "pkill -USR1 waybar"; }
         Mod+A { spawn "rofi" "-show" "drun"; }
         Mod+Alt+L allow-when-locked=true { spawn "swaylock"; }

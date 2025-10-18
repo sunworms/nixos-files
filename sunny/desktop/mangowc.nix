@@ -17,6 +17,13 @@ in
       mkdir -p $HOME/Pictures/Screenshots
       grim  - | satty --filename - --output-filename "$HOME/Pictures/Screenshots/$(date '+%Y-%m-%d_%H-%M-%S').png" --early-exit
     '')
+    (writeShellScriptBin "reload-waybar-mango" ''
+      if pgrep -x "waybar" >/dev/null; then
+        pkill -x "waybar"
+      fi
+      sleep 1
+      waybar -c $HOME/.config/waybar/config-mango
+    '')
   ];
 
   wayland.windowManager.mango = {
@@ -181,7 +188,7 @@ in
       # menu and terminal
       bind=Alt,space,spawn,rofi -show drun
       bind=Alt,t,spawn,foot
-      bind=Alt,d,spawn,pkill -SIGUSR2 waybar
+      bind=Alt,d,spawn,reload-waybar-mango
       bind=Alt,v,spawn,rofi -modi clipboard:cliphist-rofi-img -show clipboard -show-icons
       bind=Alt,w,spawn,rofi -show power-menu -modi power-menu:rofi-power-menu-mango
       bind=none,XF86AudioRaiseVolume,spawn,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
