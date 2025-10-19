@@ -1,4 +1,6 @@
 # My NixOS modules
+EDIT: repository moved to [git.gay](https://git.gay/sunworms/nixos-files)
+
 self explanatory
 
 my tree structure:
