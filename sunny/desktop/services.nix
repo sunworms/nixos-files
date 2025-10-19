@@ -30,6 +30,21 @@
     swayidle
   ];
 
+  services.wayland-pipewire-idle-inhibit = {
+    enable = true;
+    package = "${pkgs.wayland-pipewire-idle-inhibit}";
+    systemdTarget = "graphical-session.target";
+    settings = {
+      verbosity = "INFO";
+      media_minimum_duration = 10;
+      idle_inhibitor = "wayland";
+      sink_whitelist = [ ];
+      node_blacklist = [
+        { name = "spotify"; }
+      ];
+    };
+  };
+
   systemd.user.services.swayidle = {
     Unit = {
       Description = "swayidle (conditional per compositor)";

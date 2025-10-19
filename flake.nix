@@ -16,6 +16,10 @@
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    wayland-pipewire-idle-inhibit = {
+      url = "github:rafaelrc7/wayland-pipewire-idle-inhibit";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     mangowc = {
       url = "github:DreamMaoMao/mangowc";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -51,6 +55,7 @@
       nixcord,
       sops-nix,
       spicetify-nix,
+      wayland-pipewire-idle-inhibit,
       ...
     }@inputs:
     {
@@ -75,6 +80,7 @@
                   sops-nix.homeManagerModules.sops
                   mangowc.hmModules.mango
                   nixcord.homeModules.nixcord
+                  wayland-pipewire-idle-inhibit.homeModules.default
                 ];
               };
               home-manager.extraSpecialArgs = { inherit inputs; };

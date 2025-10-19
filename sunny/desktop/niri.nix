@@ -109,7 +109,6 @@ in
         "_JAVA_AWT_WM_NONREPARENTING" "1"
     }
 
-    spawn-sh-at-startup "${pkgs.swayidle}/bin/swayidle -w timeout 300 'swaylock -fF' timeout 600 'niri msg action power-off-monitors'	resume 'niri msg action power-on-monitors' before-sleep 'swaylock -fF'"
     spawn-at-startup "${pkgs.pantheon.pantheon-agent-polkit}/libexec/policykit-1-pantheon/io.elementary.desktop.agent-polkit"
     spawn-sh-at-startup "${pkgs.swww}/bin/swww img ${japanese} --transition-duration 0.5"
     spawn-sh-at-startup "${pkgs.swaybg}/bin/swaybg -m fill -i ${mist}"
