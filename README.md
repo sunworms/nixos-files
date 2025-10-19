@@ -13,32 +13,29 @@ my tree structure:
 │       ├── japanese_pedestrian_street.jpg
 │       ├── mist_forest.jpg
 │       └── raindrops.jpg
-├── default.nix
+├── flake.lock
+├── flake.nix
 ├── hosts
 │   └── hpprobook
 │       ├── configuration.nix
 │       └── hardware-configuration.nix
 ├── LICENSE
-├── npins
-│   ├── default.nix
-│   └── sources.json
 ├── README.md
-├── secrets
-│   ├── common.json
-│   └── sunny.json
+├── secrets.yaml
 ├── sunny
 │   ├── derivations
 │   │   ├── browser-paths.patch
 │   │   ├── ice-ssb.nix
 │   │   └── pcsx2.nix
-│   ├── desktop-files.nix
-│   ├── git.nix
-│   ├── home.nix
-│   ├── niri
+│   ├── desktop
 │   │   ├── foot.nix
+│   │   ├── mangowc.nix
 │   │   ├── niri.nix
 │   │   ├── services.nix
 │   │   └── waybar.nix
+│   ├── desktop-files.nix
+│   ├── git.nix
+│   ├── home.nix
 │   ├── packages
 │   │   ├── blueman.nix
 │   │   ├── discord.nix
@@ -49,9 +46,11 @@ my tree structure:
 │   │   └── zed-editor.nix
 │   ├── rofi
 │   │   ├── rofi.nix
-│   │   ├── rofi-power-menu
+│   │   ├── rofi-power-menu-mango
+│   │   ├── rofi-power-menu-niri
 │   │   └── scripts.nix
 │   ├── shell.nix
+│   ├── sops.nix
 │   ├── theming.nix
 │   └── tmpfiles.nix
 └── system
@@ -63,6 +62,7 @@ my tree structure:
     │   ├── nix-settings.nix
     │   ├── persist.nix
     │   ├── security.nix
+    │   ├── sops.nix
     │   ├── timelocale.nix
     │   ├── users.nix
     │   ├── virtualisation.nix
@@ -79,4 +79,6 @@ my tree structure:
         ├── programs.nix
         ├── stylix.nix
         └── swaylock.nix
+
+15 directories, 61 files
 ```
