@@ -1,0 +1,73 @@
+set notification-error-bg       "rgba(30,30,30,1)"
+set notification-error-fg       "rgba(224,27,36,1)"
+set notification-warning-bg     "rgba(30,30,30,1)"
+set notification-warning-fg     "rgba(255,120,0,1)"
+set notification-bg             "rgba(30,30,30,1)"
+set notification-fg             "rgba(53,132,228,1)"
+
+set completion-bg               "rgba(45,45,45,1)"
+set completion-fg               "rgba(255,255,255,1)"
+set completion-group-bg         "rgba(36,36,36,1)"
+set completion-group-fg         "rgba(154,153,150,1)"
+set completion-highlight-bg     "rgba(53,132,228,1)"
+set completion-highlight-fg     "rgba(255,255,255,1)"
+
+set inputbar-bg                 "rgba(30,30,30,1)"
+set inputbar-fg                 "rgba(255,255,255,1)"
+
+set statusbar-bg                "rgba(45,45,45,1)"
+set statusbar-fg                "rgba(222,222,222,1)"
+
+set highlight-color             "rgba(248,228,92,0.5)"
+set highlight-active-color      "rgba(53,132,228,0.5)"
+
+set default-bg                  "rgba(30,30,30,1)"
+set default-fg                  "rgba(255,255,255,1)"
+set render-loading              true
+set render-loading-bg           "rgba(30,30,30,1)"
+set render-loading-fg           "rgba(255,255,255,1)"
+
+set recolor-lightcolor          "rgba(30,30,30,1)"
+set recolor-darkcolor           "rgba(222,222,222,1)"
+set recolor                     "true"
+set recolor-keephue             "true"
+
+set selection-clipboard clipboard
+
+set incremental-search true
+set search-hadjust true
+
+set adjust-open width
+
+set font D2CodingLigature Nerd Font 12
+
+set guioptions none
+map [normal]      z zoom in
+map [normal]      Z zoom out
+map [fullscreen] z zoom in
+map [fullscreen] Z zoom out
+
+map [normal]      D toggle_page_mode
+map [fullscreen] D toggle_page_mode
+
+map [normal]      u scroll half-up
+map [normal]      d scroll half-down
+map [fullscreen] u scroll half-up
+map [fullscreen] d scroll half-down
+
+map [normal]      f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+map [normal]      <C-r> reload
+map [fullscreen] <C-r> reload
+
+map [normal]      b toggle_statusbar
+map [fullscreen] b toggle_statusbar
+
+map [normal]      H adjust_window best-fit
+map [normal]      W adjust_window width
+map [fullscreen] H adjust_window best-fit
+map [fullscreen] W adjust_window width
+
+map [normal]      i set recolor
+map [fullscreen] i set recolor

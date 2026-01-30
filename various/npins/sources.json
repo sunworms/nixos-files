@@ -1,0 +1,37 @@
+{
+  "pins": {
+    "eden-nightly": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "pflyly",
+        "repo": "eden-nightly"
+      },
+      "pre_releases": true,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "2026-01-29-28256",
+      "revision": "6e4eadf2cdec212ce1d6ab1ceb4aee91c5a627c6",
+      "url": "https://api.github.com/repos/pflyly/eden-nightly/tarball/refs/tags/2026-01-29-28256",
+      "hash": "sha256-AZNaF8RXUARWGWiyhpRho/IXpDQSEbbj+m4VRPpCE3Q="
+    },
+    "pcsx2": {
+      "type": "GitRelease",
+      "repository": {
+        "type": "GitHub",
+        "owner": "PCSX2",
+        "repo": "pcsx2"
+      },
+      "pre_releases": true,
+      "version_upper_bound": null,
+      "release_prefix": null,
+      "submodules": false,
+      "version": "v2.7.81",
+      "revision": "204829865dc91721a1d946b9ad222563c24edc0d",
+      "url": "https://api.github.com/repos/PCSX2/pcsx2/tarball/refs/tags/v2.7.81",
+      "hash": "sha256-yCFQ31uJy/9M+ybMIw7nm0At7XBjW8z++gnS1+aXyk4="
+    }
+  },
+  "version": 7
+}

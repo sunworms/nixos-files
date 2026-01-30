@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  border-radius: 0;
+  border: none;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
+  font-family: "D2CodingLigature Nerd Font Propo";
+  font-size: 13px;
+}
+
+window#waybar {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(30, 30, 30, 0.8);
+}
+
+#mpris,
+#window,
+#cpu,
+#backlight,
+#memory,
+#wireplumber,
+#wireplumber.muted,
+#battery,
+#battery.critical,
+#battery.warning,
+#network,
+#clock {
+  color: rgba(222, 222, 222, 0.8);
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#workspaces {
+  margin: 0;
+}
+
+#workspaces button {
+  color: rgba(222, 222, 222, 0.8);
+  padding: 0px;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  color: rgba(53, 132, 228, 0.8);
+}
+
+#window {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#tray {
+  padding: 5px;
+}
+
+#cpu {
+  color: rgba(255, 123, 99, 0.8);
+}
+
+#backlight {
+  color: rgba(248, 228, 92, 0.8);
+}
+
+#memory {
+  color: rgba(18, 209, 162, 0.8);
+}
+
+#wireplumber {
+  color: rgba(53, 132, 228, 0.8);
+}
+
+#wireplumber.muted {
+  color: rgba(125, 125, 125, 0.8);
+}
+
+#mpris,
+#battery {
+  color: rgba(87, 227, 137, 0.8);
+}
+
+#battery.critical {
+  color: rgba(224, 27, 36, 0.8);
+}
+
+#battery.warning {
+  color: rgba(255, 120, 0, 0.8);
+}
+
+#clock {
+  color: rgba(222, 222, 222, 0.8);
+}
+
+#network {
+  color: rgba(53, 132, 228, 0.8);
+}
+
+tooltip {
+  background: rgba(36, 36, 36, 0.8);
+  border: 1px solid rgba(53, 53, 53, 0.8);
+}
+
+tooltip label {
+  color: rgba(255, 255, 255, 0.8);
+}

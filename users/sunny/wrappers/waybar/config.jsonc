@@ -1,0 +1,151 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 20,
+  "spacing": 4,
+  "modules-left": [
+    "ext/workspaces",
+    "dwl/window",
+    "tray"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "mpris",
+    "network",
+    "cpu",
+    "memory",
+    "backlight",
+    "wireplumber#sink",
+    "wireplumber#source",
+    "battery"
+  ],
+  "ext/workspaces": {
+    "format": "{icon}",
+    "ignore-hidden": true,
+    "on-click": "activate",
+    "format-icons": {
+        "active": "",
+	"default": ""
+    }
+  },
+  "dwl/window": {
+      "max-length": 40
+  },
+  "tray": {
+    "icon-size": 14,
+    "spacing": 8
+  },
+  "mpris": {
+      "format": "{player_icon} {dynamic}",
+      "format-paused": "{status_icon} <i>{dynamic}</i>",
+      "player-icons": {
+          "default": "▶"
+      },
+      "status-icons": {
+          "paused": "⏸"
+      },
+      "max-length": 30
+  },
+  "cpu": {
+	"interval": 10,
+	"format": "",
+	"max-length": 10
+  },
+  "backlight": {
+	"device": "intel_backlight",
+	"format": "{icon}",
+        "tooltip-format": "{percent}%",
+	"format-icons": ["󰃚", "󰃛", "󰃜", "󰃝", "󰃞", "󰃟", "󰃠"]
+  },
+  "memory": {
+    "interval": 30,
+    "format": "",
+    "max-length": 10
+  },
+  "wireplumber#sink": {
+    "format": "{icon}",
+    "tooltip-format": "{volume}%",
+    "format-muted": "󰝟",
+    "format-icons": ["", "", ""],
+    "on-click": "pwvucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "scroll-step": 5
+  },
+  "wireplumber#source": {
+    "node-type": "Audio/Source",
+    "tooltip-format": "{volume}%",
+    "format": "",
+    "format-muted": "",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+    "scroll-step": 5
+  },
+  "battery": {
+    "format": "{icon}",
+    "interval": 10,
+    "states": {
+      "good": 99,
+      "warning": 30,
+      "critical": 20
+    },
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "tooltip-format": "{capacity}% {timeTo}"
+  },
+  "network": {
+    "interval": 5,
+    "format": "",
+	"format-wifi": "{icon}",
+	"format-ethernet": "",
+	"format-disconnected": "",
+    "format-icons": [
+      "󰤫",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
+    "tooltip-format": "{ifname}\nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
+	"tooltip-format-wifi": "{essid} ({signalStrength}%) \nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
+	"tooltip-format-ethernet": "{ifname} \nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
+	"tooltip-format-disconnected": "Disconnected",
+	"on-click": "footclient nmtui"
+  },
+  "clock": {
+	"format": "{:%H:%M}",
+	"format-alt": "{:%A, %B %d, %Y}",
+	"tooltip-format": "<tt><small>{calendar}</small></tt>",
+	"calendar": {
+		"mode"          : "year",
+		"mode-mon-col"  : 3,
+		"weeks-pos"     : "right",
+		"on-scroll"     : 1,
+		"on-click-right": "mode",
+		"format": {
+			"months":     "<span color='#ffead3'><b>{}</b></span>",
+			"days":       "<span color='#ecc6d9'><b>{}</b></span>",
+			"weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+			"weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+			"today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+		}
+	},
+	"actions": {
+		"on-click-right": "mode",
+		"on-click-forward": "tz_up",
+		"on-click-backward": "tz_down",
+		"on-scroll-up": "shift_up",
+		"on-scroll-down": "shift_down"
+	}
+  }
+}

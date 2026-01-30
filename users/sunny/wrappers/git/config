@@ -1,0 +1,108 @@
+[branch]
+	sort = "-committerdate"
+
+[checkout]
+	defaultRemote = "origin"
+
+[color]
+	ui = "auto"
+
+[color "branch"]
+	current = "yellow bold"
+	local = "green bold"
+	remote = "cyan bold"
+
+[color "diff"]
+	frag = "magenta bold"
+	meta = "yellow bold"
+	new = "green bold"
+	old = "red bold"
+	whitespace = "red reverse"
+
+[color "status"]
+	added = "green bold"
+	changed = "yellow bold"
+	untracked = "red bold"
+
+[column]
+	ui = "auto"
+
+[core]
+	editor = "emacsclient -t"
+	pager = "less"
+	whitespace = "fix,-indent-with-non-tab,trailing-space,cr-at-eol"
+
+[delta]
+	features = "line-numbers decorations"
+	line-numbers = true
+
+[delta "decorations"]
+	file-decoration-style = "yellow box"
+	file-style = "yellow bold none"
+	hunk-header-decoration-style = "magenta box"
+	hunk-header-style = "magenta bold"
+	line-numbers-right-format = "{np:^4}│ "
+	minus-emph-style = "white bold red"
+	minus-empty-line-marker-style = "normal normal"
+	minus-non-emph-style = "red bold normal"
+	minus-style = "red bold normal"
+	plus-emph-style = "white bold green"
+	plus-empty-line-marker-style = "normal normal"
+	plus-non-emph-style = "green bold normal"
+	plus-style = "green bold normal"
+
+[diff]
+	algorithm = "histogram"
+	colorMoved = "plain"
+	renames = true
+	tool = "diff"
+
+[difftool]
+	prompt = false
+
+[fetch]
+	all = true
+	prune = true
+	pruneTags = true
+
+[filter "lfs"]
+	clean = "git-lfs clean -- %f"
+	process = "git-lfs filter-process"
+	required = true
+	smudge = "git-lfs smudge -- %f"
+
+[init]
+	defaultBranch = "main"
+
+[instaweb]
+	httpd = "apache2 -f"
+
+[push]
+	autoSetupRemote = true
+	followTags = true
+
+[rebase]
+	autoSquash = false
+	updateRefs = true
+
+[rerere]
+	autoupdate = 1
+	enabled = 1
+
+[sequence]
+	editor = "emacsclient"
+
+[tag]
+	sort = "version:refname"
+
+[trim]
+	bases = "master,main"
+	protected = "*production"
+
+[user]
+	email = "sunnybhowmick0310@gmail.com"
+	name = "Sunny"
+	username = "sunworms"
+
+[web]
+	browser = "zen"
