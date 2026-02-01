@@ -13,14 +13,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "";
     };
-    mango = {
-      url = "github:DreamMaoMao/mango";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    yazi-gvfs = {
-      url = "github:boydaihungst/gvfs.yazi";
-      flake = false;
-    };
   };
 
   outputs = { ... }@inputs: {
@@ -31,7 +23,6 @@
           ./hosts/hpprobook/configuration.nix
           inputs.sops-nix.nixosModules.sops
           inputs.preservation.nixosModules.preservation
-          inputs.mango.nixosModules.mango
         ];
         specialArgs = { inherit inputs; };
       };

@@ -1,45 +1,5 @@
 {
   "nodes": {
-    "flake-parts": {
-      "inputs": {
-        "nixpkgs-lib": "nixpkgs-lib"
-      },
-      "locked": {
-        "lastModified": 1749398372,
-        "narHash": "sha256-tYBdgS56eXYaWVW3fsnPQ/nFlgWi/Z2Ymhyu21zVM98=",
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "rev": "9305fe4e5c2a6fcf5ba6a3ff155720fbe4076569",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "type": "github"
-      }
-    },
-    "mango": {
-      "inputs": {
-        "flake-parts": "flake-parts",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "scenefx": "scenefx"
-      },
-      "locked": {
-        "lastModified": 1769659108,
-        "narHash": "sha256-+xq2t9ZNYvQKGCoklRm21SEWwnfC7+Z/08SX9kdB+r4=",
-        "owner": "DreamMaoMao",
-        "repo": "mango",
-        "rev": "672706c71f4775dba304af1700451e0eadf8cea1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "DreamMaoMao",
-        "repo": "mango",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1769461804,
@@ -53,21 +13,6 @@
         "owner": "NixOS",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs-lib": {
-      "locked": {
-        "lastModified": 1748740939,
-        "narHash": "sha256-rQaysilft1aVMwF14xIdGS3sj1yHlI6oKQNBRTF40cc=",
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
-        "rev": "656a64127e9d791a334452c6b6606d17539476e2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "nixpkgs.lib",
         "type": "github"
       }
     },
@@ -88,33 +33,10 @@
     },
     "root": {
       "inputs": {
-        "mango": "mango",
         "nixpkgs": "nixpkgs",
         "preservation": "preservation",
         "sops-nix": "sops-nix",
-        "yazi-gvfs": "yazi-gvfs",
         "zen-browser-flake": "zen-browser-flake"
-      }
-    },
-    "scenefx": {
-      "inputs": {
-        "nixpkgs": [
-          "mango",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1750785057,
-        "narHash": "sha256-tGX6j4W91rcb+glXJo43sjPI9zQvPotonknG1BdihR4=",
-        "owner": "wlrfx",
-        "repo": "scenefx",
-        "rev": "3a6cfb12e4ba97b43326357d14f7b3e40897adfc",
-        "type": "github"
-      },
-      "original": {
-        "owner": "wlrfx",
-        "repo": "scenefx",
-        "type": "github"
       }
     },
     "sops-nix": {
@@ -134,22 +56,6 @@
       "original": {
         "owner": "Mic92",
         "repo": "sops-nix",
-        "type": "github"
-      }
-    },
-    "yazi-gvfs": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1769403280,
-        "narHash": "sha256-jcNHthObhZ5OPHwBxy0Pc3udlGUaZF9WqxHeoXeFbtg=",
-        "owner": "boydaihungst",
-        "repo": "gvfs.yazi",
-        "rev": "30440c70affb1916a553d805a193c4b5ddab4058",
-        "type": "github"
-      },
-      "original": {
-        "owner": "boydaihungst",
-        "repo": "gvfs.yazi",
         "type": "github"
       }
     },
