@@ -22,6 +22,7 @@
 
       ".cache/swww"
 
+      ".config/autostart"
       ".config/sops"
       ".config/fish"
       ".config/azahar-emu"

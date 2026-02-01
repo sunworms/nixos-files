@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name[en_US.UTF-8]=Custom Command
+Comment[en_US.UTF-8]=emacs --daemon
+Exec=emacs --daemon
+Icon=application-default-icon
+Type=Application
+Hidden=false
