@@ -60,4 +60,10 @@ picture-uri-dark='file:///run/current-system/sw/share/backgrounds/gnome/progress
   programs.evince.enable = true;
 
   programs.seahorse.enable = true;
+
+  # extensions
+  environment.systemPackages = with pkgs.gnomeExtensions; [
+    pip-on-top
+    blur-my-shell
+  ];
 }
