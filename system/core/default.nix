@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   imports = [
@@ -17,7 +17,6 @@
 
   # Polkit
   security.polkit.enable = true;
-  security.soteria.enable = true;
 
   # Network
   networking.networkmanager.enable = true;

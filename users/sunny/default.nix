@@ -37,6 +37,7 @@
     cliphist
     playerctl
     swayidle
+    pantheon.pantheon-agent-polkit
     wlopm
     swww
   ];
