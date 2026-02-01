@@ -20,11 +20,6 @@
         "/var/lib/libvirt"
         "/var/lib/sops-nix"
         "/var/lib/cloudflare-warp"
-        {
-          directory = "/var/cache/tuigreet";
-          group = "greeter";
-          user = "greeter";
-        }
         "/etc/NetworkManager/system-connections"
       ];
       files = [

@@ -44,6 +44,7 @@
 
       ".local/state/wireplumber"
     ];
-    files = [ ];
+    files = [
+    ];
   };
 }
