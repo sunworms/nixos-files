@@ -18,11 +18,6 @@
         mpvScripts.mpris
       ];
     })
-    grim
-    slurp
     satty
-    sway-audio-idle-inhibit
-    pwvucontrol
-    ripdrag
   ];
 }
