@@ -8,7 +8,7 @@ let
   };
 in
 pkgs.symlinkJoin {
-  name = "fuzzel-wrapped";
+  name = "mango-wrapped";
   buildInputs = [ pkgs.makeWrapper ];
   paths = [ inputs.mango.packages.${pkgs.stdenv.hostPlatform.system}.mango ];
   postBuild = ''
