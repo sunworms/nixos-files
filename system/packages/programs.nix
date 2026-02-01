@@ -33,6 +33,7 @@
   environment.pathsToLink = [
     "/share/xdg-desktop-portal"
     "/share/applications"
+    "/share/fish"
   ];
 
   programs.steam = {
