@@ -3,9 +3,6 @@
 {
   programs.git.enable = true;
 
-  services.gnome.gnome-keyring.enable = true;
-  programs.seahorse.enable = true;
-
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
