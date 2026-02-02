@@ -1,12 +1,7 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 
 let
-  zen = import inputs.zen-browser-flake {
-    inherit pkgs;
-    system = pkgs.stdenv.hostPlatform.system;
-  };
-
-  beta-unwrapped-policies = zen.beta-unwrapped.override {
+  glide-with-policies = pkgs.callPackage ./glide.nix {
     policies = {
       AutofillAddressEnabled = true;
       AutofillCreditCardEnabled = false;
@@ -150,14 +145,15 @@ let
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/proton-vpn-firefox-extension/latest.xpi";
         };
 
-        "vencord-firefox@vendicated.dev" = {
-          installation_mode = "normal_installed";
-          install_url = "https://github.com/Vendicated/Vencord/releases/download/devbuild/extension-firefox.zip";
-        };
+        #"vencord-firefox@vendicated.dev" = {
+        #  installation_mode = "normal_installed";
+        #  install_url = "https://github.com/Vendicated/Vencord/releases/download/devbuild/extension-firefox.zip";
+        #};
 
-        "vimium-c@gdh1995.cn" = {
+        # theme
+        "{ceefc8d7-d251-4762-bfcd-35cdeb3c52cd}" = {
           installation_mode = "normal_installed";
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/vimium-c/latest.xpi";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/fractal-senzune_alphacoder/latest.xpi";
         };
       };
     };
@@ -165,8 +161,6 @@ let
 in
 {
   packages = [
-    (pkgs.wrapFirefox beta-unwrapped-policies {
-      icon = "zen-browser";
-    })
+    glide-with-policies
   ];
 }

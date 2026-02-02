@@ -19,6 +19,7 @@ gtk-cursor-theme-size=24
     "fish/config.fish".source = ./config.fish;
     "foot/foot.ini".source = ./foot.ini;
     "git/config".source = ./gitconfig;
+    "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
     "DankMaterialShell/settings.json".source = ./dms.json;

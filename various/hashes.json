@@ -7,6 +7,10 @@
     "eden-nightly": {
       "version": "v1769981453.cd9527072d",
       "hash": "sha256-QIBZUZT/oG8QyL3NYkSo6xTAf5SsX1uS13Np/5+m/s4="
+    },
+    "glide": {
+      "version": "0.1.58a",
+      "hash": "sha256-yut/yXT+BJCFackLSRG7tLBD6m008k0lC62Qwt7aRX8="
     }
   }
 }
