@@ -52,8 +52,9 @@ update_from_sources() {
     if [[ "$name" == "pcsx2" ]]; then
         appimage_url="https://github.com/$owner/$repo/releases/download/$new_version/pcsx2-$new_version-linux-appimage-x64-Qt.AppImage"
     elif [[ "$name" == "eden-nightly" ]]; then
-        eden_version=$(echo "$new_version" | grep -oP '.*-\K\d+')
-        appimage_url="https://github.com/$owner/$repo/releases/download/$new_version/Eden-$eden_version-Common-PGO-x86_64.AppImage"
+        # Extract the commit hash from version tag (e.g., v1769981453.cd9527072d -> cd9527072d)
+        eden_commit=$(echo "$new_version" | grep -oP '\.\K[a-f0-9]+$')
+        appimage_url="https://github.com/$owner/$repo/releases/download/$new_version/Eden-Linux-$eden_commit-amd64-clang-pgo.AppImage"
     else
         echo "Unknown package: $name" >&2
         return 1

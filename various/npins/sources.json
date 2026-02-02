@@ -4,17 +4,17 @@
       "type": "GitRelease",
       "repository": {
         "type": "GitHub",
-        "owner": "pflyly",
-        "repo": "eden-nightly"
+        "owner": "Eden-CI",
+        "repo": "Nightly"
       },
       "pre_releases": true,
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "2026-01-30-28262",
-      "revision": "6e4eadf2cdec212ce1d6ab1ceb4aee91c5a627c6",
-      "url": "https://api.github.com/repos/pflyly/eden-nightly/tarball/refs/tags/2026-01-30-28262",
-      "hash": "sha256-AZNaF8RXUARWGWiyhpRho/IXpDQSEbbj+m4VRPpCE3Q="
+      "version": "v1769981453.cd9527072d",
+      "revision": "65fc9d5f3346c70c188d26ef4e166d5c2b5395c7",
+      "url": "https://api.github.com/repos/Eden-CI/Nightly/tarball/refs/tags/v1769981453.cd9527072d",
+      "hash": "sha256-PySBFU3irZUfRmAlpXRdDK9ima/Y7Q2KJzi8HB61tUI="
     },
     "pcsx2": {
       "type": "GitRelease",
@@ -27,10 +27,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v2.7.90",
-      "revision": "e35c84c2c6be24b29e24f2580876a20cd264e1db",
-      "url": "https://api.github.com/repos/PCSX2/pcsx2/tarball/refs/tags/v2.7.90",
-      "hash": "sha256-Rv6D//PsdWM0Siyid7/Hf0WXya2y/smmKTY4LyFVlcI="
+      "version": "v2.7.91",
+      "revision": "2fba420339883dc523e8b1385d88c50e49c40ab1",
+      "url": "https://api.github.com/repos/PCSX2/pcsx2/tarball/refs/tags/v2.7.91",
+      "hash": "sha256-QleJw1pyU3ktrMIbnI/bB3owmFIGdCEM3JRo+NFplhA="
     }
   },
   "version": 7

@@ -8,7 +8,8 @@ let
 
   pname = "eden";
   version = hashJson.pins.eden-nightly.version;
-  id = builtins.head (builtins.match ".*-([0-9]+)" version);
+  # Extract commit hash from version tag (e.g., v1769981453.cd9527072d -> cd9527072d)
+  commit = builtins.head (builtins.match ".*\\.([a-f0-9]+)" version);
 
   desktopItem = makeDesktopItem {
     type = "Application";
@@ -30,12 +31,12 @@ stdenvNoCC.mkDerivation {
   inherit
     pname
     version
-    id
+    commit
     desktopItem
     ;
 
   src = fetchurl {
-    url = "https://github.com/pflyly/eden-nightly/releases/download/${version}/Eden-${id}-Common-PGO-x86_64.AppImage";
+    url = "https://github.com/Eden-CI/Nightly/releases/download/${version}/Eden-Linux-${commit}-amd64-clang-pgo.AppImage";
     hash = hashJson.pins.eden-nightly.hash;
   };
 

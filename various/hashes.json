@@ -1,12 +1,12 @@
 {
   "pins": {
     "pcsx2": {
-      "version": "v2.7.81",
-      "hash": "sha256-/Zg/29vgq75X34Md0Q4mbs/lNniEQcsbAEqaDanhMU0="
+      "version": "v2.7.91",
+      "hash": "sha256-s0FPuduhdP4Wnrf2BQQ/kgNPN1CLgi+ne9TBlLHMMMg="
     },
     "eden-nightly": {
-      "version": "2026-01-29-28256",
-      "hash": "sha256-zPJnUVsTmIbc45nkz1Yg0RtqR+3R4FmUo7eSE9GEXOk="
+      "version": "v1769981453.cd9527072d",
+      "hash": "sha256-QIBZUZT/oG8QyL3NYkSo6xTAf5SsX1uS13Np/5+m/s4="
     }
   }
 }
