@@ -17,17 +17,19 @@
       "Videos"
       "VMs"
       ".ssh"
-      ".zen"
       ".steam"
 
       ".cache/DankMaterialShell"
 
+      ".config/glide"
       ".config/fish"
       ".config/niri"
       ".config/DankMaterialShell"
       ".config/foot"
       ".config/git"
 
+      ".config/vesktop"
+      
       ".config/gtk-3.0"
       ".config/gtk-4.0"
       
