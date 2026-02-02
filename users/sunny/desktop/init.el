@@ -29,7 +29,8 @@
     (unless (or (minibufferp) (eq major-mode 'pdf-view-mode))
       (display-line-numbers-mode)))
 
-(load-theme 'adwaita-dark 1)
+(add-to-list 'custom-theme-load-path (expand-file-name "themes/" user-emacs-directory))
+(load-theme 'dank-emacs t)
 
 (setq explicit-shell-file-name "/etc/profiles/per-user/sunny/bin/fish")
 

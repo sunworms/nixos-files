@@ -1,0 +1,5 @@
+[config]
+
+[templates.emacs]
+input_path = "~/.config/matugen/dank-emacs.el"
+output_path = "~/.emacs.d/themes/dank-emacs-theme.el"

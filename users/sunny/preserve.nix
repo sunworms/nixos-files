@@ -20,11 +20,17 @@
       ".zen"
       ".steam"
 
-      ".cache/swww"
+      ".cache/DankMaterialShell"
 
-      ".config/autostart"
-      ".config/sops"
       ".config/fish"
+      ".config/niri"
+      ".config/DankMaterialShell"
+      ".config/foot"
+      ".config/git"
+
+      ".config/gtk-3.0"
+      ".config/gtk-4.0"
+      
       ".config/azahar-emu"
       ".config/eden"
       ".config/melonDS"
@@ -41,8 +47,8 @@
       ".local/share/osu"
       ".local/share/containers"
       ".local/share/keyrings"
-      ".local/share/zathura"
 
+      ".local/state/DankMaterialShell"
       ".local/state/wireplumber"
     ];
     files = [

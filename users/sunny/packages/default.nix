@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  users.users.sunny.packages = with pkgs; [
+  packages = with pkgs; [
     (callPackage ./pcsx2.nix { })
     (callPackage ./eden.nix { })
     ppsspp-sdl-wayland

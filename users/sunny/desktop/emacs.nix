@@ -7,7 +7,6 @@ let
     epkgs: with epkgs; [
       treesitGrammars
       restart-emacs
-      adwaita-dark-theme
       telephone-line
       magit
       lsp-mode

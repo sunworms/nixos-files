@@ -1,4 +1,4 @@
-{ inputs, pkgs }:
+{ inputs, pkgs, ... }:
 
 let
   zen = import inputs.zen-browser-flake {
@@ -163,6 +163,10 @@ let
     };
   };
 in
-pkgs.wrapFirefox beta-unwrapped-policies {
-  icon = "zen-browser";
+{
+  packages = [
+    (pkgs.wrapFirefox beta-unwrapped-policies {
+      icon = "zen-browser";
+    })
+  ];
 }
