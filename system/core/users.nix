@@ -1,9 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ../../users/sunny
-  ];
   users.mutableUsers = false;
 
   users.users.root.hashedPasswordFile = config.sops.secrets.root_password.path;
@@ -15,11 +12,10 @@
       "networkmanager"
     ];
     hashedPasswordFile = config.sops.secrets.sunny_password.path;
-    shell = (import ../../users/sunny/wrappers/fish { inherit pkgs; });
+    shell = pkgs.fish;
   };
 
-  programs.fish = {
-    enable = true;
-    package = config.users.users.sunny.shell;
-  };
+  programs.fish.enable = true;
+
+  hjem.users.sunny = ../../users/sunny;
 }

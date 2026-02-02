@@ -11,9 +11,9 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "2026-01-29-28256",
+      "version": "2026-01-30-28262",
       "revision": "6e4eadf2cdec212ce1d6ab1ceb4aee91c5a627c6",
-      "url": "https://api.github.com/repos/pflyly/eden-nightly/tarball/refs/tags/2026-01-29-28256",
+      "url": "https://api.github.com/repos/pflyly/eden-nightly/tarball/refs/tags/2026-01-30-28262",
       "hash": "sha256-AZNaF8RXUARWGWiyhpRho/IXpDQSEbbj+m4VRPpCE3Q="
     },
     "pcsx2": {
@@ -27,10 +27,10 @@
       "version_upper_bound": null,
       "release_prefix": null,
       "submodules": false,
-      "version": "v2.7.81",
-      "revision": "204829865dc91721a1d946b9ad222563c24edc0d",
-      "url": "https://api.github.com/repos/PCSX2/pcsx2/tarball/refs/tags/v2.7.81",
-      "hash": "sha256-yCFQ31uJy/9M+ybMIw7nm0At7XBjW8z++gnS1+aXyk4="
+      "version": "v2.7.90",
+      "revision": "e35c84c2c6be24b29e24f2580876a20cd264e1db",
+      "url": "https://api.github.com/repos/PCSX2/pcsx2/tarball/refs/tags/v2.7.90",
+      "hash": "sha256-Rv6D//PsdWM0Siyid7/Hf0WXya2y/smmKTY4LyFVlcI="
     }
   },
   "version": 7
