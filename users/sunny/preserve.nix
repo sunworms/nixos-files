@@ -27,8 +27,6 @@
       ".config/DankMaterialShell"
       ".config/foot"
       ".config/git"
-
-      ".config/vesktop"
       
       ".config/gtk-3.0"
       ".config/gtk-4.0"
