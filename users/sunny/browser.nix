@@ -145,10 +145,10 @@ let
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/proton-vpn-firefox-extension/latest.xpi";
         };
 
-        #"vencord-firefox@vendicated.dev" = {
-        #  installation_mode = "normal_installed";
-        #  install_url = "https://github.com/Vendicated/Vencord/releases/download/devbuild/extension-firefox.zip";
-        #};
+        "vencord-firefox@vendicated.dev" = {
+          installation_mode = "normal_installed";
+          install_url = "https://github.com/Vendicated/Vencord/releases/download/devbuild/extension-firefox.zip";
+        };
 
         # theme
         "{ceefc8d7-d251-4762-bfcd-35cdeb3c52cd}" = {
