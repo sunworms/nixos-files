@@ -19,5 +19,6 @@
       ];
     })
     satty
+    vesktop
   ];
 }
