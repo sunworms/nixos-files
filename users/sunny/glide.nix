@@ -114,15 +114,12 @@ stdenv.mkDerivation (finalAttrs: {
   nativeBuildInputs = [
     copyDesktopItems
     makeBinaryWrapper
-  ]
-  ++ lib.optionals stdenv.isLinux [
     autoPatchelfHook
     patchelfUnstable
     wrapGAppsHook3
   ];
 
-  # Provide strict superset of libs for autoPatchelf to resolve symbols
-  buildInputs = lib.optionals stdenv.isLinux (
+  buildInputs = (
     runtimeLibs
     ++ [
       speechd-minimal
@@ -133,18 +130,17 @@ stdenv.mkDerivation (finalAttrs: {
     ]
   );
 
-  # Ensure patchelf doesn't miss these
-  runtimeDependencies = lib.optionals stdenv.isLinux runtimeLibs;
+  runtimeDependencies = runtimeLibs;
 
-  appendRunpaths = lib.optionals stdenv.isLinux [
+  appendRunpaths = [
     "${lib.getLib pipewire}/lib"
     "${lib.getLib libGL}/lib"
     "${lib.getLib udev}/lib"
   ];
 
-  patchelfFlags = lib.optionals stdenv.isLinux [ "--no-clobber-old-sections" ];
+  patchelfFlags = [ "--no-clobber-old-sections" ];
 
-  preFixup = lib.optionalString stdenv.isLinux ''
+  preFixup = ''
     gappsWrapperArgs+=(
       # Explicitly inject runtime libraries. 
       --prefix LD_LIBRARY_PATH : "${lib.makeLibraryPath runtimeLibs}"
@@ -160,52 +156,33 @@ stdenv.mkDerivation (finalAttrs: {
     )
   '';
 
-  unpackPhase = lib.optionalString stdenv.isDarwin ''
-    runHook preUnpack
-    /usr/bin/hdiutil attach -nobrowse -readonly $src
-    cp -r /Volumes/Glide/Glide.app .
-    /usr/bin/hdiutil detach /Volumes/Glide
-    runHook postUnpack
-  '';
-
   installPhase =
-    if stdenv.isLinux then
-      ''
-        runHook preInstall
+    ''
+      runHook preInstall
 
-        mkdir -p $out/bin $out/share/icons/hicolor/ $out/lib/glide-browser-bin-${finalAttrs.version}
-        cp -t $out/lib/glide-browser-bin-${finalAttrs.version} -r *
+      mkdir -p $out/bin $out/share/icons/hicolor/ $out/lib/glide-browser-bin-${finalAttrs.version}
+      cp -t $out/lib/glide-browser-bin-${finalAttrs.version} -r *
 
-        # Ensure binaries are executable for patchelf
-        chmod +x $out/lib/glide-browser-bin-${finalAttrs.version}/glide
+      # Ensure binaries are executable for patchelf
+      chmod +x $out/lib/glide-browser-bin-${finalAttrs.version}/glide
 
-        iconDir=$out/share/icons/hicolor
-        browserIcons=$out/lib/glide-browser-bin-${finalAttrs.version}/browser/chrome/icons/default
+      iconDir=$out/share/icons/hicolor
+      browserIcons=$out/lib/glide-browser-bin-${finalAttrs.version}/browser/chrome/icons/default
 
-        for i in 16 32 48 64 128; do
-          iconSizeDir="$iconDir/''${i}x$i/apps"
-          mkdir -p $iconSizeDir
-          cp $browserIcons/default$i.png $iconSizeDir/${appId}.png
-        done
+      for i in 16 32 48 64 128; do
+        iconSizeDir="$iconDir/''${i}x$i/apps"
+        mkdir -p $iconSizeDir
+        cp $browserIcons/default$i.png $iconSizeDir/${appId}.png
+      done
 
-        ln -s $out/lib/glide-browser-bin-${finalAttrs.version}/glide $out/bin/glide
-        ln -s $out/bin/glide $out/bin/${appId}
+      ln -s $out/lib/glide-browser-bin-${finalAttrs.version}/glide $out/bin/glide
+      ln -s $out/bin/glide $out/bin/${appId}
 
-        mkdir -p $out/lib/glide-browser-bin-${finalAttrs.version}/distribution/
-        ln -s ${policiesJson} "$out/lib/glide-browser-bin-${finalAttrs.version}/distribution/policies.json"
+      mkdir -p $out/lib/glide-browser-bin-${finalAttrs.version}/distribution/
+      ln -s ${policiesJson} "$out/lib/glide-browser-bin-${finalAttrs.version}/distribution/policies.json"
 
-        runHook postInstall
-      ''
-    else
-      ''
-        runHook preInstall
-        mkdir -p $out/Applications
-        cp -r Glide.app $out/Applications/
-        mkdir -p $out/bin
-        ln -s $out/Applications/Glide.app/Contents/MacOS/glide $out/bin/glide
-        ln -s $out/bin/glide $out/bin/${appId}
-        runHook postInstall
-      '';
+      runHook postInstall
+    '';
 
   desktopItems = [
     (makeDesktopItem {
@@ -261,9 +238,6 @@ stdenv.mkDerivation (finalAttrs: {
     sourceProvenance = [ lib.sourceTypes.binaryNativeCode ];
     platforms = [
       "x86_64-linux"
-      "aarch64-linux"
-      "x86_64-darwin"
-      "aarch64-darwin"
     ];
     maintainers = with lib.maintainers; [ pyrox0 ];
     mainProgram = appId;
