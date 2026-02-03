@@ -18,11 +18,11 @@
       "VMs"
       ".ssh"
       ".steam"
-      ".mozilla"
 
       ".cache/DankMaterialShell"
       ".cache/wal"
 
+      ".config/mozilla"
       ".config/fish"
       ".config/niri"
       ".config/DankMaterialShell"
