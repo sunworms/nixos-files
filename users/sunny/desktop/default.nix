@@ -53,5 +53,4 @@ gtk-cursor-theme-size=24
       WorkingDirectory = "%h";
     };
   };
-
 }

@@ -1,9 +1,8 @@
-{ pkgs, sources, ... }:
+{ pkgs, ... }:
 
 let
-  glide-with-policies = pkgs.callPackage ./glide.nix {
-    inherit sources;
-    policies = {
+  firefox-devedition-policies = pkgs.firefox-devedition.override {
+    extraPolicies = {
       AutofillAddressEnabled = true;
       AutofillCreditCardEnabled = false;
       DisableAppUpdate = true;
@@ -30,6 +29,82 @@ let
           Status = "locked";
         };
         "xpinstall.signatures.required" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ml.enable" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ai.control.default" = {
+          Value = "blocked";
+          Status = "locked";
+        };
+        "browser.ai.control.sidebarChatbot" = {
+          Value = "blocked";
+          Status = "locked";
+        };
+        "browser.ml.chat.enabled" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ml.chat.sidebar" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ml.chat.menu" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ml.chat.page" = {
+          Value = false;
+          Status = "locked";
+        };
+        "extensions.ml.enabled" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ai.control.linkPreviewKeyPoints" = {
+          Value = "blocked";
+          Status = "locked";
+        };
+        "browser.ml.linkPreview.enabled" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ml.pageAssist.enabled" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ml.smartAssist.enabled" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ai.control.smartTabGroups" = {
+          Value = "blocked";
+          Status = "locked";
+        };
+        "browser.tabs.groups.smart.enabled" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.tabs.groups.smart.userEnabled" = {
+          Value = false;
+          Status = "locked";
+        };
+        "browser.ai.control.translations" = {
+          Value = "blocked";
+          Status = "locked";
+        };
+        "browser.ai.control.pdfjsAltText" = {
+          Value = "blocked";
+          Status = "locked";
+        };
+        "pdfjs.enableAltTextModelDownload" = {
+          Value = false;
+          Status = "locked";
+        };
+        "pdfjs.enableGuessAltText" = {
           Value = false;
           Status = "locked";
         };
@@ -146,15 +221,14 @@ let
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/proton-vpn-firefox-extension/latest.xpi";
         };
 
+        "pywalfox@frewacom.org" = {
+          installation_mode = "normal_installed";
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/pywalfox/latest.xpi";
+        };
+
         "vencord-firefox@vendicated.dev" = {
           installation_mode = "normal_installed";
           install_url = "https://github.com/Vendicated/Vencord/releases/download/devbuild/extension-firefox.zip";
-        };
-
-        # theme
-        "{ceefc8d7-d251-4762-bfcd-35cdeb3c52cd}" = {
-          installation_mode = "normal_installed";
-          install_url = "https://addons.mozilla.org/firefox/downloads/latest/fractal-senzune_alphacoder/latest.xpi";
         };
       };
     };
@@ -162,6 +236,7 @@ let
 in
 {
   packages = [
-    glide-with-policies
+    firefox-devedition-policies
+    pkgs.pywalfox-native
   ];
 }

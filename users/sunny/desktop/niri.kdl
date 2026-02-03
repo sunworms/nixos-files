@@ -107,6 +107,7 @@ layout {
 
 spawn-at-startup "dms" "run"
 spawn-at-startup "foot" "--server"
+spawn-sh-at-startup "pywalfox install && pywalfox start"
 spawn-at-startup "apply-gtk-settings"
 
 hotkey-overlay {
@@ -130,19 +131,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
-    open-floating true
-    default-floating-position x=900 y=250
-}
-
-window-rule {
-    match app-id=r#"zen-beta$"# title="^Picture-in-Picture$"
-    open-floating true
-    default-floating-position x=900 y=250
-}
-
-window-rule {
-    match app-id=r#"glide-browser$"# title="^Picture-in-Picture$"
+    match title="^Picture-in-Picture$"
     open-floating true
     default-floating-position x=900 y=250
 }
