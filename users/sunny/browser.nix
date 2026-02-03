@@ -1,7 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, sources, ... }:
 
 let
   glide-with-policies = pkgs.callPackage ./glide.nix {
+    inherit sources;
     policies = {
       AutofillAddressEnabled = true;
       AutofillCreditCardEnabled = false;

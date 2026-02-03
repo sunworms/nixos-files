@@ -1,14 +1,23 @@
 let
   sourcesJson = builtins.fromJSON (builtins.readFile ./various/_sources/generated.json);
 
-  nixpkgs = fetchTarball {
-    url = "${sourcesJson.nixpkgs.src.url}/archive/${sourcesJson.nixpkgs.src.rev}.tar.gz";
-    sha256 = sourcesJson.nixpkgs.src.sha256;
-  };
-
-  sources = (import nixpkgs { }).callPackage ./various/_sources/generated.nix { }; 
+  sources = builtins.mapAttrs (name: value:
+    let
+      src = if value.src.type == "git" then
+        fetchTarball {
+          url = "${value.src.url}/archive/${value.src.rev}.tar.gz";
+          sha256 = value.src.sha256;
+        }
+      else
+        builtins.fetchurl {
+          url = value.src.url;
+          sha256 = value.src.sha256;
+        };
+    in
+    value // { inherit src; }
+  ) sourcesJson;
   
-  nixosSystem = import "${nixpkgs}/nixos/lib/eval-config.nix";
+  nixosSystem = import "${sources.nixpkgs.src}/nixos/lib/eval-config.nix";
 
   mkHost = hostVars: nixosSystem {
     specialArgs = {
@@ -19,7 +28,7 @@ let
       ./hosts/${hostVars.hostname}/configuration.nix
       {
         nix.nixPath = [
-          "nixpkgs=${nixpkgs}"
+          "nixpkgs=${sources.nixpkgs.src}"
         ];
       }
     ];

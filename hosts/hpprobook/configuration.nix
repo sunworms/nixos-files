@@ -19,13 +19,6 @@
     specialArgs = { inherit sources; };
   };
 
-  nix.nixPath = [
-    "hjem=${sources.hjem.src}"
-    "sops-nix=${sources.sops-nix.src}"
-    "preservation=${sources.preservation.src}"
-    "quickshell=${sources.quickshell.src}"
-  ];
-
   nixpkgs = {
     config.allowUnfree = true;
     overlays = [];

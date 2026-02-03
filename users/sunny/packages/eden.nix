@@ -1,10 +1,9 @@
 {
   stdenvNoCC,
-  callPackage,
   makeDesktopItem,
+  sources,
 }:
 let
-  sources = callPackage ../../../various/_sources/generated.nix {};
   sourcesJson = builtins.fromJSON (builtins.readFile ../../../various/_sources/generated.json);
 
   pname = "eden";

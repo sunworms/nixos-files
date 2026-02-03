@@ -10,7 +10,6 @@
   makeDesktopItem,
   patchelfUnstable,
   wrapGAppsHook3,
-  callPackage,
   nix-update-script,
   # Core Libs
   alsa-lib,
@@ -44,10 +43,10 @@
   wayland,
   xorg,
   policies ? {},
+  sources,
   ...
 }:
 let
-  sources = callPackage ../../various/_sources/generated.nix {};
   sourcesJson = builtins.fromJSON (builtins.readFile ../../various/_sources/generated.json);
   
   appId = "glide-browser";
