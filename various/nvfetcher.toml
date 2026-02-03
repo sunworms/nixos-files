@@ -1,0 +1,35 @@
+# inputs
+[nixpkgs]
+src.git = "https://github.com/NixOS/nixpkgs"
+src.branch = "nixos-unstable"
+fetch.git = "https://github.com/NixOS/nixpkgs"
+
+[preservation]
+src.git = "https://github.com/nix-community/preservation"
+fetch.git = "https://github.com/nix-community/preservation"
+
+[sops-nix]
+src.git = "https://github.com/Mic92/sops-nix"
+fetch.git = "https://github.com/Mic92/sops-nix"
+
+[hjem]
+src.git = "https://github.com/feel-co/hjem"
+fetch.git = "https://github.com/feel-co/hjem"
+
+[quickshell]
+src.git = "https://github.com/quickshell-mirror/quickshell"
+fetch.git = "https://github.com/quickshell-mirror/quickshell"
+pinned = true
+
+# binary packages
+[eden-nightly]
+src.github = "eden-emulator/Releases"
+fetch.url = "https://github.com/eden-emulator/Releases/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"
+
+[pcsx2]
+src.github_tag = "pcsx2/pcsx2"
+fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-linux-appimage-x64-Qt.AppImage"
+
+[glide]
+src.github = "glide-browser/glide"
+fetch.url = "https://github.com/glide-browser/glide/releases/download/$ver/glide.linux-x86_64.tar.xz"

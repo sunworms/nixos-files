@@ -1,7 +1,6 @@
 {
   lib,
   stdenv,
-  fetchurl,
   config,
   writeText,
   # Build/Packaging Tools
@@ -11,6 +10,7 @@
   makeDesktopItem,
   patchelfUnstable,
   wrapGAppsHook3,
+  callPackage,
   nix-update-script,
   # Core Libs
   alsa-lib,
@@ -47,7 +47,8 @@
   ...
 }:
 let
-  hashJson = builtins.fromJSON (builtins.readFile ../../various/hashes.json);
+  sources = callPackage ../../various/_sources/generated.nix {};
+  sourcesJson = builtins.fromJSON (builtins.readFile ../../various/_sources/generated.json);
   
   appId = "glide-browser";
 
@@ -104,12 +105,9 @@ in
 stdenv.mkDerivation (finalAttrs: {
   pname = "glide-browser";
 
-  version = hashJson.pins.glide.version;
+  version = sourcesJson.glide.version;
   
-  src = fetchurl {
-    url = "https://github.com/glide-browser/glide/releases/download/${finalAttrs.version}/glide.linux-x86_64.tar.xz";
-    sha256 = hashJson.pins.glide.hash;
-  };
+  src = sources.glide.src;
 
   nativeBuildInputs = [
     copyDesktopItems

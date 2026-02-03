@@ -1,0 +1,147 @@
+{
+    "eden-nightly": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "eden-nightly",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-g7x10zM/55z2avdETcpRJ56O1oN8cndbzl9UAiOJZF8=",
+            "type": "url",
+            "url": "https://github.com/eden-emulator/Releases/releases/download/v0.1.1/Eden-Linux-v0.1.1-amd64-clang-pgo.AppImage"
+        },
+        "version": "v0.1.1"
+    },
+    "glide": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "glide",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-yut/yXT+BJCFackLSRG7tLBD6m008k0lC62Qwt7aRX8=",
+            "type": "url",
+            "url": "https://github.com/glide-browser/glide/releases/download/0.1.58a/glide.linux-x86_64.tar.xz"
+        },
+        "version": "0.1.58a"
+    },
+    "hjem": {
+        "cargoLock": null,
+        "date": "2026-01-22",
+        "extract": null,
+        "name": "hjem",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "9d0c8d4b44f661910595b07e6480557644c1431c",
+            "sha256": "sha256-cKETEBrseo7Iz+bOzflwy1xTpDuUj3QaLA+P49yJw8k=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/feel-co/hjem"
+        },
+        "version": "9d0c8d4b44f661910595b07e6480557644c1431c"
+    },
+    "nixpkgs": {
+        "cargoLock": null,
+        "date": "2026-02-02",
+        "extract": null,
+        "name": "nixpkgs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "cb369ef2efd432b3cdf8622b0ffc0a97a02f3137",
+            "sha256": "sha256-VKS4ZLNx4PNrABoB0L8KUpc1fE7CLpQXQs985tGfaCU=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/NixOS/nixpkgs"
+        },
+        "version": "cb369ef2efd432b3cdf8622b0ffc0a97a02f3137"
+    },
+    "pcsx2": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "pcsx2",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-s0FPuduhdP4Wnrf2BQQ/kgNPN1CLgi+ne9TBlLHMMMg=",
+            "type": "url",
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.91/pcsx2-v2.7.91-linux-appimage-x64-Qt.AppImage"
+        },
+        "version": "v2.7.91"
+    },
+    "preservation": {
+        "cargoLock": null,
+        "date": "2025-09-09",
+        "extract": null,
+        "name": "preservation",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
+            "sha256": "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/nix-community/preservation"
+        },
+        "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
+    },
+    "quickshell": {
+        "cargoLock": null,
+        "date": "2026-01-28",
+        "extract": null,
+        "name": "quickshell",
+        "passthru": null,
+        "pinned": true,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "1e4d804e7f3fa7465811030e8da2bf10d544426a",
+            "sha256": "sha256-WW00FaBiUmQyxvSbefvgxIjwf/WmRrEGBbwMHvW/7uQ=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/quickshell-mirror/quickshell"
+        },
+        "version": "1e4d804e7f3fa7465811030e8da2bf10d544426a"
+    },
+    "sops-nix": {
+        "cargoLock": null,
+        "date": "2026-02-03",
+        "extract": null,
+        "name": "sops-nix",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "f990b0a334e96d3ef9ca09d4bd92778b42fd84f9",
+            "sha256": "sha256-NUVGVtYBTC96WhPh4Y3SVM7vf0o1z5W4uqRBn9v1pfo=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/Mic92/sops-nix"
+        },
+        "version": "f990b0a334e96d3ef9ca09d4bd92778b42fd84f9"
+    }
+}

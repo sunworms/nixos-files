@@ -21,8 +21,8 @@
     # Nix LSPs
     nil
     nixd
-    
-    npins
+
+    nvfetcher
     fastfetch
     wl-clipboard
   ];

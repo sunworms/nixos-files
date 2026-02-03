@@ -1,18 +1,16 @@
 {
   appimageTools,
-  fetchurl,
+  callPackage,
   lib,
 }:
 let
-  hashJson = builtins.fromJSON (builtins.readFile ../../../various/hashes.json);
-
+  sources = callPackage ../../../various/_sources/generated.nix {};
+  sourcesJson = builtins.fromJSON (builtins.readFile ../../../various/_sources/generated.json);
+  
   pname = "pcsx2";
-  version = lib.removePrefix "v" hashJson.pins.pcsx2.version;
+  version = lib.removePrefix "v" sourcesJson.pcsx2.version;
 
-  src = fetchurl {
-    url = "https://github.com/PCSX2/${pname}/releases/download/v${version}/${pname}-v${version}-linux-appimage-x64-Qt.AppImage";
-    hash = hashJson.pins.pcsx2.hash;
-  };
+  src = sources.pcsx2.src;
 
   appimageContents = appimageTools.extract { inherit pname version src; };
 in

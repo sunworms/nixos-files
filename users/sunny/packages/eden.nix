@@ -1,15 +1,14 @@
 {
   stdenvNoCC,
-  fetchurl,
+  callPackage,
   makeDesktopItem,
 }:
 let
-  hashJson = builtins.fromJSON (builtins.readFile ../../../various/hashes.json);
+  sources = callPackage ../../../various/_sources/generated.nix {};
+  sourcesJson = builtins.fromJSON (builtins.readFile ../../../various/_sources/generated.json);
 
   pname = "eden";
-  version = hashJson.pins.eden-nightly.version;
-  # Extract commit hash from version tag (e.g., v1769981453.cd9527072d -> cd9527072d)
-  commit = builtins.head (builtins.match ".*\\.([a-f0-9]+)" version);
+  version = sourcesJson.eden-nightly.version;
 
   desktopItem = makeDesktopItem {
     type = "Application";
@@ -31,14 +30,10 @@ stdenvNoCC.mkDerivation {
   inherit
     pname
     version
-    commit
     desktopItem
     ;
 
-  src = fetchurl {
-    url = "https://github.com/Eden-CI/Nightly/releases/download/${version}/Eden-Linux-${commit}-amd64-clang-pgo.AppImage";
-    hash = hashJson.pins.eden-nightly.hash;
-  };
+  src = sources.eden-nightly.src;
 
   dontUnpack = true;
   dontBuild = true;

@@ -7,14 +7,8 @@
     settings = {
       experimental-features = [
         "nix-command"
-        "flakes"
       ];
       trusted-users = [ "sunny" ];
     };
-  };
-  
-  nixpkgs = {
-    config.allowUnfree = true;
-    overlays = [];
   };
 }
