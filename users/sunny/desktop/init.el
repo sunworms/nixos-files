@@ -32,8 +32,6 @@
 (add-to-list 'custom-theme-load-path (expand-file-name "themes/" user-emacs-directory))
 (load-theme 'dank-emacs t)
 
-(setq explicit-shell-file-name "/etc/profiles/per-user/sunny/bin/fish")
-
 (require 'telephone-line)
 (telephone-line-mode 1)
 
