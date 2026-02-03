@@ -51,7 +51,7 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-02-02",
+        "date": "2026-02-03",
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
@@ -61,13 +61,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "cb369ef2efd432b3cdf8622b0ffc0a97a02f3137",
-            "sha256": "sha256-VKS4ZLNx4PNrABoB0L8KUpc1fE7CLpQXQs985tGfaCU=",
+            "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+            "sha256": "sha256-KHFT9UWOF2yRPlAnSXQJh6uVcgNcWlFqqiAZ7OVlHNc=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/NixOS/nixpkgs"
         },
-        "version": "cb369ef2efd432b3cdf8622b0ffc0a97a02f3137"
+        "version": "e6eae2ee2110f3d31110d5c222cd395303343b08"
     },
     "pcsx2": {
         "cargoLock": null,
