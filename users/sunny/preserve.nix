@@ -22,6 +22,7 @@
       ".cache/DankMaterialShell"
       ".cache/wal"
 
+      ".config/rclone"
       ".config/mozilla"
       ".config/fish"
       ".config/niri"
