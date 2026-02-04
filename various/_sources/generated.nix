@@ -16,17 +16,17 @@
   };
   emacs = {
     pname = "emacs";
-    version = "e7128108bcf2523bce4704c317b7b1463ba4aec1";
+    version = "9bf5201bdbf435e1460af28aa2002b8af8d5125e";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "e7128108bcf2523bce4704c317b7b1463ba4aec1";
+      rev = "9bf5201bdbf435e1460af28aa2002b8af8d5125e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-XecSUUxB1z91zsUW3KfVNq9wCEzDM0pPQEjugSvfZhI=";
+      sha256 = "sha256-+xBI5eMUEk1XENP17QtNADH679pXN72zr8HFQu1Xl8g=";
     };
-    date = "2026-02-04";
+    date = "2026-02-05";
   };
   glide = {
     pname = "glide";
