@@ -176,6 +176,7 @@ recent-windows {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
+    Mod+E hotkey-overlay-title="Open Emacsclient" { spawn "emacsclient" "-nc"; }
     Mod+T hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; };
     Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
