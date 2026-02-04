@@ -4,9 +4,10 @@ let
   sources = builtins.mapAttrs (name: value:
     let
       src = if value.src.type == "git" then
-        fetchTarball {
-          url = "${value.src.url}/archive/${value.src.rev}.tar.gz";
-          sha256 = value.src.sha256;
+        fetchGit {
+          url = "${value.src.url}";
+          rev = "${value.src.rev}";
+          shallow = true;
         }
       else
         builtins.fetchurl {
