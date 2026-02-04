@@ -1,8 +1,6 @@
 { pkgs, ... }:
 
-{
-  programs.fuse.userAllowOther = true;
-  
+{  
   programs.git.enable = true;
 
   hardware.graphics = {
