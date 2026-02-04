@@ -31,6 +31,10 @@
     memoryPercent = 100;
   };
 
+  environment.sessionVariables = {
+    IS_NIXOS = 1;
+  };
+
   # Enable direnv
   programs.direnv = {
     enable = true;
