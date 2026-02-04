@@ -14,6 +14,20 @@
       sha256 = "sha256-g7x10zM/55z2avdETcpRJ56O1oN8cndbzl9UAiOJZF8=";
     };
   };
+  emacs = {
+    pname = "emacs";
+    version = "520e2b45e7f03715631f0e2a826c0e2bb738b72e";
+    src = fetchgit {
+      url = "https://git.gay/sunworms/emacs-config";
+      rev = "520e2b45e7f03715631f0e2a826c0e2bb738b72e";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-ym2X6rXXx26KKF+3xNdZIrLueUWgBrSEHUXnIgvGYGc=";
+    };
+    date = "2026-02-04";
+  };
   glide = {
     pname = "glide";
     version = "0.1.58a";
@@ -52,10 +66,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.91";
+    version = "v2.7.93";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.91/pcsx2-v2.7.91-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-s0FPuduhdP4Wnrf2BQQ/kgNPN1CLgi+ne9TBlLHMMMg=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.93/pcsx2-v2.7.93-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-vLzs9awSYlhaGi1G53ivo1NkRKCc9AT7EWKhqcR/gzk=";
     };
   };
   preservation = {
@@ -88,15 +102,15 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "f990b0a334e96d3ef9ca09d4bd92778b42fd84f9";
+    version = "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c";
     src = fetchgit {
       url = "https://github.com/Mic92/sops-nix";
-      rev = "f990b0a334e96d3ef9ca09d4bd92778b42fd84f9";
+      rev = "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-NUVGVtYBTC96WhPh4Y3SVM7vf0o1z5W4uqRBn9v1pfo=";
+      sha256 = "sha256-ktjWTq+D5MTXQcL9N6cDZXUf9kX8JBLLBLT0ZyOTSYY=";
     };
     date = "2026-02-03";
   };

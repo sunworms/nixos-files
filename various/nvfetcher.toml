@@ -21,6 +21,10 @@ src.git = "https://github.com/quickshell-mirror/quickshell"
 fetch.git = "https://github.com/quickshell-mirror/quickshell"
 pinned = true
 
+[emacs]
+src.git = "https://git.gay/sunworms/emacs-config"
+fetch.git = "https://git.gay/sunworms/emacs-config"
+
 # binary packages
 [eden-nightly]
 src.github = "eden-emulator/Releases"

@@ -14,6 +14,26 @@
         },
         "version": "v0.1.1"
     },
+    "emacs": {
+        "cargoLock": null,
+        "date": "2026-02-04",
+        "extract": null,
+        "name": "emacs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "520e2b45e7f03715631f0e2a826c0e2bb738b72e",
+            "sha256": "sha256-ym2X6rXXx26KKF+3xNdZIrLueUWgBrSEHUXnIgvGYGc=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://git.gay/sunworms/emacs-config"
+        },
+        "version": "520e2b45e7f03715631f0e2a826c0e2bb738b72e"
+    },
     "glide": {
         "cargoLock": null,
         "date": null,
@@ -78,11 +98,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-s0FPuduhdP4Wnrf2BQQ/kgNPN1CLgi+ne9TBlLHMMMg=",
+            "sha256": "sha256-vLzs9awSYlhaGi1G53ivo1NkRKCc9AT7EWKhqcR/gzk=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.91/pcsx2-v2.7.91-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.93/pcsx2-v2.7.93-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.91"
+        "version": "v2.7.93"
     },
     "preservation": {
         "cargoLock": null,
@@ -136,12 +156,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "f990b0a334e96d3ef9ca09d4bd92778b42fd84f9",
-            "sha256": "sha256-NUVGVtYBTC96WhPh4Y3SVM7vf0o1z5W4uqRBn9v1pfo=",
+            "rev": "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c",
+            "sha256": "sha256-ktjWTq+D5MTXQcL9N6cDZXUf9kX8JBLLBLT0ZyOTSYY=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/Mic92/sops-nix"
         },
-        "version": "f990b0a334e96d3ef9ca09d4bd92778b42fd84f9"
+        "version": "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c"
     }
 }
