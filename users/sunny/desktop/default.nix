@@ -1,17 +1,20 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, sources, ... }:
 
 let
   sunnyEmacs = (pkgs.callPackage ./emacs.nix {}).default;
 in
 {
   files = {
-    ".emacs.d/init.el".source = ./init.el;
+    ".emacs.d/init.el".source = "${sources.emacs.src}/init.el";
+    ".emacs.d/modules".source = "${sources.emacs.src}/modules";
+    
     ".gtkrc-2.0".text = ''
 gtk-theme-name="adw-gtk3"
 gtk-icon-theme-name="candy-icons"
 gtk-cursor-theme-name="volantes_cursors"
 gtk-cursor-theme-size=24
     '';
+    
     ".face".source = ../../../assets/icons/haruta.jpg;
   };
 
