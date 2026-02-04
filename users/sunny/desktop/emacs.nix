@@ -1,9 +1,13 @@
 { pkgs, ... }:
 
 let
-  treesitGrammars = pkgs.emacs-pgtk.pkgs.treesit-grammars.with-all-grammars;
+  emacsPackagesCustom = pkgs.emacs-pgtk.pkgs.overrideScope (final: prev: {
+    eglot = null;
+  });
 
-  emacs-with-packages = pkgs.emacs-pgtk.pkgs.withPackages (
+  treesitGrammars = emacsPackagesCustom.treesit-grammars.with-all-grammars;
+
+  emacs-with-packages = emacsPackagesCustom.withPackages (
     epkgs: with epkgs; [
       git-auto-commit-mode # for org mode
       treesitGrammars
