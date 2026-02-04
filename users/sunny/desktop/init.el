@@ -39,6 +39,14 @@
 (setq org-confirm-babel-evaluate nil)
 (global-set-key (kbd "C-c c") 'org-capture)
 
+;; Auto-commit-mode for Org-mode
+(add-hook 'org-mode-hook 'git-auto-commit-mode)
+
+(setq gac-commit-message "Auto-update notes: %s") 
+
+(setq gac-ask-for-summary-p nil)
+(setq gac-automatically-push t)
+
 ;; General toggles
 (electric-pair-mode 1)
 (auto-save-mode -1)

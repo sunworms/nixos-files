@@ -5,6 +5,7 @@ let
 
   emacs-with-packages = pkgs.emacs-pgtk.pkgs.withPackages (
     epkgs: with epkgs; [
+      git-auto-commit-mode # for org mode
       treesitGrammars
       restart-emacs
       telephone-line
