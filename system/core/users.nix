@@ -10,6 +10,7 @@
     extraGroups = [
       "wheel"
       "networkmanager"
+      "fuse"
     ];
     hashedPasswordFile = config.sops.secrets.sunny_password.path;
     shell = pkgs.fish;
