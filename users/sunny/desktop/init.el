@@ -171,7 +171,7 @@
 ;; Associate file extensions with respective modes
 (add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
 (add-to-list 'auto-mode-alist '("\\.typ\\'" . typst-ts-mode))
-(add-to-list 'auto-mode-alist '("\\.tex\\'" . teX-mode))
+(add-to-list 'auto-mode-alist '("\\.tex\\'" . tex-mode))
 
 ;; Rust mode
 (require 'rust-mode)
