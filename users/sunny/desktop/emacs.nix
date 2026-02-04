@@ -9,9 +9,6 @@ let
       restart-emacs
       telephone-line
       magit
-      lsp-mode
-      lsp-ui
-      lsp-latex
       company
       company-auctex
       company-bibtex
@@ -24,7 +21,7 @@ let
       typst-ts-mode
       typst-preview
       rustic
-      lsp-java
+      eglot-java
       direnv
     ]
   );

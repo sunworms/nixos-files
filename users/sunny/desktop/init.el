@@ -1,5 +1,6 @@
 ;;; init.el --- Emacs configuration -*- lexical-binding: t; -*-
 
+;; General options
 (setq
  lexical-binding t
  electric-pair-mode t
@@ -10,6 +11,35 @@
  version-control t
  create-lockfiles nil)
 
+;; Org mode
+(setq org-directory "~/Documents/org")
+(setq org-journal-dir (concat org-directory "/journal"))
+(setq org-notes-dir (concat org-directory "/notes"))
+
+(make-directory org-journal-dir t)
+(make-directory org-notes-dir t)
+
+(setq org-capture-templates
+      ` (("j" "Journal (daily)" entry
+          (file ,(concat org-journal-dir "/" (format-time-string "%Y-%m-%d.org")))
+          "* %U\n\n%?\n")
+
+         ("n" "Note (daily)" entry
+          (file ,(concat org-notes-dir "/" (format-time-string "%Y-%m-%d.org")))
+          "* %U\n\n%?\n")))
+
+(setq org-agenda-files (list org-directory))
+(setq org-startup-indented t)
+(setq org-hide-emphasis-markers t)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((shell . t)))
+
+(setq org-confirm-babel-evaluate nil)
+(global-set-key (kbd "C-c c") 'org-capture)
+
+;; General toggles
 (electric-pair-mode 1)
 (auto-save-mode -1)
 (menu-bar-mode -1)
@@ -20,86 +50,106 @@
                              (horizontal-scroll-bars . nil))))
 (add-hook 'after-make-frame-functions 'my/disable-scroll-bars)
 
+;; Browser and font
 (setq browse-url-browser-function 'browse-url-xdg-open)
 (set-face-attribute 'default nil :family "D2CodingLigature Nerd Font Mono" :height 110)
 
+;; Line numbers
 (global-display-line-numbers-mode 1)
 (defun display-line-numbers--turn-on ()
     "Turn on `display-line-numbers-mode'."
     (unless (or (minibufferp) (eq major-mode 'pdf-view-mode))
       (display-line-numbers-mode)))
 
+;; Themes
 (add-to-list 'custom-theme-load-path (expand-file-name "themes/" user-emacs-directory))
 (load-theme 'dank-emacs t)
 
+;; Telephone-line
 (require 'telephone-line)
 (telephone-line-mode 1)
 
+;; Direnv-mode
 (require 'direnv)
-(direnv-mode)
+(defun my/enable-direnv-if-envrc ()
+  "Enable direnv-mode only if an .envrc exists in project root."
+  (when-let ((root (or (locate-dominating-file default-directory ".envrc")
+                       (locate-dominating-file default-directory ".direnv"))))
+    (direnv-mode 1)))
 
-(require 'lsp-mode)
-(setq lsp-keymap-prefix "C-c l"
-      lsp-enable-snippet t
-      lsp-enable-symbol-highlighting t
-      lsp-enable-on-type-formatting nil
-      lsp-signature-auto-activate t
-      lsp-signature-render-documentation t
-      lsp-completion-provider :company-capf
-      lsp-headerline-breadcrumb-enable t
-      lsp-enable-suggest-server-download nil)
+(add-hook 'find-file-hook #'my/enable-direnv-if-envrc)
+(add-hook 'dired-mode-hook #'my/enable-direnv-if-envrc)
 
-(dolist (hook '(nix-mode-hook rust-mode-hook java-mode-hook typst-ts-mode-hook LaTeX-mode-hook tex-mode-hook))
-  (add-hook hook #'lsp-deferred))
+;; Eglot
+(require 'eglot)
 
-(with-eval-after-load 'lsp-mode
-  (setq lsp-enabled-clients '(nixd nil-ls texlab tinymist rust-analyzer jdtls))
-  
-  (lsp-register-client
-   (make-lsp-client :new-connection (lsp-stdio-connection "nixd")
-                    :major-modes '(nix-mode)
-                    :server-id 'nixd
-                    :add-on? nil))
-  
-  (lsp-register-client
-   (make-lsp-client :new-connection (lsp-stdio-connection "nil")
-                    :major-modes '(nix-mode)
-                    :server-id 'nil-ls
-                    :add-on? t))
-  
-  (add-to-list 'lsp-language-id-configuration '(typst-ts-mode . "typst"))
-  (lsp-register-client
-   (make-lsp-client :new-connection (lsp-stdio-connection "tinymist")
-                    :major-modes '(typst-ts-mode)
-                    :server-id 'tinymist))
-  
-  (lsp-register-client
-   (make-lsp-client :new-connection (lsp-stdio-connection "texlab")
-                    :major-modes '(LaTeX-mode latex-mode tex-mode bibtex-mode yatex-mode)
-                    :server-id 'texlab)))
+(setq eglot-autoshutdown t)
+(setq eglot-send-changes-idle-time 0.1)
 
-(require 'lsp-ui)
-(setq lsp-ui-doc-enable t
-      lsp-ui-doc-position 'at-point
-      lsp-ui-doc-delay 0.5
-      lsp-ui-sideline-enable t
-      lsp-ui-sideline-show-hover t
-      lsp-ui-sideline-show-diagnostics t
-      lsp-ui-peek-enable t)
-(add-hook 'lsp-mode-hook 'lsp-ui-mode)
+(dolist (hook '(nix-mode-hook
+                rust-mode-hook
+                java-mode-hook
+                typst-ts-mode-hook
+                LaTeX-mode-hook
+                tex-mode-hook))
+  (add-hook hook #'eglot-ensure))
 
-(require 'lsp-latex)
+(with-eval-after-load 'eglot
+  (add-to-list 'eglot-server-programs
+               '(nix-mode . ("nixd")))
 
-(with-eval-after-load "tex-mode"
- (add-hook 'tex-mode-hook 'lsp)
- (add-hook 'latex-mode-hook 'lsp))
+  (add-to-list 'eglot-server-programs
+               '(typst-ts-mode . ("tinymist")))
 
-(with-eval-after-load "yatex"
- (add-hook 'yatex-mode-hook 'lsp))
+  (add-to-list 'eglot-server-programs
+               '((LaTeX-mode latex-mode tex-mode bibtex-mode yatex-mode)
+                 . ("texlab")))
 
-(with-eval-after-load "bibtex"
- (add-hook 'bibtex-mode-hook 'lsp))
+  (add-to-list 'eglot-server-programs
+               '(rust-mode . ("rust-analyzer")))
 
+  (add-to-list 'eglot-server-programs
+               '(java-mode . ("jdtls"))))
+
+;; Flymake
+(require 'flymake)
+
+(defun my/nil-flymake-backend (report-fn &rest _args)
+  (unless (executable-find "nil")
+    (error "nil executable not found"))
+
+  (let* ((source (current-buffer))
+         (temp-file (make-temp-file "nil" nil ".nix"))
+         (proc
+          (make-process
+           :name "nil-flymake"
+           :buffer (generate-new-buffer " *nil-flymake*")
+           :command (list "nil" "diagnostics" temp-file)
+           :noquery t
+           :sentinel
+           (lambda (p _e)
+             (when (eq 'exit (process-status p))
+               (funcall report-fn nil)
+               (kill-buffer (process-buffer p)))))))
+
+    (with-temp-file temp-file
+      (insert-buffer-substring source))))
+
+(add-hook 'nix-mode-hook
+          (lambda ()
+            (add-hook 'flymake-diagnostic-functions
+                      #'my/nil-flymake-backend
+		      nil t)))
+
+;; Documentation
+(setq eldoc-echo-area-use-multiline-p t)
+
+(setq flymake-show-diagnostics-at-end-of-line t)
+
+(global-set-key (kbd "M-?") #'xref-find-references)
+(global-set-key (kbd "M-.") #'xref-find-definitions)
+
+;; Company-mode
 (require 'company)
 (setq company-idle-delay 0.1
       company-minimum-prefix-length 1
@@ -110,25 +160,27 @@
 (with-eval-after-load 'company
   (add-to-list 'company-backends 'company-capf))
 
+;; Associate file extensions with respective modes
 (add-to-list 'auto-mode-alist '("\\.nix\\'" . nix-mode))
 (add-to-list 'auto-mode-alist '("\\.typ\\'" . typst-ts-mode))
-(add-to-list 'auto-mode-alist '("\\.tex\\'" . LaTeX-mode))
+(add-to-list 'auto-mode-alist '("\\.tex\\'" . teX-mode))
 
+;; Rust mode
 (require 'rust-mode)
 (setq rust-mode-treesitter-derive t)
 (with-eval-after-load 'rust-mode
   (require 'rustic nil t))
-(setq rustic-lsp-server 'rust-analyzer)
-(setq rustic-lsp-client 'lsp-mode)
 (setq rustic-format-on-save t)
 (setq rustic-compile-command "cargo check")
 
-(require 'lsp-java)
-(add-hook 'java-mode-hook #'lsp-java-boot-lens-mode)
+;; Eglot Java
+(require 'eglot-java)
 
+;; PDF tools
 (require 'pdf-tools)
-(setq pdf-view-continuous t)
+(setq pdf-view-continuous 1)
 
+;; LaTeX stuff
 (require 'auctex)
 (setq TeX-auto-save t
      TeX-parse-self t
@@ -140,7 +192,6 @@
 
 (add-hook 'LaTeX-mode-hook
 	  (lambda ()
-	   (lsp-mode)
 	   (pdf-tools-install)
 	   (turn-on-reftex)
 	   (turn-on-font-lock)
@@ -158,6 +209,7 @@
       '("--eval"
         "(lsp-latex-forward-search-with-pdf-tools \"%f\" \"%p\" \"%l\")"))
 
+;; Typst stuff
 (require 'typst-ts-mode)
 (require 'typst-preview)
 (setq typst-ts-watch-options "--open")
