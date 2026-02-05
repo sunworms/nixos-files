@@ -37,7 +37,7 @@ gtk-cursor-theme-size=24
     foot
     hyfetch
     git
-    mate.atril
+    papers
     nautilus
     xwayland-satellite
   ];

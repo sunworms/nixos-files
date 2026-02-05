@@ -21,7 +21,6 @@
 
       ".cache/DankMaterialShell"
 
-      ".config/autostart"
       ".config/net.imput.helium"
       ".config/fish"
       ".config/niri"
@@ -31,8 +30,6 @@
       
       ".config/gtk-3.0"
       ".config/gtk-4.0"
-      ".config/qt5ct"
-      ".config/qt6ct"
       
       ".config/azahar-emu"
       ".config/eden"
@@ -41,6 +38,7 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
+      ".local/share/gvfs-metadata"
       ".local/share/Steam"
       ".local/share/fish"
       ".local/share/azahar-emu"
