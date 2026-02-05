@@ -3,6 +3,8 @@
 {
   programs.git.enable = true;
 
+  programs.dconf.enable = true;
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -21,6 +23,9 @@
     # Nix LSPs
     nil
     nixd
+
+    # GSettings
+    glib
 
     nvfetcher
     fastfetch
