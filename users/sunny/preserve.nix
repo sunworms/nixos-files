@@ -20,9 +20,8 @@
       ".steam"
 
       ".cache/DankMaterialShell"
-      ".cache/wal"
 
-      ".config/mozilla"
+      ".config/net.imput.helium"
       ".config/fish"
       ".config/niri"
       ".config/DankMaterialShell"
@@ -31,6 +30,8 @@
       
       ".config/gtk-3.0"
       ".config/gtk-4.0"
+      ".config/qt5ct"
+      ".config/qt6ct"
       
       ".config/azahar-emu"
       ".config/eden"
