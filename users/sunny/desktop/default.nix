@@ -29,6 +29,7 @@ gtk-cursor-theme-size=24
     "DankMaterialShell/clsettings.json".source = ./dms-clipboard.json;
     "matugen/config.toml".source = ./matugen.toml;
     "matugen/dank-emacs.el".source = ./dank-emacs.el;
+    "matugen/vesktop.css".source = ./vesktop-matugen.css;
   };
 
   packages = with pkgs; [
