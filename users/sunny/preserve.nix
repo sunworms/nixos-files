@@ -21,6 +21,7 @@
 
       ".cache/DankMaterialShell"
 
+      ".config/autostart"
       ".config/net.imput.helium"
       ".config/fish"
       ".config/niri"
