@@ -1,6 +1,6 @@
 { pkgs, ... }:
 
-{  
+{
   programs.git.enable = true;
 
   hardware.graphics = {
@@ -43,4 +43,6 @@
     ];
     protontricks.enable = true;
   };
+
+  environment.etc."chromium/policies/managed/default.json".source = ./chromium.json;
 }
