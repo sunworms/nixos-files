@@ -71,7 +71,8 @@
 	}
     ],
 
-    "DefaultSearchProvideName": "DuckDuckGo (No AI)",
+    "DefaultSearchProviderEnabled": true,
+    "DefaultSearchProviderName": "DuckDuckGo (No AI)",
     "DefaultSearchProviderSearchURL": "https://noai.duckduckgo.com/search?q={searchTerms}",
     "DefaultSearchProviderIconURL": "https://noai.duckduckgo.com/favicon.ico",
     "DefaultSearchProviderSuggestURL": "https://noai.duckduckgo.com/suggestions?q={searchTerms}"
