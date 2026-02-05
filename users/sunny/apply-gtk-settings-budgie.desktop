@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Apply GTK Settings for Budgie
-Comment=Executes custom GTK settings script for Budgie desktop
-Exec=apply-gtk-settings-budgie
-Terminal=false
-Hidden=false
-NoDisplay=false
-X-GNOME-Autostart-enabled=true

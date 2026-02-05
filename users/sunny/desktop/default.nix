@@ -30,7 +30,6 @@ gtk-cursor-theme-size=24
     "matugen/config.toml".source = ./matugen.toml;
     "matugen/dank-emacs.el".source = ./dank-emacs.el;
     "matugen/vesktop.css".source = ./vesktop-matugen.css;
-    "budgie-desktop/labwc/rc.xml".source = ./labwc-rc.xml;
   };
 
   packages = with pkgs; [

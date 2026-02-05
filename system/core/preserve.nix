@@ -21,6 +21,11 @@
         "/var/lib/sops-nix"
         "/var/lib/cloudflare-warp"
         "/etc/NetworkManager/system-connections"
+        {
+          directory = "/var/cache/tuigreet";
+          user = "greeter";
+          group = "greeter";
+        }
       ];
       files = [
         {

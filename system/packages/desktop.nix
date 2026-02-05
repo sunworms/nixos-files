@@ -1,11 +1,13 @@
 { pkgs, sources, ... }:
 
 {
-  programs.regreet = {
+  services.greetd = {
     enable = true;
-    theme = {
-      name = "Adwaita-dark";
-      package = pkgs.gnome-themes-extra;
+    useTextGreeter = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --remember-session";
+      };
     };
   };
   
@@ -16,8 +18,4 @@
     systemd.enable = false;
     quickshell.package = (pkgs.callPackage "${sources.quickshell.src}/default.nix" {});
   };
-
-  services.desktopManager.budgie.enable = true;
-
-  environment.budgie.excludePackages = [ pkgs.vlc ];
 }
