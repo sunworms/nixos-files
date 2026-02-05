@@ -28,39 +28,35 @@
     };
     date = "2026-02-05";
   };
-  glide = {
-    pname = "glide";
-    version = "0.1.58a";
+  helium = {
+    pname = "helium";
+    version = "0.8.4.1";
     src = fetchurl {
-      url = "https://github.com/glide-browser/glide/releases/download/0.1.58a/glide.linux-x86_64.tar.xz";
-      sha256 = "sha256-yut/yXT+BJCFackLSRG7tLBD6m008k0lC62Qwt7aRX8=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.8.4.1/helium-0.8.4.1-x86_64.AppImage";
+      sha256 = "sha256-y4KzR+pkBUuyVU+ALrzdY0n2rnTB7lTN2ZmVSzag5vE=";
     };
   };
   hjem = {
     pname = "hjem";
     version = "9d0c8d4b44f661910595b07e6480557644c1431c";
-    src = fetchgit {
-      url = "https://github.com/feel-co/hjem";
+    src = fetchFromGitHub {
+      owner = "feel-co";
+      repo = "hjem";
       rev = "9d0c8d4b44f661910595b07e6480557644c1431c";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-cKETEBrseo7Iz+bOzflwy1xTpDuUj3QaLA+P49yJw8k=";
     };
     date = "2026-01-22";
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "bf922a59c5c9998a6584645f7d0de689512e444c";
-    src = fetchgit {
-      url = "https://github.com/NixOS/nixpkgs";
-      rev = "bf922a59c5c9998a6584645f7d0de689512e444c";
+    version = "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2";
+    src = fetchFromGitHub {
+      owner = "NixOS";
+      repo = "nixpkgs";
+      rev = "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-ksTL7P9QC1WfZasNlaAdLOzqD8x5EPyods69YBqxSfk=";
+      sha256 = "sha256-AYqlWrX09+HvGs8zM6ebZ1pwUqjkfpnv8mewYwAo+iM=";
     };
     date = "2026-02-04";
   };
@@ -75,13 +71,11 @@
   preservation = {
     pname = "preservation";
     version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
-    src = fetchgit {
-      url = "https://github.com/nix-community/preservation";
+    src = fetchFromGitHub {
+      owner = "nix-community";
+      repo = "preservation";
       rev = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
@@ -89,13 +83,11 @@
   quickshell = {
     pname = "quickshell";
     version = "1e4d804e7f3fa7465811030e8da2bf10d544426a";
-    src = fetchgit {
-      url = "https://github.com/quickshell-mirror/quickshell";
+    src = fetchFromGitHub {
+      owner = "quickshell-mirror";
+      repo = "quickshell";
       rev = "1e4d804e7f3fa7465811030e8da2bf10d544426a";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-WW00FaBiUmQyxvSbefvgxIjwf/WmRrEGBbwMHvW/7uQ=";
     };
     date = "2026-01-28";
@@ -103,13 +95,11 @@
   sops-nix = {
     pname = "sops-nix";
     version = "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c";
-    src = fetchgit {
-      url = "https://github.com/Mic92/sops-nix";
+    src = fetchFromGitHub {
+      owner = "Mic92";
+      repo = "sops-nix";
       rev = "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c";
       fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
       sha256 = "sha256-ktjWTq+D5MTXQcL9N6cDZXUf9kX8JBLLBLT0ZyOTSYY=";
     };
     date = "2026-02-03";

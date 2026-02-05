@@ -2,23 +2,23 @@
 [nixpkgs]
 src.git = "https://github.com/NixOS/nixpkgs"
 src.branch = "nixos-unstable"
-fetch.git = "https://github.com/NixOS/nixpkgs"
+fetch.github = "NixOS/nixpkgs"
 
 [preservation]
 src.git = "https://github.com/nix-community/preservation"
-fetch.git = "https://github.com/nix-community/preservation"
+fetch.github = "nix-community/preservation"
 
 [sops-nix]
 src.git = "https://github.com/Mic92/sops-nix"
-fetch.git = "https://github.com/Mic92/sops-nix"
+fetch.github = "Mic92/sops-nix"
 
 [hjem]
 src.git = "https://github.com/feel-co/hjem"
-fetch.git = "https://github.com/feel-co/hjem"
+fetch.github = "feel-co/hjem"
 
 [quickshell]
 src.git = "https://github.com/quickshell-mirror/quickshell"
-fetch.git = "https://github.com/quickshell-mirror/quickshell"
+fetch.github = "quickshell-mirror/quickshell"
 pinned = true
 
 [emacs]
@@ -34,6 +34,6 @@ fetch.url = "https://github.com/eden-emulator/Releases/releases/download/$ver/Ed
 src.github_tag = "pcsx2/pcsx2"
 fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-linux-appimage-x64-Qt.AppImage"
 
-[glide]
-src.github = "glide-browser/glide"
-fetch.url = "https://github.com/glide-browser/glide/releases/download/$ver/glide.linux-x86_64.tar.xz"
+[helium]
+src.github = "imputnet/helium-linux"
+fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"
