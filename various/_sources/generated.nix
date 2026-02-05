@@ -52,17 +52,17 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "e6eae2ee2110f3d31110d5c222cd395303343b08";
+    version = "bf922a59c5c9998a6584645f7d0de689512e444c";
     src = fetchgit {
       url = "https://github.com/NixOS/nixpkgs";
-      rev = "e6eae2ee2110f3d31110d5c222cd395303343b08";
+      rev = "bf922a59c5c9998a6584645f7d0de689512e444c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-KHFT9UWOF2yRPlAnSXQJh6uVcgNcWlFqqiAZ7OVlHNc=";
+      sha256 = "sha256-ksTL7P9QC1WfZasNlaAdLOzqD8x5EPyods69YBqxSfk=";
     };
-    date = "2026-02-03";
+    date = "2026-02-04";
   };
   pcsx2 = {
     pname = "pcsx2";
