@@ -18,8 +18,6 @@
     adw-gtk3
     volantes-cursors
     candy-icons
-    libsForQt5.qt5ct
-    kdePackages.qt6ct
     (writeShellScriptBin "apply-gtk-settings" ''
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/gtk-theme "'adw-gtk3'"
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/icon-theme "'candy-icons'"
