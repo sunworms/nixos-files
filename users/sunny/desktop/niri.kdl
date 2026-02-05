@@ -125,6 +125,20 @@ animations {
     // off
 }
 
+// window rules
+
+window-rule {
+    match is-active=true
+    opacity 0.9
+    draw-border-with-background false
+}
+
+window-rule {
+    match is-active=false
+    opacity 0.8
+    draw-border-with-background false
+}
+
 window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {}
@@ -154,6 +168,18 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+}
+
+// layer rules
+
+layer-rule {
+    match namespace="^quickshell$"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="dms"
+    opacity 0.9
 }
 
 prefer-no-csd
@@ -359,11 +385,6 @@ gestures {
     hot-corners {
         off
     }
-}
-
-layer-rule {
-    match namespace="^quickshell$"
-    place-within-backdrop true
 }
 
 overview {
