@@ -136,6 +136,12 @@ window-rule {
     default-floating-position x=900 y=250
 }
 
+window-rule {
+    match title="^Picture in picture$"
+    open-floating true
+    default-floating-position x=1050 y=250
+}
+
 /-window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
@@ -165,7 +171,7 @@ environment {
     SUDO_EDITOR "emacsclient"
     VISUAL "emacsclient"
     GTK_THEME "adw-gtk3"
-    QT_QPA_PLATFORMTHEME "gtk3"
+    QT_QPA_PLATFORMTHEME "qt6ct"
 }
 
 recent-windows {
