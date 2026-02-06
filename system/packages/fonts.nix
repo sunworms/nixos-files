@@ -2,20 +2,22 @@
 
 {
   fonts.packages = with pkgs; [
-    nerd-fonts.d2coding
+    maple-mono.NF
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
-    dejavu_fonts
   ];
 
   fonts.fontconfig = {
     enable = true;
+    hinting.enable = true;
+    antialias = true;
+    subpixel.rgba = "rgb";
     cache32Bit = true;
     defaultFonts = {
-      serif = [ "Dejavu Serif" ];
-      sansSerif = [ "Dejavu Sans" ];
-      monospace = [ "D2CodingLigature Nerd Font Mono" ];
+      serif = [ "Maple Mono NF Light" ];
+      sansSerif = [ "Maple Mono NF Light" ];
+      monospace = [ "Maple Mono NF Light" ];
       emoji = [ "Noto Color Emoji" ];
     };
   };
