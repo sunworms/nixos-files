@@ -239,7 +239,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // debug
-    Mod+Shift+T { spawn-sh "footclient fish -c 'niri msg layers; fish'"; }
+    // Mod+Shift+T { spawn-sh "footclient fish -c 'niri msg layers; fish'"; }
 
     Mod+E hotkey-overlay-title="Open Emacsclient" { spawn "emacsclient" "-nc"; }
     Mod+T hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
