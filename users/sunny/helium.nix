@@ -15,7 +15,7 @@ appimageTools.wrapType2 {
   inherit pname version src;
 
   nativeBuildInputs = [ makeWrapper ];
-  
+
   extraInstallCommands = ''
     wrapProgram $out/bin/${pname} \
         --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations --enable-wayland-ime=true}}"
@@ -35,6 +35,9 @@ appimageTools.wrapType2 {
     description = "Private, fast, and honest web browser";
     homepage = "https://helium.computer/";
     maintainers = [ lib.maintainers.sunworms ];
-    platforms = [ "x86_64-linux" "aarch64-linux" ];
+    platforms = [
+      "x86_64-linux"
+      "aarch64-linux"
+    ];
   };
 }

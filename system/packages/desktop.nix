@@ -10,31 +10,33 @@
       };
     };
   };
-  
+
   programs.niri = {
     enable = true;
-    package = (pkgs.niri.overrideAttrs rec {
-      src = sources.niri.src;
-      
-      cargoDeps = pkgs.rustPlatform.fetchCargoVendor {
-        inherit src;
-        hash = "sha256-npBgmeZIg3JKAXGq79zXlkYdtpHTfgjIQmDZ17H6E4c=";
-      };
+    package = (
+      pkgs.niri.overrideAttrs rec {
+        src = sources.niri.src;
 
-      postPatch = ''
-        patchShebangs resources/niri-session
-        substituteInPlace resources/niri.service \
-          --replace-fail 'ExecStart=' "ExecStart=$out/bin/"
-      '';
+        cargoDeps = pkgs.rustPlatform.fetchCargoVendor {
+          inherit src;
+          hash = "sha256-npBgmeZIg3JKAXGq79zXlkYdtpHTfgjIQmDZ17H6E4c=";
+        };
 
-      doCheck = false;
-      doInstallCheck = false;
-    });
+        postPatch = ''
+          patchShebangs resources/niri-session
+          substituteInPlace resources/niri.service \
+            --replace-fail 'ExecStart=' "ExecStart=$out/bin/"
+        '';
+
+        doCheck = false;
+        doInstallCheck = false;
+      }
+    );
   };
 
   programs.dms-shell = {
     enable = true;
     systemd.enable = false;
-    quickshell.package = (pkgs.callPackage "${sources.quickshell.src}/default.nix" {});
+    quickshell.package = (pkgs.callPackage "${sources.quickshell.src}/default.nix" { });
   };
 }

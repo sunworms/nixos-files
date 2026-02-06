@@ -7,7 +7,7 @@
     ../../system/packages
     "${sources.preservation.src}/module.nix"
     "${sources.sops-nix.src}/modules/sops"
-    (import sources.hjem.src {}).nixosModules.default
+    (import sources.hjem.src { }).nixosModules.default
   ];
 
   networking.hostName = "hpprobook";
@@ -21,6 +21,6 @@
 
   nixpkgs = {
     config.allowUnfree = true;
-    overlays = [];
+    overlays = [ ];
   };
 }

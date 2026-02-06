@@ -25,7 +25,7 @@
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-size 24
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
     '')
-    
+
     #image viewer
     swayimg
   ];

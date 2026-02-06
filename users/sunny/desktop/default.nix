@@ -1,20 +1,25 @@
-{ pkgs, lib, sources, ... }:
+{
+  pkgs,
+  lib,
+  sources,
+  ...
+}:
 
 let
-  sunnyEmacs = (pkgs.callPackage ./emacs.nix {}).default;
+  sunnyEmacs = (pkgs.callPackage ./emacs.nix { }).default;
 in
 {
   files = {
     ".emacs.d/init.el".source = "${sources.emacs.src}/init.el";
     ".emacs.d/modules".source = "${sources.emacs.src}/modules";
-    
+
     ".gtkrc-2.0".text = ''
-gtk-theme-name="adw-gtk3"
-gtk-icon-theme-name="candy-icons"
-gtk-cursor-theme-name="volantes_cursors"
-gtk-cursor-theme-size=24
+      gtk-theme-name="adw-gtk3"
+      gtk-icon-theme-name="candy-icons"
+      gtk-cursor-theme-name="volantes_cursors"
+      gtk-cursor-theme-size=24
     '';
-    
+
     ".face".source = ../../../assets/icons/haruta.jpg;
   };
 
@@ -52,7 +57,7 @@ gtk-cursor-theme-size=24
       Type = "forking";
       ExecStartPre = "${pkgs.coreutils}/bin/sleep 1";
       ExecStart = "${sunnyEmacs}/bin/emacs --daemon";
-      ExecStop  = "${sunnyEmacs}/bin/emacsclient -e '(kill-emacs)'";
+      ExecStop = "${sunnyEmacs}/bin/emacsclient -e '(kill-emacs)'";
       Restart = "on-failure";
       WorkingDirectory = "%h";
     };

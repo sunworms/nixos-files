@@ -19,7 +19,7 @@
     nh
     tree
     ncdu
-    
+
     # Nix LSPs
     nil
     nixd

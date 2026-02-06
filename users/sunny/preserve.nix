@@ -27,10 +27,10 @@
       ".config/DankMaterialShell"
       ".config/foot"
       ".config/git"
-      
+
       ".config/gtk-3.0"
       ".config/gtk-4.0"
-      
+
       ".config/azahar-emu"
       ".config/eden"
       ".config/melonDS"

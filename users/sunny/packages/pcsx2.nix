@@ -5,7 +5,7 @@
 }:
 let
   sourcesJson = builtins.fromJSON (builtins.readFile ../../../various/_sources/generated.json);
-  
+
   pname = "pcsx2";
   version = lib.removePrefix "v" sourcesJson.pcsx2.version;
 

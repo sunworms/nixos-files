@@ -42,13 +42,13 @@
   vulkan-loader,
   wayland,
   xorg,
-  policies ? {},
+  policies ? { },
   sources,
   ...
 }:
 let
   sourcesJson = builtins.fromJSON (builtins.readFile ../../various/_sources/generated.json);
-  
+
   appId = "glide-browser";
 
   # These libraries are dlopen()'ed by the browser executable at runtime.
@@ -95,17 +95,15 @@ let
     xorg.libxcb
   ];
 
-  firefoxPolicies =
-    (config.firefox.policies or {})
-    // policies;
+  firefoxPolicies = (config.firefox.policies or { }) // policies;
 
-  policiesJson = writeText "firefox-policies.json" (builtins.toJSON {policies = firefoxPolicies;});
+  policiesJson = writeText "firefox-policies.json" (builtins.toJSON { policies = firefoxPolicies; });
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "glide-browser";
 
   version = sourcesJson.glide.version;
-  
+
   src = sources.glide.src;
 
   nativeBuildInputs = [
@@ -153,33 +151,32 @@ stdenv.mkDerivation (finalAttrs: {
     )
   '';
 
-  installPhase =
-    ''
-      runHook preInstall
+  installPhase = ''
+    runHook preInstall
 
-      mkdir -p $out/bin $out/share/icons/hicolor/ $out/lib/glide-browser-bin-${finalAttrs.version}
-      cp -t $out/lib/glide-browser-bin-${finalAttrs.version} -r *
+    mkdir -p $out/bin $out/share/icons/hicolor/ $out/lib/glide-browser-bin-${finalAttrs.version}
+    cp -t $out/lib/glide-browser-bin-${finalAttrs.version} -r *
 
-      # Ensure binaries are executable for patchelf
-      chmod +x $out/lib/glide-browser-bin-${finalAttrs.version}/glide
+    # Ensure binaries are executable for patchelf
+    chmod +x $out/lib/glide-browser-bin-${finalAttrs.version}/glide
 
-      iconDir=$out/share/icons/hicolor
-      browserIcons=$out/lib/glide-browser-bin-${finalAttrs.version}/browser/chrome/icons/default
+    iconDir=$out/share/icons/hicolor
+    browserIcons=$out/lib/glide-browser-bin-${finalAttrs.version}/browser/chrome/icons/default
 
-      for i in 16 32 48 64 128; do
-        iconSizeDir="$iconDir/''${i}x$i/apps"
-        mkdir -p $iconSizeDir
-        cp $browserIcons/default$i.png $iconSizeDir/${appId}.png
-      done
+    for i in 16 32 48 64 128; do
+      iconSizeDir="$iconDir/''${i}x$i/apps"
+      mkdir -p $iconSizeDir
+      cp $browserIcons/default$i.png $iconSizeDir/${appId}.png
+    done
 
-      ln -s $out/lib/glide-browser-bin-${finalAttrs.version}/glide $out/bin/glide
-      ln -s $out/bin/glide $out/bin/${appId}
+    ln -s $out/lib/glide-browser-bin-${finalAttrs.version}/glide $out/bin/glide
+    ln -s $out/bin/glide $out/bin/${appId}
 
-      mkdir -p $out/lib/glide-browser-bin-${finalAttrs.version}/distribution/
-      ln -s ${policiesJson} "$out/lib/glide-browser-bin-${finalAttrs.version}/distribution/policies.json"
+    mkdir -p $out/lib/glide-browser-bin-${finalAttrs.version}/distribution/
+    ln -s ${policiesJson} "$out/lib/glide-browser-bin-${finalAttrs.version}/distribution/policies.json"
 
-      runHook postInstall
-    '';
+    runHook postInstall
+  '';
 
   desktopItems = [
     (makeDesktopItem {

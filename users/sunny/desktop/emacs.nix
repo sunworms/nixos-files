@@ -1,9 +1,11 @@
 { pkgs, ... }:
 
 let
-  emacsPackagesCustom = pkgs.emacs-pgtk.pkgs.overrideScope (final: prev: {
-    eglot = null;
-  });
+  emacsPackagesCustom = pkgs.emacs-pgtk.pkgs.overrideScope (
+    final: prev: {
+      eglot = null;
+    }
+  );
 
   treesitGrammars = emacsPackagesCustom.treesit-grammars.with-all-grammars;
 
