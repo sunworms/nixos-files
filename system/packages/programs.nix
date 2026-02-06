@@ -1,7 +1,10 @@
 { pkgs, ... }:
 
 {
-  programs.git.enable = true;
+  programs.git = {
+    enable = true;
+    lfs.enable = true;
+  };
 
   programs.dconf.enable = true;
 
