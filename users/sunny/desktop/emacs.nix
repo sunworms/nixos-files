@@ -11,6 +11,7 @@ let
     epkgs: with epkgs; [
       dracula-theme # fallback theme
       git-auto-commit-mode # for org mode
+      indent-bars
       treesitGrammars
       restart-emacs
       telephone-line
