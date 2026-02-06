@@ -30,10 +30,10 @@
   };
   helium = {
     pname = "helium";
-    version = "0.8.4.1";
+    version = "0.8.5.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.8.4.1/helium-0.8.4.1-x86_64.AppImage";
-      sha256 = "sha256-y4KzR+pkBUuyVU+ALrzdY0n2rnTB7lTN2ZmVSzag5vE=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.8.5.1/helium-0.8.5.1-x86_64.AppImage";
+      sha256 = "sha256-jFSLLDsHB/NiJqFmn8S+JpdM8iCy3Zgyq+8l4RkBecM=";
     };
   };
   hjem = {
@@ -47,6 +47,18 @@
       sha256 = "sha256-cKETEBrseo7Iz+bOzflwy1xTpDuUj3QaLA+P49yJw8k=";
     };
     date = "2026-01-22";
+  };
+  niri = {
+    pname = "niri";
+    version = "9d6ac156df8c41c1f2bec26233a9e5cb1767e84d";
+    src = fetchFromGitHub {
+      owner = "yalter";
+      repo = "niri";
+      rev = "9d6ac156df8c41c1f2bec26233a9e5cb1767e84d";
+      fetchSubmodules = false;
+      sha256 = "sha256-XpCLYsLjKbyj3lSmO4JlyoV1BL63lBrtLVmSLlNX99c=";
+    };
+    date = "2026-02-05";
   };
   nixpkgs = {
     pname = "nixpkgs";

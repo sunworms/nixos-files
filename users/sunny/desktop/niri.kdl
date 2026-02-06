@@ -75,7 +75,6 @@ layout {
 
     // preset-window-heights { }
 
-    // You can change the default width of the new windows.
     default-column-width { proportion 0.66667; }
     focus-ring {
         // off
@@ -86,7 +85,7 @@ layout {
     border {
         off
 
-        width 4
+        width 2
     }
 
     shadow {
@@ -128,18 +127,6 @@ animations {
 // window rules
 
 window-rule {
-    match is-active=true
-    opacity 0.9
-    draw-border-with-background false
-}
-
-window-rule {
-    match is-active=false
-    opacity 0.8
-    draw-border-with-background false
-}
-
-window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {}
 }
@@ -168,18 +155,61 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+    background-effect {
+        blur {
+	    on
+	}
+	noise 0
+    }
+}
+
+window-rule {
+    match is-active=true
+    opacity 0.8
+    draw-border-with-background false
+}
+
+window-rule {
+    match is-active=false
+    opacity 0.6
+    draw-border-with-background false
 }
 
 // layer rules
 
 layer-rule {
-    match namespace="^quickshell$"
-    place-within-backdrop true
+    match namespace="dms"
+    opacity 0.7
+    background-effect {
+        blur {
+	    on
+	}
+	noise 0
+    }
+    geometry-corner-radius 12
 }
 
 layer-rule {
-    match namespace="dms"
-    opacity 0.9
+    match namespace="overview-spotlight"
+    background-effect {
+    	blur {
+	    off
+	}
+    }
+}
+
+layer-rule {
+    match namespace="control-center:background"
+    background-effect {
+    	blur {
+	    off
+	}
+    }
+}
+
+layer-rule {
+    match namespace="^quickshell$"
+    place-within-backdrop true
 }
 
 prefer-no-csd
@@ -207,6 +237,9 @@ recent-windows {
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
+
+    // debug
+    Mod+Shift+T { spawn-sh "footclient fish -c 'niri msg layers; fish'"; }
 
     Mod+E hotkey-overlay-title="Open Emacsclient" { spawn "emacsclient" "-nc"; }
     Mod+T hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
