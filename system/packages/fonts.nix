@@ -15,9 +15,9 @@
     subpixel.rgba = "rgb";
     cache32Bit = true;
     defaultFonts = {
-      serif = [ "Maple Mono NF Light" ];
-      sansSerif = [ "Maple Mono NF Light" ];
-      monospace = [ "Maple Mono NF Light" ];
+      serif = [ "Maple Mono NF" ];
+      sansSerif = [ "Maple Mono NF" ];
+      monospace = [ "Maple Mono NF" ];
       emoji = [ "Noto Color Emoji" ];
     };
   };

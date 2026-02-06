@@ -16,15 +16,15 @@
   };
   emacs = {
     pname = "emacs";
-    version = "1a6047ee06da9116a8fdb0165ccb772f1b83d147";
+    version = "525c96087cacb9198f2502057c1caed9e227e61f";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "1a6047ee06da9116a8fdb0165ccb772f1b83d147";
+      rev = "525c96087cacb9198f2502057c1caed9e227e61f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-dJY/P+4Gv9Woto3rStFs0eP8s7AdU/tgJN7+TdDK08w=";
+      sha256 = "sha256-S3HFguVCCCG0VzhnfkH0MxUjysgsHPmu1T1tqv8IR38=";
     };
     date = "2026-02-06";
   };
@@ -74,10 +74,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.93";
+    version = "v2.7.97";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.93/pcsx2-v2.7.93-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-vLzs9awSYlhaGi1G53ivo1NkRKCc9AT7EWKhqcR/gzk=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.97/pcsx2-v2.7.97-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-QCQuwuta5SKw30GmNeDURBQF/xbhJoYdREAfteCB1BU=";
     };
   };
   preservation = {

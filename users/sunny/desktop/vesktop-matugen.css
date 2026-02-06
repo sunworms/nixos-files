@@ -19,14 +19,14 @@
   font-family: 'Maple Mono';
   font-style: normal;
   font-display: swap;
-  font-weight: 300;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-300-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-300-normal.woff) format('woff');
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/maple-mono@latest/latin-400-normal.woff) format('woff');
 }
 
 body {
     --font: 'Maple Mono';
     --code-font: 'Maple Mono';
-    letter-spacing: -0.025ch;
+    letter-spacing: -0.05ch;
 }
 
 /* customize things here */
