@@ -26,10 +26,6 @@ src.git = "https://git.gay/sunworms/emacs-config"
 fetch.git = "https://git.gay/sunworms/emacs-config"
 
 # binary packages
-# [eden-nightly]
-# src.github = "eden-emulator/Releases"
-# fetch.url = "https://github.com/eden-emulator/Releases/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"
-
 [eden-nightly]
 src.github_tag = "Eden-CI/Nightly"
 src.from_pattern = 'v(\d+)\.([a-f0-9]+)'

@@ -48,13 +48,9 @@ input {
 
 /-output "eDP-1" {
     // off
-
     mode "1920x1080@120.030"
-
     scale 2
-
     transform "normal"
-
     position x=1280 y=0
 }
 
@@ -155,57 +151,10 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
-    background-effect {
-        blur {
-	    on
-	}
-	noise 0
-    }
-}
-
-window-rule {
-    match is-active=true
-    opacity 0.8
-    draw-border-with-background false
-}
-
-window-rule {
-    match is-active=false
-    opacity 0.6
     draw-border-with-background false
 }
 
 // layer rules
-
-layer-rule {
-    match namespace="dms"
-    opacity 0.7
-    background-effect {
-        blur {
-	    on
-	}
-	noise 0
-    }
-    geometry-corner-radius 12
-}
-
-layer-rule {
-    match namespace="overview-spotlight"
-    background-effect {
-    	blur {
-	    off
-	}
-    }
-}
-
-layer-rule {
-    match namespace="control-center:background"
-    background-effect {
-    	blur {
-	    off
-	}
-    }
-}
 
 layer-rule {
     match namespace="^quickshell$"
