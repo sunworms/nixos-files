@@ -8,15 +8,15 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-g7x10zM/55z2avdETcpRJ56O1oN8cndbzl9UAiOJZF8=",
+            "sha256": "sha256-Ht6wtvzIi09uHXSoTyJ6Lp7b75lb97+HUebPhy1zKoI=",
             "type": "url",
-            "url": "https://github.com/eden-emulator/Releases/releases/download/v0.1.1/Eden-Linux-v0.1.1-amd64-clang-pgo.AppImage"
+            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1770404621.b9e052b3a7/Eden-Linux-b9e052b3a7-amd64-clang-pgo.AppImage"
         },
-        "version": "v0.1.1"
+        "version": "v1770404621.b9e052b3a7/Eden-Linux-b9e052b3a7"
     },
     "emacs": {
         "cargoLock": null,
-        "date": "2026-02-06",
+        "date": "2026-02-07",
         "extract": null,
         "name": "emacs",
         "passthru": null,
@@ -26,13 +26,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "525c96087cacb9198f2502057c1caed9e227e61f",
-            "sha256": "sha256-S3HFguVCCCG0VzhnfkH0MxUjysgsHPmu1T1tqv8IR38=",
+            "rev": "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72",
+            "sha256": "sha256-tyP2oVE1nVP44tYPOxIgjgIERbHZUk4+c+nwVc2wvD4=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://git.gay/sunworms/emacs-config"
         },
-        "version": "525c96087cacb9198f2502057c1caed9e227e61f"
+        "version": "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72"
     },
     "helium": {
         "cargoLock": null,
@@ -70,27 +70,6 @@
         },
         "version": "9d0c8d4b44f661910595b07e6480557644c1431c"
     },
-    "niri": {
-        "cargoLock": null,
-        "date": "2026-02-05",
-        "extract": null,
-        "name": "niri",
-        "passthru": null,
-        "pinned": true,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "yalter",
-            "repo": "niri",
-            "rev": "9d6ac156df8c41c1f2bec26233a9e5cb1767e84d",
-            "sha256": "sha256-XpCLYsLjKbyj3lSmO4JlyoV1BL63lBrtLVmSLlNX99c=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "9d6ac156df8c41c1f2bec26233a9e5cb1767e84d"
-    },
     "nixpkgs": {
         "cargoLock": null,
         "date": "2026-02-04",
@@ -121,11 +100,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-QCQuwuta5SKw30GmNeDURBQF/xbhJoYdREAfteCB1BU=",
+            "sha256": "sha256-f130yRsFlQ0gdHs5xocqaeBBeFkV/vVJ7VgBNXw13VM=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.97/pcsx2-v2.7.97-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.99/pcsx2-v2.7.99-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.97"
+        "version": "v2.7.99"
     },
     "preservation": {
         "cargoLock": null,

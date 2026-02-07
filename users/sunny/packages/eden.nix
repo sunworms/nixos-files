@@ -2,12 +2,15 @@
   stdenvNoCC,
   makeDesktopItem,
   sources,
+  lib,
 }:
 let
   sourcesJson = builtins.fromJSON (builtins.readFile ../../../various/_sources/generated.json);
 
   pname = "eden";
-  version = sourcesJson.eden-nightly.version;
+  rawVersion = sources.eden-nightly.version;
+  baseName = baseNameOf rawVersion;
+  version = lib.removePrefix "Eden-Linux-" baseName;
 
   desktopItem = makeDesktopItem {
     type = "Application";

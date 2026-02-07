@@ -25,16 +25,16 @@ pinned = true
 src.git = "https://git.gay/sunworms/emacs-config"
 fetch.git = "https://git.gay/sunworms/emacs-config"
 
-[niri]
-src.git = "https://github.com/yalter/niri"
-src.branch = "wip/branch"
-fetch.github = "yalter/niri"
-pinned = true
-
 # binary packages
+# [eden-nightly]
+# src.github = "eden-emulator/Releases"
+# fetch.url = "https://github.com/eden-emulator/Releases/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"
+
 [eden-nightly]
-src.github = "eden-emulator/Releases"
-fetch.url = "https://github.com/eden-emulator/Releases/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"
+src.github_tag = "Eden-CI/Nightly"
+src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
+src.to_pattern = 'v\1.\2/Eden-Linux-\2'
+fetch.url = "https://github.com/Eden-CI/Nightly/releases/download/$ver-amd64-clang-pgo.AppImage"
 
 [pcsx2]
 src.github_tag = "pcsx2/pcsx2"

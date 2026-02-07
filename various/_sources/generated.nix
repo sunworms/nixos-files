@@ -8,25 +8,25 @@
 {
   eden-nightly = {
     pname = "eden-nightly";
-    version = "v0.1.1";
+    version = "v1770404621.b9e052b3a7/Eden-Linux-b9e052b3a7";
     src = fetchurl {
-      url = "https://github.com/eden-emulator/Releases/releases/download/v0.1.1/Eden-Linux-v0.1.1-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-g7x10zM/55z2avdETcpRJ56O1oN8cndbzl9UAiOJZF8=";
+      url = "https://github.com/Eden-CI/Nightly/releases/download/v1770404621.b9e052b3a7/Eden-Linux-b9e052b3a7-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-Ht6wtvzIi09uHXSoTyJ6Lp7b75lb97+HUebPhy1zKoI=";
     };
   };
   emacs = {
     pname = "emacs";
-    version = "525c96087cacb9198f2502057c1caed9e227e61f";
+    version = "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "525c96087cacb9198f2502057c1caed9e227e61f";
+      rev = "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-S3HFguVCCCG0VzhnfkH0MxUjysgsHPmu1T1tqv8IR38=";
+      sha256 = "sha256-tyP2oVE1nVP44tYPOxIgjgIERbHZUk4+c+nwVc2wvD4=";
     };
-    date = "2026-02-06";
+    date = "2026-02-07";
   };
   helium = {
     pname = "helium";
@@ -48,18 +48,6 @@
     };
     date = "2026-01-22";
   };
-  niri = {
-    pname = "niri";
-    version = "9d6ac156df8c41c1f2bec26233a9e5cb1767e84d";
-    src = fetchFromGitHub {
-      owner = "yalter";
-      repo = "niri";
-      rev = "9d6ac156df8c41c1f2bec26233a9e5cb1767e84d";
-      fetchSubmodules = false;
-      sha256 = "sha256-XpCLYsLjKbyj3lSmO4JlyoV1BL63lBrtLVmSLlNX99c=";
-    };
-    date = "2026-02-05";
-  };
   nixpkgs = {
     pname = "nixpkgs";
     version = "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2";
@@ -74,10 +62,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.97";
+    version = "v2.7.99";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.97/pcsx2-v2.7.97-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-QCQuwuta5SKw30GmNeDURBQF/xbhJoYdREAfteCB1BU=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.99/pcsx2-v2.7.99-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-f130yRsFlQ0gdHs5xocqaeBBeFkV/vVJ7VgBNXw13VM=";
     };
   };
   preservation = {
