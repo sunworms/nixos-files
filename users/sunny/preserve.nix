@@ -21,6 +21,7 @@
 
       ".cache/DankMaterialShell"
 
+      ".config/koreader"
       ".config/net.imput.helium"
       ".config/fish"
       ".config/niri"
@@ -38,7 +39,6 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
-      ".local/share/gvfs-metadata"
       ".local/share/Steam"
       ".local/share/fish"
       ".local/share/azahar-emu"

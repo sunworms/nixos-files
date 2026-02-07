@@ -42,7 +42,6 @@ in
     foot
     hyfetch
     git
-    papers
     nautilus
     xwayland-satellite
   ];
