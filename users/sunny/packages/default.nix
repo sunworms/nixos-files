@@ -20,5 +20,6 @@
     })
     satty
     koreader
+    vesktop
   ];
 }
