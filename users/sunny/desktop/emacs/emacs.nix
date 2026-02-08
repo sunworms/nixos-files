@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, sources, ... }:
 
 let
   emacsPackagesCustom = pkgs.emacs-pgtk.pkgs.overrideScope (
@@ -32,6 +32,10 @@ let
       rustic
       eglot-java
       direnv
+      (pkgs.callPackage ./atomic-chrome.nix {
+        inherit (epkgs) melpaBuild websocket;
+        inherit sources;
+      })
     ]
   );
 in

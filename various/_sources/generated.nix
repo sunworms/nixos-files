@@ -6,6 +6,18 @@
   dockerTools,
 }:
 {
+  atomic-chrome = {
+    pname = "atomic-chrome";
+    version = "344247d45ae19b03751344a4c9ee4c163fc82379";
+    src = fetchFromGitHub {
+      owner = "KarimAziev";
+      repo = "atomic-chrome";
+      rev = "344247d45ae19b03751344a4c9ee4c163fc82379";
+      fetchSubmodules = false;
+      sha256 = "sha256-YP8b1Nkoj7ewmM3IhlUhqvdSxWcEI8MQwJ+UY5QEtz8=";
+    };
+    date = "2025-10-07";
+  };
   eden-nightly = {
     pname = "eden-nightly";
     version = "v1770488659.71e035f83b/Eden-Linux-71e035f83b";
@@ -16,17 +28,17 @@
   };
   emacs = {
     pname = "emacs";
-    version = "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72";
+    version = "19991304e7e84dfde8b622adc02b0ee02bd9801c";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72";
+      rev = "19991304e7e84dfde8b622adc02b0ee02bd9801c";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-tyP2oVE1nVP44tYPOxIgjgIERbHZUk4+c+nwVc2wvD4=";
+      sha256 = "sha256-mTx5wrbXZ8ADykHmZG6/xeewXAZVYtcGLj7ukKuwnPM=";
     };
-    date = "2026-02-07";
+    date = "2026-02-08";
   };
   helium = {
     pname = "helium";
@@ -62,10 +74,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.99";
+    version = "v2.7.106";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.99/pcsx2-v2.7.99-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-f130yRsFlQ0gdHs5xocqaeBBeFkV/vVJ7VgBNXw13VM=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.106/pcsx2-v2.7.106-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-D6eg8SilhwPxNk8R1jJBEPfdZatWconot6qg2/BMsbI=";
     };
   };
   preservation = {

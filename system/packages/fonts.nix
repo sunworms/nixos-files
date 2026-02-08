@@ -2,7 +2,7 @@
 
 {
   fonts.packages = with pkgs; [
-    maple-mono.NF
+    nerd-fonts.iosevka
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
@@ -15,9 +15,9 @@
     subpixel.rgba = "rgb";
     cache32Bit = true;
     defaultFonts = {
-      serif = [ "Maple Mono NF" ];
-      sansSerif = [ "Maple Mono NF" ];
-      monospace = [ "Maple Mono NF" ];
+      serif = [ "Iosevka Nerd Font Propo" ];
+      sansSerif = [ "Iosevka Nerd Font Propo" ];
+      monospace = [ "Iosevka Nerd Font Mono" ];
       emoji = [ "Noto Color Emoji" ];
     };
   };

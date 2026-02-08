@@ -6,7 +6,7 @@
 }:
 
 let
-  sunnyEmacs = (pkgs.callPackage ./emacs.nix { }).default;
+  sunnyEmacs = (pkgs.callPackage ./emacs/emacs.nix { inherit sources; }).default;
 in
 {
   files = {

@@ -1,4 +1,25 @@
 {
+    "atomic-chrome": {
+        "cargoLock": null,
+        "date": "2025-10-07",
+        "extract": null,
+        "name": "atomic-chrome",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "KarimAziev",
+            "repo": "atomic-chrome",
+            "rev": "344247d45ae19b03751344a4c9ee4c163fc82379",
+            "sha256": "sha256-YP8b1Nkoj7ewmM3IhlUhqvdSxWcEI8MQwJ+UY5QEtz8=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "344247d45ae19b03751344a4c9ee4c163fc82379"
+    },
     "eden-nightly": {
         "cargoLock": null,
         "date": null,
@@ -16,7 +37,7 @@
     },
     "emacs": {
         "cargoLock": null,
-        "date": "2026-02-07",
+        "date": "2026-02-08",
         "extract": null,
         "name": "emacs",
         "passthru": null,
@@ -26,13 +47,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72",
-            "sha256": "sha256-tyP2oVE1nVP44tYPOxIgjgIERbHZUk4+c+nwVc2wvD4=",
+            "rev": "19991304e7e84dfde8b622adc02b0ee02bd9801c",
+            "sha256": "sha256-mTx5wrbXZ8ADykHmZG6/xeewXAZVYtcGLj7ukKuwnPM=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://git.gay/sunworms/emacs-config"
         },
-        "version": "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72"
+        "version": "19991304e7e84dfde8b622adc02b0ee02bd9801c"
     },
     "helium": {
         "cargoLock": null,
@@ -100,11 +121,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-f130yRsFlQ0gdHs5xocqaeBBeFkV/vVJ7VgBNXw13VM=",
+            "sha256": "sha256-D6eg8SilhwPxNk8R1jJBEPfdZatWconot6qg2/BMsbI=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.99/pcsx2-v2.7.99-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.106/pcsx2-v2.7.106-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.99"
+        "version": "v2.7.106"
     },
     "preservation": {
         "cargoLock": null,
