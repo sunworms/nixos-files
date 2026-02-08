@@ -24,6 +24,8 @@
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-theme "'volantes_cursors'"
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-size 24
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
+      ${pkgs.dconf}/bin/dconf write /org/gtk/gtk4/settings/file-chooser/show-hidden "'true'"
+      ${pkgs.dconf}/bin/dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'small-plus'"
     '')
 
     #image viewer
