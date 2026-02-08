@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Ht6wtvzIi09uHXSoTyJ6Lp7b75lb97+HUebPhy1zKoI=",
+            "sha256": "sha256-RYIGTbTJzYw8SyQeqioZRoh91z8tbGNM2NuLmroQrdQ=",
             "type": "url",
-            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1770404621.b9e052b3a7/Eden-Linux-b9e052b3a7-amd64-clang-pgo.AppImage"
+            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1770488659.71e035f83b/Eden-Linux-71e035f83b-amd64-clang-pgo.AppImage"
         },
-        "version": "v1770404621.b9e052b3a7/Eden-Linux-b9e052b3a7"
+        "version": "v1770488659.71e035f83b/Eden-Linux-71e035f83b"
     },
     "emacs": {
         "cargoLock": null,
@@ -33,21 +33,6 @@
             "url": "https://git.gay/sunworms/emacs-config"
         },
         "version": "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72"
-    },
-    "helium": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "helium",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-jFSLLDsHB/NiJqFmn8S+JpdM8iCy3Zgyq+8l4RkBecM=",
-            "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.8.5.1/helium-0.8.5.1-x86_64.AppImage"
-        },
-        "version": "0.8.5.1"
     },
     "hjem": {
         "cargoLock": null,
@@ -150,7 +135,7 @@
     },
     "sops-nix": {
         "cargoLock": null,
-        "date": "2026-02-03",
+        "date": "2026-02-08",
         "extract": null,
         "name": "sops-nix",
         "passthru": null,
@@ -162,11 +147,32 @@
             "name": null,
             "owner": "Mic92",
             "repo": "sops-nix",
-            "rev": "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c",
-            "sha256": "sha256-ktjWTq+D5MTXQcL9N6cDZXUf9kX8JBLLBLT0ZyOTSYY=",
+            "rev": "d6e0e666048a5395d6ea4283143b7c9ac704720d",
+            "sha256": "sha256-xbvX5Ik+0inJcLJtJ/AajAt7xCk6FOCrm5ogpwwvVDg=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c"
+        "version": "d6e0e666048a5395d6ea4283143b7c9ac704720d"
+    },
+    "zen-browser-flake": {
+        "cargoLock": null,
+        "date": "2026-02-06",
+        "extract": null,
+        "name": "zen-browser-flake",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "0xc000022070",
+            "repo": "zen-browser-flake",
+            "rev": "9616286ab63464a302b7879aaf37173d4047cb74",
+            "sha256": "sha256-80KR/xJfP9F95IMMXjJc8q+N/UP40TLb0OoAGktRmTE=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "9616286ab63464a302b7879aaf37173d4047cb74"
     }
 }

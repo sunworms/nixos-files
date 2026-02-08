@@ -16,6 +16,11 @@ fetch.github = "Mic92/sops-nix"
 src.git = "https://github.com/feel-co/hjem"
 fetch.github = "feel-co/hjem"
 
+[zen-browser-flake]
+src.git = "https://github.com/0xc000022070/zen-browser-flake"
+src.branch = "beta"
+fetch.github = "0xc000022070/zen-browser-flake"
+
 [quickshell]
 src.git = "https://github.com/quickshell-mirror/quickshell"
 fetch.github = "quickshell-mirror/quickshell"
@@ -35,7 +40,3 @@ fetch.url = "https://github.com/Eden-CI/Nightly/releases/download/$ver-amd64-cla
 [pcsx2]
 src.github_tag = "pcsx2/pcsx2"
 fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-linux-appimage-x64-Qt.AppImage"
-
-[helium]
-src.github = "imputnet/helium-linux"
-fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"

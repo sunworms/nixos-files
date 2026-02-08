@@ -18,11 +18,11 @@
       "VMs"
       ".ssh"
       ".steam"
+      ".zen"
 
       ".cache/DankMaterialShell"
 
       ".config/koreader"
-      ".config/net.imput.helium"
       ".config/fish"
       ".config/niri"
       ".config/DankMaterialShell"

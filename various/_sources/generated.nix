@@ -8,10 +8,10 @@
 {
   eden-nightly = {
     pname = "eden-nightly";
-    version = "v1770404621.b9e052b3a7/Eden-Linux-b9e052b3a7";
+    version = "v1770488659.71e035f83b/Eden-Linux-71e035f83b";
     src = fetchurl {
-      url = "https://github.com/Eden-CI/Nightly/releases/download/v1770404621.b9e052b3a7/Eden-Linux-b9e052b3a7-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-Ht6wtvzIi09uHXSoTyJ6Lp7b75lb97+HUebPhy1zKoI=";
+      url = "https://github.com/Eden-CI/Nightly/releases/download/v1770488659.71e035f83b/Eden-Linux-71e035f83b-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-RYIGTbTJzYw8SyQeqioZRoh91z8tbGNM2NuLmroQrdQ=";
     };
   };
   emacs = {
@@ -27,14 +27,6 @@
       sha256 = "sha256-tyP2oVE1nVP44tYPOxIgjgIERbHZUk4+c+nwVc2wvD4=";
     };
     date = "2026-02-07";
-  };
-  helium = {
-    pname = "helium";
-    version = "0.8.5.1";
-    src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.8.5.1/helium-0.8.5.1-x86_64.AppImage";
-      sha256 = "sha256-jFSLLDsHB/NiJqFmn8S+JpdM8iCy3Zgyq+8l4RkBecM=";
-    };
   };
   hjem = {
     pname = "hjem";
@@ -94,14 +86,26 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c";
+    version = "d6e0e666048a5395d6ea4283143b7c9ac704720d";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "17eea6f3816ba6568b8c81db8a4e6ca438b30b7c";
+      rev = "d6e0e666048a5395d6ea4283143b7c9ac704720d";
       fetchSubmodules = false;
-      sha256 = "sha256-ktjWTq+D5MTXQcL9N6cDZXUf9kX8JBLLBLT0ZyOTSYY=";
+      sha256 = "sha256-xbvX5Ik+0inJcLJtJ/AajAt7xCk6FOCrm5ogpwwvVDg=";
     };
-    date = "2026-02-03";
+    date = "2026-02-08";
+  };
+  zen-browser-flake = {
+    pname = "zen-browser-flake";
+    version = "9616286ab63464a302b7879aaf37173d4047cb74";
+    src = fetchFromGitHub {
+      owner = "0xc000022070";
+      repo = "zen-browser-flake";
+      rev = "9616286ab63464a302b7879aaf37173d4047cb74";
+      fetchSubmodules = false;
+      sha256 = "sha256-80KR/xJfP9F95IMMXjJc8q+N/UP40TLb0OoAGktRmTE=";
+    };
+    date = "2026-02-06";
   };
 }
