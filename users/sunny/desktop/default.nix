@@ -35,6 +35,9 @@ in
     "matugen/config.toml".source = ./matugen.toml;
     "matugen/dank-emacs.el".source = ./dank-emacs.el;
     "matugen/vesktop.css".source = ./vesktop-matugen.css;
+    "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
+      {"Path":"${pkgs.widevine-cdm}/share/google/chrome/WidevineCdm"}
+    '';
   };
 
   packages = with pkgs; [
