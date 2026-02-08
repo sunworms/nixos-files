@@ -28,6 +28,14 @@
     };
     date = "2026-02-07";
   };
+  helium = {
+    pname = "helium";
+    version = "0.8.5.1";
+    src = fetchurl {
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.8.5.1/helium-0.8.5.1-x86_64.AppImage";
+      sha256 = "sha256-jFSLLDsHB/NiJqFmn8S+JpdM8iCy3Zgyq+8l4RkBecM=";
+    };
+  };
   hjem = {
     pname = "hjem";
     version = "9d0c8d4b44f661910595b07e6480557644c1431c";
@@ -95,17 +103,5 @@
       sha256 = "sha256-xbvX5Ik+0inJcLJtJ/AajAt7xCk6FOCrm5ogpwwvVDg=";
     };
     date = "2026-02-08";
-  };
-  zen-browser-flake = {
-    pname = "zen-browser-flake";
-    version = "9616286ab63464a302b7879aaf37173d4047cb74";
-    src = fetchFromGitHub {
-      owner = "0xc000022070";
-      repo = "zen-browser-flake";
-      rev = "9616286ab63464a302b7879aaf37173d4047cb74";
-      fetchSubmodules = false;
-      sha256 = "sha256-80KR/xJfP9F95IMMXjJc8q+N/UP40TLb0OoAGktRmTE=";
-    };
-    date = "2026-02-06";
   };
 }

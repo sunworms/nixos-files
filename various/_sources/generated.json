@@ -34,6 +34,21 @@
         },
         "version": "1ff0eff6281e330f1d6b7f2c79b3bddd39652c72"
     },
+    "helium": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "helium",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-jFSLLDsHB/NiJqFmn8S+JpdM8iCy3Zgyq+8l4RkBecM=",
+            "type": "url",
+            "url": "https://github.com/imputnet/helium-linux/releases/download/0.8.5.1/helium-0.8.5.1-x86_64.AppImage"
+        },
+        "version": "0.8.5.1"
+    },
     "hjem": {
         "cargoLock": null,
         "date": "2026-01-22",
@@ -153,26 +168,5 @@
             "type": "github"
         },
         "version": "d6e0e666048a5395d6ea4283143b7c9ac704720d"
-    },
-    "zen-browser-flake": {
-        "cargoLock": null,
-        "date": "2026-02-06",
-        "extract": null,
-        "name": "zen-browser-flake",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "0xc000022070",
-            "repo": "zen-browser-flake",
-            "rev": "9616286ab63464a302b7879aaf37173d4047cb74",
-            "sha256": "sha256-80KR/xJfP9F95IMMXjJc8q+N/UP40TLb0OoAGktRmTE=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "9616286ab63464a302b7879aaf37173d4047cb74"
     }
 }
