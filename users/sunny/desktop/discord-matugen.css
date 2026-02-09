@@ -3,7 +3,24 @@
  * @description Dynamic Material You theme with Dank16 accents
  * @author Sunny
  * @version 1.0.0
-*/
+ */
+
+/* iosevka-latin-400-normal */
+@font-face {
+  font-family: 'Iosevka';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.woff) format('woff');
+}
+
+:root {
+    --font-primary: "Iosevka";
+    --font-display: "Iosevka";
+    --font-headline: "Iosevka";
+    --font-code: "Iosevka";
+    letter-spacing: -0.05ch;
+}
 
 * {
 	/* Backgrounds - Matugen Surface Palette */
