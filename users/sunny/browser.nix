@@ -160,6 +160,6 @@ in
 {
   packages = [
     glide-with-policies
-    (pkgs.callPackage ./helium.nix { inherit sources; })
+    # (pkgs.callPackage ./helium.nix { inherit sources; })
   ];
 }

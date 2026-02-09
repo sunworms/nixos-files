@@ -21,7 +21,7 @@
 
       ".cache/DankMaterialShell"
 
-      ".config/net.imput.helium"
+      # ".config/net.imput.helium"
       ".config/koreader"
       ".config/fish"
       ".config/niri"
