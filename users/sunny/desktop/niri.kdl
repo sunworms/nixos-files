@@ -162,6 +162,11 @@ layer-rule {
     place-within-backdrop true
 }
 
+layer-rule {
+    match namespace="^dms:"
+    opacity 0.9
+}
+
 prefer-no-csd
 
 environment {
