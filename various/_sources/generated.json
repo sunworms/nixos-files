@@ -136,11 +136,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-D6eg8SilhwPxNk8R1jJBEPfdZatWconot6qg2/BMsbI=",
+            "sha256": "sha256-0oQSPdO7XD/q5EdrASdxjjZVxcgDJzFlObMPQCMikfc=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.106/pcsx2-v2.7.106-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.107/pcsx2-v2.7.107-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.106"
+        "version": "v2.7.107"
     },
     "preservation": {
         "cargoLock": null,
