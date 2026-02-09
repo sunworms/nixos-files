@@ -2,7 +2,8 @@
 
 {
   fonts.packages = with pkgs; [
-    nerd-fonts.iosevka
+    aporetic
+    nerd-fonts.symbols-only
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
@@ -15,9 +16,9 @@
     subpixel.rgba = "rgb";
     cache32Bit = true;
     defaultFonts = {
-      serif = [ "Iosevka Nerd Font Propo" ];
-      sansSerif = [ "Iosevka Nerd Font Propo" ];
-      monospace = [ "Iosevka Nerd Font Mono" ];
+      serif = [ "Aporetic Serif" ];
+      sansSerif = [ "Aporetic Sans" ];
+      monospace = [ "Aporetic Sans Mono" ];
       emoji = [ "Noto Color Emoji" ];
     };
   };

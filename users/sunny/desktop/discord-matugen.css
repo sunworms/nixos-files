@@ -5,21 +5,13 @@
  * @version 1.0.0
  */
 
-/* iosevka-latin-400-normal */
-@font-face {
-  font-family: 'Iosevka';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.woff) format('woff');
-}
+@import url('https://git.gay/sunworms/Aporetic-Webfonts/raw/branch/main/aporetic-fonts.css');
 
 :root {
-    --font-primary: "Iosevka";
-    --font-display: "Iosevka";
-    --font-headline: "Iosevka";
-    --font-code: "Iosevka";
-    letter-spacing: -0.05ch;
+    --font-primary: "Aporetic Sans";
+    --font-display: "Aporetic Sans";
+    --font-headline: "Aporetic Sans";
+    --font-code: "Aporetic Sans Mono";
 }
 
 * {

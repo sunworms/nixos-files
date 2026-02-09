@@ -37,7 +37,7 @@
     },
     "emacs": {
         "cargoLock": null,
-        "date": "2026-02-08",
+        "date": "2026-02-09",
         "extract": null,
         "name": "emacs",
         "passthru": null,
@@ -47,13 +47,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "19991304e7e84dfde8b622adc02b0ee02bd9801c",
-            "sha256": "sha256-mTx5wrbXZ8ADykHmZG6/xeewXAZVYtcGLj7ukKuwnPM=",
+            "rev": "9b738fc4acd6718711c22b40ab7b037e82770965",
+            "sha256": "sha256-mv50vfiAdgNyTocMmcgXMUGmN3peZJEZSW+F7hl06GY=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://git.gay/sunworms/emacs-config"
         },
-        "version": "19991304e7e84dfde8b622adc02b0ee02bd9801c"
+        "version": "9b738fc4acd6718711c22b40ab7b037e82770965"
     },
     "glide": {
         "cargoLock": null,
