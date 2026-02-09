@@ -21,7 +21,8 @@
 
       ".cache/DankMaterialShell"
 
-      # ".config/net.imput.helium"
+      ".config/net.imput.helium"
+      # ".config/glide"
       ".config/koreader"
       ".config/fish"
       ".config/niri"
@@ -32,7 +33,6 @@
       ".config/gtk-3.0"
       ".config/gtk-4.0"
 
-      ".config/glide"
       ".config/azahar-emu"
       ".config/eden"
       ".config/melonDS"

@@ -159,7 +159,7 @@ let
 in
 {
   packages = [
-    glide-with-policies
-    # (pkgs.callPackage ./helium.nix { inherit sources; })
+    #glide-with-policies
+    (pkgs.callPackage ./helium.nix { inherit sources; })
   ];
 }
