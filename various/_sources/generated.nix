@@ -20,10 +20,10 @@
   };
   eden-nightly = {
     pname = "eden-nightly";
-    version = "v1770488659.71e035f83b/Eden-Linux-71e035f83b";
+    version = "v1770575137.e544cb3cf6/Eden-Linux-e544cb3cf6";
     src = fetchurl {
-      url = "https://github.com/Eden-CI/Nightly/releases/download/v1770488659.71e035f83b/Eden-Linux-71e035f83b-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-RYIGTbTJzYw8SyQeqioZRoh91z8tbGNM2NuLmroQrdQ=";
+      url = "https://github.com/Eden-CI/Nightly/releases/download/v1770575137.e544cb3cf6/Eden-Linux-e544cb3cf6-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-ejnYCUDV78l3rTaN1BQR6ltCINCTQv77+NjNBcDpl2k=";
     };
   };
   emacs = {
@@ -39,6 +39,14 @@
       sha256 = "sha256-mTx5wrbXZ8ADykHmZG6/xeewXAZVYtcGLj7ukKuwnPM=";
     };
     date = "2026-02-08";
+  };
+  glide = {
+    pname = "glide";
+    version = "0.1.58a";
+    src = fetchurl {
+      url = "https://github.com/glide-browser/glide/releases/download/0.1.58a/glide.linux-x86_64.tar.xz";
+      sha256 = "sha256-yut/yXT+BJCFackLSRG7tLBD6m008k0lC62Qwt7aRX8=";
+    };
   };
   helium = {
     pname = "helium";
@@ -62,15 +70,15 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2";
+    version = "d6c71932130818840fc8fe9509cf50be8c64634f";
     src = fetchFromGitHub {
       owner = "NixOS";
       repo = "nixpkgs";
-      rev = "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2";
+      rev = "d6c71932130818840fc8fe9509cf50be8c64634f";
       fetchSubmodules = false;
-      sha256 = "sha256-AYqlWrX09+HvGs8zM6ebZ1pwUqjkfpnv8mewYwAo+iM=";
+      sha256 = "sha256-ub1gpAONMFsT/GU2hV6ZWJjur8rJ6kKxdm9IlCT0j84=";
     };
-    date = "2026-02-04";
+    date = "2026-02-08";
   };
   pcsx2 = {
     pname = "pcsx2";

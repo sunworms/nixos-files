@@ -43,3 +43,7 @@ fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-li
 [helium]
 src.github = "imputnet/helium-linux"
 fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"
+
+[glide]
+src.github = "glide-browser/glide"
+fetch.url = "https://github.com/glide-browser/glide/releases/download/$ver/glide.linux-x86_64.tar.xz"

@@ -7,7 +7,7 @@ let
 
   forgejoDirectHosts = [
     "codeberg.org"
-    "git.afnix.fr"
+    "git.outfoxxed.me"
   ];
 
   isForgejoApiHost = url:

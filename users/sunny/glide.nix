@@ -41,7 +41,13 @@
   udev,
   vulkan-loader,
   wayland,
-  xorg,
+  libX11,
+  libXcomposite,
+  libXdamage,
+  libXext,
+  libXfixes,
+  libXrandr,
+  libxcb,
   policies ? { },
   sources,
   ...
@@ -86,13 +92,13 @@ let
     udev
 
     # X11 Compatibility
-    xorg.libX11
-    xorg.libXcomposite
-    xorg.libXdamage
-    xorg.libXext
-    xorg.libXfixes
-    xorg.libXrandr
-    xorg.libxcb
+    libX11
+    libXcomposite
+    libXdamage
+    libXext
+    libXfixes
+    libXrandr
+    libxcb
   ];
 
   firefoxPolicies = (config.firefox.policies or { }) // policies;
