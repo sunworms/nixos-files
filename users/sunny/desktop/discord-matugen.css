@@ -5,13 +5,13 @@
  * @version 1.0.0
  */
 
-@import url('https://git.gay/sunworms/Aporetic-Webfonts/raw/branch/main/aporetic-fonts.css');
+@import url('https://sunworms.github.io/aporetic-web-fonts/fonts.css');
 
 :root {
-    --font-primary: "Aporetic Sans";
-    --font-display: "Aporetic Sans";
-    --font-headline: "Aporetic Sans";
-    --font-code: "Aporetic Sans Mono";
+    --font-primary: "aporetic-sans-normalregularupright";
+    --font-display: "aporetic-sans-normalregularupright";
+    --font-headline: "aporetic-sans-normalregularupright";
+    --font-code: "aporetic-sans-mono-normalregularupright";
 }
 
 * {
