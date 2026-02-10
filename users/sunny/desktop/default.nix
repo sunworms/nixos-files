@@ -58,7 +58,7 @@ in
     };
     serviceConfig = {
       Type = "forking";
-      ExecStartPre = "${pkgs.coreutils}/bin/sleep 1";
+      ExecStartPre = "${pkgs.coreutils}/bin/sleep 2";
       ExecStart = "${sunnyEmacs}/bin/emacs --daemon";
       ExecStop = "${sunnyEmacs}/bin/emacsclient -e '(kill-emacs)'";
       Restart = "on-failure";
