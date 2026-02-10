@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, sources, ... }:
 
 { 
   services.greetd = {
@@ -19,5 +19,6 @@
   programs.dms-shell = {
     enable = true;
     systemd.enable = false;
+    quickshell.package = (pkgs.callPackage sources.quickshell.src { });
   };
 }
