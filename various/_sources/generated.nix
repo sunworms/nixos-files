@@ -82,10 +82,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.107";
+    version = "v2.7.112";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.107/pcsx2-v2.7.107-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-0oQSPdO7XD/q5EdrASdxjjZVxcgDJzFlObMPQCMikfc=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.112/pcsx2-v2.7.112-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-YetY9Hi9NPEaJ01qg7CIiU/s5zQO4oQzCoyfnmpeNvc=";
     };
   };
   preservation = {
@@ -114,14 +114,14 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "d6e0e666048a5395d6ea4283143b7c9ac704720d";
+    version = "8b89f44c2cc4581e402111d928869fe7ba9f7033";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "d6e0e666048a5395d6ea4283143b7c9ac704720d";
+      rev = "8b89f44c2cc4581e402111d928869fe7ba9f7033";
       fetchSubmodules = false;
-      sha256 = "sha256-xbvX5Ik+0inJcLJtJ/AajAt7xCk6FOCrm5ogpwwvVDg=";
+      sha256 = "sha256-xVfPvXDf9QN3Eh9dV+Lw6IkWG42KSuQ1u2260HKvpnc=";
     };
-    date = "2026-02-08";
+    date = "2026-02-10";
   };
 }

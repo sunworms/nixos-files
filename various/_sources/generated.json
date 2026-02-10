@@ -136,11 +136,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-0oQSPdO7XD/q5EdrASdxjjZVxcgDJzFlObMPQCMikfc=",
+            "sha256": "sha256-YetY9Hi9NPEaJ01qg7CIiU/s5zQO4oQzCoyfnmpeNvc=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.107/pcsx2-v2.7.107-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.112/pcsx2-v2.7.112-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.107"
+        "version": "v2.7.112"
     },
     "preservation": {
         "cargoLock": null,
@@ -186,7 +186,7 @@
     },
     "sops-nix": {
         "cargoLock": null,
-        "date": "2026-02-08",
+        "date": "2026-02-10",
         "extract": null,
         "name": "sops-nix",
         "passthru": null,
@@ -198,11 +198,11 @@
             "name": null,
             "owner": "Mic92",
             "repo": "sops-nix",
-            "rev": "d6e0e666048a5395d6ea4283143b7c9ac704720d",
-            "sha256": "sha256-xbvX5Ik+0inJcLJtJ/AajAt7xCk6FOCrm5ogpwwvVDg=",
+            "rev": "8b89f44c2cc4581e402111d928869fe7ba9f7033",
+            "sha256": "sha256-xVfPvXDf9QN3Eh9dV+Lw6IkWG42KSuQ1u2260HKvpnc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d6e0e666048a5395d6ea4283143b7c9ac704720d"
+        "version": "8b89f44c2cc4581e402111d928869fe7ba9f7033"
     }
 }
