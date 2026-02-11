@@ -8,7 +8,7 @@
     ./users.nix
     ./sops.nix
     ./preserve.nix
-    ./keyd.nix
+    ./kanata.nix
   ];
 
   # Time and locale
