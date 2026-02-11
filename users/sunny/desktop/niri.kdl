@@ -102,7 +102,7 @@ layout {
 
 spawn-at-startup "dms" "run"
 spawn-at-startup "foot" "--server"
-spawn-sh-at-startup "pywalfox install && pywalfox start"
+spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
 
 hotkey-overlay {

@@ -36,11 +36,16 @@ in
     # GSettings
     glib
 
+    # nvfetcher
     nvfetcher
     fixedPrefetchGit
     
     fastfetch
     wl-clipboard
+
+    # xwayland theming
+    xsettingsd
+    xrdb
   ];
 
   environment.pathsToLink = [
@@ -53,6 +58,7 @@ in
     enable = true;
     extraPackages = with pkgs; [
       gamescope
+      volantes-cursors
     ];
     extraCompatPackages = with pkgs; [
       proton-ge-bin
