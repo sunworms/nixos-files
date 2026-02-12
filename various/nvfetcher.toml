@@ -31,19 +31,13 @@ fetch.github = "KarimAziev/atomic-chrome"
 
 # binary packages
 [eden-nightly]
-src.github_tag = "Eden-CI/Nightly"
-src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
-src.to_pattern = 'v\1.\2/Eden-Linux-\2'
-fetch.url = "https://github.com/Eden-CI/Nightly/releases/download/$ver-amd64-clang-pgo.AppImage"
-
-[pcsx2]
-src.github_tag = "pcsx2/pcsx2"
-fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-linux-appimage-x64-Qt.AppImage"
+src.github_tag = "eden-emulator/Releases"
+fetch.url = "https://github.com/eden-emulator/Releases/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"
 
 [helium]
 src.github = "imputnet/helium-linux"
 fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"
 
-[glide]
-src.github = "glide-browser/glide"
-fetch.url = "https://github.com/glide-browser/glide/releases/download/$ver/glide.linux-x86_64.tar.xz"
+# [glide]
+# src.github = "glide-browser/glide"
+# fetch.url = "https://github.com/glide-browser/glide/releases/download/$ver/glide.linux-x86_64.tar.xz"

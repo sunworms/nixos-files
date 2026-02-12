@@ -2,8 +2,8 @@
 
 {
   packages = with pkgs; [
-    (callPackage ./pcsx2.nix { inherit sources; })
     (callPackage ./eden.nix { inherit sources; })
+    pcsx2
     ppsspp-sdl-wayland
     melonDS
     azahar
@@ -20,5 +20,6 @@
     })
     satty
     koreader
+    matrix-commander-rs
   ];
 }

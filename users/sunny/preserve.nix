@@ -49,6 +49,7 @@
       ".local/share/osu"
       ".local/share/containers"
       ".local/share/keyrings"
+      ".local/share/matrix-commander-rs"
 
       ".local/state/DankMaterialShell"
       ".local/state/wireplumber"

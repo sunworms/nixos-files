@@ -29,11 +29,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-wPoAe6YrVdGfluuq392lrZLb8MW6ZOjlOjpslItfSto=",
+            "sha256": "sha256-g7x10zM/55z2avdETcpRJ56O1oN8cndbzl9UAiOJZF8=",
             "type": "url",
-            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1770749788.efd26c3e4d/Eden-Linux-efd26c3e4d-amd64-clang-pgo.AppImage"
+            "url": "https://github.com/eden-emulator/Releases/releases/download/v0.1.1/Eden-Linux-v0.1.1-amd64-clang-pgo.AppImage"
         },
-        "version": "v1770749788.efd26c3e4d/Eden-Linux-efd26c3e4d"
+        "version": "v0.1.1"
     },
     "emacs": {
         "cargoLock": null,
@@ -54,21 +54,6 @@
             "url": "https://git.gay/sunworms/emacs-config"
         },
         "version": "9b738fc4acd6718711c22b40ab7b037e82770965"
-    },
-    "glide": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "glide",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-yut/yXT+BJCFackLSRG7tLBD6m008k0lC62Qwt7aRX8=",
-            "type": "url",
-            "url": "https://github.com/glide-browser/glide/releases/download/0.1.58a/glide.linux-x86_64.tar.xz"
-        },
-        "version": "0.1.58a"
     },
     "helium": {
         "cargoLock": null,
@@ -126,21 +111,6 @@
             "type": "github"
         },
         "version": "d6c71932130818840fc8fe9509cf50be8c64634f"
-    },
-    "pcsx2": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "pcsx2",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-7Ql2blVhEPgTsdNKdDsZqfVeUCA4v3P4D6nm6Aab6bk=",
-            "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.113/pcsx2-v2.7.113-linux-appimage-x64-Qt.AppImage"
-        },
-        "version": "v2.7.113"
     },
     "preservation": {
         "cargoLock": null,

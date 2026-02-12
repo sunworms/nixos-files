@@ -20,10 +20,10 @@
   };
   eden-nightly = {
     pname = "eden-nightly";
-    version = "v1770749788.efd26c3e4d/Eden-Linux-efd26c3e4d";
+    version = "v0.1.1";
     src = fetchurl {
-      url = "https://github.com/Eden-CI/Nightly/releases/download/v1770749788.efd26c3e4d/Eden-Linux-efd26c3e4d-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-wPoAe6YrVdGfluuq392lrZLb8MW6ZOjlOjpslItfSto=";
+      url = "https://github.com/eden-emulator/Releases/releases/download/v0.1.1/Eden-Linux-v0.1.1-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-g7x10zM/55z2avdETcpRJ56O1oN8cndbzl9UAiOJZF8=";
     };
   };
   emacs = {
@@ -39,14 +39,6 @@
       sha256 = "sha256-mv50vfiAdgNyTocMmcgXMUGmN3peZJEZSW+F7hl06GY=";
     };
     date = "2026-02-09";
-  };
-  glide = {
-    pname = "glide";
-    version = "0.1.58a";
-    src = fetchurl {
-      url = "https://github.com/glide-browser/glide/releases/download/0.1.58a/glide.linux-x86_64.tar.xz";
-      sha256 = "sha256-yut/yXT+BJCFackLSRG7tLBD6m008k0lC62Qwt7aRX8=";
-    };
   };
   helium = {
     pname = "helium";
@@ -79,14 +71,6 @@
       sha256 = "sha256-ub1gpAONMFsT/GU2hV6ZWJjur8rJ6kKxdm9IlCT0j84=";
     };
     date = "2026-02-08";
-  };
-  pcsx2 = {
-    pname = "pcsx2";
-    version = "v2.7.113";
-    src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.113/pcsx2-v2.7.113-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-7Ql2blVhEPgTsdNKdDsZqfVeUCA4v3P4D6nm6Aab6bk=";
-    };
   };
   preservation = {
     pname = "preservation";

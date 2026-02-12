@@ -17,46 +17,24 @@
 )
 
 (defalias
-  ;; Home Row Mods & Layers
-  ;; Format: (tap-hold tap-time hold-time tap-action hold-action)
-  ;; The 'tap-hold' command in Kanata handles the repeat-on-double-tap automatically.
-  
-  a_met (tap-hold $tap-time $hold-time a lmet)
-  s_alt (tap-hold $tap-time $hold-time s lalt)
-  d_ctl (tap-hold $tap-time $hold-time d lctl)
-  f_sft (tap-hold $tap-time $hold-time f lsft)
-
-  j_sft (tap-hold $tap-time $hold-time j rsft)
-  k_ctl (tap-hold $tap-time $hold-time k rctl)
-  l_alt (tap-hold $tap-time $hold-time l lalt)
-  ;_met (tap-hold $tap-time $hold-time ; rmet)
-
-  ;; Layer Toggles
-  spc_nav (tap-hold $tap-time $hold-time spc (layer-toggle nav))
-  tab_num (tap-hold $tap-time $hold-time tab (layer-toggle numpad))
-  sym_lyr (tap-hold $tap-time $hold-time caps (layer-toggle symbols))
+  spc_ctl (tap-hold $tap-time $hold-time spc lctl)
+  caps_alt (tap-hold $tap-time $hold-time caps lalt)
+  num_lyr (tap-hold $tap-time $hold-time tab (layer-toggle numpad))
   fn_lyr  (tap-hold $tap-time $hold-time grv (layer-toggle function))
+  sym_lyr (tap-hold $tap-time $hold-time ralt (layer-toggle symbols))
 )
 
 (deflayer base
-  @fn_lyr  _    _    _    _    _    _    _    _    _    _    _    _    _
-  @tab_num q    w    e    r    t    y    u    i    o    p    _    _    _
-  @sym_lyr @a_met @s_alt @d_ctl @f_sft g    h    @j_sft @k_ctl @l_alt @;_met _    _
+  @fn_lyr   _    _    _    _    _    _    _    _    _    _    _    _    _
+  @num_lyr  q    w    e    r    t    y    u    i    o    p    _    _    _
+  @caps_alt a    s    d    f    g    h    j    k    l    ;    _    _
   _    z    x    c    v    b    n    m    _    _    _    _
-  _    _    _              @spc_nav            _    _    _
-)
-
-(deflayer nav
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    esc  home pgdn pgup end  _    _    _    _
-  _    lmet lalt lctl lsft -    left down up   rght _    _    _
-  _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _              _                   _    _    _
+  _    _    _              @spc_ctl            @sym_lyr  _    _
 )
 
 (deflayer numpad
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    _    _    _    _    _    7    8    9    _    _    _    _
+  _    _    _    _    _    esc  _    7    8    9    _    _    _    _
   _    _    _    _    _    _    _    4    5    6    _    _    _
   _    _    _    _    _    _    _    1    2    3    _    _
   _    _    _              0                   _    _    _
