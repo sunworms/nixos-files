@@ -5,7 +5,7 @@
     (callPackage ./eden.nix { inherit sources; })
     pcsx2
     ppsspp-sdl-wayland
-    melonDS
+    melonds
     azahar
     mgba
     sameboy
