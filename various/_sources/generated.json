@@ -93,7 +93,7 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-02-08",
+        "date": "2026-02-11",
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
@@ -105,12 +105,12 @@
             "name": null,
             "owner": "NixOS",
             "repo": "nixpkgs",
-            "rev": "d6c71932130818840fc8fe9509cf50be8c64634f",
-            "sha256": "sha256-ub1gpAONMFsT/GU2hV6ZWJjur8rJ6kKxdm9IlCT0j84=",
+            "rev": "ec7c70d12ce2fc37cb92aff673dcdca89d187bae",
+            "sha256": "sha256-9xejG0KoqsoKEGp2kVbXRlEYtFFcDTHjidiuX8hGO44=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "d6c71932130818840fc8fe9509cf50be8c64634f"
+        "version": "ec7c70d12ce2fc37cb92aff673dcdca89d187bae"
     },
     "preservation": {
         "cargoLock": null,

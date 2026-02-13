@@ -62,15 +62,15 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "d6c71932130818840fc8fe9509cf50be8c64634f";
+    version = "ec7c70d12ce2fc37cb92aff673dcdca89d187bae";
     src = fetchFromGitHub {
       owner = "NixOS";
       repo = "nixpkgs";
-      rev = "d6c71932130818840fc8fe9509cf50be8c64634f";
+      rev = "ec7c70d12ce2fc37cb92aff673dcdca89d187bae";
       fetchSubmodules = false;
-      sha256 = "sha256-ub1gpAONMFsT/GU2hV6ZWJjur8rJ6kKxdm9IlCT0j84=";
+      sha256 = "sha256-9xejG0KoqsoKEGp2kVbXRlEYtFFcDTHjidiuX8hGO44=";
     };
-    date = "2026-02-08";
+    date = "2026-02-11";
   };
   preservation = {
     pname = "preservation";
