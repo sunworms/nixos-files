@@ -91,6 +91,27 @@
         },
         "version": "9d0c8d4b44f661910595b07e6480557644c1431c"
     },
+    "niri-blur": {
+        "cargoLock": null,
+        "date": "2026-02-14",
+        "extract": null,
+        "name": "niri-blur",
+        "passthru": null,
+        "pinned": true,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "niri-wm",
+            "repo": "niri",
+            "rev": "3bebfb5403bcc8158dadb43b3c8e0658bf05c4da",
+            "sha256": "sha256-pkc8Dr7xo2f0edb3d54DF+8UckimldwDAz4o9tbiIOE=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "3bebfb5403bcc8158dadb43b3c8e0658bf05c4da"
+    },
     "nixpkgs": {
         "cargoLock": null,
         "date": "2026-02-13",
