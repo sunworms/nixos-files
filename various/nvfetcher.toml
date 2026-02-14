@@ -31,8 +31,9 @@ fetch.github = "KarimAziev/atomic-chrome"
 
 # binary packages
 [eden-nightly]
-src.github_tag = "eden-emulator/Releases"
-fetch.url = "https://github.com/eden-emulator/Releases/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"
+src.webpage = "https://git.eden-emu.dev/eden-emu/eden/releases"
+src.regex = 'v[0-9]+\.[0-9]+\.[0-9]+'
+fetch.url = "https://git.eden-emu.dev/eden-emu/eden/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"
 
 [helium]
 src.github = "imputnet/helium-linux"

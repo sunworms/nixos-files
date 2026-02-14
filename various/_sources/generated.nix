@@ -22,7 +22,7 @@
     pname = "eden-nightly";
     version = "v0.1.1";
     src = fetchurl {
-      url = "https://github.com/eden-emulator/Releases/releases/download/v0.1.1/Eden-Linux-v0.1.1-amd64-clang-pgo.AppImage";
+      url = "https://git.eden-emu.dev/eden-emu/eden/releases/download/v0.1.1/Eden-Linux-v0.1.1-amd64-clang-pgo.AppImage";
       sha256 = "sha256-g7x10zM/55z2avdETcpRJ56O1oN8cndbzl9UAiOJZF8=";
     };
   };
@@ -62,15 +62,15 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "ec7c70d12ce2fc37cb92aff673dcdca89d187bae";
+    version = "a82ccc39b39b621151d6732718e3e250109076fa";
     src = fetchFromGitHub {
       owner = "NixOS";
       repo = "nixpkgs";
-      rev = "ec7c70d12ce2fc37cb92aff673dcdca89d187bae";
+      rev = "a82ccc39b39b621151d6732718e3e250109076fa";
       fetchSubmodules = false;
-      sha256 = "sha256-9xejG0KoqsoKEGp2kVbXRlEYtFFcDTHjidiuX8hGO44=";
+      sha256 = "sha256-gf2AmWVTs8lEq7z/3ZAsgnZDhWIckkb+ZnAo5RzSxJg=";
     };
-    date = "2026-02-11";
+    date = "2026-02-13";
   };
   preservation = {
     pname = "preservation";
