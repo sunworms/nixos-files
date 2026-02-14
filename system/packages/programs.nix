@@ -66,5 +66,10 @@ in
     protontricks.enable = true;
   };
 
+  programs.tmux = {
+    enable = true;
+    terminal = "tmux-direct";
+  };
+
   environment.etc."chromium/policies/managed/default.json".source = ./chromium.json;
 }
