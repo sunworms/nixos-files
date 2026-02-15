@@ -42,11 +42,15 @@ in
     "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
-    "DankMaterialShell/settings.json".source = ./dms.json;
-    "DankMaterialShell/clsettings.json".source = ./dms-clipboard.json;
-    "matugen/config.toml".source = ./matugen.toml;
-    "matugen/dank-emacs.el".source = ./dank-emacs.el;
-    "matugen/discord.css".source = ./discord-matugen.css;
+    
+    "DankMaterialShell/settings.json".source = ./dms/dms.json;
+    "DankMaterialShell/clsettings.json".source = ./dms/dms-clipboard.json;
+    "DankMaterialShell/theme_gruvbox_material_hard.json".source = ./dms/theme_gruvbox_material_hard.json;
+    
+    "matugen/config.toml".source = ./matugen/matugen.toml;
+    "matugen/dank-emacs.el".source = ./matugen/dank-emacs.el;
+    "matugen/discord.css".source = ./matugen/discord-matugen.css;
+    
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
       {"Path":"${pkgs.widevine-cdm}/share/google/chrome/WidevineCdm"}
