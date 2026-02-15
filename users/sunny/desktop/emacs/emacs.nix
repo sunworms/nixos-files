@@ -11,7 +11,7 @@ let
 
   emacs-with-packages = emacsPackagesCustom.withPackages (
     epkgs: with epkgs; [
-      dracula-theme # fallback theme
+      base16-theme # fallback theme
       git-auto-commit-mode # for org mode
       indent-bars
       treesitGrammars
