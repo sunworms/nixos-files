@@ -49,7 +49,7 @@ in
     
     "matugen/config.toml".source = ./matugen/matugen.toml;
     "matugen/dank-emacs.el".source = ./matugen/dank-emacs.el;
-    "matugen/discord.css".source = ./matugen/discord-matugen.css;
+    "matugen/vesktop.css".source = ./matugen/vesktop.css;
     
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''

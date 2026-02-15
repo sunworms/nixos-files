@@ -5,5 +5,5 @@ input_path = "~/.config/matugen/dank-emacs.el"
 output_path = "~/.emacs.d/themes/dank-emacs-theme.el"
 
 [templates.discord]
-input_path = "~/.config/matugen/discord.css"
-output_path = "~/.config/DankMaterialShell/discord.css"
+input_path = "~/.config/matugen/vesktop.css"
+output_path = "~/.config/DankMaterialShell/vesktop.css"
