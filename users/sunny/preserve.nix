@@ -16,6 +16,7 @@
       "Pictures"
       "Videos"
       "VMs"
+      ".emacs.d"
       ".ssh"
       ".steam"
 
