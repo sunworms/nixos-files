@@ -20,25 +20,25 @@
   };
   eden-nightly = {
     pname = "eden-nightly";
-    version = "v0.1.1";
+    version = "v0.2.0-rc1";
     src = fetchurl {
-      url = "https://git.eden-emu.dev/eden-emu/eden/releases/download/v0.1.1/Eden-Linux-v0.1.1-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-g7x10zM/55z2avdETcpRJ56O1oN8cndbzl9UAiOJZF8=";
+      url = "https://git.eden-emu.dev/eden-emu/eden/releases/download/v0.2.0-rc1/Eden-Linux-v0.2.0-rc1-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-WB+UcqaW/Gf2STA8E8vCwi6EScPrdSIrje0V5xPW65Q=";
     };
   };
   emacs = {
     pname = "emacs";
-    version = "9b738fc4acd6718711c22b40ab7b037e82770965";
+    version = "c103ee49f8505078e344358443cf52b0bed494d2";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "9b738fc4acd6718711c22b40ab7b037e82770965";
+      rev = "c103ee49f8505078e344358443cf52b0bed494d2";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-mv50vfiAdgNyTocMmcgXMUGmN3peZJEZSW+F7hl06GY=";
+      sha256 = "sha256-tc68dYCRZCoN5ryKq/eJBAFu6RDoudNd2sOQG2XoVDA=";
     };
-    date = "2026-02-09";
+    date = "2026-02-15";
   };
   helium = {
     pname = "helium";
@@ -59,18 +59,6 @@
       sha256 = "sha256-cKETEBrseo7Iz+bOzflwy1xTpDuUj3QaLA+P49yJw8k=";
     };
     date = "2026-01-22";
-  };
-  niri-blur = {
-    pname = "niri-blur";
-    version = "3bebfb5403bcc8158dadb43b3c8e0658bf05c4da";
-    src = fetchFromGitHub {
-      owner = "niri-wm";
-      repo = "niri";
-      rev = "3bebfb5403bcc8158dadb43b3c8e0658bf05c4da";
-      fetchSubmodules = false;
-      sha256 = "sha256-pkc8Dr7xo2f0edb3d54DF+8UckimldwDAz4o9tbiIOE=";
-    };
-    date = "2026-02-14";
   };
   nixpkgs = {
     pname = "nixpkgs";
@@ -98,26 +86,26 @@
   };
   quickshell = {
     pname = "quickshell";
-    version = "1e4d804e7f3fa7465811030e8da2bf10d544426a";
+    version = "dacfa9de829ac7cb173825f593236bf2c21f637e";
     src = fetchFromGitHub {
       owner = "quickshell-mirror";
       repo = "quickshell";
-      rev = "1e4d804e7f3fa7465811030e8da2bf10d544426a";
+      rev = "dacfa9de829ac7cb173825f593236bf2c21f637e";
       fetchSubmodules = false;
-      sha256 = "sha256-WW00FaBiUmQyxvSbefvgxIjwf/WmRrEGBbwMHvW/7uQ=";
+      sha256 = "sha256-ngXnN5YXu+f45+QGYNN/VEBMQmcBCYGRCqwaK8cxY1s=";
     };
-    date = "2026-01-28";
+    date = "2026-02-09";
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "8b89f44c2cc4581e402111d928869fe7ba9f7033";
+    version = "d1e085258f41a30e670b5ba306d2e8d57529ac83";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "8b89f44c2cc4581e402111d928869fe7ba9f7033";
+      rev = "d1e085258f41a30e670b5ba306d2e8d57529ac83";
       fetchSubmodules = false;
-      sha256 = "sha256-xVfPvXDf9QN3Eh9dV+Lw6IkWG42KSuQ1u2260HKvpnc=";
+      sha256 = "sha256-tp5/E4tGbeCgFniieITVdQH/zhnIY6S2rPXY7mE4/s8=";
     };
-    date = "2026-02-10";
+    date = "2026-02-15";
   };
 }

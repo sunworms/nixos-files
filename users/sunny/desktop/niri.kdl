@@ -151,9 +151,9 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
-    opacity 0.8
+    opacity 1.0
     draw-border-with-background false
-    background-effect {
+    /-background-effect {
         xray true
 	blur {
 	     on
@@ -170,16 +170,8 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="(^dms:bar$|^dms:control-center$|^dms:dash$|^dms:spotlight$|^dms:clipboard$|^dms:power-menu$|^dms:notification-popup$|^dms:toast$|^dms:osd$|^dms:app-launcher$)"
-    opacity 0.8
-    geometry-corner-radius 12
-    background-effect {
-        xray true
-	blur {
-	     on
-	}
-	noise 0
-    }
+    match namespace="^dms:"
+    opacity 1.0
 }
 
 prefer-no-csd

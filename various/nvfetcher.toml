@@ -29,16 +29,10 @@ fetch.git = "https://git.gay/sunworms/emacs-config"
 src.git = "https://github.com/KarimAziev/atomic-chrome"
 fetch.github = "KarimAziev/atomic-chrome"
 
-[niri-blur]
-src.git = "https://github.com/niri-wm/niri"
-src.branch = "wip/branch"
-fetch.github = "niri-wm/niri"
-pinned = true
-
 # binary packages
 [eden-nightly]
 src.webpage = "https://git.eden-emu.dev/eden-emu/eden/releases"
-src.regex = 'v[0-9]+\.[0-9]+\.[0-9]+'
+src.regex = '(v[0-9]+\.[0-9]+\.[0-9]+\-rc[0-9]+|v[0-9]+\.[0-9]+\.[0-9]+)'
 fetch.url = "https://git.eden-emu.dev/eden-emu/eden/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"
 
 [helium]
