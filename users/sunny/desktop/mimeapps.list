@@ -1,6 +1,6 @@
 [Default Applications]
-application/pdf=koreader.desktop
-image/vnd.djvu=koreader.desktop
+application/pdf=okular.desktop
+image/vnd.djvu=okular.desktop
 text/plain=emacsclient.desktop
 text/x-markdown=emacsclient.desktop
 application/x-shellscript=emacsclient.desktop
@@ -19,13 +19,14 @@ x-scheme-handler/http=helium.desktop
 x-scheme-handler/https=helium.desktop
 x-scheme-handler/ftp=helium.desktop
 x-scheme-handler/chrome=helium.desktop
-x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/discord=helium.desktop
 application/x-extension-htm=helium.desktop
 application/x-extension-html=helium.desktop
 application/x-extension-shtml=helium.desktop
 application/xhtml+xml=helium.desktop
 application/x-extension-xhtml=helium.desktop
 application/x-extension-xht=helium.desktop
+application/x-extension-webp=swayimg.desktop
 video/ogg=mpv.desktop
 video/x-msvideo=mpv.desktop
 audio/mpeg=mpv.desktop
@@ -39,7 +40,7 @@ audio/mp3=mpv.desktop
 application/x-flash-video=mpv.desktop
 
 [Added Associations]
-application/pdf=koreader.desktop
+application/pdf=okular.desktop
 x-scheme-handler/http=helium.desktop
 x-scheme-handler/https=helium.desktop
 x-scheme-handler/ftp=helium.desktop
@@ -51,3 +52,4 @@ application/x-extension-shtml=helium.desktop
 application/xhtml+xml=helium.desktop
 application/x-extension-xhtml=helium.desktop
 application/x-extension-xht=helium.desktop
+application/x-extension-webp=swayimg.desktop

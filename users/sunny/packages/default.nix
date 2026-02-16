@@ -19,7 +19,6 @@
       ];
     })
     satty
-    koreader
-    matrix-commander-rs
+    kdePackages.okular
   ];
 }

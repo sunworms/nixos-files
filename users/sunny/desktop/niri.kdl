@@ -189,7 +189,7 @@ environment {
     SUDO_EDITOR "emacsclient"
     VISUAL "emacsclient"
     GTK_THEME "adw-gtk3"
-    QT_QPA_PLATFORMTHEME "gtk3"
+    QT_QPA_PLATFORMTHEME "qt6ct"
 }
 
 recent-windows {

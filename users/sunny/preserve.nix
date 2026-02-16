@@ -24,7 +24,6 @@
 
       ".config/net.imput.helium"
       # ".config/glide"
-      ".config/koreader"
       ".config/fish"
       ".config/niri"
       ".config/DankMaterialShell"
@@ -33,6 +32,8 @@
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"
+      ".config/qt5ct"
+      ".config/qt6ct"
 
       ".config/azahar-emu"
       ".config/eden"
@@ -41,6 +42,8 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
+      ".local/share/color-schemes"
+      ".local/share/okular"
       ".local/share/Steam"
       ".local/share/fish"
       ".local/share/azahar-emu"
@@ -50,12 +53,10 @@
       ".local/share/osu"
       ".local/share/containers"
       ".local/share/keyrings"
-      ".local/share/matrix-commander-rs"
 
       ".local/state/DankMaterialShell"
       ".local/state/wireplumber"
     ];
-    files = [
-    ];
+    files = [];
   };
 }

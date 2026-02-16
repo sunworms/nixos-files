@@ -27,6 +27,8 @@
       ${pkgs.dconf}/bin/dconf write /org/gtk/gtk4/settings/file-chooser/show-hidden "'true'"
       ${pkgs.dconf}/bin/dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'small-plus'"
     '')
+    libsForQt5.qt5ct
+    kdePackages.qt6ct
 
     #image viewer
     swayimg
