@@ -50,15 +50,15 @@
   };
   hjem = {
     pname = "hjem";
-    version = "9d0c8d4b44f661910595b07e6480557644c1431c";
+    version = "7f2880d705edf541955d98f56cb78f9507384423";
     src = fetchFromGitHub {
       owner = "feel-co";
       repo = "hjem";
-      rev = "9d0c8d4b44f661910595b07e6480557644c1431c";
+      rev = "7f2880d705edf541955d98f56cb78f9507384423";
       fetchSubmodules = false;
-      sha256 = "sha256-cKETEBrseo7Iz+bOzflwy1xTpDuUj3QaLA+P49yJw8k=";
+      sha256 = "sha256-1RfmXbDIxgwP2/SrYSYd9zdArUaJEm6C3FXpdRlmeso=";
     };
-    date = "2026-01-22";
+    date = "2026-02-16";
   };
   nixpkgs = {
     pname = "nixpkgs";
@@ -96,15 +96,27 @@
     };
     date = "2026-02-09";
   };
+  smfh = {
+    pname = "smfh";
+    version = "dd0a33fc9d1fe7c29da86225af4b4a47b1714839";
+    src = fetchFromGitHub {
+      owner = "feel-co";
+      repo = "smfh";
+      rev = "dd0a33fc9d1fe7c29da86225af4b4a47b1714839";
+      fetchSubmodules = false;
+      sha256 = "sha256-6zMgOPzBbTSm8jzPqmGcotjvkN3HzxcnMM8pW64JpZQ=";
+    };
+    date = "2026-02-15";
+  };
   sops-nix = {
     pname = "sops-nix";
-    version = "d1e085258f41a30e670b5ba306d2e8d57529ac83";
+    version = "2d0cf89b4404529778bc82de7e42b5754e0fe4fa";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "d1e085258f41a30e670b5ba306d2e8d57529ac83";
+      rev = "2d0cf89b4404529778bc82de7e42b5754e0fe4fa";
       fetchSubmodules = false;
-      sha256 = "sha256-tp5/E4tGbeCgFniieITVdQH/zhnIY6S2rPXY7mE4/s8=";
+      sha256 = "sha256-UFc4lfGBr+wJmwgDGJDn1cVD6DTr0/8TdronNUiyXlU=";
     };
     date = "2026-02-15";
   };

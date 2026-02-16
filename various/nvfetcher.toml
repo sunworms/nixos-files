@@ -16,6 +16,10 @@ fetch.github = "Mic92/sops-nix"
 src.git = "https://github.com/feel-co/hjem"
 fetch.github = "feel-co/hjem"
 
+[smfh]
+src.git = "https://github.com/feel-co/smfh"
+fetch.github = "feel-co/smfh"
+
 [quickshell]
 src.git = "https://github.com/quickshell-mirror/quickshell"
 fetch.github = "quickshell-mirror/quickshell"
