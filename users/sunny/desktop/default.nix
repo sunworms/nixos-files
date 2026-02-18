@@ -48,7 +48,6 @@ in
     "DankMaterialShell/everforest.json".source = ./dms/everforest.json;
 
     "matugen/config.toml".source = ./matugen/matugen.toml;
-    "matugen/dank-emacs.el".source = ./matugen/dank-emacs.el;
     "matugen/vesktop.css".source = ./matugen/vesktop.css;
 
     "okularrc".text = ''
