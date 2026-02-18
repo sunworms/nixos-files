@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  fixedPrefetchGit = pkgs.runCommand "nix-prefetch-git-fixed" {} ''
+  fixedPrefetchGit = pkgs.runCommand "nix-prefetch-git-fixed" { } ''
     mkdir -p $out/bin
     ln -s ${pkgs.nix-prefetch-git}/bin/nix-prefetch-git* $out/bin/nix-prefetch-git
   '';
@@ -32,6 +32,8 @@ in
     # Nix LSPs
     nil
     nixd
+    statix
+    nixfmt
 
     # GSettings
     glib
@@ -39,7 +41,7 @@ in
     # nvfetcher
     nvfetcher
     fixedPrefetchGit
-    
+
     fastfetch
     wl-clipboard
 
