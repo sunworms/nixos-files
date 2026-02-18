@@ -7,7 +7,16 @@ let
     }
   );
 
-  treesitGrammars = emacsPackagesCustom.treesit-grammars.with-all-grammars;
+  treesitGrammars = emacsPackagesCustom.treesit-grammars.with-grammars (
+    grammars: with grammars; [
+      tree-sitter-typst
+      tree-sitter-latex
+      tree-sitter-nix
+      tree-sitter-rust
+      tree-sitter-go
+      tree-sitter-elisp
+    ]
+  );
 
   emacs-with-packages = emacsPackagesCustom.withPackages (
     epkgs: with epkgs; [
