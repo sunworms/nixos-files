@@ -28,17 +28,17 @@
   };
   emacs = {
     pname = "emacs";
-    version = "c103ee49f8505078e344358443cf52b0bed494d2";
+    version = "c54aae953b856d6566092d1f5684c34c91ddc4f4";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "c103ee49f8505078e344358443cf52b0bed494d2";
+      rev = "c54aae953b856d6566092d1f5684c34c91ddc4f4";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-tc68dYCRZCoN5ryKq/eJBAFu6RDoudNd2sOQG2XoVDA=";
+      sha256 = "sha256-P3gEfItWwXeD1iKwX5uaEygvb2tAFEr2c5g3Zpln4Rs=";
     };
-    date = "2026-02-15";
+    date = "2026-02-18";
   };
   helium = {
     pname = "helium";

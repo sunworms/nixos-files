@@ -13,6 +13,7 @@ let
     epkgs: with epkgs; [
       base16-theme # fallback theme
       git-auto-commit-mode # for org mode
+      apheleia
       indent-bars
       treesitGrammars
       restart-emacs
