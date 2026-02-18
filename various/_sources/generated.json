@@ -93,7 +93,7 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-02-13",
+        "date": "2026-02-17",
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
@@ -105,12 +105,12 @@
             "name": null,
             "owner": "NixOS",
             "repo": "nixpkgs",
-            "rev": "a82ccc39b39b621151d6732718e3e250109076fa",
-            "sha256": "sha256-gf2AmWVTs8lEq7z/3ZAsgnZDhWIckkb+ZnAo5RzSxJg=",
+            "rev": "0182a361324364ae3f436a63005877674cf45efb",
+            "sha256": "sha256-0NBlEBKkN3lufyvFegY4TYv5mCNHbi5OmBDrzihbBMQ=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "a82ccc39b39b621151d6732718e3e250109076fa"
+        "version": "0182a361324364ae3f436a63005877674cf45efb"
     },
     "preservation": {
         "cargoLock": null,
@@ -153,27 +153,6 @@
             "type": "github"
         },
         "version": "dacfa9de829ac7cb173825f593236bf2c21f637e"
-    },
-    "smfh": {
-        "cargoLock": null,
-        "date": "2026-02-15",
-        "extract": null,
-        "name": "smfh",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "feel-co",
-            "repo": "smfh",
-            "rev": "dd0a33fc9d1fe7c29da86225af4b4a47b1714839",
-            "sha256": "sha256-6zMgOPzBbTSm8jzPqmGcotjvkN3HzxcnMM8pW64JpZQ=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "dd0a33fc9d1fe7c29da86225af4b4a47b1714839"
     },
     "sops-nix": {
         "cargoLock": null,

@@ -1,4 +1,4 @@
-{ pkgs, sources, ... }:
+{ sources, ... }:
 
 {
   imports = [
@@ -16,7 +16,6 @@
 
   hjem = {
     clobberByDefault = true;
-    linker = (pkgs.callPackage "${sources.smfh.src}/package.nix" { });
     specialArgs = { inherit sources; };
   };
 
