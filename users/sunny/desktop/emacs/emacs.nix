@@ -22,7 +22,9 @@ let
       company
       company-auctex
       company-bibtex
+      yasnippet
       nix-mode
+      go-mode
       pdf-tools
       auctex
       auctex-latexmk

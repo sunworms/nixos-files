@@ -28,15 +28,15 @@
   };
   emacs = {
     pname = "emacs";
-    version = "c54aae953b856d6566092d1f5684c34c91ddc4f4";
+    version = "9ba02d512a4f7c5c8a0919ae977e495c47bb6cfa";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "c54aae953b856d6566092d1f5684c34c91ddc4f4";
+      rev = "9ba02d512a4f7c5c8a0919ae977e495c47bb6cfa";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-P3gEfItWwXeD1iKwX5uaEygvb2tAFEr2c5g3Zpln4Rs=";
+      sha256 = "sha256-Q/n9MklxbGGOKzTr8BlkALEVMDibi50G8awmg6Dh5xw=";
     };
     date = "2026-02-18";
   };

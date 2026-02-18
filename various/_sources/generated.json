@@ -47,13 +47,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "c54aae953b856d6566092d1f5684c34c91ddc4f4",
-            "sha256": "sha256-P3gEfItWwXeD1iKwX5uaEygvb2tAFEr2c5g3Zpln4Rs=",
+            "rev": "9ba02d512a4f7c5c8a0919ae977e495c47bb6cfa",
+            "sha256": "sha256-Q/n9MklxbGGOKzTr8BlkALEVMDibi50G8awmg6Dh5xw=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://git.gay/sunworms/emacs-config"
         },
-        "version": "c54aae953b856d6566092d1f5684c34c91ddc4f4"
+        "version": "9ba02d512a4f7c5c8a0919ae977e495c47bb6cfa"
     },
     "helium": {
         "cargoLock": null,
