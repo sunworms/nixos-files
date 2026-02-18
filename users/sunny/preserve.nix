@@ -57,6 +57,6 @@
       ".local/state/DankMaterialShell"
       ".local/state/wireplumber"
     ];
-    files = [];
+    files = [ ];
   };
 }

@@ -10,27 +10,32 @@ let
     "git.outfoxxed.me"
   ];
 
-  isForgejoApiHost = url:
-    builtins.any (host: builtins.match ".*${host}.*" url != null) forgejoApiHosts;
+  isForgejoApiHost =
+    url: builtins.any (host: builtins.match ".*${host}.*" url != null) forgejoApiHosts;
 
-  isForgejoDirectHost = url:
-    builtins.any (host: builtins.match ".*${host}.*" url != null) forgejoDirectHosts;
+  isForgejoDirectHost =
+    url: builtins.any (host: builtins.match ".*${host}.*" url != null) forgejoDirectHosts;
 
-  isGitLabHost = url:
+  isGitLabHost =
+    url:
     builtins.any (host: builtins.match ".*${host}.*" url != null) [
       "gitlab.com"
       "gitlab.freedesktop.org"
     ];
 
-  parseGitUrl = url:
+  parseGitUrl =
+    url:
     let
       match = builtins.match "https?://([^/]+)/([^/]+)/([^/]+)(\\.git)?" url;
     in
-    if match != null then {
-      host = builtins.elemAt match 0;
-      owner = builtins.elemAt match 1;
-      repo = builtins.elemAt match 2;
-    } else null;
+    if match != null then
+      {
+        host = builtins.elemAt match 0;
+        owner = builtins.elemAt match 1;
+        repo = builtins.elemAt match 2;
+      }
+    else
+      null;
 
 in
 builtins.mapAttrs (

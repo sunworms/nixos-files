@@ -16,7 +16,7 @@
 
   hjem = {
     clobberByDefault = true;
-    linker = (pkgs.callPackage "${sources.smfh.src}/package.nix" {});
+    linker = (pkgs.callPackage "${sources.smfh.src}/package.nix" { });
     specialArgs = { inherit sources; };
   };
 

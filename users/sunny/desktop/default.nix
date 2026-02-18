@@ -42,11 +42,12 @@ in
     "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
-    
+
     "DankMaterialShell/settings.json".source = ./dms/dms.json;
     "DankMaterialShell/clsettings.json".source = ./dms/dms-clipboard.json;
-    "DankMaterialShell/theme_gruvbox_material_hard.json".source = ./dms/theme_gruvbox_material_hard.json;
-    
+    "DankMaterialShell/theme_gruvbox_material_hard.json".source =
+      ./dms/theme_gruvbox_material_hard.json;
+
     "matugen/config.toml".source = ./matugen/matugen.toml;
     "matugen/dank-emacs.el".source = ./matugen/dank-emacs.el;
     "matugen/vesktop.css".source = ./matugen/vesktop.css;
@@ -71,7 +72,7 @@ in
       standard_dialogs=default
       style=Fusion
     '';
-    
+
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
       {"Path":"${pkgs.widevine-cdm}/share/google/chrome/WidevineCdm"}
