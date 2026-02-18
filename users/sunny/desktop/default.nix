@@ -45,8 +45,7 @@ in
 
     "DankMaterialShell/settings.json".source = ./dms/dms.json;
     "DankMaterialShell/clsettings.json".source = ./dms/dms-clipboard.json;
-    "DankMaterialShell/theme_gruvbox_material_hard.json".source =
-      ./dms/theme_gruvbox_material_hard.json;
+    "DankMaterialShell/everforest.json".source = ./dms/everforest.json;
 
     "matugen/config.toml".source = ./matugen/matugen.toml;
     "matugen/dank-emacs.el".source = ./matugen/dank-emacs.el;
