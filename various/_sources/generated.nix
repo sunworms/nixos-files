@@ -28,17 +28,29 @@
   };
   emacs = {
     pname = "emacs";
-    version = "9ba02d512a4f7c5c8a0919ae977e495c47bb6cfa";
+    version = "6dd1765bcafe1fd261cb0196c93efa3ce2288b9b";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "9ba02d512a4f7c5c8a0919ae977e495c47bb6cfa";
+      rev = "6dd1765bcafe1fd261cb0196c93efa3ce2288b9b";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Q/n9MklxbGGOKzTr8BlkALEVMDibi50G8awmg6Dh5xw=";
+      sha256 = "sha256-QZ51UN5+FGGKdW0n9KE3zpOq/Vsmp+nKke6UvKYX8hw=";
     };
-    date = "2026-02-18";
+    date = "2026-02-20";
+  };
+  everforest = {
+    pname = "everforest";
+    version = "ba61a881b5d57810eef76baae01c951d1e6c2ceb";
+    src = fetchFromGitHub {
+      owner = "theorytoe";
+      repo = "everforest-emacs";
+      rev = "ba61a881b5d57810eef76baae01c951d1e6c2ceb";
+      fetchSubmodules = false;
+      sha256 = "sha256-p8D27i5EZp37QVi9IffJqXnnFxUaaAc9BfzIzrje66U=";
+    };
+    date = "2025-08-30";
   };
   helium = {
     pname = "helium";
@@ -98,14 +110,14 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "2d0cf89b4404529778bc82de7e42b5754e0fe4fa";
+    version = "e85540ffe97322dc1fea14dd11cdc2f59d540ac7";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "2d0cf89b4404529778bc82de7e42b5754e0fe4fa";
+      rev = "e85540ffe97322dc1fea14dd11cdc2f59d540ac7";
       fetchSubmodules = false;
-      sha256 = "sha256-UFc4lfGBr+wJmwgDGJDn1cVD6DTr0/8TdronNUiyXlU=";
+      sha256 = "sha256-eksVUcUsfS9mQx4D9DrYu88u9w70bAf+n6KmTDuIGEE=";
     };
-    date = "2026-02-15";
+    date = "2026-02-19";
   };
 }

@@ -20,13 +20,13 @@ let
 
   emacs-with-packages = emacsPackagesCustom.withPackages (
     epkgs: with epkgs; [
-      base16-theme # fallback theme
       git-auto-commit-mode # for org mode
       apheleia
       indent-bars
       treesitGrammars
       restart-emacs
       telephone-line
+      meow
       magit
       company
       company-auctex
@@ -46,6 +46,10 @@ let
       direnv
       (pkgs.callPackage ./atomic-chrome.nix {
         inherit (epkgs) melpaBuild websocket;
+        inherit sources;
+      })
+      (pkgs.callPackage ./everforest.nix {
+        inherit (epkgs) melpaBuild;
         inherit sources;
       })
     ]
