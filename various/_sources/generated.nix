@@ -18,6 +18,42 @@
     };
     date = "2025-10-07";
   };
+  dms-emoji-launcher = {
+    pname = "dms-emoji-launcher";
+    version = "9b0e368471a6bb83900a4210359cab570c99c147";
+    src = fetchFromGitHub {
+      owner = "devnullvoid";
+      repo = "dms-emoji-launcher";
+      rev = "9b0e368471a6bb83900a4210359cab570c99c147";
+      fetchSubmodules = false;
+      sha256 = "sha256-o6Sa7pSL6/crYY48Pxp3wH7qOCule8ZSVSqrvjmresU=";
+    };
+    date = "2026-02-18";
+  };
+  dms-niri-window = {
+    pname = "dms-niri-window";
+    version = "b866af4cb599e7eeae90779b959f56b1a9905f18";
+    src = fetchFromGitHub {
+      owner = "rochacbruno";
+      repo = "DankNiriWindows";
+      rev = "b866af4cb599e7eeae90779b959f56b1a9905f18";
+      fetchSubmodules = false;
+      sha256 = "sha256-KkB+xq4AObTqTDxtBVqfCsnxn0jnNk3iM4vpk9jlEBA=";
+    };
+    date = "2026-02-02";
+  };
+  dms-plugin-registry = {
+    pname = "dms-plugin-registry";
+    version = "4ea81fc9dcd8d659f884cec1bd626c231b4110e1";
+    src = fetchFromGitHub {
+      owner = "AvengeMedia";
+      repo = "dms-plugin-registry";
+      rev = "4ea81fc9dcd8d659f884cec1bd626c231b4110e1";
+      fetchSubmodules = false;
+      sha256 = "sha256-L6n62/uomh6TmzF/nRLvvIRk7nQKu7OuZE33xCIIoiQ=";
+    };
+    date = "2026-02-20";
+  };
   eden-nightly = {
     pname = "eden-nightly";
     version = "v0.2.0-rc1";
@@ -28,17 +64,17 @@
   };
   emacs = {
     pname = "emacs";
-    version = "e5740cc349f28cda7ef9217ef139de26dbf7e851";
+    version = "7f28f7ab83688e690fac9f9526e8c67e28f5e192";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "e5740cc349f28cda7ef9217ef139de26dbf7e851";
+      rev = "7f28f7ab83688e690fac9f9526e8c67e28f5e192";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-VLXmpQX0OzI06h8iK3xJZrT6YpsQv3tMQ2Xi0CElWCE=";
+      sha256 = "sha256-oEBvHqeC0XsJO6KSqPtvRy2+ySX7TLSQK2lljLHNJS4=";
     };
-    date = "2026-02-20";
+    date = "2026-02-21";
   };
   everforest = {
     pname = "everforest";

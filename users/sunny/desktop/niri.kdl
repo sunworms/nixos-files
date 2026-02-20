@@ -100,8 +100,6 @@ layout {
     }
 }
 
-spawn-at-startup "dms" "run"
-spawn-at-startup "foot" "--server"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
 

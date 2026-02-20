@@ -9,6 +9,10 @@ let
   sunnyEmacs = (pkgs.callPackage ./emacs/emacs.nix { inherit sources; }).default;
 in
 {
+  imports = [
+    ./dms
+  ];
+
   files = {
     ".emacs.d/init.el".source = "${sources.emacs.src}/init.el";
     ".emacs.d/modules".source = "${sources.emacs.src}/modules";
@@ -42,10 +46,6 @@ in
     "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
-
-    "DankMaterialShell/settings.json".source = ./dms/dms.json;
-    "DankMaterialShell/clsettings.json".source = ./dms/dms-clipboard.json;
-    "DankMaterialShell/everforest.json".source = ./dms/everforest.json;
 
     "matugen/config.toml".source = ./matugen/matugen.toml;
     "matugen/vesktop.css".source = ./matugen/vesktop.css;
@@ -86,19 +86,39 @@ in
     xwayland-satellite
   ];
 
-  systemd.services.emacs-daemon = {
-    description = "Emacs daemon";
-    wantedBy = [ "default.target" ];
-    environment = {
-      PATH = lib.mkForce "/etc/profiles/per-user/sunny/bin:/run/current-system/sw/bin";
+  systemd.services = {
+    emacs-daemon = {
+      description = "Emacs daemon";
+      wantedBy = [ "default.target" ];
+      environment = {
+        PATH = lib.mkForce "/run/wrappers/bin:/etc/profiles/per-user/sunny/bin:/run/current-system/sw/bin";
+      };
+      serviceConfig = {
+        Type = "forking";
+        ExecStartPre = "${pkgs.coreutils}/bin/sleep 2";
+        ExecStart = "${sunnyEmacs}/bin/emacs --daemon";
+        ExecStop = "${sunnyEmacs}/bin/emacsclient -e '(kill-emacs)'";
+        Restart = "on-failure";
+        WorkingDirectory = "%h";
+      };
     };
-    serviceConfig = {
-      Type = "forking";
-      ExecStartPre = "${pkgs.coreutils}/bin/sleep 2";
-      ExecStart = "${sunnyEmacs}/bin/emacs --daemon";
-      ExecStop = "${sunnyEmacs}/bin/emacsclient -e '(kill-emacs)'";
-      Restart = "on-failure";
-      WorkingDirectory = "%h";
+
+    foot = {
+      description = "Fast, lightweight and minimalistic Wayland terminal emulator.";
+      documentation = [
+        "man:foot(1)"
+      ];
+      environment = {
+        PATH = lib.mkForce "/run/wrappers/bin:/etc/profiles/per-user/sunny/bin:/run/current-system/sw/bin";
+      };
+      partOf = [ "graphical-session.target" ];
+      after = [ "graphical-session.target" ];
+      serviceConfig = {
+        ExecStart = "${pkgs.foot}/bin/foot --server";
+        Restart = "on-failure";
+        OOMPolicy = "continue";
+      };
+      wantedBy = [ "graphical-session.target" ];
     };
   };
 }
