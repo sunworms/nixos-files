@@ -100,6 +100,13 @@ layout {
     }
 }
 
+blur {
+    on
+    passes 2
+    offset 3
+    noise 0
+}
+
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
 
@@ -149,14 +156,10 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
-    opacity 1.0
+    opacity 0.8
     draw-border-with-background false
-    /-background-effect {
-        xray true
-	blur {
-	     on
-	}
-	noise 0
+    background-effect {
+        blur true
     }
 }
 
@@ -168,8 +171,19 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="^dms:"
-    opacity 1.0
+    match namespace="(^dms:bar$|^dms:control-center$|^dms:dash$|^dms:app-launcher$)"
+    opacity 0.8
+    geometry-corner-radius 12
+    background-effect {
+        xray false
+	blur true
+    }
+}
+
+layer-rule {
+    match namespace="(^dms:spotlight$|^dms-overview-spotlight$|^dms:clipboard$|^dms:power-menu$|^dms:notification-popup$|^dms:toast$|^dms:osd$)"
+    opacity 0.9
+    geometry-corner-radius 12
 }
 
 prefer-no-csd

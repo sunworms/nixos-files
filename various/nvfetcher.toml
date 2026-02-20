@@ -16,6 +16,12 @@ fetch.github = "Mic92/sops-nix"
 src.git = "https://github.com/feel-co/hjem"
 fetch.github = "feel-co/hjem"
 
+# niri blur
+[niri-blur]
+src.git = "https://github.com/niri-wm/niri"
+src.branch = "wip/branch"
+fetch.github = "niri-wm/niri"
+
 # dms stuff
 
 [quickshell]
