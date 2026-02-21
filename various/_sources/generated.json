@@ -47,13 +47,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "0dfc0725da1dc89cdd50d2204d332e73bae15455",
-            "sha256": "sha256-iNtLtepDUv/IoFbXvtzthkG739M9VAiKRIEu2gdwfgU=",
+            "rev": "d6c5d053a4ff535ca165ed902f668985833746c3",
+            "sha256": "sha256-sr+Q1SRHcNTKdwb/4togklKg5jzvX71vdZf8XSkepCY=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://git.gay/sunworms/emacs-config"
         },
-        "version": "0dfc0725da1dc89cdd50d2204d332e73bae15455"
+        "version": "d6c5d053a4ff535ca165ed902f668985833746c3"
     },
     "everforest": {
         "cargoLock": null,
@@ -118,7 +118,7 @@
         "extract": null,
         "name": "niri-blur",
         "passthru": null,
-        "pinned": false,
+        "pinned": true,
         "src": {
             "deepClone": false,
             "fetchSubmodules": false,
