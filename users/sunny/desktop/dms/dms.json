@@ -1,6 +1,6 @@
 {
-  "currentThemeName": "custom",
-  "currentThemeCategory": "custom",
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
   "customThemeFile": "/home/sunny/.config/DankMaterialShell/themes/gruvbox-material/theme.json",
   "registryThemeVariants": {
     "flexoki": "green",
@@ -8,7 +8,7 @@
     "peaceAndQuiet": "pink",
     "gruvboxMaterial": "hard"
   },
-  "matugenScheme": "scheme-expressive",
+  "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,

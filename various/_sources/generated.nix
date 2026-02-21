@@ -44,15 +44,15 @@
   };
   dms-plugin-registry = {
     pname = "dms-plugin-registry";
-    version = "4ea81fc9dcd8d659f884cec1bd626c231b4110e1";
+    version = "abb3d0e92265b7178f5d20c4c5f103072daf9483";
     src = fetchFromGitHub {
       owner = "AvengeMedia";
       repo = "dms-plugin-registry";
-      rev = "4ea81fc9dcd8d659f884cec1bd626c231b4110e1";
+      rev = "abb3d0e92265b7178f5d20c4c5f103072daf9483";
       fetchSubmodules = false;
-      sha256 = "sha256-L6n62/uomh6TmzF/nRLvvIRk7nQKu7OuZE33xCIIoiQ=";
+      sha256 = "sha256-c6tOsL4XA40xja4kQj2mX4dpEu6lTjcUE0NGp9sx5+0=";
     };
-    date = "2026-02-20";
+    date = "2026-02-21";
   };
   eden-nightly = {
     pname = "eden-nightly";
