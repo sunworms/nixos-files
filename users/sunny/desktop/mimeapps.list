@@ -1,6 +1,6 @@
 [Default Applications]
-application/pdf=okular.desktop
-image/vnd.djvu=okular.desktop
+application/pdf=atril.desktop
+image/vnd.djvu=atril.desktop
 text/plain=emacsclient.desktop
 text/x-markdown=emacsclient.desktop
 application/x-shellscript=emacsclient.desktop
@@ -40,7 +40,7 @@ audio/mp3=mpv.desktop
 application/x-flash-video=mpv.desktop
 
 [Added Associations]
-application/pdf=okular.desktop
+application/pdf=atril.desktop
 x-scheme-handler/http=helium.desktop
 x-scheme-handler/https=helium.desktop
 x-scheme-handler/ftp=helium.desktop

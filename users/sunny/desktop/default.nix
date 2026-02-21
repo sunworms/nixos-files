@@ -50,27 +50,6 @@ in
     "matugen/config.toml".source = ./matugen/matugen.toml;
     "matugen/vesktop.css".source = ./matugen/vesktop.css;
 
-    "okularrc".text = ''
-      [UiSettings]
-      ColorScheme=DankMatugen
-    '';
-    "qt5ct/qt5ct.conf".text = ''
-      [Appearance]
-      color_scheme_path=/home/sunny/.config/qt5ct/colors/matugen.conf
-      custom_palette=true
-      icon_theme=candy-icons
-      standard_dialogs=default
-      style=Fusion
-    '';
-    "qt6ct/qt6ct.conf".text = ''
-      [Appearance]
-      color_scheme_path=/home/sunny/.config/qt6ct/colors/matugen.conf
-      custom_palette=true
-      icon_theme=candy-icons
-      standard_dialogs=default
-      style=Fusion
-    '';
-
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
       {"Path":"${pkgs.widevine-cdm}/share/google/chrome/WidevineCdm"}

@@ -19,6 +19,6 @@
       ];
     })
     satty
-    kdePackages.okular
+    atril
   ];
 }
