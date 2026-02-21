@@ -18,42 +18,6 @@
     };
     date = "2025-10-07";
   };
-  dms-emoji-launcher = {
-    pname = "dms-emoji-launcher";
-    version = "9b0e368471a6bb83900a4210359cab570c99c147";
-    src = fetchFromGitHub {
-      owner = "devnullvoid";
-      repo = "dms-emoji-launcher";
-      rev = "9b0e368471a6bb83900a4210359cab570c99c147";
-      fetchSubmodules = false;
-      sha256 = "sha256-o6Sa7pSL6/crYY48Pxp3wH7qOCule8ZSVSqrvjmresU=";
-    };
-    date = "2026-02-18";
-  };
-  dms-niri-window = {
-    pname = "dms-niri-window";
-    version = "b866af4cb599e7eeae90779b959f56b1a9905f18";
-    src = fetchFromGitHub {
-      owner = "rochacbruno";
-      repo = "DankNiriWindows";
-      rev = "b866af4cb599e7eeae90779b959f56b1a9905f18";
-      fetchSubmodules = false;
-      sha256 = "sha256-KkB+xq4AObTqTDxtBVqfCsnxn0jnNk3iM4vpk9jlEBA=";
-    };
-    date = "2026-02-02";
-  };
-  dms-plugin-registry = {
-    pname = "dms-plugin-registry";
-    version = "abb3d0e92265b7178f5d20c4c5f103072daf9483";
-    src = fetchFromGitHub {
-      owner = "AvengeMedia";
-      repo = "dms-plugin-registry";
-      rev = "abb3d0e92265b7178f5d20c4c5f103072daf9483";
-      fetchSubmodules = false;
-      sha256 = "sha256-c6tOsL4XA40xja4kQj2mX4dpEu6lTjcUE0NGp9sx5+0=";
-    };
-    date = "2026-02-21";
-  };
   eden-nightly = {
     pname = "eden-nightly";
     version = "v0.2.0-rc1";
@@ -64,15 +28,15 @@
   };
   emacs = {
     pname = "emacs";
-    version = "7f28f7ab83688e690fac9f9526e8c67e28f5e192";
+    version = "0dfc0725da1dc89cdd50d2204d332e73bae15455";
     src = fetchgit {
       url = "https://git.gay/sunworms/emacs-config";
-      rev = "7f28f7ab83688e690fac9f9526e8c67e28f5e192";
+      rev = "0dfc0725da1dc89cdd50d2204d332e73bae15455";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-oEBvHqeC0XsJO6KSqPtvRy2+ySX7TLSQK2lljLHNJS4=";
+      sha256 = "sha256-iNtLtepDUv/IoFbXvtzthkG739M9VAiKRIEu2gdwfgU=";
     };
     date = "2026-02-21";
   };
@@ -110,15 +74,15 @@
   };
   niri-blur = {
     pname = "niri-blur";
-    version = "48fb2b3970acfb05806047f6ae5d68b4b1041aac";
+    version = "86f42d1ed9ab787c52ace073e0b3218e26530d25";
     src = fetchFromGitHub {
       owner = "niri-wm";
       repo = "niri";
-      rev = "48fb2b3970acfb05806047f6ae5d68b4b1041aac";
+      rev = "86f42d1ed9ab787c52ace073e0b3218e26530d25";
       fetchSubmodules = false;
-      sha256 = "sha256-AV6CEmWqM23wpOexysITVoWc92M5Dvegeh6xmBkwf80=";
+      sha256 = "sha256-52CxMRH2kVGpsPBiZM+996b6i/3XkmOrySm5zqwWc+o=";
     };
-    date = "2026-02-20";
+    date = "2026-02-21";
   };
   nixpkgs = {
     pname = "nixpkgs";
@@ -143,18 +107,6 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
-  };
-  quickshell = {
-    pname = "quickshell";
-    version = "dacfa9de829ac7cb173825f593236bf2c21f637e";
-    src = fetchFromGitHub {
-      owner = "quickshell-mirror";
-      repo = "quickshell";
-      rev = "dacfa9de829ac7cb173825f593236bf2c21f637e";
-      fetchSubmodules = false;
-      sha256 = "sha256-ngXnN5YXu+f45+QGYNN/VEBMQmcBCYGRCqwaK8cxY1s=";
-    };
-    date = "2026-02-09";
   };
   sops-nix = {
     pname = "sops-nix";

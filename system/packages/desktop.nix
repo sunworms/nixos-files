@@ -31,10 +31,5 @@
     );
   };
 
-  programs.dms-shell = {
-    enable = true;
-    quickshell.package = (pkgs.callPackage sources.quickshell.src { });
-  };
-
-  programs.dsearch.enable = true;
+  security.pam.services.gtklock = { };
 }

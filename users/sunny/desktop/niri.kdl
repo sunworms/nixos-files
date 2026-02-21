@@ -107,8 +107,12 @@ blur {
     noise 0
 }
 
+spawn-at-startup "swww-daemon"
+spawn-at-startup "mako"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
+spawn-sh-at-startup "swayidle -w timeout 300 'gtklock -d' timeout 600 'niri msg action power-off-monitors' after-resume 'niri msg action power-on-monitors' before-sleep 'gtklock -d'"
 
 hotkey-overlay {
     skip-at-startup
@@ -166,24 +170,21 @@ window-rule {
 // layer rules
 
 layer-rule {
-    match namespace="^quickshell$"
+    match namespace="^swww-daemon$"
     place-within-backdrop true
 }
 
 layer-rule {
-    match namespace="(^dms:bar$|^dms:control-center$|^dms:dash$|^dms:app-launcher$)"
+    match namespace="launcher"
     opacity 0.8
-    geometry-corner-radius 12
     background-effect {
-        xray false
-	blur true
+        blur true
     }
 }
 
 layer-rule {
-    match namespace="(^dms:spotlight$|^dms-overview-spotlight$|^dms:clipboard$|^dms:power-menu$|^dms:notification-popup$|^dms:toast$|^dms:osd$)"
-    opacity 0.9
-    geometry-corner-radius 12
+    match namespace="notifications"
+    opacity 0.8
 }
 
 prefer-no-csd
@@ -201,7 +202,7 @@ environment {
     SUDO_EDITOR "emacsclient"
     VISUAL "emacsclient"
     GTK_THEME "adw-gtk3"
-    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_QPA_PLATFORMTHEME "gtk3"
 }
 
 recent-windows {
@@ -217,24 +218,21 @@ binds {
 
     Mod+E hotkey-overlay-title="Open Emacsclient" { spawn "emacsclient" "-nc"; }
     Mod+T hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
-    Mod+A hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; };
-    Mod+V hotkey-overlay-title="Clipboard Manager" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
-    Mod+P hotkey-overlay-title="Color Picker" { spawn "dms" "color" "pick" "--autocopy"; }
-    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
+    Mod+Space hotkey-overlay-title="Menu" { spawn "fuzzel-menu"; };
+    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }
+
+    XF86AudioRaiseVolume { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+ && volume-notif"; }
+    XF86AudioLowerVolume { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && volume-notif"; }
+    XF86AudioMute { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && volume-notif"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
     
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "increment" "1"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "decrement" "1"; }
-    XF86AudioMute        allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "mute"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
+    XF86MonBrightnessUp { spawn-sh "brightnessctl s +1% && bright-notif"; }
+    XF86MonBrightnessDown { spawn-sh "brightnessctl s 1%- && bright-notif"; }
 
     XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
     XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
     XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
-
-    XF86MonBrightnessUp allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "increment" "1" ""; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "dms" "ipc" "call" "brightness" "decrement" "1" ""; }
 
     Mod+O repeat=false { toggle-overview; }
 
@@ -400,4 +398,4 @@ overview {
     }
 }
 
-include "dms/colors.kdl"
+include "colors.kdl"

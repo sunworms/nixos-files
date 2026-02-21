@@ -22,25 +22,6 @@ src.git = "https://github.com/niri-wm/niri"
 src.branch = "wip/branch"
 fetch.github = "niri-wm/niri"
 
-# dms stuff
-
-[quickshell]
-src.git = "https://github.com/quickshell-mirror/quickshell"
-fetch.github = "quickshell-mirror/quickshell"
-pinned = true
-
-[dms-plugin-registry]
-src.git = "https://github.com/AvengeMedia/dms-plugin-registry"
-fetch.github = "AvengeMedia/dms-plugin-registry"
-
-[dms-emoji-launcher]
-src.git = "https://github.com/devnullvoid/dms-emoji-launcher"
-fetch.github = "devnullvoid/dms-emoji-launcher"
-
-[dms-niri-window]
-src.git = "https://github.com/rochacbruno/DankNiriWindows"
-fetch.github = "rochacbruno/DankNiriWindows"
-
 # emacs
 
 [emacs]

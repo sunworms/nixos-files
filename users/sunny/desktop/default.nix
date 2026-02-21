@@ -1,6 +1,5 @@
 {
   pkgs,
-  lib,
   sources,
   ...
 }:
@@ -10,7 +9,9 @@ let
 in
 {
   imports = [
-    ./dms
+    ./matugen
+    ./scripts
+    ./services.nix
   ];
 
   files = {
@@ -42,13 +43,12 @@ in
   xdg.config.files = {
     "fish/config.fish".source = ./config.fish;
     "foot/foot.ini".source = ./foot.ini;
+    "fuzzel/fuzzel.ini".source = ./fuzzel.ini;
+    "mako/config".source = ./mako;
     "git/config".source = ./gitconfig;
     "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
-
-    "matugen/config.toml".source = ./matugen/matugen.toml;
-    "matugen/vesktop.css".source = ./matugen/vesktop.css;
 
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
@@ -58,46 +58,20 @@ in
 
   packages = with pkgs; [
     sunnyEmacs
+    matugen
+    swww
     foot
+    mako
+    fuzzel
+    cliphist
+    brightnessctl
+    gtklock
+    swayidle
+    libnotify
+    btop
     hyfetch
     git
     nautilus
     xwayland-satellite
   ];
-
-  systemd.services = {
-    emacs-daemon = {
-      description = "Emacs daemon";
-      wantedBy = [ "default.target" ];
-      environment = {
-        PATH = lib.mkForce "/run/wrappers/bin:/etc/profiles/per-user/sunny/bin:/run/current-system/sw/bin";
-      };
-      serviceConfig = {
-        Type = "forking";
-        ExecStartPre = "${pkgs.coreutils}/bin/sleep 2";
-        ExecStart = "${sunnyEmacs}/bin/emacs --daemon";
-        ExecStop = "${sunnyEmacs}/bin/emacsclient -e '(kill-emacs)'";
-        Restart = "on-failure";
-        WorkingDirectory = "%h";
-      };
-    };
-
-    foot = {
-      description = "Fast, lightweight and minimalistic Wayland terminal emulator.";
-      documentation = [
-        "man:foot(1)"
-      ];
-      environment = {
-        PATH = lib.mkForce "/run/wrappers/bin:/etc/profiles/per-user/sunny/bin:/run/current-system/sw/bin";
-      };
-      partOf = [ "graphical-session.target" ];
-      after = [ "graphical-session.target" ];
-      serviceConfig = {
-        ExecStart = "${pkgs.foot}/bin/foot --server";
-        Restart = "on-failure";
-        OOMPolicy = "continue";
-      };
-      wantedBy = [ "graphical-session.target" ];
-    };
-  };
 }

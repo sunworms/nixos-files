@@ -20,20 +20,19 @@
       ".ssh"
       ".steam"
 
-      ".cache/DankMaterialShell"
+      ".cache/swww"
 
       ".config/net.imput.helium"
       # ".config/glide"
       ".config/fish"
       ".config/niri"
-      ".config/DankMaterialShell"
       ".config/foot"
+      ".config/fuzzel"
+      ".config/mako"
       ".config/git"
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"
-      ".config/qt5ct"
-      ".config/qt6ct"
 
       ".config/azahar-emu"
       ".config/eden"
@@ -53,7 +52,6 @@
       ".local/share/containers"
       ".local/share/keyrings"
 
-      ".local/state/DankMaterialShell"
       ".local/state/wireplumber"
     ];
     files = [ ];
