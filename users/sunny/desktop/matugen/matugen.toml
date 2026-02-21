@@ -43,3 +43,7 @@ emacsclient --eval '(load "~/.emacs.d/init.el")'
 [templates.niri]
 input_path = '~/.config/matugen/niri.kdl'
 output_path = '~/.config/niri/colors.kdl'
+
+[templates.zathura]
+input_path = '~/.config/matugen/zathura-colors'
+output_path = '~/.config/zathura/zathurarc'

@@ -19,6 +19,6 @@
       ];
     })
     satty
-    atril
+    zathura
   ];
 }

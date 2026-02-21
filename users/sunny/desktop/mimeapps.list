@@ -1,6 +1,7 @@
 [Default Applications]
-application/pdf=atril.desktop
-image/vnd.djvu=atril.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/epub=org.pwmt.zathura.desktop
+image/vnd.djvu=org.pwmt.zathura.desktop
 text/plain=emacsclient.desktop
 text/x-markdown=emacsclient.desktop
 application/x-shellscript=emacsclient.desktop
@@ -40,7 +41,9 @@ audio/mp3=mpv.desktop
 application/x-flash-video=mpv.desktop
 
 [Added Associations]
-application/pdf=atril.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/epub=org.pwmt.zathura.desktop
+image/vnd.djvu=org.pwmt.zathura.desktop
 x-scheme-handler/http=helium.desktop
 x-scheme-handler/https=helium.desktop
 x-scheme-handler/ftp=helium.desktop

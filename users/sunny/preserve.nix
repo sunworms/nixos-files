@@ -30,6 +30,7 @@
       ".config/foot"
       ".config/fuzzel"
       ".config/mako"
+      ".config/zathura"
       ".config/git"
 
       ".config/gtk-3.0"
@@ -42,7 +43,7 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
-      ".local/share/gvfs-metadata"
+      ".local/share/zathura"
       ".local/share/Steam"
       ".local/share/fish"
       ".local/share/azahar-emu"
