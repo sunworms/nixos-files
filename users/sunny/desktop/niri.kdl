@@ -109,7 +109,9 @@ blur {
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "mako"
+spawn-at-startup "waybar"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+spawn-at-startup "playerctld"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
 spawn-sh-at-startup "swayidle -w timeout 300 'gtklock -d' timeout 600 'niri msg action power-off-monitors' after-resume 'niri msg action power-on-monitors' before-sleep 'gtklock -d'"
@@ -175,7 +177,7 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="launcher"
+    match namespace="(waybar|launcher)"
     opacity 0.8
     background-effect {
         blur true
@@ -218,7 +220,10 @@ binds {
 
     Mod+E hotkey-overlay-title="Open Emacsclient" { spawn "emacsclient" "-nc"; }
     Mod+T hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
-    Mod+Space hotkey-overlay-title="Menu" { spawn "fuzzel-menu"; };
+    Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--no-icons"; };
+    Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; };
+    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; };
+    Mod+Tab hotkey-overlay-title="Window Switcher" { spawn "fuzzel-niri-window"; };
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }
 
     XF86AudioRaiseVolume { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+ && volume-notif"; }

@@ -21,6 +21,7 @@ fetch.github = "feel-co/hjem"
 src.git = "https://github.com/niri-wm/niri"
 src.branch = "wip/branch"
 fetch.github = "niri-wm/niri"
+pinned = true
 
 # emacs
 

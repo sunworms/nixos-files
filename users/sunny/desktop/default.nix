@@ -42,6 +42,8 @@ in
 
   xdg.config.files = {
     "fish/config.fish".source = ./config.fish;
+    "waybar/config.jsonc".source = ./waybar-config;
+    "waybar/style.css".source = ./waybar-style.css;
     "foot/foot.ini".source = ./foot.ini;
     "fuzzel/fuzzel.ini".source = ./fuzzel.ini;
     "mako/config".source = ./mako;
@@ -58,6 +60,7 @@ in
 
   packages = with pkgs; [
     sunnyEmacs
+    waybar
     matugen
     swww
     foot
@@ -69,6 +72,7 @@ in
     swayidle
     libnotify
     btop
+    playerctl
     hyfetch
     git
     nautilus

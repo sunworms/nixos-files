@@ -26,6 +26,7 @@
       # ".config/glide"
       ".config/fish"
       ".config/niri"
+      ".config/waybar"
       ".config/foot"
       ".config/fuzzel"
       ".config/mako"

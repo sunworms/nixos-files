@@ -3,6 +3,11 @@ command = "swww"
 arguments = ["img", "--transition-type", "center"]
 set = true
 
+[templates.waybar]
+input_path = "~/.config/matugen/waybar.css"
+output_path = "~/.config/waybar/colors.css"
+post_hook = "pkill -SIGUSR2 waybar"
+
 [templates.discord]
 input_path = "~/.config/matugen/discord.css"
 output_path = "~/.config/matugen/discord-matugen.css"

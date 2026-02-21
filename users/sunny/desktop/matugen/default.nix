@@ -3,6 +3,7 @@
 {
   xdg.config.files = {
     "matugen/config.toml".source = ./matugen.toml;
+    "matugen/waybar.css".source = ./waybar.css;
     "matugen/discord.css".source = ./discord.css;
     "matugen/fuzzel.ini".source = ./fuzzel.ini;
     "matugen/niri.kdl".source = ./niri.kdl;

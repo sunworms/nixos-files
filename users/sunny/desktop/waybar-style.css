@@ -1,0 +1,57 @@
+@import "colors.css";
+
+* {
+    font-family: Aporetic Sans;
+    font-size: 9pt;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar,
+tooltip,
+tooltip label {
+    background-color: @background;
+    color: @primary;
+}
+tooltip label { margin: -5px -3px; }
+
+#clock,
+#mpris,
+#window,
+window#waybar.empty #window,
+#network,
+#cpu,
+#memory,
+#workspaces button,
+#battery {
+    padding: 0 12px;
+    background-color: @background;
+    color: @primary;
+    transition: none;
+}
+
+#tray {
+    padding: 0 9px;
+    background-color: @background;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    color: shade(@primary, 0.5);
+}
+#workspaces button.focused { color: @primary; }
+
+#battery.warning { color: @error; }
+#battery.critical { color: @error_container; }
+
+#clock:hover,
+#mpris:hover,
+#window:hover,
+#network:hover,
+#cpu:hover,
+#memory:hover,
+#tray:hover,
+#workspaces button:hover,
+#battery:hover {
+    background-color: shade(@background, 1.5);
+}
