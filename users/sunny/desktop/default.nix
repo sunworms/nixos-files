@@ -54,7 +54,7 @@
   };
 
   xdg.data.files = {
-    "applications/helix-footclient.desktop".source = ./helix-footclient.desktop;
+    "applications/Helix.desktop".source = ./Helix.desktop;
   };
 
   packages = with pkgs; [

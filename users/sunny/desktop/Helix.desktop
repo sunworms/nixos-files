@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Helix (footclient)
+Name=Helix
 Comment=Helix text editor in foot terminal
 Exec=footclient hx %F
 Terminal=false
