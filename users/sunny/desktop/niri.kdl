@@ -222,6 +222,8 @@ binds {
     Mod+T hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--no-icons"; };
     Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; };
+    Mod+Shift+W hotkey-overlay-title="Spawn waybar" { spawn "waybar"; };
+    Mod+Shift+E hotkey-overlay-title="Emoji and Unicode picker" { spawn "rofimoji" "--selector" "fuzzel" "--action" "copy" "--files" "all"; };
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; };
     Mod+Tab hotkey-overlay-title="Window Switcher" { spawn "fuzzel-niri-window"; };
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }
@@ -385,7 +387,6 @@ binds {
 
     Mod+Shift+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
-    Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
 
     Mod+Shift+P { power-off-monitors; }

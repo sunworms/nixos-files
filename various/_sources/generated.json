@@ -177,7 +177,7 @@
     },
     "sops-nix": {
         "cargoLock": null,
-        "date": "2026-02-19",
+        "date": "2026-02-22",
         "extract": null,
         "name": "sops-nix",
         "passthru": null,
@@ -189,11 +189,11 @@
             "name": null,
             "owner": "Mic92",
             "repo": "sops-nix",
-            "rev": "e85540ffe97322dc1fea14dd11cdc2f59d540ac7",
-            "sha256": "sha256-eksVUcUsfS9mQx4D9DrYu88u9w70bAf+n6KmTDuIGEE=",
+            "rev": "d7755d820f5fa8acf7f223309c33e25d4f92e74f",
+            "sha256": "sha256-MJuVJeszZEziquykEHh/hmgIHYxUcuoG/1aowpLiSeU=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e85540ffe97322dc1fea14dd11cdc2f59d540ac7"
+        "version": "d7755d820f5fa8acf7f223309c33e25d4f92e74f"
     }
 }

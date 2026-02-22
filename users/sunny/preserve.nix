@@ -25,6 +25,7 @@
       ".config/net.imput.helium"
       # ".config/glide"
       ".config/fish"
+      ".config/matugen"
       ".config/niri"
       ".config/waybar"
       ".config/foot"

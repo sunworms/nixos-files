@@ -67,6 +67,7 @@ in
     mako
     fuzzel
     cliphist
+    rofimoji
     brightnessctl
     gtklock
     swayidle

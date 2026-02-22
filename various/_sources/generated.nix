@@ -110,14 +110,14 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "e85540ffe97322dc1fea14dd11cdc2f59d540ac7";
+    version = "d7755d820f5fa8acf7f223309c33e25d4f92e74f";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "e85540ffe97322dc1fea14dd11cdc2f59d540ac7";
+      rev = "d7755d820f5fa8acf7f223309c33e25d4f92e74f";
       fetchSubmodules = false;
-      sha256 = "sha256-eksVUcUsfS9mQx4D9DrYu88u9w70bAf+n6KmTDuIGEE=";
+      sha256 = "sha256-MJuVJeszZEziquykEHh/hmgIHYxUcuoG/1aowpLiSeU=";
     };
-    date = "2026-02-19";
+    date = "2026-02-22";
   };
 }
