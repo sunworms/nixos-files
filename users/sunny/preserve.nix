@@ -20,10 +20,11 @@
       ".steam"
 
       ".cache/swww"
+      ".cache/nix"
 
       ".config/helix"
       ".config/net.imput.helium"
-      # ".config/glide"
+      ".config/lazygit"
       ".config/fish"
       ".config/matugen"
       ".config/niri"
