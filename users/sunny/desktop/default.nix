@@ -53,6 +53,10 @@
     '';
   };
 
+  xdg.data.files = {
+    "applications/helix-footclient.desktop".source = ./helix-footclient.desktop;
+  };
+
   packages = with pkgs; [
     inputs.helix.packages.${pkgs.stdenv.hostPlatform.system}.default
     lazygit
