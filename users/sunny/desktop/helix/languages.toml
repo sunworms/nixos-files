@@ -4,3 +4,14 @@ language-servers = ["tinymist"]
 
 [language-server.tinymist]
 command = "tinymist"
+
+[[language]]
+name = "nix"
+language-servers = ["nil","nixd"]
+
+[language-server.nil]
+command = "nil"
+
+[language-server.nil.config.nil]
+[language-server.nil.config.nil.nix]
+autoArchive = true
