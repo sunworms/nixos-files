@@ -56,6 +56,7 @@
       ".local/share/containers"
       ".local/share/keyrings"
 
+      ".local/state/lazygit"
       ".local/state/wireplumber"
     ];
     files = [ ];
