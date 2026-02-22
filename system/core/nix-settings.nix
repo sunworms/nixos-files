@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   nix = {
@@ -11,5 +11,6 @@
       ];
       trusted-users = [ "sunny" ];
     };
+    registry.helix-nixpkgs.flake = inputs.helix.inputs.nixpkgs;
   };
 }
