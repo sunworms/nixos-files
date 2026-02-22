@@ -6,51 +6,13 @@
   dockerTools,
 }:
 {
-  atomic-chrome = {
-    pname = "atomic-chrome";
-    version = "344247d45ae19b03751344a4c9ee4c163fc82379";
-    src = fetchFromGitHub {
-      owner = "KarimAziev";
-      repo = "atomic-chrome";
-      rev = "344247d45ae19b03751344a4c9ee4c163fc82379";
-      fetchSubmodules = false;
-      sha256 = "sha256-YP8b1Nkoj7ewmM3IhlUhqvdSxWcEI8MQwJ+UY5QEtz8=";
-    };
-    date = "2025-10-07";
-  };
-  eden-nightly = {
-    pname = "eden-nightly";
+  eden = {
+    pname = "eden";
     version = "v0.2.0-rc1";
     src = fetchurl {
       url = "https://git.eden-emu.dev/eden-emu/eden/releases/download/v0.2.0-rc1/Eden-Linux-v0.2.0-rc1-amd64-clang-pgo.AppImage";
       sha256 = "sha256-WB+UcqaW/Gf2STA8E8vCwi6EScPrdSIrje0V5xPW65Q=";
     };
-  };
-  emacs = {
-    pname = "emacs";
-    version = "d6c5d053a4ff535ca165ed902f668985833746c3";
-    src = fetchgit {
-      url = "https://git.gay/sunworms/emacs-config";
-      rev = "d6c5d053a4ff535ca165ed902f668985833746c3";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-sr+Q1SRHcNTKdwb/4togklKg5jzvX71vdZf8XSkepCY=";
-    };
-    date = "2026-02-21";
-  };
-  everforest = {
-    pname = "everforest";
-    version = "ba61a881b5d57810eef76baae01c951d1e6c2ceb";
-    src = fetchFromGitHub {
-      owner = "theorytoe";
-      repo = "everforest-emacs";
-      rev = "ba61a881b5d57810eef76baae01c951d1e6c2ceb";
-      fetchSubmodules = false;
-      sha256 = "sha256-p8D27i5EZp37QVi9IffJqXnnFxUaaAc9BfzIzrje66U=";
-    };
-    date = "2025-08-30";
   };
   helium = {
     pname = "helium";
@@ -59,65 +21,5 @@
       url = "https://github.com/imputnet/helium-linux/releases/download/0.9.3.1/helium-0.9.3.1-x86_64.AppImage";
       sha256 = "sha256-wUmFmfZPWSvPzArbegegQpY1CFu/XAguqPQpINDE2qY=";
     };
-  };
-  hjem = {
-    pname = "hjem";
-    version = "7f2880d705edf541955d98f56cb78f9507384423";
-    src = fetchFromGitHub {
-      owner = "feel-co";
-      repo = "hjem";
-      rev = "7f2880d705edf541955d98f56cb78f9507384423";
-      fetchSubmodules = false;
-      sha256 = "sha256-1RfmXbDIxgwP2/SrYSYd9zdArUaJEm6C3FXpdRlmeso=";
-    };
-    date = "2026-02-16";
-  };
-  niri-blur = {
-    pname = "niri-blur";
-    version = "86f42d1ed9ab787c52ace073e0b3218e26530d25";
-    src = fetchFromGitHub {
-      owner = "niri-wm";
-      repo = "niri";
-      rev = "86f42d1ed9ab787c52ace073e0b3218e26530d25";
-      fetchSubmodules = false;
-      sha256 = "sha256-52CxMRH2kVGpsPBiZM+996b6i/3XkmOrySm5zqwWc+o=";
-    };
-    date = "2026-02-21";
-  };
-  nixpkgs = {
-    pname = "nixpkgs";
-    version = "0182a361324364ae3f436a63005877674cf45efb";
-    src = fetchFromGitHub {
-      owner = "NixOS";
-      repo = "nixpkgs";
-      rev = "0182a361324364ae3f436a63005877674cf45efb";
-      fetchSubmodules = false;
-      sha256 = "sha256-0NBlEBKkN3lufyvFegY4TYv5mCNHbi5OmBDrzihbBMQ=";
-    };
-    date = "2026-02-17";
-  };
-  preservation = {
-    pname = "preservation";
-    version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
-    src = fetchFromGitHub {
-      owner = "nix-community";
-      repo = "preservation";
-      rev = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
-      fetchSubmodules = false;
-      sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
-    };
-    date = "2025-09-09";
-  };
-  sops-nix = {
-    pname = "sops-nix";
-    version = "d7755d820f5fa8acf7f223309c33e25d4f92e74f";
-    src = fetchFromGitHub {
-      owner = "Mic92";
-      repo = "sops-nix";
-      rev = "d7755d820f5fa8acf7f223309c33e25d4f92e74f";
-      fetchSubmodules = false;
-      sha256 = "sha256-MJuVJeszZEziquykEHh/hmgIHYxUcuoG/1aowpLiSeU=";
-    };
-    date = "2026-02-22";
   };
 }

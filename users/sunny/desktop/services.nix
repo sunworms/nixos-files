@@ -1,13 +1,9 @@
 {
   pkgs,
   lib,
-  sources,
   ...
 }:
 
-let
-  sunnyEmacs = (pkgs.callPackage ./emacs/emacs.nix { inherit sources; }).default;
-in
 {
   systemd.services = {
     polkit-soteria = {
@@ -23,22 +19,6 @@ in
         Restart = "on-failure";
         RestartSec = 1;
         TimeoutStopSec = 10;
-      };
-    };
-
-    emacs-daemon = {
-      description = "Emacs daemon";
-      wantedBy = [ "default.target" ];
-      environment = {
-        PATH = lib.mkForce "/run/wrappers/bin:/etc/profiles/per-user/sunny/bin:/run/current-system/sw/bin";
-      };
-      serviceConfig = {
-        Type = "forking";
-        ExecStartPre = "${pkgs.coreutils}/bin/sleep 2";
-        ExecStart = "${sunnyEmacs}/bin/emacs --daemon";
-        ExecStop = "${sunnyEmacs}/bin/emacsclient -e '(kill-emacs)'";
-        Restart = "on-failure";
-        WorkingDirectory = "%h";
       };
     };
 

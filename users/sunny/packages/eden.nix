@@ -1,23 +1,20 @@
 {
   stdenvNoCC,
   makeDesktopItem,
-  sources,
-  lib,
+  fetchurl,
 }:
 let
   sourcesJson = builtins.fromJSON (builtins.readFile ../../../various/_sources/generated.json);
 
   pname = "eden";
-  rawVersion = sources.eden-nightly.version;
-  baseName = baseNameOf rawVersion;
-  version = lib.removePrefix "Eden-Linux-" baseName;
+  version = sourcesJson.eden.version;
 
   desktopItem = makeDesktopItem {
     type = "Application";
     name = "Eden";
     desktopName = "Eden";
-    genericName = "Eden Nightly";
-    comment = "Nightly Build of Nintendo Switch 1 Emulator";
+    genericName = "Eden";
+    comment = "Nintendo Switch 1 Emulator";
     exec = "eden";
     icon = "${../../../assets/icons/eden.svg}";
     terminal = false;
@@ -35,7 +32,10 @@ stdenvNoCC.mkDerivation {
     desktopItem
     ;
 
-  src = sources.eden-nightly.src;
+  src = fetchurl {
+    url = sourcesJson.eden.src.url;
+    hash = sourcesJson.eden.src.sha256;
+  };
 
   dontUnpack = true;
   dontBuild = true;

@@ -1,7 +1,7 @@
-{ pkgs, sources, ... }:
+{ pkgs, ... }:
 let
   glide-with-policies = pkgs.callPackage ./glide.nix {
-    inherit sources;
+    #inherit sources;
     policies = {
       AutofillAddressEnabled = true;
       AutofillCreditCardEnabled = false;
@@ -160,6 +160,6 @@ in
 {
   packages = [
     #glide-with-policies
-    (pkgs.callPackage ./helium.nix { inherit sources; })
+    (pkgs.callPackage ./helium.nix { })
   ];
 }

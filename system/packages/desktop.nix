@@ -1,4 +1,4 @@
-{ pkgs, sources, ... }:
+{ pkgs, inputs, ... }:
 
 {
   services.greetd = {
@@ -13,22 +13,7 @@
 
   programs.niri = {
     enable = true;
-    package = (
-      pkgs.niri.overrideAttrs rec {
-        src = sources.niri-blur.src;
-        postPatch = ''
-          patchShebangs resources/niri-session
-          substituteInPlace resources/niri.service \
-            --replace-fail 'ExecStart=' "ExecStart=$out/bin/"
-        '';
-        cargoDeps = pkgs.rustPlatform.fetchCargoVendor {
-          inherit src;
-          hash = "sha256-uo4AWT4nGV56iiSLhXK30goI7HCPc7AUZjRLgUvLfUE=";
-        };
-        doCheck = false;
-        doInstallCheck = false;
-      }
-    );
+    package = inputs.niri-git.packages.${pkgs.stdenv.hostPlatform.system}.default;
   };
 
   security.pam.services.gtklock = { };

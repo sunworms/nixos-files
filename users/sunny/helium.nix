@@ -2,13 +2,16 @@
   lib,
   appimageTools,
   makeWrapper,
-  sources,
+  fetchurl,
 }:
 let
   sourcesJson = builtins.fromJSON (builtins.readFile ../../various/_sources/generated.json);
   pname = "helium";
   version = sourcesJson.helium.version;
-  src = sources.helium.src;
+  src = fetchurl {
+    url = sourcesJson.helium.src.url;
+    hash = sourcesJson.helium.src.sha256;
+  };
   appimageContents = appimageTools.extract {
     inherit pname version src;
   };

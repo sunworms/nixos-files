@@ -1,30 +1,9 @@
 {
-    "atomic-chrome": {
-        "cargoLock": null,
-        "date": "2025-10-07",
-        "extract": null,
-        "name": "atomic-chrome",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "KarimAziev",
-            "repo": "atomic-chrome",
-            "rev": "344247d45ae19b03751344a4c9ee4c163fc82379",
-            "sha256": "sha256-YP8b1Nkoj7ewmM3IhlUhqvdSxWcEI8MQwJ+UY5QEtz8=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "344247d45ae19b03751344a4c9ee4c163fc82379"
-    },
-    "eden-nightly": {
+    "eden": {
         "cargoLock": null,
         "date": null,
         "extract": null,
-        "name": "eden-nightly",
+        "name": "eden",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -34,47 +13,6 @@
             "url": "https://git.eden-emu.dev/eden-emu/eden/releases/download/v0.2.0-rc1/Eden-Linux-v0.2.0-rc1-amd64-clang-pgo.AppImage"
         },
         "version": "v0.2.0-rc1"
-    },
-    "emacs": {
-        "cargoLock": null,
-        "date": "2026-02-21",
-        "extract": null,
-        "name": "emacs",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "d6c5d053a4ff535ca165ed902f668985833746c3",
-            "sha256": "sha256-sr+Q1SRHcNTKdwb/4togklKg5jzvX71vdZf8XSkepCY=",
-            "sparseCheckout": [],
-            "type": "git",
-            "url": "https://git.gay/sunworms/emacs-config"
-        },
-        "version": "d6c5d053a4ff535ca165ed902f668985833746c3"
-    },
-    "everforest": {
-        "cargoLock": null,
-        "date": "2025-08-30",
-        "extract": null,
-        "name": "everforest",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "theorytoe",
-            "repo": "everforest-emacs",
-            "rev": "ba61a881b5d57810eef76baae01c951d1e6c2ceb",
-            "sha256": "sha256-p8D27i5EZp37QVi9IffJqXnnFxUaaAc9BfzIzrje66U=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "ba61a881b5d57810eef76baae01c951d1e6c2ceb"
     },
     "helium": {
         "cargoLock": null,
@@ -90,110 +28,5 @@
             "url": "https://github.com/imputnet/helium-linux/releases/download/0.9.3.1/helium-0.9.3.1-x86_64.AppImage"
         },
         "version": "0.9.3.1"
-    },
-    "hjem": {
-        "cargoLock": null,
-        "date": "2026-02-16",
-        "extract": null,
-        "name": "hjem",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "feel-co",
-            "repo": "hjem",
-            "rev": "7f2880d705edf541955d98f56cb78f9507384423",
-            "sha256": "sha256-1RfmXbDIxgwP2/SrYSYd9zdArUaJEm6C3FXpdRlmeso=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "7f2880d705edf541955d98f56cb78f9507384423"
-    },
-    "niri-blur": {
-        "cargoLock": null,
-        "date": "2026-02-21",
-        "extract": null,
-        "name": "niri-blur",
-        "passthru": null,
-        "pinned": true,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "niri-wm",
-            "repo": "niri",
-            "rev": "86f42d1ed9ab787c52ace073e0b3218e26530d25",
-            "sha256": "sha256-52CxMRH2kVGpsPBiZM+996b6i/3XkmOrySm5zqwWc+o=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "86f42d1ed9ab787c52ace073e0b3218e26530d25"
-    },
-    "nixpkgs": {
-        "cargoLock": null,
-        "date": "2026-02-17",
-        "extract": null,
-        "name": "nixpkgs",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "NixOS",
-            "repo": "nixpkgs",
-            "rev": "0182a361324364ae3f436a63005877674cf45efb",
-            "sha256": "sha256-0NBlEBKkN3lufyvFegY4TYv5mCNHbi5OmBDrzihbBMQ=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "0182a361324364ae3f436a63005877674cf45efb"
-    },
-    "preservation": {
-        "cargoLock": null,
-        "date": "2025-09-09",
-        "extract": null,
-        "name": "preservation",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "nix-community",
-            "repo": "preservation",
-            "rev": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
-            "sha256": "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
-    },
-    "sops-nix": {
-        "cargoLock": null,
-        "date": "2026-02-22",
-        "extract": null,
-        "name": "sops-nix",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "Mic92",
-            "repo": "sops-nix",
-            "rev": "d7755d820f5fa8acf7f223309c33e25d4f92e74f",
-            "sha256": "sha256-MJuVJeszZEziquykEHh/hmgIHYxUcuoG/1aowpLiSeU=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "d7755d820f5fa8acf7f223309c33e25d4f92e74f"
     }
 }

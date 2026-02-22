@@ -1,8 +1,8 @@
-{ pkgs, sources, ... }:
+{ pkgs, ... }:
 
 {
   packages = with pkgs; [
-    (callPackage ./eden.nix { inherit sources; })
+    (callPackage ./eden.nix { })
     pcsx2
     ppsspp-sdl-wayland
     melonds

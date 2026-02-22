@@ -1,44 +1,5 @@
-# inputs
-[nixpkgs]
-src.git = "https://github.com/NixOS/nixpkgs"
-src.branch = "nixos-unstable"
-fetch.github = "NixOS/nixpkgs"
-
-[preservation]
-src.git = "https://github.com/nix-community/preservation"
-fetch.github = "nix-community/preservation"
-
-[sops-nix]
-src.git = "https://github.com/Mic92/sops-nix"
-fetch.github = "Mic92/sops-nix"
-
-[hjem]
-src.git = "https://github.com/feel-co/hjem"
-fetch.github = "feel-co/hjem"
-
-# niri blur
-[niri-blur]
-src.git = "https://github.com/niri-wm/niri"
-src.branch = "wip/branch"
-fetch.github = "niri-wm/niri"
-pinned = true
-
-# emacs
-
-[emacs]
-src.git = "https://git.gay/sunworms/emacs-config"
-fetch.git = "https://git.gay/sunworms/emacs-config"
-
-[atomic-chrome]
-src.git = "https://github.com/KarimAziev/atomic-chrome"
-fetch.github = "KarimAziev/atomic-chrome"
-
-[everforest]
-src.git = "https://github.com/theorytoe/everforest-emacs"
-fetch.github = "theorytoe/everforest-emacs"
-
 # binary packages
-[eden-nightly]
+[eden]
 src.webpage = "https://git.eden-emu.dev/eden-emu/eden/releases"
 src.regex = '(v[0-9]+\.[0-9]+\.[0-9]+\-rc[0-9]+|v[0-9]+\.[0-9]+\.[0-9]+)'
 fetch.url = "https://git.eden-emu.dev/eden-emu/eden/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"

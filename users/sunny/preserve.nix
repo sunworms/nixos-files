@@ -16,12 +16,12 @@
       "Pictures"
       "Videos"
       "VMs"
-      ".emacs.d"
       ".ssh"
       ".steam"
 
       ".cache/swww"
 
+      ".config/helix"
       ".config/net.imput.helium"
       # ".config/glide"
       ".config/fish"

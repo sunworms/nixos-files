@@ -1,23 +1,18 @@
 {
   pkgs,
-  sources,
+  inputs,
   ...
 }:
 
-let
-  sunnyEmacs = (pkgs.callPackage ./emacs/emacs.nix { inherit sources; }).default;
-in
 {
   imports = [
     ./matugen
     ./scripts
+    ./helix
     ./services.nix
   ];
 
   files = {
-    ".emacs.d/init.el".source = "${sources.emacs.src}/init.el";
-    ".emacs.d/modules".source = "${sources.emacs.src}/modules";
-
     ".gtkrc-2.0".text = ''
       gtk-theme-name="adw-gtk3"
       gtk-icon-theme-name="candy-icons"
@@ -59,7 +54,8 @@ in
   };
 
   packages = with pkgs; [
-    sunnyEmacs
+    inputs.helix.packages.${pkgs.stdenv.hostPlatform.system}.default
+    lazygit
     waybar
     matugen
     swww

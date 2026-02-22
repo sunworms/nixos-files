@@ -1,0 +1,17 @@
+theme = "matugen"
+
+[editor]
+bufferline = "always"
+default-yank-register = "+"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+"C-p" = ':lsp-workspace-command tinymist.pinMain "%sh{realpath %{buffer_name}}"'
+"A-p" = ':lsp-workspace-command tinymist.startDefaultPreview'
