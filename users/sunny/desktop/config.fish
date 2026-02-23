@@ -1,11 +1,11 @@
 if status is-login
-    set -gx CLUTTER_BACKEND "wayland,x11,*"
-    set -gx GDK_BACKEND "wayland,x11,*"
+    set -gx CLUTTER_BACKEND wayland
+    set -gx GDK_BACKEND wayland
     set -gx NIXOS_OZONE_WL 1
     set -gx QT_AUTO_SCREEN_SCALE_FACTOR 1
-    set -gx QT_QPA_PLATFORM "wayland,xcb"
+    set -gx QT_QPA_PLATFORM wayland
     set -gx QT_WAYLAND_DISABLE_WINDOWDECORATION 1
-    set -gx SDL_VIDEODRIVER "wayland,x11,*"
+    set -gx SDL_VIDEODRIVER wayland
     set -gx _JAVA_AWT_WM_NONREPARENTING 1
     set -gx EDITOR hx
     set -gx SUDO_EDITOR hx
