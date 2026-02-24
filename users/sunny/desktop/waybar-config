@@ -56,28 +56,28 @@
         "format-disabled": "󰤭 disabled",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
         "tooltip-format": "{ifname} - {ipaddr}\nDown Speed: {bandwidthDownBytes}\nUp Speed: {bandwidthUpBytes}",
-        "on-click-right": "footclient nmtui",
+        "on-click-right": "foot nmtui",
     },
 
     "cpu": {
 	"interval": 10,
 	"format": " {usage}%",
 	"max-length": 10,
-	"on-click-right": "footclient btop",
+	"on-click-right": "foot btop",
     },
 
     "memory": {
 	"interval": 10,
 	"format": " {}%",
 	"max-length": 10,
-	"on-click-right": "footclient btop",
+	"on-click-right": "foot btop",
     },
 
     "battery": {
         "format": "{icon} {capacity}",
         "format-charging": "󰂄 {capacity}",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-        "tooltip-format": "{capacity} {timeTo}",
+        "tooltip-format": "{timeTo}",
         "states": {
             "warning": 30,
             "critical": 10

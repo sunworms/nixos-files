@@ -199,11 +199,7 @@ recent-windows {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    // debug
-    Mod+Shift+T { spawn-sh "footclient fish -c 'niri msg layers; fish'"; }
-
-    Mod+E hotkey-overlay-title="Open Emacsclient" { spawn "emacsclient" "-nc"; }
-    Mod+T hotkey-overlay-title="Open a Terminal: footclient" { spawn "footclient"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--no-icons"; };
     Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; };
     Mod+Shift+W hotkey-overlay-title="Spawn waybar" { spawn "waybar"; };

@@ -21,24 +21,5 @@
         TimeoutStopSec = 10;
       };
     };
-
-    foot = {
-      description = "Fast, lightweight and minimalistic Wayland terminal emulator.";
-      documentation = [
-        "man:foot(1)"
-      ];
-      environment = {
-        PATH = lib.mkForce "/run/wrappers/bin:/etc/profiles/per-user/sunny/bin:/run/current-system/sw/bin";
-      };
-      partOf = [ "graphical-session.target" ];
-      after = [ "graphical-session.target" ];
-      serviceConfig = {
-        ExecStart = "${pkgs.foot}/bin/foot --server";
-        Restart = "on-failure";
-        OOMPolicy = "continue";
-        WorkingDirectory = "%h";
-      };
-      wantedBy = [ "graphical-session.target" ];
-    };
   };
 }
