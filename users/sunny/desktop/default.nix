@@ -1,6 +1,5 @@
 {
   pkgs,
-  inputs,
   ...
 }:
 
@@ -58,7 +57,7 @@
   };
 
   packages = with pkgs; [
-    inputs.helix.packages.${pkgs.stdenv.hostPlatform.system}.default
+    helix
     lazygit
     waybar
     matugen

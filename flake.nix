@@ -16,7 +16,6 @@
       url = "github:niri-wm/niri/pull/3483/head";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    helix.url = "github:helix-editor/helix";
   };
 
   outputs =

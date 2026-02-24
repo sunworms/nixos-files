@@ -23,7 +23,7 @@
   services.cloudflare-warp.enable = true;
 
   # Disable man cache
-  documentation.man.generateCaches = false;
+  documentation.man.cache.enable = false;
 
   # ZRam
   zramSwap = {
