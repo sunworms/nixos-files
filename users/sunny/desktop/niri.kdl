@@ -102,8 +102,8 @@ layout {
 
 blur {
     on
-    passes 3
-    offset 3
+    passes 2
+    offset 2
     noise 0
 }
 
