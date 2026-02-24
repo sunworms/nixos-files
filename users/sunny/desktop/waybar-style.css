@@ -5,13 +5,18 @@
     font-size: 9pt;
 }
 
-window#waybar,
-tooltip,
-tooltip label {
+window#waybar {
     background-color: transparent;
     color: @primary;
     margin-bottom: 2pt;
 }
+
+tooltip,
+tooltip label {
+    background-color: @background;
+    color: @primary;
+}
+
 tooltip label { margin: -5px -3px; }
 
 #clock {
