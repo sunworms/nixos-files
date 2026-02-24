@@ -3,36 +3,92 @@
 * {
     font-family: Aporetic Sans;
     font-size: 9pt;
-    border: none;
-    border-radius: 0;
 }
 
 window#waybar,
 tooltip,
 tooltip label {
-    background-color: @background;
+    background-color: transparent;
     color: @primary;
+    margin-bottom: 2pt;
 }
 tooltip label { margin: -5px -3px; }
 
-#clock,
-#mpris,
-#window,
-window#waybar.empty #window,
-#network,
-#cpu,
-#memory,
-#workspaces button,
-#battery {
+#clock {
+    margin-left: 2pt;
+    margin-right: 2pt;
+    border: 2px solid @primary;
+    border-radius: 8px;
     padding: 0 12px;
     background-color: @background;
     color: @primary;
     transition: none;
 }
 
-#tray {
-    padding: 0 9px;
+#workspaces {
+    margin-left: 2pt;
+    border-left: 2px solid @primary;
+    border-bottom: 2px solid @primary;
+    border-top: 2px solid @primary;
+    border-radius: 8px 0 0 8px;
+    padding: 0 6px;
     background-color: @background;
+    color: @primary;
+    transition: none;
+}
+
+
+#window {
+    border-right: 2px solid @primary;
+    border-top: 2px solid @primary;
+    border-bottom: 2px solid @primary;
+    border-radius: 0 8px 8px 0;
+    padding: 0 12px;
+    background-color: @background;
+    color: @primary;
+    transition: none;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: none;
+}
+
+window#waybar.empty #workspaces {
+    border-right: 2px solid @primary;
+    border-radius: 8px;
+}
+
+#tray {
+    border-left: 2px solid @primary;
+    border-bottom: 2px solid @primary;
+    border-top: 2px solid @primary;
+    border-radius: 8px 0 0 8px;
+    padding: 0 12px;
+    background-color: @background;
+}
+
+#network,
+#cpu,
+#memory {
+    border-top: 2px solid @primary;
+    border-bottom: 2px solid @primary;
+    padding: 0 12px;
+    background-color: @background;
+    color: @primary;
+    transition: none;
+}
+
+#battery {
+    margin-right: 2pt;
+    border-right: 2px solid @primary;
+    border-top: 2px solid @primary;
+    border-bottom: 2px solid @primary;
+    border-radius: 0 8px 8px 0;
+    padding: 0 12px;
+    background-color: @background;
+    color: @primary;
+    transition: none;
 }
 
 #workspaces button {

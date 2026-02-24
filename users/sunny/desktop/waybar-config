@@ -5,11 +5,10 @@
     "height": 24,
     "modules-left": [
         "niri/workspaces",
-        "clock",
-        "mpris",
+        "niri/window",
     ],
     "modules-center": [
-        "niri/window",
+        "clock",
     ],
     "modules-right": [
         "tray",
@@ -21,7 +20,7 @@
 
     "niri/window": {
         "format": "{title}",
-	"max-length": 40,
+	"max-length": 50,
         "tooltip": false,
         "seperate-outputs": true,
     },
