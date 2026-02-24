@@ -12,5 +12,6 @@
     "matugen/gtk-colors.css".source = ./gtk-colors.css;
     "matugen/helix.toml".source = ./helix.toml;
     "matugen/zathura-colors".source = ./zathura-colors;
+    "matugen/btop.theme".source = ./btop.theme;
   };
 }

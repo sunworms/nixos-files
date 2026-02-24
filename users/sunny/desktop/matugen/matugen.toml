@@ -44,3 +44,8 @@ output_path = '~/.config/niri/colors.kdl'
 [templates.zathura]
 input_path = '~/.config/matugen/zathura-colors'
 output_path = '~/.config/zathura/zathurarc'
+
+[templates.btop]
+input_path = '~/.config/matugen/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -USR2 btop || true'

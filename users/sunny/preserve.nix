@@ -22,6 +22,7 @@
       ".cache/swww"
       ".cache/nix"
 
+      ".config/btop"
       ".config/helix"
       ".config/net.imput.helium"
       ".config/lazygit"

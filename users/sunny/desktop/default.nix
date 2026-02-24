@@ -45,6 +45,7 @@
     "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
+    "btop/btop.conf".source = ./btop.conf;
 
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
