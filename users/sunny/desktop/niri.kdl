@@ -109,6 +109,7 @@ blur {
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "mako"
+spawn-at-startup "soteria"
 spawn-at-startup "waybar"
 spawn-at-startup "niri-waybar-toggle"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
@@ -208,6 +209,7 @@ binds {
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; };
     Mod+Tab hotkey-overlay-title="Window Switcher" { spawn "fuzzel-niri-window"; };
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }
+    Super+Shift+S hotkey-overlay-title="Respawn Soteria" { spawn-sh "pkill soteria; soteria"; }
 
     XF86AudioRaiseVolume { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+ && volume-notif"; }
     XF86AudioLowerVolume { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && volume-notif"; }

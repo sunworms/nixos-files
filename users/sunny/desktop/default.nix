@@ -9,7 +9,6 @@
     ./matugen
     ./scripts
     ./helix
-    ./services.nix
   ];
 
   files = {
@@ -79,6 +78,7 @@
     git
     nautilus
     xwayland-satellite
+    soteria
     (writeShellScriptBin "niri-waybar-toggle" ''
       trap "" SIGUSR1
 
