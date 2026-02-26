@@ -110,8 +110,7 @@ blur {
 spawn-at-startup "swww-daemon"
 spawn-at-startup "mako"
 spawn-at-startup "soteria"
-spawn-at-startup "waybar"
-spawn-at-startup "niri-waybar-toggle"
+spawn-at-startup "niri-bar-toggle"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "playerctld"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
@@ -204,8 +203,8 @@ binds {
     Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--no-icons"; };
     Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; };
-    Mod+Alt+W hotkey-overlay-title="Spawn waybar" { spawn "pkill" "-SIGUSR1" "waybar"; };
-    Mod+Alt+E hotkey-overlay-title="Emoji and Unicode picker" { spawn "rofimoji" "--selector" "fuzzel" "--action" "copy" "--files" "all"; };
+    Mod+Shift+W hotkey-overlay-title="Spawn waybar" { spawn "pkill" "-SIGUSR1" "waybar"; };
+    Mod+Shift+E hotkey-overlay-title="Emoji and Unicode picker" { spawn "rofimoji" "--selector" "fuzzel" "--action" "copy" "--files" "all"; };
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; };
     Mod+Tab hotkey-overlay-title="Window Switcher" { spawn "fuzzel-niri-window"; };
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }

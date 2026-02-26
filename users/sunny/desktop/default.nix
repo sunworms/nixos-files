@@ -1,6 +1,6 @@
 {
   pkgs,
-  inputs,
+  sources,
   ...
 }:
 
@@ -79,13 +79,14 @@
     nautilus
     xwayland-satellite
     soteria
-    (writeShellScriptBin "niri-waybar-toggle" ''
+    (writeShellScriptBin "niri-bar-toggle" ''
       trap "" SIGUSR1
 
-      ${pkgs.procps}/bin/pkill -f "niri-waybar-toggle" -x
       sleep 0.1
 
-      ${inputs.niri-git.packages.${pkgs.stdenv.hostPlatform.system}.default}/bin/niri msg --json event-stream | while read -r event; do
+      ${pkgs.waybar}/bin/waybar &
+
+      ${(pkgs.callPackage ../../../niri.nix { inherit sources; })}/bin/niri msg --json event-stream | while read -r event; do
       if echo "$event" | ${pkgs.jq}/bin/jq -e '.OverviewOpenedOrClosed' > /dev/null 2>&1; then
         ${pkgs.procps}/bin/pkill -SIGUSR1 waybar
       fi
