@@ -82,4 +82,16 @@
     };
     date = "2026-02-25";
   };
+  walls = {
+    pname = "walls";
+    version = "5d8fda9b16c312170eceb6bfce107df7bb38a357";
+    src = fetchFromGitHub {
+      owner = "sunworms";
+      repo = "walls";
+      rev = "5d8fda9b16c312170eceb6bfce107df7bb38a357";
+      fetchSubmodules = false;
+      sha256 = "sha256-5tsL9pdCWj1ISG3gPr+ColfsOWwkH9WfP8mrrZ1tz5U=";
+    };
+    date = "2026-02-26";
+  };
 }

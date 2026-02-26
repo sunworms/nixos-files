@@ -4,6 +4,13 @@
   ...
 }:
 
+let
+  niri-with-wall = pkgs.replaceVars ./niri.kdl {
+    WALLPAPER = "${sources.walls.src}/hunline/sumikage.jpeg";
+    DEFAULT_AUDIO_SINK = null;
+    DEFAULT_AUDIO_SOURCE = null;
+  };
+in
 {
   imports = [
     ./matugen
@@ -44,7 +51,7 @@
     "git/config".source = ./gitconfig;
     "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
-    "niri/config.kdl".source = ./niri.kdl;
+    "niri/config.kdl".source = niri-with-wall;
     "btop/btop.conf".source = ./btop.conf;
 
     "mimeapps.list".source = ./mimeapps.list;

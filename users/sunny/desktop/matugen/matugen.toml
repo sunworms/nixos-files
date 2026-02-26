@@ -1,6 +1,6 @@
 [config.wallpaper]
 command = "swww"
-arguments = ["img", "--transition-type", "center"]
+arguments = ["img", "--transition-type", "none"]
 set = true
 
 [templates.waybar]

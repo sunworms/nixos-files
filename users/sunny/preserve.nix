@@ -19,7 +19,6 @@
       ".ssh"
       ".steam"
 
-      ".cache/swww"
       ".cache/nix"
 
       ".config/btop"

@@ -133,5 +133,26 @@
             "type": "github"
         },
         "version": "334daa7c273dd8bf7a0cd370e4e16022b64e55e9"
+    },
+    "walls": {
+        "cargoLock": null,
+        "date": "2026-02-26",
+        "extract": null,
+        "name": "walls",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "sunworms",
+            "repo": "walls",
+            "rev": "5d8fda9b16c312170eceb6bfce107df7bb38a357",
+            "sha256": "sha256-5tsL9pdCWj1ISG3gPr+ColfsOWwkH9WfP8mrrZ1tz5U=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "5d8fda9b16c312170eceb6bfce107df7bb38a357"
     }
 }
