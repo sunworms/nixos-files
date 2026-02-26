@@ -72,14 +72,14 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "b027513c32e5b39b59f64626b87fbe168ae02094";
+    version = "334daa7c273dd8bf7a0cd370e4e16022b64e55e9";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "b027513c32e5b39b59f64626b87fbe168ae02094";
+      rev = "334daa7c273dd8bf7a0cd370e4e16022b64e55e9";
       fetchSubmodules = false;
-      sha256 = "sha256-YV17Q5lEU0S9ppw08Y+cs4eEQJBuc79AzblFoHORLMU=";
+      sha256 = "sha256-/wA0OaH6kZ/pFA+nXR/tvg5oupOmEDmMS5us79JT60o=";
     };
-    date = "2026-02-23";
+    date = "2026-02-25";
   };
 }
