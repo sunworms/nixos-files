@@ -7,7 +7,7 @@ command = "tinymist"
 
 [[language]]
 name = "nix"
-language-servers = ["nil","nixd"]
+auto-format = true
 
 [language-server.nil]
 command = "nil"

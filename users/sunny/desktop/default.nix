@@ -86,11 +86,13 @@
 
       ${pkgs.waybar}/bin/waybar &
 
-      ${(pkgs.callPackage ../../../niri.nix { inherit sources; })}/bin/niri msg --json event-stream | while read -r event; do
+      ${
+        (pkgs.callPackage ../../../niri.nix { inherit sources; })
+      }/bin/niri msg --json event-stream | while read -r event; do
       if echo "$event" | ${pkgs.jq}/bin/jq -e '.OverviewOpenedOrClosed' > /dev/null 2>&1; then
         ${pkgs.procps}/bin/pkill -SIGUSR1 waybar
       fi
-      
+
       done
     '')
   ];
