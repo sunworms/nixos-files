@@ -73,5 +73,7 @@ in
     terminal = "tmux-direct";
   };
 
-  environment.etc."chromium/policies/managed/default.json".source = ./chromium.json;
+  environment.etc."chromium/policies/managed/default.json".source =
+    (pkgs.formats.json { }).generate "chromium.json"
+      (import ./chromium.nix);
 }
