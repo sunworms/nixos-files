@@ -16,10 +16,70 @@
   };
   helium = {
     pname = "helium";
-    version = "0.9.3.1";
+    version = "0.9.4.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.9.3.1/helium-0.9.3.1-x86_64.AppImage";
-      sha256 = "sha256-wUmFmfZPWSvPzArbegegQpY1CFu/XAguqPQpINDE2qY=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.9.4.1/helium-0.9.4.1-x86_64.AppImage";
+      sha256 = "sha256-N5gdWuxOrIudJx/4nYo4/SKSxakpTFvL4zzByv6Cnug=";
     };
+  };
+  hjem = {
+    pname = "hjem";
+    version = "7f2880d705edf541955d98f56cb78f9507384423";
+    src = fetchFromGitHub {
+      owner = "feel-co";
+      repo = "hjem";
+      rev = "7f2880d705edf541955d98f56cb78f9507384423";
+      fetchSubmodules = false;
+      sha256 = "sha256-1RfmXbDIxgwP2/SrYSYd9zdArUaJEm6C3FXpdRlmeso=";
+    };
+    date = "2026-02-16";
+  };
+  niri-blur = {
+    pname = "niri-blur";
+    version = "734d86ec061d15d1980c5b940b2f4dc9aee80cf5";
+    src = fetchFromGitHub {
+      owner = "niri-wm";
+      repo = "niri";
+      rev = "734d86ec061d15d1980c5b940b2f4dc9aee80cf5";
+      fetchSubmodules = false;
+      sha256 = "sha256-ZJCM1XOHIdud6Jfpl4jYQOzbOJId9wmXT+hNJ1IPBIY=";
+    };
+    date = "2026-02-22";
+  };
+  nixpkgs = {
+    pname = "nixpkgs";
+    version = "2fc6539b481e1d2569f25f8799236694180c0993";
+    src = fetchFromGitHub {
+      owner = "NixOS";
+      repo = "nixpkgs";
+      rev = "2fc6539b481e1d2569f25f8799236694180c0993";
+      fetchSubmodules = false;
+      sha256 = "sha256-0MAd+0mun3K/Ns8JATeHT1sX28faLII5hVLq0L3BdZU=";
+    };
+    date = "2026-02-23";
+  };
+  preservation = {
+    pname = "preservation";
+    version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
+    src = fetchFromGitHub {
+      owner = "nix-community";
+      repo = "preservation";
+      rev = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
+      fetchSubmodules = false;
+      sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
+    };
+    date = "2025-09-09";
+  };
+  sops-nix = {
+    pname = "sops-nix";
+    version = "b027513c32e5b39b59f64626b87fbe168ae02094";
+    src = fetchFromGitHub {
+      owner = "Mic92";
+      repo = "sops-nix";
+      rev = "b027513c32e5b39b59f64626b87fbe168ae02094";
+      fetchSubmodules = false;
+      sha256 = "sha256-YV17Q5lEU0S9ppw08Y+cs4eEQJBuc79AzblFoHORLMU=";
+    };
+    date = "2026-02-23";
   };
 }

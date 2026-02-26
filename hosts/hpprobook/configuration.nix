@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ sources, ... }:
 
 {
   imports = [
@@ -13,7 +13,7 @@
 
   hjem = {
     clobberByDefault = true;
-    specialArgs = { inherit inputs; };
+    specialArgs = { inherit sources; };
   };
 
   nixpkgs = {
