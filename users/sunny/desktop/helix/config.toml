@@ -15,3 +15,6 @@ hidden = false
 [keys.normal]
 "C-p" = ':lsp-workspace-command tinymist.pinMain "%sh{realpath %{buffer_name}}"'
 "A-p" = ':lsp-workspace-command tinymist.startDefaultPreview'
+
+[keys.normal.space]
+n = ":toggle line-number absolute relative"
