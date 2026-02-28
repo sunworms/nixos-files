@@ -5,7 +5,7 @@
     "gebbhagfogifgggkldgodflihgfeippi" # return youtube dislikes
     "jplgfhpmjnbigmhklmmbgecoobifkmpa" # proton vpn
     "hkgfoiooedgoejojocmhlaklaeopbecg" # picture in picture
-    "cbghhgpcnddeihccjmnadmkaejncjndb" # vencord web
+    "mcambpfmpjnncfoodejdmehedbkjepmi" # equicord web
   ];
 
   ManagedBookmarks = [
