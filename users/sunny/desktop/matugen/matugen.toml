@@ -33,9 +33,12 @@ output_path = '~/.config/gtk-3.0/gtk.css'
 input_path = '~/.config/matugen/gtk-colors.css'
 output_path = '~/.config/gtk-4.0/gtk.css'
 
-[templates.helix]
-input_path = '~/.config/matugen/helix.toml'
-output_path = '~/.config/helix/themes/matugen.toml'
+[templates.emacs]
+input_path = '~/.config/matugen/emacs.el'
+output_path = '~/.emacs.d/themes/matugen-theme.el'
+post_hook = '''
+  emacsclient -e '(load "~/.emacs.d/init.el")'
+'''
 
 [templates.niri]
 input_path = '~/.config/matugen/niri.kdl'

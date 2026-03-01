@@ -10,15 +10,18 @@ let
     DEFAULT_AUDIO_SINK = null;
     DEFAULT_AUDIO_SOURCE = null;
   };
+  sunnyEmacs = (pkgs.callPackage ./emacs/emacs.nix { }).default;
 in
 {
   imports = [
     ./matugen
     ./scripts
-    ./helix
   ];
 
   files = {
+    ".emacs.d/init.el".source = ./emacs/init.el;
+    ".emacs.d/modules".source = ./emacs/modules;
+
     ".gtkrc-2.0".text = ''
       gtk-theme-name="adw-gtk3"
       gtk-icon-theme-name="candy-icons"
@@ -60,13 +63,8 @@ in
     '';
   };
 
-  xdg.data.files = {
-    "applications/Helix.desktop".source = ./Helix.desktop;
-  };
-
   packages = with pkgs; [
-    helix
-    lazygit
+    sunnyEmacs
     waybar
     matugen
     swww

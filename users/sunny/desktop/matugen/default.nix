@@ -10,7 +10,7 @@
     "matugen/mako-colors".source = ./mako-colors;
     "matugen/foot.ini".source = ./foot.ini;
     "matugen/gtk-colors.css".source = ./gtk-colors.css;
-    "matugen/helix.toml".source = ./helix.toml;
+    "matugen/emacs.el".source = ./emacs.el;
     "matugen/zathura-colors".source = ./zathura-colors;
     "matugen/btop.theme".source = ./btop.theme;
   };

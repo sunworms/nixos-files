@@ -16,15 +16,14 @@
       "Pictures"
       "Videos"
       "VMs"
+      ".emacs.d"
       ".ssh"
       ".steam"
 
       ".cache/nix"
 
       ".config/btop"
-      ".config/helix"
       ".config/net.imput.helium"
-      ".config/lazygit"
       ".config/fish"
       ".config/matugen"
       ".config/niri"
@@ -56,7 +55,6 @@
       ".local/share/containers"
       ".local/share/keyrings"
 
-      ".local/state/lazygit"
       ".local/state/wireplumber"
     ];
     files = [ ];
