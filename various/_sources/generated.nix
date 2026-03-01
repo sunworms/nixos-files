@@ -48,15 +48,15 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "2fc6539b481e1d2569f25f8799236694180c0993";
+    version = "dd9b079222d43e1943b6ebd802f04fd959dc8e61";
     src = fetchFromGitHub {
       owner = "NixOS";
       repo = "nixpkgs";
-      rev = "2fc6539b481e1d2569f25f8799236694180c0993";
+      rev = "dd9b079222d43e1943b6ebd802f04fd959dc8e61";
       fetchSubmodules = false;
-      sha256 = "sha256-0MAd+0mun3K/Ns8JATeHT1sX28faLII5hVLq0L3BdZU=";
+      sha256 = "sha256-I45esRSssFtJ8p/gLHUZ1OUaaTaVLluNkABkk6arQwE=";
     };
-    date = "2026-02-23";
+    date = "2026-02-27";
   };
   preservation = {
     pname = "preservation";
@@ -72,15 +72,15 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "334daa7c273dd8bf7a0cd370e4e16022b64e55e9";
+    version = "dec4d8eac700dcd2fe3c020857d3ee220ec147f1";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "334daa7c273dd8bf7a0cd370e4e16022b64e55e9";
+      rev = "dec4d8eac700dcd2fe3c020857d3ee220ec147f1";
       fetchSubmodules = false;
-      sha256 = "sha256-/wA0OaH6kZ/pFA+nXR/tvg5oupOmEDmMS5us79JT60o=";
+      sha256 = "sha256-1nq7+Kt5IUBD8Hu3nptVPbMf+22rNJoHT0t9L1X+GKA=";
     };
-    date = "2026-02-25";
+    date = "2026-03-01";
   };
   walls = {
     pname = "walls";
