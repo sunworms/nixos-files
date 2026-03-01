@@ -201,13 +201,14 @@ recent-windows {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
+    Mod+E hotkey-overlay-title="Open Editor: Emacs" { spawn "emacsclient" "-nc"; }
     Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
-    Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--no-icons"; };
-    Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; };
-    Mod+Shift+W hotkey-overlay-title="Spawn waybar" { spawn "pkill" "-SIGUSR1" "waybar"; };
-    Mod+Shift+E hotkey-overlay-title="Emoji and Unicode picker" { spawn "rofimoji" "--selector" "fuzzel" "--action" "copy" "--files" "all"; };
-    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; };
-    Mod+Tab hotkey-overlay-title="Window Switcher" { spawn "fuzzel-niri-window"; };
+    Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--no-icons"; }
+    Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; }
+    Mod+Shift+W hotkey-overlay-title="Spawn waybar" { spawn "pkill" "-SIGUSR1" "waybar"; }
+    Mod+Shift+E hotkey-overlay-title="Emoji and Unicode picker" { spawn "rofimoji" "--selector" "fuzzel" "--action" "copy" "--files" "all"; }
+    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; }
+    Mod+Tab hotkey-overlay-title="Window Switcher" { spawn "fuzzel-niri-window"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }
     Super+Shift+S hotkey-overlay-title="Respawn Soteria" { spawn-sh "pkill soteria; soteria"; }
 
