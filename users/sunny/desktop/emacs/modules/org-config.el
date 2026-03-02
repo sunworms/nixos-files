@@ -1,3 +1,5 @@
+;;; org-config.el --- Emacs configuration -*- lexical-binding: t; -*-
+
 ;; Org mode
 (setq org-directory "~/Documents/org")
 (setq org-journal-dir (concat org-directory "/journal"))

@@ -14,17 +14,8 @@ let
 
       modules = [
         ./hosts/${hostVars.hostname}/configuration.nix
-        "${sources.preservation.src}/module.nix"
-        "${sources.sops-nix.src}/modules/sops"
-        (import sources.hjem.src { }).nixosModules.default
-        {
-          nix.nixPath = [
-            "nixpkgs=${sources.nixpkgs.src}"
-          ];
-        }
       ];
     };
-
 in
 {
   hpprobook = mkHost {

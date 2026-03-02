@@ -1,3 +1,5 @@
+;;; eglot-config.el --- Emacs configuration -*- lexical-binding: t; -*-
+
 ;; Eglot
 (require 'eglot)
 

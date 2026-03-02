@@ -14,6 +14,27 @@
         },
         "version": "v0.2.0-rc1"
     },
+    "emacs-overlay": {
+        "cargoLock": null,
+        "date": "2026-03-02",
+        "extract": null,
+        "name": "emacs-overlay",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "nix-community",
+            "repo": "emacs-overlay",
+            "rev": "1ed2bcb9db3d09f7db878c18226fd0a049914e39",
+            "sha256": "sha256-rZ1/kNIscxfncVlpIJ3DBpRLZZNbSafrtcFURA3ypdI=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "1ed2bcb9db3d09f7db878c18226fd0a049914e39"
+    },
     "helium": {
         "cargoLock": null,
         "date": null,
@@ -73,7 +94,7 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-02-27",
+        "date": "2026-03-02",
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
@@ -85,12 +106,12 @@
             "name": null,
             "owner": "NixOS",
             "repo": "nixpkgs",
-            "rev": "dd9b079222d43e1943b6ebd802f04fd959dc8e61",
-            "sha256": "sha256-I45esRSssFtJ8p/gLHUZ1OUaaTaVLluNkABkk6arQwE=",
+            "rev": "cf59864ef8aa2e178cccedbe2c178185b0365705",
+            "sha256": "sha256-izhTDFKsg6KeVBxJS9EblGeQ8y+O8eCa6RcW874vxEc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "dd9b079222d43e1943b6ebd802f04fd959dc8e61"
+        "version": "cf59864ef8aa2e178cccedbe2c178185b0365705"
     },
     "preservation": {
         "cargoLock": null,

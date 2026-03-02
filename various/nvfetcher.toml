@@ -16,6 +16,10 @@ fetch.github = "Mic92/sops-nix"
 src.git = "https://github.com/feel-co/hjem"
 fetch.github = "feel-co/hjem"
 
+[emacs-overlay]
+src.git = "https://github.com/nix-community/emacs-overlay"
+fetch.github = "nix-community/emacs-overlay"
+
 # niri blur
 [niri-blur]
 src.git = "https://github.com/niri-wm/niri"

@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  emacsPackagesCustom = pkgs.emacs-pgtk.pkgs.overrideScope (
+  emacsPackagesCustom = pkgs.emacs-git-pgtk.pkgs.overrideScope (
     final: prev: {
       eglot = null;
     }

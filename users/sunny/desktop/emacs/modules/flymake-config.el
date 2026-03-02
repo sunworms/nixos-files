@@ -1,3 +1,5 @@
+;;; flymake-config.el --- Emacs configuration -*- lexical-binding: t; -*-
+
 ;; Flymake
 (require 'flymake)
 

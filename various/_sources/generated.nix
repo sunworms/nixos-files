@@ -14,6 +14,18 @@
       sha256 = "sha256-WB+UcqaW/Gf2STA8E8vCwi6EScPrdSIrje0V5xPW65Q=";
     };
   };
+  emacs-overlay = {
+    pname = "emacs-overlay";
+    version = "1ed2bcb9db3d09f7db878c18226fd0a049914e39";
+    src = fetchFromGitHub {
+      owner = "nix-community";
+      repo = "emacs-overlay";
+      rev = "1ed2bcb9db3d09f7db878c18226fd0a049914e39";
+      fetchSubmodules = false;
+      sha256 = "sha256-rZ1/kNIscxfncVlpIJ3DBpRLZZNbSafrtcFURA3ypdI=";
+    };
+    date = "2026-03-02";
+  };
   helium = {
     pname = "helium";
     version = "0.9.4.1";
@@ -48,15 +60,15 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "dd9b079222d43e1943b6ebd802f04fd959dc8e61";
+    version = "cf59864ef8aa2e178cccedbe2c178185b0365705";
     src = fetchFromGitHub {
       owner = "NixOS";
       repo = "nixpkgs";
-      rev = "dd9b079222d43e1943b6ebd802f04fd959dc8e61";
+      rev = "cf59864ef8aa2e178cccedbe2c178185b0365705";
       fetchSubmodules = false;
-      sha256 = "sha256-I45esRSssFtJ8p/gLHUZ1OUaaTaVLluNkABkk6arQwE=";
+      sha256 = "sha256-izhTDFKsg6KeVBxJS9EblGeQ8y+O8eCa6RcW874vxEc=";
     };
-    date = "2026-02-27";
+    date = "2026-03-02";
   };
   preservation = {
     pname = "preservation";

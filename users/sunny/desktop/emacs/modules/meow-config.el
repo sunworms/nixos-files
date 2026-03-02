@@ -1,3 +1,5 @@
+;;; meow-config.el --- Emacs configuration -*- lexical-binding: t; -*-
+
 ;; Meow mode
 (require 'meow)
 (setq meow-use-clipboard t)

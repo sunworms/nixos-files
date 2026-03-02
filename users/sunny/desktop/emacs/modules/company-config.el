@@ -1,3 +1,5 @@
+;;; company-config.el --- Emacs configuration -*- lexical-binding: t; -*-
+
 ;; Company-mode
 (require 'company)
 (require 'yasnippet)
