@@ -16,15 +16,15 @@
   };
   emacs-overlay = {
     pname = "emacs-overlay";
-    version = "1ed2bcb9db3d09f7db878c18226fd0a049914e39";
+    version = "14ea9f209dd9a5d3249432b7c2fa98e6310a768e";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "emacs-overlay";
-      rev = "1ed2bcb9db3d09f7db878c18226fd0a049914e39";
+      rev = "14ea9f209dd9a5d3249432b7c2fa98e6310a768e";
       fetchSubmodules = false;
-      sha256 = "sha256-rZ1/kNIscxfncVlpIJ3DBpRLZZNbSafrtcFURA3ypdI=";
+      sha256 = "sha256-S3BOgNPPNFQBiemX2+6Qnt3YNFmORuTulWa2/lNo5hg=";
     };
-    date = "2026-03-02";
+    date = "2026-03-03";
   };
   helium = {
     pname = "helium";
@@ -48,15 +48,15 @@
   };
   niri-blur = {
     pname = "niri-blur";
-    version = "734d86ec061d15d1980c5b940b2f4dc9aee80cf5";
+    version = "c837d944f0cc08580ee86574dd0c3a68ca9379a4";
     src = fetchFromGitHub {
       owner = "niri-wm";
       repo = "niri";
-      rev = "734d86ec061d15d1980c5b940b2f4dc9aee80cf5";
+      rev = "c837d944f0cc08580ee86574dd0c3a68ca9379a4";
       fetchSubmodules = false;
-      sha256 = "sha256-ZJCM1XOHIdud6Jfpl4jYQOzbOJId9wmXT+hNJ1IPBIY=";
+      sha256 = "sha256-nSrfHwbjg8/Rfx5pqDqU8bL5IWh99MsvxfjNZYxqEFw=";
     };
-    date = "2026-02-22";
+    date = "2026-03-03";
   };
   nixpkgs = {
     pname = "nixpkgs";
@@ -84,15 +84,15 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "d8be5ea4cd3bc363492ab5bc6e874ccdc5465fe4";
+    version = "1d9b98a29a45abe9c4d3174bd36de9f28755e3ff";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "d8be5ea4cd3bc363492ab5bc6e874ccdc5465fe4";
+      rev = "1d9b98a29a45abe9c4d3174bd36de9f28755e3ff";
       fetchSubmodules = false;
-      sha256 = "sha256-YHykQg0h9hrlZGpMcywnaFzQ1Kn/5YNCCOSaaAl6z7Q=";
+      sha256 = "sha256-hmIvE/slLKEFKNEJz27IZ8BKlAaZDcjIHmkZ7GCEjfw=";
     };
-    date = "2026-03-01";
+    date = "2026-03-02";
   };
   walls = {
     pname = "walls";
