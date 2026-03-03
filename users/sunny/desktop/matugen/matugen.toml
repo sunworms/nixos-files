@@ -10,7 +10,7 @@ post_hook = "pkill -SIGUSR2 waybar"
 
 [templates.discord]
 input_path = "~/.config/matugen/discord.css"
-output_path = "~/.config/matugen/discord-matugen.css"
+output_path = "~/.config/vesktop/themes/midnight-discord.css"
 
 [templates.fuzzel]
 input_path = "~/.config/matugen/fuzzel.ini"

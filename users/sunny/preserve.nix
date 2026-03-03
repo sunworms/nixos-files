@@ -33,6 +33,7 @@
       ".config/mako"
       ".config/zathura"
       ".config/git"
+      ".config/vesktop"
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"
