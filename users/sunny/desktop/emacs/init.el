@@ -50,7 +50,7 @@
 (load "org-config")
 (load "meow-config")
 (load "direnv-config")
-(load "corfu-config")
+(load "company-config")
 (load "eglot-config")
 (load "flymake-config")
 (load "apheleia-config")

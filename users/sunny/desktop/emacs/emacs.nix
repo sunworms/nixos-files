@@ -20,8 +20,9 @@ let
       restart-emacs
       magit
       apheleia
-      corfu
-      cape
+      company
+      company-auctex
+      company-bibtex
       nix-mode
       pdf-tools
       auctex
