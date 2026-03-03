@@ -4,6 +4,7 @@ let
   emacsPackagesCustom = pkgs.emacs-git-pgtk.pkgs.overrideScope (
     final: prev: {
       eglot = null;
+      jsonrpc = null;
     }
   );
 
@@ -19,9 +20,8 @@ let
       restart-emacs
       magit
       apheleia
-      company
-      company-auctex
-      company-bibtex
+      corfu
+      cape
       nix-mode
       pdf-tools
       auctex
