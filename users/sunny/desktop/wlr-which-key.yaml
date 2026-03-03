@@ -1,0 +1,35 @@
+font: Aporetic Sans 12
+anchor: center 
+
+menu:
+  - key: "w"
+    desc: Toggle Waybar
+    cmd: pkill -SIGUSR1 waybar
+  - key: "h"
+    desc: Helium
+    cmd: helium %U
+  - key: "v"
+    desc: Vesktop
+    cmd: vesktop
+  - key: "e"
+    desc: Emacs (Client)
+    cmd: emacsclient -nc
+  - key: "s"
+    desc: Steam
+    cmd: steam
+  - key: "f"
+    desc: Files
+    cmd: nautilus
+  - key: "z"
+    desc: Zathura
+    cmd: zathura
+  - key: "u"
+    desc: Unicode and Emoji
+    cmd: rofimoji --selector fuzzel --action copy --files all
+  - key: "n"
+    desc: Networks
+    cmd: foot nmtui
+  - key: "b"
+    desc: btop
+    cmd: foot btop
+  

@@ -56,6 +56,7 @@ in
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = niri-with-wall;
     "btop/btop.conf".source = ./btop.conf;
+    "wlr-which-key/config.yaml".source = ./wlr-which-key.yaml;
 
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
@@ -84,6 +85,7 @@ in
     nautilus
     xwayland-satellite
     soteria
+    wlr-which-key
     (writeShellScriptBin "niri-bar-toggle" ''
       trap "" SIGUSR1
 
