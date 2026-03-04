@@ -6,7 +6,7 @@
 
 let
   niri-with-wall = pkgs.replaceVars ./niri.kdl {
-    WALLPAPER = "${sources.walls.src}/hunline/sumikage.jpeg";
+    WALLPAPER = "${sources.walls.src}/various/minatama.jpeg";
     DEFAULT_AUDIO_SINK = null;
     DEFAULT_AUDIO_SOURCE = null;
   };
