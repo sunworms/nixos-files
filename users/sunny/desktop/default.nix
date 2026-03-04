@@ -14,7 +14,7 @@ let
 in
 {
   imports = [
-    ./matugen
+    ./hellwal
     ./scripts
   ];
 
@@ -67,7 +67,7 @@ in
   packages = with pkgs; [
     sunnyEmacs
     waybar
-    matugen
+    hellwal
     swww
     foot
     mako

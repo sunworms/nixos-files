@@ -21,6 +21,7 @@
       ".steam"
 
       ".cache/nix"
+      ".cache/hellwal"
 
       ".config/btop"
       ".config/net.imput.helium"

@@ -116,7 +116,7 @@ spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
 spawn-sh-at-startup "swayidle -w timeout 300 'gtklock -d' timeout 600 'niri msg action power-off-monitors' after-resume 'niri msg action power-on-monitors' before-sleep 'gtklock -d'"
-spawn-sh-at-startup "matugen image @WALLPAPER@ --type scheme-vibrant"
+spawn-sh-at-startup "swww img @WALLPAPER@ --transition-type none && hellwal -i @WALLPAPER@ -s --neon-mode hellwal-sh"
 
 hotkey-overlay {
     skip-at-startup

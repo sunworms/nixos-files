@@ -44,7 +44,7 @@
 
 ;; Themes
 (add-to-list 'custom-theme-load-path (expand-file-name "themes/" user-emacs-directory))
-(load-theme 'matugen t)
+(load-theme 'hellwal t)
 
 (add-to-list 'load-path (expand-file-name "modules" user-emacs-directory))
 (load "org-config")

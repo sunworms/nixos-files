@@ -28,12 +28,6 @@ if status is-interactive
     set -g fish_key_bindings fish_vi_key_bindings
     set -gx SOPS_AGE_KEY_FILE /persist/var/lib/sops-nix/key.txt
 
-    function y
-        set tmp (mktemp -t "yazi-cwd.XXXXXX")
-        command yazi $argv --cwd-file="$tmp"
-        if read -z cwd <"$tmp"; and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
-            builtin cd -- "$cwd"
-        end
-        rm -f -- "$tmp"
-    end
+    source ~/.cache/hellwal/variablesfish.fish
+    sh ~/.cache/hellwal/terminal.sh
 end

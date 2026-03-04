@@ -1,0 +1,16 @@
+# hellwal colors for mako
+
+background-color=#%%background%%
+text-color=#%%foreground%%
+border-color=#%%color4%%
+progress-color=#%%color1%%
+
+[mode=do-not-disturb]
+invisible=1
+on-notify=none
+
+[mode=silent]
+on-notify=none
+
+[urgency=high]
+border-color=#%%color4%%
