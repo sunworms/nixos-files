@@ -16,10 +16,6 @@ fetch.github = "Mic92/sops-nix"
 src.git = "https://github.com/feel-co/hjem"
 fetch.github = "feel-co/hjem"
 
-[emacs-overlay]
-src.git = "https://github.com/nix-community/emacs-overlay"
-fetch.github = "nix-community/emacs-overlay"
-
 # niri blur
 [niri-blur]
 src.git = "https://github.com/niri-wm/niri"
@@ -33,9 +29,10 @@ fetch.github = "sunworms/walls"
 
 # binary packages
 [eden]
-src.webpage = "https://git.eden-emu.dev/eden-emu/eden/releases"
-src.regex = '(v[0-9]+\.[0-9]+\.[0-9]+\-rc[0-9]+|v[0-9]+\.[0-9]+\.[0-9]+)'
-fetch.url = "https://git.eden-emu.dev/eden-emu/eden/releases/download/$ver/Eden-Linux-$ver-amd64-clang-pgo.AppImage"
+src.github_tag = "Eden-CI/Nightly"
+src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
+src.to_pattern = 'v\1.\2/Eden-Linux-\2'
+fetch.url = "https://github.com/Eden-CI/Nightly/releases/download/$ver-amd64-clang-pgo.AppImage"
 
 [helium]
 src.github = "imputnet/helium-linux"

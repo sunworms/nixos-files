@@ -8,23 +8,23 @@
 {
   eden = {
     pname = "eden";
-    version = "v0.2.0-rc1";
+    version = "v1772131298.75104b6103/Eden-Linux-75104b6103";
     src = fetchurl {
-      url = "https://git.eden-emu.dev/eden-emu/eden/releases/download/v0.2.0-rc1/Eden-Linux-v0.2.0-rc1-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-WB+UcqaW/Gf2STA8E8vCwi6EScPrdSIrje0V5xPW65Q=";
+      url = "https://github.com/Eden-CI/Nightly/releases/download/v1772131298.75104b6103/Eden-Linux-75104b6103-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-zclhC155JAOW3LSi0alKjJcgnd3KH606NfSrqKT113w=";
     };
   };
   emacs-overlay = {
     pname = "emacs-overlay";
-    version = "4bc2fcfc49ab353bce6adb43ce5687b4eba843ca";
+    version = "54af2ae96631311dc4d2686a07e4f472fb36f516";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "emacs-overlay";
-      rev = "4bc2fcfc49ab353bce6adb43ce5687b4eba843ca";
+      rev = "54af2ae96631311dc4d2686a07e4f472fb36f516";
       fetchSubmodules = false;
-      sha256 = "sha256-DHGx9LzhYwf4PVsmSI26jxRRIDl8SOhCdPh7aA6ZUGA=";
+      sha256 = "sha256-C0UMYQg3KBU6+L8TLfQ/s60O6/Tiu/JpN8C/WiIH9DU=";
     };
-    date = "2026-03-04";
+    date = "2026-03-05";
   };
   helium = {
     pname = "helium";
@@ -60,15 +60,15 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "8c809a146a140c5c8806f13399592dbcb1bb5dc4";
+    version = "80bdc1e5ce51f56b19791b52b2901187931f5353";
     src = fetchFromGitHub {
       owner = "NixOS";
       repo = "nixpkgs";
-      rev = "8c809a146a140c5c8806f13399592dbcb1bb5dc4";
+      rev = "80bdc1e5ce51f56b19791b52b2901187931f5353";
       fetchSubmodules = false;
-      sha256 = "sha256-WGV2hy+VIeQsYXpsLjdr4GvHv5eECMISX1zKLTedhdg=";
+      sha256 = "sha256-QKyJ0QGWBn6r0invrMAK8dmJoBYWoOWy7lN+UHzW1jc=";
     };
-    date = "2026-03-03";
+    date = "2026-03-04";
   };
   preservation = {
     pname = "preservation";

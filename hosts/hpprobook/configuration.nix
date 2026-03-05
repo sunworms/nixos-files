@@ -21,14 +21,11 @@
 
   nixpkgs = {
     config.allowUnfree = true;
-    overlays = [
-      (import sources.emacs-overlay.src)
-    ];
+    overlays = [ ];
   };
 
   nix.nixPath = [
     "nixpkgs=${sources.nixpkgs.src}"
-    "emacs-overlay=${sources.emacs-overlay.src}"
   ];
 
 }
