@@ -5,7 +5,7 @@
 
   packages = [
     (pkgs.writeShellScriptBin "hellwal-sh" ''
-      cp ~/.cache/hellwal/btop.theme ~/.config/btop/themes/hellwal
+      cp ~/.cache/hellwal/btop.theme ~/.config/btop/themes/hellwal.theme
       cp ~/.cache/hellwal/discord.css ~/.config/vesktop/themes/midnight-discord.css
       cp ~/.cache/hellwal/emacs.el ~/.emacs.d/themes/hellwal-theme.el
       cp ~/.cache/hellwal/foot.ini ~/.config/foot/colors.ini
