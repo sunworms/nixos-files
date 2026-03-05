@@ -34,9 +34,7 @@ in
     nixd
     statix
     nixfmt
-
-    # GSettings
-    glib
+    tree-sitter
 
     # nvfetcher
     nvfetcher

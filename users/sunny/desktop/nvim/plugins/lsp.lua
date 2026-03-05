@@ -1,15 +1,14 @@
 local capabilities = require("blink.cmp").get_lsp_capabilities()
 
-vim.lsp.config("*", {
-    capabilities = capabilities,
-    root_markers = { ".git" },
-})
-
 local servers = {
   "lua_ls", "nixd", "nil", "texlab", "rust_analyzer", "jdtls", "gopls", "tinymist"
 }
 
 for _, lsp in ipairs(servers) do
+    vim.lsp.config(lsp, {
+        capabilities = capabilities,
+        root_markers = { ".git" },
+    })
     vim.lsp.enable(lsp)
 end
 
