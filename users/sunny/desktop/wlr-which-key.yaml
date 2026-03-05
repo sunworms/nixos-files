@@ -8,12 +8,12 @@ menu:
   - key: "h"
     desc: Helium
     cmd: helium %U
-  - key: "v"
+  - key: "d"
     desc: Vesktop
     cmd: vesktop
-  - key: "e"
-    desc: Emacs (Client)
-    cmd: emacsclient -nc
+  - key: "v"
+    desc: Neovim
+    cmd: foot nvim
   - key: "s"
     desc: Steam
     cmd: steam
@@ -23,7 +23,7 @@ menu:
   - key: "z"
     desc: Zathura
     cmd: zathura
-  - key: "u"
+  - key: "e"
     desc: Unicode and Emoji
     cmd: rofimoji --selector fuzzel --action copy --files all
   - key: "n"

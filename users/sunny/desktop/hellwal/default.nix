@@ -20,7 +20,6 @@
       pkill -USR2 btop || true
       pkill -SIGUSR2 waybar
       makoctl reload
-      emacsclient -e '(load "~/.emacs.d/init.el")'
       pkill -SIGUSR1 nvim
     '')
   ];

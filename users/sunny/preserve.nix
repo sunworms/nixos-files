@@ -16,13 +16,13 @@
       "Pictures"
       "Videos"
       "VMs"
-      ".emacs.d"
       ".ssh"
       ".steam"
 
       ".cache/nix"
       ".cache/hellwal"
 
+      ".config/nvim"
       ".config/btop"
       ".config/net.imput.helium"
       ".config/fish"
