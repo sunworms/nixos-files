@@ -44,7 +44,7 @@
 	--bg-2: #%%color2%%;
 	--bg-3: #%%background%%;
 	--bg-4: #%%background%%;
-	--hover: #%%color0%%;
+	--hover: oklch(from #%%color0%% calc(l + 0.1) c h);
 	--active: oklch(from #%%color0%% calc(l + 0.1) c h);
 	--message-hover: oklch(from #%%color0%% calc(l + 0.1) c h);
 
