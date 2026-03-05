@@ -29,7 +29,7 @@
 	--accent-4: #%%color12%%;
 	--accent-5: #%%color12%%;
 	--mention: #%%color8%%;
-	--mention-hover: #%%color8%%;
+	--mention-hover: oklch(from #%%color8%% calc(l + 0.1) c h);
 
 	/* text colors */
 	--text-0: #%%background%%;
@@ -45,8 +45,8 @@
 	--bg-3: #%%background%%;
 	--bg-4: #%%background%%;
 	--hover: #%%color0%%;
-	--active: #%%color0%%;
-	--message-hover: #%%color0%%;
+	--active: oklch(from #%%color0%% calc(l + 0.1) c h);
+	--message-hover: oklch(from #%%color0%% calc(l + 0.1) c h);
 
 	--spacing: 12px;
 
