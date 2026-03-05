@@ -8,6 +8,7 @@ opt.mouse = 'a'
 opt.clipboard = 'unnamedplus'
 opt.hidden = true
 opt.swapfile = false
+opt.updatetime = 500
 
 -- UI
 opt.number = true
