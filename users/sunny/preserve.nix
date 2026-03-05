@@ -26,7 +26,6 @@
       ".config/btop"
       ".config/net.imput.helium"
       ".config/fish"
-      ".config/matugen"
       ".config/niri"
       ".config/waybar"
       ".config/foot"
