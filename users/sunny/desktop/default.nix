@@ -10,18 +10,15 @@ let
     DEFAULT_AUDIO_SINK = null;
     DEFAULT_AUDIO_SOURCE = null;
   };
-  sunnyEmacs = (pkgs.callPackage ./emacs/emacs.nix { }).default;
 in
 {
   imports = [
     ./hellwal
     ./scripts
+    ./nvim
   ];
 
   files = {
-    ".emacs.d/init.el".source = ./emacs/init.el;
-    ".emacs.d/modules".source = ./emacs/modules;
-
     ".gtkrc-2.0".text = ''
       gtk-theme-name="adw-gtk3"
       gtk-icon-theme-name="candy-icons"
@@ -65,7 +62,6 @@ in
   };
 
   packages = with pkgs; [
-    sunnyEmacs
     waybar
     hellwal
     swww

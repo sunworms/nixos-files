@@ -7,9 +7,9 @@ if status is-login
     set -gx QT_WAYLAND_DISABLE_WINDOWDECORATION 1
     set -gx SDL_VIDEODRIVER wayland
     set -gx _JAVA_AWT_WM_NONREPARENTING 1
-    set -gx EDITOR emacsclient
-    set -gx SUDO_EDITOR emacsclient
-    set -gx VISUAL emacsclient
+    set -gx EDITOR nvim
+    set -gx SUDO_EDITOR nvim
+    set -gx VISUAL nvim
     set -gx GTK_THEME adw-gtk3
     set -gx QT_QPA_PLATFORMTHEME gtk3
 end
@@ -21,8 +21,8 @@ if status is-interactive
     abbr --add -- osc 'nh clean all && sudo nix store optimise'
     abbr --add -- oss 'nh os switch --ask -f ./default.nix'
     abbr --add -- ost 'nh os test --ask -f ./default.nix'
-    abbr --add -- emc 'emacsclient -nc'
-    abbr --add -- emt 'emacsclient -t'
+    abbr --add -- vi 'nvim'
+    abbr --add -- vim 'nvim'
 
     set -U fish_greeting
     set -g fish_key_bindings fish_vi_key_bindings
