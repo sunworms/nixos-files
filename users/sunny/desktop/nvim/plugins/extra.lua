@@ -9,5 +9,3 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' 
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
 vim.keymap.set('n', '<leader>gg', ':Neogit<CR>', { desc = 'Show Neogit UI' })
-
-vim.keymap.set('n', '<leader>tw', ':TypstWatch<CR>', { desc = 'Toggle Typst Preview' })

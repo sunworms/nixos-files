@@ -54,10 +54,6 @@
     path = pkgs.vimPlugins.neogit;
   }
   {
-    name = "typst.vim";
-    path = pkgs.vimPlugins.typst-vim;
-  }
-  {
     name = "nvim-treesitter";
     path = pkgs.vimPlugins.nvim-treesitter.withAllGrammars;
   }
