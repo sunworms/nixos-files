@@ -44,7 +44,7 @@ post_hook = 'niri msg action load-config-file'
 
 [templates.vesktop]
 input_path = '~/.config/matugen/vesktop.css'
-output_path = '~/.config/vesktop/themes/midnight-discord.css'
+output_path = '~/.config/matugen/midnight-discord.css'
 
 [templates.waybar]
 input_path = '~/.config/matugen/waybar.css'

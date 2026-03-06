@@ -20,6 +20,5 @@
     })
     satty
     zathura
-    vesktop
   ];
 }

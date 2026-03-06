@@ -5,10 +5,14 @@
     "gebbhagfogifgggkldgodflihgfeippi" # return youtube dislikes
     "jplgfhpmjnbigmhklmmbgecoobifkmpa" # proton vpn
     "hkgfoiooedgoejojocmhlaklaeopbecg" # picture in picture
-    "mcambpfmpjnncfoodejdmehedbkjepmi" # equicord web
+    "cbghhgpcnddeihccjmnadmkaejncjndb" # vencord web
   ];
 
   ManagedBookmarks = [
+    {
+      name = "Discord";
+      url = "https://discord.com/channels/@me";
+    }
     {
       name = "NixOS stuff";
       children = [
@@ -57,15 +61,6 @@
         {
           name = "git.gay";
           url = "https://git.gay";
-        }
-      ];
-    }
-    {
-      name = "SearXNG instances";
-      children = [
-        {
-          name = "SearX space";
-          url = "https://searx.space/";
         }
       ];
     }

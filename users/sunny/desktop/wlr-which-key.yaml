@@ -8,10 +8,7 @@ menu:
   - key: "h"
     desc: Helium
     cmd: helium %U
-  - key: "d"
-    desc: Vesktop
-    cmd: vesktop
-  - key: "v"
+  - key: "n"
     desc: Neovim
     cmd: foot nvim
   - key: "s"
@@ -26,7 +23,7 @@ menu:
   - key: "e"
     desc: Unicode and Emoji
     cmd: rofimoji --selector fuzzel --action copy --files all
-  - key: "n"
+  - key: "i"
     desc: Networks
     cmd: foot nmtui
   - key: "b"
