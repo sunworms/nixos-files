@@ -8,23 +8,11 @@
 {
   eden = {
     pname = "eden";
-    version = "v1772131298.75104b6103/Eden-Linux-75104b6103";
+    version = "v1772737843.529b069499/Eden-Linux-529b069499";
     src = fetchurl {
-      url = "https://github.com/Eden-CI/Nightly/releases/download/v1772131298.75104b6103/Eden-Linux-75104b6103-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-zclhC155JAOW3LSi0alKjJcgnd3KH606NfSrqKT113w=";
+      url = "https://github.com/Eden-CI/Nightly/releases/download/v1772737843.529b069499/Eden-Linux-529b069499-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-4dXwBYlqP11rkmkLp5QsPGhgMudJIZf8KEwaedoOUjw=";
     };
-  };
-  emacs-overlay = {
-    pname = "emacs-overlay";
-    version = "54af2ae96631311dc4d2686a07e4f472fb36f516";
-    src = fetchFromGitHub {
-      owner = "nix-community";
-      repo = "emacs-overlay";
-      rev = "54af2ae96631311dc4d2686a07e4f472fb36f516";
-      fetchSubmodules = false;
-      sha256 = "sha256-C0UMYQg3KBU6+L8TLfQ/s60O6/Tiu/JpN8C/WiIH9DU=";
-    };
-    date = "2026-03-05";
   };
   helium = {
     pname = "helium";
