@@ -13,9 +13,9 @@ let
 in
 {
   imports = [
-    ./hellwal
     ./scripts
     ./nvim
+    ./matugen
   ];
 
   files = {
@@ -63,8 +63,6 @@ in
 
   packages = with pkgs; [
     waybar
-    hellwal
-    swww
     foot
     mako
     fuzzel

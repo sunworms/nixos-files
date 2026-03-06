@@ -1,0 +1,17 @@
+# Material You colors
+
+background-color={{colors.background.default.hex}}
+text-color={{colors.primary.default.hex}}
+border-color={{colors.primary_container.default.hex}}
+progress-color={{colors.inverse_primary.default.hex}}
+# Per-mode settings
+
+[mode=do-not-disturb]
+invisible=1
+on-notify=none
+
+[mode=silent]
+on-notify=none
+
+[urgency=high]
+border-color={{colors.error_container.default.hex}}
