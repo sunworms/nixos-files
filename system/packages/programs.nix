@@ -32,8 +32,6 @@ in
     # Nix LSPs
     nil
     nixd
-    statix
-    nixfmt
     tree-sitter
 
     # nvfetcher
