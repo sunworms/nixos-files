@@ -18,9 +18,9 @@
       cp ~/.cache/hellwal/template.lua ~/.config/nvim/base16.lua
 
       pkill -USR2 btop || true
-      pkill -SIGUSR2 waybar
       makoctl reload
       pkill -SIGUSR1 nvim
+      sleep 1 && pkill -SIGUSR2 waybar
     '')
   ];
 }
