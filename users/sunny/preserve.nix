@@ -20,7 +20,6 @@
       ".steam"
 
       ".cache/nix"
-      ".cache/hellwal"
 
       ".config/nvim"
       ".config/btop"
