@@ -63,7 +63,8 @@ layout {
 
     preset-column-widths {
         proportion 0.5
-        proportion 0.8
+        proportion 0.75
+        proportion 0.9
         proportion 1.0
 
         // fixed 1920
@@ -71,7 +72,7 @@ layout {
 
     // preset-window-heights { }
 
-    default-column-width { proportion 0.8; }
+    default-column-width { proportion 0.9; }
     focus-ring {
         // off
 
@@ -100,11 +101,17 @@ layout {
     }
 }
 
+blur {
+    on
+    passes 2
+    offset 2
+    noise 0
+}
+
 spawn-at-startup "swww-daemon"
 spawn-at-startup "mako"
 spawn-at-startup "soteria"
-spawn-at-startup "niri-bar-toggle"
-spawn-at-startup "emacs" "--daemon"
+spawn-at-startup "waybar"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
@@ -159,6 +166,9 @@ window-rule {
     clip-to-geometry true
     opacity 0.8
     draw-border-with-background false
+    background-effect {
+        blur true
+    }
 }
 
 // layer rules
@@ -169,8 +179,10 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="(waybar|notifications|launcher|wlr_which_key)"
-    opacity 0.8
+    match namespace="(waybar|launcher|notifications|wlr_which_key)"
+    background-effect {
+        blur true
+    }
 }
 
 prefer-no-csd
@@ -368,4 +380,4 @@ overview {
     }
 }
 
-include "colors.kdl"
+include optional=true "colors.kdl"

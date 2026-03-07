@@ -6,7 +6,9 @@
 }
 
 window#waybar {
-    background-color: transparent;
+    background-color: @background;
+    border: 2px solid @primary;
+    border-radius: 8px;
     color: @primary;
     margin-bottom: 2pt;
 }
@@ -19,86 +21,35 @@ tooltip label {
 
 tooltip label { margin: -5px -3px; }
 
-#clock {
-    margin-left: 2pt;
-    margin-right: 2pt;
-    border: 2px solid @primary;
-    border-radius: 8px;
-    padding: 0 12px;
-    background-color: @background;
-    color: @primary;
-    transition: none;
-}
-
 #workspaces {
     margin-left: 2pt;
-    border-left: 2px solid @primary;
-    border-bottom: 2px solid @primary;
-    border-top: 2px solid @primary;
-    border-radius: 8px 0 0 8px;
     padding: 0 6px;
-    background-color: @background;
-    color: @primary;
-    transition: none;
-}
-
-
-#window {
-    border-right: 2px solid @primary;
-    border-top: 2px solid @primary;
-    border-bottom: 2px solid @primary;
-    border-radius: 0 8px 8px 0;
-    padding: 0 12px;
-    background-color: @background;
-    color: @primary;
     transition: none;
 }
 
 window#waybar.empty #window {
     background-color: transparent;
-    border: none;
 }
 
-window#waybar.empty #workspaces {
-    border-right: 2px solid @primary;
-    border-radius: 8px;
-}
-
-#network {
-    border-left: 2px solid @primary;
-    border-bottom: 2px solid @primary;
-    border-top: 2px solid @primary;
-    border-radius: 8px 0 0 8px;
-    padding: 0 12px;
-    background-color: @background;
-}
-
-#tray,
+#clock,
+#window,
+#network,
 #cpu,
-#memory {
-    border-top: 2px solid @primary;
-    border-bottom: 2px solid @primary;
+#memory,
+#tray {
     padding: 0 12px;
-    background-color: @background;
-    color: @primary;
     transition: none;
 }
 
 #battery {
     margin-right: 2pt;
-    border-right: 2px solid @primary;
-    border-top: 2px solid @primary;
-    border-bottom: 2px solid @primary;
-    border-radius: 0 8px 8px 0;
     padding: 0 12px;
-    background-color: @background;
-    color: @primary;
     transition: none;
 }
 
 #workspaces button {
     padding: 0 2px;
-    color: shade(@primary, 0.5);
+    color: shade(@primary, 1.5);
 }
 #workspaces button.focused { color: @primary; }
 
@@ -114,5 +65,8 @@ window#waybar.empty #workspaces {
 #tray:hover,
 #workspaces button:hover,
 #battery:hover {
+    border-top: 2px solid @primary;
+    border-bottom: 2px solid @primary;
+    border-radius: 0px;
     background-color: shade(@background, 1.5);
 }

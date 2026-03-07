@@ -1,11 +1,14 @@
 font: Aporetic Sans 12
 anchor: center 
 border_width: 1
+background: "#282828cc"
+color: "#fbf1c7cc"
+border: "#8ec07ccc"
 
 menu:
   - key: "w"
-    desc: Spawn Warp Taskbar
-    cmd: systemctl --user start warp-taskbar.service
+    desc: Toggle Waybar
+    cmd: pkill -SIGUSR1 waybar
   - key: "h"
     desc: Helium
     cmd: helium %U

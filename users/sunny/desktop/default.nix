@@ -5,7 +5,7 @@
 }:
 
 let
-  mango-with-wall = pkgs.replaceVars ./mangowm.conf {
+  niri-with-wall = pkgs.replaceVars ./niri.kdl {
     WALLPAPER = "${sources.walls.src}/hunline/tsukumo-1.png";
     DEFAULT_AUDIO_SINK = null;
     DEFAULT_AUDIO_SOURCE = null;
@@ -51,7 +51,7 @@ in
     "git/config".source = ./gitconfig;
     "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
-    "mango/config.conf".source = mango-with-wall;
+    "niri/config.kdl".source = niri-with-wall;
     "btop/btop.conf".source = ./btop.conf;
     "wlr-which-key/config.yaml".source = ./wlr-which-key.yaml;
 
@@ -61,7 +61,7 @@ in
     '';
   };
 
-  packages = with pkgs; [  
+  packages = with pkgs; [
     waybar
     foot
     mako
@@ -77,10 +77,8 @@ in
     hyfetch
     git
     nautilus
+    xwayland-satellite
     soteria
     wlr-which-key
-    sway-audio-idle-inhibit
-    wlopm
-    grim
   ];
 }

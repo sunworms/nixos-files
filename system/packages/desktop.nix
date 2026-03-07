@@ -11,11 +11,9 @@
     };
   };
 
-  programs.mangowc = {
+  programs.niri = {
     enable = true;
-    package = (pkgs.callPackage ../../mango.nix { inherit sources; }).override {
-      scenefx = (pkgs.callPackage ../../scenefx.nix { inherit sources; });
-    };
+    package = (pkgs.callPackage ../../niri.nix { inherit sources; });
   };
 
   security.pam.services.gtklock = { };

@@ -18,7 +18,7 @@ case "$selected" in
     Logout)
         # Logout (adjust based on your window manager/desktop environment)
         # For Sway:
-        mmsg -q
+        niri msg action quit --skip-confirmation
         # For Hyprland:
         # hyprctl dispatch exit
         # For other compositors, use: loginctl terminate-user $USER

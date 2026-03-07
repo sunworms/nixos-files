@@ -26,7 +26,7 @@
       ".config/btop"
       ".config/net.imput.helium"
       ".config/fish"
-      ".config/mango"
+      ".config/niri"
       ".config/waybar"
       ".config/foot"
       ".config/fuzzel"

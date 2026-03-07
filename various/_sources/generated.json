@@ -50,11 +50,11 @@
         },
         "version": "7f2880d705edf541955d98f56cb78f9507384423"
     },
-    "mango": {
+    "niri-blur": {
         "cargoLock": null,
         "date": "2026-03-07",
         "extract": null,
-        "name": "mango",
+        "name": "niri-blur",
         "passthru": null,
         "pinned": false,
         "src": {
@@ -62,14 +62,14 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "owner": "mangowm",
-            "repo": "mango",
-            "rev": "e96a7fa2cbf87b9c561a5c0cb21b13437f748841",
-            "sha256": "sha256-ZCTPOoOfPdAgjM+FfMnM9dmuyz5lshbcpNNZP7vSeo0=",
+            "owner": "niri-wm",
+            "repo": "niri",
+            "rev": "5393902dd22e9d540438ee178775f1e488eea724",
+            "sha256": "sha256-pFh7J2fBqsZvZrD26zfOj30qTM8+7PLZsNSLX+VOcUA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "e96a7fa2cbf87b9c561a5c0cb21b13437f748841"
+        "version": "5393902dd22e9d540438ee178775f1e488eea724"
     },
     "nixpkgs": {
         "cargoLock": null,
@@ -112,27 +112,6 @@
             "type": "github"
         },
         "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
-    },
-    "scenefx": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "scenefx",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "wlrfx",
-            "repo": "scenefx",
-            "rev": "0.4.1",
-            "sha256": "sha256-XD5EcquaHBg5spsN06fPHAjVCb1vOMM7oxmjZZ/PxIE=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "0.4.1"
     },
     "sops-nix": {
         "cargoLock": null,

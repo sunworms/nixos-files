@@ -1,33 +1,24 @@
 {
     "position": "bottom",
     "layer": "top",
-    "exclusive": true,
-    "start_hidden": false,
     "reload_style_on_change": true,
-    "opacity": 0.8,
-    "height": 24,
+    "height": 30,
     "modules-left": [
-        "ext/workspaces",
-        "dwl/window",
+        "niri/workspaces",
+        "niri/window",
     ],
     "modules-center": [
         "clock",
     ],
     "modules-right": [
-        "network",
         "tray",
+        "network",
 	"cpu",
 	"memory",
         "battery",
     ],
-"ext/workspaces": {
-    "format": "{icon}",
-    "ignore-hidden": true,
-    "on-click": "activate",
-    "on-click-right": "deactivate",
-    "sort-by-id": true,
-  },
-    "dwl/window": {
+
+    "niri/window": {
         "format": "{title}",
 	"max-length": 50,
         "tooltip": false,
