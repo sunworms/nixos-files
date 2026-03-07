@@ -6,8 +6,8 @@ if status is-interactive
     abbr --add -- osc 'nh clean all && sudo nix store optimise'
     abbr --add -- oss 'nh os switch --ask -f ./default.nix'
     abbr --add -- ost 'nh os test --ask -f ./default.nix'
-    abbr --add -- vi 'nvim'
-    abbr --add -- vim 'nvim'
+    alias vi 'nvim'
+    alias vim 'nvim'
 
     set -U fish_greeting
     set -g fish_key_bindings fish_vi_key_bindings
