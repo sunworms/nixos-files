@@ -11,7 +11,6 @@
     "matugen/niri.kdl".source = ./niri.kdl;
     "matugen/template.lua".source = ./template.lua;
     "matugen/vesktop.css".source = ./vesktop.css;
-    "matugen/waybar.css".source = ./waybar.css;
     "matugen/zathura-colors".source = ./zathura-colors;
   };
 

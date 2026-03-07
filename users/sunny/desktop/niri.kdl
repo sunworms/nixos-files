@@ -111,7 +111,7 @@ blur {
 spawn-at-startup "swww-daemon"
 spawn-at-startup "mako"
 spawn-at-startup "soteria"
-spawn-at-startup "waybar"
+spawn-at-startup "playerctld"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
@@ -147,6 +147,12 @@ window-rule {
 }
 
 window-rule {
+    match app-id="system-menu"
+    open-floating true
+    default-column-width { fixed 700; }
+}
+
+window-rule {
     match title="^Picture in picture$"
     open-floating true
     default-floating-position x=1050 y=250
@@ -179,7 +185,7 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="(waybar|launcher|notifications|wlr_which_key)"
+    match namespace="launcher"
     background-effect {
         blur true
     }
@@ -194,11 +200,11 @@ recent-windows {
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
+    Mod+Space hotkey-overlay-title="System Menu" { spawn "foot" "--app-id=system-menu" "system-menu"; }
 
     Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--no-icons"; }
     Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; }
-    Mod+D hotkey-overlay-title="wlr which key" { spawn "wlr-which-key"; }
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; }
     Mod+Tab hotkey-overlay-title="Window Switcher" { spawn "fuzzel-niri-window"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }

@@ -43,17 +43,13 @@ in
 
   xdg.config.files = {
     "fish/config.fish".source = ./config.fish;
-    "waybar/config.jsonc".source = ./waybar-config;
-    "waybar/style.css".source = ./waybar-style.css;
     "foot/foot.ini".source = ./foot.ini;
     "fuzzel/fuzzel.ini".source = ./fuzzel.ini;
     "mako/config".source = ./mako;
     "git/config".source = ./gitconfig;
-    "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = niri-with-wall;
     "btop/btop.conf".source = ./btop.conf;
-    "wlr-which-key/config.yaml".source = ./wlr-which-key.yaml;
 
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
@@ -62,7 +58,6 @@ in
   };
 
   packages = with pkgs; [
-    waybar
     foot
     mako
     fuzzel
@@ -79,6 +74,6 @@ in
     nautilus
     xwayland-satellite
     soteria
-    wlr-which-key
+    (callPackage ./system-menu.nix {})
   ];
 }

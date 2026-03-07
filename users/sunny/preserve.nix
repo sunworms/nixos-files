@@ -26,7 +26,6 @@
       ".config/net.imput.helium"
       ".config/fish"
       ".config/niri"
-      ".config/waybar"
       ".config/foot"
       ".config/fuzzel"
       ".config/mako"
