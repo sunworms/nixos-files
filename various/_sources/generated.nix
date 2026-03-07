@@ -36,15 +36,15 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "80bdc1e5ce51f56b19791b52b2901187931f5353";
+    version = "aca4d95fce4914b3892661bcb80b8087293536c6";
     src = fetchFromGitHub {
       owner = "NixOS";
       repo = "nixpkgs";
-      rev = "80bdc1e5ce51f56b19791b52b2901187931f5353";
+      rev = "aca4d95fce4914b3892661bcb80b8087293536c6";
       fetchSubmodules = false;
-      sha256 = "sha256-QKyJ0QGWBn6r0invrMAK8dmJoBYWoOWy7lN+UHzW1jc=";
+      sha256 = "sha256-E1bxHxNKfDoQUuvriG71+f+s/NT0qWkImXsYZNFFfCs=";
     };
-    date = "2026-03-04";
+    date = "2026-03-06";
   };
   preservation = {
     pname = "preservation";
@@ -72,14 +72,14 @@
   };
   walls = {
     pname = "walls";
-    version = "5d8fda9b16c312170eceb6bfce107df7bb38a357";
+    version = "48310a35c59d81f2e34616ec48cbd43471cc322b";
     src = fetchFromGitHub {
       owner = "sunworms";
       repo = "walls";
-      rev = "5d8fda9b16c312170eceb6bfce107df7bb38a357";
+      rev = "48310a35c59d81f2e34616ec48cbd43471cc322b";
       fetchSubmodules = false;
-      sha256 = "sha256-5tsL9pdCWj1ISG3gPr+ColfsOWwkH9WfP8mrrZ1tz5U=";
+      sha256 = "sha256-vFsd9sIirZWMkGxVqqlknl51Tek7oIN73/C0kC48OHw=";
     };
-    date = "2026-02-26";
+    date = "2026-03-07";
   };
 }

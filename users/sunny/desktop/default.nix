@@ -6,7 +6,7 @@
 
 let
   mango-with-wall = pkgs.replaceVars ./mangowm.conf {
-    WALLPAPER = "${sources.walls.src}/hunline/hunline-1.png";
+    WALLPAPER = "${sources.walls.src}/hunline/tsukumo-1.png";
     DEFAULT_AUDIO_SINK = null;
     DEFAULT_AUDIO_SOURCE = null;
   };

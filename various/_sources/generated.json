@@ -52,7 +52,7 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-03-04",
+        "date": "2026-03-06",
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
@@ -64,12 +64,12 @@
             "name": null,
             "owner": "NixOS",
             "repo": "nixpkgs",
-            "rev": "80bdc1e5ce51f56b19791b52b2901187931f5353",
-            "sha256": "sha256-QKyJ0QGWBn6r0invrMAK8dmJoBYWoOWy7lN+UHzW1jc=",
+            "rev": "aca4d95fce4914b3892661bcb80b8087293536c6",
+            "sha256": "sha256-E1bxHxNKfDoQUuvriG71+f+s/NT0qWkImXsYZNFFfCs=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "80bdc1e5ce51f56b19791b52b2901187931f5353"
+        "version": "aca4d95fce4914b3892661bcb80b8087293536c6"
     },
     "preservation": {
         "cargoLock": null,
@@ -115,7 +115,7 @@
     },
     "walls": {
         "cargoLock": null,
-        "date": "2026-02-26",
+        "date": "2026-03-07",
         "extract": null,
         "name": "walls",
         "passthru": null,
@@ -127,11 +127,11 @@
             "name": null,
             "owner": "sunworms",
             "repo": "walls",
-            "rev": "5d8fda9b16c312170eceb6bfce107df7bb38a357",
-            "sha256": "sha256-5tsL9pdCWj1ISG3gPr+ColfsOWwkH9WfP8mrrZ1tz5U=",
+            "rev": "48310a35c59d81f2e34616ec48cbd43471cc322b",
+            "sha256": "sha256-vFsd9sIirZWMkGxVqqlknl51Tek7oIN73/C0kC48OHw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "5d8fda9b16c312170eceb6bfce107df7bb38a357"
+        "version": "48310a35c59d81f2e34616ec48cbd43471cc322b"
     }
 }
