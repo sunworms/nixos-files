@@ -34,18 +34,6 @@
     };
     date = "2026-02-16";
   };
-  niri-blur = {
-    pname = "niri-blur";
-    version = "c837d944f0cc08580ee86574dd0c3a68ca9379a4";
-    src = fetchFromGitHub {
-      owner = "niri-wm";
-      repo = "niri";
-      rev = "c837d944f0cc08580ee86574dd0c3a68ca9379a4";
-      fetchSubmodules = false;
-      sha256 = "sha256-nSrfHwbjg8/Rfx5pqDqU8bL5IWh99MsvxfjNZYxqEFw=";
-    };
-    date = "2026-03-03";
-  };
   nixpkgs = {
     pname = "nixpkgs";
     version = "80bdc1e5ce51f56b19791b52b2901187931f5353";

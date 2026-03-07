@@ -100,13 +100,6 @@ layout {
     }
 }
 
-blur {
-    on
-    passes 2
-    offset 2
-    noise 0
-}
-
 spawn-at-startup "swww-daemon"
 spawn-at-startup "mako"
 spawn-at-startup "soteria"
@@ -166,9 +159,6 @@ window-rule {
     clip-to-geometry true
     opacity 0.8
     draw-border-with-background false
-    background-effect {
-        blur true
-    }
 }
 
 // layer rules
@@ -179,15 +169,7 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="launcher"
-    opacity 0.8
-    background-effect {
-        blur true
-    }
-}
-
-layer-rule {
-    match namespace="(waybar|notifications)"
+    match namespace="(waybar|notifications|launcher|wlr_which_key)"
     opacity 0.8
 }
 
@@ -386,4 +368,4 @@ overview {
     }
 }
 
-include optional=true "colors.kdl"
+include "colors.kdl"

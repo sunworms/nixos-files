@@ -1,4 +1,4 @@
-{ pkgs, sources, ... }:
+{ pkgs, ... }:
 
 {
   services.greetd = {
@@ -13,7 +13,7 @@
 
   programs.niri = {
     enable = true;
-    package = (pkgs.callPackage ../../niri.nix { inherit sources; });
+    package = pkgs.niri;
   };
 
   security.pam.services.gtklock = { };

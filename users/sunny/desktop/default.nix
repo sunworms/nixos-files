@@ -6,7 +6,7 @@
 
 let
   niri-with-wall = pkgs.replaceVars ./niri.kdl {
-    WALLPAPER = "${sources.walls.src}/various/minatama.jpeg";
+    WALLPAPER = "${sources.walls.src}/hunline/hunline-1.png";
     DEFAULT_AUDIO_SINK = null;
     DEFAULT_AUDIO_SOURCE = null;
   };
@@ -87,9 +87,7 @@ in
 
       ${pkgs.waybar}/bin/waybar &
 
-      ${
-        (pkgs.callPackage ../../../niri.nix { inherit sources; })
-      }/bin/niri msg --json event-stream | while read -r event; do
+      ${pkgs.niri}/bin/niri msg --json event-stream | while read -r event; do
       if echo "$event" | ${pkgs.jq}/bin/jq -e '.OverviewOpenedOrClosed' > /dev/null 2>&1; then
         ${pkgs.procps}/bin/pkill -SIGUSR1 waybar
       fi
