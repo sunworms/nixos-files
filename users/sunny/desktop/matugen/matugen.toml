@@ -37,10 +37,9 @@ input_path = '~/.config/matugen/template.lua'
 output_path = '~/.config/nvim/base16.lua'
 post_hook = 'pkill -SIGUSR1 nvim'
 
-[templates.niri]
-input_path = '~/.config/matugen/niri.kdl'
-output_path = '~/.config/niri/colors.kdl'
-post_hook = 'niri msg action load-config-file'
+[templates.mango]
+input_path = '~/.config/matugen/mango.conf'
+output_path = '~/.config/mango/colors.conf'
 
 [templates.vesktop]
 input_path = '~/.config/matugen/vesktop.css'

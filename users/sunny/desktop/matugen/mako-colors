@@ -1,9 +1,9 @@
 # Material You colors
 
-background-color={{colors.background.default.hex}}
-text-color={{colors.primary.default.hex}}
-border-color={{colors.primary_container.default.hex}}
-progress-color={{colors.inverse_primary.default.hex}}
+background-color={{colors.background.default.hex}}cc
+text-color={{colors.primary.default.hex}}cc
+border-color={{colors.primary_container.default.hex}}cc
+progress-color={{colors.inverse_primary.default.hex}}cc
 # Per-mode settings
 
 [mode=do-not-disturb]
@@ -14,4 +14,4 @@ on-notify=none
 on-notify=none
 
 [urgency=high]
-border-color={{colors.error_container.default.hex}}
+border-color={{colors.error_container.default.hex}}cc

@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, sources, ... }:
 
 {
   services.greetd = {
@@ -11,9 +11,9 @@
     };
   };
 
-  programs.niri = {
+  programs.mangowc = {
     enable = true;
-    package = pkgs.niri;
+    package = pkgs.mangowc;
   };
 
   security.pam.services.gtklock = { };

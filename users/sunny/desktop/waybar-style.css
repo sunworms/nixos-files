@@ -64,7 +64,7 @@ window#waybar.empty #workspaces {
     border-radius: 8px;
 }
 
-#tray {
+#network {
     border-left: 2px solid @primary;
     border-bottom: 2px solid @primary;
     border-top: 2px solid @primary;
@@ -73,7 +73,7 @@ window#waybar.empty #workspaces {
     background-color: @background;
 }
 
-#network,
+#tray,
 #cpu,
 #memory {
     border-top: 2px solid @primary;

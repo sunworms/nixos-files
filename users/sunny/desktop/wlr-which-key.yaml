@@ -4,8 +4,8 @@ border_width: 1
 
 menu:
   - key: "w"
-    desc: Toggle Waybar
-    cmd: pkill -SIGUSR1 waybar
+    desc: Spawn Warp Taskbar
+    cmd: systemctl --user start warp-taskbar.service
   - key: "h"
     desc: Helium
     cmd: helium %U

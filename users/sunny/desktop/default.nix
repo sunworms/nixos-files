@@ -5,7 +5,7 @@
 }:
 
 let
-  niri-with-wall = pkgs.replaceVars ./niri.kdl {
+  mango-with-wall = pkgs.replaceVars ./mangowc.conf {
     WALLPAPER = "${sources.walls.src}/hunline/hunline-1.png";
     DEFAULT_AUDIO_SINK = null;
     DEFAULT_AUDIO_SOURCE = null;
@@ -51,7 +51,7 @@ in
     "git/config".source = ./gitconfig;
     "glide/glide.ts".source = ./glide.ts;
     "hyfetch.json".source = ./hyfetch.json;
-    "niri/config.kdl".source = niri-with-wall;
+    "mango/config.conf".source = mango-with-wall;
     "btop/btop.conf".source = ./btop.conf;
     "wlr-which-key/config.yaml".source = ./wlr-which-key.yaml;
 
@@ -61,7 +61,7 @@ in
     '';
   };
 
-  packages = with pkgs; [
+  packages = with pkgs; [  
     waybar
     foot
     mako
@@ -77,22 +77,10 @@ in
     hyfetch
     git
     nautilus
-    xwayland-satellite
     soteria
     wlr-which-key
-    (writeShellScriptBin "niri-bar-toggle" ''
-      trap "" SIGUSR1
-
-      sleep 0.1
-
-      ${pkgs.waybar}/bin/waybar &
-
-      ${pkgs.niri}/bin/niri msg --json event-stream | while read -r event; do
-      if echo "$event" | ${pkgs.jq}/bin/jq -e '.OverviewOpenedOrClosed' > /dev/null 2>&1; then
-        ${pkgs.procps}/bin/pkill -SIGUSR1 waybar
-      fi
-
-      done
-    '')
+    sway-audio-idle-inhibit
+    wlopm
+    grim
   ];
 }

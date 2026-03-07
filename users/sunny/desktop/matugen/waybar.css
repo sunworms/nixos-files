@@ -3,5 +3,5 @@
 * Generated with Matugen
 */
 <* for name, value in colors *>
-    @define-color {{name}} {{value.default.hex}};
+    @define-color {{name}} {{value.default.rgba | set_alpha: 0.8}};
 <* endfor *>

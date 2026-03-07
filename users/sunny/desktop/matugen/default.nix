@@ -8,7 +8,7 @@
     "matugen/fuzzel.ini".source = ./fuzzel.ini;
     "matugen/gtk.css".source = ./gtk.css;
     "matugen/mako-colors".source = ./mako-colors;
-    "matugen/niri.kdl".source = ./niri.kdl;
+    "matugen/mango.conf".source = ./mango.conf;
     "matugen/template.lua".source = ./template.lua;
     "matugen/vesktop.css".source = ./vesktop.css;
     "matugen/waybar.css".source = ./waybar.css;
