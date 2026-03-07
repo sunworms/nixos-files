@@ -17,7 +17,6 @@
       "Videos"
       "VMs"
       ".ssh"
-      ".steam"
 
       ".cache/nix"
 
@@ -45,7 +44,6 @@
       ".config/ppsspp"
 
       ".local/share/zathura"
-      ".local/share/Steam"
       ".local/share/fish"
       ".local/share/azahar-emu"
       ".local/share/eden"

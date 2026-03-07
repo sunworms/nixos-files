@@ -2,6 +2,8 @@
 
 {
   packages = with pkgs; [
+    wineWow64Packages.stagingFull
+    winetricks
     (callPackage ./eden.nix { })
     pcsx2
     ppsspp-sdl-wayland

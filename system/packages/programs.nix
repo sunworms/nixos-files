@@ -52,23 +52,6 @@ in
     "/share/fish"
   ];
 
-  programs.steam = {
-    enable = true;
-    extraPackages = with pkgs; [
-      gamescope
-      volantes-cursors
-    ];
-    extraCompatPackages = with pkgs; [
-      proton-ge-bin
-    ];
-    protontricks.enable = true;
-  };
-
-  programs.tmux = {
-    enable = true;
-    terminal = "tmux-direct";
-  };
-
   environment.etc."chromium/policies/managed/default.json".source =
     (pkgs.formats.json { }).generate "chromium.json"
       (import ./chromium.nix);
