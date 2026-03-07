@@ -1,5 +1,6 @@
 font: Aporetic Sans 12
 anchor: center 
+border_width: 1
 
 menu:
   - key: "w"
