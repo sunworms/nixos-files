@@ -13,7 +13,9 @@
 
   programs.mangowc = {
     enable = true;
-    package = pkgs.mangowc;
+    package = (pkgs.callPackage ../../mango.nix { inherit sources; }).override {
+      scenefx = (pkgs.callPackage ../../scenefx.nix { inherit sources; });
+    };
   };
 
   security.pam.services.gtklock = { };

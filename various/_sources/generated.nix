@@ -34,6 +34,18 @@
     };
     date = "2026-02-16";
   };
+  mango = {
+    pname = "mango";
+    version = "e96a7fa2cbf87b9c561a5c0cb21b13437f748841";
+    src = fetchFromGitHub {
+      owner = "mangowm";
+      repo = "mango";
+      rev = "e96a7fa2cbf87b9c561a5c0cb21b13437f748841";
+      fetchSubmodules = false;
+      sha256 = "sha256-ZCTPOoOfPdAgjM+FfMnM9dmuyz5lshbcpNNZP7vSeo0=";
+    };
+    date = "2026-03-07";
+  };
   nixpkgs = {
     pname = "nixpkgs";
     version = "aca4d95fce4914b3892661bcb80b8087293536c6";
@@ -57,6 +69,17 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
+  };
+  scenefx = {
+    pname = "scenefx";
+    version = "0.4.1";
+    src = fetchFromGitHub {
+      owner = "wlrfx";
+      repo = "scenefx";
+      rev = "0.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-XD5EcquaHBg5spsN06fPHAjVCb1vOMM7oxmjZZ/PxIE=";
+    };
   };
   sops-nix = {
     pname = "sops-nix";

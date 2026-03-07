@@ -16,6 +16,15 @@ fetch.github = "Mic92/sops-nix"
 src.git = "https://github.com/feel-co/hjem"
 fetch.github = "feel-co/hjem"
 
+# mango
+[scenefx]
+src.github_tag = "wlrfx/scenefx"
+fetch.github = "wlrfx/scenefx"
+
+[mango]
+src.git = "https://github.com/mangowm/mango"
+fetch.github = "mangowm/mango"
+
 # wallpapers
 [walls]
 src.git = "https://github.com/sunworms/walls"
