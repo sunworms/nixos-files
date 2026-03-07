@@ -49,7 +49,7 @@ window#waybar.empty #window {
 
 #workspaces button {
     padding: 0 2px;
-    color: shade(@primary, 1.5);
+    color: shade(@primary, 0.5);
 }
 #workspaces button.focused { color: @primary; }
 
@@ -68,5 +68,5 @@ window#waybar.empty #window {
     border-top: 2px solid @primary;
     border-bottom: 2px solid @primary;
     border-radius: 0px;
-    background-color: shade(@background, 1.5);
+    background-color: shade(@background, 1.25);
 }

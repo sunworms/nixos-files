@@ -21,16 +21,29 @@
     "niri/window": {
         "format": "{title}",
 	"max-length": 50,
-        "tooltip": false,
         "seperate-outputs": true,
     },
 
     "clock": {
-        "format": "{:%B %d, %H:%M}",
-        "tooltip-format": "{:%A, %Y (%S)}",
+        "format": "{:%A, %B %d %Y, %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+	      "calendar": {
+		        "mode"          : "year",
+		        "mode-mon-col"  : 3,
+		        "weeks-pos"     : "right",
+		        "on-scroll"     : 1,
+		        "on-click-right": "mode",
+            "format": {
+                "months": "<b>{}</b>",
+                "days": "<b>{}</b>",
+                "weeks": "<b> W{}</b>",
+                "weekdays": "<b>{}</b>",
+                "today": "<b>{}</b>"
+            }
+        },
         "interval": 1,
         "on-click": "fuzzel --no-icons",
-	"on-click-right": "fuzzel-logout-menu"
+	      "on-click-right": "fuzzel-logout-menu"
     },
 
     "mpris": {
