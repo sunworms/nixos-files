@@ -178,17 +178,17 @@ def main(stdscr):
             media_txt = get_media_data()
             last_media_poll = now
 
-        if now - last_time_poll > 60:
-            now_txt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-        last_time_poll = now
+        if now - last_time_poll > 1:
+            now_txt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            last_time_poll = now
 
-        if now - last_cpu_poll > 5:
+        if now - last_cpu_poll > 2:
             cpu = psutil.cpu_percent()
             mem = psutil.virtual_memory()
             mem_txt = f"{mem.used//(1024**3)}G/{mem.total//(1024**3)}G"
             last_cpu_poll = now
 
-        if now - last_net_poll > 10:
+        if now - last_net_poll > 2:
             net = network()
             last_net_poll = now
 
