@@ -179,7 +179,7 @@ def main(stdscr):
             last_media_poll = now
 
         if now - last_time_poll > 1:
-            now_txt = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            now_txt = datetime.datetime.now().strftime("%A, %Y-%m-%d, %H:%M:%S")
             last_time_poll = now
 
         if now - last_cpu_poll > 2:
