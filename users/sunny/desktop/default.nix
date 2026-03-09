@@ -3,17 +3,13 @@
   inputs,
   ...
 }:
-
 let
-  niri-with-wall = pkgs.replaceVars ./niri.kdl {
-    WALLPAPER = "${inputs.walls}/hunline/tsukumo-1.png";
-    DEFAULT_AUDIO_SINK = null;
-    DEFAULT_AUDIO_SOURCE = null;
-  };
+  inherit (inputs.niri-nix.lib) validatedConfigFor;
+  inherit (inputs.niri-nix.packages.${pkgs.stdenv.hostPlatform.system}) niri-unstable;
 in
 {
   imports = [
-    ./scripts
+    ./dms
     ./nvim
     ./matugen
     ./yazi
@@ -45,14 +41,9 @@ in
   xdg.config.files = {
     "fish/config.fish".source = ./config.fish;
     "foot/foot.ini".source = ./foot.ini;
-    "fuzzel/fuzzel.ini".source = ./fuzzel.ini;
-    "mako/config".source = ./mako;
     "git/config".source = ./gitconfig;
     "hyfetch.json".source = ./hyfetch.json;
-    "niri/config.kdl".source = niri-with-wall;
-    "btop/btop.conf".source = ./btop.conf;
-    "waybar/config.jsonc".source = ./waybar-config;
-    "waybar/style.css".source = ./waybar-style.css;
+    "niri/config.kdl".text = validatedConfigFor niri-unstable (builtins.readFile ./niri.kdl);
 
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
@@ -61,21 +52,9 @@ in
   };
 
   packages = with pkgs; [
-    waybar
     foot
-    mako
-    fuzzel
-    cliphist
-    rofimoji
-    brightnessctl
-    gtklock
-    swayidle
-    libnotify
-    btop
-    playerctl
     hyfetch
     git
-    xwayland-satellite
-    soteria
+    xwayland-satellite-unstable
   ];
 }

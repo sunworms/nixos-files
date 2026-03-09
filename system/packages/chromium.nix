@@ -14,6 +14,10 @@
       url = "https://discord.com/channels/@me";
     }
     {
+      name = "JSON to Nix";
+      url = "https://stevebinary.github.io/json2nix";
+    }
+    {
       name = "NixOS stuff";
       children = [
         {

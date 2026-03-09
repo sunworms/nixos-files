@@ -1,55 +1,18 @@
 [config]
 
-[config.wallpaper]
-set = true
-command = "swww img --transition-type none {{ image }}"
-
 [templates]
-
-[templates.btop]
-input_path = '~/.config/matugen/btop.theme'
-output_path = '~/.config/btop/themes/matugen.theme'
-post_hook = 'pkill -USR2 btop || true'
-
-[templates.fuzzel]
-input_path = '~/.config/matugen/fuzzel.ini'
-output_path = '~/.config/fuzzel/colors.ini'
-
 [templates.foot]
 input_path = '~/.config/matugen/foot.ini'
-output_path = '~/.config/foot/colors.ini'
-
-[templates.gtk3]
-input_path = '~/.config/matugen/gtk.css'
-output_path = '~/.config/gtk-3.0/gtk.css'
-
-[templates.gtk4]
-input_path = '~/.config/matugen/gtk.css'
-output_path = '~/.config/gtk-4.0/gtk.css'
-
-[templates.mako]
-input_path = '~/.config/matugen/mako-colors'
-output_path = '~/.config/mako/colors'
-post_hook = 'makoctl reload'
+output_path = '~/.config/foot/dank-colors.ini'
 
 [templates.neovim]
 input_path = '~/.config/matugen/template.lua'
 output_path = '~/.config/nvim/base16.lua'
 post_hook = 'pkill -SIGUSR1 nvim'
 
-[templates.niri]
-input_path = '~/.config/matugen/niri.kdl'
-output_path = '~/.config/niri/colors.kdl'
-post_hook = 'niri msg action load-config-file'
-
 [templates.vesktop]
 input_path = '~/.config/matugen/vesktop.css'
 output_path = '~/.config/matugen/midnight-discord.css'
-
-[templates.waybar]
-input_path = '~/.config/matugen/waybar.css'
-output_path = '~/.config/waybar/colors.css'
-post_hook = 'pkill -SIGUSR2 waybar'
 
 [templates.yazi]
 input_path = '~/.config/matugen/yazi-theme.toml'

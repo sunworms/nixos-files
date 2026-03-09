@@ -100,23 +100,8 @@ layout {
     }
 }
 
-blur {
-    on
-    passes 2
-    offset 2
-    noise 0
-}
-
-spawn-at-startup "swww-daemon"
-spawn-at-startup "mako"
-spawn-at-startup "soteria"
-spawn-at-startup "playerctld"
-spawn-at-startup "waybar"
-spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
-spawn-sh-at-startup "swayidle -w timeout 300 'gtklock -d' timeout 600 'niri msg action power-off-monitors' after-resume 'niri msg action power-on-monitors' before-sleep 'gtklock -d'"
-spawn-sh-at-startup "matugen image @WALLPAPER@ --type scheme-vibrant --source-color-index 0"
 
 hotkey-overlay {
     skip-at-startup
@@ -147,12 +132,6 @@ window-rule {
 }
 
 window-rule {
-    match app-id="system-menu"
-    open-floating true
-    default-column-width { fixed 700; }
-}
-
-window-rule {
     match title="^Picture in picture$"
     open-floating true
     default-floating-position x=1050 y=250
@@ -170,58 +149,40 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
-    opacity 0.8
     draw-border-with-background false
-    background-effect {
-        blur true
-    }
 }
 
 // layer rules
 
 layer-rule {
-    match namespace="^swww-daemon$"
+    match namespace="^quickshell$"
     place-within-backdrop true
-}
-
-layer-rule {
-    match namespace="(waybar|launcher|notifications)"
-    background-effect {
-        blur true
-    }
 }
 
 prefer-no-csd
 
-recent-windows {
-    binds {
-    }
-}
-
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
-    Mod+Space hotkey-overlay-title="System Menu" { spawn "foot" "--app-id=system-menu" "system-menu"; }
 
     Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
-    Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--no-icons"; }
-    Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; }
-    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; }
-    Mod+Tab hotkey-overlay-title="Window Switcher" { spawn "fuzzel-niri-window"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }
-    Super+Shift+S hotkey-overlay-title="Respawn Soteria" { spawn-sh "pkill soteria && soteria"; }
+    Mod+A hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Mod+V hotkey-overlay-title="Clipboard" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
+    Super+Shift+S hotkey-overlay-title="DMS Settings" { spawn "dms" "ipc" "call" "settings" "toggle"; }
 
-    XF86AudioRaiseVolume { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+ && volume-notif"; }
-    XF86AudioLowerVolume { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- && volume-notif"; }
-    XF86AudioMute { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && volume-notif"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86AudioRaiseVolume { spawn "dms" "ipc" "call" "audio" "increment" "1"; }
+    XF86AudioLowerVolume { spawn "dms" "ipc" "call" "audio" "decrement" "1"; }
+    XF86AudioMute { spawn "dms" "ipc" "call" "audio" "mute"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
     
-    XF86MonBrightnessUp { spawn-sh "brightnessctl s +1% && bright-notif"; }
-    XF86MonBrightnessDown { spawn-sh "brightnessctl s 1%- && bright-notif"; }
+    XF86MonBrightnessUp { spawn "dms" "ipc" "call" "brightness" "increment" "1" ""; }
+    XF86MonBrightnessDown { spawn "dms" "ipc" "call" "brightness" "decrement" "1" ""; }
 
-    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioPlay        allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "playPause"; }
+    XF86AudioStop        allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "stop"; }
+    XF86AudioPrev        allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "next"; }
 
     Mod+O repeat=false { toggle-overview; }
 
@@ -386,4 +347,5 @@ overview {
     }
 }
 
-include optional=true "colors.kdl"
+include optional=true "dms/colors.kdl"
+include optional=true "dms/alttab.kdl"

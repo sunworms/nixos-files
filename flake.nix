@@ -12,8 +12,13 @@
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    niri-blur = {
-      url = "github:niri-wm/niri/pull/3483/head";
+    niri-nix.url = "git+https://codeberg.org/BANanaD3V/niri-nix";
+    dms = {
+      url = "github:AvengeMedia/DankMaterialShell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    dms-plugin-registry = {
+      url = "github:AvengeMedia/dms-plugin-registry";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     walls = {
@@ -31,6 +36,8 @@
           inputs.preservation.nixosModules.preservation
           inputs.sops-nix.nixosModules.default
           inputs.hjem.nixosModules.default
+          inputs.dms.nixosModules.dank-material-shell
+          inputs.dms-plugin-registry.modules.default
         ];
         specialArgs = {
           inherit inputs;

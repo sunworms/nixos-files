@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   services.greetd = {
@@ -13,9 +13,16 @@
 
   programs.niri = {
     enable = true;
-    package = inputs.niri-blur.packages.${pkgs.stdenv.hostPlatform.system}.default;
+    package = pkgs.niri-unstable;
     useNautilus = false;
   };
 
-  security.pam.services.gtklock = { };
+  programs.dank-material-shell = {
+    enable = true;
+    systemd.enable = true;
+    plugins = {
+      emojiLauncher.enable = true;
+      niriWindows.enable = true;
+    };
+  };
 }
