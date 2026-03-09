@@ -15,5 +15,6 @@ in
     (yazi.override {
       _7zz = pkgs._7zz-rar;
     })
+    ripdrag
   ];
 }
