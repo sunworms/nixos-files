@@ -31,6 +31,10 @@
     path = pkgs.vimPlugins.nvim-jdtls;
   }
   {
+    name = "conform.nvim";
+    path = pkgs.vimPlugins.conform-nvim;
+  }
+  {
     name = "blink.cmp";
     path = pkgs.vimPlugins.blink-cmp;
   }
