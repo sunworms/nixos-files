@@ -46,6 +46,15 @@ post_hook = 'niri msg action load-config-file'
 input_path = '~/.config/matugen/vesktop.css'
 output_path = '~/.config/matugen/midnight-discord.css'
 
+[templates.waybar]
+input_path = '~/.config/matugen/waybar.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill -SIGUSR2 waybar'
+
+[templates.yazi]
+input_path = '~/.config/matugen/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
+
 [templates.zathura]
 input_path = '~/.config/matugen/zathura-colors'
 output_path = '~/.config/zathura/zathurarc'

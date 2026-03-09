@@ -29,6 +29,9 @@ in
     tree
     ncdu
 
+    # glib
+    glib
+
     # Nix LSPs
     nil
     nixd

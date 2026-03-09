@@ -31,6 +31,8 @@
       ".config/mako"
       ".config/zathura"
       ".config/git"
+      ".config/waybar"
+      ".config/yazi"
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"

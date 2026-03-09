@@ -1,34 +1,6 @@
-# inputs
-[nixpkgs]
-src.git = "https://github.com/NixOS/nixpkgs"
-src.branch = "nixos-unstable"
-fetch.github = "NixOS/nixpkgs"
-
-[preservation]
-src.git = "https://github.com/nix-community/preservation"
-fetch.github = "nix-community/preservation"
-
-[sops-nix]
-src.git = "https://github.com/Mic92/sops-nix"
-fetch.github = "Mic92/sops-nix"
-
-[hjem]
-src.git = "https://github.com/feel-co/hjem"
-fetch.github = "feel-co/hjem"
-
-[niri-blur]
-src.git = "https://github.com/niri-wm/niri"
-src.branch = "wip/branch"
-fetch.github = "niri-wm/niri"
-
-# wallpapers
-[walls]
-src.git = "https://github.com/sunworms/walls"
-fetch.github = "sunworms/walls"
-
 # binary packages
 [eden]
-src.github_tag = "Eden-CI/Nightly"
+src.github = "Eden-CI/Nightly"
 src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
 src.to_pattern = 'v\1.\2/Eden-Linux-\2'
 fetch.url = "https://github.com/Eden-CI/Nightly/releases/download/$ver-amd64-clang-pgo.AppImage"

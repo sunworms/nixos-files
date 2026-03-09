@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-4dXwBYlqP11rkmkLp5QsPGhgMudJIZf8KEwaedoOUjw=",
+            "sha256": "sha256-z4plvAJ0kz1GLNp4jViZ8RYEQ4ogoe+Bfe37CUIJafc=",
             "type": "url",
-            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1772737843.529b069499/Eden-Linux-529b069499-amd64-clang-pgo.AppImage"
+            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1772994196.7a17fd8c71/Eden-Linux-7a17fd8c71-amd64-clang-pgo.AppImage"
         },
-        "version": "v1772737843.529b069499/Eden-Linux-529b069499"
+        "version": "v1772994196.7a17fd8c71/Eden-Linux-7a17fd8c71"
     },
     "helium": {
         "cargoLock": null,
@@ -28,131 +28,5 @@
             "url": "https://github.com/imputnet/helium-linux/releases/download/0.9.4.1/helium-0.9.4.1-x86_64.AppImage"
         },
         "version": "0.9.4.1"
-    },
-    "hjem": {
-        "cargoLock": null,
-        "date": "2026-03-09",
-        "extract": null,
-        "name": "hjem",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "feel-co",
-            "repo": "hjem",
-            "rev": "f484cac67cfaa6329e1d1fe00be57929ae744b25",
-            "sha256": "sha256-erwV+kMqRX/KhopMRq1B0MuyAGip4OkDG1nVJdW0nv8=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "f484cac67cfaa6329e1d1fe00be57929ae744b25"
-    },
-    "niri-blur": {
-        "cargoLock": null,
-        "date": "2026-03-07",
-        "extract": null,
-        "name": "niri-blur",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "niri-wm",
-            "repo": "niri",
-            "rev": "5393902dd22e9d540438ee178775f1e488eea724",
-            "sha256": "sha256-pFh7J2fBqsZvZrD26zfOj30qTM8+7PLZsNSLX+VOcUA=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "5393902dd22e9d540438ee178775f1e488eea724"
-    },
-    "nixpkgs": {
-        "cargoLock": null,
-        "date": "2026-03-06",
-        "extract": null,
-        "name": "nixpkgs",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "NixOS",
-            "repo": "nixpkgs",
-            "rev": "aca4d95fce4914b3892661bcb80b8087293536c6",
-            "sha256": "sha256-E1bxHxNKfDoQUuvriG71+f+s/NT0qWkImXsYZNFFfCs=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "aca4d95fce4914b3892661bcb80b8087293536c6"
-    },
-    "preservation": {
-        "cargoLock": null,
-        "date": "2025-09-09",
-        "extract": null,
-        "name": "preservation",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "nix-community",
-            "repo": "preservation",
-            "rev": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
-            "sha256": "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
-    },
-    "sops-nix": {
-        "cargoLock": null,
-        "date": "2026-03-08",
-        "extract": null,
-        "name": "sops-nix",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "Mic92",
-            "repo": "sops-nix",
-            "rev": "c8e69670b316d6788e435a3aa0bda74eb1b82cc0",
-            "sha256": "sha256-xTzsSd3r5HBeufSZ3fszAn0ldfKctvsYG7tT2YJg5gY=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "c8e69670b316d6788e435a3aa0bda74eb1b82cc0"
-    },
-    "walls": {
-        "cargoLock": null,
-        "date": "2026-03-07",
-        "extract": null,
-        "name": "walls",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "sunworms",
-            "repo": "walls",
-            "rev": "48310a35c59d81f2e34616ec48cbd43471cc322b",
-            "sha256": "sha256-vFsd9sIirZWMkGxVqqlknl51Tek7oIN73/C0kC48OHw=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "48310a35c59d81f2e34616ec48cbd43471cc322b"
     }
 }

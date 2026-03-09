@@ -8,10 +8,10 @@
 {
   eden = {
     pname = "eden";
-    version = "v1772737843.529b069499/Eden-Linux-529b069499";
+    version = "v1772994196.7a17fd8c71/Eden-Linux-7a17fd8c71";
     src = fetchurl {
-      url = "https://github.com/Eden-CI/Nightly/releases/download/v1772737843.529b069499/Eden-Linux-529b069499-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-4dXwBYlqP11rkmkLp5QsPGhgMudJIZf8KEwaedoOUjw=";
+      url = "https://github.com/Eden-CI/Nightly/releases/download/v1772994196.7a17fd8c71/Eden-Linux-7a17fd8c71-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-z4plvAJ0kz1GLNp4jViZ8RYEQ4ogoe+Bfe37CUIJafc=";
     };
   };
   helium = {
@@ -21,77 +21,5 @@
       url = "https://github.com/imputnet/helium-linux/releases/download/0.9.4.1/helium-0.9.4.1-x86_64.AppImage";
       sha256 = "sha256-N5gdWuxOrIudJx/4nYo4/SKSxakpTFvL4zzByv6Cnug=";
     };
-  };
-  hjem = {
-    pname = "hjem";
-    version = "f484cac67cfaa6329e1d1fe00be57929ae744b25";
-    src = fetchFromGitHub {
-      owner = "feel-co";
-      repo = "hjem";
-      rev = "f484cac67cfaa6329e1d1fe00be57929ae744b25";
-      fetchSubmodules = false;
-      sha256 = "sha256-erwV+kMqRX/KhopMRq1B0MuyAGip4OkDG1nVJdW0nv8=";
-    };
-    date = "2026-03-09";
-  };
-  niri-blur = {
-    pname = "niri-blur";
-    version = "5393902dd22e9d540438ee178775f1e488eea724";
-    src = fetchFromGitHub {
-      owner = "niri-wm";
-      repo = "niri";
-      rev = "5393902dd22e9d540438ee178775f1e488eea724";
-      fetchSubmodules = false;
-      sha256 = "sha256-pFh7J2fBqsZvZrD26zfOj30qTM8+7PLZsNSLX+VOcUA=";
-    };
-    date = "2026-03-07";
-  };
-  nixpkgs = {
-    pname = "nixpkgs";
-    version = "aca4d95fce4914b3892661bcb80b8087293536c6";
-    src = fetchFromGitHub {
-      owner = "NixOS";
-      repo = "nixpkgs";
-      rev = "aca4d95fce4914b3892661bcb80b8087293536c6";
-      fetchSubmodules = false;
-      sha256 = "sha256-E1bxHxNKfDoQUuvriG71+f+s/NT0qWkImXsYZNFFfCs=";
-    };
-    date = "2026-03-06";
-  };
-  preservation = {
-    pname = "preservation";
-    version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
-    src = fetchFromGitHub {
-      owner = "nix-community";
-      repo = "preservation";
-      rev = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
-      fetchSubmodules = false;
-      sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
-    };
-    date = "2025-09-09";
-  };
-  sops-nix = {
-    pname = "sops-nix";
-    version = "c8e69670b316d6788e435a3aa0bda74eb1b82cc0";
-    src = fetchFromGitHub {
-      owner = "Mic92";
-      repo = "sops-nix";
-      rev = "c8e69670b316d6788e435a3aa0bda74eb1b82cc0";
-      fetchSubmodules = false;
-      sha256 = "sha256-xTzsSd3r5HBeufSZ3fszAn0ldfKctvsYG7tT2YJg5gY=";
-    };
-    date = "2026-03-08";
-  };
-  walls = {
-    pname = "walls";
-    version = "48310a35c59d81f2e34616ec48cbd43471cc322b";
-    src = fetchFromGitHub {
-      owner = "sunworms";
-      repo = "walls";
-      rev = "48310a35c59d81f2e34616ec48cbd43471cc322b";
-      fetchSubmodules = false;
-      sha256 = "sha256-vFsd9sIirZWMkGxVqqlknl51Tek7oIN73/C0kC48OHw=";
-    };
-    date = "2026-03-07";
   };
 }
