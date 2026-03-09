@@ -185,7 +185,7 @@ layer-rule {
 }
 
 layer-rule {
-    match namespace="launcher"
+    match namespace="(waybar|launcher|notifications)"
     background-effect {
         blur true
     }
