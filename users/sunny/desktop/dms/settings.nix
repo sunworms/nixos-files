@@ -85,43 +85,43 @@
   privacyShowScreenShareIcon = false;
   controlCenterWidgets = [
     {
+      enabled = true;
       id = "volumeSlider";
-      enabled = true;
       width = 50;
     }
     {
+      enabled = true;
       id = "brightnessSlider";
-      enabled = true;
       width = 50;
     }
     {
+      enabled = true;
       id = "wifi";
-      enabled = true;
       width = 50;
     }
     {
+      enabled = true;
       id = "bluetooth";
-      enabled = true;
       width = 50;
     }
     {
+      enabled = true;
       id = "audioOutput";
-      enabled = true;
       width = 50;
     }
     {
+      enabled = true;
       id = "audioInput";
-      enabled = true;
       width = 50;
     }
     {
+      enabled = true;
       id = "nightMode";
-      enabled = true;
       width = 50;
     }
     {
-      id = "darkMode";
       enabled = true;
+      id = "darkMode";
       width = 50;
     }
   ];
@@ -206,20 +206,20 @@
   networkPreference = "auto";
   iconTheme = "candy-icons";
   cursorSettings = {
-    theme = "System Default";
-    size = 24;
-    niri = {
-      hideWhenTyping = false;
-      hideAfterInactiveMs = 0;
+    dwl = {
+      cursorHideTimeout = 0;
     };
     hyprland = {
       hideOnKeyPress = false;
       hideOnTouch = false;
       inactiveTimeout = 0;
     };
-    dwl = {
-      cursorHideTimeout = 0;
+    niri = {
+      hideAfterInactiveMs = 0;
+      hideWhenTyping = false;
     };
+    size = 24;
+    theme = "System Default";
   };
   launcherLogoMode = "os";
   launcherLogoCustomPath = "";
@@ -401,105 +401,105 @@
   displaySnapToEdge = true;
   barConfigs = [
     {
-      id = "default";
-      name = "Main Bar";
-      enabled = true;
-      position = 0;
-      screenPreferences = [
-        "all"
-      ];
-      showOnLastDisplay = true;
-      leftWidgets = [
-        {
-          id = "launcherButton";
-          enabled = true;
-        }
-        "workspaceSwitcher"
-        {
-          id = "focusedWindow";
-          enabled = true;
-          focusedWindowCompactMode = false;
-        }
-      ];
+      autoHide = false;
+      autoHideDelay = 250;
+      borderColor = "primary";
+      borderEnabled = false;
+      borderOpacity = 1;
+      borderThickness = 1;
+      bottomGap = 0;
       centerWidgets = [
         "music"
         "clock"
         "weather"
       ];
-      rightWidgets = [
-        {
-          id = "systemTray";
-          enabled = true;
-        }
-        {
-          id = "idleInhibitor";
-          enabled = true;
-        }
-        {
-          id = "clipboard";
-          enabled = true;
-        }
-        {
-          id = "cpuUsage";
-          enabled = true;
-        }
-        {
-          id = "memUsage";
-          enabled = true;
-        }
-        {
-          id = "notificationButton";
-          enabled = true;
-        }
-        {
-          id = "battery";
-          enabled = true;
-        }
-        {
-          id = "controlCenterButton";
-          enabled = true;
-        }
-      ];
-      spacing = 4;
-      innerPadding = 4;
-      bottomGap = 0;
-      transparency = 1;
-      widgetTransparency = 1;
-      squareCorners = false;
-      noBackground = false;
-      maximizeWidgetIcons = false;
-      maximizeWidgetText = false;
-      removeWidgetPadding = false;
-      widgetPadding = 8;
-      gothCornersEnabled = false;
+      clickThrough = false;
+      enabled = true;
+      fontScale = 1;
       gothCornerRadiusOverride = false;
       gothCornerRadiusValue = 12;
-      borderEnabled = false;
-      borderColor = "primary";
-      borderOpacity = 1;
-      borderThickness = 1;
-      widgetOutlineEnabled = false;
-      widgetOutlineColor = "primary";
-      widgetOutlineOpacity = 1;
-      widgetOutlineThickness = 1;
-      fontScale = 1;
+      gothCornersEnabled = false;
       iconScale = 1;
-      autoHide = false;
-      autoHideDelay = 250;
-      showOnWindowsOpen = false;
+      id = "default";
+      innerPadding = 4;
+      leftWidgets = [
+        {
+          enabled = true;
+          id = "launcherButton";
+        }
+        "workspaceSwitcher"
+        {
+          id = "focusedWindow";
+          enabled = true;
+          focusedWindowCompactMode = true;
+        }
+      ];
+      maximizeDetection = true;
+      maximizeWidgetIcons = false;
+      maximizeWidgetText = false;
+      name = "Main Bar";
+      noBackground = false;
       openOnOverview = false;
-      visible = true;
       popupGapsAuto = true;
       popupGapsManual = 4;
-      maximizeDetection = true;
+      position = 0;
+      removeWidgetPadding = false;
+      rightWidgets = [
+        {
+          enabled = true;
+          id = "systemTray";
+        }
+        {
+          enabled = true;
+          id = "idleInhibitor";
+        }
+        {
+          enabled = true;
+          id = "clipboard";
+        }
+        {
+          enabled = true;
+          id = "cpuUsage";
+        }
+        {
+          enabled = true;
+          id = "memUsage";
+        }
+        {
+          enabled = true;
+          id = "notificationButton";
+        }
+        {
+          enabled = true;
+          id = "battery";
+        }
+        {
+          enabled = true;
+          id = "controlCenterButton";
+        }
+      ];
+      screenPreferences = [
+        "all"
+      ];
       scrollEnabled = true;
       scrollXBehavior = "column";
       scrollYBehavior = "workspace";
-      shadowIntensity = 0;
-      shadowOpacity = 60;
       shadowColorMode = "default";
       shadowCustomColor = "#000000";
-      clickThrough = false;
+      shadowIntensity = 0;
+      shadowOpacity = 60;
+      showOnLastDisplay = true;
+      showOnWindowsOpen = false;
+      spacing = 4;
+      squareCorners = false;
+      transparency = 1;
+      visible = true;
+      widgetOutlineColor = "primary";
+      widgetOutlineEnabled = false;
+      widgetOutlineOpacity = 1;
+      widgetOutlineThickness = 1;
+      widgetPadding = 8;
+      widgetTransparency = 1;
     }
   ];
   desktopClockEnabled = false;

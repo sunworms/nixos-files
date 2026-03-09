@@ -47,9 +47,9 @@
   themeModeEndHour = 6;
   themeModeEndMinute = 0;
   themeModeShareGammaSettings = true;
-  weatherLocation = "New York, NY";
-  weatherCoordinates = "40.7128,-74.0060";
   pinnedApps = [ ];
+  weatherLocation = "Jatani, 752050";
+  weatherCoordinates = "20.1617378,85.7052429";
   barPinnedApps = [ ];
   dockLauncherPosition = 0;
   hiddenTrayIds = [ ];
