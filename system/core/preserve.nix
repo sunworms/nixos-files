@@ -19,7 +19,6 @@
         "/var/lib/containers"
         "/var/lib/libvirt"
         "/var/lib/sops-nix"
-        "/var/lib/cloudflare-warp"
         "/etc/NetworkManager/system-connections"
         {
           directory = "/var/cache/tuigreet";

@@ -19,19 +19,17 @@
       ".ssh"
 
       ".cache/nix"
+      ".cache/DankMaterialShell"
 
+      ".config/DankMaterialShell"
       ".config/matugen"
       ".config/nvim"
-      ".config/btop"
       ".config/net.imput.helium"
       ".config/fish"
       ".config/niri"
       ".config/foot"
-      ".config/fuzzel"
-      ".config/mako"
       ".config/zathura"
       ".config/git"
-      ".config/waybar"
       ".config/yazi"
 
       ".config/gtk-3.0"
@@ -48,13 +46,13 @@
       ".local/share/fish"
       ".local/share/azahar-emu"
       ".local/share/eden"
-      ".local/share/warp"
       ".local/share/SameBoy"
       ".local/share/osu"
       ".local/share/containers"
       ".local/share/keyrings"
 
       ".local/state/wireplumber"
+      ".local/state/DankMaterialShell"
     ];
     files = [ ];
   };
