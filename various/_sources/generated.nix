@@ -24,15 +24,15 @@
   };
   hjem = {
     pname = "hjem";
-    version = "7f2880d705edf541955d98f56cb78f9507384423";
+    version = "f484cac67cfaa6329e1d1fe00be57929ae744b25";
     src = fetchFromGitHub {
       owner = "feel-co";
       repo = "hjem";
-      rev = "7f2880d705edf541955d98f56cb78f9507384423";
+      rev = "f484cac67cfaa6329e1d1fe00be57929ae744b25";
       fetchSubmodules = false;
-      sha256 = "sha256-1RfmXbDIxgwP2/SrYSYd9zdArUaJEm6C3FXpdRlmeso=";
+      sha256 = "sha256-erwV+kMqRX/KhopMRq1B0MuyAGip4OkDG1nVJdW0nv8=";
     };
-    date = "2026-02-16";
+    date = "2026-03-09";
   };
   niri-blur = {
     pname = "niri-blur";
@@ -72,15 +72,15 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "1d9b98a29a45abe9c4d3174bd36de9f28755e3ff";
+    version = "c8e69670b316d6788e435a3aa0bda74eb1b82cc0";
     src = fetchFromGitHub {
       owner = "Mic92";
       repo = "sops-nix";
-      rev = "1d9b98a29a45abe9c4d3174bd36de9f28755e3ff";
+      rev = "c8e69670b316d6788e435a3aa0bda74eb1b82cc0";
       fetchSubmodules = false;
-      sha256 = "sha256-hmIvE/slLKEFKNEJz27IZ8BKlAaZDcjIHmkZ7GCEjfw=";
+      sha256 = "sha256-xTzsSd3r5HBeufSZ3fszAn0ldfKctvsYG7tT2YJg5gY=";
     };
-    date = "2026-03-02";
+    date = "2026-03-08";
   };
   walls = {
     pname = "walls";

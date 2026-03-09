@@ -31,7 +31,7 @@
     },
     "hjem": {
         "cargoLock": null,
-        "date": "2026-02-16",
+        "date": "2026-03-09",
         "extract": null,
         "name": "hjem",
         "passthru": null,
@@ -43,12 +43,12 @@
             "name": null,
             "owner": "feel-co",
             "repo": "hjem",
-            "rev": "7f2880d705edf541955d98f56cb78f9507384423",
-            "sha256": "sha256-1RfmXbDIxgwP2/SrYSYd9zdArUaJEm6C3FXpdRlmeso=",
+            "rev": "f484cac67cfaa6329e1d1fe00be57929ae744b25",
+            "sha256": "sha256-erwV+kMqRX/KhopMRq1B0MuyAGip4OkDG1nVJdW0nv8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "7f2880d705edf541955d98f56cb78f9507384423"
+        "version": "f484cac67cfaa6329e1d1fe00be57929ae744b25"
     },
     "niri-blur": {
         "cargoLock": null,
@@ -115,7 +115,7 @@
     },
     "sops-nix": {
         "cargoLock": null,
-        "date": "2026-03-02",
+        "date": "2026-03-08",
         "extract": null,
         "name": "sops-nix",
         "passthru": null,
@@ -127,12 +127,12 @@
             "name": null,
             "owner": "Mic92",
             "repo": "sops-nix",
-            "rev": "1d9b98a29a45abe9c4d3174bd36de9f28755e3ff",
-            "sha256": "sha256-hmIvE/slLKEFKNEJz27IZ8BKlAaZDcjIHmkZ7GCEjfw=",
+            "rev": "c8e69670b316d6788e435a3aa0bda74eb1b82cc0",
+            "sha256": "sha256-xTzsSd3r5HBeufSZ3fszAn0ldfKctvsYG7tT2YJg5gY=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "1d9b98a29a45abe9c4d3174bd36de9f28755e3ff"
+        "version": "c8e69670b316d6788e435a3aa0bda74eb1b82cc0"
     },
     "walls": {
         "cargoLock": null,
