@@ -5,6 +5,7 @@
     ./nix-settings.nix
     ./boot.nix
     ./virtualisation.nix
+    ./network.nix
     ./users.nix
     ./sops.nix
     ./preserve.nix
@@ -18,10 +19,6 @@
   # Polkit
   security.polkit.enable = true;
 
-  # Network
-  networking.networkmanager.enable = true;
-  services.cloudflare-warp.enable = true;
-
   # Disable man cache
   documentation.man.cache.enable = false;
 
@@ -29,10 +26,6 @@
   zramSwap = {
     enable = true;
     memoryPercent = 100;
-  };
-
-  environment.sessionVariables = {
-    IS_NIXOS = 1;
   };
 
   # Enable direnv
