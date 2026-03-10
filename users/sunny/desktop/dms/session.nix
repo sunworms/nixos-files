@@ -76,7 +76,7 @@
   hiddenInputDeviceNames = [ ];
   locale = "";
   timeLocale = "";
-  launcherLastMode = "plugins";
+  launcherLastMode = "apps";
   appDrawerLastMode = "apps";
   niriOverviewLastMode = "apps";
   configVersion = 3;
