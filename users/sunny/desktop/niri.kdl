@@ -134,7 +134,7 @@ window-rule {
 window-rule {
     match title="^Picture in picture$"
     open-floating true
-    default-floating-position x=1050 y=250
+    default-floating-position x=900 y=175
 }
 
 /-window-rule {
