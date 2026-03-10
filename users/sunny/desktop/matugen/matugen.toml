@@ -1,10 +1,6 @@
 [config]
 
 [templates]
-[templates.foot]
-input_path = '~/.config/matugen/foot.ini'
-output_path = '~/.config/foot/dank-colors.ini'
-
 [templates.neovim]
 input_path = '~/.config/matugen/template.lua'
 output_path = '~/.config/nvim/base16.lua'
@@ -13,10 +9,6 @@ post_hook = 'pkill -SIGUSR1 nvim'
 [templates.vesktop]
 input_path = '~/.config/matugen/vesktop.css'
 output_path = '~/.config/matugen/midnight-discord.css'
-
-[templates.yazi]
-input_path = '~/.config/matugen/yazi-theme.toml'
-output_path = '~/.config/yazi/theme.toml'
 
 [templates.zathura]
 input_path = '~/.config/matugen/zathura-colors'
