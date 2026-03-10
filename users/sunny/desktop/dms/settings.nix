@@ -446,36 +446,40 @@
       removeWidgetPadding = false;
       rightWidgets = [
         {
-          enabled = true;
           id = "systemTray";
+          enabled = true;
         }
         {
-          enabled = true;
           id = "idleInhibitor";
+          enabled = true;
         }
         {
-          enabled = true;
           id = "clipboard";
+          enabled = true;
         }
         {
-          enabled = true;
           id = "cpuUsage";
+          enabled = true;
         }
         {
-          enabled = true;
           id = "memUsage";
+          enabled = true;
         }
         {
+          id = "network_speed_monitor";
           enabled = true;
+        }
+        {
           id = "notificationButton";
+          enabled = true;
         }
         {
-          enabled = true;
           id = "battery";
+          enabled = true;
         }
         {
-          enabled = true;
           id = "controlCenterButton";
+          enabled = true;
         }
       ];
       screenPreferences = [
