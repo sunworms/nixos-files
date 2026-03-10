@@ -284,7 +284,7 @@
   matugenTemplateEquibop = true;
   matugenTemplateGhostty = true;
   matugenTemplateKitty = true;
-  matugenTemplateFoot = false;
+  matugenTemplateFoot = true;
   matugenTemplateAlacritty = true;
   matugenTemplateNeovim = false;
   matugenTemplateWezterm = true;
@@ -429,9 +429,9 @@
         }
         "workspaceSwitcher"
         {
-          id = "focusedWindow";
           enabled = true;
           focusedWindowCompactMode = true;
+          id = "focusedWindow";
         }
       ];
       maximizeDetection = true;
