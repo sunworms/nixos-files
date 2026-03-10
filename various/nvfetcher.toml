@@ -8,7 +8,3 @@ fetch.url = "https://github.com/Eden-CI/Nightly/releases/download/$ver-amd64-cla
 [helium]
 src.github = "imputnet/helium-linux"
 fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"
-
-# [glide]
-# src.github = "glide-browser/glide"
-# fetch.url = "https://github.com/glide-browser/glide/releases/download/$ver/glide.linux-x86_64.tar.xz"
