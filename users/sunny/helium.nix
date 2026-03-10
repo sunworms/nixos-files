@@ -26,9 +26,6 @@ appimageTools.wrapType2 {
         --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations --enable-wayland-ime=true}}"
 
     install -m 444 -D ${appimageContents}/${pname}.desktop -t $out/share/applications
-    substituteInPlace $out/share/applications/${pname}.desktop \
-      --replace-fail "Exec=helium" "Exec=helium --proxy-server='socks5://localhost:9063'"
-
     cp -r ${appimageContents}/usr/share/icons $out/share
   '';
 

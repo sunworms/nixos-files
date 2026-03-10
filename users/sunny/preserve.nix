@@ -21,10 +21,12 @@
       ".cache/nix"
       ".cache/DankMaterialShell"
 
+      ".config/net.imput.helium"
+      ".config/helium-tor"
+
       ".config/DankMaterialShell"
       ".config/matugen"
       ".config/nvim"
-      ".config/net.imput.helium"
       ".config/fish"
       ".config/niri"
       ".config/foot"
