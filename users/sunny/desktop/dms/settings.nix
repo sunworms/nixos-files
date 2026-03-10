@@ -243,8 +243,8 @@
   soundNewNotification = true;
   soundVolumeChanged = true;
   soundPluggedIn = true;
-  acMonitorTimeout = 0;
-  acLockTimeout = 0;
+  acMonitorTimeout = 600;
+  acLockTimeout = 300;
   acSuspendTimeout = 0;
   acSuspendBehavior = 0;
   acProfileName = "";
@@ -254,7 +254,7 @@
   batterySuspendBehavior = 0;
   batteryProfileName = "";
   batteryChargeLimit = 100;
-  lockBeforeSuspend = false;
+  lockBeforeSuspend = true;
   loginctlLockIntegration = true;
   fadeToLockEnabled = true;
   fadeToLockGracePeriod = 5;
