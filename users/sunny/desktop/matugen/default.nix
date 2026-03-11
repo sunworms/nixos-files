@@ -4,7 +4,7 @@
   xdg.config.files = {
     "matugen/config.toml".source = ./matugen.toml;
     "matugen/template.lua".source = ./template.lua;
-    "matugen/vesktop.css".source = ./vesktop.css;
+    "matugen/spicetify.ini".source = ./spicetify.ini;
     "matugen/zathura-colors".source = ./zathura-colors;
   };
 }

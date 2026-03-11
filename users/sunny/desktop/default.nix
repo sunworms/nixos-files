@@ -43,6 +43,7 @@ in
     "foot/foot.ini".source = ./foot.ini;
     "git/config".source = ./gitconfig;
     "hyfetch.json".source = ./hyfetch.json;
+    "spicetify/config-xpui.ini".source = ./spicetify-config-xpui.ini;
     "niri/config.kdl".text = validatedConfigFor niri-unstable (builtins.readFile ./niri.kdl);
 
     "mimeapps.list".source = ./mimeapps.list;

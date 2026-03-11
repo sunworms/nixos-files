@@ -16,7 +16,11 @@
       "Pictures"
       "Videos"
       "VMs"
+
       ".ssh"
+      ".spicetify"
+      ".var/app"
+      ".local/share/flatpak"
 
       ".cache/nix"
       ".cache/DankMaterialShell"
@@ -26,6 +30,7 @@
 
       ".config/DankMaterialShell"
       ".config/matugen"
+      ".config/spicetify"
       ".config/nvim"
       ".config/fish"
       ".config/niri"
@@ -33,6 +38,7 @@
       ".config/zathura"
       ".config/git"
       ".config/yazi"
+      ".config/vesktop"
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"

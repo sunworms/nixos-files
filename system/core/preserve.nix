@@ -19,6 +19,7 @@
         "/var/lib/containers"
         "/var/lib/libvirt"
         "/var/lib/sops-nix"
+        "/var/lib/flatpak"
         "/etc/NetworkManager/system-connections"
         {
           directory = "/var/cache/tuigreet";

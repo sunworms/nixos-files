@@ -21,6 +21,7 @@
       url = "github:AvengeMedia/dms-plugin-registry";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     walls = {
       url = "github:sunworms/walls";
       flake = false;
@@ -38,6 +39,7 @@
           inputs.hjem.nixosModules.default
           inputs.dms.nixosModules.dank-material-shell
           inputs.dms-plugin-registry.modules.default
+          inputs.nix-flatpak.nixosModules.nix-flatpak
         ];
         specialArgs = {
           inherit inputs;

@@ -150,6 +150,7 @@ window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
     draw-border-with-background false
+    opacity 0.95
 }
 
 // layer rules
@@ -157,6 +158,11 @@ window-rule {
 layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^dms:"
+    opacity 0.95
 }
 
 prefer-no-csd
@@ -171,6 +177,8 @@ binds {
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Super+Shift+S hotkey-overlay-title="DMS Settings" { spawn "dms" "ipc" "call" "settings" "toggle"; }
+    Super+Shift+I hotkey-overlay-title="Inhibit Idle" { spawn "dms" "ipc" "call" "inhibit" "toggle"; }
+    Mod+P hotkey-overlay-title="Color Picker" { spawn-sh "dms color pick --autocopy"; }
 
     XF86AudioRaiseVolume { spawn "dms" "ipc" "call" "audio" "increment" "1"; }
     XF86AudioLowerVolume { spawn "dms" "ipc" "call" "audio" "decrement" "1"; }

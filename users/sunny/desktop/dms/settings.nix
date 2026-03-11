@@ -292,10 +292,12 @@
   matugenTemplateKcolorscheme = true;
   matugenTemplateVscode = true;
   matugenTemplateEmacs = true;
+  matugenTemplateZed = true;
   showDock = false;
   dockAutoHide = false;
   dockSmartAutoHide = false;
   dockGroupByApp = false;
+  dockRestoreSpecialWorkspaceOnClick = false;
   dockOpenOnOverview = true;
   dockPosition = 1;
   dockSpacing = 4;
@@ -356,6 +358,7 @@
   notificationHistorySaveNormal = true;
   notificationHistorySaveCritical = true;
   notificationRules = [ ];
+  notificationFocusedMonitor = false;
   osdAlwaysShowValue = false;
   osdPosition = 5;
   osdVolumeEnabled = true;
@@ -409,7 +412,11 @@
       borderThickness = 1;
       bottomGap = 0;
       centerWidgets = [
-        "music"
+        {
+          id = "music";
+          enabled = true;
+          mediaSize = 0;
+        }
         "clock"
         "weather"
       ];
@@ -446,40 +453,32 @@
       removeWidgetPadding = false;
       rightWidgets = [
         {
+          enabled = true;
           id = "systemTray";
-          enabled = true;
         }
         {
-          id = "idleInhibitor";
           enabled = true;
-        }
-        {
-          id = "clipboard";
-          enabled = true;
-        }
-        {
           id = "cpuUsage";
-          enabled = true;
         }
         {
+          enabled = true;
           id = "memUsage";
-          enabled = true;
         }
         {
+          enabled = true;
           id = "network_speed_monitor";
-          enabled = true;
         }
         {
+          enabled = true;
           id = "notificationButton";
-          enabled = true;
         }
         {
+          enabled = true;
           id = "battery";
-          enabled = true;
         }
         {
-          id = "controlCenterButton";
           enabled = true;
+          id = "controlCenterButton";
         }
       ];
       screenPreferences = [

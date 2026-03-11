@@ -6,9 +6,9 @@ input_path = '~/.config/matugen/template.lua'
 output_path = '~/.config/nvim/base16.lua'
 post_hook = 'pkill -SIGUSR1 nvim'
 
-[templates.vesktop]
-input_path = '~/.config/matugen/vesktop.css'
-output_path = '~/.config/matugen/midnight-discord.css'
+[templates.spicetify]
+input_path = '~/.config/matugen/spicetify.ini'
+output_path = '~/.config/spicetify/Themes/Sleek/color.ini'
 
 [templates.zathura]
 input_path = '~/.config/matugen/zathura-colors'
