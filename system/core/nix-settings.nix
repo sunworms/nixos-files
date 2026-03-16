@@ -2,7 +2,7 @@
 
 {
   nix = {
-    package = pkgs.lixPackageSets.git.lix;
+    package = pkgs.nixVersions.git;
     channel.enable = false;
     settings = {
       experimental-features = [
