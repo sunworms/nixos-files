@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, sources, ... }:
 
 {
   services.greetd = {
@@ -13,7 +13,7 @@
 
   programs.niri = {
     enable = true;
-    package = pkgs.niri-unstable;
+    package = (pkgs.callPackage ../../niri.nix { inherit sources; });
     useNautilus = false;
   };
 

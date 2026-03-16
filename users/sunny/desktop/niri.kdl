@@ -100,6 +100,11 @@ layout {
     }
 }
 
+blur {
+    passes 2
+    offset 3
+}
+
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
 
@@ -150,7 +155,24 @@ window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
     draw-border-with-background false
-    opacity 0.95
+}
+
+window-rule {
+    match is-active=true
+    opacity 0.9
+    background-effect {
+        blur true
+        xray true
+    }
+}
+
+window-rule {
+    match is-active=false
+    opacity 0.8
+    background-effect {
+        blur true
+        xray true
+    }
 }
 
 // layer rules
@@ -158,11 +180,6 @@ window-rule {
 layer-rule {
     match namespace="^quickshell$"
     place-within-backdrop true
-}
-
-layer-rule {
-    match namespace="^dms:"
-    opacity 0.95
 }
 
 prefer-no-csd
