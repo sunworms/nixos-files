@@ -6,6 +6,7 @@
     channel.enable = false;
     settings = {
       experimental-features = [
+        "flakes"
         "nix-command"
       ];
       trusted-users = [

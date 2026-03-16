@@ -6,30 +6,6 @@
   dockerTools,
 }:
 {
-  dms = {
-    pname = "dms";
-    version = "e7c8d208e2d86108b6a55f93cceacf50acc61a32";
-    src = fetchFromGitHub {
-      owner = "AvengeMedia";
-      repo = "DankMaterialShell";
-      rev = "e7c8d208e2d86108b6a55f93cceacf50acc61a32";
-      fetchSubmodules = false;
-      sha256 = "sha256-CHfOZL15pE302x0a6q8DTOhoxJw9S4mJj/b0cW+tEk4=";
-    };
-    date = "2026-03-15";
-  };
-  dms-plugin-registry = {
-    pname = "dms-plugin-registry";
-    version = "8c189157a3b8851ae05db1a27a3f3de0801dab77";
-    src = fetchFromGitHub {
-      owner = "AvengeMedia";
-      repo = "dms-plugin-registry";
-      rev = "8c189157a3b8851ae05db1a27a3f3de0801dab77";
-      fetchSubmodules = false;
-      sha256 = "sha256-TMr51otfujj9MXHDmN3o37xbkuStzAq+STPnkOZLon4=";
-    };
-    date = "2026-03-16";
-  };
   eden = {
     pname = "eden";
     version = "v1773599324.f0a4ac7359/Eden-Linux-f0a4ac7359";
@@ -38,20 +14,6 @@
       sha256 = "sha256-3rkqKzTAwlgIfioHqJ7v103mVrFqSsr66nCcdl+2Z9I=";
     };
   };
-  flake-compat = {
-    pname = "flake-compat";
-    version = "549f2762aebeff29a2e5ece7a7dc0f955281a1d1";
-    src = fetchgit {
-      url = "https://git.lix.systems/lix-project/flake-compat";
-      rev = "549f2762aebeff29a2e5ece7a7dc0f955281a1d1";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sparseCheckout = [ ];
-      sha256 = "sha256-NKw96t+BgHIYzHUjkTK95FqYRVKB8DHpVhefWSz/kTw=";
-    };
-    date = "2025-07-05";
-  };
   helium = {
     pname = "helium";
     version = "0.10.5.1";
@@ -59,77 +21,5 @@
       url = "https://github.com/imputnet/helium-linux/releases/download/0.10.5.1/helium-0.10.5.1-x86_64.AppImage";
       sha256 = "sha256-c/ea8C1XjTkBo0/ujGHEbKWyCmRMxyuiuOzAO9AMf1o=";
     };
-  };
-  hjem = {
-    pname = "hjem";
-    version = "4d0d0e4dc99245ffaa0d51acf69e288fb59fb0f1";
-    src = fetchFromGitHub {
-      owner = "feel-co";
-      repo = "hjem";
-      rev = "4d0d0e4dc99245ffaa0d51acf69e288fb59fb0f1";
-      fetchSubmodules = false;
-      sha256 = "sha256-bPTW00Tkp8c7HJbhNC7wLO3fcngFXBpuX7LZByE/F8c=";
-    };
-    date = "2026-03-13";
-  };
-  niri-blur = {
-    pname = "niri-blur";
-    version = "92c168f56d6653c4899222c235fdd6467c1c351b";
-    src = fetchFromGitHub {
-      owner = "niri-wm";
-      repo = "niri";
-      rev = "92c168f56d6653c4899222c235fdd6467c1c351b";
-      fetchSubmodules = false;
-      sha256 = "sha256-q3NwYzd/qxcCr2m37uQCnc5BHvC3hsJ4fK5KN5aNSGc=";
-    };
-    date = "2026-03-15";
-  };
-  nixpkgs = {
-    pname = "nixpkgs";
-    version = "5a88de74db0e948139be4b46f9a94d64aa11391c";
-    src = fetchFromGitHub {
-      owner = "NixOS";
-      repo = "nixpkgs";
-      rev = "5a88de74db0e948139be4b46f9a94d64aa11391c";
-      fetchSubmodules = false;
-      sha256 = "sha256-LWvZj9Bvm1EuoO6zbX4yjZebwnZNfeTbmCJGS7RGQ3Y=";
-    };
-    date = "2026-03-15";
-  };
-  preservation = {
-    pname = "preservation";
-    version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
-    src = fetchFromGitHub {
-      owner = "nix-community";
-      repo = "preservation";
-      rev = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
-      fetchSubmodules = false;
-      sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
-    };
-    date = "2025-09-09";
-  };
-  sops-nix = {
-    pname = "sops-nix";
-    version = "c469b6885f0dcd5c7c56bd935a0f08dbcd9e79e1";
-    src = fetchFromGitHub {
-      owner = "Mic92";
-      repo = "sops-nix";
-      rev = "c469b6885f0dcd5c7c56bd935a0f08dbcd9e79e1";
-      fetchSubmodules = false;
-      sha256 = "sha256-wa/++bL2QeMUreNFBZEWluQfOYB0MnQIeGNMuaX9sfs=";
-    };
-    date = "2026-03-15";
-  };
-  walls = {
-    pname = "walls";
-    version = "48310a35c59d81f2e34616ec48cbd43471cc322b";
-    src = fetchFromGitHub {
-      owner = "sunworms";
-      repo = "walls";
-      rev = "48310a35c59d81f2e34616ec48cbd43471cc322b";
-      fetchSubmodules = false;
-      sha256 = "sha256-vFsd9sIirZWMkGxVqqlknl51Tek7oIN73/C0kC48OHw=";
-    };
-    date = "2026-03-07";
   };
 }

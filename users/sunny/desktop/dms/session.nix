@@ -1,9 +1,9 @@
-{ sources }:
+{ inputs }:
 
 {
   isLightMode = false;
   doNotDisturb = false;
-  wallpaperPath = "${sources.walls.src}/hunline/tsukumo-1.png";
+  wallpaperPath = "${inputs.walls}/hunline/tsukumo-1.png";
   perMonitorWallpaper = false;
   monitorWallpapers = { };
   perModeWallpaper = false;
