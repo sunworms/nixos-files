@@ -5,7 +5,7 @@ require("conform").setup({
     rust = { "rustfmt" },
     java = { "google-java-format" },
     typst = { "typstyle" },
-    tex = { "texfmt" },
+    tex = { "tex-fmt" },
   },
 })
 
