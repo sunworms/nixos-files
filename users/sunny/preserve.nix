@@ -20,6 +20,7 @@
       ".ssh"
 
       ".cache/nix"
+      ".cache/typst"
       ".cache/DankMaterialShell"
 
       ".config/net.imput.helium"
