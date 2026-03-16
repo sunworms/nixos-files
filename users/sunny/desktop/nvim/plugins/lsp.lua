@@ -31,13 +31,3 @@ vim.api.nvim_create_autocmd("CursorHold", {
     vim.diagnostic.open_float(nil, { focusable = false })
   end,
 })
-
-vim.keymap.set('n', '<leader>tp', function()
-  local client = vim.lsp.get_clients({ name = "tinymist" })[1]
-  if client then
-    client:exec_cmd({ command = "tinymist.startDefaultPreview", title = "Preview" }, { bufnr = 0 })
-  end
-end, { desc = "Typst: Start Preview" })
-
-vim.keymap.set('n', '<leader>tm', ':LspTinymistPinMain<CR>', { desc = "Typst: Pin Main File" })
-

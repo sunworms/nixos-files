@@ -61,4 +61,16 @@
     name = "nvim-treesitter";
     path = pkgs.vimPlugins.nvim-treesitter.withAllGrammars;
   }
+  {
+    name = "typst-preview.nvim";
+    path = (
+      pkgs.vimPlugins.typst-preview-nvim.overrideAttrs {
+        postPatch = ''
+          substituteInPlace lua/typst-preview/config.lua \
+            --replace "['tinymist'] = nil" "['tinymist'] = 'tinymist'" \
+            --replace "['websocat'] = nil" "['websocat'] = 'websocat'"
+        '';
+      }
+    );
+  }
 ]
