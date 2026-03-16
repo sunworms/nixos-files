@@ -138,6 +138,7 @@
   showOccupiedWorkspacesOnly = true;
   reverseScrolling = false;
   dwlShowAllTags = false;
+  workspaceActiveAppHighlightEnabled = false;
   workspaceColorMode = "default";
   workspaceOccupiedColorMode = "none";
   workspaceUnfocusedColorMode = "default";
@@ -203,7 +204,7 @@
   dankLauncherV2UnloadOnClose = false;
   useAutoLocation = false;
   weatherEnabled = true;
-  networkPreference = "auto";
+  networkPreference = "wifi";
   iconTheme = "candy-icons";
   cursorSettings = {
     dwl = {
@@ -262,7 +263,11 @@
   fadeToDpmsGracePeriod = 5;
   launchPrefix = "";
   brightnessDevicePins = { };
-  wifiNetworkPins = { };
+  wifiNetworkPins = {
+    preferredWifi = [
+      "brain worms den"
+    ];
+  };
   bluetoothDevicePins = { };
   audioInputDevicePins = { };
   audioOutputDevicePins = { };
@@ -293,6 +298,16 @@
   matugenTemplateVscode = true;
   matugenTemplateEmacs = true;
   matugenTemplateZed = true;
+  matugenTemplateNeovimSettings = {
+    dark = {
+      baseTheme = "github_dark";
+      harmony = 0.5;
+    };
+    light = {
+      baseTheme = "github_light";
+      harmony = 0.5;
+    };
+  };
   showDock = false;
   dockAutoHide = false;
   dockSmartAutoHide = false;
@@ -412,11 +427,7 @@
       borderThickness = 1;
       bottomGap = 0;
       centerWidgets = [
-        {
-          id = "music";
-          enabled = true;
-          mediaSize = 0;
-        }
+        "music"
         "clock"
         "weather"
       ];
@@ -425,10 +436,10 @@
       fontScale = 1;
       gothCornerRadiusOverride = false;
       gothCornerRadiusValue = 12;
-      gothCornersEnabled = false;
+      gothCornersEnabled = true;
       iconScale = 1;
       id = "default";
-      innerPadding = 4;
+      innerPadding = 0;
       leftWidgets = [
         {
           enabled = true;
@@ -449,7 +460,7 @@
       openOnOverview = false;
       popupGapsAuto = true;
       popupGapsManual = 4;
-      position = 0;
+      position = 1;
       removeWidgetPadding = false;
       rightWidgets = [
         {
@@ -458,15 +469,19 @@
         }
         {
           enabled = true;
+          id = "idleInhibitor";
+        }
+        {
+          enabled = true;
+          id = "clipboard";
+        }
+        {
+          enabled = true;
           id = "cpuUsage";
         }
         {
           enabled = true;
           id = "memUsage";
-        }
-        {
-          enabled = true;
-          id = "network_speed_monitor";
         }
         {
           enabled = true;
@@ -493,8 +508,8 @@
       shadowOpacity = 60;
       showOnLastDisplay = true;
       showOnWindowsOpen = false;
-      spacing = 4;
-      squareCorners = false;
+      spacing = 0;
+      squareCorners = true;
       transparency = 1;
       visible = true;
       widgetOutlineColor = "primary";
