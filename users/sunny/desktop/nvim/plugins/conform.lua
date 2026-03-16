@@ -4,6 +4,8 @@ require("conform").setup({
     go = { "goimports", "gofmt" },
     rust = { "rustfmt" },
     java = { "google-java-format" },
+    typst = { "typstyle" },
+    tex = { "texfmt" },
   },
 })
 
