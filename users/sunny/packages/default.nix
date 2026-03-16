@@ -9,6 +9,7 @@
     wineWow64Packages.stagingFull
     winetricks
     (callPackage ./eden.nix { })
+    pcsx2
     ppsspp-sdl-wayland
     melonds
     azahar
@@ -25,6 +26,5 @@
     })
     satty
     zathura
-    vesktop
   ];
 }
