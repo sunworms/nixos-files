@@ -314,7 +314,7 @@
   dockGroupByApp = false;
   dockRestoreSpecialWorkspaceOnClick = false;
   dockOpenOnOverview = true;
-  dockPosition = 1;
+  dockPosition = 3;
   dockSpacing = 4;
   dockBottomGap = 0;
   dockMargin = 0;
@@ -427,7 +427,11 @@
       borderThickness = 1;
       bottomGap = 0;
       centerWidgets = [
-        "music"
+        {
+          id = "music";
+          enabled = true;
+          mediaSize = 0;
+        }
         "clock"
         "weather"
       ];
@@ -466,14 +470,6 @@
         {
           enabled = true;
           id = "systemTray";
-        }
-        {
-          enabled = true;
-          id = "idleInhibitor";
-        }
-        {
-          enabled = true;
-          id = "clipboard";
         }
         {
           enabled = true;
