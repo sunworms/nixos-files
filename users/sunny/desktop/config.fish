@@ -20,7 +20,7 @@ if status is-interactive
     abbr --add -- ls 'ls --color=tty'
     abbr --add -- osc 'nh clean all && sudo nix store optimise'
     abbr --add -- oss 'nh os switch --ask . -H'
-    abbr --add -- ost 'nh os test --ask -f . -H'
+    abbr --add -- ost 'nh os test --ask . -H'
     alias vi 'nvim'
     alias vim 'nvim'
 
