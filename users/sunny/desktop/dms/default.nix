@@ -1,9 +1,9 @@
-{ pkgs, inputs, ... }:
+{ pkgs, sources, ... }:
 
 {
   xdg.state.files."DankMaterialShell/session.json".source =
     (pkgs.formats.json { }).generate "session.json"
-      (import ./session.nix { inherit inputs; });
+      (import ./session.nix { inherit sources; });
 
   xdg.config.files = {
     "DankMaterialShell/settings.json".source = (pkgs.formats.json { }).generate "settings.json" (

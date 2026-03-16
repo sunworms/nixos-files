@@ -1,12 +1,4 @@
-{
-  pkgs,
-  inputs,
-  ...
-}:
-let
-  inherit (inputs.niri-nix.lib) validatedConfigFor;
-  inherit (inputs.niri-nix.packages.${pkgs.stdenv.hostPlatform.system}) niri-unstable;
-in
+{ pkgs, ... }:
 {
   imports = [
     ./dms
@@ -43,8 +35,7 @@ in
     "foot/foot.ini".source = ./foot.ini;
     "git/config".source = ./gitconfig;
     "hyfetch.json".source = ./hyfetch.json;
-    "spicetify/config-xpui.ini".source = ./spicetify-config-xpui.ini;
-    "niri/config.kdl".text = validatedConfigFor niri-unstable (builtins.readFile ./niri.kdl);
+    "niri/config.kdl".source = ./niri.kdl;
 
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
@@ -56,6 +47,6 @@ in
     foot
     hyfetch
     git
-    xwayland-satellite-unstable
+    xwayland-satellite
   ];
 }

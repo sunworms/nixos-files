@@ -1,4 +1,46 @@
 {
+    "dms": {
+        "cargoLock": null,
+        "date": "2026-03-15",
+        "extract": null,
+        "name": "dms",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "AvengeMedia",
+            "repo": "DankMaterialShell",
+            "rev": "e7c8d208e2d86108b6a55f93cceacf50acc61a32",
+            "sha256": "sha256-CHfOZL15pE302x0a6q8DTOhoxJw9S4mJj/b0cW+tEk4=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "e7c8d208e2d86108b6a55f93cceacf50acc61a32"
+    },
+    "dms-plugin-registry": {
+        "cargoLock": null,
+        "date": "2026-03-16",
+        "extract": null,
+        "name": "dms-plugin-registry",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "AvengeMedia",
+            "repo": "dms-plugin-registry",
+            "rev": "8c189157a3b8851ae05db1a27a3f3de0801dab77",
+            "sha256": "sha256-TMr51otfujj9MXHDmN3o37xbkuStzAq+STPnkOZLon4=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "8c189157a3b8851ae05db1a27a3f3de0801dab77"
+    },
     "eden": {
         "cargoLock": null,
         "date": null,
@@ -8,11 +50,31 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-nMiy0G5VelJQb2qxpdtx9rd5iNk5BBo9dBEtALZTYlM=",
+            "sha256": "sha256-3rkqKzTAwlgIfioHqJ7v103mVrFqSsr66nCcdl+2Z9I=",
             "type": "url",
-            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1773167852.8678cb06eb/Eden-Linux-8678cb06eb-amd64-clang-pgo.AppImage"
+            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1773599324.f0a4ac7359/Eden-Linux-f0a4ac7359-amd64-clang-pgo.AppImage"
         },
-        "version": "v1773167852.8678cb06eb/Eden-Linux-8678cb06eb"
+        "version": "v1773599324.f0a4ac7359/Eden-Linux-f0a4ac7359"
+    },
+    "flake-compat": {
+        "cargoLock": null,
+        "date": "2025-07-05",
+        "extract": null,
+        "name": "flake-compat",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "549f2762aebeff29a2e5ece7a7dc0f955281a1d1",
+            "sha256": "sha256-NKw96t+BgHIYzHUjkTK95FqYRVKB8DHpVhefWSz/kTw=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://git.lix.systems/lix-project/flake-compat"
+        },
+        "version": "549f2762aebeff29a2e5ece7a7dc0f955281a1d1"
     },
     "helium": {
         "cargoLock": null,
@@ -23,10 +85,136 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-c9eBukRn6BIHb23bt/P+gRLjHa/Gf405rxkSC5qPjyA=",
+            "sha256": "sha256-c/ea8C1XjTkBo0/ujGHEbKWyCmRMxyuiuOzAO9AMf1o=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.10.1.1/helium-0.10.1.1-x86_64.AppImage"
+            "url": "https://github.com/imputnet/helium-linux/releases/download/0.10.5.1/helium-0.10.5.1-x86_64.AppImage"
         },
-        "version": "0.10.1.1"
+        "version": "0.10.5.1"
+    },
+    "hjem": {
+        "cargoLock": null,
+        "date": "2026-03-13",
+        "extract": null,
+        "name": "hjem",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "feel-co",
+            "repo": "hjem",
+            "rev": "4d0d0e4dc99245ffaa0d51acf69e288fb59fb0f1",
+            "sha256": "sha256-bPTW00Tkp8c7HJbhNC7wLO3fcngFXBpuX7LZByE/F8c=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "4d0d0e4dc99245ffaa0d51acf69e288fb59fb0f1"
+    },
+    "niri-blur": {
+        "cargoLock": null,
+        "date": "2026-03-15",
+        "extract": null,
+        "name": "niri-blur",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "niri-wm",
+            "repo": "niri",
+            "rev": "92c168f56d6653c4899222c235fdd6467c1c351b",
+            "sha256": "sha256-q3NwYzd/qxcCr2m37uQCnc5BHvC3hsJ4fK5KN5aNSGc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "92c168f56d6653c4899222c235fdd6467c1c351b"
+    },
+    "nixpkgs": {
+        "cargoLock": null,
+        "date": "2026-03-15",
+        "extract": null,
+        "name": "nixpkgs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "5a88de74db0e948139be4b46f9a94d64aa11391c",
+            "sha256": "sha256-LWvZj9Bvm1EuoO6zbX4yjZebwnZNfeTbmCJGS7RGQ3Y=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "5a88de74db0e948139be4b46f9a94d64aa11391c"
+    },
+    "preservation": {
+        "cargoLock": null,
+        "date": "2025-09-09",
+        "extract": null,
+        "name": "preservation",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "nix-community",
+            "repo": "preservation",
+            "rev": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
+            "sha256": "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
+    },
+    "sops-nix": {
+        "cargoLock": null,
+        "date": "2026-03-15",
+        "extract": null,
+        "name": "sops-nix",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Mic92",
+            "repo": "sops-nix",
+            "rev": "c469b6885f0dcd5c7c56bd935a0f08dbcd9e79e1",
+            "sha256": "sha256-wa/++bL2QeMUreNFBZEWluQfOYB0MnQIeGNMuaX9sfs=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "c469b6885f0dcd5c7c56bd935a0f08dbcd9e79e1"
+    },
+    "walls": {
+        "cargoLock": null,
+        "date": "2026-03-07",
+        "extract": null,
+        "name": "walls",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "sunworms",
+            "repo": "walls",
+            "rev": "48310a35c59d81f2e34616ec48cbd43471cc322b",
+            "sha256": "sha256-vFsd9sIirZWMkGxVqqlknl51Tek7oIN73/C0kC48OHw=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "48310a35c59d81f2e34616ec48cbd43471cc322b"
     }
 }

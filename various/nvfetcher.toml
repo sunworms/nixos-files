@@ -1,3 +1,42 @@
+# repos
+[nixpkgs]
+src.git = "https://github.com/NixOS/nixpkgs"
+src.branch = "nixos-unstable"
+fetch.github = "NixOS/nixpkgs"
+
+[preservation]
+src.git = "https://github.com/nix-community/preservation"
+fetch.github = "nix-community/preservation"
+
+[sops-nix]
+src.git = "https://github.com/Mic92/sops-nix"
+fetch.github = "Mic92/sops-nix"
+
+[hjem]
+src.git = "https://github.com/feel-co/hjem"
+fetch.github = "feel-co/hjem"
+
+[flake-compat]
+src.git = "https://git.lix.systems/lix-project/flake-compat"
+fetch.git = "https://git.lix.systems/lix-project/flake-compat"
+
+[dms]
+src.git = "https://github.com/AvengeMedia/DankMaterialShell"
+fetch.github = "AvengeMedia/DankMaterialShell"
+
+[dms-plugin-registry]
+src.git = "https://github.com/AvengeMedia/dms-plugin-registry"
+fetch.github = "AvengeMedia/dms-plugin-registry"
+
+[walls]
+src.git = "https://github.com/sunworms/walls"
+fetch.github = "sunworms/walls"
+
+[niri-blur]
+src.git = "https://github.com/niri-wm/niri"
+src.branch = "wip/branch"
+fetch.github = "niri-wm/niri"
+
 # binary packages
 [eden]
 src.github = "Eden-CI/Nightly"
