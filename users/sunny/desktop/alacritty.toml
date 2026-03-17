@@ -1,0 +1,7 @@
+[general]
+import = [
+    "~/.config/alacritty/dank-theme.toml"
+]
+
+[font]
+normal = { family = "Aporetic Sans Mono", style = "Regular" }

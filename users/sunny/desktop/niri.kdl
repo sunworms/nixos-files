@@ -187,8 +187,7 @@ prefer-no-csd
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
-    Mod+B hotkey-overlay-title="Open Helium with Tor" { spawn-sh "helium --user-data-dir='$HOME/.config/helium-tor' --no-first-run --proxy-server='socks5://localhost:9063'"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboard" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }

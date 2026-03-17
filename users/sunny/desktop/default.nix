@@ -4,7 +4,6 @@
     ./dms
     ./nvim
     ./matugen
-    ./yazi
   ];
 
   files = {
@@ -32,7 +31,7 @@
 
   xdg.config.files = {
     "fish/config.fish".source = ./config.fish;
-    "foot/foot.ini".source = ./foot.ini;
+    "alacritty/alacritty.toml".source = ./alacritty.toml;
     "git/config".source = ./gitconfig;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
@@ -44,9 +43,10 @@
   };
 
   packages = with pkgs; [
-    foot
+    alacritty
     hyfetch
     git
     xwayland-satellite
+    nautilus
   ];
 }

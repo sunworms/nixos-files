@@ -14,7 +14,6 @@
   programs.niri = {
     enable = true;
     package = inputs.niri-blur.packages.${pkgs.stdenv.hostPlatform.system}.default;
-    useNautilus = false;
   };
 
   programs.dank-material-shell = {
