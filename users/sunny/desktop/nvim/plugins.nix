@@ -67,8 +67,8 @@
       pkgs.vimPlugins.typst-preview-nvim.overrideAttrs {
         postPatch = ''
           substituteInPlace lua/typst-preview/config.lua \
-            --replace "['tinymist'] = nil" "['tinymist'] = 'tinymist'" \
-            --replace "['websocat'] = nil" "['websocat'] = 'websocat'"
+            --replace-fail "['tinymist'] = nil" "['tinymist'] = 'tinymist'" \
+            --replace-fail "['websocat'] = nil" "['websocat'] = 'websocat'"
         '';
       }
     );
