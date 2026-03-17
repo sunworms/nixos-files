@@ -24,14 +24,12 @@
       ".cache/DankMaterialShell"
 
       ".config/net.imput.helium"
-      ".config/helium-tor"
-
       ".config/DankMaterialShell"
       ".config/matugen"
       ".config/nvim"
       ".config/fish"
       ".config/niri"
-      ".config/foot"
+      ".config/alacritty"
       ".config/zathura"
       ".config/git"
       ".config/yazi"
@@ -54,6 +52,7 @@
       ".local/share/osu"
       ".local/share/containers"
       ".local/share/keyrings"
+      ".local/share/warp"
 
       ".local/state/wireplumber"
       ".local/state/DankMaterialShell"
