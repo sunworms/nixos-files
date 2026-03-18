@@ -3,7 +3,7 @@
 {
   isLightMode = false;
   doNotDisturb = false;
-  wallpaperPath = "${inputs.walls}/hunline/sumikage.jpeg";
+  wallpaperPath = "${inputs.walls}/hunline/tsukumo-1.png";
   perMonitorWallpaper = false;
   monitorWallpapers = { };
   perModeWallpaper = false;
