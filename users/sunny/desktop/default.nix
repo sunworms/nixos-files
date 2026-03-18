@@ -41,11 +41,13 @@
     '';
   };
 
+  xdg.data.files."applications/nvim-alacritty.desktop".source = ./nvim-alacritty.desktop;
+
   packages = with pkgs; [
     alacritty
     hyfetch
     git
     xwayland-satellite
-    nautilus
+    nemo-with-extensions
   ];
 }

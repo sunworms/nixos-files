@@ -24,7 +24,6 @@
       url = "github:AvengeMedia/dms-plugin-registry";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    emacs-overlay.url = "github:nix-community/emacs-overlay";
     walls = {
       url = "github:sunworms/walls";
       flake = false;

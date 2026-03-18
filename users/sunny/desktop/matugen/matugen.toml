@@ -1,10 +1,15 @@
 [config]
 
 [templates]
+[templates.neovim]
+input_path = '~/.config/matugen/template.lua'
+output_path = '~/.config/nvim/base16.lua'
+post_hook = 'pkill -SIGUSR1 nvim'
+
 [templates.vesktop]
 input_path = '~/.config/matugen/vesktop.css'
 output_path = '~/.config/matugen/midnight-discord.css'
 
-#[templates.zathura]
-#input_path = '~/.config/matugen/zathura-colors'
-#output_path = '~/.config/zathura/zathurarc'
+[templates.zathura]
+input_path = '~/.config/matugen/zathura-colors'
+output_path = '~/.config/zathura/zathurarc'
