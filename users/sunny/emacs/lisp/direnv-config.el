@@ -2,7 +2,6 @@
 
 (use-package direnv
   :ensure nil
-  :defer t
   :init
   (defun my/enable-direnv-if-envrc ()
     (when-let* ((root (or (locate-dominating-file default-directory ".envrc")
