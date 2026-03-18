@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -27,7 +27,8 @@
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
       ${pkgs.dconf}/bin/dconf write /org/cinnamon/desktop/applications/terminal/exec "'alacritty'"
       ${pkgs.dconf}/bin/dconf write /org/cinnamon/desktop/applications/terminal/exec-arg "'-e'"
-      ${pkgs.dconf}/bin/dconf write /org/nemo/preferences/thumbnail-limit ${lib.gvariant.mkUint64 68719476736}
+      ${pkgs.dconf}/bin/dconf write /org/nemo/preferences/thumbnail-limit "uint64 68719476736"
+      ${pkgs.dconf}/bin/dconf write /org/nemo/preferences/show-hidden-files true
     '')
 
     #image viewer
