@@ -34,7 +34,9 @@
 (load-theme 'dank-emacs t)
 
 (use-package magit
-  :ensure nil)
+  :ensure nil
+  :defer t
+  :bind ("C-x g" . magit-status))
 
 (use-package direnv-config
   :load-path "lisp/")
