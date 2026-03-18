@@ -26,7 +26,6 @@
       ".config/net.imput.helium"
       ".config/DankMaterialShell"
       ".config/matugen"
-      ".config/nvim"
       ".config/fish"
       ".config/niri"
       ".config/alacritty"
