@@ -25,10 +25,10 @@
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-theme "'volantes_cursors'"
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-size 24
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
-      ${pkgs.dconf}/bin/dconf write /org/cinnamon/desktop/applications/terminal/exec "'alacritty'"
-      ${pkgs.dconf}/bin/dconf write /org/cinnamon/desktop/applications/terminal/exec-arg "'-e'"
-      ${pkgs.dconf}/bin/dconf write /org/nemo/preferences/thumbnail-limit "uint64 68719476736"
-      ${pkgs.dconf}/bin/dconf write /org/nemo/preferences/show-hidden-files true
+      ${pkgs.dconf}/bin/dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'small-plus'"
+      ${pkgs.dconf}/bin/dconf write /org/gnome/nautilus/preferences/default-folder-viewer "'icon-view'"
+      ${pkgs.dconf}/bin/dconf write /org/gnome/nautilus/preferences/migrated-gtk-settings true
+      ${pkgs.dconf}/bin/dconf write /org/gtk/gtk4/settings/file-chooser/show-hidden true
     '')
 
     #image viewer

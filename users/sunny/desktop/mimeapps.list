@@ -1,6 +1,4 @@
 [Default Applications]
-inode/directory=nemo.desktop
-application/x-gnome-saved-search=nemo.desktop
 application/pdf=org.pwmt.zathura.desktop
 application/epub=org.pwmt.zathura.desktop
 image/vnd.djvu=org.pwmt.zathura.desktop

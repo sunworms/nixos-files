@@ -48,6 +48,6 @@
     hyfetch
     git
     xwayland-satellite
-    nemo-with-extensions
+    nautilus
   ];
 }
