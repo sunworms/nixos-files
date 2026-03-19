@@ -42,7 +42,16 @@
   };
 
   xdg.data.files = {
-    "applications/nvim-alacritty.desktop".source = ./nvim-alacritty.desktop;
+    "applications/nvim-alacritty.desktop".text = ''
+      [Desktop Entry]
+      Encoding=UTF-8
+      Version=1.0
+      Type=Application
+      NoDisplay=true
+      Exec=alacritty -e nvim %f
+      Name=Neovim
+      Comment=Custom definition for alacritty
+    '';
     "nautilus/scripts/Open with Custom Command" = {
       text = ''
         #!/usr/bin/env bash
