@@ -2,10 +2,9 @@
 let
   plugin-list = import ./plugins.nix { inherit pkgs; };
   nvim-plugins = pkgs.linkFarm "nvim-plugins" plugin-list;
-  tree-sitter = pkgs.vimPlugins.nvim-treesitter.withAllGrammars;
   parsers = pkgs.symlinkJoin {
     name = "treesitter-parsers";
-    paths = tree-sitter.dependencies;
+    paths = pkgs.vimPlugins.nvim-treesitter.withAllGrammars.dependencies;
   };
 in
 {
