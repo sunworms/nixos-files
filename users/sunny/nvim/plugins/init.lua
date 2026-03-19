@@ -39,7 +39,6 @@ vim.api.nvim_create_autocmd("Signal", {
 -- or set a default
 auxiliary_function()
 
-require("plugins.nvim-tree")
 require("plugins.blink")
 require("plugins.lsp")
 require("plugins.conform")

@@ -2,10 +2,10 @@
 
 [
   {
-    name = "nvim-tree";
-    path = pkgs.vimPlugins.nvim-tree-lua;
+    name = "oil.nvim";
+    path = pkgs.vimPlugins.oil-nvim;
   }
-  # needed for nvim tree
+  # needed for oil nvim
   {
     name = "nvim-web-devicons";
     path = pkgs.vimPlugins.nvim-web-devicons;

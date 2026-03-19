@@ -1,5 +1,5 @@
 require('nvim-autopairs').setup()
-
+require('oil').setup()
 require('nvim-treesitter').setup()
 vim.opt.conceallevel = 2
 
