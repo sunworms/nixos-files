@@ -1,3 +1,6 @@
+workspace "work"
+workspace "fun"
+
 input {
     keyboard {
         xkb {
