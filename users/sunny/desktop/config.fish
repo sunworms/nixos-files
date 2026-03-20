@@ -19,9 +19,10 @@ if status is-interactive
     abbr --add -- l 'ls -alh'
     abbr --add -- ll 'ls -l'
     abbr --add -- ls 'ls --color=tty'
-    abbr --add -- osc 'nh clean all && sudo nix store optimise'
-    abbr --add -- oss 'nh os switch --ask . -H'
-    abbr --add -- ost 'nh os test --ask . -H'
+    abbr --add -- osc 'sudo rm /nix/var/nix/gcroots/auto/* && sudo nix-collect-garbage -d && sudo nix store optimise'
+    abbr --add -- oss 'nixos-rebuild switch --sudo --flake .#hpprobook'
+    abbr --add -- ost 'nixos-rebuild test --sudo --flake .#hpprobook'
+    abbr --add -- osb 'nixos-rebuild build --flake .#hpprobook &| nom && nvd diff /run/current-system result && rm result'
     alias vi "nvim"
     alias vim "nvim"
 
