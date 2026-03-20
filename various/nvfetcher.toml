@@ -1,10 +1,10 @@
 # binary packages
+[pcsx2]
+src.github_tag = "PCSX2/pcsx2"
+fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-linux-appimage-x64-Qt.AppImage"
+
 [eden]
 src.github = "Eden-CI/Nightly"
 src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
 src.to_pattern = 'v\1.\2/Eden-Linux-\2'
 fetch.url = "https://github.com/Eden-CI/Nightly/releases/download/$ver-amd64-clang-pgo.AppImage"
-
-[helium]
-src.github = "imputnet/helium-linux"
-fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"

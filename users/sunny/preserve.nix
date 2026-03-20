@@ -19,19 +19,19 @@
 
       ".ssh"
 
+      ".cache/wal"
       ".cache/nix"
       ".cache/typst"
       ".cache/DankMaterialShell"
 
-      ".config/net.imput.helium"
+      ".config/mozilla"
+      ".config/vesktop"
+
       ".config/DankMaterialShell"
-      ".config/matugen"
       ".config/fish"
       ".config/niri"
       ".config/alacritty"
-      ".config/zathura"
       ".config/git"
-      ".config/yazi"
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"
