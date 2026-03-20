@@ -2,7 +2,6 @@
 {
   imports = [
     ./dms
-    ./matugen
   ];
 
   files = {

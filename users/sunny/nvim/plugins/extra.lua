@@ -1,3 +1,4 @@
+require('lualine').setup()
 require('nvim-autopairs').setup()
 require('oil').setup()
 require('nvim-treesitter').setup()

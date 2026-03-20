@@ -21,6 +21,22 @@
         "type": "github"
       }
     },
+    "dms-base46": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1773606507,
+        "narHash": "sha256-JfhmtphN4n9UHPV2gHuj8igaYNq8GUTO0SMxwYVGzwk=",
+        "owner": "AvengeMedia",
+        "repo": "base46",
+        "rev": "358dba7d0fb10af5671cf3427178e8057102bc6c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "base46",
+        "type": "github"
+      }
+    },
     "dms-plugin-registry": {
       "inputs": {
         "nixpkgs": [
@@ -162,13 +178,13 @@
     "root": {
       "inputs": {
         "dms": "dms",
+        "dms-base46": "dms-base46",
         "dms-plugin-registry": "dms-plugin-registry",
         "hjem": "hjem",
         "niri-blur": "niri-blur",
         "nixpkgs": "nixpkgs",
         "preservation": "preservation",
-        "sops-nix": "sops-nix",
-        "walls": "walls"
+        "sops-nix": "sops-nix"
       }
     },
     "rust-overlay": {
@@ -269,22 +285,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "walls": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1772884706,
-        "narHash": "sha256-vFsd9sIirZWMkGxVqqlknl51Tek7oIN73/C0kC48OHw=",
-        "owner": "sunworms",
-        "repo": "walls",
-        "rev": "48310a35c59d81f2e34616ec48cbd43471cc322b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sunworms",
-        "repo": "walls",
         "type": "github"
       }
     }

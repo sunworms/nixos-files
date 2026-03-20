@@ -1,4 +1,4 @@
-{ pkgs }:
+{ pkgs, inputs }:
 
 [
   {
@@ -19,8 +19,8 @@
     path = pkgs.vimPlugins.lualine-nvim;
   }
   {
-    name = "base16-nvim";
-    path = pkgs.vimPlugins.base16-nvim;
+    name = "base46";
+    path = inputs.dms-base46;
   }
   {
     name = "nvim-lspconfig";

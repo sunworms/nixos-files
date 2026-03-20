@@ -24,8 +24,8 @@
       url = "github:AvengeMedia/dms-plugin-registry";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    walls = {
-      url = "github:sunworms/walls";
+    dms-base46 = {
+      url = "github:AvengeMedia/base46";
       flake = false;
     };
   };
