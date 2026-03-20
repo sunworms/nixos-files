@@ -110,6 +110,7 @@ blur {
 
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
+spawn-sh-at-startup "pywalfox install && pywalfox start"
 
 hotkey-overlay {
     skip-at-startup
@@ -129,6 +130,12 @@ animations {
 // window rules
 
 window-rule {
+    match app-id="vesktop"
+    match app-id="firefox" at-startup=true
+    open-on-workspace "fun"
+}
+
+window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {}
 }
@@ -136,7 +143,7 @@ window-rule {
 window-rule {
     match title="^Picture-in-Picture$"
     open-floating true
-    default-floating-position x=900 y=250
+    default-floating-position x=900 y=225
 }
 
 window-rule {
