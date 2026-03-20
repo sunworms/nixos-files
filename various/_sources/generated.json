@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-0ZB5mVx7oDpFN6Xc9hGSfDpgUxveHS1ja23HXdrT5RM=",
+            "sha256": "sha256-YmrZKorbEdg8J51mDBIwT0XQWN6h8y0rT9G1Cxgb818=",
             "type": "url",
-            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1773859807.cf860c5319/Eden-Linux-cf860c5319-amd64-clang-pgo.AppImage"
+            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1773945891.844e0360c7/Eden-Linux-844e0360c7-amd64-clang-pgo.AppImage"
         },
-        "version": "v1773859807.cf860c5319/Eden-Linux-cf860c5319"
+        "version": "v1773945891.844e0360c7/Eden-Linux-844e0360c7"
     },
     "helium": {
         "cargoLock": null,
@@ -23,10 +23,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-c/ea8C1XjTkBo0/ujGHEbKWyCmRMxyuiuOzAO9AMf1o=",
+            "sha256": "sha256-6xqNRaP3aqitEseexRVEEjKkJClC0j1HHZoRGQanhSk=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.10.5.1/helium-0.10.5.1-x86_64.AppImage"
+            "url": "https://github.com/imputnet/helium-linux/releases/download/0.10.6.1/helium-0.10.6.1-x86_64.AppImage"
         },
-        "version": "0.10.5.1"
+        "version": "0.10.6.1"
     }
 }
