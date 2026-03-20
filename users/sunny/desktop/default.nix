@@ -45,10 +45,6 @@
       icon_theme=candy-icons
       standard_dialogs=default
       style=Fusion
-
-      [Fonts]
-      fixed="Aporetic Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"
-      general="Aporetic Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"
     '';
     "qt5ct/qt5ct.conf".text = ''
       [Appearance]
@@ -57,10 +53,10 @@
       icon_theme=candy-icons
       standard_dialogs=default
       style=Fusion
-
-      [Fonts]
-      fixed="Aporetic Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"
-      general="Aporetic Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"
+    '';
+    "okular.kmessagebox".text = ''
+      [General]
+      presentationInfo=4
     '';
 
     "mimeapps.list".source = ./mimeapps.list;
