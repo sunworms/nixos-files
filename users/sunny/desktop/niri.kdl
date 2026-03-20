@@ -131,7 +131,6 @@ animations {
 
 window-rule {
     match app-id="vesktop"
-    match app-id="firefox" at-startup=true
     open-on-workspace "fun"
 }
 
