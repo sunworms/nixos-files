@@ -1,19 +1,9 @@
-{ pkgs, inputs, ... }:
+{ ... }:
 
 {
-  xdg.state.files."DankMaterialShell/session.json".source =
-    (pkgs.formats.json { }).generate "session.json"
-      (import ./session.nix { inherit inputs; });
-
   xdg.config.files = {
-    "DankMaterialShell/settings.json".source = (pkgs.formats.json { }).generate "settings.json" (
-      import ./settings.nix
-    );
-    "DankMaterialShell/clsettings.json".source = (pkgs.formats.json { }).generate "clsettings.json" (
-      import ./clsettings.nix
-    );
-    "DankMaterialShell/plugin_settings.json".source =
-      (pkgs.formats.json { }).generate "plugin_settings.json"
-        (import ./plugin_settings.nix);
+    "DankMaterialShell/settings.json".source = ./settings.json;
+    "DankMaterialShell/clsettings.json".source = ./clsettings.json;
+    "DankMaterialShell/plugin_settings.json".source = ./plugin_settings.json;
   };
 }
