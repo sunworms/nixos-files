@@ -34,6 +34,35 @@
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
 
+    "kdeglobals".text = ''
+      [UiSettings]
+      ColorScheme=DankMatugen
+    '';
+    "qt6ct/qt6ct.conf".text = ''
+      [Appearance]
+      color_scheme_path=/home/sunny/.config/qt6ct/colors/matugen.conf
+      custom_palette=true
+      icon_theme=candy-icons
+      standard_dialogs=default
+      style=Fusion
+
+      [Fonts]
+      fixed="Aporetic Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"
+      general="Aporetic Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"
+    '';
+    "qt5ct/qt5ct.conf".text = ''
+      [Appearance]
+      color_scheme_path=/home/sunny/.config/qt5ct/colors/matugen.conf
+      custom_palette=true
+      icon_theme=candy-icons
+      standard_dialogs=default
+      style=Fusion
+
+      [Fonts]
+      fixed="Aporetic Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"
+      general="Aporetic Sans,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1"
+    '';
+
     "mimeapps.list".source = ./mimeapps.list;
     "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
       {"Path":"${pkgs.widevine-cdm}/share/google/chrome/WidevineCdm"}

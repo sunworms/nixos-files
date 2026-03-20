@@ -30,6 +30,8 @@
       ${pkgs.dconf}/bin/dconf write /org/gnome/nautilus/preferences/migrated-gtk-settings true
       ${pkgs.dconf}/bin/dconf write /org/gtk/gtk4/settings/file-chooser/show-hidden true
     '')
+    libsForQt5.qt5ct
+    qt6Packages.qt6ct
 
     #image viewer
     swayimg

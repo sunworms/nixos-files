@@ -25,7 +25,7 @@
       ];
     })
     satty
-    zathura
+    kdePackages.okular
     vesktop
   ];
 }

@@ -11,7 +11,7 @@ if status is-login
     set -gx SUDO_EDITOR nvim
     set -gx VISUAL nvim
     set -gx GTK_THEME adw-gtk3
-    set -gx QT_QPA_PLATFORMTHEME gtk3
+    set -gx QT_QPA_PLATFORMTHEME qt6ct
     set -gx TERMINAL alacritty
 end
 if status is-interactive

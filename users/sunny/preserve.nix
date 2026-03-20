@@ -24,7 +24,7 @@
       ".cache/typst"
       ".cache/DankMaterialShell"
 
-      ".config/mozilla"
+      ".config/net.imput.helium"
       ".config/vesktop"
 
       ".config/DankMaterialShell"
@@ -43,7 +43,7 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
-      ".local/share/zathura"
+      ".local/share/okular"
       ".local/share/fish"
       ".local/share/azahar-emu"
       ".local/share/eden"

@@ -140,16 +140,11 @@ window-rule {
 }
 
 window-rule {
-    match title="^Picture-in-Picture$"
-    open-floating true
-    default-floating-position x=900 y=225
-}
-
-window-rule {
     match title="^Picture in picture$"
     open-floating true
-    default-floating-position x=900 y=175
+    default-floating-position x=900 y=200
 }
+
 
 /-window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
