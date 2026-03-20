@@ -28,6 +28,11 @@
     memoryPercent = 100;
   };
 
+  # Disable sudo lecture
+  security.sudo.extraConfig = ''
+    Defaults lecture="never"
+  '';
+
   # Enable direnv
   programs.direnv = {
     enable = true;
