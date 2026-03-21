@@ -44,7 +44,7 @@
       ExecStart = ''
         ${pkgs.rclone}/bin/rclone mount gdrive: %h/Documents/gdrive \
           --config=%h/.config/rclone/rclone.conf \
-          --temp-dir=/tmp/ \
+          --allow-non-empty \
           --vfs-cache-mode writes \
           --vfs-cache-max-size 5G
       '';
