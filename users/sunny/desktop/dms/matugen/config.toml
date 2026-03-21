@@ -1,0 +1,10 @@
+[config]
+
+[templates]
+[templates.discord]
+input_path = '~/.config/matugen/vesktop.css'
+output_path = '~/.config/Vencord/themes/dank-discord.css'
+
+[templates.obsidian]
+input_path = '~/.config/matugen/obsidian.css'
+output_path = '~/Documents/gdrive/Obsidian/Personal Notes/.obsidian/snippets/matugen.css'

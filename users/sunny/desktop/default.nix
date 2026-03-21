@@ -28,6 +28,7 @@
   };
 
   xdg.config.files = {
+    "rclone/rclone.conf".source = ./rclone.conf;
     "fish/config.fish".source = ./config.fish;
     "alacritty/alacritty.toml".source = ./alacritty.toml;
     "git/config".source = ./gitconfig;

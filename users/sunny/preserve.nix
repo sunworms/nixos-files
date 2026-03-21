@@ -25,7 +25,9 @@
       ".cache/DankMaterialShell"
 
       ".config/net.imput.helium"
-      ".config/vesktop"
+      ".config/discord"
+      ".config/Vencord"
+      ".config/obsidian"
 
       ".config/DankMaterialShell"
       ".config/fish"

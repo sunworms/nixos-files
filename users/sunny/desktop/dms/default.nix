@@ -1,6 +1,9 @@
 { ... }:
 
 {
+  imports = [
+    ./matugen
+  ];
   xdg.config.files = {
     "DankMaterialShell/settings.json".source = ./settings.json;
     "DankMaterialShell/clsettings.json".source = ./clsettings.json;

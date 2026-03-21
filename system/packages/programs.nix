@@ -14,6 +14,8 @@ in
 
   programs.dconf.enable = true;
 
+  programs.fuse.userAllowOther = true;
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
