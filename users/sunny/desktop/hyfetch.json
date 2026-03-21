@@ -3,13 +3,13 @@
   "auto_detect_light_dark": true,
   "backend": "fastfetch",
   "color_align": {
-    "mode": "vertical"
+    "mode": "horizontal"
   },
   "custom_ascii_path": null,
   "distro": null,
   "light_dark": "dark",
   "lightness": 0.65,
   "mode": "rgb",
-  "preset": "interprogress",
+  "preset": "plural",
   "pride_month_disable": false
 }
