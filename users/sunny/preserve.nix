@@ -28,6 +28,7 @@
       ".config/discord"
       ".config/Vencord"
       ".config/obsidian"
+      ".config/rclone"
 
       ".config/DankMaterialShell"
       ".config/fish"
