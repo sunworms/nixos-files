@@ -130,11 +130,6 @@ animations {
 // window rules
 
 window-rule {
-    match app-id="vesktop"
-    open-on-workspace "fun"
-}
-
-window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {}
 }
@@ -142,7 +137,7 @@ window-rule {
 window-rule {
     match title="^Picture in picture$"
     open-floating true
-    default-floating-position x=900 y=200
+    default-floating-position x=1100 y=250
 }
 
 
@@ -199,8 +194,8 @@ binds {
     Mod+V hotkey-overlay-title="Clipboard" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
-    Super+Shift+S hotkey-overlay-title="DMS Settings" { spawn "dms" "ipc" "call" "settings" "toggle"; }
-    Super+Shift+I hotkey-overlay-title="Inhibit Idle" { spawn "dms" "ipc" "call" "inhibit" "toggle"; }
+    Super+Alt+S hotkey-overlay-title="DMS Settings" { spawn "dms" "ipc" "call" "settings" "toggle"; }
+    Super+Alt+I hotkey-overlay-title="Inhibit Idle" { spawn "dms" "ipc" "call" "inhibit" "toggle"; }
     Mod+P hotkey-overlay-title="Color Picker" { spawn-sh "dms color pick --autocopy"; }
 
     XF86AudioRaiseVolume { spawn "dms" "ipc" "call" "audio" "increment" "1"; }
@@ -359,6 +354,11 @@ binds {
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
     Mod+Print { spawn-sh "wl-paste --type image | satty --filename -"; }
+
+    Super+Shift+S { screenshot; }
+    Ctrl+Super+Shift+S { screenshot-screen; }
+    Alt+Super+Shift+S { screenshot-window; }
+    Ctrl+Alt+Super+Shift+S { spawn-sh "wl-paste --type image | satty --filename -"; }
 
     Mod+Shift+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
