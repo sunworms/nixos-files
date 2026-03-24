@@ -11,14 +11,11 @@
 {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
+    (modulesPath + "/hardware/cpu/intel-npu.nix")
   ];
 
   boot.initrd.availableKernelModules = [
-    "xhci_pci"
-    "ahci"
-    "usb_storage"
-    "sd_mod"
-    "rtsx_pci_sdmmc"
+    "xhci_pci" "nvme" "usb_storage" "sd_mod" "rtsx_pci_sdmmc"
   ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
@@ -35,18 +32,20 @@
   };
 
   fileSystems."/nix" = {
-    device = "/dev/disk/by-label/nix";
+    device = "/dev/disk/by-label/root";
     fsType = "btrfs";
     options = [
+      "subvol=@nix"
       "noatime"
       "compress-force=zstd"
     ];
   };
 
   fileSystems."/persist" = {
-    device = "/dev/disk/by-label/persist";
+    device = "/dev/disk/by-label/root";
     fsType = "btrfs";
     options = [
+      "subvol=@persist"
       "noatime"
       "compress-force=zstd"
     ];
@@ -65,5 +64,6 @@
   swapDevices = [ ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  hardware.cpu.intel.npu.enable = true;
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }

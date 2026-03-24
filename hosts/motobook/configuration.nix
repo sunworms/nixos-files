@@ -7,7 +7,7 @@
     ../../system/packages
   ];
 
-  networking.hostName = "hpprobook";
+  networking.hostName = "motobook";
 
   system.stateVersion = "26.05";
 

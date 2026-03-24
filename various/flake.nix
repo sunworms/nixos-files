@@ -33,9 +33,9 @@
   outputs =
     { ... }@inputs:
     {
-      nixosConfigurations.hpprobook = inputs.nixpkgs.lib.nixosSystem {
+      nixosConfigurations.motobook = inputs.nixpkgs.lib.nixosSystem {
         modules = [
-          ../hosts/hpprobook/configuration.nix
+          ../hosts/motobook/configuration.nix
           inputs.preservation.nixosModules.preservation
           inputs.sops-nix.nixosModules.default
           inputs.hjem.nixosModules.default
