@@ -20,9 +20,9 @@ if status is-interactive
     abbr --add -- ll 'ls -l'
     abbr --add -- ls 'ls --color=tty'
     abbr --add -- osc 'nh clean all'
-    abbr --add -- oss 'nh os switch --ask . -H hpprobook'
-    abbr --add -- ost 'nh os test --ask . -H hpprobook'
-    abbr --add -- osb 'nh os build . -H hpprobook && nvd diff /run/current-system result && rm result'
+    abbr --add -- oss 'nh os switch --ask . -H motobook'
+    abbr --add -- ost 'nh os test --ask . -H motobook'
+    abbr --add -- osb 'nh os build . -H motobook && nvd diff /run/current-system result && rm result'
     alias vi "nvim"
     alias vim "nvim"
 
