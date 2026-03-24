@@ -28,6 +28,8 @@
     memoryPercent = 100;
   };
 
+  services.hardware.openrgb.enable = true;
+
   # Disable sudo lecture
   security.sudo.extraConfig = ''
     Defaults lecture="never"
