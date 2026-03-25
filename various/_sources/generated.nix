@@ -8,26 +8,26 @@
 {
   eden = {
     pname = "eden";
-    version = "v1774203988.811cc18d74/Eden-Linux-811cc18d74";
+    version = "v1774378344.8f770618d2/Eden-Linux-8f770618d2";
     src = fetchurl {
-      url = "https://github.com/Eden-CI/Nightly/releases/download/v1774203988.811cc18d74/Eden-Linux-811cc18d74-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-gdw8Zn/DYDJukpeN7LXiOyRz0bNKEsvbSNXSwAnS3iw=";
+      url = "https://github.com/Eden-CI/Nightly/releases/download/v1774378344.8f770618d2/Eden-Linux-8f770618d2-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-IYBY5HDHsTzJK3w3xFq73w+MTDEQUTbomO5R0nnx1Ps=";
     };
   };
   helium = {
     pname = "helium";
-    version = "0.10.6.1";
+    version = "0.10.7.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.10.6.1/helium-0.10.6.1-x86_64.AppImage";
-      sha256 = "sha256-6xqNRaP3aqitEseexRVEEjKkJClC0j1HHZoRGQanhSk=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.10.7.1/helium-0.10.7.1-x86_64.AppImage";
+      sha256 = "sha256-+vmxXcg8TkR/GAiHKnjq4b04bGtQzErfJkOb4P4nZUk=";
     };
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.211";
+    version = "v2.7.216";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.211/pcsx2-v2.7.211-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-LqqHttqZo+gK32/Ddn2Qyp2JdJM9jGeqStb8VwePehw=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.216/pcsx2-v2.7.216-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-nepqscpg2dbB3LbzvSFxJQPSBNAx5TTnfqJNsuvNf18=";
     };
   };
 }
