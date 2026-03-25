@@ -1,5 +1,6 @@
 (defcfg
   process-unmapped-keys yes
+  concurrent-tap-hold yes
 )
 
 (defsrc
@@ -8,10 +9,9 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            ralt rmet rctl
+  lctl lmet lalt           spc            ralt 
 )
 
-;; Timing variables (adjust these to your typing speed)
 (defvar
   tap-time 300
   hold-time 300
@@ -20,8 +20,11 @@
 (defalias
   esc_caps caps
   caps_esc esc
-  spc_ctl (tap-hold $tap-time $hold-time spc rctl)
   nav_lyr (tap-hold $tap-time $hold-time g (layer-toggle navigation))
+)
+
+(defchordsv2
+  (lsft lmet f23) rctl 300 all-released ()
 )
 
 (deflayer base
@@ -30,7 +33,7 @@
   _          q  w  e  r    t          y    u    i    o    p    _    _    _
   @caps_esc  a  s  d  f    @nav_lyr   h    j    k    l    ;    _    _
   _          z  x  c  v    b          n    m    _    _    _    _
-  _          _         _               @spc_ctl            _    _    _
+  _          _  _          _               _
 )
 
 (deflayer navigation
@@ -39,5 +42,5 @@
   _    _    _    _    _    _    home  pgdn  pgup  end    _  bspc esc  tab
   _    _    _    _    _    _    left  down  up    right  _  spc  _
   _    _    _    _    _    _    _     _     _     _      _  _
-  _    _    _              _                    _      _  _
+  _    _    _              _                _ 
 )
