@@ -13,6 +13,8 @@ if status is-login
     set -gx GTK_THEME adw-gtk3
     set -gx QT_QPA_PLATFORMTHEME qt6ct
     set -gx TERMINAL alacritty
+    set -gx ALL_PROXY socks5h://127.0.0.1:40000
+    set -gx all_proxy socks5h://127.0.0.1:40000
 end
 if status is-interactive
     abbr --add -- grep 'grep --color=auto'
