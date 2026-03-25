@@ -19,4 +19,16 @@
       ];
     };
   };
+
+  services.redsocks = {
+    enable = true;
+    redsocks = [
+      {
+        port = 12345;
+        ip = "127.0.0.1";
+        proxy = "127.0.0.1:40000";
+        type = "socks5";
+      }
+    ];
+  };
 }

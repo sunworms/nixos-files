@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -32,9 +32,26 @@
   services.upower.enable = true;
 
   # Disable sudo lecture
-  security.sudo.extraConfig = ''
-    Defaults lecture="never"
-  '';
+  security.sudo = {
+    extraRules = [
+      {
+        users = [ "sunny" ];
+        commands = [
+          {
+            command = "${pkgs.iptables}/bin/iptables";
+            options = [ "NOPASSWD" ];
+          }
+          {
+            command = "${pkgs.systemd}/bin/systemctl";
+            options = [ "NOPASSWD" ];
+          }
+        ];
+      }
+    ];
+    extraConfig = ''
+      Defaults lecture="never"
+    '';
+  };
 
   # Enable direnv
   programs.direnv = {
