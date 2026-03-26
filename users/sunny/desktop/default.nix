@@ -2,6 +2,7 @@
 {
   imports = [
     ./dms
+    ./services.nix
   ];
 
   files = {

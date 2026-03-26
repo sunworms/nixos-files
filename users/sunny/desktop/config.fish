@@ -29,21 +29,4 @@ if status is-interactive
     set -U fish_greeting
     set -g fish_key_bindings fish_vi_key_bindings
     set -Ux SOPS_AGE_KEY_FILE /persist/var/lib/sops-nix/key.txt
-
-    function warp-on
-        warp-cli connect
-        sleep 2
-        sudo systemctl start redsocks
-        sudo iptables -t nat -A OUTPUT -p tcp --dport 80 -j REDIRECT --to-port 12345
-        sudo iptables -t nat -A OUTPUT -p tcp --dport 443 -j REDIRECT --to-port 12345
-        echo "WARP Enabled"
-    end
-
-    function warp-off
-        warp-cli disconnect
-        sudo iptables -t nat -D OUTPUT -p tcp --dport 80 -j REDIRECT --to-port 12345
-        sudo iptables -t nat -D OUTPUT -p tcp --dport 443 -j REDIRECT --to-port 12345
-        sudo systemctl stop redsocks
-        echo "WARP Disabled"
-    end
 end
