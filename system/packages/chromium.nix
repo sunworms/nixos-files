@@ -4,7 +4,7 @@
     "mnjggcdmjocbbbhaepdhchncahnbgone" # sponsorblock
     "gebbhagfogifgggkldgodflihgfeippi" # return youtube dislikes
     "jplgfhpmjnbigmhklmmbgecoobifkmpa" # proton vpn
-    "gmehookibnphigonphocphhcepbijeen" # picture in picture
+    "hkgfoiooedgoejojocmhlaklaeopbecg" # picture in picture
   ];
 
   ManagedBookmarks = [
