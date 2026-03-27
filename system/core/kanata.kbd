@@ -9,7 +9,7 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            ralt 
+  lctl lmet lalt           spc            ralt
 )
 
 (defvar
@@ -20,11 +20,10 @@
 (defalias
   esc_caps caps
   caps_esc esc
-  nav_lyr (tap-hold $tap-time $hold-time ralt (layer-toggle navigation))
 )
 
 (defchordsv2
-  (lsft lmet f23) rctl 300 all-released ()
+  (lsft lmet f23) rctl $tap-time all-released ()
 )
 
 (deflayer base
@@ -33,14 +32,5 @@
   _          q    w    e    r    t    y    u    i    o    p    _    _    _
   @caps_esc  a    s    d    f    g    h    j    k    l    ;    _    _
   _          z    x    c    v    b    n    m    _    _    _    _
-  _          _    _         _                   @nav_lyr
-)
-
-(deflayer navigation
-  _
-  _    _     _     _    _      _    _    _    _    _    _    _    _    _
-  _    home  pgdn  pgup end    _    _    _    _    _    _    _    _    _
-  _    left  down  up   right  _    _    _    _    _    _    _    _
-  _    _     _     _    _      _    _    _    _    _    _    _
-  _    _    _               _                 _ 
+  _          _    _         _                   _
 )
