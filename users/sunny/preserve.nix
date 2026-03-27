@@ -24,7 +24,7 @@
       ".cache/typst"
       ".cache/DankMaterialShell"
 
-      ".config/net.imput.helium"
+      ".config/mozilla"
       ".config/discord"
       ".config/Vencord"
       ".config/obsidian"

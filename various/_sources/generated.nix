@@ -14,20 +14,12 @@
       sha256 = "sha256-KeIrjjY8I3czerQ+gm5DLhKWwb8OIiOUjuvcb9tH57Y=";
     };
   };
-  helium = {
-    pname = "helium";
-    version = "0.10.7.1";
-    src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.10.7.1/helium-0.10.7.1-x86_64.AppImage";
-      sha256 = "sha256-+vmxXcg8TkR/GAiHKnjq4b04bGtQzErfJkOb4P4nZUk=";
-    };
-  };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.216";
+    version = "v2.7.217";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.216/pcsx2-v2.7.216-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-nepqscpg2dbB3LbzvSFxJQPSBNAx5TTnfqJNsuvNf18=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.217/pcsx2-v2.7.217-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-fvhScJl0SiOq4mieKdqAwJ0cxfQJzLY1LqXrimON5Z4=";
     };
   };
 }

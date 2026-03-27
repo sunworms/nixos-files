@@ -110,6 +110,7 @@ blur {
 
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
+spawn-sh-at-startup "pywalfox install && pywalfox start"
 
 hotkey-overlay {
     skip-at-startup
@@ -134,9 +135,9 @@ window-rule {
 }
 
 window-rule {
-    match title="^Picture in picture$"
+    match title="(^Picture-in-Picture$|^Picture in picture$)"
     open-floating true
-    default-floating-position x=1100 y=250
+    default-floating-position x=1000 y=250
 }
 
 

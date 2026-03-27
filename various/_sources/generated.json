@@ -14,21 +14,6 @@
         },
         "version": "v1774464339.f0d77e86e3/Eden-Linux-f0d77e86e3"
     },
-    "helium": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "helium",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-+vmxXcg8TkR/GAiHKnjq4b04bGtQzErfJkOb4P4nZUk=",
-            "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.10.7.1/helium-0.10.7.1-x86_64.AppImage"
-        },
-        "version": "0.10.7.1"
-    },
     "pcsx2": {
         "cargoLock": null,
         "date": null,
@@ -38,10 +23,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-nepqscpg2dbB3LbzvSFxJQPSBNAx5TTnfqJNsuvNf18=",
+            "sha256": "sha256-fvhScJl0SiOq4mieKdqAwJ0cxfQJzLY1LqXrimON5Z4=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.216/pcsx2-v2.7.216-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.217/pcsx2-v2.7.217-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.216"
+        "version": "v2.7.217"
     }
 }
