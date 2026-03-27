@@ -22,6 +22,7 @@
       ".cache/wal"
       ".cache/nix"
       ".cache/typst"
+      ".cache/rclone"
       ".cache/DankMaterialShell"
 
       ".config/mozilla"
@@ -46,7 +47,7 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
-      ".local/share/okular"
+      ".local/share/zathura"
       ".local/share/fish"
       ".local/share/azahar-emu"
       ".local/share/eden"

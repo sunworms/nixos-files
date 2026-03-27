@@ -34,10 +34,6 @@
     "git/config".source = ./gitconfig;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
-    "kdeglobals".text = ''
-      [UiSettings]
-      ColorScheme=DankMatugen
-    '';
     "qt6ct/qt6ct.conf".text = ''
       [Appearance]
       color_scheme_path=/home/sunny/.config/qt6ct/colors/matugen.conf
@@ -53,10 +49,6 @@
       icon_theme=candy-icons
       standard_dialogs=default
       style=Fusion
-    '';
-    "okular.kmessagebox".text = ''
-      [General]
-      presentationInfo=4
     '';
     "mimeapps.list".source = ./mimeapps.list;
   };

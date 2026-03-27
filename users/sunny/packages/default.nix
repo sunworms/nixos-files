@@ -25,12 +25,12 @@
       ];
     })
     satty
-    kdePackages.okular
     (discord.override {
       withVencord = true;
       withOpenASAR = true;
     })
     obsidian
     rclone
+    zathura
   ];
 }

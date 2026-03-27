@@ -1,7 +1,7 @@
 [Default Applications]
-application/pdf=org.kde.okular.desktop
-application/epub=org.kde.okular.desktop
-image/vnd.djvu=org.kde.okular.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/epub=org.pwmt.zathura.desktop
+image/vnd.djvu=org.pwmt.zathura.desktop
 text/plain=nvim-alacritty.desktop
 text/x-markdown=nvim-alacritty.desktop
 application/x-shellscript=nvim-alacritty.desktop
@@ -41,9 +41,9 @@ audio/mp3=mpv.desktop
 application/x-flash-video=mpv.desktop
 
 [Added Associations]
-application/pdf=org.kde.okular.desktop
-application/epub=org.kde.okular.desktop
-image/vnd.djvu=org.kde.okular.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/epub=org.pwmt.zathura.desktop
+image/vnd.djvu=org.pwmt.zathura.desktop
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
 x-scheme-handler/ftp=firefox.desktop
