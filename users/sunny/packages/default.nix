@@ -29,8 +29,6 @@
       withVencord = true;
       withOpenASAR = true;
     })
-    obsidian
-    rclone
     zathura
   ];
 }

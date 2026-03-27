@@ -22,14 +22,11 @@
       ".cache/wal"
       ".cache/nix"
       ".cache/typst"
-      ".cache/rclone"
       ".cache/DankMaterialShell"
 
       ".config/mozilla"
       ".config/discord"
       ".config/Vencord"
-      ".config/obsidian"
-      ".config/rclone"
 
       ".config/DankMaterialShell"
       ".config/fish"
