@@ -16,9 +16,14 @@
       url = "github:niri-wm/niri/pull/3483/head";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    quickshell = {
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell?rev=08058326f04e9b5e55c903b3702405a8d3556ac6";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     dms = {
       url = "github:AvengeMedia/DankMaterialShell";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.quickshell.follows = "quickshell";
     };
     dms-plugin-registry = {
       url = "github:AvengeMedia/dms-plugin-registry";
