@@ -3,8 +3,6 @@
 {
   users.mutableUsers = false;
 
-  services.userborn.enable = true;
-
   users.users.root.hashedPasswordFile = config.sops.secrets.root_password.path;
 
   users.users.sunny = {
