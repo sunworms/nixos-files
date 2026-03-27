@@ -34,7 +34,6 @@
     "git/config".source = ./gitconfig;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
-
     "kdeglobals".text = ''
       [UiSettings]
       ColorScheme=DankMatugen
@@ -59,11 +58,7 @@
       [General]
       presentationInfo=4
     '';
-
     "mimeapps.list".source = ./mimeapps.list;
-    "net.imput.helium/WidevineCdm/latest-component-updated-widevine-cdm".text = ''
-      {"Path":"${pkgs.widevine-cdm}/share/google/chrome/WidevineCdm"}
-    '';
   };
 
   xdg.data.files = {
