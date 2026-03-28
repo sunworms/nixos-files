@@ -191,6 +191,7 @@ binds {
     Mod+Alt+B { spawn-sh "brightnessctl --device='platform::kbd_backlight' set +1"; }
     Mod+Ctrl+B { spawn-sh "brightnessctl --device='platform::kbd_backlight' set 1-"; }
 
+    Mod+Alt+N { spawn-sh "pkill quickshell; sleep 1; noctalia-shell"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboard" { spawn "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
