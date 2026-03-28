@@ -104,10 +104,10 @@
           "followFocusedScreen": false,
           "fontWeight": "bold",
           "groupedBorderOpacity": 1,
-          "hideUnoccupied": false,
+          "hideUnoccupied": true,
           "iconScale": 0.8,
           "id": "Workspace",
-          "labelMode": "index",
+          "labelMode": "name",
           "occupiedColor": "secondary",
           "pillSize": 0.6,
           "showApplications": false,
@@ -121,8 +121,8 @@
         {
           "blacklist": [],
           "chevronColor": "none",
-          "colorizeIcons": false,
-          "drawerEnabled": true,
+          "colorizeIcons": true,
+          "drawerEnabled": false,
           "hidePassive": false,
           "id": "Tray",
           "pinned": []
@@ -190,10 +190,10 @@
           "colorizeDistroLogo": false,
           "colorizeSystemIcon": "none",
           "customIconPath": "",
-          "enableColorization": false,
+          "enableColorization": true,
           "icon": "noctalia",
           "id": "ControlCenter",
-          "useDistroLogo": false
+          "useDistroLogo": true
         }
       ]
     },
