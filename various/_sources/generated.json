@@ -23,10 +23,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-fvhScJl0SiOq4mieKdqAwJ0cxfQJzLY1LqXrimON5Z4=",
+            "sha256": "sha256-OmMdl1EHlYBzgxAGB+Rhx+nZR0F2Bq5NJm7KZWys7OI=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.217/pcsx2-v2.7.217-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.220/pcsx2-v2.7.220-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.217"
+        "version": "v2.7.220"
     }
 }
