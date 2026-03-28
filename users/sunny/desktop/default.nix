@@ -33,6 +33,14 @@
     "git/config".source = ./gitconfig;
     "hyfetch.json".source = ./hyfetch.json;
     "niri/config.kdl".source = ./niri.kdl;
+    "kdeglobals".text = ''
+      [UiSettings]
+      ColorScheme=noctalia
+    '';
+    "okular.kmessagebox".text = ''
+      [General]
+      presentationInfo=4
+    '';
     "qt6ct/qt6ct.conf".text = ''
       [Appearance]
       color_scheme_path=/home/sunny/.config/qt6ct/colors/noctalia.conf

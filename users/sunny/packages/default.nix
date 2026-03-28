@@ -29,6 +29,6 @@
       withVencord = true;
       withOpenASAR = true;
     })
-    zathura
+    kdePackages.okular
   ];
 }

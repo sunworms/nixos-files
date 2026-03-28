@@ -44,7 +44,8 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
-      ".local/share/zathura"
+      ".local/share/okular"
+      ".local/share/color-schemes"
       ".local/share/fish"
       ".local/share/azahar-emu"
       ".local/share/eden"
