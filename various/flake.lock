@@ -89,11 +89,11 @@
         "noctalia-qs": "noctalia-qs"
       },
       "locked": {
-        "lastModified": 1774696521,
-        "narHash": "sha256-uUfKYGEQp2DcsGIpR1fwhBNgP4AvCOIo4uNc1PbjaGA=",
+        "lastModified": 1774721184,
+        "narHash": "sha256-kY697ewSfuoMSblqkO0PFaGNS+1xvmTn8wC32N0PCpg=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "f3edbe3dc8521b87421e026338d4b88c52aa5095",
+        "rev": "a5fc30988036c2c8711bb6cf949ed8cbd02cbae2",
         "type": "github"
       },
       "original": {
@@ -105,11 +105,11 @@
     "noctalia-plugins": {
       "flake": false,
       "locked": {
-        "lastModified": 1774624559,
-        "narHash": "sha256-ACk6pqiQ3WPq8Zxl1Hajrh0ZZ4AygyHafjbaCGJOyQM=",
+        "lastModified": 1774711746,
+        "narHash": "sha256-gc7ELl2IpD3GYpTraK2vT/0HqViR1ebMlxUDYOXG1nk=",
         "owner": "noctalia-dev",
         "repo": "noctalia-plugins",
-        "rev": "dd924bab350f773e34a9d87e259b2cc649df392c",
+        "rev": "11260389f4517b48c6cc1912c5c2a1e658673a6c",
         "type": "github"
       },
       "original": {
