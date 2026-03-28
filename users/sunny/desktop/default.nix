@@ -88,7 +88,19 @@
     nautilus
 
     # needed for noctalia
-    gpu-screen-recorder
+    grim
+    slurp
+    wl-clipboard
+    (tesseract.override {
+      enableLanguages = [ "eng" ];
+    })
+    imagemagick
+    zbar
+    curl
+    translate-shell
+    wf-recorder
+    ffmpeg
+    gifski
     wl-mirror
   ];
 }
