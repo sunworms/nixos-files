@@ -85,7 +85,6 @@
     hyfetch
     git
     xwayland-satellite
-    brightnessctl
     nautilus
   ];
 }

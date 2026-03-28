@@ -188,8 +188,6 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+Alt+B { spawn-sh "brightnessctl --device='platform::kbd_backlight' set +1"; }
-    Mod+Ctrl+B { spawn-sh "brightnessctl --device='platform::kbd_backlight' set 1-"; }
 
     Mod+Alt+N { spawn-sh "pkill quickshell; sleep 1; noctalia-shell"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
