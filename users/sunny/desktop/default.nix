@@ -86,5 +86,9 @@
     git
     xwayland-satellite
     nautilus
+
+    # needed for noctalia
+    gpu-screen-recorder
+    wl-mirror
   ];
 }
