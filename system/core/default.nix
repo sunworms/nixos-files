@@ -34,6 +34,9 @@
   # Battery
   services.upower.enable = true;
 
+  # Power profiles
+  services.tuned.enable = true;
+
   # Disable sudo lecture
   security.sudo.extraConfig = ''
     Defaults lecture="never"
