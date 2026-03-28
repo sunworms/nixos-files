@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/dank-theme.toml"
+    "~/.config/alacritty/themes/noctalia.toml"
 ]
 
 [font]

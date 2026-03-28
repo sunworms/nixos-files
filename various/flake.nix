@@ -16,21 +16,12 @@
       url = "github:niri-wm/niri/pull/3483/head";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    quickshell = {
-      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell?rev=08058326f04e9b5e55c903b3702405a8d3556ac6";
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.quickshell.follows = "quickshell";
-    };
-    dms-plugin-registry = {
-      url = "github:AvengeMedia/dms-plugin-registry";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    dms-base46 = {
-      url = "github:AvengeMedia/base46";
+    noctalia-plugins = {
+      url = "github:noctalia-dev/noctalia-plugins";
       flake = false;
     };
   };
@@ -44,8 +35,7 @@
           inputs.preservation.nixosModules.preservation
           inputs.sops-nix.nixosModules.default
           inputs.hjem.nixosModules.default
-          inputs.dms.nixosModules.dank-material-shell
-          inputs.dms-plugin-registry.modules.default
+          inputs.noctalia.nixosModules.default
         ];
         specialArgs = {
           inherit inputs;

@@ -15,6 +15,7 @@ in
 
   xdg.config.files = {
     "nvim/init.lua".source = ./init.lua;
+    "nvim/lua/matugen-template.lua".source = ./matugen-template.lua;
     "nvim/lua/plugins".source = ./plugins;
   };
 

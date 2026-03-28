@@ -1,6 +1,0 @@
-[config]
-
-[templates]
-[templates.discord]
-input_path = '~/.config/matugen/vesktop.css'
-output_path = '~/.config/Vencord/themes/dank-discord.css'

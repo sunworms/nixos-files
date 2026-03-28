@@ -22,13 +22,13 @@
       ".cache/wal"
       ".cache/nix"
       ".cache/typst"
-      ".cache/DankMaterialShell"
+      ".cache/noctalia"
 
       ".config/mozilla"
       ".config/discord"
       ".config/Vencord"
 
-      ".config/DankMaterialShell"
+      ".config/noctalia"
       ".config/fish"
       ".config/niri"
       ".config/alacritty"
@@ -55,7 +55,6 @@
       ".local/share/warp"
 
       ".local/state/wireplumber"
-      ".local/state/DankMaterialShell"
     ];
     files = [ ];
   };

@@ -11,16 +11,16 @@
     path = pkgs.vimPlugins.nvim-web-devicons;
   }
   {
+    name = "base16-nvim";
+    path = pkgs.vimPlugins.base16-nvim;
+  }
+  {
     name = "nvim-autopairs";
     path = pkgs.vimPlugins.nvim-autopairs;
   }
   {
     name = "lualine-nvim";
     path = pkgs.vimPlugins.lualine-nvim;
-  }
-  {
-    name = "base46";
-    path = inputs.dms-base46;
   }
   {
     name = "nvim-lspconfig";

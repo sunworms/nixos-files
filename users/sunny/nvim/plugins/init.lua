@@ -1,5 +1,4 @@
-vim.cmd.colorscheme("dms")
-
+require("matugen").setup()
 require("plugins.blink")
 require("plugins.lsp")
 require("plugins.typst-preview")

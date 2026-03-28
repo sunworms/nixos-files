@@ -108,6 +108,7 @@ blur {
     offset 3
 }
 
+spawn-at-startup "noctalia-shell"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
 spawn-sh-at-startup "pywalfox install && pywalfox start"
@@ -151,7 +152,7 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 12
+    geometry-corner-radius 20
     clip-to-geometry true
     draw-border-with-background false
 }
@@ -177,7 +178,7 @@ window-rule {
 // layer rules
 
 layer-rule {
-    match namespace="^quickshell$"
+    match namespace="^noctalia-wallpaper*"
     place-within-backdrop true
 }
 
@@ -190,26 +191,24 @@ binds {
     Mod+Alt+B { spawn-sh "brightnessctl --device='platform::kbd_backlight' set +1"; }
     Mod+Ctrl+B { spawn-sh "brightnessctl --device='platform::kbd_backlight' set 1-"; }
 
-    Mod+A hotkey-overlay-title="Application Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
-    Mod+V hotkey-overlay-title="Clipboard" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
-    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
-    Super+Alt+S hotkey-overlay-title="DMS Settings" { spawn "dms" "ipc" "call" "settings" "toggle"; }
-    Super+Alt+I hotkey-overlay-title="Inhibit Idle" { spawn "dms" "ipc" "call" "inhibit" "toggle"; }
-    Mod+P hotkey-overlay-title="Color Picker" { spawn-sh "dms color pick --autocopy"; }
+    Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Mod+V hotkey-overlay-title="Clipboard" { spawn "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
+    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    Super+Alt+S hotkey-overlay-title="DMS Settings" { spawn "noctalia-shell" "ipc" "call" "settings" "toggle"; }
+    Super+Alt+I hotkey-overlay-title="Inhibit Idle" { spawn "noctalia-shell" "ipc" "call" "idleInhibitor" "toggle"; }
 
-    XF86AudioRaiseVolume { spawn "dms" "ipc" "call" "audio" "increment" "1"; }
-    XF86AudioLowerVolume { spawn "dms" "ipc" "call" "audio" "decrement" "1"; }
-    XF86AudioMute { spawn "dms" "ipc" "call" "audio" "mute"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "micmute"; }
+    XF86AudioRaiseVolume { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
+    XF86AudioLowerVolume { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
+    XF86AudioMute { spawn "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "volume" "muteInput"; }
     
-    XF86MonBrightnessUp { spawn "dms" "ipc" "call" "brightness" "increment" "1" ""; }
-    XF86MonBrightnessDown { spawn "dms" "ipc" "call" "brightness" "decrement" "1" ""; }
+    XF86MonBrightnessUp { spawn "noctalia-shell" "ipc" "call" "brightness" "increase"; }
+    XF86MonBrightnessDown { spawn "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
 
-    XF86AudioPlay        allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "playPause"; }
-    XF86AudioStop        allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn "dms" "ipc" "call" "mpris" "next"; }
+    XF86AudioPlay        allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "media" "playPause"; }
+    XF86AudioPrev        allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "media" "previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "media" "next"; }
 
     Mod+Space repeat=false { toggle-overview; }
 
@@ -380,5 +379,9 @@ overview {
     }
 }
 
-include optional=true "dms/colors.kdl"
-include optional=true "dms/alttab.kdl"
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
+include optional=true "noctalia.kdl"

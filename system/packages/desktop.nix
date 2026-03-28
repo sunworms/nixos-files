@@ -16,12 +16,5 @@
     package = inputs.niri-blur.packages.${pkgs.stdenv.hostPlatform.system}.default;
   };
 
-  programs.dank-material-shell = {
-    enable = true;
-    systemd.enable = true;
-    plugins = {
-      emojiLauncher.enable = true;
-      niriWindows.enable = true;
-    };
-  };
+  services.noctalia-shell.enable = true;
 }
