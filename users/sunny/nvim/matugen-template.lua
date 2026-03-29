@@ -30,6 +30,7 @@
    'sigusr1',
    vim.schedule_wrap(function()
      package.loaded['matugen'] = nil
+     package.loaded['lualine'] = nil
      require('matugen').setup()
      require('lualine').setup()
    end)
