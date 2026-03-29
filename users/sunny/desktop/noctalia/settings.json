@@ -387,7 +387,7 @@
     "position": "center",
     "pinnedApps": [],
     "sortByMostUsed": true,
-    "terminalCommand": "alacritty -e",
+    "terminalCommand": "kitty -e",
     "customLaunchPrefixEnabled": false,
     "customLaunchPrefix": "",
     "viewMode": "list",
@@ -674,10 +674,6 @@
     "activeTemplates": [
       {
         "enabled": true,
-        "id": "alacritty"
-      },
-      {
-        "enabled": true,
         "id": "discord"
       },
       {
@@ -695,6 +691,10 @@
       {
         "enabled": true,
         "id": "qt"
+      },
+      {
+        "enabled": true,
+        "id": "kitty"
       }
     ],
     "enableUserTheming": true

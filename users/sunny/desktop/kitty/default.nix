@@ -2,10 +2,10 @@
 
 {
   xdg.config.files = {
-    "alacritty/alacritty.toml".source = ./alacritty.toml;
+    "kitty/kitty.conf".source = ./kitty.conf;
   };
 
   packages = with pkgs; [
-    alacritty
+    kitty
   ];
 }

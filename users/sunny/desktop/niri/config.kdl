@@ -174,7 +174,7 @@ prefer-no-csd
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
 
     Mod+Alt+N { spawn-sh "pkill quickshell; sleep 1; noctalia-shell"; }
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }

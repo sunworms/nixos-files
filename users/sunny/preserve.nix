@@ -31,7 +31,7 @@
       ".config/noctalia"
       ".config/fish"
       ".config/niri"
-      ".config/alacritty"
+      ".config/kitty"
       ".config/git"
 
       ".config/gtk-3.0"
