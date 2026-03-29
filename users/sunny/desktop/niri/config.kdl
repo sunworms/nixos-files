@@ -193,6 +193,7 @@ binds {
     XF86MonBrightnessDown { spawn "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
 
     XF86AudioPlay        allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "media" "playPause"; }
+    XF86AudioStop        allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "media" "stop"; }
     XF86AudioPrev        allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "media" "previous"; }
     XF86AudioNext        allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "media" "next"; }
 
