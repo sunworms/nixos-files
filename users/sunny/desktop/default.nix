@@ -96,6 +96,7 @@
     nautilus
 
     # needed for noctalia
+    gpu-screen-recorder
     grim
     slurp
     wl-clipboard

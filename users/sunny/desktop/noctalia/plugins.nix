@@ -5,6 +5,7 @@ let
     "kaomoji-provider"
     "mirror-mirror"
     "polkit-agent"
+    "screen-recorder"
     "screen-toolkit"
     "unicode-picker"
   ];
