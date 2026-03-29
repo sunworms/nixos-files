@@ -24,7 +24,7 @@
       ".cache/typst"
       ".cache/noctalia"
 
-      ".config/mozilla"
+      ".config/net.imput.helium"
       ".config/discord"
       ".config/Vencord"
 
