@@ -2,8 +2,11 @@
 
 {
   imports = [
+    ./alacritty
     ./fish
+    ./niri
     ./noctalia
+    ./qt-kde
   ];
 
   files = {
@@ -30,34 +33,8 @@
   };
 
   xdg.config.files = {
-    "alacritty/alacritty.toml".source = ./alacritty.toml;
     "git/config".source = ./gitconfig;
     "hyfetch.json".source = ./hyfetch.json;
-    "niri/config.kdl".source = ./niri.kdl;
-    "kdeglobals".text = ''
-      [UiSettings]
-      ColorScheme=noctalia
-    '';
-    "okular.kmessagebox".text = ''
-      [General]
-      presentationInfo=4
-    '';
-    "qt6ct/qt6ct.conf".text = ''
-      [Appearance]
-      color_scheme_path=/home/sunny/.config/qt6ct/colors/noctalia.conf
-      custom_palette=true
-      icon_theme=candy-icons
-      standard_dialogs=default
-      style=Fusion
-    '';
-    "qt5ct/qt5ct.conf".text = ''
-      [Appearance]
-      color_scheme_path=/home/sunny/.config/qt5ct/colors/noctalia.conf
-      custom_palette=true
-      icon_theme=candy-icons
-      standard_dialogs=default
-      style=Fusion
-    '';
     "mimeapps.list".source = ./mimeapps.list;
   };
 
@@ -90,27 +67,9 @@
   };
 
   packages = with pkgs; [
-    alacritty
     hyfetch
     git
     xwayland-satellite
     nautilus
-
-    # needed for noctalia
-    gpu-screen-recorder
-    grim
-    slurp
-    wl-clipboard
-    (tesseract.override {
-      enableLanguages = [ "eng" ];
-    })
-    imagemagick
-    zbar
-    curl
-    translate-shell
-    wf-recorder
-    ffmpeg
-    gifski
-    wl-mirror
   ];
 }
