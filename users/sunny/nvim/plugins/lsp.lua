@@ -12,14 +12,31 @@ for _, lsp in ipairs(servers) do
     vim.lsp.enable(lsp)
 end
 
+vim.lsp.config('lua_ls', {
+  capabilities = capabilities,
+  root_markers = { ".git" },
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { 'vim' },
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file('', true),
+        checkThirdParty = false,
+      },
+      runtime = { version = 'LuaJIT' },
+    },
+  },
+})
+
 vim.diagnostic.config({
   virtual_text = {
     prefix = '●', -- Could be '■', '▎', 'x'
     spacing = 4,
+    source = "if_many",
   },
   float = {
     border = 'rounded',
-    source = 'always', -- Shows which LSP provided the error
   },
   update_in_insert = false,
   severity_sort = true,
@@ -28,6 +45,15 @@ vim.diagnostic.config({
 -- Show line diagnostics automatically in a floating window on hover
 vim.api.nvim_create_autocmd("CursorHold", {
   callback = function()
-    vim.diagnostic.open_float(nil, { focusable = false })
+    vim.diagnostic.open_float(nil, {
+      focusable = false,
+    })
+  end,
+})
+
+vim.api.nvim_create_autocmd('LspAttach', {
+  desc = 'LSP actions',
+  callback = function(event)
+    vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = event.buf })
   end,
 })
