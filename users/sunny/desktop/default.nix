@@ -1,6 +1,8 @@
 { pkgs, ... }:
+
 {
   imports = [
+    ./fish
     ./noctalia
   ];
 
@@ -28,7 +30,6 @@
   };
 
   xdg.config.files = {
-    "fish/config.fish".source = ./config.fish;
     "alacritty/alacritty.toml".source = ./alacritty.toml;
     "git/config".source = ./gitconfig;
     "hyfetch.json".source = ./hyfetch.json;

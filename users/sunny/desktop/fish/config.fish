@@ -18,9 +18,6 @@ if status is-interactive
     abbr --add -- l 'ls -alh'
     abbr --add -- ll 'ls -l'
     abbr --add -- ls 'ls --color=tty'
-    abbr --add -- osc 'nh clean all'
-    abbr --add -- oss 'nh os switch --ask -f ./.'
-    abbr --add -- ost 'nh os test --ask -f ./.'
     alias vi "nvim"
     alias vim "nvim"
 
