@@ -155,20 +155,7 @@ window-rule {
     geometry-corner-radius 20
     clip-to-geometry true
     draw-border-with-background false
-}
-
-window-rule {
-    match is-active=true
-    opacity 0.9
-    background-effect {
-        blur true
-        xray true
-    }
-}
-
-window-rule {
-    match is-active=false
-    opacity 0.8
+    opacity 0.85
     background-effect {
         blur true
         xray true
