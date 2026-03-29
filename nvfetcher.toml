@@ -1,0 +1,45 @@
+# repos
+[nixpkgs]
+src.git = "https://github.com/NixOS/nixpkgs"
+src.branch = "nixos-unstable"
+fetch.github = "NixOS/nixpkgs"
+
+[preservation]
+src.git = "https://github.com/nix-community/preservation"
+fetch.github = "nix-community/preservation"
+
+[sops-nix]
+src.git = "https://github.com/Mic92/sops-nix"
+fetch.github = "Mic92/sops-nix"
+
+[hjem]
+src.git = "https://github.com/feel-co/hjem"
+fetch.github = "feel-co/hjem"
+
+[niri-blur]
+src.git = "https://github.com/niri-wm/niri"
+src.branch = "wip/branch"
+fetch.github = "niri-wm/niri"
+
+[noctalia]
+src.git = "https://github.com/noctalia-dev/noctalia-shell"
+fetch.github = "noctalia-dev/noctalia-shell"
+
+[noctalia-plugins]
+src.git = "https://github.com/noctalia-dev/noctalia-plugins"
+fetch.github = "noctalia-dev/noctalia-plugins"
+
+[noctalia-qs]
+src.git = "https://github.com/noctalia-dev/noctalia-qs"
+fetch.github = "noctalia-dev/noctalia-qs"
+
+# binary packages
+[pcsx2]
+src.github_tag = "PCSX2/pcsx2"
+fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-linux-appimage-x64-Qt.AppImage"
+
+[eden]
+src.github = "Eden-CI/Nightly"
+src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
+src.to_pattern = 'v\1.\2/Eden-Linux-\2'
+fetch.url = "https://github.com/Eden-CI/Nightly/releases/download/$ver-amd64-clang-pgo.AppImage"

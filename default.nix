@@ -1,0 +1,24 @@
+let
+  sourcesJson = builtins.fromJSON (builtins.readFile ./_sources/generated.json);
+
+  sources = import ./sources.nix sourcesJson;
+
+  nixosSystem = import "${sources.nixpkgs.src}/nixos/lib/eval-config.nix";
+
+  mkHost =
+    hostVars:
+    nixosSystem {
+      specialArgs = {
+        inherit sources hostVars;
+      };
+
+      modules = [
+        ./hosts/${hostVars.hostname}/configuration.nix
+      ];
+    };
+in
+{
+  motobook = mkHost {
+    hostname = "motobook";
+  };
+}

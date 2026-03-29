@@ -1,0 +1,200 @@
+{
+    "eden": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "eden",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-KeIrjjY8I3czerQ+gm5DLhKWwb8OIiOUjuvcb9tH57Y=",
+            "type": "url",
+            "url": "https://github.com/Eden-CI/Nightly/releases/download/v1774464339.f0d77e86e3/Eden-Linux-f0d77e86e3-amd64-clang-pgo.AppImage"
+        },
+        "version": "v1774464339.f0d77e86e3/Eden-Linux-f0d77e86e3"
+    },
+    "hjem": {
+        "cargoLock": null,
+        "date": "2026-03-18",
+        "extract": null,
+        "name": "hjem",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "feel-co",
+            "repo": "hjem",
+            "rev": "d51b2e524794a61762453be5bf7b4fe259150191",
+            "sha256": "sha256-hOweDMc/uNFeliSVuNXZ4qa6WC8AbmRV8pNSAD/h4S0=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "d51b2e524794a61762453be5bf7b4fe259150191"
+    },
+    "niri-blur": {
+        "cargoLock": null,
+        "date": "2026-03-22",
+        "extract": null,
+        "name": "niri-blur",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "niri-wm",
+            "repo": "niri",
+            "rev": "d06dd4b9e60fa07120c217aa095f3ed8caac99f2",
+            "sha256": "sha256-L/Ldq9G41Mj8WjWTuC+rePvWIx1A/tHdFpLbQmtrMSA=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "d06dd4b9e60fa07120c217aa095f3ed8caac99f2"
+    },
+    "nixpkgs": {
+        "cargoLock": null,
+        "date": "2026-03-24",
+        "extract": null,
+        "name": "nixpkgs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "46db2e09e1d3f113a13c0d7b81e2f221c63b8ce9",
+            "sha256": "sha256-4hAV26quOxdC6iyG7kYaZcM3VOskcPUrdCQd/nx8obc=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "46db2e09e1d3f113a13c0d7b81e2f221c63b8ce9"
+    },
+    "noctalia": {
+        "cargoLock": null,
+        "date": "2026-03-29",
+        "extract": null,
+        "name": "noctalia",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "noctalia-dev",
+            "repo": "noctalia-shell",
+            "rev": "3b9e93a8b1e748df9329a97eb8d7ee58d02977da",
+            "sha256": "sha256-D/W/pgyH9+50fMbyh839j3NIOyf9X8VJCKrsMpRnqAI=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "3b9e93a8b1e748df9329a97eb8d7ee58d02977da"
+    },
+    "noctalia-plugins": {
+        "cargoLock": null,
+        "date": "2026-03-28",
+        "extract": null,
+        "name": "noctalia-plugins",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "noctalia-dev",
+            "repo": "noctalia-plugins",
+            "rev": "11260389f4517b48c6cc1912c5c2a1e658673a6c",
+            "sha256": "sha256-gc7ELl2IpD3GYpTraK2vT/0HqViR1ebMlxUDYOXG1nk=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "11260389f4517b48c6cc1912c5c2a1e658673a6c"
+    },
+    "noctalia-qs": {
+        "cargoLock": null,
+        "date": "2026-03-29",
+        "extract": null,
+        "name": "noctalia-qs",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "noctalia-dev",
+            "repo": "noctalia-qs",
+            "rev": "07892dc370b2d2d83ed2477e89618bbff10089ee",
+            "sha256": "sha256-FX1xSwsRxUZzZ0gWVZwdNyS2XEiVamO6H39woT9zS00=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "07892dc370b2d2d83ed2477e89618bbff10089ee"
+    },
+    "pcsx2": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "pcsx2",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-vJbE0qOxJNUFOFcTJkvcUySFHG5pzJ8MkSgBJjfHc9A=",
+            "type": "url",
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.221/pcsx2-v2.7.221-linux-appimage-x64-Qt.AppImage"
+        },
+        "version": "v2.7.221"
+    },
+    "preservation": {
+        "cargoLock": null,
+        "date": "2025-09-09",
+        "extract": null,
+        "name": "preservation",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "nix-community",
+            "repo": "preservation",
+            "rev": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
+            "sha256": "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
+    },
+    "sops-nix": {
+        "cargoLock": null,
+        "date": "2026-03-29",
+        "extract": null,
+        "name": "sops-nix",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "Mic92",
+            "repo": "sops-nix",
+            "rev": "8adb84861fe70e131d44e1e33c426a51e2e0bfa5",
+            "sha256": "sha256-D+tgywBHldTc0klWCIC49+6Zlp57Y4GGwxP1CqfxZrY=",
+            "sparseCheckout": [],
+            "type": "github"
+        },
+        "version": "8adb84861fe70e131d44e1e33c426a51e2e0bfa5"
+    }
+}

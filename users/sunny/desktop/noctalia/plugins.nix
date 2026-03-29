@@ -1,4 +1,4 @@
-{ lib, inputs, ... }:
+{ lib, sources, ... }:
 
 let
   pluginList = [
@@ -11,6 +11,6 @@ let
 in
 {
   xdg.config.files = lib.genAttrs (map (name: "noctalia/plugins/${name}") pluginList) (path: {
-    source = "${inputs.noctalia-plugins}/${lib.last (lib.splitString "/" path)}";
+    source = "${sources.noctalia-plugins.src}/${lib.last (lib.splitString "/" path)}";
   });
 }

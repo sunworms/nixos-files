@@ -5,7 +5,7 @@
   lib,
 }:
 let
-  sourcesJson = builtins.fromJSON (builtins.readFile ../../../various/_sources/generated.json);
+  sourcesJson = builtins.fromJSON (builtins.readFile ../../../_sources/generated.json);
 
   pname = "eden";
   rawVersion = sourcesJson.eden.version;

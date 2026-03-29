@@ -1,6 +1,6 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 let
-  plugin-list = import ./plugins.nix { inherit pkgs inputs; };
+  plugin-list = import ./plugins.nix { inherit pkgs; };
   nvim-plugins = pkgs.linkFarm "nvim-plugins" plugin-list;
   parsers = pkgs.symlinkJoin {
     name = "treesitter-parsers";

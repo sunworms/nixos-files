@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, sources, ... }:
 
 {
   services.greetd = {
@@ -13,8 +13,6 @@
 
   programs.niri = {
     enable = true;
-    package = inputs.niri-blur.packages.${pkgs.stdenv.hostPlatform.system}.default;
+    package = (pkgs.callPackage ../../niri.nix { inherit sources; });
   };
-
-  services.noctalia-shell.enable = true;
 }

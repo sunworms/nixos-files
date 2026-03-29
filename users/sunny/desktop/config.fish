@@ -12,7 +12,6 @@ if status is-login
     set -Ux VISUAL nvim
     set -Ux GTK_THEME adw-gtk3
     set -Ux QT_QPA_PLATFORMTHEME qt6ct
-    set -Ux TERMINAL alacritty
 end
 if status is-interactive
     abbr --add -- grep 'grep --color=auto'
@@ -20,9 +19,8 @@ if status is-interactive
     abbr --add -- ll 'ls -l'
     abbr --add -- ls 'ls --color=tty'
     abbr --add -- osc 'nh clean all'
-    abbr --add -- oss 'nh os switch --ask . -H motobook'
-    abbr --add -- ost 'nh os test --ask . -H motobook'
-    abbr --add -- osb 'nh os build . -H motobook && nvd diff /run/current-system result && rm result'
+    abbr --add -- oss 'nh os switch --ask -f ./.'
+    abbr --add -- ost 'nh os test --ask -f ./.'
     alias vi "nvim"
     alias vim "nvim"
 
