@@ -337,6 +337,7 @@
     "showHiddenFiles": false,
     "viewMode": "recursive",
     "setWallpaperOnAllMonitors": true,
+    "linkLightAndDarkWallpapers": true,
     "fillMode": "crop",
     "fillColor": "#000000",
     "useSolidColor": false,
@@ -665,7 +666,7 @@
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
-    "generationMethod": "faithful",
+    "generationMethod": "tonal-spot",
     "monitorForColors": "",
     "syncGsettings": true
   },
