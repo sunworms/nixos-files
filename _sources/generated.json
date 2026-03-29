@@ -91,12 +91,12 @@
             "name": null,
             "owner": "noctalia-dev",
             "repo": "noctalia-shell",
-            "rev": "3b9e93a8b1e748df9329a97eb8d7ee58d02977da",
-            "sha256": "sha256-D/W/pgyH9+50fMbyh839j3NIOyf9X8VJCKrsMpRnqAI=",
+            "rev": "deb79261dd73f08ecd6f0f9f9df161c329e63eb0",
+            "sha256": "sha256-DbIhTLR5J5UBdVQrIp3PTz4laBxFmvVEwam8WH5rpxc=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "3b9e93a8b1e748df9329a97eb8d7ee58d02977da"
+        "version": "deb79261dd73f08ecd6f0f9f9df161c329e63eb0"
     },
     "noctalia-plugins": {
         "cargoLock": null,
