@@ -1,4 +1,4 @@
-{ pkgs, sources, ... }:
+{ pkgs, inputs, ... }:
 
 {
   services.greetd = {
@@ -13,6 +13,6 @@
 
   programs.niri = {
     enable = true;
-    package = (pkgs.callPackage ../../niri.nix { inherit sources; });
+    package = inputs.niri-blur.packages.${pkgs.stdenv.hostPlatform.system}.default;
   };
 }

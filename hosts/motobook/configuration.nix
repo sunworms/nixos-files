@@ -1,14 +1,10 @@
-{ sources, ... }:
+{ inputs, ... }:
 
 {
   imports = [
     ./hardware-configuration.nix
     ../../system/core
     ../../system/packages
-    "${sources.preservation.src}/module.nix"
-    "${sources.sops-nix.src}/modules/sops"
-    (import sources.hjem.src { }).nixosModules.default
-    "${sources.noctalia.src}/nix/nixos-module.nix"
   ];
 
   networking.hostName = "motobook";
@@ -17,15 +13,11 @@
 
   hjem = {
     clobberByDefault = true;
-    specialArgs = { inherit sources; };
+    specialArgs = { inherit inputs; };
   };
 
   nixpkgs = {
     config.allowUnfree = true;
     overlays = [ ];
   };
-
-  nix.nixPath = [
-    "nixpkgs=${sources.nixpkgs.src}"
-  ];
 }
