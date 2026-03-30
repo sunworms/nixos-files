@@ -255,7 +255,7 @@
     "clockFormat": "hh\\nmm",
     "passwordChars": true,
     "lockScreenMonitors": [],
-    "lockScreenBlur": 0.1,
+    "lockScreenBlur": 0.5,
     "lockScreenTint": 0,
     "keybinds": {
       "keyUp": [
@@ -384,7 +384,7 @@
     "enableClipboardChips": true,
     "clipboardWatchTextCommand": "wl-paste --type text --watch cliphist store",
     "clipboardWatchImageCommand": "wl-paste --type image --watch cliphist store",
-    "position": "center",
+    "position": "bottom_center",
     "pinnedApps": [],
     "sortByMostUsed": true,
     "terminalCommand": "kitty -e",
@@ -605,7 +605,7 @@
     "monitors": [],
     "location": "top_right",
     "overlayLayer": true,
-    "backgroundOpacity": 0.9500000000000001,
+    "backgroundOpacity": 0.9,
     "respectExpireTimeout": false,
     "lowUrgencyDuration": 3,
     "normalUrgencyDuration": 8,
@@ -634,7 +634,7 @@
     "location": "top_right",
     "autoHideMs": 2000,
     "overlayLayer": true,
-    "backgroundOpacity": 1,
+    "backgroundOpacity": 0.9,
     "enabledTypes": [
       0,
       1,
