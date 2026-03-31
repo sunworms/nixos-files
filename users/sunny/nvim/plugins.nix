@@ -2,6 +2,10 @@
 
 [
   {
+    name = "lz.n";
+    path = pkgs.vimPlugins.lz-n;
+  }
+  {
     name = "oil.nvim";
     path = pkgs.vimPlugins.oil-nvim;
   }

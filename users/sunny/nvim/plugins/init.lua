@@ -1,6 +1,0 @@
-require("matugen").setup()
-require("plugins.blink")
-require("plugins.lsp")
-require("plugins.typst-preview")
-require("plugins.conform")
-require("plugins.extra")

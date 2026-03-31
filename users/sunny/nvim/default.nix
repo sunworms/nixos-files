@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 let
   plugin-list = import ./plugins.nix { inherit pkgs; };
   nvim-plugins = pkgs.linkFarm "nvim-plugins" plugin-list;
@@ -6,6 +6,13 @@ let
     name = "treesitter-parsers";
     paths = pkgs.vimPlugins.nvim-treesitter.withAllGrammars.dependencies;
   };
+  pluginConfigs = builtins.readDir ./plugins;
+  pluginFiles = lib.mapAttrs' (name: type: {
+    name = "nvim/lua/plugins/${name}";
+    value = {
+      source = ./plugins/${name};
+    };
+  }) pluginConfigs;
 in
 {
   xdg.data.files = {
@@ -16,8 +23,8 @@ in
   xdg.config.files = {
     "nvim/init.lua".source = ./init.lua;
     "nvim/lua/matugen-template.lua".source = ./matugen-template.lua;
-    "nvim/lua/plugins".source = ./plugins;
-  };
+  }
+  // pluginFiles;
 
   packages = with pkgs; [
     neovim
