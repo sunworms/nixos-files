@@ -10,6 +10,10 @@
 
   ManagedBookmarks = [
     {
+      name = "NISER login";
+      url = "http://172.16.255.254/";
+    }
+    {
       name = "NixOS stuff";
       children = [
         {
