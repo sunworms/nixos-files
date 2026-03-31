@@ -35,7 +35,6 @@
           inputs.preservation.nixosModules.preservation
           inputs.sops-nix.nixosModules.default
           inputs.hjem.nixosModules.default
-          inputs.noctalia.nixosModules.default
         ];
         specialArgs = {
           inherit inputs;
