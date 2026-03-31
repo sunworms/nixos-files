@@ -1,5 +1,14 @@
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- Set the leader key to the spacebar
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+vim.g.loaded_clipboard_provider = 1
+vim.g.clipboard = {
+  name = 'unnamedplus',
+  copy = { ['+'] = 'wl-copy', ['*'] = 'wl-copy' }, -- or xclip
+  paste = { ['+'] = 'wl-paste', ['*'] = 'wl-paste' },
+  cache_enabled = 0,
+}
 
 local opt = vim.opt
 
@@ -34,29 +43,56 @@ opt.incsearch = true
 opt.splitbelow = true
 opt.splitright = true
 
--- Set the leader key to the spacebar
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- No ShaDa
+opt.shadafile = "NONE"
 
 vim.o.winborder = 'rounded'
 
-require('matugen').setup()
-require('oil').setup()
-require('lualine').setup({})
-require('nvim-autopairs').setup()
-require('nvim-treesitter').setup()
+local disabled_built_ins = {
+   "netrw",
+   "netrwPlugin",
+   "netrwSettings",
+   "netrwFileHandlers",
+   "gzip",
+   "zip",
+   "zipPlugin",
+   "tar",
+   "tarPlugin",
+   "getscript",
+   "getscriptPlugin",
+   "vimball",
+   "vimballPlugin",
+   "2html_plugin",
+   "logipat",
+   "rrhelper",
+   "spellfile_plugin",
+   "matchit",
+}
 
-local plugins_path = vim.fn.stdpath("config") .. "/lua/plugins"
-
-local plugins = {}
-local files = vim.fn.readdir(plugins_path)
-
-for _, file in ipairs(files) do
-    if file:match("%.lua$") then
-        local module_name = "plugins." .. file:gsub("%.lua$", "")
-        local spec = require(module_name)
-        table.insert(plugins, spec)
-    end
+for _, plugin in ipairs(disabled_built_ins) do
+   vim.g["loaded_" .. plugin] = 1
 end
+
+local status, matugen = pcall(require, 'matugen')
+if status then
+    matugen.setup()
+        
+    local signal = vim.uv.new_signal()
+    signal:start('sigusr1', vim.schedule_wrap(function()
+        package.loaded['matugen'] = nil
+        package.loaded['lualine'] = nil
+        require('matugen').setup()
+        require('lualine').setup({ options = { theme = "base16" } })
+    end))
+end
+
+local plugins = {
+  require("plugins.extra"),
+  require("plugins.blink"),
+  require("plugins.lsp"),
+  require("plugins.telescope"),
+  require("plugins.typst-preview"),
+  require("plugins.conform"),
+}
 
 require("lz.n").load(plugins)

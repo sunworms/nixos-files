@@ -2,21 +2,12 @@
 
 [
   {
-    name = "lz.n";
-    path = pkgs.vimPlugins.lz-n;
+    name = "blink.cmp";
+    path = pkgs.vimPlugins.blink-cmp;
   }
   {
     name = "oil.nvim";
     path = pkgs.vimPlugins.oil-nvim;
-  }
-  # needed for oil nvim
-  {
-    name = "nvim-web-devicons";
-    path = pkgs.vimPlugins.nvim-web-devicons;
-  }
-  {
-    name = "base16-nvim";
-    path = pkgs.vimPlugins.base16-nvim;
   }
   {
     name = "nvim-autopairs";
@@ -38,24 +29,10 @@
     name = "conform.nvim";
     path = pkgs.vimPlugins.conform-nvim;
   }
-  {
-    name = "blink.cmp";
-    path = pkgs.vimPlugins.blink-cmp;
-  }
-  # needed for blink.cmp
-  {
-    name = "friendly-snippets";
-    path = pkgs.vimPlugins.friendly-snippets;
-  }
   # needed for neogit
   {
     name = "telescope.nvim";
     path = pkgs.vimPlugins.telescope-nvim;
-  }
-  # needed for telescope and neogit
-  {
-    name = "plenary.nvim";
-    path = pkgs.vimPlugins.plenary-nvim;
   }
   {
     name = "neogit";

@@ -1,10 +1,10 @@
 return {
   "nvim-lspconfig",
+  event = "BufReadPost",
   after = function()
     local capabilities = require("blink.cmp").get_lsp_capabilities()
-
     local servers = {
-      "lua_ls", "nixd", "nil", "texlab", "rust_analyzer", "jdtls", "gopls", "tinymist"
+      "nixd", "nil", "texlab", "rust_analyzer", "jdtls", "gopls", "tinymist"
     }
 
     for _, lsp in ipairs(servers) do
