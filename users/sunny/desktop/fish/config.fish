@@ -1,17 +1,17 @@
 if status is-login
-    set -Ux CLUTTER_BACKEND wayland
-    set -Ux GDK_BACKEND wayland
-    set -Ux NIXOS_OZONE_WL 1
-    set -Ux QT_AUTO_SCREEN_SCALE_FACTOR 1
-    set -Ux QT_QPA_PLATFORM wayland
-    set -Ux QT_WAYLAND_DISABLE_WINDOWDECORATION 1
-    set -Ux SDL_VIDEODRIVER wayland
-    set -Ux _JAVA_AWT_WM_NONREPARENTING 1
-    set -Ux EDITOR nvim
-    set -Ux SUDO_EDITOR nvim
-    set -Ux VISUAL nvim
-    set -Ux GTK_THEME adw-gtk3
-    set -Ux QT_QPA_PLATFORMTHEME qt6ct
+    set -gx CLUTTER_BACKEND wayland
+    set -gx GDK_BACKEND wayland
+    set -gx NIXOS_OZONE_WL 1
+    set -gx QT_AUTO_SCREEN_SCALE_FACTOR 1
+    set -gx QT_QPA_PLATFORM wayland
+    set -gx QT_WAYLAND_DISABLE_WINDOWDECORATION 1
+    set -gx SDL_VIDEODRIVER wayland
+    set -gx _JAVA_AWT_WM_NONREPARENTING 1
+    set -gx EDITOR nvim
+    set -gx SUDO_EDITOR nvim
+    set -gx VISUAL nvim
+    set -gx GTK_THEME adw-gtk3
+    set -gx QT_QPA_PLATFORMTHEME qt6ct
 end
 if status is-interactive
     abbr --add -- grep 'grep --color=auto'
