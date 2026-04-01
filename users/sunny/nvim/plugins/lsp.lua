@@ -4,7 +4,7 @@ require("lz.n").load({
   after = function()
     local capabilities = require("blink.cmp").get_lsp_capabilities()
     local servers = {
-      "nixd", "nil", "texlab", "rust_analyzer", "jdtls", "gopls", "tinymist"
+      "nixd", "nil_ls", "texlab", "rust_analyzer", "jdtls", "gopls", "tinymist"
     }
 
     for _, lsp in ipairs(servers) do
@@ -31,6 +31,8 @@ require("lz.n").load({
         },
       },
     })
+
+    vim.lsp.enable('lua_ls')
 
     vim.diagnostic.config({
       virtual_text = {
