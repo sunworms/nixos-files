@@ -25,8 +25,7 @@
       ".cache/noctalia"
 
       ".config/net.imput.helium"
-      ".config/discord"
-      ".config/Vencord"
+      ".config/vesktop"
 
       ".config/noctalia"
       ".config/fish"

@@ -25,10 +25,7 @@
       ];
     })
     satty
-    (discord.override {
-      withVencord = true;
-      withOpenASAR = true;
-    })
+    vesktop
     kdePackages.okular
   ];
 }
