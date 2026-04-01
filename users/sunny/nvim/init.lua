@@ -65,7 +65,7 @@ for _, plugin in ipairs(disabled_built_ins) do
    vim.g["loaded_" .. plugin] = 1
 end
 
-vim.cmd('colorscheme base16-matugen')
+require("matugen")
 
 require("lz.n").load({
   {
@@ -117,7 +117,8 @@ signal:start(
     'sigusr1',
     vim.schedule_wrap(function()
         package.loaded['lualine'] = nil
-        vim.cmd('colorscheme base16-matugen')
+        package.loaded['matugen'] = nil
+        require("matugen")
         require('lualine').setup({ options = { theme = "base16" } })
     end)
 )
