@@ -2,14 +2,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.g.loaded_clipboard_provider = 1
-vim.g.clipboard = {
-  name = 'unnamedplus',
-  copy = { ['+'] = 'wl-copy', ['*'] = 'wl-copy' }, -- or xclip
-  paste = { ['+'] = 'wl-paste', ['*'] = 'wl-paste' },
-  cache_enabled = 0,
-}
-
 local opt = vim.opt
 
 -- General
@@ -73,26 +65,59 @@ for _, plugin in ipairs(disabled_built_ins) do
    vim.g["loaded_" .. plugin] = 1
 end
 
-local status, matugen = pcall(require, 'matugen')
-if status then
-    matugen.setup()
-        
-    local signal = vim.uv.new_signal()
-    signal:start('sigusr1', vim.schedule_wrap(function()
-        package.loaded['matugen'] = nil
+vim.cmd('colorscheme base16-matugen')
+
+require("lz.n").load({
+  {
+    "lualine-nvim",
+    event = "DeferredUIEnter",
+    after = function()
+      require("plugins.extra")()
+    end
+  },
+  {
+    "blink.cmp",
+    event = "BufReadPre",
+    after = function()
+      require("plugins.blink")
+    end,
+  },
+  {
+    "nvim-lspconfig",
+    event = "BufReadPost",
+    after = function()
+      require("plugins.lsp")
+    end,
+  },
+  {
+    "telescope.nvim",
+    event = "DeferredUIEnter",
+    after = function()
+      require("plugins.telescope") 
+    end,
+  },
+  {
+    "typst-preview.nvim",
+    ft = "typst",
+    after = function()
+      require("plugins.typst-preview")
+    end,
+  },
+  {
+    "conform.nvim",
+    event = "BufWritePre",
+    after = function()
+      require("plugins.conform")
+    end,
+  },
+})
+
+local signal = vim.uv.new_signal()
+signal:start(
+    'sigusr1',
+    vim.schedule_wrap(function()
         package.loaded['lualine'] = nil
-        require('matugen').setup()
+        vim.cmd('colorscheme base16-matugen')
         require('lualine').setup({ options = { theme = "base16" } })
-    end))
-end
-
-local plugins = {
-  require("plugins.extra"),
-  require("plugins.blink"),
-  require("plugins.lsp"),
-  require("plugins.telescope"),
-  require("plugins.typst-preview"),
-  require("plugins.conform"),
-}
-
-require("lz.n").load(plugins)
+    end)
+)

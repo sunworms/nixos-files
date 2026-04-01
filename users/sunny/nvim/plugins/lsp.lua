@@ -1,4 +1,4 @@
-return {
+require("lz.n").load({
   "nvim-lspconfig",
   event = "BufReadPost",
   after = function()
@@ -61,4 +61,4 @@ return {
       end,
     })
   end
-}
+})

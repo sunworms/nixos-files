@@ -1,4 +1,4 @@
-return {
+require("lz.n").load({
   "typst-preview.nvim",
   ft = "typst",
   opts = {
@@ -8,4 +8,4 @@ return {
         ['websocat'] = 'websocat',
     },
   },
-}
+})

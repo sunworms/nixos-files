@@ -1,4 +1,4 @@
-return {
+require("lz.n").load({
   "conform.nvim",
   event = "BufWritePre",
   opts = {
@@ -18,4 +18,4 @@ return {
       end,
     })
   end,
-}
+})

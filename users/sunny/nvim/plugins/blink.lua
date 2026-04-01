@@ -1,4 +1,4 @@
-return {
+require("lz.n").load({
   "blink.cmp",
   event = "BufReadPre",
   after = function()
@@ -20,4 +20,4 @@ return {
           fuzzy = { implementation = "prefer_rust_with_warning" },
       })
   end
-}
+})
