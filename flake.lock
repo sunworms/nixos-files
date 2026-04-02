@@ -30,11 +30,11 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1774190104,
-        "narHash": "sha256-L/Ldq9G41Mj8WjWTuC+rePvWIx1A/tHdFpLbQmtrMSA=",
+        "lastModified": 1775123466,
+        "narHash": "sha256-Uh27UiPAAzGWoLK2ddXD8bYTQZfGBv8J/4poM1tsY3c=",
         "owner": "niri-wm",
         "repo": "niri",
-        "rev": "d06dd4b9e60fa07120c217aa095f3ed8caac99f2",
+        "rev": "43674fab0c3c40db8e9882b8ca206d8ea6c0d22b",
         "type": "github"
       },
       "original": {
@@ -89,11 +89,11 @@
         "noctalia-qs": "noctalia-qs"
       },
       "locked": {
-        "lastModified": 1775092367,
-        "narHash": "sha256-E4I6ZuZztZ0Q9hNKfVnGaKNiYuiO4NBPcRonKJhS5Ug=",
+        "lastModified": 1775138221,
+        "narHash": "sha256-JJRCJmYYwOTAULLtoa4503luI4XXA4l3KGHLAaxl6do=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "75d67b32169738333b6647ab6a2e110587a0ff66",
+        "rev": "94a918ba29a90ae626eec0af1b4ad6f1755957fc",
         "type": "github"
       },
       "original": {
@@ -105,11 +105,11 @@
     "noctalia-plugins": {
       "flake": false,
       "locked": {
-        "lastModified": 1775079572,
-        "narHash": "sha256-mEnjSEc9AJ/61ig8GiPqL3zxchVBCbRDJlZoKfePnak=",
+        "lastModified": 1775138804,
+        "narHash": "sha256-zNJRIxonZ63TzyBXae/2bLq6FqxY9IXnFUlJV/M9bpk=",
         "owner": "noctalia-dev",
         "repo": "noctalia-plugins",
-        "rev": "aa16a7b79091b9d9d422a4ad7823d4d31e2e2816",
+        "rev": "3b1e4a04646aed001d3460e40ba458c1e720997c",
         "type": "github"
       },
       "original": {
