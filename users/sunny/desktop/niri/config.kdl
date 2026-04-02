@@ -45,7 +45,7 @@ input {
     }
 
     // warp-mouse-to-focus
-
+    disable-power-key-handling
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
@@ -183,6 +183,8 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
     Super+Alt+S hotkey-overlay-title="DMS Settings" { spawn "noctalia-shell" "ipc" "call" "settings" "toggle"; }
     Super+Alt+I hotkey-overlay-title="Inhibit Idle" { spawn "noctalia-shell" "ipc" "call" "idleInhibitor" "toggle"; }
+
+    XF86PowerOff { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "lockAndSuspend"; }
 
     XF86AudioRaiseVolume { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
     XF86AudioLowerVolume { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
