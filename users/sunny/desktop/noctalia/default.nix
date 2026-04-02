@@ -5,10 +5,6 @@
 }:
 
 {
-  imports = [
-    ./plugins.nix
-  ];
-
   packages = with pkgs; [
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
 

@@ -89,32 +89,16 @@
         "noctalia-qs": "noctalia-qs"
       },
       "locked": {
-        "lastModified": 1775138221,
-        "narHash": "sha256-JJRCJmYYwOTAULLtoa4503luI4XXA4l3KGHLAaxl6do=",
+        "lastModified": 1775142904,
+        "narHash": "sha256-UGZq9V+sImNCZXJivXBtJJ1p5Ui24vRrXoDK1ulhyLE=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "94a918ba29a90ae626eec0af1b4ad6f1755957fc",
+        "rev": "411a820f3cf210425f02306ed4d14a7e4ea75f9b",
         "type": "github"
       },
       "original": {
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "type": "github"
-      }
-    },
-    "noctalia-plugins": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1775138804,
-        "narHash": "sha256-zNJRIxonZ63TzyBXae/2bLq6FqxY9IXnFUlJV/M9bpk=",
-        "owner": "noctalia-dev",
-        "repo": "noctalia-plugins",
-        "rev": "3b1e4a04646aed001d3460e40ba458c1e720997c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "noctalia-dev",
-        "repo": "noctalia-plugins",
         "type": "github"
       }
     },
@@ -162,7 +146,6 @@
         "niri-blur": "niri-blur",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
-        "noctalia-plugins": "noctalia-plugins",
         "preservation": "preservation",
         "sops-nix": "sops-nix"
       }
