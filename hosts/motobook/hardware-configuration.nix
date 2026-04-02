@@ -21,7 +21,9 @@
     "sd_mod"
     "rtsx_pci_sdmmc"
   ];
-  boot.initrd.kernelModules = [ ];
+  boot.initrd.kernelModules = [
+    "zfs"
+  ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
@@ -36,22 +38,18 @@
   };
 
   fileSystems."/nix" = {
-    device = "/dev/disk/by-label/root";
-    fsType = "btrfs";
+    device = "zpool/nix";
+    fsType = "zfs";
     options = [
-      "subvol=@nix"
-      "noatime"
-      "compress-force=zstd"
+      "zfsutil"
     ];
   };
 
   fileSystems."/persist" = {
-    device = "/dev/disk/by-label/root";
-    fsType = "btrfs";
+    device = "zpool/persist";
+    fsType = "zfs";
     options = [
-      "subvol=@persist"
-      "noatime"
-      "compress-force=zstd"
+      "zfsutil"
     ];
     neededForBoot = true;
   };
@@ -70,4 +68,11 @@
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.npu.enable = true;
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+  boot.kernelParams = [ "zfs.zfs_arc_max=4294967296" ];
+  boot.supportedFilesystems = {
+    zfs = true;
+  };
+  services.zfs.autoScrub.enable = true;
+  networking.hostId = "962464f9";
 }
