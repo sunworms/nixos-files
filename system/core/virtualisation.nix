@@ -1,17 +1,18 @@
 { pkgs, ... }:
 
 {
-  #virtualisation.libvirtd = {
-  #  enable = false;
-  #  qemu = {
-  #    package = pkgs.qemu_kvm;
-  #    runAsRoot = true;
-  #    swtpm.enable = true;
-  #  };
-  #};
-  #programs.virt-manager.enable = false;
+  virtualisation.libvirtd = {
+    enable = false;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      vhostUserPackages = with pkgs; [ virtiofsd ];
+    };
+  };
+  programs.virt-manager.enable = false;
 
-  #users.users.sunny.extraGroups = [ "libvirtd" ];
+  users.users.sunny.extraGroups = [ "libvirtd" ];
 
   virtualisation.podman = {
     enable = true;
@@ -20,6 +21,5 @@
 
   environment.systemPackages = with pkgs; [
     distrobox
-    #virtiofsd
   ];
 }

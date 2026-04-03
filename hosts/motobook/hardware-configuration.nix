@@ -69,7 +69,7 @@
   hardware.cpu.intel.npu.enable = true;
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
-  boot.kernelParams = [ "zfs.zfs_arc_max=4294967296" ];
+  boot.kernelParams = [ "zfs.zfs_arc_max=6442450944" ];
   boot.supportedFilesystems = {
     zfs = true;
   };
