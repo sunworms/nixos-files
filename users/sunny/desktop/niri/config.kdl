@@ -171,6 +171,10 @@ layer-rule {
 
 prefer-no-csd
 
+switch-events {
+    lid-close { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "lockAndSuspend"; }
+}
+
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 

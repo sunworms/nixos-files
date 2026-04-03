@@ -43,7 +43,10 @@
   '';
 
   # Logind config
-  services.logind.settings.Login.HandlePowerKey = "ignore";
+  services.logind.settings.Login = {
+    HandlePowerKey = "ignore";
+    HandleLidSwitch = "ignore";
+  };
 
   # Enable direnv
   programs.direnv = {
