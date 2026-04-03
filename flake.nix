@@ -4,10 +4,6 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     preservation.url = "github:nix-community/preservation";
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     hjem = {
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,17 +19,19 @@
   };
 
   outputs =
-    { ... }@inputs:
+    { self, ... }@inputs:
+    let
+      secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
+    in
     {
       nixosConfigurations.motobook = inputs.nixpkgs.lib.nixosSystem {
         modules = [
           ./hosts/motobook/configuration.nix
           inputs.preservation.nixosModules.preservation
-          inputs.sops-nix.nixosModules.default
           inputs.hjem.nixosModules.default
         ];
         specialArgs = {
-          inherit inputs;
+          inherit inputs secrets;
         };
       };
     };

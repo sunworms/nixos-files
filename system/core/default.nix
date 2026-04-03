@@ -7,7 +7,6 @@
     ./virtualisation.nix
     ./network.nix
     ./users.nix
-    ./sops.nix
     ./preserve.nix
     ./kanata.nix
   ];

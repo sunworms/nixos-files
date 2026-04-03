@@ -5,12 +5,11 @@ fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-li
 
 [eden]
 src.webpage = "https://git.eden-emu.dev/eden-ci/nightly/releases"
-# This regex is more robust: it looks for 'v' followed by digits, 
-# a dot, and then the hex hash.
 src.regex = 'v\d{9,}\.[0-9a-f]{8,}'
 src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
 src.to_pattern = 'v\1.\2/Eden-Linux-\2'
 fetch.url = "https://git.eden-emu.dev/eden-ci/nightly/releases/download/$ver-amd64-clang-pgo.AppImage"
+
 [helium]
 src.github = "imputnet/helium-linux"
 fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"

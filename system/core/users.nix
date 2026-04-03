@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ secrets, pkgs, ... }:
 
 {
   users.mutableUsers = false;
 
-  users.users.root.hashedPasswordFile = config.sops.secrets.root_password.path;
+  users.users.root.hashedPassword = secrets.root.password;
 
   users.users.sunny = {
     isNormalUser = true;
@@ -11,7 +11,7 @@
       "wheel"
       "networkmanager"
     ];
-    hashedPasswordFile = config.sops.secrets.sunny_password.path;
+    hashedPassword = secrets.sunny.password;
     shell = pkgs.fish;
   };
 
