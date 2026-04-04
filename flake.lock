@@ -45,11 +45,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775286835,
-        "narHash": "sha256-iMYAWi+rQEKuqEyM2t7S3X2XuLvjouuLVd5pZdqoxI4=",
+        "lastModified": 1775300473,
+        "narHash": "sha256-sLc/+y/UjVcWoWeVHeug2vQe35p6WpLzQzuTvd1FcXw=",
         "ref": "refs/heads/main",
-        "rev": "cf05259505eca0577f86dd9501c34313ec1f974e",
-        "revCount": 4,
+        "rev": "c8bb4925857c6de2fe07ae54dbe3d6f9545b835c",
+        "revCount": 5,
         "type": "git",
         "url": "https://git.gay/sunworms/neovim-config.git"
       },
@@ -66,11 +66,11 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1775123466,
-        "narHash": "sha256-Uh27UiPAAzGWoLK2ddXD8bYTQZfGBv8J/4poM1tsY3c=",
+        "lastModified": 1775292396,
+        "narHash": "sha256-ecehdC2MALL7B7zGxuBOVsfyNXdwiHHd4UWSF14coOk=",
         "owner": "niri-wm",
         "repo": "niri",
-        "rev": "43674fab0c3c40db8e9882b8ca206d8ea6c0d22b",
+        "rev": "3818406eb44535bc10e659fbcb21fbc86c61153c",
         "type": "github"
       },
       "original": {
