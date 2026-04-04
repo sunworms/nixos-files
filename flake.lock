@@ -45,11 +45,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775285262,
-        "narHash": "sha256-uIGofUTozeew/iHxDmIzOvTduop6+5KHSCD0VN/Zq9M=",
+        "lastModified": 1775286835,
+        "narHash": "sha256-iMYAWi+rQEKuqEyM2t7S3X2XuLvjouuLVd5pZdqoxI4=",
         "ref": "refs/heads/main",
-        "rev": "ee1e1757902e526d03aad473c5834f6bb9abc6e8",
-        "revCount": 2,
+        "rev": "cf05259505eca0577f86dd9501c34313ec1f974e",
+        "revCount": 4,
         "type": "git",
         "url": "https://git.gay/sunworms/neovim-config.git"
       },
