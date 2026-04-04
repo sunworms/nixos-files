@@ -45,11 +45,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775300473,
-        "narHash": "sha256-sLc/+y/UjVcWoWeVHeug2vQe35p6WpLzQzuTvd1FcXw=",
+        "lastModified": 1775305224,
+        "narHash": "sha256-ir5lyFDrOZrBwpk2A7o9lFVbRBLoJ559LlhP0COFmKI=",
         "ref": "refs/heads/main",
-        "rev": "c8bb4925857c6de2fe07ae54dbe3d6f9545b835c",
-        "revCount": 5,
+        "rev": "bf1e2116dc785dcd18ca29dc9a34fddae265bf27",
+        "revCount": 7,
         "type": "git",
         "url": "https://git.gay/sunworms/neovim-config.git"
       },
@@ -125,11 +125,11 @@
         "noctalia-qs": "noctalia-qs"
       },
       "locked": {
-        "lastModified": 1775210433,
-        "narHash": "sha256-tkue0Ed0CufUXjEBb51ojtyWY1ibK9h3ed+mVDHFGZA=",
+        "lastModified": 1775301509,
+        "narHash": "sha256-61TwMynfcQR6Cg4z9Ifyg4jDem5fAvr0MlBszLa4rB4=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "759454d2d5bce9be7dea982818700140335ed047",
+        "rev": "4b9a6071510da6b5e8f304ffd1ea21dfdd98d5bd",
         "type": "github"
       },
       "original": {
