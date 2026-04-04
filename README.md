@@ -6,14 +6,20 @@ Folder structure of my NixOS configuration:
 │       ├── eden.svg
 │       ├── haruta.jpg
 │       └── NixOS.png
+├── flake.lock
+├── flake.nix
 ├── hosts
 │   └── motobook
 │       ├── configuration.nix
 │       └── hardware-configuration.nix
 ├── LICENSE
+├── nvfetcher.toml
 ├── README.md
 ├── secrets
-│   └── secrets.yaml
+│   └── secrets.json
+├── _sources
+│   ├── generated.json
+│   └── generated.nix
 ├── system
 │   ├── core
 │   │   ├── boot.nix
@@ -23,61 +29,54 @@ Folder structure of my NixOS configuration:
 │   │   ├── network.nix
 │   │   ├── nix-settings.nix
 │   │   ├── preserve.nix
-│   │   ├── sops.nix
 │   │   ├── users.nix
 │   │   └── virtualisation.nix
 │   └── packages
 │       ├── audio.nix
 │       ├── bluetooth.nix
+│       ├── chromium.nix
 │       ├── default.nix
 │       ├── desktop.nix
 │       ├── fonts.nix
 │       ├── portals.nix
 │       └── programs.nix
-├── users
-│   └── sunny
-│       ├── browser.nix
-│       ├── default.nix
-│       ├── desktop
-│       │   ├── alacritty.toml
-│       │   ├── config.fish
-│       │   ├── default.nix
-│       │   ├── gitconfig
-│       │   ├── hyfetch.json
-│       │   ├── mimeapps.list
-│       │   ├── niri.kdl
-│       │   └── noctalia
-│       │       ├── default.nix
-│       │       ├── plugins.json
-│       │       ├── plugins.nix
-│       │       ├── settings.json
-│       │       └── user-templates.toml
-│       ├── nvim
-│       │   ├── default.nix
-│       │   ├── init.lua
-│       │   ├── matugen-template.lua
-│       │   ├── plugins
-│       │   │   ├── blink.lua
-│       │   │   ├── conform.lua
-│       │   │   ├── extra.lua
-│       │   │   ├── init.lua
-│       │   │   ├── lsp.lua
-│       │   │   └── typst-preview.lua
-│       │   └── plugins.nix
-│       ├── packages
-│       │   ├── browser-paths.patch
-│       │   ├── default.nix
-│       │   ├── eden.nix
-│       │   ├── ice-ssb.nix
-│       │   └── pcsx2.nix
-│       └── preserve.nix
-└── various
-    ├── flake.lock
-    ├── flake.nix
-    ├── nvfetcher.toml
-    └── _sources
-        ├── generated.json
-        └── generated.nix
+└── users
+    └── sunny
+        ├── browser.nix
+        ├── default.nix
+        ├── desktop
+        │   ├── default.nix
+        │   ├── fish
+        │   │   ├── config.fish
+        │   │   ├── default.nix
+        │   │   └── functions
+        │   │       └── nixos.fish
+        │   ├── gitconfig
+        │   ├── hyfetch.json
+        │   ├── kitty
+        │   │   ├── default.nix
+        │   │   └── kitty.conf
+        │   ├── mimeapps.list
+        │   ├── niri
+        │   │   ├── config.kdl
+        │   │   └── default.nix
+        │   ├── noctalia
+        │   │   ├── default.nix
+        │   │   ├── matugen-template.lua
+        │   │   ├── plugins.json
+        │   │   ├── settings.json
+        │   │   └── user-templates.toml
+        │   └── qt-kde
+        │       └── default.nix
+        ├── helium.nix
+        ├── nvim.nix
+        ├── packages
+        │   ├── browser-paths.patch
+        │   ├── default.nix
+        │   ├── eden.nix
+        │   ├── ice-ssb.nix
+        │   └── pcsx2.nix
+        └── preserve.nix
 
-18 directories, 60 files
+20 directories, 57 files
 ```
