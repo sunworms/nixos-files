@@ -42,15 +42,15 @@
   };
 
   xdg.data.files = {
-    "applications/nvim-terminal.desktop".text = ''
+    "applications/helix-terminal.desktop".text = ''
       [Desktop Entry]
       Encoding=UTF-8
       Version=1.0
       Type=Application
       NoDisplay=true
-      Exec=kitty -e nvim %f
-      Name=Neovim
-      Comment=Custom definition for Neovim
+      Exec=kitty -e hx %f
+      Name=Helix
+      Comment=Custom definition for Helix
     '';
     "nautilus/scripts/Open with Custom Command" = {
       text = ''

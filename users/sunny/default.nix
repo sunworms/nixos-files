@@ -4,7 +4,7 @@
   imports = [
     ./packages
     ./desktop
-    ./nvim.nix
+    ./helix
     ./browser.nix
   ];
 
@@ -33,7 +33,11 @@
     libsForQt5.qt5ct
     qt6Packages.qt6ct
 
-    #image viewer
+    # image viewer
     swayimg
+
+    # other
+    ripgrep
+    lazygit
   ];
 }

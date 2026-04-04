@@ -1,3 +1,4 @@
+
 {
   "settingsVersion": 59,
   "bar": {
@@ -74,6 +75,7 @@
           "maxWidth": 145,
           "scrollingMode": "hover",
           "showIcon": true,
+          "showText": true,
           "textColor": "none",
           "useFixedWidth": false
         },
@@ -302,6 +304,7 @@
     "name": "Jatani",
     "weatherEnabled": true,
     "weatherShowEffects": true,
+    "weatherTaliaMascotAlways": false,
     "useFahrenheit": false,
     "use12hourFormat": false,
     "showWeekNumberInCalendar": false,
@@ -310,7 +313,8 @@
     "analogClockInCalendar": false,
     "firstDayOfWeek": -1,
     "hideWeatherTimezone": false,
-    "hideWeatherCityName": false
+    "hideWeatherCityName": false,
+    "autoLocate": false
   },
   "calendar": {
     "cards": [
@@ -521,7 +525,6 @@
     "indicatorOpacity": 0.6
   },
   "network": {
-    "airplaneModeEnabled": false,
     "bluetoothRssiPollingEnabled": false,
     "bluetoothRssiPollIntervalMs": 60000,
     "networkPanelView": "wifi",
@@ -695,9 +698,13 @@
       {
         "enabled": true,
         "id": "kitty"
+      },
+      {
+        "enabled": true,
+        "id": "helix"
       }
     ],
-    "enableUserTheming": true
+    "enableUserTheming": false
   },
   "nightLight": {
     "enabled": false,
