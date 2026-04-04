@@ -22,6 +22,42 @@
         "type": "github"
       }
     },
+    "mnw": {
+      "locked": {
+        "lastModified": 1771285028,
+        "narHash": "sha256-mR8GDvGPu1QcI5Ft5lV2CIIh5Og7zRylts+XY3fa/K4=",
+        "owner": "Gerg-L",
+        "repo": "mnw",
+        "rev": "6bd6ab9968c2432c78db4a91c9b1e84dd84fe6b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Gerg-L",
+        "repo": "mnw",
+        "type": "github"
+      }
+    },
+    "neovim-config": {
+      "inputs": {
+        "mnw": "mnw",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1775285262,
+        "narHash": "sha256-uIGofUTozeew/iHxDmIzOvTduop6+5KHSCD0VN/Zq9M=",
+        "ref": "refs/heads/main",
+        "rev": "ee1e1757902e526d03aad473c5834f6bb9abc6e8",
+        "revCount": 2,
+        "type": "git",
+        "url": "https://git.gay/sunworms/neovim-config.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.gay/sunworms/neovim-config.git"
+      }
+    },
     "niri-blur": {
       "inputs": {
         "nixpkgs": [
@@ -143,6 +179,7 @@
     "root": {
       "inputs": {
         "hjem": "hjem",
+        "neovim-config": "neovim-config",
         "niri-blur": "niri-blur",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",

@@ -1,4 +1,4 @@
-local colors = {
+return {
     -- Background tones
     base00 = '{{colors.surface.default.hex}}', -- Default Background
     base01 = '{{colors.surface_container.default.hex}}', -- Lighter Background (status bars)
@@ -19,5 +19,3 @@ local colors = {
     base0E = '{{colors.secondary_fixed_dim.default.hex}}', -- Keywords, Storage
     base0F = '{{colors.error_container.default.hex}}', -- Deprecated, Embedded Tags
 }
-
-require('base16-colorscheme').setup(colors)

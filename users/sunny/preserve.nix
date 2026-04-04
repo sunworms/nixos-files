@@ -23,6 +23,7 @@
       ".cache/nix"
       ".cache/typst"
       ".cache/noctalia"
+      ".cache/matugen"
 
       ".config/net.imput.helium"
       ".config/vesktop"
@@ -44,7 +45,6 @@
       ".config/ppsspp"
 
       ".local/share/okular"
-      ".local/share/color-schemes"
       ".local/share/fish"
       ".local/share/azahar-emu"
       ".local/share/eden"
