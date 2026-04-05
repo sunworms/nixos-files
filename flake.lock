@@ -1,5 +1,24 @@
 {
   "nodes": {
+    "helix": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1775396817,
+        "narHash": "sha256-F1YgQKaE/4N585ghkNQRmNs0kSLWZlHMnX3ud9p+GJ4=",
+        "owner": "helix-editor",
+        "repo": "helix",
+        "rev": "98ad5dbf5654f6ca02e504ebc695e3fdc5623afe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "helix-editor",
+        "repo": "helix",
+        "type": "github"
+      }
+    },
     "hjem": {
       "inputs": {
         "nix-darwin": "nix-darwin",
@@ -22,27 +41,12 @@
         "type": "github"
       }
     },
-    "mnw": {
-      "locked": {
-        "lastModified": 1771285028,
-        "narHash": "sha256-mR8GDvGPu1QcI5Ft5lV2CIIh5Og7zRylts+XY3fa/K4=",
-        "owner": "Gerg-L",
-        "repo": "mnw",
-        "rev": "6bd6ab9968c2432c78db4a91c9b1e84dd84fe6b3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Gerg-L",
-        "repo": "mnw",
-        "type": "github"
-      }
-    },
     "niri-blur": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
         ],
-        "rust-overlay": "rust-overlay_2"
+        "rust-overlay": "rust-overlay_3"
       },
       "locked": {
         "lastModified": 1775292396,
@@ -81,6 +85,22 @@
       }
     },
     "nixpkgs": {
+      "locked": {
+        "lastModified": 1775036866,
+        "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "6201e203d09599479a3b3450ed24fa81537ebc4e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
       "locked": {
         "lastModified": 1775036866,
         "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
@@ -157,15 +177,36 @@
     },
     "root": {
       "inputs": {
+        "helix": "helix",
         "hjem": "hjem",
         "niri-blur": "niri-blur",
-        "nixpkgs": "nixpkgs",
+        "nixpkgs": "nixpkgs_2",
         "noctalia": "noctalia",
-        "preservation": "preservation",
-        "sunny-nvim": "sunny-nvim"
+        "preservation": "preservation"
       }
     },
     "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "helix",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1775358767,
+        "narHash": "sha256-f2eC+WIfhjevCPQILuV08i/kmKZzYZpUvkom/33VxCA=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "20fd44bc663daa53a2575e01293e24e681d62244",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_2": {
       "inputs": {
         "nixpkgs": [
           "hjem",
@@ -187,7 +228,7 @@
         "type": "github"
       }
     },
-    "rust-overlay_2": {
+    "rust-overlay_3": {
       "inputs": {
         "nixpkgs": [
           "niri-blur",
@@ -214,7 +255,7 @@
           "hjem",
           "nixpkgs"
         ],
-        "rust-overlay": "rust-overlay",
+        "rust-overlay": "rust-overlay_2",
         "systems": "systems"
       },
       "locked": {
@@ -229,27 +270,6 @@
         "owner": "feel-co",
         "repo": "smfh",
         "type": "github"
-      }
-    },
-    "sunny-nvim": {
-      "inputs": {
-        "mnw": "mnw",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1775373333,
-        "narHash": "sha256-ACQz7PEwfOcjOP1efGZtYeguBKN1cWOXa4P1c5Z+9qI=",
-        "ref": "refs/heads/main",
-        "rev": "2fbb3f8a5e5033fdf8bf9bb4d95047a041466013",
-        "revCount": 10,
-        "type": "git",
-        "url": "https://git.gay/sunworms/neovim-config"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://git.gay/sunworms/neovim-config"
       }
     },
     "systems": {
