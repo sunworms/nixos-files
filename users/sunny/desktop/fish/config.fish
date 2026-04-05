@@ -7,9 +7,9 @@ if status is-login
     set -gx QT_WAYLAND_DISABLE_WINDOWDECORATION 1
     set -gx SDL_VIDEODRIVER wayland
     set -gx _JAVA_AWT_WM_NONREPARENTING 1
-    set -gx EDITOR hx
-    set -gx SUDO_EDITOR hx
-    set -gx VISUAL hx
+    set -gx EDITOR nvim
+    set -gx SUDO_EDITOR nvim
+    set -gx VISUAL nvim
     set -gx GTK_THEME adw-gtk3
     set -gx QT_QPA_PLATFORMTHEME qt6ct
 end
@@ -18,9 +18,9 @@ if status is-interactive
     abbr --add -- l 'ls -alh'
     abbr --add -- ll 'ls -l'
     abbr --add -- ls 'ls --color=tty'
-    abbr --add -- lg lazygit
+    alias vi nvim
+    alias vim nvim
 
     set -U fish_greeting
     set -g fish_key_bindings fish_vi_key_bindings
-    set -Ux SOPS_AGE_KEY_FILE /persist/var/lib/sops-nix/key.txt
 end
