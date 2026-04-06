@@ -50,7 +50,6 @@
       ".local/share/eden"
       ".local/share/SameBoy"
       ".local/share/osu"
-      ".local/share/containers"
       ".local/share/keyrings"
       ".local/share/warp"
 

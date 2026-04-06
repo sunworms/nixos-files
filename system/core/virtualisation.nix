@@ -2,7 +2,7 @@
 
 {
   virtualisation.libvirtd = {
-    enable = false;
+    enable = true;
     qemu = {
       package = pkgs.qemu_kvm;
       runAsRoot = true;
@@ -10,16 +10,7 @@
       vhostUserPackages = with pkgs; [ virtiofsd ];
     };
   };
-  programs.virt-manager.enable = false;
+  programs.virt-manager.enable = true;
 
   users.users.sunny.extraGroups = [ "libvirtd" ];
-
-  virtualisation.podman = {
-    enable = true;
-    dockerCompat = true;
-  };
-
-  environment.systemPackages = with pkgs; [
-    distrobox
-  ];
 }
