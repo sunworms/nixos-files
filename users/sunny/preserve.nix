@@ -22,6 +22,7 @@
       ".cache/nix"
       ".cache/typst"
       ".cache/noctalia"
+      ".cache/distrobox"
 
       ".config/net.imput.helium"
       ".config/vesktop"
@@ -52,6 +53,7 @@
       ".local/share/osu"
       ".local/share/keyrings"
       ".local/share/warp"
+      ".local/share/containers"
 
       ".local/state/wireplumber"
     ];

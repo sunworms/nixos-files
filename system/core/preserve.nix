@@ -18,6 +18,7 @@
         "/var/lib/systemd"
         "/var/lib/libvirt"
         "/var/lib/sops-nix"
+        "/var/lib/containers"
         "/var/lib/cloudflare-warp"
         "/etc/NetworkManager/system-connections"
         {
