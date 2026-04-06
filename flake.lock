@@ -182,7 +182,8 @@
         "niri-blur": "niri-blur",
         "nixpkgs": "nixpkgs_2",
         "noctalia": "noctalia",
-        "preservation": "preservation"
+        "preservation": "preservation",
+        "sops-nix": "sops-nix"
       }
     },
     "rust-overlay": {
@@ -269,6 +270,26 @@
       "original": {
         "owner": "feel-co",
         "repo": "smfh",
+        "type": "github"
+      }
+    },
+    "sops-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1775365543,
+        "narHash": "sha256-f50qrK0WwZ9z5EdaMGWOTtALgSF7yb7XwuE7LjCuDmw=",
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "rev": "a4ee2de76efb759fe8d4868c33dec9937897916f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mic92",
+        "repo": "sops-nix",
         "type": "github"
       }
     },

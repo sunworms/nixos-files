@@ -47,7 +47,6 @@ in
 
     fastfetch
     wl-clipboard
-    git-crypt
 
     # xwayland theming
     xsettingsd

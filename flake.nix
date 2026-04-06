@@ -8,6 +8,10 @@
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     niri-blur = {
       url = "github:niri-wm/niri/pull/3483/head";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,19 +24,17 @@
   };
 
   outputs =
-    { self, ... }@inputs:
-    let
-      secrets = builtins.fromJSON (builtins.readFile "${self}/secrets/secrets.json");
-    in
+    { ... }@inputs:
     {
       nixosConfigurations.motobook = inputs.nixpkgs.lib.nixosSystem {
         modules = [
           ./hosts/motobook/configuration.nix
-          inputs.preservation.nixosModules.preservation
+          inputs.preservation.nixosModules.default
           inputs.hjem.nixosModules.default
+          inputs.sops-nix.nixosModules.default
         ];
         specialArgs = {
-          inherit inputs secrets;
+          inherit inputs;
         };
       };
     };
