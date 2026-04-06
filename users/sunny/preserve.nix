@@ -19,11 +19,9 @@
 
       ".ssh"
 
-      ".cache/wal"
       ".cache/nix"
       ".cache/typst"
       ".cache/noctalia"
-      ".cache/matugen"
 
       ".config/net.imput.helium"
       ".config/vesktop"
@@ -45,6 +43,7 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
+      ".local/share/color-schemes"
       ".local/share/okular"
       ".local/share/fish"
       ".local/share/azahar-emu"

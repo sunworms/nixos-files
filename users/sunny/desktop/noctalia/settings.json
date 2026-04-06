@@ -688,10 +688,6 @@
       },
       {
         "enabled": true,
-        "id": "pywalfox"
-      },
-      {
-        "enabled": true,
         "id": "qt"
       },
       {
@@ -701,6 +697,10 @@
       {
         "enabled": true,
         "id": "helix"
+      },
+      {
+        "enabled": true,
+        "id": "kcolorscheme"
       }
     ],
     "enableUserTheming": false
