@@ -12,7 +12,7 @@
 
   packages = with pkgs; [
     # fish plugins
-    fishPlugins.tide
+    fishPlugins.pure
     fishPlugins.git-abbr
 
     # theming
