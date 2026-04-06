@@ -697,10 +697,6 @@
       {
         "enabled": true,
         "id": "helix"
-      },
-      {
-        "enabled": true,
-        "id": "kcolorscheme"
       }
     ],
     "enableUserTheming": false
