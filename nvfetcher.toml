@@ -1,6 +1,6 @@
 # binary packages
 [pcsx2]
-src.github_tag = "PCSX2/pcsx2"
+src.cmd = "curl -sL 'https://api.github.com/repos/PCSX2/pcsx2/releases?per_page=1' | grep -oP '\"tag_name\":\\s*\"\\K[^\"]+'"
 fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-linux-appimage-x64-Qt.AppImage"
 
 [eden]
