@@ -6,6 +6,7 @@
     ./boot.nix
     ./virtualisation.nix
     ./network.nix
+    ./sops.nix
     ./users.nix
     ./preserve.nix
     ./kanata.nix
@@ -27,7 +28,7 @@
   # ZRam
   zramSwap = {
     enable = true;
-    memoryPercent = 100;
+    memoryPercent = 50;
   };
 
   # Battery
