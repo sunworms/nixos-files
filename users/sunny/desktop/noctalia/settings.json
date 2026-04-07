@@ -696,7 +696,7 @@
       },
       {
         "enabled": true,
-        "id": "helix"
+        "id": "emacs"
       }
     ],
     "enableUserTheming": false
