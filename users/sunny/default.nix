@@ -4,7 +4,7 @@
   imports = [
     ./packages
     ./desktop
-    ./helix
+    ./emacs
     ./browser.nix
   ];
 

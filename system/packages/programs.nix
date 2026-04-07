@@ -39,7 +39,7 @@ in
     nil
     nixd
     nixfmt
-    tree-sitter
+    rassumfrassum
 
     # nvfetcher
     nvfetcher

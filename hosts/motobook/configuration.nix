@@ -18,6 +18,8 @@
 
   nixpkgs = {
     config.allowUnfree = true;
-    overlays = [ ];
+    overlays = [
+      inputs.emacs-overlay.overlays.default
+    ];
   };
 }
