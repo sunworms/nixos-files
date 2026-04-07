@@ -66,3 +66,7 @@
   :load-path "lisp/")
 (use-package languages-config
   :load-path "lisp/")
+
+(add-hook 'git-commit-mode-hook
+          (lambda ()
+            (company-mode -1)))
