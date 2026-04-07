@@ -60,7 +60,7 @@
   :load-path "lisp/")
 (use-package company-config
   :load-path "lisp/")
-(use-package eglot-config
+(use-package lsp-config
   :load-path "lisp/")
 (use-package apheleia-config
   :load-path "lisp/")

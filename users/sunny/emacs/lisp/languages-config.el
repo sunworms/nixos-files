@@ -1,12 +1,10 @@
 ;;; languages-config.el --- Emacs configuration -*- lexical-binding: t; -*-
 
-;; Nix
 (use-package nix-ts-mode
   :ensure nil
   :defer t
   :mode "\\.nix\\'")
 
-;; Rust
 (use-package rust-mode
   :ensure nil
   :defer t
@@ -19,15 +17,14 @@
   :defer t
   :config
   (setq rustic-format-on-save t
-        rustic-compile-command "cargo check"))
+        rustic-compile-command "cargo check"
+        rustic-lsp-client 'lsp-mode))
 
-;; Java
-(use-package eglot-java
+(use-package lsp-java
   :ensure nil
   :defer t
-  :hook (java-mode . eglot-java-mode))
+  :hook (java-mode . lsp))
 
-;; PDF Tools
 (use-package pdf-tools
   :ensure nil
   :defer t
@@ -36,7 +33,6 @@
   (setq pdf-view-continuous 1)
   (add-hook 'pdf-view-mode-hook #'pdf-tools-install))
 
-;; Go
 (use-package go-mode
   :ensure nil
   :defer t
@@ -44,11 +40,8 @@
   :config
   (add-hook 'go-mode-hook
             (lambda ()
-              (add-hook 'before-save-hook
-                        (lambda () (call-interactively 'eglot-code-action-organize-imports))
-                        nil t))))
+              (add-hook 'before-save-hook #'lsp-organize-imports nil t))))
 
-;; LaTeX / AUCTeX
 (use-package auctex
   :ensure nil
   :defer t
@@ -67,9 +60,9 @@
               (LaTeX-math-mode)
               (cdlatex-mode))))
 
-;; Typst
 (use-package typst-preview
   :ensure nil)
+
 (use-package typst-ts-mode
   :ensure nil
   :defer t
