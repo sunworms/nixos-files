@@ -6,11 +6,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1775602983,
-        "narHash": "sha256-Ud4aymqu/SFclpwMBFj2sa/2E7ZE4x6cxcAn6DRZewk=",
+        "lastModified": 1775655127,
+        "narHash": "sha256-+VP7mjmfD0J4dQYjwA1Co1WK0FiuOYT2fEMv2DhLhx0=",
         "owner": "helix-editor",
         "repo": "helix",
-        "rev": "fc170366ab4d7daade937ee93ae3b48b832a02c3",
+        "rev": "03d2b4a7ab8e592817cca8e66bd8a32023103698",
         "type": "github"
       },
       "original": {
@@ -123,11 +123,11 @@
         "noctalia-qs": "noctalia-qs"
       },
       "locked": {
-        "lastModified": 1775593740,
-        "narHash": "sha256-P2bAFa/lx2wzMVVHwIbUOBXTpejzWsAMJACDtEdHXMU=",
+        "lastModified": 1775666620,
+        "narHash": "sha256-BflnuqByoa7rkVGeWMQ3KofW07pR7ZR9xwL4pFcL9M0=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "48fe0f91a5fa514ca37863b2078b8c20a97fb66b",
+        "rev": "087f75376b4827b984ca8d8c323a72292f8d8d18",
         "type": "github"
       },
       "original": {
