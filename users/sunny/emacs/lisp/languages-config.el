@@ -17,13 +17,12 @@
   :defer t
   :config
   (setq rustic-format-on-save t
-        rustic-compile-command "cargo check"
-        rustic-lsp-client 'lsp-mode))
+        rustic-compile-command "cargo check"))
 
-(use-package lsp-java
+(use-package eglot-java
   :ensure nil
   :defer t
-  :hook (java-mode . lsp))
+  :hook (java-mode . eglot-java))
 
 (use-package pdf-tools
   :ensure nil
@@ -73,5 +72,17 @@
               ("C-c C-j" . typst-preview-send-position)
               ("C-c C-s" . typst-preview-start)
               ("M-s M-c" . typst-preview-stop)))
+
+(setq-default eglot-workspace-configuration
+              '(:tinymist (:preview {:onType t})))
+
+(defun my/tinymist-pin-main ()
+  (interactive)
+  (let ((path (expand-file-name (buffer-file-name))))
+    (jsonrpc-request
+     (eglot-current-server)
+     :workspace/executeCommand
+     `(:command "tinymist.pinMain"
+		:arguments [,path]))))
 
 (provide 'languages-config)

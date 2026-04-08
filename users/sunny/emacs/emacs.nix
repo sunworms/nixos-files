@@ -18,8 +18,6 @@ let
       restart-emacs
       evil
       magit
-      lsp-mode
-      lsp-ui
       apheleia
       company
       company-auctex
@@ -33,7 +31,7 @@ let
       typst-ts-mode
       typst-preview
       rustic
-      lsp-java
+      eglot-java
       direnv
       go-mode
     ]

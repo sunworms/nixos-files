@@ -60,7 +60,9 @@
   :load-path "lisp/")
 (use-package company-config
   :load-path "lisp/")
-(use-package lsp-config
+(use-package eglot-config
+  :load-path "lisp/")
+(use-package flymake-config
   :load-path "lisp/")
 (use-package apheleia-config
   :load-path "lisp/")
