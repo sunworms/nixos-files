@@ -2,6 +2,9 @@
 name = "nix"
 auto-format = true
 
+[language-server.nil.config.nil.nix.flake]
+autoArchive = true
+
 [[language]]
 name = "typst"
 auto-format = true
