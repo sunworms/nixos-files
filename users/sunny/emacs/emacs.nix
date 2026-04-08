@@ -29,7 +29,6 @@ let
       cdlatex
       xenops
       typst-ts-mode
-      typst-preview
       rustic
       eglot-java
       direnv

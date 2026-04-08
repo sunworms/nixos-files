@@ -59,22 +59,12 @@
               (LaTeX-math-mode)
               (cdlatex-mode))))
 
-(use-package typst-preview
-  :ensure nil)
-
 (use-package typst-ts-mode
   :ensure nil
   :defer t
   :mode "\\.typ\\'"
   :config
-  (setq typst-ts-watch-options "--open")
-  :bind (:map typst-ts-mode-map
-              ("C-c C-j" . typst-preview-send-position)
-              ("C-c C-s" . typst-preview-start)
-              ("M-s M-c" . typst-preview-stop)))
-
-(setq-default eglot-workspace-configuration
-              '(:tinymist (:preview {:onType t})))
+  (setq typst-ts-watch-options "--open"))
 
 (defun my/tinymist-pin-main ()
   (interactive)
@@ -84,5 +74,20 @@
      :workspace/executeCommand
      `(:command "tinymist.pinMain"
 		:arguments [,path]))))
+
+(defun my/tinymist-start-preview ()
+  (interactive)
+  (jsonrpc-request
+   (eglot-current-server)
+   :workspace/executeCommand
+   `(:command "tinymist.startDefaultPreview")))
+
+(defun my/tinymist-kill-preview ()
+  (interactive)
+  (jsonrpc-request
+   (eglot-current-server)
+   :workspace/executeCommand
+   `(:command "tinymist.doKillPreview"
+              :arguments ["default_preview"])))
 
 (provide 'languages-config)
