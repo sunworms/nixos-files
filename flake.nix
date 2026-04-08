@@ -20,7 +20,7 @@
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    emacs-overlay.url = "github:nix-community/emacs-overlay";
+    helix.url = "github:helix-editor/helix";
   };
 
   outputs =

@@ -7,9 +7,9 @@ if status is-login
     set -gx QT_WAYLAND_DISABLE_WINDOWDECORATION 1
     set -gx SDL_VIDEODRIVER wayland
     set -gx _JAVA_AWT_WM_NONREPARENTING 1
-    set -gx EDITOR "emacs -nw"
-    set -gx SUDO_EDITOR "emacs -nw"
-    set -gx VISUAL "emacs -nw"
+    set -gx EDITOR hx
+    set -gx SUDO_EDITOR hx
+    set -gx VISUAL hx
     set -gx GTK_THEME adw-gtk3
     set -gx QT_QPA_PLATFORMTHEME qt6ct
 end
@@ -18,7 +18,7 @@ if status is-interactive
     abbr --add -- l 'ls -alh'
     abbr --add -- ll 'ls -l'
     abbr --add -- ls 'ls --color=tty'
-    alias et "emacs -nw"
+    alias lg lazygit
 
     set -U fish_greeting
     set -g fish_key_bindings fish_default_key_bindings
