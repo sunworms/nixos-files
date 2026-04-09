@@ -1,24 +1,5 @@
 {
   "nodes": {
-    "helix": {
-      "inputs": {
-        "nixpkgs": "nixpkgs",
-        "rust-overlay": "rust-overlay"
-      },
-      "locked": {
-        "lastModified": 1775655127,
-        "narHash": "sha256-+VP7mjmfD0J4dQYjwA1Co1WK0FiuOYT2fEMv2DhLhx0=",
-        "owner": "helix-editor",
-        "repo": "helix",
-        "rev": "03d2b4a7ab8e592817cca8e66bd8a32023103698",
-        "type": "github"
-      },
-      "original": {
-        "owner": "helix-editor",
-        "repo": "helix",
-        "type": "github"
-      }
-    },
     "hjem": {
       "inputs": {
         "nix-darwin": "nix-darwin",
@@ -40,12 +21,43 @@
         "type": "github"
       }
     },
+    "mnw": {
+      "locked": {
+        "lastModified": 1771285028,
+        "narHash": "sha256-mR8GDvGPu1QcI5Ft5lV2CIIh5Og7zRylts+XY3fa/K4=",
+        "owner": "Gerg-L",
+        "repo": "mnw",
+        "rev": "6bd6ab9968c2432c78db4a91c9b1e84dd84fe6b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Gerg-L",
+        "repo": "mnw",
+        "type": "github"
+      }
+    },
+    "neovim-treesitter": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1775684991,
+        "narHash": "sha256-RhT8mx29K8v80LMH0k7T0h4Dxqb76NoRIPneuSNVN+8=",
+        "owner": "neovim-treesitter",
+        "repo": "nvim-treesitter",
+        "rev": "0ed8e8632eefd4088683f7df617059539ac0c8fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "neovim-treesitter",
+        "repo": "nvim-treesitter",
+        "type": "github"
+      }
+    },
     "niri-blur": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
         ],
-        "rust-overlay": "rust-overlay_2"
+        "rust-overlay": "rust-overlay"
       },
       "locked": {
         "lastModified": 1775673716,
@@ -84,22 +96,6 @@
       }
     },
     "nixpkgs": {
-      "locked": {
-        "lastModified": 1775036866,
-        "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "6201e203d09599479a3b3450ed24fa81537ebc4e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
       "locked": {
         "lastModified": 1775423009,
         "narHash": "sha256-vPKLpjhIVWdDrfiUM8atW6YkIggCEKdSAlJPzzhkQlw=",
@@ -176,37 +172,16 @@
     },
     "root": {
       "inputs": {
-        "helix": "helix",
         "hjem": "hjem",
         "niri-blur": "niri-blur",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
         "preservation": "preservation",
-        "sops-nix": "sops-nix"
+        "sops-nix": "sops-nix",
+        "sunny-nvim": "sunny-nvim"
       }
     },
     "rust-overlay": {
-      "inputs": {
-        "nixpkgs": [
-          "helix",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1775358767,
-        "narHash": "sha256-f2eC+WIfhjevCPQILuV08i/kmKZzYZpUvkom/33VxCA=",
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "rev": "20fd44bc663daa53a2575e01293e24e681d62244",
-        "type": "github"
-      },
-      "original": {
-        "owner": "oxalica",
-        "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
-    "rust-overlay_2": {
       "inputs": {
         "nixpkgs": [
           "niri-blur",
@@ -245,6 +220,28 @@
         "owner": "Mic92",
         "repo": "sops-nix",
         "type": "github"
+      }
+    },
+    "sunny-nvim": {
+      "inputs": {
+        "mnw": "mnw",
+        "neovim-treesitter": "neovim-treesitter",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1775753382,
+        "narHash": "sha256-HcNli4R7m+LkadOz57acLMLXcnWh8XroUa6N9SKxeR8=",
+        "ref": "refs/heads/main",
+        "rev": "5de5b42b90e7e5c80e3dc265d98975f2c563c0d1",
+        "revCount": 15,
+        "type": "git",
+        "url": "https://git.gay/sunworms/neovim-config"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.gay/sunworms/neovim-config"
       }
     },
     "systems": {

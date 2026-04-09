@@ -39,7 +39,6 @@ in
     nil
     nixd
     nixfmt
-    rassumfrassum
 
     # nvfetcher
     nvfetcher
