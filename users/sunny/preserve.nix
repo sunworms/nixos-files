@@ -32,6 +32,7 @@
       ".config/niri"
       ".config/kitty"
       ".config/git"
+      ".config/helix"
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"
