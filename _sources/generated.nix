@@ -8,10 +8,10 @@
 {
   eden = {
     pname = "eden";
-    version = "v1775679025.c05d999225/Eden-Linux-c05d999225";
+    version = "v1775760785.3d0eb4b5d7/Eden-Linux-3d0eb4b5d7";
     src = fetchurl {
-      url = "https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1775679025.c05d999225/Eden-Linux-c05d999225-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-JyK69BlrpKWOw3OrPMWZcd53y5zBGhqeqJYdUKIe9Ms=";
+      url = "https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1775760785.3d0eb4b5d7/Eden-Linux-3d0eb4b5d7-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-x0k74zwKmsWC8d/dBwEwyWt6ZMXVhXjHaBVbDnxSdMw=";
     };
   };
   helium = {

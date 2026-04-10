@@ -39,11 +39,11 @@
     "neovim-treesitter": {
       "flake": false,
       "locked": {
-        "lastModified": 1775684991,
-        "narHash": "sha256-RhT8mx29K8v80LMH0k7T0h4Dxqb76NoRIPneuSNVN+8=",
+        "lastModified": 1775766653,
+        "narHash": "sha256-SqclmQx8m9R3AmmFT60blh53vNOotPOSdH24YRoTjKc=",
         "owner": "neovim-treesitter",
         "repo": "nvim-treesitter",
-        "rev": "0ed8e8632eefd4088683f7df617059539ac0c8fe",
+        "rev": "41218025408be671ec17e173844a5e2079d5a1bf",
         "type": "github"
       },
       "original": {
@@ -60,11 +60,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1775673716,
-        "narHash": "sha256-nFScVrzNWXSbovyZOT5r5dgeHxgSGyksfRXbFD/tbqM=",
+        "lastModified": 1775729459,
+        "narHash": "sha256-dGRgX8apemRre1Za/p00ZhUiCjQqy9h0HHEgA96ZkYs=",
         "owner": "niri-wm",
         "repo": "niri",
-        "rev": "8bb271153260acdb2f78f1ef874da9b8b13f607a",
+        "rev": "4c4863a29cbec643e24f211b111a8de98c980136",
         "type": "github"
       },
       "original": {
@@ -97,11 +97,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1775423009,
-        "narHash": "sha256-vPKLpjhIVWdDrfiUM8atW6YkIggCEKdSAlJPzzhkQlw=",
+        "lastModified": 1775710090,
+        "narHash": "sha256-ar3rofg+awPB8QXDaFJhJ2jJhu+KqN/PRCXeyuXR76E=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "68d8aa3d661f0e6bd5862291b5bb263b2a6595c9",
+        "rev": "4c1018dae018162ec878d42fec712642d214fdfa",
         "type": "github"
       },
       "original": {
@@ -119,11 +119,11 @@
         "noctalia-qs": "noctalia-qs"
       },
       "locked": {
-        "lastModified": 1775689927,
-        "narHash": "sha256-UVL4JnAHXs90AiKfhjXBQ83KhiXHAyZ4TdaPkA/ts/g=",
+        "lastModified": 1775771202,
+        "narHash": "sha256-nV0BDaByz4qhvgQ8KuTvVXIKwphiQWA4gvK2kc+xp8k=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "0fcaa49875bf0c994bb5c604320454ef72e6ba8b",
+        "rev": "e85ce902cb5336ca2ab68bbb919d9a9f6670aec4",
         "type": "github"
       },
       "original": {
@@ -231,11 +231,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775753382,
-        "narHash": "sha256-HcNli4R7m+LkadOz57acLMLXcnWh8XroUa6N9SKxeR8=",
+        "lastModified": 1775799301,
+        "narHash": "sha256-m6Ds4EU0tinCUru3rlcVvaAGX9NsPmMEbaa7b+CtPfU=",
         "ref": "refs/heads/main",
-        "rev": "5de5b42b90e7e5c80e3dc265d98975f2c563c0d1",
-        "revCount": 15,
+        "rev": "20ec9f4453d4307504f35bc7837e0197d9207e46",
+        "revCount": 16,
         "type": "git",
         "url": "https://git.gay/sunworms/neovim-config"
       },
