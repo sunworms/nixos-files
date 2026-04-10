@@ -665,7 +665,7 @@
   },
   "colorSchemes": {
     "useWallpaperColors": true,
-    "predefinedScheme": "Everforest",
+    "predefinedScheme": "Catppuccin",
     "darkMode": true,
     "schedulingMode": "off",
     "manualSunrise": "06:30",
