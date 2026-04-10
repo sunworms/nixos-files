@@ -664,7 +664,7 @@
     "backlightDeviceMappings": []
   },
   "colorSchemes": {
-    "useWallpaperColors": false,
+    "useWallpaperColors": true,
     "predefinedScheme": "Everforest",
     "darkMode": true,
     "schedulingMode": "off",
