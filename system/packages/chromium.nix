@@ -6,6 +6,7 @@
     "nngceckbapebfimnlniiiahkandclblb" # bitwarden
     "jplgfhpmjnbigmhklmmbgecoobifkmpa" # proton vpn
     "hkgfoiooedgoejojocmhlaklaeopbecg" # picture in picture
+    "clngdbkpkpeebahjckkjfobafhncgmne" # stylus
   ];
 
   ManagedBookmarks = [
