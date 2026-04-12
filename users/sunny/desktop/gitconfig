@@ -90,7 +90,7 @@
 	enabled = 1
 
 [sequence]
-	editor = "emacsclient"
+	editor = "hx"
 
 [tag]
 	sort = "version:refname"
@@ -105,4 +105,4 @@
 	username = "sunworms"
 
 [web]
-	browser = "zen"
+	browser = "helium"
