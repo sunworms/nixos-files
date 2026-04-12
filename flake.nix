@@ -20,7 +20,10 @@
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    helix.url = "github:helix-editor/helix";
+    sunny-nvim = {
+      url = "git+https://git.gay/sunworms/neovim-config";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
