@@ -5,6 +5,7 @@
     ./packages
     ./desktop
     ./helix
+    ./ssh.nix
     ./browser.nix
   ];
 

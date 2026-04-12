@@ -3,7 +3,7 @@
 {
   users.mutableUsers = false;
 
-  users.users.root.hashedPasswordFile = config.sops.secrets.root_password.path;
+  users.users.root.hashedPasswordFile = config.sops.secrets."root/password".path;
 
   users.users.sunny = {
     isNormalUser = true;
@@ -11,7 +11,7 @@
       "wheel"
       "networkmanager"
     ];
-    hashedPasswordFile = config.sops.secrets.sunny_password.path;
+    hashedPasswordFile = config.sops.secrets."sunny/password".path;
     shell = pkgs.fish;
   };
 
