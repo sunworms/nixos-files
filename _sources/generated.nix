@@ -8,18 +8,18 @@
 {
   eden = {
     pname = "eden";
-    version = "v1775846463.c95cb8f8ec/Eden-Linux-c95cb8f8ec";
+    version = "v1775932386.2c1eff2e60/Eden-Linux-2c1eff2e60";
     src = fetchurl {
-      url = "https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1775846463.c95cb8f8ec/Eden-Linux-c95cb8f8ec-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-/j12uDAq3PGlsg12LG6yzc30+LmwjXX8yUeQJfNMUrI=";
+      url = "https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1775932386.2c1eff2e60/Eden-Linux-2c1eff2e60-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-z35WcC14DqDQH8AjTVYuTuK8bZE5FUwVNcVodchCtdc=";
     };
   };
   helium = {
     pname = "helium";
-    version = "0.10.9.1";
+    version = "0.11.1.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.10.9.1/helium-0.10.9.1-x86_64.AppImage";
-      sha256 = "sha256-FMO4gB2zOjhgmjfE/T0XdDb0NMDKsQFuzy/Org1iD48=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.11.1.1/helium-0.11.1.1-x86_64.AppImage";
+      sha256 = "sha256-Nfi8qjj7YOujsf8nLm3Mu+oh/R642Wy/nnc0ToolpW0=";
     };
   };
   pcsx2 = {

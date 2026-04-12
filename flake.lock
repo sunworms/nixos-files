@@ -48,11 +48,11 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1775729459,
-        "narHash": "sha256-dGRgX8apemRre1Za/p00ZhUiCjQqy9h0HHEgA96ZkYs=",
+        "lastModified": 1775905466,
+        "narHash": "sha256-R3GQb8mJWZCMv2x3LKExgpjM7Kilu8dBxuUGJJjHNEM=",
         "owner": "niri-wm",
         "repo": "niri",
-        "rev": "4c4863a29cbec643e24f211b111a8de98c980136",
+        "rev": "0ca60209c54997624f1e1249f78e0437d8da1969",
         "type": "github"
       },
       "original": {
@@ -234,11 +234,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775682595,
-        "narHash": "sha256-0E9PohY/VuESLq0LR4doaH7hTag513sDDW5n5qmHd1Q=",
+        "lastModified": 1775971308,
+        "narHash": "sha256-VKp9bhVSm0bT6JWctFy06ocqxGGnWHi1NfoE90IgIcY=",
         "owner": "Mic92",
         "repo": "sops-nix",
-        "rev": "d2e8438d5886e92bc5e7c40c035ab6cae0c41f76",
+        "rev": "31ac5fe5d015f76b54058c69fcaebb66a55871a4",
         "type": "github"
       },
       "original": {
