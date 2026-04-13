@@ -695,9 +695,13 @@
       {
         "enabled": true,
         "id": "kitty"
+      },
+      {
+        "enabled": true,
+        "id": "helix"
       }
     ],
-    "enableUserTheming": true
+    "enableUserTheming": false
   },
   "nightLight": {
     "enabled": false,

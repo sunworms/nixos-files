@@ -4,7 +4,7 @@
   imports = [
     ./packages
     ./desktop
-    ./nvim.nix
+    ./helix
     ./ssh.nix
     ./browser.nix
   ];
