@@ -41,34 +41,6 @@
     '';
   };
 
-  xdg.data.files = {
-    "applications/helix-terminal.desktop".text = ''
-      [Desktop Entry]
-      Encoding=UTF-8
-      Version=1.0
-      Type=Application
-      NoDisplay=true
-      Exec=kitty -e hx %f
-      Name=Helix
-      Comment=Custom definition for Helix
-    '';
-    "nautilus/scripts/Open with Custom Command" = {
-      text = ''
-        #!/usr/bin/env bash
-        var=$(${pkgs.zenity}/bin/zenity --entry \
-        --title="Add Application" \
-        --text="Use a custom command" \
-        --width="320")
-        if [ $? -eq 0 ] && [ "$var" ]; then
-          $var "$1"
-        else
-          exit 0
-        fi
-      '';
-      executable = true;
-    };
-  };
-
   packages = with pkgs; [
     hyfetch
     git
