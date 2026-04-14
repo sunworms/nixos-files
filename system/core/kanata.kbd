@@ -13,8 +13,7 @@
 )
 
 (defvar
-  tap-time 300
-  hold-time 300
+  tap-time 50
 )
 
 (defalias
@@ -24,6 +23,9 @@
 
 (defchordsv2
   (lsft lmet f23) rctl $tap-time all-released ()
+  (lmet i) f13 $tap-time all-released ()
+  (lmet l) f14 $tap-time all-released ()
+  (lmet p) f15 $tap-time all-released ()
 )
 
 (deflayer base

@@ -189,19 +189,21 @@ binds {
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+V hotkey-overlay-title="Clipboard" { spawn "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "toggle"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
-    Super+Alt+S hotkey-overlay-title="DMS Settings" { spawn "noctalia-shell" "ipc" "call" "settings" "toggle"; }
-    Super+Alt+I hotkey-overlay-title="Inhibit Idle" { spawn "noctalia-shell" "ipc" "call" "idleInhibitor" "toggle"; }
 
-    XF86PowerOff { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "lockAndSuspend"; }
+    XF86Tools hotkey-overlay-title="Noctalia Settings" { spawn "noctalia-shell" "ipc" "call" "settings" "toggle"; }
+    XF86Launch5 hotkey-overlay-title="Lock the Screen" { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    XF86Launch6 hotkey-overlay-title="Wallpaper Selector" { spawn "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; }
+    XF86Calculator hotkey-overlay-title="Open Windows" { spawn "noctalia-shell" "ipc" "call" "launcher" "windows"; }
+    XF86Favorites hotkey-overlay-title="Emoji Selector" { spawn "noctalia-shell" "ipc" "call" "launcher" "emoji"; }
+    XF86PowerOff hotkey-overlay-title="Lock and Suspend" { spawn "noctalia-shell" "ipc" "call" "sessionMenu" "lockAndSuspend"; }
 
-    XF86AudioRaiseVolume { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
-    XF86AudioLowerVolume { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
-    XF86AudioMute { spawn "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "volume" "increase"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "volume" "decrease"; }
+    XF86AudioMute allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "volume" "muteOutput"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "volume" "muteInput"; }
     
-    XF86MonBrightnessUp { spawn "noctalia-shell" "ipc" "call" "brightness" "increase"; }
-    XF86MonBrightnessDown { spawn "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "brightness" "increase"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "brightness" "decrease"; }
 
     XF86AudioPlay        allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "media" "playPause"; }
     XF86AudioStop        allow-when-locked=true { spawn "noctalia-shell" "ipc" "call" "media" "stop"; }
