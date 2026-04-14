@@ -49,12 +49,8 @@ input {
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
-/-output "eDP-1" {
-    // off
-    mode "1920x1080@120.030"
-    scale 2
-    transform "normal"
-    position x=1280 y=0
+output "eDP-1" {
+    variable-refresh-rate
 }
 
 layout {
