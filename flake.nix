@@ -12,10 +12,7 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    niri-blur = {
-      url = "github:niri-wm/niri/pull/3483/head";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    niri.url = "github:sodiboo/niri-flake";
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,6 +29,7 @@
           inputs.preservation.nixosModules.default
           inputs.hjem.nixosModules.default
           inputs.sops-nix.nixosModules.default
+          inputs.niri.nixosModules.niri
         ];
         specialArgs = {
           inherit inputs;
