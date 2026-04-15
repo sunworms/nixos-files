@@ -63,14 +63,14 @@ layout {
     preset-column-widths {
         proportion 0.5
         proportion 0.75
-        proportion 0.95
+        proportion 1.0
 
         // fixed 1920
     }
 
     // preset-window-heights { }
 
-    default-column-width { proportion 0.95; }
+    default-column-width { proportion 1.0; }
     focus-ring {
         // off
 
@@ -92,8 +92,8 @@ layout {
     }
 
     struts {
-        // left 64
-        // right 64
+        left 25
+        right 25
         // top 64
         // bottom 64
     }
