@@ -1,0 +1,7 @@
+[config]
+
+[templates]
+[templates.nvim-base16]
+input_path = "~/.config/matugen/matugen-template.lua"
+output_path = "~/.cache/matugen/matugen.lua"
+post_hook = 'pkill -SIGUSR1 nvim'

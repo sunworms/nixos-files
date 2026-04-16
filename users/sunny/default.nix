@@ -3,10 +3,10 @@
 {
   imports = [
     ./packages
-    ./dotfiles.nix
+    ./desktop
+    ./nvim.nix
     ./ssh.nix
     ./browser.nix
-    ./helium-widevine.nix
   ];
 
   directory = "/home/sunny";
