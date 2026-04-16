@@ -1,0 +1,25 @@
+[[language]]
+name = "nix"
+auto-format = true
+
+[language-server.nil.config.nil.nix.flake]
+autoArchive = true
+
+[[language]]
+name = "typst"
+auto-format = true
+formatter = { command = "typstyle" }
+
+[[language]]
+name = "latex"
+
+[language-server.texlab.config.texlab.build]
+onSave = true
+forwardSearchAfter = true
+
+[language-server.texlab.config.texlab.forwardSearch]
+executable = "okular"
+args = [ "--unique", "file:%p#src:%l%f" ]
+
+[language-server.texlab.config.texlab.chktex]
+onEdit = true
