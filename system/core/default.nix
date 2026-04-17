@@ -39,12 +39,6 @@
     Defaults lecture="never"
   '';
 
-  # Logind config
-  services.logind.settings.Login = {
-    HandlePowerKey = "ignore";
-    HandleLidSwitch = "ignore";
-  };
-
   # Enable direnv
   programs.direnv = {
     enable = true;

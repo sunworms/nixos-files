@@ -25,5 +25,7 @@ in
 
   programs.fish.enable = true;
 
+  services.accounts-daemon.enable = true;
+
   hjem.users.sunny = ../../users/sunny;
 }

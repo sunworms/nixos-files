@@ -1,0 +1,11 @@
+{
+  "displayMirror": {
+    "enabled": true
+  },
+  "emojiLauncher": {
+    "enabled": true
+  },
+  "niriWindows": {
+    "enabled": true
+  }
+}

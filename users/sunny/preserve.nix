@@ -21,13 +21,13 @@
 
       ".cache/nix"
       ".cache/typst"
-      ".cache/noctalia"
+      ".cache/DankMaterialShell"
       ".cache/distrobox"
 
       ".config/net.imput.helium"
       ".config/vesktop"
 
-      ".config/noctalia"
+      ".config/DankMaterialShell"
       ".config/fish"
       ".config/niri"
       ".config/kitty"
@@ -56,6 +56,7 @@
       ".local/share/containers"
 
       ".local/state/wireplumber"
+      ".local/state/DankMaterialShell"
     ];
     files = [ ];
   };
