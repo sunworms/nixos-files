@@ -10,6 +10,7 @@ if status is-login
     set -gx EDITOR hx
     set -gx SUDO_EDITOR hx
     set -gx VISUAL hx
+    set -gx TERMINAL kitty
     set -gx GTK_THEME adw-gtk3
     set -gx QT_QPA_PLATFORMTHEME qt6ct
 end
