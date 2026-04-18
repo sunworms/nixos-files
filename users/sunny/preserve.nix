@@ -27,13 +27,6 @@
       ".config/net.imput.helium"
       ".config/vesktop"
 
-      ".config/DankMaterialShell"
-      ".config/fish"
-      ".config/niri"
-      ".config/kitty"
-      ".config/git"
-      ".config/helix"
-
       ".config/gtk-3.0"
       ".config/gtk-4.0"
 
@@ -44,7 +37,6 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
-      ".local/share/color-schemes"
       ".local/share/okular"
       ".local/share/fish"
       ".local/share/azahar-emu"
