@@ -19,12 +19,13 @@
 
       ".ssh"
 
+      ".cache/wal"
       ".cache/nix"
       ".cache/typst"
       ".cache/DankMaterialShell"
       ".cache/distrobox"
 
-      ".config/net.imput.helium"
+      ".config/mozilla"
       ".config/vesktop"
 
       ".config/gtk-3.0"
