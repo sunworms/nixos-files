@@ -4,7 +4,7 @@
   xdg.config.files = {
     "kdeglobals".text = ''
       [UiSettings]
-      ColorScheme=matugen
+      ColorScheme=DankMatugen
     '';
     "okular.kmessagebox".text = ''
       [General]
