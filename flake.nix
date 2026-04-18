@@ -28,6 +28,7 @@
       url = "github:AvengeMedia/DankMaterialShell";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.quickshell.follows = "quickshell";
+      inputs.flake-compat.follows = "";
     };
     dms-plugin-registry = {
       url = "github:AvengeMedia/dms-plugin-registry";
