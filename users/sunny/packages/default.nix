@@ -15,7 +15,6 @@
     azahar
     mgba
     sameboy
-    osu-lazer-bin
     p7zip-rar
     xdg-user-dirs
     jq

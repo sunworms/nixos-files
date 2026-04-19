@@ -43,7 +43,6 @@
       ".local/share/azahar-emu"
       ".local/share/eden"
       ".local/share/SameBoy"
-      ".local/share/osu"
       ".local/share/keyrings"
       ".local/share/warp"
       ".local/share/containers"
