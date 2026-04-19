@@ -7,7 +7,7 @@
   "matugenContrast": 0,
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
-  "popupTransparency": 0.9,
+  "popupTransparency": 0.5,
   "dockTransparency": 1,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
@@ -451,7 +451,7 @@
       "id": "default",
       "name": "Main Bar",
       "enabled": true,
-      "position": 1,
+      "position": 0,
       "screenPreferences": [
         "all"
       ],
@@ -490,8 +490,8 @@
       "spacing": 0,
       "innerPadding": 4,
       "bottomGap": 0,
-      "transparency": 0.8,
-      "widgetTransparency": 0.8,
+      "transparency": 0.5,
+      "widgetTransparency": 0.5,
       "squareCorners": false,
       "noBackground": false,
       "maximizeWidgetIcons": false,
