@@ -100,8 +100,10 @@ layout {
 }
 
 blur {
-    passes 2
-    offset 4
+    passes 1
+    offset 45
+    noise 0.0
+    saturation 2
 }
 
 spawn-at-startup "dms" "run"
@@ -151,7 +153,7 @@ window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
     draw-border-with-background false
-    opacity 0.85
+    opacity 0.8
     background-effect {
         blur true
         xray true
