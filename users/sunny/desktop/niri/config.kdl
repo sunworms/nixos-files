@@ -100,10 +100,10 @@ layout {
 }
 
 blur {
-    passes 1
-    offset 45
+    passes 3
+    offset 15
     noise 0.0
-    saturation 2
+    saturation 3
 }
 
 spawn-at-startup "dms" "run"
