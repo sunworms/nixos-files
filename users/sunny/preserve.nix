@@ -23,7 +23,7 @@
       ".cache/nix"
       ".cache/typst"
       ".cache/DankMaterialShell"
-      ".cache/distrobox"
+      ".cache/containers"
 
       ".config/mozilla"
       ".config/vesktop"
