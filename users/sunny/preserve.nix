@@ -27,6 +27,7 @@
 
       ".config/mozilla"
       ".config/vesktop"
+      ".config/fish"
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"

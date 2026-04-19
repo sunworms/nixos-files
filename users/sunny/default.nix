@@ -13,7 +13,7 @@
 
   packages = with pkgs; [
     # fish plugins
-    starship
+    fishPlugins.tide
     fishPlugins.git-abbr
 
     # theming
