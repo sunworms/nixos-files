@@ -49,10 +49,6 @@ input {
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
-output "eDP-1" {
-    variable-refresh-rate
-}
-
 layout {
     background-color "transparent"
     
