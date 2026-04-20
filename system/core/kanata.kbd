@@ -27,10 +27,10 @@
 )
 
 (defchordsv2
-  (lsft lmet f23) rctl $tap-time all-released ()
-  (lmet i) f13 $tap-time all-released ()
-  (lmet l) f14 $tap-time all-released ()
-  (lmet p) f15 $tap-time all-released ()
+  (lsft lmet f23) rctl 50 all-released ()
+  (lmet i) f13 50 all-released ()
+  (lmet l) f14 50 all-released ()
+  (lmet p) f15 50 all-released ()
 )
 
 (deflayer base
