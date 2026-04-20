@@ -22,6 +22,8 @@
       inputs.dms-plugin-registry.packages.${pkgs.stdenv.hostPlatform.system}.niriWindows;
     "DankMaterialShell/plugins/displayMirror".source =
       inputs.dms-plugin-registry.packages.${pkgs.stdenv.hostPlatform.system}.displayMirror;
+    "DankMaterialShell/plugins/dankPomodoroTimer".source =
+      inputs.dms-plugin-registry.packages.${pkgs.stdenv.hostPlatform.system}.dankPomodoroTimer;
 
     "matugen".source = ./matugen;
   };

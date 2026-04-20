@@ -479,13 +479,34 @@
         "weather"
       ],
       "rightWidgets": [
-        "systemTray",
-        "clipboard",
-        "cpuUsage",
-        "memUsage",
-        "notificationButton",
-        "battery",
-        "controlCenterButton"
+        {
+          "id": "systemTray",
+          "enabled": true
+        },
+        {
+          "id": "dankPomodoroTimer",
+          "enabled": true
+        },
+        {
+          "id": "cpuUsage",
+          "enabled": true
+        },
+        {
+          "id": "memUsage",
+          "enabled": true
+        },
+        {
+          "id": "notificationButton",
+          "enabled": true
+        },
+        {
+          "id": "battery",
+          "enabled": true
+        },
+        {
+          "id": "controlCenterButton",
+          "enabled": true
+        }
       ],
       "spacing": 0,
       "innerPadding": 4,

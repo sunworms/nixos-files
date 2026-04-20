@@ -1,4 +1,7 @@
 {
+  "dankPomodoroTimer": {
+    "enabled": true
+  },
   "displayMirror": {
     "enabled": true
   },
