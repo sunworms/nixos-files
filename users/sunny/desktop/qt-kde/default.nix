@@ -4,7 +4,7 @@
   xdg.config.files = {
     "kdeglobals".text = ''
       [UiSettings]
-      ColorScheme=DankMatugen
+      ColorScheme=noctalia
     '';
     "okular.kmessagebox".text = ''
       [General]
@@ -12,7 +12,7 @@
     '';
     "qt6ct/qt6ct.conf".text = ''
       [Appearance]
-      color_scheme_path=/home/sunny/.config/qt6ct/colors/matugen.conf
+      color_scheme_path=/home/sunny/.config/qt6ct/colors/noctalia.conf
       custom_palette=true
       icon_theme=candy-icons
       standard_dialogs=default
@@ -20,7 +20,7 @@
     '';
     "qt5ct/qt5ct.conf".text = ''
       [Appearance]
-      color_scheme_path=/home/sunny/.config/qt5ct/colors/matugen.conf
+      color_scheme_path=/home/sunny/.config/qt5ct/colors/noctalia.conf
       custom_palette=true
       icon_theme=candy-icons
       standard_dialogs=default

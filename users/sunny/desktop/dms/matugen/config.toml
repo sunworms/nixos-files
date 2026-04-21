@@ -1,6 +1,0 @@
-[config]
-
-[templates.helix]
-input_path = '/home/sunny/.config/matugen/dank-helix.toml'
-output_path = '/home/sunny/.config/helix/themes/dank-helix.toml'
-post_hook = 'pkill -USR1 hx'

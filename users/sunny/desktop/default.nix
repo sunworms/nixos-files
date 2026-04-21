@@ -5,7 +5,7 @@
     ./kitty
     ./fish
     ./niri
-    ./dms
+    ./noctalia
     ./qt-kde
   ];
 

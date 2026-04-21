@@ -20,13 +20,14 @@
       ".ssh"
 
       ".cache/wal"
+      ".cache/noctalia"
       ".cache/nix"
       ".cache/typst"
-      ".cache/DankMaterialShell"
       ".cache/containers"
 
       ".config/mozilla"
       ".config/vesktop"
+      ".config/noctalia"
       ".config/fish"
 
       ".config/gtk-3.0"
@@ -49,7 +50,6 @@
       ".local/share/containers"
 
       ".local/state/wireplumber"
-      ".local/state/DankMaterialShell"
     ];
     files = [ ];
   };
