@@ -19,7 +19,7 @@
   nixpkgs = {
     config.allowUnfree = true;
     overlays = [
-      inputs.niri.overlays.niri
+      inputs.niri.overlays.niri-nix
     ];
   };
 }

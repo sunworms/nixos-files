@@ -13,8 +13,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     niri = {
-      url = "github:sodiboo/niri-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "git+https://codeberg.org/BANanaD3V/niri-nix";
+      inputs.git-hooks.inputs.flake-compat.follows = "";
     };
     helix.url = "github:helix-editor/helix";
     quickshell = {
@@ -42,7 +42,6 @@
           inputs.preservation.nixosModules.default
           inputs.hjem.nixosModules.default
           inputs.sops-nix.nixosModules.default
-          inputs.niri.nixosModules.niri
         ];
         specialArgs = {
           inherit inputs;

@@ -41,7 +41,7 @@
   packages = with pkgs; [
     hyfetch
     git
-    xwayland-satellite
+    xwayland-satellite-unstable
     nautilus
   ];
 }
