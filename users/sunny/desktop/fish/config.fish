@@ -15,6 +15,9 @@ if status is-interactive
     abbr --add -- l 'ls -alh'
     abbr --add -- ll 'ls -l'
     abbr --add -- ls 'ls --color=tty'
+    abbr --add -- ost 'nh os test --ask ./. -H'
+    abbr --add -- oss 'nh os switch --ask ./. -H'
+    abbr --add -- osc 'nh clean all'
     abbr --add -- lg lazygit
 
     set -U fish_greeting
