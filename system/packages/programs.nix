@@ -1,11 +1,5 @@
 { pkgs, ... }:
 
-let
-  fixedPrefetchGit = pkgs.runCommand "nix-prefetch-git-fixed" { } ''
-    mkdir -p $out/bin
-    ln -s ${pkgs.nix-prefetch-git}/bin/nix-prefetch-git* $out/bin/nix-prefetch-git
-  '';
-in
 {
   programs.git = {
     enable = true;
@@ -41,7 +35,6 @@ in
 
     # nvfetcher
     nvfetcher
-    fixedPrefetchGit
 
     fastfetch
     wl-clipboard
