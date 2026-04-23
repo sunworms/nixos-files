@@ -16,7 +16,7 @@ Folder structure of my NixOS configuration:
 ├── nvfetcher.toml
 ├── README.md
 ├── secrets
-│   └── secrets.json
+│   └── secrets.yaml
 ├── _sources
 │   ├── generated.json
 │   └── generated.nix
@@ -26,15 +26,16 @@ Folder structure of my NixOS configuration:
 │   │   ├── default.nix
 │   │   ├── kanata.kbd
 │   │   ├── kanata.nix
+│   │   ├── keys.nix
 │   │   ├── network.nix
 │   │   ├── nix-settings.nix
 │   │   ├── preserve.nix
+│   │   ├── sops.nix
 │   │   ├── users.nix
 │   │   └── virtualisation.nix
 │   └── packages
 │       ├── audio.nix
 │       ├── bluetooth.nix
-│       ├── chromium.nix
 │       ├── default.nix
 │       ├── desktop.nix
 │       ├── fonts.nix
@@ -48,9 +49,7 @@ Folder structure of my NixOS configuration:
         │   ├── default.nix
         │   ├── fish
         │   │   ├── config.fish
-        │   │   ├── default.nix
-        │   │   └── functions
-        │   │       └── nixos.fish
+        │   │   └── default.nix
         │   ├── gitconfig
         │   ├── hyfetch.json
         │   ├── kitty
@@ -62,21 +61,22 @@ Folder structure of my NixOS configuration:
         │   │   └── default.nix
         │   ├── noctalia
         │   │   ├── default.nix
-        │   │   ├── matugen-template.lua
         │   │   ├── plugins.json
-        │   │   ├── settings.json
-        │   │   └── user-templates.toml
+        │   │   └── settings.json
         │   └── qt-kde
         │       └── default.nix
-        ├── helium.nix
-        ├── nvim.nix
+        ├── helix
+        │   ├── config.toml
+        │   ├── default.nix
+        │   └── languages.toml
         ├── packages
         │   ├── browser-paths.patch
         │   ├── default.nix
         │   ├── eden.nix
         │   ├── ice-ssb.nix
         │   └── pcsx2.nix
-        └── preserve.nix
+        ├── preserve.nix
+        └── ssh.nix
 
 20 directories, 57 files
 ```
