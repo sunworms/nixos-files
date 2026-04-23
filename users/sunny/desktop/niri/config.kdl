@@ -96,10 +96,10 @@ layout {
 }
 
 blur {
-    passes 2
-    offset 5
-    noise 0.05
-    saturation 2
+    passes 3
+    offset 3
+    noise 0.02
+    saturation 1.5
 }
 
 spawn-at-startup "noctalia-shell"
