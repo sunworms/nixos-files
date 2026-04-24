@@ -4,8 +4,8 @@ src.cmd = "curl -sL 'https://api.github.com/repos/PCSX2/pcsx2/releases?per_page=
 fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-linux-appimage-x64-Qt.AppImage"
 
 [eden]
-src.webpage = "https://git.eden-emu.dev/eden-ci/nightly/releases"
-src.regex = 'v\d{9,}\.[0-9a-f]{8,}'
+src.webpage = "https://nightly.eden-emu.dev/latest/release.json"
+src.regex = 'v\d+\.[0-9a-f]+'
 src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
 src.to_pattern = 'v\1.\2/Eden-Linux-\2'
-fetch.url = "https://git.eden-emu.dev/eden-ci/nightly/releases/download/$ver-amd64-clang-pgo.AppImage"
+fetch.url = "https://nightly.eden-emu.dev/$ver-amd64-clang-pgo.AppImage"
