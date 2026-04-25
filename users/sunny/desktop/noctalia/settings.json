@@ -703,6 +703,10 @@
       {
         "enabled": true,
         "id": "pywalfox"
+      },
+      {
+        "enabled": true,
+        "id": "kcolorscheme"
       }
     ],
     "enableUserTheming": false
