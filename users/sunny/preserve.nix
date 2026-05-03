@@ -20,10 +20,8 @@
       ".ssh"
 
       ".cache/wal"
-      ".cache/noctalia"
       ".cache/nix"
       ".cache/typst"
-      ".cache/containers"
 
       ".config/mozilla"
       ".config/vesktop"
