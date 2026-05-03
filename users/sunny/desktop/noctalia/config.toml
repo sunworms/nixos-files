@@ -16,6 +16,7 @@ radius_bottom_right = 0
 scale = 1.0
 shadow = false
 thickness = 30
+attach_panels = false
 
 [idle.behavior.lock]
 timeout = 300
