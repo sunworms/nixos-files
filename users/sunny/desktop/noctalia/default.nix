@@ -7,6 +7,11 @@
 {
   packages = with pkgs; [
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+    (writeShellScriptBin "noctalia-lock-and-suspend" ''
+      noctalia msg screen-lock
+      sleep 1
+      systemctl suspend
+    '')
 
     # needed for noctalia
     gpu-screen-recorder
@@ -27,7 +32,6 @@
   ];
 
   xdg.config.files = {
-    "noctalia/settings.json".source = ./settings.json;
-    "noctalia/plugins.json".source = ./plugins.json;
+    "noctalia/config.toml".source = ./config.toml;
   };
 }

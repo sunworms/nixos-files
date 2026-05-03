@@ -50,6 +50,7 @@
       ".local/share/containers"
 
       ".local/state/wireplumber"
+      ".local/state/noctalia"
     ];
     files = [ ];
   };

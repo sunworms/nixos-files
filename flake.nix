@@ -12,13 +12,9 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    niri = {
-      url = "git+https://codeberg.org/BANanaD3V/niri-nix";
-      inputs.git-hooks.inputs.flake-compat.follows = "";
-    };
     helix.url = "github:helix-editor/helix";
     noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
+      url = "github:noctalia-dev/noctalia-shell/v5";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
