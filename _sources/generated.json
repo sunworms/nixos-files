@@ -1,6 +1,6 @@
 {
     "eden": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "eden",
@@ -8,14 +8,14 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-CnQOTeCcuJOqMYgPZMYUGhXVwPUW+eKYYuFwI0mQeFg=",
+            "sha256": "sha256-bG0QwCNlvvF3SAV1EusQ8K3oieEFpHc4lBCu5YU9ExQ=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1777055969.26ce96297c/Eden-Linux-26ce96297c-amd64-clang-pgo.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1777747568.7d0e79335e/Eden-Linux-7d0e79335e-amd64-clang-pgo.AppImage"
         },
-        "version": "v1777055969.26ce96297c/Eden-Linux-26ce96297c"
+        "version": "v1777747568.7d0e79335e/Eden-Linux-7d0e79335e"
     },
     "pcsx2": {
-        "cargoLock": null,
+        "cargoLocks": null,
         "date": null,
         "extract": null,
         "name": "pcsx2",
@@ -23,10 +23,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-oqGOv8jAGhrhCKBtRn/P9PK4S+xuy+FhBmQrdLyTBd8=",
+            "sha256": "sha256-cHAMcIw/ecPisqkRJD9jZx0HN0aWXYvMbsMuTvJ+k3o=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.289/pcsx2-v2.7.289-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.311/pcsx2-v2.7.311-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.289"
+        "version": "v2.7.311"
     }
 }
