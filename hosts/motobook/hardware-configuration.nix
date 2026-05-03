@@ -73,6 +73,7 @@
   boot.supportedFilesystems = {
     zfs = true;
   };
+  boot.zfs.forceImportRoot = false;
   services.zfs.autoScrub.enable = true;
   networking.hostId = "962464f9";
 }
