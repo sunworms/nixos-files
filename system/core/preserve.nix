@@ -21,11 +21,6 @@
         "/var/lib/containers"
         "/var/lib/cloudflare-warp"
         "/etc/NetworkManager/system-connections"
-        {
-          directory = "/var/cache/tuigreet";
-          user = "greeter";
-          group = "greeter";
-        }
       ];
       files = [
         {
