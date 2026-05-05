@@ -9,3 +9,7 @@ src.regex = 'v\d+\.[0-9a-f]+'
 src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
 src.to_pattern = 'v\1.\2/Eden-Linux-\2'
 fetch.url = "https://nightly.eden-emu.dev/$ver-amd64-clang-pgo.AppImage"
+
+[helium]
+src.github = "imputnet/helium-linux"
+fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"
