@@ -20,6 +20,7 @@
         "/var/lib/sops-nix"
         "/var/lib/containers"
         "/var/lib/cloudflare-warp"
+        "/etc/ly"
         "/etc/NetworkManager/system-connections"
       ];
       files = [
