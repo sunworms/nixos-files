@@ -49,6 +49,7 @@
 
       ".local/state/wireplumber"
       ".local/state/DankMaterialShell"
+      ".local/state/lazygit"
     ];
     files = [ ];
   };
