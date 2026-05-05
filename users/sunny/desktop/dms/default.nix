@@ -3,7 +3,7 @@
 {
   packages = [
     inputs.dms.packages.${pkgs.stdenv.hostPlatform.system}.default
-    inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
+    pkgs.quickshell
     pkgs.matugen
     pkgs.dgop
     pkgs.cava
