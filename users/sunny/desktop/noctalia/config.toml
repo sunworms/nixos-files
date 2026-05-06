@@ -3,11 +3,13 @@ enable_overdrive = true
 
 [bar.default]
 background_opacity = 0.9
-capsule = false
-end = [ "notifications", "network", "bluetooth", "cpu", "ram", "temp", "volume", "brightness", "battery" ]
+capsule = true
+capsule_groups = [ "mpris", "wifi-bt", "sysmon", "vol-bright-bat" ]
+capsule_opacity = 0.9
+end = [ "tray", "notifications", "network", "bluetooth", "cpu", "ram", "temp", "volume", "brightness", "battery" ]
 position = "bottom"
-start = [ "launcher", "wallpaper", "workspaces", "tray", "media", "audio_visualizer" ]
-widget_spacing = 15
+start = [ "launcher", "wallpaper", "workspaces", "media", "audio_visualizer" ]
+widget_spacing = 10
 margin_edge = 0
 margin_ends = 120
 radius = 8
@@ -66,6 +68,7 @@ format = "{:%a, %b %d, %H:%M}"
 
 [widget.network]
 show_label = false
+capsule_group = "wifi-bt"
 
 [widget.workspaces]
 display = "none"
@@ -74,14 +77,35 @@ display = "none"
 display = "gauge"
 show_label = false
 type = "sysmon"
+capsule_group = "sysmon"
 
 [widget.ram]
 display = "gauge"
 show_label = false
 stat = "ram_used"
 type = "sysmon"
+capsule_group = "sysmon"
 
 [widget.temp]
 show_label = false
 stat = "cpu_temp"
 type = "sysmon"
+capsule_group = "sysmon"
+
+[widget.audio_visualizer]
+capsule_group = "mpris"
+
+[widget.battery]
+capsule_group = "vol-bright-bat"
+
+[widget.bluetooth]
+capsule_group = "wifi-bt"
+
+[widget.brightness]
+capsule_group = "vol-bright-bat"
+
+[widget.media]
+capsule_group = "mpris"
+
+[widget.volume]
+capsule_group = "vol-bright-bat"
