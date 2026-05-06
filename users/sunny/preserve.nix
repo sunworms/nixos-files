@@ -19,13 +19,12 @@
 
       ".ssh"
 
-      ".cache/DankMaterialShell"
       ".cache/nix"
       ".cache/typst"
 
       ".config/net.imput.helium"
       ".config/vesktop"
-      ".config/DankMaterialShell"
+      ".config/noctalia"
       ".config/fish"
 
       ".config/gtk-3.0"
@@ -48,8 +47,8 @@
       ".local/share/containers"
 
       ".local/state/wireplumber"
-      ".local/state/DankMaterialShell"
       ".local/state/lazygit"
+      ".local/state/noctalia"
     ];
     files = [ ];
   };
