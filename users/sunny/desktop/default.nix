@@ -5,7 +5,10 @@
     ./kitty
     ./fish
     ./niri
-    ./noctalia
+    ./fuzzel
+    ./mako
+    ./waybar
+    ./matugen
     ./qt-kde
   ];
 

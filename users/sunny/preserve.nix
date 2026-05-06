@@ -19,16 +19,24 @@
 
       ".ssh"
 
+      ".cache/awww"
       ".cache/nix"
       ".cache/typst"
 
       ".config/net.imput.helium"
       ".config/vesktop"
-      ".config/noctalia"
       ".config/fish"
 
+      ".config/fuzzel"
       ".config/gtk-3.0"
       ".config/gtk-4.0"
+      ".config/helix"
+      ".config/kitty"
+      ".config/mako"
+      ".config/niri"
+      ".config/qt5ct"
+      ".config/qt6ct"
+      ".config/waybar"
 
       ".config/azahar-emu"
       ".config/eden"
@@ -48,7 +56,6 @@
 
       ".local/state/wireplumber"
       ".local/state/lazygit"
-      ".local/state/noctalia"
     ];
     files = [ ];
   };
