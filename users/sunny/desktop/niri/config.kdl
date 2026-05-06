@@ -127,7 +127,7 @@ environment {
     VISUAL "hx"
     TERMINAL "kitty"
     GTK_THEME "adw-gtk3"
-    QT_QPA_PLATFORMTHEME "gtk3"
+    QT_QPA_PLATFORMTHEME "qt6ct"
 }
 
 animations {
