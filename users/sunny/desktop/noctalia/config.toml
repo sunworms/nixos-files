@@ -51,6 +51,7 @@ telemetry_enabled = false
 builtin = "Noctalia"
 source = "wallpaper"
 wallpaper_scheme = "faithful"
+community_palette = "GruvboxAlt"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4", "helix", "kcolorscheme", "niri", "kitty" ]
@@ -109,3 +110,10 @@ capsule_group = "mpris"
 
 [widget.volume]
 capsule_group = "vol-bright-bat"
+
+[hooks]
+battery_low_percent_threshold = 20
+
+[shell.panel]
+attach_clipboard = true
+attach_launcher = true
