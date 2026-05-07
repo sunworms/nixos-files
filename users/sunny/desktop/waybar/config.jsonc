@@ -1,19 +1,21 @@
 {
   "layer": "top",
   "position": "bottom",
-  "height": 20,
+  "height": 28,
   "spacing": 4,
   "margin-left": 0,
   "margin-right": 0,
   "modules-left": [
     "niri/workspaces",
     "niri/window",
+    "mpris",
     "tray",
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
+    "idle_inhibitor",
     "network",
     "cpu",
     "memory",
@@ -37,6 +39,11 @@
     "format": "{title}",
     "separate-outputs": true,
     "max-length": 30,
+  },
+  "mpris": {
+	  "format": "{dynamic}",
+	  "format-paused": "<i>{dynamic}</i>",
+	  "max-length": 20,
   },
   "tray": {
     "icon-size": 14,
@@ -77,6 +84,15 @@
       "critical": 20
     },
     "format": "bat: {capacity}%",
+  },
+  "idle_inhibitor": {
+	  "format": "{icon}",
+	  "format-icons": {
+		  "activated": "inhi",
+		  "deactivated": "idle"
+	  },
+	  "timeout": 30,
+	  "tooltip": false,
   },
   "network": {
     "interval": 2,

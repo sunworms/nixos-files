@@ -17,6 +17,13 @@ window#waybar {
   font-size: 11pt;
 }
 
+window#waybar.empty #window {
+  border: none;
+  padding: 0;
+}
+
+#mpris,
+#idle_inhibitor,
 #window,
 #cpu,
 #backlight,
@@ -44,6 +51,9 @@ window#waybar {
 #workspaces button:hover {
   color: @on_secondary_container;
   background-color: @background;
+  border-top: 2pt solid @surface_tint;
+  border-bottom: 2pt solid @surface_tint;
+  
 }
 
 #workspaces button.active,
@@ -62,6 +72,10 @@ window#waybar {
 #tray {
   border: 2pt solid @primary_fixed;
   padding: 0 6pt;
+}
+
+#idle_inhibitor {
+  border: 2pt solid @on_primary_container;
 }
 
 #cpu {
@@ -85,9 +99,13 @@ window#waybar {
 }
 
 #clock {
-  border: 2pt solid @tertiary;
+  border: 2pt solid @secondary_fixed_dim;
 }
 
 #network {
   border: 2pt solid @on_error_container;
+}
+
+#mpris {
+  border: 2pt solid @tertiary;
 }
