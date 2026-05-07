@@ -31,6 +31,7 @@
       ".config/fuzzel"
       ".config/gtk-3.0"
       ".config/gtk-4.0"
+      ".config/gtklock"
       ".config/helix"
       ".config/kitty"
       ".config/mako"

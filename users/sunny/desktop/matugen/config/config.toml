@@ -27,6 +27,10 @@ post_hook = '''
 input_path = "~/.config/matugen/gtk-colors.css"
 output_path = "~/.config/gtk-4.0/gtk.css"
 
+[templates.gtklock]
+input_path = "~/.config/matugen/gtklock-style.css"
+output_path = "~/.config/gtklock/style.css"
+
 [templates.helix]
 input_path = "~/.config/matugen/helix.toml"
 output_path = "~/.config/helix/themes/matugen.toml"
