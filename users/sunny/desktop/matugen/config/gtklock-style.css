@@ -1,6 +1,7 @@
 window {
    background-image: url("{{image}}");
    background-size: cover;
+   background-position: center;
 }
 
 #window-box {
