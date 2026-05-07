@@ -2,14 +2,10 @@
 
 {
   imports = [
-    ./btop
     ./kitty
     ./fish
     ./niri
-    ./fuzzel
-    ./mako
-    ./waybar
-    ./matugen
+    ./noctalia
     ./qt-kde
   ];
 

@@ -41,7 +41,8 @@
 
   # Logind config
   services.logind.settings.Login = {
-    HandleLidSwitch = "suspend";
+    HandlePowerKey = "ignore";
+    HandleLidSwitch = "ignore";
   };
 
   # Enable direnv

@@ -7,6 +7,4 @@
     enable = true;
     package = pkgs.niri;
   };
-
-  security.pam.services.gtklock = { };
 }

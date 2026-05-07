@@ -45,6 +45,7 @@ input {
     }
 
     // warp-mouse-to-focus
+    disable-power-key-handling
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
@@ -101,14 +102,8 @@ blur {
     saturation 1.5
 }
 
-spawn-at-startup "awww-daemon"
-spawn-at-startup "mako"
-spawn-at-startup "waybar"
-spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
-spawn-at-startup "soteria"
-spawn-at-startup "playerctld" "daemon"
+spawn-at-startup "noctalia"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
-spawn-sh-at-startup "swayidle -w timeout 300 'gtklock -d' timeout 600 'niri msg action power-off-monitors' after-resume 'niri msg action power-on-monitors' before-sleep 'gtklock -d'"
 spawn-at-startup "apply-gtk-settings"
 
 hotkey-overlay {
@@ -176,23 +171,12 @@ window-rule {
 // layer rules
 
 layer-rule {
-    match namespace="^awww-daemon$"
+    match namespace="^noctalia-wallpaper*"
     place-within-backdrop true
 }
 
-layer-rule {
-    match namespace="launcher"
-    background-effect {
-        blur true
-    }
-}
-
-layer-rule {
-    match namespace="waybar"
-    opacity 0.9
-    background-effect {
-        blur true
-    }
+switch-events {
+    lid-close { spawn "noctalia-lock-and-suspend"; }
 }
 
 prefer-no-csd
@@ -211,29 +195,31 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
+    Mod+Shift+T hotkey-overlay-title="Layers" { spawn "kitty" "sh" "-c" "niri msg layers; fish"; }
 
-    Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel" "--no-icons"; }
-    Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; }
-    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; }
+    Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+V hotkey-overlay-title="Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "noctalia" "msg" "panel-toggle" "session"; }
 
-    // XF86Tools hotkey-overlay-title="Open Windows" { spawn "niri-window-switcher"; }
-    XF86Launch5 hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }
-    XF86Launch6 hotkey-overlay-title="Window Switcher" { spawn "niri-window-switcher"; }
+    XF86Tools hotkey-overlay-title="Noctalia Settings" { spawn "noctalia" "msg" "settings-toggle"; }
+    XF86Launch5 hotkey-overlay-title="Lock the Screen" { spawn "noctalia" "msg" "screen-lock"; }
+    XF86Launch6 hotkey-overlay-title="Control Center" { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
     // XF86Calculator hotkey-overlay-title="Open Windows" { spawn "noctalia" "msg" "call" "launcher" "windows"; }
-    XF86Favorites hotkey-overlay-title="Emoji Selector" { spawn "rofimoji" "-a" "copy"; }
+    XF86Favorites hotkey-overlay-title="Emoji Selector" { spawn "noctalia" "msg" "panel-toggle" "launcher" "/emo"; }
+    XF86PowerOff hotkey-overlay-title="Lock and Suspend" { spawn "noctalia-lock-and-suspend"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"; }
-    XF86AudioMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "noctalia" "msg" "volume-up" "1"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "noctalia" "msg" "volume-down" "1"; }
+    XF86AudioMute allow-when-locked=true { spawn "noctalia" "msg" "volume-mute"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn "noctalia" "msg" "mic-mute"; }
     
-    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "brightnessctl set +5%"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "brightnessctl set 5%-"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "noctalia" "msg" "brightness-up" "1"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia" "msg" "brightness-down" "1"; }
 
-    XF86AudioPlay        allow-when-locked=true { spawn "playerctl" "play-pause"; }
-    XF86AudioStop        allow-when-locked=true { spawn "playerctl" "stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn "playerctl" "previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn "playerctl" "next"; }
+    XF86AudioPlay        allow-when-locked=true { spawn "noctalia" "msg" "media" "toggle"; }
+    // XF86AudioStop        allow-when-locked=true { spawn "noctalia" "msg" "call" "media" "stop"; }
+    XF86AudioPrev        allow-when-locked=true { spawn "noctalia" "msg" "media" "previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn "noctalia" "msg" "media" "next"; }
 
     Mod+Space repeat=false { toggle-overview; }
 
@@ -404,4 +390,4 @@ overview {
     }
 }
 
-include optional=true "colors.kdl"
+include optional=true "noctalia.kdl"
