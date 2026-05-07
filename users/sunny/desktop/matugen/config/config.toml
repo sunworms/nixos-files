@@ -42,6 +42,10 @@ input_path = "~/.config/matugen/mako"
 output_path = "~/.config/mako/colors"
 post_hook = "makoctl reload"
 
+[templates.kde]
+input_path = "~/.config/matugen/Matugen.colors"
+output_path = "~/.local/share/color-schemes/Matugen.colors"
+
 [templates.qt5ct]
 input_path = "~/.config/matugen/qtct-colors.conf"
 output_path = "~/.config/qt5ct/colors/matugen.conf"
