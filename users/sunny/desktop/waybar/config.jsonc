@@ -51,15 +51,19 @@
   },
   "cpu": {
     "format": "cpu: {usage}%",
-    "interval": 10
+    "interval": 10,
+    "on-click": "kitty -e btop"
   },
   "memory": {
 	  "interval": 10,
 	  "format": "mem: {}%",
-	  "max-length": 10
+	  "max-length": 10,
+	  "on-click": "kitty -e btop"
   },
   "backlight": {
     "format": "led: {percent}%",
+    "scroll-step": 5,
+    "tooltip": false
   },
   "wireplumber#sink": {
     "format": "vol: {volume}%",
@@ -73,8 +77,10 @@
     "node-type": "Audio/Source",
     "format": "mic: {volume}%",
     "format-muted": "mic: mut",
+    "on-click": "pwvucontrol",
     "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
-    "scroll-step": 5
+    "scroll-step": 5,
+    "max-volume": 150
   },
   "battery": {
     "interval": 5,

@@ -27,6 +27,7 @@
       ".config/vesktop"
       ".config/fish"
 
+      ".config/btop"
       ".config/fuzzel"
       ".config/gtk-3.0"
       ".config/gtk-4.0"

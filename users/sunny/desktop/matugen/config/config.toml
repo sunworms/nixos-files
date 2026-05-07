@@ -6,6 +6,11 @@ command = "awww img --transition-type none {{ image }}"
 
 [templates]
 
+[templates.btop]
+input_path = "~/.config/matugen/btop.theme"
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -USR2 btop || true'
+
 [templates.fuzzel]
 input_path = "~/.config/matugen/fuzzel.ini"
 output_path = "~/.config/fuzzel/colors.ini"

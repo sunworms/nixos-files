@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./btop
     ./kitty
     ./fish
     ./niri

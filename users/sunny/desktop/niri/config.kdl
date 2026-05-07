@@ -222,13 +222,13 @@ binds {
     // XF86Calculator hotkey-overlay-title="Open Windows" { spawn "noctalia" "msg" "call" "launcher" "windows"; }
     XF86Favorites hotkey-overlay-title="Emoji Selector" { spawn "rofimoji" "-a" "copy"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && volume-notif"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && volume-notif"; }
-    XF86AudioMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && volume-notif"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"; }
+    XF86AudioMute allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
     
-    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "brightnessctl set +5% && bright-notif"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "brightnessctl set 5%- && bright-notif"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "brightnessctl set +5%"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "brightnessctl set 5%-"; }
 
     XF86AudioPlay        allow-when-locked=true { spawn "playerctl" "play-pause"; }
     XF86AudioStop        allow-when-locked=true { spawn "playerctl" "stop"; }
