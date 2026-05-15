@@ -1,6 +1,6 @@
 {
     "eden": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "eden",
@@ -8,14 +8,14 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-Rn4BqMxD1Be6uYei+XlEGoQ6uUOjKDwbzo+yv4YEU8I=",
+            "sha256": "sha256-WPPxXMuzhYx1Ira4i/9kE6c7nQcZvJRRhUahDXQK/3w=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1777980511.4f4c298a39/Eden-Linux-4f4c298a39-amd64-clang-pgo.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1778614183.7e84f9ef59/Eden-Linux-7e84f9ef59-amd64-clang-pgo.AppImage"
         },
-        "version": "v1777980511.4f4c298a39/Eden-Linux-4f4c298a39"
+        "version": "v1778614183.7e84f9ef59/Eden-Linux-7e84f9ef59"
     },
     "helium": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "helium",
@@ -23,14 +23,14 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qzc135IP5F2btxtOMUGMz+0azJhYL9KI0lcPG2KjcxU=",
+            "sha256": "sha256-VnOhzhAulvFNBB/0AD1d+K/TzfFL9Zwtk/vcm5vWl+I=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.11.7.1/helium-0.11.7.1-x86_64.AppImage"
+            "url": "https://github.com/imputnet/helium-linux/releases/download/0.12.3.1/helium-0.12.3.1-x86_64.AppImage"
         },
-        "version": "0.11.7.1"
+        "version": "0.12.3.1"
     },
     "pcsx2": {
-        "cargoLocks": null,
+        "cargoLock": null,
         "date": null,
         "extract": null,
         "name": "pcsx2",
@@ -38,10 +38,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-R4A/Rf7seY+KNV9y1ppdQukcYwfCM2kXddeliT/jd9Q=",
+            "sha256": "sha256-e43VtuV8fvoeoOA8ZPb7Miik68j6ovtNoHaN8tAmo3A=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.314/pcsx2-v2.7.314-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.341/pcsx2-v2.7.341-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.314"
+        "version": "v2.7.341"
     }
 }
