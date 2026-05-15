@@ -12,9 +12,12 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    helix.url = "github:helix-editor/helix";
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell/v5";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    sunny-nvim = {
+      url = "github:sunworms/neovim-config/nixos";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

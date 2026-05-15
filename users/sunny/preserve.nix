@@ -24,7 +24,6 @@
 
       ".config/net.imput.helium"
       ".config/vesktop"
-      ".config/noctalia"
       ".config/fish"
 
       ".config/gtk-3.0"

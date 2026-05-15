@@ -89,9 +89,9 @@ wallpaper_scheme = "faithful"
 community_palette = "GruvboxAlt"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "gtk4", "helix", "kcolorscheme", "niri", "foot", "qt" ]
+    builtin_ids = [ "gtk3", "gtk4", "kcolorscheme", "niri", "foot", "qt" ]
     community_ids = [ "discord" ]
-    enable_user_templates = false
+    enable_user_templates = true
 
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"
