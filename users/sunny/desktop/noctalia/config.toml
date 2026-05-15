@@ -6,13 +6,14 @@ background_opacity = 0.9
 capsule = true
 capsule_groups = [ "mpris", "wifi-bt", "sysmon", "vol-bright-bat" ]
 capsule_opacity = 0.9
+capsule_radius = 8.0
 end = [ "tray", "notifications", "network", "bluetooth", "cpu", "ram", "temp", "volume", "brightness", "battery" ]
 position = "bottom"
-start = [ "launcher", "wallpaper", "workspaces", "media", "audio_visualizer" ]
+start = [ "wallpaper", "launcher", "workspaces", "media", "audio_visualizer" ]
 widget_spacing = 10
 margin_edge = 0
 margin_ends = 120
-radius = 16
+radius = 8
 radius_bottom_left = 0
 radius_bottom_right = 0
 scale = 1.0
@@ -20,15 +21,15 @@ shadow = false
 thickness = 30
 attach_panels = true
 
-[idle.behavior.lock]
-timeout = 300
-command = "noctalia:screen-lock"
-enabled = true
+    [idle.behavior.lock]
+    timeout = 300
+    command = "noctalia:screen-lock"
+    enabled = true
 
-[idle.behavior.screen-off]
-timeout = 600
-command = "noctalia:dpms-off"
-resume_command = "noctalia:dpms-on"
+    [idle.behavior.screen-off]
+    timeout = 600
+    command = "noctalia:dpms-off"
+    resume_command = "noctalia:dpms-on"
 
 [dock]
 auto_hide = true
@@ -40,12 +41,46 @@ position = "top"
 background_opacity = 0.9
 
 [shell]
-avatar_path = "/home/sunny/nixos-files/assets/icons/haruta.jpg"
+avatar_path = "/home/sunny/.face"
 clipboard_auto_paste = "off"
 password_style = "random"
 polkit_agent = true
 settings_show_advanced = true
 telemetry_enabled = false
+
+    [shell.panel]
+    transparency_mode = "glass"
+    attach_clipboard = true
+    attach_launcher = true
+
+    [[shell.session.actions]]
+    action = "lock"
+    enabled = true
+
+    [[shell.session.actions]]
+    action = "logout"
+    enabled = true
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "systemctl suspend"
+    enabled = true
+    label = "Suspend"
+
+    [[shell.session.actions]]
+    action = "command"
+    command = "pkill noctalia && noctalia -d"
+    enabled = true
+    label = "Restart Noctalia"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    enabled = true
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    destructive = true
+    enabled = true
 
 [theme]
 builtin = "Noctalia"
@@ -61,59 +96,57 @@ community_palette = "GruvboxAlt"
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"
 
-[weather]
-address = "Jatani, India"
+    [widget.launcher]
+    glyph = "niri"
 
-[widget.clock]
-format = "{:%a, %b %d, %H:%M}"
+    [widget.clock]
+    format = "{:%a, %b %d, %H:%M}"
 
-[widget.network]
-show_label = false
-capsule_group = "wifi-bt"
+    [widget.network]
+    show_label = false
+    capsule_group = "wifi-bt"
 
-[widget.workspaces]
-display = "none"
+    [widget.workspaces]
+    display = "none"
 
-[widget.cpu]
-display = "gauge"
-show_label = false
-type = "sysmon"
-capsule_group = "sysmon"
+    [widget.cpu]
+    display = "gauge"
+    show_label = false
+    type = "sysmon"
+    capsule_group = "sysmon"
 
-[widget.ram]
-display = "gauge"
-show_label = false
-stat = "ram_used"
-type = "sysmon"
-capsule_group = "sysmon"
+    [widget.ram]
+    display = "gauge"
+    show_label = false
+    stat = "ram_used"
+    type = "sysmon"
+    capsule_group = "sysmon"
 
-[widget.temp]
-show_label = false
-stat = "cpu_temp"
-type = "sysmon"
-capsule_group = "sysmon"
+    [widget.temp]
+    show_label = false
+    stat = "cpu_temp"
+    type = "sysmon"
+    capsule_group = "sysmon"
 
-[widget.audio_visualizer]
-capsule_group = "mpris"
+    [widget.audio_visualizer]
+    capsule_group = "mpris"
 
-[widget.battery]
-capsule_group = "vol-bright-bat"
+    [widget.battery]
+    capsule_group = "vol-bright-bat"
 
-[widget.bluetooth]
-capsule_group = "wifi-bt"
+    [widget.bluetooth]
+    capsule_group = "wifi-bt"
 
-[widget.brightness]
-capsule_group = "vol-bright-bat"
+    [widget.brightness]
+    capsule_group = "vol-bright-bat"
+    show_label = false
 
-[widget.media]
-capsule_group = "mpris"
+    [widget.media]
+    capsule_group = "mpris"
 
-[widget.volume]
-capsule_group = "vol-bright-bat"
+    [widget.volume]
+    capsule_group = "vol-bright-bat"
+    show_label = false
 
 [hooks]
 battery_low_percent_threshold = 20
-
-[shell.panel]
-attach_clipboard = true
-attach_launcher = true
