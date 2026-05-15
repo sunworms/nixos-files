@@ -54,7 +54,7 @@ wallpaper_scheme = "faithful"
 community_palette = "GruvboxAlt"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "gtk4", "helix", "kcolorscheme", "niri", "kitty" ]
+    builtin_ids = [ "gtk3", "gtk4", "helix", "kcolorscheme", "niri", "foot", "qt" ]
     community_ids = [ "discord" ]
     enable_user_templates = false
 
