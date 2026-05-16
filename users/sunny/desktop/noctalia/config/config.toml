@@ -52,6 +52,7 @@ telemetry_enabled = false
     transparency_mode = "glass"
     attach_clipboard = true
     attach_launcher = true
+    attach_session = true
 
     [[shell.session.actions]]
     action = "lock"
