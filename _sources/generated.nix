@@ -8,10 +8,10 @@
 {
   eden = {
     pname = "eden";
-    version = "v1778614183.7e84f9ef59/Eden-Linux-7e84f9ef59";
+    version = "v1778876561.4d49341918/Eden-Linux-4d49341918";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1778614183.7e84f9ef59/Eden-Linux-7e84f9ef59-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-WPPxXMuzhYx1Ira4i/9kE6c7nQcZvJRRhUahDXQK/3w=";
+      url = "https://nightly.eden-emu.dev/v1778876561.4d49341918/Eden-Linux-4d49341918-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-+qB7ywxtP+qUXJC1yt9vvP/l5dJm3dO+/MBn4gY2258=";
     };
   };
   helium = {
@@ -24,10 +24,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.341";
+    version = "v2.7.346";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.341/pcsx2-v2.7.341-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-e43VtuV8fvoeoOA8ZPb7Miik68j6ovtNoHaN8tAmo3A=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.346/pcsx2-v2.7.346-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-hqNULuTWbrNdkGjRO/Xv8SYVMwcKNViItnhSr1yddRY=";
     };
   };
 }
