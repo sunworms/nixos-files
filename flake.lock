@@ -80,11 +80,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1778944689,
-        "narHash": "sha256-nBqfSy774Z4iFiiPeiQKCUgG1eItLyTZzrg5rpoGjyc=",
+        "lastModified": 1779025102,
+        "narHash": "sha256-1dZidhT/tCGXb62m0CaBhQArtJ5Mgoo3+KET3ve3wA0=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "9841a8266e58f5e0768aabbd0f911a55e6b16805",
+        "rev": "a6b3f1978c8637f5c07e8ecffbbb5b8fbecd3d3d",
         "type": "github"
       },
       "original": {
@@ -147,11 +147,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1778879265,
-        "narHash": "sha256-58Hpd6m1MJabJoYagLCPm9fvlue4BhDM+mLqedfpW58=",
+        "lastModified": 1778945954,
+        "narHash": "sha256-hyo/SBFZbylror4URu/toKbCXXlUz1gr1SIwtjhsq3g=",
         "owner": "sunworms",
         "repo": "neovim-config",
-        "rev": "9534f2f5be11153ba1dccfa09adf7dc0b0847443",
+        "rev": "76cc144f77151f8e7906c220b77754d840d3fa90",
         "type": "github"
       },
       "original": {
