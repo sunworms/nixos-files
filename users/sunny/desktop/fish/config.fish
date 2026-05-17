@@ -4,6 +4,7 @@ if status is-interactive
     abbr --add -- ll 'ls -l'
     abbr --add -- ls 'ls --color=tty'
     abbr --add -- ost 'nh os test --ask ./. -H'
+    abbr --add -- osb 'nh os boot --ask ./. -H'
     abbr --add -- oss 'nh os switch --ask ./. -H'
     abbr --add -- osca 'nh clean all'
     abbr --add -- oscg 'nh clean all --no-gcroots'
