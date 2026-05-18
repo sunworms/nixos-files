@@ -8,6 +8,7 @@
     ./fonts.nix
     ./portals.nix
     ./programs.nix
+    ./flatpaks.nix
   ];
 
   services.gvfs = {

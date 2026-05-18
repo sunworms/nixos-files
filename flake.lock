@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "flatpaks": {
+      "locked": {
+        "lastModified": 1769601081,
+        "narHash": "sha256-J0n+J/qfU3xTf5iaMcQrEK4dA5GSYQcw8XJuhZsM1Pc=",
+        "owner": "in-a-dil-emma",
+        "repo": "declarative-flatpak",
+        "rev": "aba8c5ca67444cf4bcd0b02df284de1c93533a19",
+        "type": "github"
+      },
+      "original": {
+        "owner": "in-a-dil-emma",
+        "ref": "latest",
+        "repo": "declarative-flatpak",
+        "type": "github"
+      }
+    },
     "hjem": {
       "inputs": {
         "nix-darwin": "nix-darwin",
@@ -8,11 +24,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1778659079,
-        "narHash": "sha256-ktYBdfwamZly9P0SSrKbZgJReqcdDckgSlvJJnw39UM=",
+        "lastModified": 1779044379,
+        "narHash": "sha256-DHV1vpUers1TbZxIuEGz4VENShZ/EXefiTXd79QIhs4=",
         "owner": "feel-co",
         "repo": "hjem",
-        "rev": "5e7bf117ed06ccf899bcfc421c8a6de00f825c23",
+        "rev": "4a2fd57f9e5d22cd3ef4c4230d245da159ab8dce",
         "type": "github"
       },
       "original": {
@@ -80,11 +96,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1779025102,
-        "narHash": "sha256-1dZidhT/tCGXb62m0CaBhQArtJ5Mgoo3+KET3ve3wA0=",
+        "lastModified": 1779109795,
+        "narHash": "sha256-L+FA/CnJVoxg9y0IUYlqMP8z43NhZcrcL9VQnbdt1+I=",
         "owner": "noctalia-dev",
         "repo": "noctalia-shell",
-        "rev": "a6b3f1978c8637f5c07e8ecffbbb5b8fbecd3d3d",
+        "rev": "ca397831a63b71542c0eb1504ecde7710c9f25da",
         "type": "github"
       },
       "original": {
@@ -111,6 +127,7 @@
     },
     "root": {
       "inputs": {
+        "flatpaks": "flatpaks",
         "hjem": "hjem",
         "nixpkgs": "nixpkgs",
         "noctalia": "noctalia",
