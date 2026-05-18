@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     preservation.url = "github:nix-community/preservation";
+    flatpaks.url = "github:in-a-dil-emma/declarative-flatpak/latest";
     hjem = {
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -31,6 +32,7 @@
           inputs.preservation.nixosModules.default
           inputs.hjem.nixosModules.default
           inputs.sops-nix.nixosModules.default
+          inputs.flatpaks.nixosModules.default
         ];
         specialArgs = {
           inherit inputs;

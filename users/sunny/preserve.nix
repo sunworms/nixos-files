@@ -18,6 +18,7 @@
       "VMs"
 
       ".ssh"
+      ".var/app"
 
       ".cache/nix"
       ".cache/typst"
@@ -36,6 +37,7 @@
       ".config/PCSX2"
       ".config/ppsspp"
 
+      ".local/share/flatpak"
       ".local/share/okular"
       ".local/share/fish"
       ".local/share/azahar-emu"
