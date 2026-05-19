@@ -50,8 +50,8 @@ telemetry_enabled = false
 
     [shell.panel]
     transparency_mode = "glass"
-    attach_clipboard = true
-    attach_launcher = true
+    clipboard_placement = "attached"
+    launcher_placement = "attached"
     attach_session = true
 
     [[shell.session.actions]]
