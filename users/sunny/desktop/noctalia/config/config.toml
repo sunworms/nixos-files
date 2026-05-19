@@ -93,6 +93,11 @@ community_palette = "GruvboxAlt"
     builtin_ids = [ "gtk3", "gtk4", "kcolorscheme", "niri", "foot", "qt", "helix" ]
     community_ids = [ "discord" ]
 
+    [theme.templates.user.shell]
+    input_path = "~/.config/noctalia/shell.sh"
+    output_path = "~/.config/matugen/shell.sh"
+    post_hook = "chmod +x ~/.config/matugen/shell.sh && ~/.config/matugen/shell.sh"
+
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"
 
