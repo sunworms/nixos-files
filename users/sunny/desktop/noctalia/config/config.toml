@@ -64,7 +64,7 @@ telemetry_enabled = false
 
     [[shell.session.actions]]
     action = "command"
-    command = "systemctl suspend"
+    command = "noctalia-lock-and-suspend"
     enabled = true
     label = "Suspend"
 
