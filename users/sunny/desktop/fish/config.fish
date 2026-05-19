@@ -8,8 +8,7 @@ if status is-interactive
     abbr --add -- oss 'nh os switch --ask ./. -H'
     abbr --add -- osca 'nh clean all'
     abbr --add -- oscg 'nh clean all --no-gcroots'
-    alias vi nvim
-    alias vim nvim
+    abbr --add -- lg lazygit
 
     set -g fish_greeting
     set -g fish_key_bindings fish_vi_key_bindings

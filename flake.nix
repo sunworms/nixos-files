@@ -5,6 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     preservation.url = "github:nix-community/preservation";
     flatpaks.url = "github:in-a-dil-emma/declarative-flatpak/latest";
+    helix.url = "github:helix-editor/helix";
     hjem = {
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -15,10 +16,6 @@
     };
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell/v5";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    sunny-nvim = {
-      url = "github:sunworms/neovim-config/nixos";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
