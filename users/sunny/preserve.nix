@@ -23,7 +23,7 @@
       ".cache/nix"
       ".cache/typst"
 
-      ".config/net.imput.helium"
+      ".config/mozilla"
       ".config/vesktop"
       ".config/fish"
 
