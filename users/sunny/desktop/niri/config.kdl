@@ -105,6 +105,7 @@ blur {
 spawn-at-startup "noctalia" "--daemon"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
+spawn-sh-at-startup "pywalfox install && pywalfox start"
 
 hotkey-overlay {
     skip-at-startup
@@ -125,7 +126,7 @@ environment {
     EDITOR "nvim"
     SUDO_EDITOR "nvim"
     VISUAL "nvim"
-    TERMINAL "foot"
+    TERMINAL "alacritty -e"
     GTK_THEME "adw-gtk3"
     QT_QPA_PLATFORMTHEME "qt6ct"
 }
@@ -194,8 +195,8 @@ recent-windows {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
-    Mod+Shift+T hotkey-overlay-title="Layers" { spawn "foot" "sh" "-c" "niri msg layers; fish"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
+    Mod+Shift+T hotkey-overlay-title="Layers" { spawn "alacritty" "-e" "sh" "-c" "niri msg layers; fish"; }
 
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+V hotkey-overlay-title="Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }

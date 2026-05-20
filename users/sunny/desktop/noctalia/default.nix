@@ -34,6 +34,6 @@
   ];
 
   xdg.config.files = {
-    "noctalia".source = ./config;
+    "noctalia/config.toml".source = ./config.toml;
   };
 }

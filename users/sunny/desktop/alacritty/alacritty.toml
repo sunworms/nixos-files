@@ -1,0 +1,8 @@
+[general]
+
+import = [
+  "~/.config/alacritty/themes/noctalia.toml"
+]
+
+[font]
+normal = { family = "Aporetic Sans Mono", style = "Regular" }
