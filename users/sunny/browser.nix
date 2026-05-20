@@ -112,16 +112,16 @@ let
       SearchEngines = {
         Add = [
           {
-            Name = "DuckDuckGo (No AI)";
-            URLTemplate = "https://noai.duckduckgo.com/search?q={searchTerms}";
+            Name = "Google (No AI)";
+            URLTemplate = "https://www.google.com/search?q={searchTerms}&udm=14";
             Method = "GET";
-            IconURL = "https://noai.duckduckgo.com/favicon.ico";
-            Alias = "@ddgnoai";
-            Description = "DuckDuckGo Search (No AI)";
-            SuggestURLTemplate = "https://noai.duckduckgo.com/suggestions?q={searchTerms}";
+            IconURL = "https://www.google.com/favicon.ico";
+            Alias = "@googlenoai";
+            Description = "Google Search (No AI)";
+            SuggestURLTemplate = "https://www.google.com/complete/search?q={searchTerms}&udm=14";
           }
         ];
-        Default = "DuckDuckGo (No AI)";
+        Default = "Google (No AI)";
         PreventInstalls = false;
       };
 
