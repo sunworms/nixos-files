@@ -25,6 +25,7 @@
     })
     satty
     vesktop
+    qbittorrent
     papers
     koreader
   ];
