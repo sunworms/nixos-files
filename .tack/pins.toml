@@ -31,6 +31,7 @@ url = "gh:in-a-dil-emma/declarative-flatpak/latest"
 
 [inputs.helix]
 url = "gh:helix-editor/helix"
+exclude_follow = ["nixpkgs"]
 
 [inputs.zen-browser]
 url = "gh:0xc000022070/zen-browser-flake/beta"
