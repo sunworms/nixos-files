@@ -23,7 +23,7 @@
       ".cache/nix"
       ".cache/typst"
 
-      ".config/mozilla"
+      ".config/zen"
       ".config/vesktop"
       ".config/fish"
 
