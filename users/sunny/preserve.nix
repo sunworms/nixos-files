@@ -37,6 +37,7 @@
       ".config/mgba"
       ".config/PCSX2"
       ".config/ppsspp"
+      ".config/qBittorrent"
 
       ".local/share/flatpak"
       ".local/share/gvfs-metadata"
