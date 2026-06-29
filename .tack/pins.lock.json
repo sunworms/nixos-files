@@ -1,12 +1,4 @@
 {
-  "": {
-    "type": "github",
-    "owner": "nix-community",
-    "repo": "home-manager",
-    "rev": "1285cd3d6882a9847f2d56ed5541b3350c8a6162",
-    "narHash": "sha256-9GAF8sSsnkyCVCWkomXR0T+zdSxyUlfPt6neQidimdg=",
-    "lastModified": 1781497404
-  },
   "flatpaks": {
     "type": "github",
     "owner": "in-a-dil-emma",
@@ -41,9 +33,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia-shell",
-    "rev": "8c70e95e0af0f359878529631d75fc1ab0d3bd6d",
-    "narHash": "sha256-9nEW0HmJhBnx18relGPey+5mAOP43AoJ1O9ybUJFhrA=",
-    "lastModified": 1782707326
+    "rev": "62b89faed1e6ccb70953a6002fda300df0ccd388",
+    "narHash": "sha256-quKX3iuAvr0RgJCzNgfzGahxq+YoDQ7ZhOHMW8qBPDU=",
+    "lastModified": 1782733220
   },
   "preservation": {
     "type": "github",
