@@ -1,7 +1,12 @@
 { pkgs, inputs, ... }:
 
 let
-  zen-beta-policies = inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.beta.override {
+  zen = import inputs.zen-browser {
+    inherit pkgs;
+    system = pkgs.stdenv.hostPlatform.system;
+  };
+  
+  zen-beta-policies = zen.beta-unwrapped.override {
     policies = {
       AutofillAddressEnabled = true;
       AutofillCreditCardEnabled = false;
@@ -141,6 +146,8 @@ let
 in
 {
   packages = [
-    zen-beta-policies
+    (pkgs.wrapFirefox zen-beta-policies {
+      icon = "zen-browser";
+    })
   ];
 }
