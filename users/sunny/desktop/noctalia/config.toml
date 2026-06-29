@@ -1,35 +1,93 @@
 [audio]
 enable_overdrive = true
 
+[calendar]
+enabled = true
+
+    [calendar.account.personal_google]
+    color = "primary"
+    name = "Sunny's calendar"
+    type = "google"
+
+[osd]
+background_opacity = 0.9
+
 [bar.default]
 background_opacity = 0.9
 capsule = true
-capsule_groups = [ "mpris", "wifi-bt", "sysmon", "vol-bright-bat" ]
 capsule_opacity = 0.9
 capsule_radius = 8.0
-end = [ "tray", "notifications", "network", "bluetooth", "cpu", "ram", "temp", "volume", "brightness", "battery" ]
+end = [ "tray", "notifications", "group:g2", "group:g1", "group:g3" ]
+center = [ "workspaces" ]
+start = [ "clock", "group:g4", "group:g5" ]
 position = "bottom"
-start = [ "wallpaper", "launcher", "workspaces", "media", "audio_visualizer" ]
 widget_spacing = 10
 margin_edge = 0
-margin_ends = 120
-radius = 8
-radius_bottom_left = 0
-radius_bottom_right = 0
+margin_ends = 0
+radius = 0
+radius_top_left = -12
+radius_top_right = -12
 scale = 1.0
 shadow = false
 thickness = 30
 attach_panels = true
 
-    [idle.behavior.lock]
-    timeout = 300
-    command = "noctalia:screen-lock"
-    enabled = true
+    [[bar.default.capsule_group]]
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "cpu", "ram", "temp" ]
+    opacity = 0.9
+    padding = 6.0
+    radius = 8.0
 
-    [idle.behavior.screen-off]
+    [[bar.default.capsule_group]]
+    fill = "surface_variant"
+    id = "g2"
+    members = [ "network", "bluetooth" ]
+    opacity = 0.9
+    padding = 6.0
+    radius = 8.0
+
+    [[bar.default.capsule_group]]
+    fill = "surface_variant"
+    id = "g3"
+    members = [ "volume", "brightness", "battery" ]
+    opacity = 0.9
+    padding = 6.0
+    radius = 8.0
+
+    [[bar.default.capsule_group]]
+    fill = "surface_variant"
+    id = "g4"
+    members = [ "media", "cat" ]
+    opacity = 0.9
+    padding = 6.0
+    radius = 8.0
+
+    [[bar.default.capsule_group]]
+    fill = "surface_variant"
+    id = "g5"
+    members = [ "launcher", "recorder", "wallpaper" ]
+    opacity = 0.9
+    padding = 6.0
+    radius = 8.0
+
+[idle]
+behavior_order = [ "idle-behavior", "idle-behavior-2" ]
+
+    [idle.behavior.idle-behavior]
+    action = "lock"
+    enabled = true
+    timeout = 300
+
+    [idle.behavior.idle-behavior-2]
+    action = "screen_off"
+    enabled = true
     timeout = 600
-    command = "noctalia:dpms-off"
-    resume_command = "noctalia:dpms-on"
+
+[location]
+address = "Durgapur, India"
+auto_locate = false
 
 [dock]
 auto_hide = true
@@ -40,6 +98,152 @@ position = "top"
 [notification]
 background_opacity = 0.9
 
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "login-box",
+    "logout",
+    "shutdown",
+    "reboot",
+    "suspend",
+    "media",
+    "clock",
+    "weather",
+    "sysmon"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."login-box"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 823.0
+    cy = 910.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."login-box".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_login_button = true
+
+    [lockscreen_widgets.widget.logout]
+    box_height = 48.0
+    box_width = 48.0
+    cx = 727.0
+    cy = 986.5
+    output = "eDP-1"
+    rotation = 0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.logout.settings]
+        background = true
+        command = "noctalia msg session logout"
+        glyph = "logout"
+        variant = "default"
+
+    [lockscreen_widgets.widget.shutdown]
+    box_height = 48.0
+    box_width = 48.0
+    cx = 919.0
+    cy = 986.5
+    output = "eDP-1"
+    rotation = 0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.shutdown.settings]
+        background = true
+        command = "noctalia msg session shutdown"
+        glyph = "shutdown"
+        variant = "default"
+
+    [lockscreen_widgets.widget.reboot]
+    box_height = 48.0
+    box_width = 48.0
+    cx = 855.0
+    cy = 986.5
+    output = "eDP-1"
+    rotation = 0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.reboot.settings]
+        background = true
+        command = "noctalia msg session reboot"
+        glyph = "reboot"
+        variant = "default"
+
+    [lockscreen_widgets.widget.suspend]
+    box_height = 48.0
+    box_width = 48.0
+    cx = 791.0
+    cy = 986.5
+    output = "eDP-1"
+    rotation = 0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.suspend.settings]
+        background = true
+        command = "noctalia msg session lock-and-suspend"
+        glyph = "suspend"
+        variant = "default"
+
+    [lockscreen_widgets.widget.media]
+    box_height = 192.0
+    box_width = 384.0
+    cx = 823.0
+    cy = 498.5
+    output = "eDP-1"
+    rotation = 0.0
+    type = "media_player"
+
+    [lockscreen_widgets.widget.clock]
+    box_height = 128.0
+    box_width = 208.0
+    cx = 823.0
+    cy = 726.5
+    output = "eDP-1"
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.clock.settings]
+        center_text = true
+        clock_style = "digital"
+        format = "{:%H:%M\\n%a, %b %d}"
+
+    [lockscreen_widgets.widget.weather]
+    box_height = 128.0
+    box_width = 208.0
+    cx = 1063.0
+    cy = 726.5
+    output = "eDP-1"
+    rotation = 0.0
+    type = "weather"
+
+        [lockscreen_widgets.widget.weather.settings]
+        forecast_days = 2
+        show_forecast = true
+
+    [lockscreen_widgets.widget.sysmon]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 587.0
+    cy = 725.5
+    output = "eDP-1"
+    rotation = 0.0
+    type = "sysmon"
+
+        [lockscreen_widgets.widget.sysmon.settings]
+        stat = "cpu_usage"
+        stat2 = "ram_pct"
+
 [shell]
 avatar_path = "/home/sunny/.face"
 clipboard_auto_paste = "off"
@@ -47,6 +251,7 @@ password_style = "random"
 polkit_agent = true
 settings_show_advanced = true
 telemetry_enabled = false
+clipboard_image_action_command = "satty -f -"
 
     [shell.panel]
     transparency_mode = "glass"
@@ -57,31 +262,35 @@ telemetry_enabled = false
     [[shell.session.actions]]
     action = "lock"
     enabled = true
+    variant = "default"
 
     [[shell.session.actions]]
     action = "logout"
     enabled = true
+    variant = "default"
 
     [[shell.session.actions]]
-    action = "command"
-    command = "noctalia-lock-and-suspend"
+    action = "lock_and_suspend"
     enabled = true
-    label = "Suspend"
+    variant = "default"
 
     [[shell.session.actions]]
     action = "command"
     command = "pkill noctalia && noctalia -d"
     enabled = true
+    glyph = "noctalia"
     label = "Restart Noctalia"
+    variant = "default"
 
     [[shell.session.actions]]
     action = "reboot"
     enabled = true
+    variant = "default"
 
     [[shell.session.actions]]
     action = "shutdown"
-    destructive = true
     enabled = true
+    variant = "default"
 
 [theme]
 builtin = "Noctalia"
@@ -90,8 +299,8 @@ wallpaper_scheme = "faithful"
 community_palette = "GruvboxAlt"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "gtk4", "kcolorscheme", "niri", "alacritty", "qt", "helix" ]
-    community_ids = [ "discord", "pywalfox" ]
+    builtin_ids = [ "alacritty", "gtk3", "gtk4", "helix", "niri" ]
+    community_ids = [ "discord", "zen-browser" ]
 
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"
@@ -148,5 +357,18 @@ directory = "/home/sunny/Pictures/walls"
     capsule_group = "vol-bright-bat"
     show_label = false
 
+    [widget.recorder]
+    type = "noctalia/screen_recorder:recorder"
+
+    [widget.cat]
+    audio_spectrum = true
+    tappy_mode = true
+    type = "noctalia/bongocat:cat"
+    use_mpris_filter = true
+    
 [hooks]
 battery_low_percent_threshold = 20
+
+[plugins]
+enabled = [ "noctalia/screen_recorder", "noctalia/kaomoji", "noctalia/bongocat" ]
+

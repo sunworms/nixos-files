@@ -25,6 +25,7 @@
     })
     satty
     vesktop
-    kdePackages.okular
+    papers
+    koreader
   ];
 }
