@@ -127,7 +127,7 @@ environment {
     VISUAL "hx"
     TERMINAL "alacritty -e"
     GTK_THEME "adw-gtk3"
-    QT_QPA_PLATFORMTHEME "qt6ct"
+    QT_QPA_PLATFORMTHEME "gtk3"
 }
 
 animations {
