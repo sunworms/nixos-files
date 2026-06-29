@@ -38,7 +38,7 @@
       ".config/ppsspp"
 
       ".local/share/flatpak"
-      ".local/share/okular"
+      ".local/share/gvfs-metadata"
       ".local/share/fish"
       ".local/share/azahar-emu"
       ".local/share/eden"

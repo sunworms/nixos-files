@@ -105,7 +105,6 @@ blur {
 spawn-at-startup "noctalia" "--daemon"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
-spawn-sh-at-startup "pywalfox install && pywalfox start"
 
 hotkey-overlay {
     skip-at-startup
@@ -119,13 +118,13 @@ cursor {
 }
 
 environment {
-    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    NIXOS_OZONE_WL "1"
     QT_AUTO_SCREEN_SCALE_FACTOR "1"
     QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
     _JAVA_AWT_WM_NONREPARENTING "1"
-    EDITOR "nvim"
-    SUDO_EDITOR "nvim"
-    VISUAL "nvim"
+    EDITOR "hx"
+    SUDO_EDITOR "hx"
+    VISUAL "hx"
     TERMINAL "alacritty -e"
     GTK_THEME "adw-gtk3"
     QT_QPA_PLATFORMTHEME "qt6ct"
@@ -159,14 +158,9 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 8
+    geometry-corner-radius 12
     clip-to-geometry true
     draw-border-with-background false
-    opacity 0.9
-    background-effect {
-        blur true
-        xray true
-    }
 }
 
 // layer rules
@@ -177,7 +171,7 @@ layer-rule {
 }
 
 switch-events {
-    lid-close { spawn "noctalia-lock-and-suspend"; }
+    lid-close { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
 }
 
 prefer-no-csd
@@ -203,11 +197,11 @@ binds {
     Mod+Escape hotkey-overlay-title="Power Menu" { spawn "noctalia" "msg" "panel-toggle" "session"; }
 
     XF86Tools hotkey-overlay-title="Noctalia Settings" { spawn "noctalia" "msg" "settings-toggle"; }
-    XF86Launch5 hotkey-overlay-title="Lock the Screen" { spawn "noctalia" "msg" "screen-lock"; }
-    XF86Launch6 hotkey-overlay-title="Control Center" { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
-    // XF86Calculator hotkey-overlay-title="Open Windows" { spawn "noctalia" "msg" "call" "launcher" "windows"; }
+    XF86Launch5 hotkey-overlay-title="Lock the Screen" { spawn "noctalia" "msg" "session" "lock"; }
+    XF86Launch6 hotkey-overlay-title="Window Switcher" { spawn "noctalia" "msg" "window-switcher"; }
+    XF86Calculator hotkey-overlay-title="Open Calendar" { spawn "noctalia" "msg" "panel-toggle" "control-center" "calendar"; }
     XF86Favorites hotkey-overlay-title="Emoji Selector" { spawn "noctalia" "msg" "panel-toggle" "launcher" "/emo"; }
-    XF86PowerOff hotkey-overlay-title="Lock and Suspend" { spawn "noctalia-lock-and-suspend"; }
+    XF86PowerOff hotkey-overlay-title="Lock and Suspend" { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "noctalia" "msg" "volume-up" "5"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "noctalia" "msg" "volume-down" "5"; }
