@@ -147,6 +147,13 @@ window-rule {
     default-floating-position x=1050 y=250
 }
 
+window-rule {
+    match app-id="^Alacritty$"
+    background-effect {
+        blur true
+        xray true
+    }
+}
 
 /-window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
