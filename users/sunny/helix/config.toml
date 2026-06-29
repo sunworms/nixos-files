@@ -1,9 +1,12 @@
 theme = "noctalia"
 
 [editor]
-insecure = true
 bufferline = "multiple"
 cursorline = true
+
+[editor.workspace-trust]
+level = "servers"
+prompt = true
 
 [editor.cursor-shape]
 insert = "bar"
