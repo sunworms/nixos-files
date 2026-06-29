@@ -8,6 +8,7 @@
         command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --remember-session";
       };
     };
+    useTextGreeter = true;
   };
 
   programs.niri = {
