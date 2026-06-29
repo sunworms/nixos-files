@@ -29,6 +29,7 @@
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"
+      ".config/koreader"
 
       ".config/azahar-emu"
       ".config/eden"
