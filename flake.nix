@@ -1,34 +1,14 @@
 {
   description = "A normal NixOS flake";
 
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    preservation.url = "github:nix-community/preservation";
-    flatpaks.url = "github:in-a-dil-emma/declarative-flatpak/latest";
-    helix.url = "github:helix-editor/helix";
-    zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake/beta";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "";
-      };
-    };
-    hjem = {
-      url = "github:feel-co/hjem";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-  };
-
   outputs =
-    { ... }@inputs:
+    { ... }@args:
+    let
+      # Use inputs from tack, instead of flake inputs
+      inputs = (import ./.tack) {
+        overrides = args.tackOverrides or { };
+      };
+    in
     {
       nixosConfigurations.motobook = inputs.nixpkgs.lib.nixosSystem {
         modules = [
