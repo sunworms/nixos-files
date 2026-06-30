@@ -24,7 +24,7 @@
       ];
     })
     satty
-    vesktop
+    goofcord
     qbittorrent
     papers
     koreader

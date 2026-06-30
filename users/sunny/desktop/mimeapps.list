@@ -1,6 +1,6 @@
 [Default Applications]
 application/pdf=org.gnome.Papers.desktop
-application/epub=koreader.desktop
+application/epub=rocks.koreader.koreade.desktop
 image/vnd.djvu=org.gnome.Papers.desktop
 text/plain=Helix.desktop
 text/x-markdown=Helix.desktop
@@ -20,7 +20,7 @@ x-scheme-handler/http=zen-beta.desktop
 x-scheme-handler/https=zen-beta.desktop
 x-scheme-handler/ftp=zen-beta.desktop
 x-scheme-handler/chrome=zen-beta.desktop
-x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/discord=goofcord.desktop
 application/x-extension-htm=zen-beta.desktop
 application/x-extension-html=zen-beta.desktop
 application/x-extension-shtml=zen-beta.desktop
@@ -42,7 +42,7 @@ application/x-flash-video=mpv.desktop
 
 [Added Associations]
 application/pdf=org.gnome.Papers.desktop
-application/epub=koreader.desktop
+application/epub=rocks.koreader.koreade.desktop
 image/vnd.djvu=org.gnome.Papers.desktop
 x-scheme-handler/http=zen-beta.desktop
 x-scheme-handler/https=zen-beta.desktop

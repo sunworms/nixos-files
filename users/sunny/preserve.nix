@@ -24,7 +24,7 @@
       ".cache/typst"
 
       ".config/zen"
-      ".config/vesktop"
+      ".config/goofcord"
       ".config/fish"
 
       ".config/gtk-3.0"
