@@ -86,7 +86,6 @@ behavior_order = [ "idle-behavior", "idle-behavior-2" ]
     timeout = 600
 
 [location]
-address = "Durgapur, India"
 auto_locate = false
 
 [dock]
