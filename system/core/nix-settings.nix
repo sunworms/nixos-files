@@ -2,7 +2,7 @@
 
 {
   nix = {
-    package = pkgs.nixVersions.git;
+    package = pkgs.nixVersions.latest;
     channel.enable = false;
     settings = {
       auto-optimise-store = true;
