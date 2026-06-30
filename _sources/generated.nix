@@ -8,10 +8,10 @@
 {
   eden = {
     pname = "eden";
-    version = "v1782673514.6c16440996/Eden-Linux-6c16440996";
+    version = "v1782762334.1b482fa99b/Eden-Linux-1b482fa99b";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1782673514.6c16440996/Eden-Linux-6c16440996-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-pFKNpkTZe4EcfKiM2yDkGoX57tEoxCF8FXQXh5uXsjo=";
+      url = "https://nightly.eden-emu.dev/v1782762334.1b482fa99b/Eden-Linux-1b482fa99b-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-D+kG11J3DF4ah+C6P6jf8FTqXjAbx7AAJzXGKATjRS8=";
     };
   };
   pcsx2 = {
@@ -20,6 +20,14 @@
     src = fetchurl {
       url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.441/pcsx2-v2.7.441-linux-appimage-x64-Qt.AppImage";
       sha256 = "sha256-h6EvJXAz5kFO6RX56j1v78S+2QGnBOPOWqY3mGtzdTQ=";
+    };
+  };
+  tuigreet = {
+    pname = "tuigreet";
+    version = "0.10.2";
+    src = fetchurl {
+      url = "https://github.com/NotAShelf/tuigreet/releases/download/0.10.2/tuigreet-0.10.2-x86_64";
+      sha256 = "sha256-YQu5+tAneDNlIVc3Q926rfn4J56iYsfdi8oFtw7viBI=";
     };
   };
 }

@@ -5,7 +5,9 @@
     enable = true;
     settings = {
       default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --remember --remember-session";
+        command = "${
+          pkgs.callPackage ./tuigreet.nix { }
+        }/bin/tuigreet --time --remember --remember-session";
       };
     };
     useTextGreeter = true;
