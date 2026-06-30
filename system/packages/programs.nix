@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   programs.git = {
@@ -33,7 +33,8 @@
     nixd
     nixfmt
 
-    # nvfetcher
+    # pins
+    inputs.tack.packages.${pkgs.stdenv.hostPlatform.system}.default
     nvfetcher
 
     fastfetch
