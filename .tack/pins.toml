@@ -44,3 +44,6 @@ url = "gh:Mic92/sops-nix"
 
 [inputs.noctalia]
 url = "gh:noctalia-dev/noctalia-shell"
+
+[inputs.tack]
+url = "gh:manic-systems/tack"
