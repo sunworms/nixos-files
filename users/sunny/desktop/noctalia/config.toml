@@ -19,7 +19,7 @@ capsule_opacity = 0.9
 capsule_radius = 8.0
 end = [ "tray", "notifications", "group:g2", "group:g1", "group:g3" ]
 center = [ "workspaces" ]
-start = [ "clock", "group:g4", "group:g5" ]
+start = [ "group:g5", "clock", "group:g4" ]
 position = "bottom"
 widget_spacing = 10
 margin_edge = 0
@@ -304,9 +304,6 @@ community_palette = "GruvboxAlt"
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"
 
-    [widget.launcher]
-    glyph = "niri"
-
     [widget.clock]
     format = "{:%a, %b %d, %H:%M}"
 
@@ -349,9 +346,6 @@ directory = "/home/sunny/Pictures/walls"
     capsule_group = "vol-bright-bat"
     show_label = false
 
-    [widget.media]
-    capsule_group = "mpris"
-
     [widget.volume]
     capsule_group = "vol-bright-bat"
     show_label = false
@@ -364,6 +358,16 @@ directory = "/home/sunny/Pictures/walls"
     tappy_mode = true
     type = "noctalia/bongocat:cat"
     use_mpris_filter = true
+
+    [widget.launcher]
+    glyph = "niri"
+    custom_image = @NIXOS_IMAGE@
+    custom_image_colorize = true
+
+    [widget.media]
+    max_length = 150
+    capsule_group = "mpris"
+    title_scroll = "on_hover"
     
 [hooks]
 battery_low_percent_threshold = 20
