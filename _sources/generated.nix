@@ -8,18 +8,18 @@
 {
   eden = {
     pname = "eden";
-    version = "v1782848647.2068b5d452/Eden-Linux-2068b5d452";
+    version = "v1783019526.a9c4c8aefd/Eden-Linux-a9c4c8aefd";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1782848647.2068b5d452/Eden-Linux-2068b5d452-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-cP1DwplX1sUwDuPvrMn/uB98iU+g14bGp9bBaXDNu6g=";
+      url = "https://nightly.eden-emu.dev/v1783019526.a9c4c8aefd/Eden-Linux-a9c4c8aefd-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-gFgxFM1gJJJVF0gwPrvAmg69VYIbwtGVWYvKRZnDhJY=";
     };
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.442";
+    version = "v2.7.445";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.442/pcsx2-v2.7.442-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-r5V9/Ng9PJTtCY3vlcaAVHy3sKDJEk6Xsjjo/j5ZCEc=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.445/pcsx2-v2.7.445-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-2YLrIFLUDIYEAXFLxAtk4S0Ou2nZmbSerDl5cs96EOo=";
     };
   };
   tuigreet = {
