@@ -24,6 +24,7 @@
         mpvScripts.mpris
       ];
     })
+    yt-dlp
     satty
     goofcord
     qbittorrent
