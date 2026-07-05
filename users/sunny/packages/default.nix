@@ -8,7 +8,6 @@
     '')
     wineWow64Packages.stagingFull
     winetricks
-    (callPackage ./remotegamepad.nix { })
     (callPackage ./eden.nix { })
     (callPackage ./pcsx2.nix { })
     ppsspp-sdl-wayland
