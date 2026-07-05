@@ -8,7 +8,7 @@ if status is-interactive
     abbr --add -- oss 'nh os switch --ask ./. -H'
     abbr --add -- osbu 'nh os build ./. -H'
     abbr --add -- osca 'nh clean all'
-    abbr --add -- oscg 'nh clean all --no-gcroots'
+    abbr --add -- oscd 'nh clean all --no-direnv'
     abbr --add -- lg lazygit
 
     set -g fish_greeting
