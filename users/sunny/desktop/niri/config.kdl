@@ -125,7 +125,7 @@ environment {
     EDITOR "hx"
     SUDO_EDITOR "hx"
     VISUAL "hx"
-    TERMINAL "alacritty -e"
+    TERMINAL "foot"
     GTK_THEME "adw-gtk3"
     QT_QPA_PLATFORMTHEME "gtk3"
 }
@@ -145,14 +145,6 @@ window-rule {
     match title="(^Picture-in-Picture$|^Picture in picture$)"
     open-floating true
     default-floating-position x=1050 y=250
-}
-
-window-rule {
-    match app-id="^Alacritty$"
-    background-effect {
-        blur true
-        xray true
-    }
 }
 
 /-window-rule {
@@ -196,8 +188,8 @@ recent-windows {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+Shift+T hotkey-overlay-title="Layers" { spawn "alacritty" "-e" "sh" "-c" "niri msg layers; fish"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
+    Mod+Shift+T hotkey-overlay-title="Layers" { spawn "foot" "sh" "-c" "niri msg layers; fish"; }
 
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+V hotkey-overlay-title="Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
