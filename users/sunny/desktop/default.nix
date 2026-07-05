@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./alacritty
+    ./foot
     ./fish
     ./niri
     ./noctalia
