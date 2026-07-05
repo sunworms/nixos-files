@@ -11,9 +11,9 @@
     "type": "github",
     "owner": "helix-editor",
     "repo": "helix",
-    "rev": "a2c9f44a564592257334ce0cec2fc904412173b5",
-    "narHash": "sha256-8TNe/ry5Gf+4+v261Hw+M2uBPvYNZVqkhT61W9RJSfQ=",
-    "lastModified": 1783153624
+    "rev": "44c801d2b5bd104f67c63d3d86174c91f38e7529",
+    "narHash": "sha256-+he0R1mYFuYL+fYkU9f/20S3ygiw69a0Sv8Nmbllocs=",
+    "lastModified": 1783221004
   },
   "hjem": {
     "type": "github",
@@ -33,9 +33,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia-shell",
-    "rev": "f4a39b9ec41c4b1e4b4ef7adfc093e172ebe90ad",
-    "narHash": "sha256-xXGUGlQpiPvt50z1dzLEwhaX9Ip0yKfI17aJZj2hUF0=",
-    "lastModified": 1783163054
+    "rev": "2be5e68b202a37037330a90765ea76a63b6a3421",
+    "narHash": "sha256-CiV3yPEfcDpko+xz0IAV/lFWmSpuVTzjQvLgTCLY6Es=",
+    "lastModified": 1783242167
   },
   "preservation": {
     "type": "github",
@@ -49,9 +49,9 @@
     "type": "github",
     "owner": "Mic92",
     "repo": "sops-nix",
-    "rev": "1ebd41717762d837d5115f7108522c29cdb00fbb",
-    "narHash": "sha256-vSLKc7m34/g5xH4dwmNZSqxc5OcHeE3qiG3EIz6bJKs=",
-    "lastModified": 1783104586
+    "rev": "f1406619a3884cd5c47992a70b8b35c9c0fcb4c9",
+    "narHash": "sha256-aCWC8ngycU7OdJrU2+Je3qf+1a2ykuBvpPhZT/9tXMc=",
+    "lastModified": 1783174389
   },
   "tack": {
     "type": "github",
@@ -65,8 +65,8 @@
     "type": "github",
     "owner": "0xc000022070",
     "repo": "zen-browser-flake",
-    "rev": "0cd53b6953919cb6858db24fd7dc95714dcab2e7",
-    "narHash": "sha256-9FuBZ4xiu0z/3s2+GKH98WV5Pu5z1gDNdhSXu5leQYE=",
-    "lastModified": 1783033669
+    "rev": "0758bc86f7a55bbe002f0cede9e1a49e5a6e34d9",
+    "narHash": "sha256-UcdKHKcDxLxBon0HsOjDRRA7l1vVT28R83LkCIAlYYc=",
+    "lastModified": 1783190846
   }
 }
