@@ -2,8 +2,7 @@
 
 {
   fonts.packages = with pkgs; [
-    aporetic
-    nerd-fonts.symbols-only
+    nerd-fonts.d2coding
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
@@ -17,9 +16,9 @@
     subpixel.rgba = "rgb";
     cache32Bit = true;
     defaultFonts = {
-      serif = [ "Aporetic Serif" ];
-      sansSerif = [ "Aporetic Sans" ];
-      monospace = [ "Aporetic Sans Mono" ];
+      serif = [ "Noto Serif" ];
+      sansSerif = [ "Noto Sans" ];
+      monospace = [ "D2CodingLigature Nerd Font Mono" ];
       emoji = [ "Noto Color Emoji" ];
     };
   };
