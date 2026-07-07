@@ -33,7 +33,7 @@
     '')
 
     # image viewer
-    swayimg
+    imv
 
     # other
     ripgrep
