@@ -47,3 +47,6 @@ url = "gh:noctalia-dev/noctalia-shell"
 
 [inputs.tack]
 url = "gh:manic-systems/tack"
+
+[inputs.nh]
+url = "gh:nix-community/nh/pull/723/head"

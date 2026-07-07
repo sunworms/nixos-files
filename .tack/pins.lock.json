@@ -11,9 +11,9 @@
     "type": "github",
     "owner": "helix-editor",
     "repo": "helix",
-    "rev": "44c801d2b5bd104f67c63d3d86174c91f38e7529",
-    "narHash": "sha256-+he0R1mYFuYL+fYkU9f/20S3ygiw69a0Sv8Nmbllocs=",
-    "lastModified": 1783221004
+    "rev": "14d6bc0febed9c692048271a8ae2362ac969c6e0",
+    "narHash": "sha256-/ibzswTrAp1yW0GStFZGyRl6KO+wb9wZIUZWH4bz3ww=",
+    "lastModified": 1783367201
   },
   "hjem": {
     "type": "github",
@@ -22,6 +22,14 @@
     "rev": "dd0ba9e22fb46581f843e6121de33ca7a4a80224",
     "narHash": "sha256-so1hIImuLtTKTVUokJ/6C2D2b2D4znCx+/PAjMSAnpw=",
     "lastModified": 1782267080
+  },
+  "nh": {
+    "type": "github",
+    "owner": "nix-community",
+    "repo": "nh",
+    "rev": "466f1647a330e1f0b75fc48db5c062e7ad1468ac",
+    "narHash": "sha256-kMWYKbS7Lwqspu7oxTGjVegWiiNnbCqOCf2KgQ2AaRU=",
+    "lastModified": 1783365169
   },
   "nixpkgs": {
     "type": "tarball",
@@ -33,9 +41,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia-shell",
-    "rev": "87db64f1ad856ded71a09bfae971025640a6034d",
-    "narHash": "sha256-Xeb4OSx42L2zAVACmdmMZ0veG3Ksk8c7i0mdBEMu7JU=",
-    "lastModified": 1783264446
+    "rev": "b57faefe739b69a07199763eb98e85102c402d0b",
+    "narHash": "sha256-htyNZPgi5ZfT8CpALQ7MpwU2odWNL/jifoQQ/S4WVQ4=",
+    "lastModified": 1783434244
   },
   "preservation": {
     "type": "github",
