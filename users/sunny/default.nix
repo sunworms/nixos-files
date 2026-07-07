@@ -19,10 +19,10 @@
     # theming
     adw-gtk3
     volantes-cursors
-    candy-icons
+    adwaita-icon-theme
     (writeShellScriptBin "apply-gtk-settings" ''
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/gtk-theme "'adw-gtk3'"
-      ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/icon-theme "'candy-icons'"
+      ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/icon-theme "'Adwaita'"
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-theme "'volantes_cursors'"
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-size 24
       ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
