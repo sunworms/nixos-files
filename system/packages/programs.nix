@@ -24,7 +24,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    nh
+    inputs.nh.packages.${pkgs.stdenv.hostPlatform.system}.default
     tree
     ncdu
 
