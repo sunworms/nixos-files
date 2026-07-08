@@ -11,7 +11,6 @@
 
 ;; General toggles
 (setq-default tab-width 2)
-(setq-default indent-tabs-mode nil)
 (electric-pair-mode 1)
 (setq auto-save-file-name-transforms
       `((".*" ,(temporary-file-directory) t)))
