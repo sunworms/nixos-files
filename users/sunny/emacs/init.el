@@ -38,6 +38,32 @@
 (add-to-list 'custom-theme-load-path (expand-file-name "themes/" user-emacs-directory))
 (load-theme 'noctalia t)
 
+(defun my/open-todo ()
+  (interactive)
+  (find-file "~/Documents/gdrive/org/todo.org"))
+
+(defun my/open-journal ()
+  (interactive)
+  (find-file
+   (format-time-string "~/Documents/gdrive/org/journal/%Y-%m-%d.org")))
+
+(setq org-todo-keywords
+      '((sequence
+         "TODO(t)"
+         "NEXT(n)"
+         "WAIT(w)"
+         "|"
+         "DONE(d)"
+         "CANCELLED(c)")))
+
+(setq org-directory "~/Documents/gdrive/org")
+
+(setq org-agenda-files
+      '("~/Documents/gdrive/org/todo.org"
+        "~/Documents/gdrive/org/inbox.org"
+        "~/Documents/gdrive/org/journal"
+        "~/Documents/gdrive/org/projects"))
+
 (setq treesit-font-lock-level 4)
 
 (use-package meow-config
