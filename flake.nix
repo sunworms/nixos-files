@@ -17,6 +17,11 @@
           inputs.hjem.nixosModules.default
           inputs.sops-nix.nixosModules.default
           inputs.flatpaks.nixosModules.default
+          {
+            nixpkgs.overlays = [
+              inputs.emacs-overlay.overlays.default
+            ];
+          }
         ];
         specialArgs = {
           inherit inputs;

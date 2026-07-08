@@ -298,7 +298,7 @@ wallpaper_scheme = "faithful"
 community_palette = "GruvboxAlt"
 
     [theme.templates]
-    builtin_ids = [ "foot", "gtk3", "gtk4", "helix", "niri" ]
+    builtin_ids = [ "emacs", "foot", "gtk3", "gtk4", "helix", "niri" ]
     community_ids = [ "discord", "zen-browser" ]
 
 [wallpaper]

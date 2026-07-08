@@ -10,6 +10,7 @@ if status is-interactive
     abbr --add -- osca 'nh clean all'
     abbr --add -- oscd 'nh clean all --no-direnv'
     abbr --add -- lg lazygit
+    alias et "emacs -nw"
 
     set -g fish_greeting
     set -g fish_key_bindings fish_vi_key_bindings
