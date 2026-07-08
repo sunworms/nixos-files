@@ -4,7 +4,7 @@
   imports = [
     ./packages
     ./desktop
-    ./helix
+    ./emacs
     ./ssh.nix
     ./browser.nix
   ];
@@ -37,5 +37,6 @@
 
     # other
     ripgrep
+    lazygit
   ];
 }
