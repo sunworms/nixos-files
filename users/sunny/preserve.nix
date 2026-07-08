@@ -24,6 +24,7 @@
       ".cache/typst"
 
       ".config/zen"
+      ".config/rclone"
       ".config/goofcord"
       ".config/fish"
 
