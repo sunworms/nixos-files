@@ -64,6 +64,11 @@
         "~/Documents/gdrive/org/journal"
         "~/Documents/gdrive/org/projects"))
 
+(use-package magit
+  :ensure nil
+  :defer t
+  :bind ("C-x g" . magit-status))
+
 (setq treesit-font-lock-level 4)
 
 (use-package meow-config

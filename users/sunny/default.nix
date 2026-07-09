@@ -37,6 +37,5 @@
 
     # other
     ripgrep
-    lazygit
   ];
 }

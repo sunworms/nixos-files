@@ -9,7 +9,6 @@ if status is-interactive
     abbr --add -- osbu 'nh os build ./. -H'
     abbr --add -- osca 'nh clean all'
     abbr --add -- oscd 'nh clean all --no-direnv'
-    abbr --add -- lg lazygit
     alias et "emacs -nw"
 
     set -g fish_greeting

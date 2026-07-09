@@ -14,8 +14,7 @@ let
     epkgs: with epkgs; [
       treesitGrammars
       treesit-auto
-      telephone-line
-      restart-emacs
+      magit
       meow
       apheleia
       company
