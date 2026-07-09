@@ -50,11 +50,9 @@
 (setq org-todo-keywords
       '((sequence
          "TODO(t)"
-         "NEXT(n)"
-         "WAIT(w)"
+				 "IN PROGRESS(i)"
          "|"
-         "DONE(d)"
-         "CANCELLED(c)")))
+         "DONE(d)")))
 
 (setq org-directory "~/Documents/gdrive/org")
 
