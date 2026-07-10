@@ -37,7 +37,7 @@
     nixfmt
 
     # pins
-    inputs.tack.packages.${pkgs.stdenv.hostPlatform.system}.default
+    tack
     nvfetcher
 
     fastfetch
