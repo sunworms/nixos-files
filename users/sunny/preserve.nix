@@ -25,6 +25,7 @@
 
       ".config/zen"
       ".config/rclone"
+      ".config/vesktop"
       ".config/fish"
 
       ".config/gtk-3.0"
