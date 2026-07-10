@@ -25,7 +25,6 @@
 
       ".config/zen"
       ".config/rclone"
-      ".config/goofcord"
       ".config/fish"
 
       ".config/gtk-3.0"

@@ -299,7 +299,7 @@ community_palette = "GruvboxAlt"
 
     [theme.templates]
     builtin_ids = [ "emacs", "foot", "gtk3", "gtk4", "helix", "niri" ]
-    community_ids = [ "discord", "zen-browser" ]
+    community_ids = [ "zen-browser" ]
 
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"
