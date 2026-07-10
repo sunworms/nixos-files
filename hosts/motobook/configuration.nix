@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ ... }:
 
 {
   imports = [
@@ -10,14 +10,4 @@
   networking.hostName = "motobook";
 
   system.stateVersion = "26.05";
-
-  hjem = {
-    clobberByDefault = true;
-    specialArgs = { inherit inputs; };
-  };
-
-  nixpkgs = {
-    config.allowUnfree = true;
-    overlays = [ ];
-  };
 }

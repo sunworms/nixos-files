@@ -24,7 +24,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    inputs.nh.packages.${pkgs.stdenv.hostPlatform.system}.default
+    (callPackage "${inputs.nh}/package.nix" { })
     tree
     ncdu
 
@@ -37,7 +37,7 @@
     nixfmt
 
     # pins
-    tack
+    npins
     nvfetcher
 
     fastfetch
