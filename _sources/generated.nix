@@ -8,10 +8,10 @@
 {
   eden = {
     pname = "eden";
-    version = "v1783625116.3fd6eeaf9f/Eden-Linux-3fd6eeaf9f";
+    version = "v1783682475.a27d35463e/Eden-Linux-a27d35463e";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1783625116.3fd6eeaf9f/Eden-Linux-3fd6eeaf9f-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-7ArTVkn5oiuPjkjs/lSCVMKAuDnYCv84S+89LLCZlxs=";
+      url = "https://nightly.eden-emu.dev/v1783682475.a27d35463e/Eden-Linux-a27d35463e-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-aY0nUUrJ2UYd8tUnE3biCsy5yvDEhmyTKtMFUOQk52I=";
     };
   };
   pcsx2 = {

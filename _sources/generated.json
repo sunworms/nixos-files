@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-7ArTVkn5oiuPjkjs/lSCVMKAuDnYCv84S+89LLCZlxs=",
+            "sha256": "sha256-aY0nUUrJ2UYd8tUnE3biCsy5yvDEhmyTKtMFUOQk52I=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1783625116.3fd6eeaf9f/Eden-Linux-3fd6eeaf9f-amd64-clang-pgo.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1783682475.a27d35463e/Eden-Linux-a27d35463e-amd64-clang-pgo.AppImage"
         },
-        "version": "v1783625116.3fd6eeaf9f/Eden-Linux-3fd6eeaf9f"
+        "version": "v1783682475.a27d35463e/Eden-Linux-a27d35463e"
     },
     "pcsx2": {
         "cargoLock": null,
