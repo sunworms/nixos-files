@@ -27,6 +27,7 @@
     satty
     qbittorrent
     papers
+    vesktop
     koreader
     rclone
   ];

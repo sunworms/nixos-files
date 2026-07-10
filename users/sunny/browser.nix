@@ -144,11 +144,6 @@ let
           installation_mode = "normal_installed";
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/styl-us/latest.xpi";
         };
-
-        "vencord-firefox@vendicated.dev" = {
-          installation_mode = "normal_installed";
-          install_url = "https://github.com/Vendicated/Vencord/releases/download/devbuild/extension-firefox.zip";
-        };
       };
     };
   };
