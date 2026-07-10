@@ -5,7 +5,7 @@ let
     inherit pkgs;
     system = pkgs.stdenv.hostPlatform.system;
   };
-  
+
   zen-beta-policies = zen.beta-unwrapped.override {
     policies = {
       AutofillAddressEnabled = true;
@@ -27,6 +27,10 @@ let
       Preferences = {
         "toolkit.legacyUserProfileCustomizations.stylesheets" = {
           Value = true;
+          Status = "locked";
+        };
+        "xpinstall.signatures.required" = {
+          Value = false;
           Status = "locked";
         };
       };
@@ -139,6 +143,11 @@ let
         "{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}" = {
           installation_mode = "normal_installed";
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/styl-us/latest.xpi";
+        };
+
+        "vencord-firefox@vendicated.dev" = {
+          installation_mode = "normal_installed";
+          install_url = "https://github.com/Vendicated/Vencord/releases/download/devbuild/extension-firefox.zip";
         };
       };
     };

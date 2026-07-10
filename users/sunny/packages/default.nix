@@ -25,7 +25,6 @@
     })
     yt-dlp
     satty
-    goofcord
     qbittorrent
     papers
     koreader
