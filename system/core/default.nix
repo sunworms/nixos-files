@@ -22,12 +22,6 @@
   # Disable man cache
   documentation.man.cache.enable = false;
 
-  # ZRam
-  zramSwap = {
-    enable = true;
-    memoryPercent = 50;
-  };
-
   # Battery
   services.upower.enable = true;
 
