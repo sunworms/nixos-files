@@ -11,5 +11,6 @@
     };
     kernelPackages = pkgs.linuxPackages_xanmod_latest;
     initrd.systemd.enable = true;
+    zswap.enable = true;
   };
 }

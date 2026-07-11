@@ -70,7 +70,11 @@
     ];
   };
 
-  swapDevices = [ ];
+  swapDevices = [
+    {
+      device = "/dev/disk/by-label/swap";
+    }
+  ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.npu.enable = true;
