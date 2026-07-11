@@ -20,6 +20,7 @@
       ".ssh"
       ".var/app"
 
+      ".cache/nix"
       ".cache/typst"
 
       ".config/zen"
