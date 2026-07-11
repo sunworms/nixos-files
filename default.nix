@@ -1,5 +1,5 @@
 let
-  inputs = import ./npins;
+  inputs = import ./.tack;
   nixosSystem = import "${inputs.nixpkgs}/nixos/lib/eval-config.nix";
 
   mkHost =
