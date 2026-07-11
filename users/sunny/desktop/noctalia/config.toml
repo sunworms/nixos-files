@@ -372,6 +372,8 @@ directory = "/home/sunny/Pictures/walls"
 [hooks]
 battery_low_percent_threshold = 20
 
-[plugins]
-enabled = [ "noctalia/screen_recorder", "noctalia/kaomoji", "noctalia/bongocat" ]
+[plugin_settings."noctalia/mpvpaper"]
+video_directory = "/home/sunny/Pictures/walls/videos"
 
+[plugins]
+enabled = [ "noctalia/screen_recorder", "noctalia/kaomoji", "noctalia/bongocat", "noctalia/mpvpaper" ]

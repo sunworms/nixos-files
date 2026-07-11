@@ -23,6 +23,7 @@
         mpvScripts.mpris
       ];
     })
+    mpvpaper
     yt-dlp
     satty
     qbittorrent
