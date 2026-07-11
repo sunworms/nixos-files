@@ -294,7 +294,7 @@ clipboard_image_action_command = "satty -f -"
 [theme]
 builtin = "Noctalia"
 source = "wallpaper"
-wallpaper_scheme = "faithful"
+wallpaper_scheme = "soft"
 community_palette = "GruvboxAlt"
 
     [theme.templates]
