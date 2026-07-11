@@ -24,6 +24,8 @@
       ];
     })
     mpvpaper
+    ffmpeg
+    imagemagick
     yt-dlp
     satty
     qbittorrent
