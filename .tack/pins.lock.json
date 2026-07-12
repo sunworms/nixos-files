@@ -3,9 +3,9 @@
     "type": "github",
     "owner": "nix-community",
     "repo": "emacs-overlay",
-    "rev": "d21ae0c4e6a1d81192bfe5a36ca7815a705b46a3",
-    "narHash": "sha256-QKcrfEjpBYYpMTeUTNEw6Ds/2I9JcI6GLrvGBYiimWI=",
-    "lastModified": 1783791998
+    "rev": "c80d0bf4911a5841ced1721cd35920037e1532a3",
+    "narHash": "sha256-+AZA69hZ+XZH3D48ky4/pDcRKrlUZh65+GZd3tH8B/M=",
+    "lastModified": 1783849966
   },
   "flatpaks": {
     "type": "github",
@@ -33,17 +33,17 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1031299.0bb7ec54c848/nixexprs.tar.xz",
-    "rev": "0bb7ec54c8483066ec9d7720e780a5caa71f8612",
-    "narHash": "sha256-nFgG4gPQueCgP8LidXsdI2lYPrSwTcmDl6afcVn7F/U="
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1032869.e7a3ca8092b6/nixexprs.tar.xz",
+    "rev": "e7a3ca8092b61ff85b6a45bf863ea2b2d6a661b3",
+    "narHash": "sha256-+GVwKnbbSmf4cWMJyRzvw8H5yFknmkLoPD5v6snqPzo="
   },
   "noctalia": {
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "4529cd3d65e61f7ec2000dedf3a84969a992b5a6",
-    "narHash": "sha256-nKkGrNbdpgE6viYJi4q5UZ57cSXs7bd96F2U4fFf29I=",
-    "lastModified": 1783795493
+    "rev": "ed3cb98536eaec92c2b523ddf703e1dc6728f535",
+    "narHash": "sha256-V75/tqvYElVWyXnFf+0jh89wMh5a/cbV5YYe/P7RFDM=",
+    "lastModified": 1783830881
   },
   "preservation": {
     "type": "github",
