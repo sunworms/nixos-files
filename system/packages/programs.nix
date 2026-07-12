@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   programs.git = {
@@ -24,7 +24,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    (callPackage "${inputs.nh}/package.nix" { })
+    nh
     tree
     ncdu
 
