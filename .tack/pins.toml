@@ -27,4 +27,4 @@ url = "gh:feel-co/hjem"
 url = "gh:Mic92/sops-nix"
 
 [inputs.noctalia]
-url = "gh:noctalia-dev/noctalia"
+url = "gh:noctalia-dev/noctalia/cachix"

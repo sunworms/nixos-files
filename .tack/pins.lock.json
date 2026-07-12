@@ -3,9 +3,9 @@
     "type": "github",
     "owner": "nix-community",
     "repo": "emacs-overlay",
-    "rev": "c80d0bf4911a5841ced1721cd35920037e1532a3",
-    "narHash": "sha256-+AZA69hZ+XZH3D48ky4/pDcRKrlUZh65+GZd3tH8B/M=",
-    "lastModified": 1783849966
+    "rev": "73fc964501c04526300c70a59b544fc3076b319c",
+    "narHash": "sha256-vqY90FeK+XKDSXnnwWQyh7LJ3HRX+unTA/396wzWgWQ=",
+    "lastModified": 1783852758
   },
   "flatpaks": {
     "type": "github",
@@ -33,9 +33,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "ed3cb98536eaec92c2b523ddf703e1dc6728f535",
-    "narHash": "sha256-V75/tqvYElVWyXnFf+0jh89wMh5a/cbV5YYe/P7RFDM=",
-    "lastModified": 1783830881
+    "rev": "7fd6a7c605febbf96f3301c4625af6e04f0e863f",
+    "narHash": "sha256-kly4zJ8f2lqKLGQKGEDIb4weFRV5mxh7tkUIsN9jcME=",
+    "lastModified": 1783864548
   },
   "preservation": {
     "type": "github",
