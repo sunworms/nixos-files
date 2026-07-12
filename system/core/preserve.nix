@@ -29,6 +29,10 @@
           how = "symlink";
           inInitrd = true;
         }
+        {
+          file = "/etc/ly/save.txt";
+          how = "symlink";
+        }
       ];
     };
   };
