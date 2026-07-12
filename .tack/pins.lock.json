@@ -23,14 +23,6 @@
     "narHash": "sha256-so1hIImuLtTKTVUokJ/6C2D2b2D4znCx+/PAjMSAnpw=",
     "lastModified": 1782267080
   },
-  "nh": {
-    "type": "github",
-    "owner": "nix-community",
-    "repo": "nh",
-    "rev": "181b151744faed80ef66d3e86ebe023ba703bc23",
-    "narHash": "sha256-pG1VyDQiVuhi/Jm/MqkGDs27hZAeuGpI/HnN7h7GdRc=",
-    "lastModified": 1783516471
-  },
   "nixpkgs": {
     "type": "tarball",
     "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1032869.e7a3ca8092b6/nixexprs.tar.xz",
