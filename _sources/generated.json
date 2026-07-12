@@ -23,25 +23,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-k1+178UI5uxa/deUPQmeum2ufLhWKm8Ne1eYm1CXsIY=",
+            "sha256": "sha256-GJGH9vM10cGaWjPx2/2eSWRJuodgOW/OYPxLhqSQIZ8=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.462/pcsx2-v2.7.462-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.464/pcsx2-v2.7.464-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.462"
-    },
-    "tuigreet": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "tuigreet",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-YQu5+tAneDNlIVc3Q926rfn4J56iYsfdi8oFtw7viBI=",
-            "type": "url",
-            "url": "https://github.com/NotAShelf/tuigreet/releases/download/0.10.2/tuigreet-0.10.2-x86_64"
-        },
-        "version": "0.10.2"
+        "version": "v2.7.464"
     }
 }
