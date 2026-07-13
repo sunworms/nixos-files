@@ -12,65 +12,82 @@ enabled = true
 [osd]
 background_opacity = 0.9
 
-[bar.default]
-background_opacity = 0.9
-capsule = true
-capsule_opacity = 0.9
-capsule_radius = 8.0
-end = [ "tray", "notifications", "group:g2", "group:g1", "group:g3" ]
-center = [ "workspaces" ]
-start = [ "group:g5", "clock", "group:g4" ]
-position = "bottom"
-widget_spacing = 10
-margin_edge = 0
-margin_ends = 0
-radius = 0
-radius_top_left = 10
-radius_top_right = 10
-scale = 1.0
-shadow = false
-thickness = 30
-attach_panels = true
+[bar]
+order = [ "default", "right" ]
 
-    [[bar.default.capsule_group]]
-    fill = "surface_variant"
-    id = "g1"
-    members = [ "cpu", "ram", "temp" ]
-    opacity = 0.9
-    padding = 6.0
-    radius = 8.0
+    [bar.right]
+    auto_hide = true
+    background_opacity = 0.89999997988343239
+    center = []
+    enabled = true
+    end = []
+    margin_ends = 0
+    position = "right"
+    radius = 0
+    radius_bottom_left = 10
+    radius_top_left = 10
+    start = [ "taskbar" ]
+    thickness = 30
 
-    [[bar.default.capsule_group]]
-    fill = "surface_variant"
-    id = "g2"
-    members = [ "network", "bluetooth" ]
-    opacity = 0.9
-    padding = 6.0
-    radius = 8.0
+    [bar.default]
+    background_opacity = 0.9
+    capsule = true
+    capsule_opacity = 0.9
+    capsule_radius = 8.0
+    end = [ "tray", "notifications", "group:g2", "group:g1", "group:g3" ]
+    center = [ "workspaces" ]
+    start = [ "group:g5", "clock", "group:g4" ]
+    position = "left"
+    widget_spacing = 10
+    margin_edge = 0
+    margin_ends = 0
+    radius = 0
+    radius_bottom_right = 10
+    radius_top_right = 10
+    scale = 1.0
+    shadow = false
+    thickness = 30
+    attach_panels = true
 
-    [[bar.default.capsule_group]]
-    fill = "surface_variant"
-    id = "g3"
-    members = [ "volume", "brightness", "battery" ]
-    opacity = 0.9
-    padding = 6.0
-    radius = 8.0
+        [[bar.default.capsule_group]]
+        fill = "surface_variant"
+        id = "g1"
+        members = [ "cpu", "ram", "temp" ]
+        opacity = 0.9
+        padding = 6.0
+        radius = 8.0
 
-    [[bar.default.capsule_group]]
-    fill = "surface_variant"
-    id = "g4"
-    members = [ "media", "cat" ]
-    opacity = 0.9
-    padding = 6.0
-    radius = 8.0
+        [[bar.default.capsule_group]]
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "network", "bluetooth" ]
+        opacity = 0.9
+        padding = 6.0
+        radius = 8.0
 
-    [[bar.default.capsule_group]]
-    fill = "surface_variant"
-    id = "g5"
-    members = [ "launcher", "recorder", "wallpaper" ]
-    opacity = 0.9
-    padding = 6.0
-    radius = 8.0
+        [[bar.default.capsule_group]]
+        fill = "surface_variant"
+        id = "g3"
+        members = [ "volume", "brightness", "battery" ]
+        opacity = 0.9
+        padding = 6.0
+        radius = 8.0
+
+        [[bar.default.capsule_group]]
+        fill = "surface_variant"
+        id = "g4"
+        members = [ "media", "cat" ]
+        opacity = 0.9
+        padding = 6.0
+        radius = 8.0
+
+        [[bar.default.capsule_group]]
+        fill = "surface_variant"
+        id = "g5"
+        members = [ "launcher", "recorder", "wallpaper" ]
+        opacity = 0.9
+        padding = 6.0
+        radius = 8.0
 
 [idle]
 behavior_order = [ "idle-behavior", "idle-behavior-2" ]
@@ -310,7 +327,12 @@ community_palette = "GruvboxAlt"
 directory = "/home/sunny/Pictures/walls"
 
     [widget.clock]
-    format = "{:%a, %b %d, %H:%M}"
+    format = "{:%a:%m:%d:%H:%M}"
+    vertical_format = "{:%d\\n%m\\n-\\n%H\\n%M}"
+
+    [widget.taskbar]
+    capsule = true
+    group_by_workspace = true
 
     [widget.network]
     show_label = false
@@ -374,8 +396,8 @@ directory = "/home/sunny/Pictures/walls"
     capsule_group = "mpris"
     title_scroll = "on_hover"
     
-[hooks]
-battery_low_percent_threshold = 20
+[battery]
+warning_threshold = 20
 
 [plugin_settings."noctalia/mpvpaper"]
 video_directory = "/home/sunny/Pictures/walls/videos"
