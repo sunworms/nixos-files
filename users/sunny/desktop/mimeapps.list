@@ -1,19 +1,19 @@
 [Default Applications]
-application/pdf=org.gnome.Papers.desktop
-application/epub=rocks.koreader.koreade.desktop
-image/vnd.djvu=org.gnome.Papers.desktop
-text/plain=emacs.desktop
-text/x-markdown=emacs.desktop
-application/x-shellscript=emacs.desktop
-text/x-java=emacs.desktop
-inode/x-empty=emacs.desktop
-text/x-tex=emacs.desktop
-text/x-ruby=emacs.desktop
-text/x-python=emacs.desktop
-text/x-readme=emacs.desktop
-application/x-ruby=emacs.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/epub=org.pwmt.zathura.desktop
+image/vnd.djvu=org.pwmt.zathura.desktop
+text/plain=nvim.desktop
+text/x-markdown=nvim.desktop
+application/x-shellscript=nvim.desktop
+text/x-java=nvim.desktop
+inode/x-empty=nvim.desktop
+text/x-tex=nvim.desktop
+text/x-ruby=nvim.desktop
+text/x-python=nvim.desktop
+text/x-readme=nvim.desktop
+application/x-ruby=nvim.desktop
 text/html=zen-beta.desktop
-text/rhtml=emacs.desktop
+text/rhtml=nvim.desktop
 image/png=imv.desktop
 image/jpeg=imv.desktop
 x-scheme-handler/http=zen-beta.desktop
@@ -41,9 +41,9 @@ audio/mp3=mpv.desktop
 application/x-flash-video=mpv.desktop
 
 [Added Associations]
-application/pdf=org.gnome.Papers.desktop
-application/epub=rocks.koreader.koreade.desktop
-image/vnd.djvu=org.gnome.Papers.desktop
+application/pdf=org.pwmt.zathura.desktop
+application/epub=org.pwmt.zathura.desktop
+image/vnd.djvu=org.pwmt.zathura.desktop
 x-scheme-handler/http=zen-beta.desktop
 x-scheme-handler/https=zen-beta.desktop
 x-scheme-handler/ftp=zen-beta.desktop

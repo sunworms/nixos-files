@@ -1,0 +1,2 @@
+set default-bg "{{ colors.surface.default.hex }}"
+set render-loading-bg "{{ colors.surface.default.hex }}"

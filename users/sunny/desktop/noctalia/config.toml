@@ -329,9 +329,13 @@ community_palette = "GruvboxAlt"
     community_ids = [ "zen-browser", "discord" ]
 
     [theme.templates.user.nvim-base16]
-    input_path = "~/.config/noctalia/matugen-template.lua"
+    input_path = "~/.config/noctalia/templates/matugen-template.lua"
     output_path = "~/.config/matugen/neovim.lua"
     post_hook = 'pkill -SIGUSR1 nvim'
+    
+    [theme.templates.user.zathura]
+    input_path = "~/.config/noctalia/templates/zathurarc"
+    output_path = '~/.config/zathura/zathurarc'
 
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"

@@ -29,9 +29,8 @@
     yt-dlp
     satty
     qbittorrent
-    papers
+    zathura
     vesktop
-    koreader
     rclone
   ];
 
