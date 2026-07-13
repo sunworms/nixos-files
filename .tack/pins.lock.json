@@ -1,0 +1,64 @@
+{
+  "flatpaks": {
+    "type": "github",
+    "owner": "in-a-dil-emma",
+    "repo": "declarative-flatpak",
+    "rev": "841b6e3ff33d73f63555ecca777b81369fe39350",
+    "narHash": "sha256-VHIqXC5eKeY4fNRMId7F1rg4sJhG/ZIX62TksPkTkVg=",
+    "lastModified": 1782495309
+  },
+  "hjem": {
+    "type": "github",
+    "owner": "feel-co",
+    "repo": "hjem",
+    "rev": "dd0ba9e22fb46581f843e6121de33ca7a4a80224",
+    "narHash": "sha256-so1hIImuLtTKTVUokJ/6C2D2b2D4znCx+/PAjMSAnpw=",
+    "lastModified": 1782267080
+  },
+  "neovim-config": {
+    "type": "git",
+    "url": "https://git.gay/sunworms/neovim-config",
+    "ref": "HEAD",
+    "rev": "f76237a6346555d3fb1904d04a7079792006734a",
+    "narHash": "sha256-j7TyGw+FREBWfQfrUlHJvfATSGWhSKf/5YHgS0GIahg=",
+    "lastModified": 1783947753
+  },
+  "nixpkgs": {
+    "type": "tarball",
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1032869.e7a3ca8092b6/nixexprs.tar.xz",
+    "rev": "e7a3ca8092b61ff85b6a45bf863ea2b2d6a661b3",
+    "narHash": "sha256-+GVwKnbbSmf4cWMJyRzvw8H5yFknmkLoPD5v6snqPzo="
+  },
+  "noctalia": {
+    "type": "github",
+    "owner": "noctalia-dev",
+    "repo": "noctalia",
+    "rev": "18d63aee7ab75dd3cbae41c4f49feba643519c2c",
+    "narHash": "sha256-9/V6dIgsFVsEJZ/mU1oxuvmt5L5Ez/7C0SbIDI8ElXU=",
+    "lastModified": 1783941338
+  },
+  "preservation": {
+    "type": "github",
+    "owner": "nix-community",
+    "repo": "preservation",
+    "rev": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
+    "narHash": "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=",
+    "lastModified": 1757436102
+  },
+  "sops-nix": {
+    "type": "github",
+    "owner": "Mic92",
+    "repo": "sops-nix",
+    "rev": "f1406619a3884cd5c47992a70b8b35c9c0fcb4c9",
+    "narHash": "sha256-aCWC8ngycU7OdJrU2+Je3qf+1a2ykuBvpPhZT/9tXMc=",
+    "lastModified": 1783174389
+  },
+  "zen-browser": {
+    "type": "github",
+    "owner": "0xc000022070",
+    "repo": "zen-browser-flake",
+    "rev": "59b3e080fe16995291da16e9229f61aa8aff350a",
+    "narHash": "sha256-eKn371TzEBL1fbyYMXgmiCMeoJQHe8s6b2lL5Z2vBQc=",
+    "lastModified": 1783893146
+  }
+}
