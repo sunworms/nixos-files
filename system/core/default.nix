@@ -7,6 +7,7 @@
     ./virtualisation.nix
     ./network.nix
     ./sops.nix
+    ./battery.nix
     ./users.nix
     ./preserve.nix
     ./kanata.nix
@@ -21,12 +22,6 @@
 
   # Disable man cache
   documentation.man.cache.enable = false;
-
-  # Battery
-  services.upower.enable = true;
-
-  # Power profiles
-  services.tuned.enable = true;
 
   # Disable sudo lecture
   security.sudo.extraConfig = ''
