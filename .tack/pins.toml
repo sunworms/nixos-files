@@ -1,0 +1,35 @@
+[shorturls]
+gh = "github:{path}"
+nixpkgs = "https://channels.nixos.org/{path}/nixexprs.tar.xz"
+
+[inputs.nixpkgs]
+url = "nixpkgs:nixos-unstable"
+type = "fetch"
+
+[inputs.preservation]
+url = "gh:nix-community/preservation"
+type = "fetch"
+
+[inputs.flatpaks]
+url = "gh:in-a-dil-emma/declarative-flatpak/latest"
+type = "fetch"
+
+[inputs.neovim-config]
+url = "git+https://git.gay/sunworms/neovim-config"
+type = "fetch"
+
+[inputs.zen-browser]
+url = "gh:0xc000022070/zen-browser-flake/beta"
+type = "fetch"
+
+[inputs.hjem]
+url = "gh:feel-co/hjem"
+type = "fetch"
+
+[inputs.sops-nix]
+url = "gh:Mic92/sops-nix"
+type = "fetch"
+
+[inputs.noctalia]
+url = "gh:noctalia-dev/noctalia/cachix"
+type = "fetch"
