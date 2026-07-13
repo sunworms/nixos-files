@@ -17,26 +17,44 @@ order = [ "default", "right" ]
 
     [bar.right]
     auto_hide = true
-    background_opacity = 0.89999997988343239
+    background_opacity = 0.9
     center = []
     enabled = true
-    end = []
     margin_ends = 0
     position = "right"
     radius = 0
     radius_bottom_left = 10
     radius_top_left = 10
     start = [ "taskbar" ]
+    end = [ "group:net", "group:notif", "mpvpaper" ]
     thickness = 30
+
+        [[bar.right.capsule_group]]
+        enabled = true
+        fill = "surface_variant"
+        id = "net"
+        members = [ "network", "bluetooth" ]
+        opacity = 0.9
+        padding = 6.0
+        radius = 8.0
+
+        [[bar.right.capsule_group]]
+        enabled = true
+        fill = "surface_variant"
+        id = "notif"
+        members = [ "notifications", "clipboard" ]
+        opacity = 0.9
+        padding = 6.0
+        radius = 8.0
 
     [bar.default]
     background_opacity = 0.9
     capsule = true
     capsule_opacity = 0.9
     capsule_radius = 8.0
-    end = [ "tray", "notifications", "group:g2", "group:g1", "group:g3" ]
+    end = [ "tray", "group:sysmon", "group:osd" ]
     center = [ "workspaces" ]
-    start = [ "group:g5", "clock", "group:g4" ]
+    start = [ "group:misc", "clock", "group:music" ]
     position = "left"
     widget_spacing = 10
     margin_edge = 0
@@ -51,7 +69,7 @@ order = [ "default", "right" ]
 
         [[bar.default.capsule_group]]
         fill = "surface_variant"
-        id = "g1"
+        id = "sysmon"
         members = [ "cpu", "ram", "temp" ]
         opacity = 0.9
         padding = 6.0
@@ -59,15 +77,7 @@ order = [ "default", "right" ]
 
         [[bar.default.capsule_group]]
         fill = "surface_variant"
-        id = "g2"
-        members = [ "network", "bluetooth" ]
-        opacity = 0.9
-        padding = 6.0
-        radius = 8.0
-
-        [[bar.default.capsule_group]]
-        fill = "surface_variant"
-        id = "g3"
+        id = "osd"
         members = [ "volume", "brightness", "battery" ]
         opacity = 0.9
         padding = 6.0
@@ -75,7 +85,7 @@ order = [ "default", "right" ]
 
         [[bar.default.capsule_group]]
         fill = "surface_variant"
-        id = "g4"
+        id = "music"
         members = [ "media", "cat" ]
         opacity = 0.9
         padding = 6.0
@@ -83,7 +93,7 @@ order = [ "default", "right" ]
 
         [[bar.default.capsule_group]]
         fill = "surface_variant"
-        id = "g5"
+        id = "misc"
         members = [ "launcher", "recorder", "wallpaper" ]
         opacity = 0.9
         padding = 6.0
@@ -395,6 +405,10 @@ directory = "/home/sunny/Pictures/walls"
     max_length = 150
     capsule_group = "mpris"
     title_scroll = "on_hover"
+
+    [widget.mpvpaper]
+    capsule = true
+    type = "noctalia/mpvpaper:mpvpaper"
     
 [battery]
 warning_threshold = 20
