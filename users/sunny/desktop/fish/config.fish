@@ -9,7 +9,8 @@ if status is-interactive
     abbr --add -- osbu 'nh os build -f ./.'
     abbr --add -- osca 'nh clean all'
     abbr --add -- oscd 'nh clean all --no-direnv'
-    alias et "emacs -nw"
+		alias vi nvim
+		alias vim nvim
 
     set -g fish_greeting
     set -g fish_key_bindings fish_vi_key_bindings
