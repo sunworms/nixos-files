@@ -37,11 +37,11 @@
         "owner": "sunworms",
         "repo": "neovim-config"
       },
-      "branch": "nixos",
+      "branch": "main",
       "submodules": false,
-      "revision": "fe102c4d9aa107e508e86c62d725718289c7c4e4",
-      "url": "https://git.gay/sunworms/neovim-config/archive/fe102c4d9aa107e508e86c62d725718289c7c4e4.tar.gz",
-      "hash": "sha256-OS+xcx/iNxN0/Ww6Q/Y3J4h4rGLEPFyqlz9mN5FuXi4="
+      "revision": "df3bc51e5d2a46d38b30b55e18bf84518674d29c",
+      "url": "https://git.gay/sunworms/neovim-config/archive/df3bc51e5d2a46d38b30b55e18bf84518674d29c.tar.gz",
+      "hash": "sha256-GYKoCVGz+vUPXZASLgctv4/OLporuSqr6HXmFYPcRRw="
     },
     "nixpkgs": {
       "type": "Channel",
