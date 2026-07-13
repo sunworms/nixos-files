@@ -30,7 +30,6 @@
 
       ".config/gtk-3.0"
       ".config/gtk-4.0"
-      ".config/koreader"
 
       ".config/azahar-emu"
       ".config/eden"
@@ -41,7 +40,7 @@
       ".config/qBittorrent"
 
       ".local/share/flatpak"
-      ".local/share/gvfs-metadata"
+      ".local/share/zathura"
       ".local/share/fish"
       ".local/share/azahar-emu"
       ".local/share/eden"

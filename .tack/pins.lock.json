@@ -19,9 +19,9 @@
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "f76237a6346555d3fb1904d04a7079792006734a",
-    "narHash": "sha256-j7TyGw+FREBWfQfrUlHJvfATSGWhSKf/5YHgS0GIahg=",
-    "lastModified": 1783947753
+    "rev": "81b57a5765ef2ab08a0c6f0f81466cc1ac31e03b",
+    "narHash": "sha256-aeOKryQDqi+gqYdoBbE+uPPlZh6lb2jbR5idru/IWg0=",
+    "lastModified": 1783975742
   },
   "nixpkgs": {
     "type": "tarball",
@@ -33,9 +33,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "d177dccdfb7fa49bd38102131413c41f9bcbccf0",
-    "narHash": "sha256-enM+F3ltTqswD3G/RWgm9qY/yNECWmRu0x6QiR7wy+A=",
-    "lastModified": 1783954527
+    "rev": "74d16614b139a4f602c665d47ea0ce82446142fd",
+    "narHash": "sha256-sDECfE6YIdY4X2/E8WPGGU+Sz5yvgyVCavyM+9O2CGI=",
+    "lastModified": 1783973423
   },
   "preservation": {
     "type": "github",
@@ -57,8 +57,8 @@
     "type": "github",
     "owner": "0xc000022070",
     "repo": "zen-browser-flake",
-    "rev": "59b3e080fe16995291da16e9229f61aa8aff350a",
-    "narHash": "sha256-eKn371TzEBL1fbyYMXgmiCMeoJQHe8s6b2lL5Z2vBQc=",
-    "lastModified": 1783893146
+    "rev": "6ad6d080167f5fb45126b832a36d891b80443bd8",
+    "narHash": "sha256-+uKWw58yVTGsx7BeZe1863gCr91SAwv18jzQyotSPkM=",
+    "lastModified": 1783969494
   }
 }

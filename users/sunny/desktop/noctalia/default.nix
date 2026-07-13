@@ -34,6 +34,6 @@
         }/share/noctalia/assets/images/distros/nixos.svg";
       }
     );
-    "noctalia/matugen-template.lua".source = ./matugen-template.lua;
+    "noctalia/templates".source = ./templates;
   };
 }
