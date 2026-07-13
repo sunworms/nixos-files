@@ -1,5 +1,5 @@
 let
-  inputs = import ./.tack;
+  inputs = import ./npins;
   nixosSystem = import "${inputs.nixpkgs}/nixos/lib/eval-config.nix";
 
   mkHost =
@@ -32,9 +32,7 @@ in
       {
         nixpkgs = {
           config.allowUnfree = true;
-          overlays = [
-            (import inputs.emacs-overlay)
-          ];
+          overlays = [ ];
         };
 
         hjem = {

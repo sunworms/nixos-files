@@ -37,7 +37,7 @@
     nixfmt
 
     # pins
-    tack
+    npins
     nvfetcher
 
     fastfetch

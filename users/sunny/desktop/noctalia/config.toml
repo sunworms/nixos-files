@@ -298,8 +298,13 @@ wallpaper_scheme = "faithful"
 community_palette = "GruvboxAlt"
 
     [theme.templates]
-    builtin_ids = [ "emacs", "foot", "gtk3", "gtk4", "helix", "niri" ]
+    builtin_ids = [ "foot", "gtk3", "gtk4", "helix", "niri" ]
     community_ids = [ "zen-browser", "discord" ]
+
+    [theme.templates.user.nvim-base16]
+    input_path = "~/.config/noctalia/matugen-template.lua"
+    output_path = "~/.config/matugen/neovim.lua"
+    post_hook = 'pkill -SIGUSR1 nvim'
 
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"
