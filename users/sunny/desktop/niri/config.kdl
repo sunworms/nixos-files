@@ -199,7 +199,7 @@ binds {
 
     Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
     Mod+Shift+T hotkey-overlay-title="Layers" { spawn "foot" "sh" "-c" "niri msg layers; fish"; }
-		Mod+E hotkey-overlay-title="Open Emacs" { spawn "emacs"; }
+		Mod+Return hotkey-overlay-title="Open Neovim" { spawn "foot" "nvim"; }
 
     Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+V hotkey-overlay-title="Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
