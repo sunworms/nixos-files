@@ -19,9 +19,9 @@
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "81b57a5765ef2ab08a0c6f0f81466cc1ac31e03b",
-    "narHash": "sha256-aeOKryQDqi+gqYdoBbE+uPPlZh6lb2jbR5idru/IWg0=",
-    "lastModified": 1783975742
+    "rev": "55b9532f5e3c027ebcd14563625d51cbc6fb96b1",
+    "narHash": "sha256-p9huKKlhsVG8STSRw0pLab0UiPbaaybD6psR4SnwZsQ=",
+    "lastModified": 1784030541
   },
   "nixpkgs": {
     "type": "tarball",
@@ -33,9 +33,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "20a7248497c90d07fbb5413a7c5b6793a723495d",
-    "narHash": "sha256-ZzqW0WZxmg47uY4RwWYSsiTKBkSYweiXtWadE5qSWlk=",
-    "lastModified": 1784015734
+    "rev": "7b2e0da85e6fd72db72676395eb029f30af1337e",
+    "narHash": "sha256-XnZWqhZSo72MScneUZYqhiQdYEnI5M5uwEj9sqxxb7s=",
+    "lastModified": 1784027510
   },
   "preservation": {
     "type": "github",
