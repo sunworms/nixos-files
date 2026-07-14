@@ -33,9 +33,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "74d16614b139a4f602c665d47ea0ce82446142fd",
-    "narHash": "sha256-sDECfE6YIdY4X2/E8WPGGU+Sz5yvgyVCavyM+9O2CGI=",
-    "lastModified": 1783973423
+    "rev": "20a7248497c90d07fbb5413a7c5b6793a723495d",
+    "narHash": "sha256-ZzqW0WZxmg47uY4RwWYSsiTKBkSYweiXtWadE5qSWlk=",
+    "lastModified": 1784015734
   },
   "preservation": {
     "type": "github",
@@ -57,8 +57,8 @@
     "type": "github",
     "owner": "0xc000022070",
     "repo": "zen-browser-flake",
-    "rev": "6ad6d080167f5fb45126b832a36d891b80443bd8",
-    "narHash": "sha256-+uKWw58yVTGsx7BeZe1863gCr91SAwv18jzQyotSPkM=",
-    "lastModified": 1783969494
+    "rev": "8cbde27feab69507f13a41a01ee45c2b632a8f43",
+    "narHash": "sha256-tFP35Y/BDWkDwFVoCab0gN00yKjGJU/IWpVxl68tGEI=",
+    "lastModified": 1783982026
   }
 }
