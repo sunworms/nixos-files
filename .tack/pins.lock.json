@@ -19,9 +19,9 @@
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "55b9532f5e3c027ebcd14563625d51cbc6fb96b1",
-    "narHash": "sha256-p9huKKlhsVG8STSRw0pLab0UiPbaaybD6psR4SnwZsQ=",
-    "lastModified": 1784030541
+    "rev": "70bd700154a156eddcc6625f0f5ebddc8038af8f",
+    "narHash": "sha256-nU/Z0P0fPgwXL2JPjqrubDBuG7BOUkbpeGZviF2T9sw=",
+    "lastModified": 1784056009
   },
   "nixpkgs": {
     "type": "tarball",
