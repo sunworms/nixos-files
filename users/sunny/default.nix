@@ -12,9 +12,7 @@
 
   packages = with pkgs; [
     # nvim
-    ((import inputs.neovim-config).override {
-      inherit pkgs;
-    })
+    (import inputs.neovim-config)
 
     # fish plugins
     fishPlugins.tide
