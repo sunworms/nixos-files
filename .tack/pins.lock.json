@@ -25,17 +25,17 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1032869.e7a3ca8092b6/nixexprs.tar.xz",
-    "rev": "e7a3ca8092b61ff85b6a45bf863ea2b2d6a661b3",
-    "narHash": "sha256-+GVwKnbbSmf4cWMJyRzvw8H5yFknmkLoPD5v6snqPzo="
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1034379.18b9261cb329/nixexprs.tar.xz",
+    "rev": "18b9261cb3294b6d2a06d03f96872827b8fe2698",
+    "narHash": "sha256-G9I5EeMhwLckqD5QLgowA6hNBaOjG9CeYIzfSz4gZ6k="
   },
   "noctalia": {
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "7b2e0da85e6fd72db72676395eb029f30af1337e",
-    "narHash": "sha256-XnZWqhZSo72MScneUZYqhiQdYEnI5M5uwEj9sqxxb7s=",
-    "lastModified": 1784027510
+    "rev": "ad47fc233c977573da53f0d8aeff07543867d75c",
+    "narHash": "sha256-cuBymAStf7h7PLthNglWMbbPDCWByevYK7nQnnfOZvE=",
+    "lastModified": 1784051458
   },
   "preservation": {
     "type": "github",
@@ -57,8 +57,8 @@
     "type": "github",
     "owner": "0xc000022070",
     "repo": "zen-browser-flake",
-    "rev": "8cbde27feab69507f13a41a01ee45c2b632a8f43",
-    "narHash": "sha256-tFP35Y/BDWkDwFVoCab0gN00yKjGJU/IWpVxl68tGEI=",
-    "lastModified": 1783982026
+    "rev": "0191c6fb7e607574a6725c9681e511fccc96cb8b",
+    "narHash": "sha256-ivzs0uV2D7hYY6FcG+j5EpDfkWGof/6q3pCzdMBJOSA=",
+    "lastModified": 1784043413
   }
 }
