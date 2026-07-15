@@ -18,10 +18,6 @@ type = "fetch"
 url = "git+https://git.gay/sunworms/neovim-config"
 type = "fetch"
 
-[inputs.zen-browser]
-url = "gh:0xc000022070/zen-browser-flake/beta"
-type = "fetch"
-
 [inputs.hjem]
 url = "gh:feel-co/hjem"
 type = "fetch"
