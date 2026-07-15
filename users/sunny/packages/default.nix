@@ -30,7 +30,6 @@
     satty
     qbittorrent
     zathura
-    vesktop
     rclone
   ];
 
