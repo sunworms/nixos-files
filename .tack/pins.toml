@@ -29,3 +29,7 @@ type = "fetch"
 [inputs.noctalia]
 url = "gh:noctalia-dev/noctalia/cachix"
 type = "fetch"
+
+[inputs.watt]
+url = "gh:NotAShelf/watt/pull/88/head"
+type = "fetch"

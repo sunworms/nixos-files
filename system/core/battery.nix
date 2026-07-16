@@ -1,9 +1,13 @@
-{ ... }:
+{ pkgs, inputs, ... }:
 
 {
   services = {
     upower.enable = true;
     power-profiles-daemon.enable = false;
+    watt = {
+      enable = false;
+      package = (pkgs.callPackage "${inputs.watt}/nix/package.nix" { });
+    };
     tlp = {
       enable = true;
       settings = {
