@@ -8,10 +8,10 @@
 {
   eden = {
     pname = "eden";
-    version = "v1784055937.8b8034a2a0/Eden-Linux-8b8034a2a0";
+    version = "v1784228313.eb9280dedf/Eden-Linux-eb9280dedf";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1784055937.8b8034a2a0/Eden-Linux-8b8034a2a0-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-uBhAtkbH9vImiejcBu9eUZ0lHmA4zNZeYgAFaqKmfyg=";
+      url = "https://nightly.eden-emu.dev/v1784228313.eb9280dedf/Eden-Linux-eb9280dedf-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-eV8QTGR8u0Hzph48e42A/a5WKl652Bp6aSpGOLQAVK0=";
     };
   };
   pcsx2 = {
@@ -21,14 +21,5 @@
       url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.485/pcsx2-v2.7.485-linux-appimage-x64-Qt.AppImage";
       sha256 = "sha256-32rMDXe4NkvBx8glrn+YUzSos4gUO8PV89BdAGPleo8=";
     };
-  };
-  vesktop = {
-    pname = "vesktop";
-    version = "d4d8f750ded91dec9237bd4c68f3ca3b0c06d913";
-    src = fetchurl {
-      url = "https://github.com/sunworms/Vesktop-AppImage/releases/download/latest/Vesktop.AppImage";
-      sha256 = "sha256-FkGhI28lpdwDGlS4hWDXiWJV2BfXyKw7+rlUYNLyX1g=";
-    };
-    date = "2026-07-16";
   };
 }

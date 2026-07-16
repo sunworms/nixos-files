@@ -9,7 +9,3 @@ src.regex = 'v\d+\.[0-9a-f]+'
 src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
 src.to_pattern = 'v\1.\2/Eden-Linux-\2'
 fetch.url = "https://nightly.eden-emu.dev/$ver-amd64-clang-pgo.AppImage"
-
-[vesktop]
-src.git = "https://github.com/sunworms/Vesktop-AppImage"
-fetch.url = "https://github.com/sunworms/Vesktop-AppImage/releases/download/latest/Vesktop.AppImage"
