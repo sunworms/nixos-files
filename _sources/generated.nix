@@ -14,14 +14,6 @@
       sha256 = "sha256-uBhAtkbH9vImiejcBu9eUZ0lHmA4zNZeYgAFaqKmfyg=";
     };
   };
-  helium = {
-    pname = "helium";
-    version = "0.14.6.1";
-    src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.14.6.1/helium-0.14.6.1-x86_64.AppImage";
-      sha256 = "sha256-qdM1Qysx5OOBwzr6A6tyPIfZcHxn2YkIPedGelvbk7I=";
-    };
-  };
   pcsx2 = {
     pname = "pcsx2";
     version = "v2.7.485";
@@ -35,7 +27,7 @@
     version = "d4d8f750ded91dec9237bd4c68f3ca3b0c06d913";
     src = fetchurl {
       url = "https://github.com/sunworms/Vesktop-AppImage/releases/download/latest/Vesktop.AppImage";
-      sha256 = "sha256-aGuvp60dhUlt6jI1J9IQL0LSx8qJcLuV4Yn84wFYsKs=";
+      sha256 = "sha256-FkGhI28lpdwDGlS4hWDXiWJV2BfXyKw7+rlUYNLyX1g=";
     };
     date = "2026-07-16";
   };

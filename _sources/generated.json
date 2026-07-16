@@ -14,21 +14,6 @@
         },
         "version": "v1784055937.8b8034a2a0/Eden-Linux-8b8034a2a0"
     },
-    "helium": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "helium",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-qdM1Qysx5OOBwzr6A6tyPIfZcHxn2YkIPedGelvbk7I=",
-            "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.14.6.1/helium-0.14.6.1-x86_64.AppImage"
-        },
-        "version": "0.14.6.1"
-    },
     "pcsx2": {
         "cargoLock": null,
         "date": null,
@@ -53,7 +38,7 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-aGuvp60dhUlt6jI1J9IQL0LSx8qJcLuV4Yn84wFYsKs=",
+            "sha256": "sha256-FkGhI28lpdwDGlS4hWDXiWJV2BfXyKw7+rlUYNLyX1g=",
             "type": "url",
             "url": "https://github.com/sunworms/Vesktop-AppImage/releases/download/latest/Vesktop.AppImage"
         },
