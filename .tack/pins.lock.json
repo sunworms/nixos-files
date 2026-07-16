@@ -60,5 +60,13 @@
     "rev": "9e24378547c29988b11221fff807a98691b718f3",
     "narHash": "sha256-jvkzUrF5FxjVBA6ddFTFIPc5SyiNiH9tTsbeLKCFNdM=",
     "lastModified": 1784207342
+  },
+  "zen-browser": {
+    "type": "github",
+    "owner": "0xc000022070",
+    "repo": "zen-browser-flake",
+    "rev": "00b2523003d4e14509f7b0afc276c9a58d9936fd",
+    "narHash": "sha256-bjpzvrOpmsBcRmBsS4v60c07EtDW6bscipq0bQziYvM=",
+    "lastModified": 1784165931
   }
 }

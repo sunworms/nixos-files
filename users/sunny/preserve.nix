@@ -23,7 +23,8 @@
       ".cache/nix"
       ".cache/typst"
 
-      ".config/net.imput.helium"
+      ".config/zen"
+      ".config/vesktop"
       ".config/rclone"
       ".config/fish"
 
