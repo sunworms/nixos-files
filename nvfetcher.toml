@@ -10,10 +10,6 @@ src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
 src.to_pattern = 'v\1.\2/Eden-Linux-\2'
 fetch.url = "https://nightly.eden-emu.dev/$ver-amd64-clang-pgo.AppImage"
 
-[helium]
-src.github = "imputnet/helium-linux"
-fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"
-
 [vesktop]
 src.git = "https://github.com/sunworms/Vesktop-AppImage"
 fetch.url = "https://github.com/sunworms/Vesktop-AppImage/releases/download/latest/Vesktop.AppImage"
