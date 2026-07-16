@@ -35,6 +35,7 @@
     qbittorrent
     zathura
     rclone
+    (callPackage ./vesktop.nix { })
     #arrpc
   ];
 }

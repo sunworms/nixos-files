@@ -24,10 +24,19 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.482";
+    version = "v2.7.485";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.482/pcsx2-v2.7.482-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-ZM1H2Ujln4auweNxKmlZZ2Qbk1dDSeSNPTRQ291jyuw=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.485/pcsx2-v2.7.485-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-32rMDXe4NkvBx8glrn+YUzSos4gUO8PV89BdAGPleo8=";
     };
+  };
+  vesktop = {
+    pname = "vesktop";
+    version = "d4d8f750ded91dec9237bd4c68f3ca3b0c06d913";
+    src = fetchurl {
+      url = "https://github.com/sunworms/Vesktop-AppImage/releases/download/latest/Vesktop.AppImage";
+      sha256 = "sha256-aGuvp60dhUlt6jI1J9IQL0LSx8qJcLuV4Yn84wFYsKs=";
+    };
+    date = "2026-07-16";
   };
 }
