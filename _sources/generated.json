@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-uBhAtkbH9vImiejcBu9eUZ0lHmA4zNZeYgAFaqKmfyg=",
+            "sha256": "sha256-eV8QTGR8u0Hzph48e42A/a5WKl652Bp6aSpGOLQAVK0=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1784055937.8b8034a2a0/Eden-Linux-8b8034a2a0-amd64-clang-pgo.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1784228313.eb9280dedf/Eden-Linux-eb9280dedf-amd64-clang-pgo.AppImage"
         },
-        "version": "v1784055937.8b8034a2a0/Eden-Linux-8b8034a2a0"
+        "version": "v1784228313.eb9280dedf/Eden-Linux-eb9280dedf"
     },
     "pcsx2": {
         "cargoLock": null,
@@ -28,20 +28,5 @@
             "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.485/pcsx2-v2.7.485-linux-appimage-x64-Qt.AppImage"
         },
         "version": "v2.7.485"
-    },
-    "vesktop": {
-        "cargoLock": null,
-        "date": "2026-07-16",
-        "extract": null,
-        "name": "vesktop",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-FkGhI28lpdwDGlS4hWDXiWJV2BfXyKw7+rlUYNLyX1g=",
-            "type": "url",
-            "url": "https://github.com/sunworms/Vesktop-AppImage/releases/download/latest/Vesktop.AppImage"
-        },
-        "version": "d4d8f750ded91dec9237bd4c68f3ca3b0c06d913"
     }
 }
