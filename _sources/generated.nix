@@ -14,6 +14,14 @@
       sha256 = "sha256-eV8QTGR8u0Hzph48e42A/a5WKl652Bp6aSpGOLQAVK0=";
     };
   };
+  helium = {
+    pname = "helium";
+    version = "0.14.6.1";
+    src = fetchurl {
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.14.6.1/helium-0.14.6.1-x86_64.AppImage";
+      sha256 = "sha256-qdM1Qysx5OOBwzr6A6tyPIfZcHxn2YkIPedGelvbk7I=";
+    };
+  };
   pcsx2 = {
     pname = "pcsx2";
     version = "v2.7.485";

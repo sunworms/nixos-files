@@ -326,7 +326,7 @@ community_palette = "GruvboxAlt"
 
     [theme.templates]
     builtin_ids = [ "foot", "gtk3", "gtk4", "helix", "niri" ]
-    community_ids = [ "zen-browser", "discord" ]
+    community_ids = [ ]
 
     [theme.templates.user.nvim-base16]
     input_path = "~/.config/noctalia/templates/matugen-template.lua"

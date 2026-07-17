@@ -53,4 +53,8 @@
     "/share/applications"
     "/share/fish"
   ];
+
+  environment.etc."chromium/policies/managed/default.json".text = builtins.toJSON (
+    import ./chromium.nix
+  );
 }
