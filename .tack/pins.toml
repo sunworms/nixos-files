@@ -22,10 +22,6 @@ type = "fetch"
 url = "gh:feel-co/hjem"
 type = "fetch"
 
-[inputs.zen-browser]
-url = "gh:0xc000022070/zen-browser-flake/beta"
-type = "fetch"
-
 [inputs.sops-nix]
 url = "gh:Mic92/sops-nix"
 type = "fetch"
