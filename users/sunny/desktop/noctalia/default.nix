@@ -10,6 +10,7 @@
 
     # needed for noctalia
     gpu-screen-recorder
+    hyprpicker
     # grim
     # slurp
     # wl-clipboard

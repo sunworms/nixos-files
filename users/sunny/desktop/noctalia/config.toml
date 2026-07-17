@@ -26,7 +26,7 @@ order = [ "default", "right" ]
     radius_bottom_left = 10
     radius_top_left = 10
     start = [ "taskbar" ]
-    end = [ "group:net", "group:notif", "mpvpaper" ]
+    end = [ "group:net", "group:notif", "group:mpv" ]
     thickness = 30
 
         [[bar.right.capsule_group]]
@@ -43,6 +43,15 @@ order = [ "default", "right" ]
         fill = "surface_variant"
         id = "notif"
         members = [ "notifications", "clipboard" ]
+        opacity = 0.9
+        padding = 6.0
+        radius = 8.0
+
+        [[bar.right.capsule_group]]
+        enabled = true
+        fill = "surface_variant"
+        id = "mpv"
+        members = [ "mpvpaper", "colorpicker" ]
         opacity = 0.9
         padding = 6.0
         radius = 8.0
@@ -350,7 +359,6 @@ directory = "/home/sunny/Pictures/walls"
 
     [widget.network]
     show_label = false
-    capsule_group = "wifi-bt"
 
     [widget.workspaces]
     display = "none"
@@ -359,36 +367,22 @@ directory = "/home/sunny/Pictures/walls"
     display = "gauge"
     show_label = false
     type = "sysmon"
-    capsule_group = "sysmon"
 
     [widget.ram]
     display = "gauge"
     show_label = false
     stat = "ram_used"
     type = "sysmon"
-    capsule_group = "sysmon"
 
     [widget.temp]
     show_label = false
     stat = "cpu_temp"
     type = "sysmon"
-    capsule_group = "sysmon"
-
-    [widget.audio_visualizer]
-    capsule_group = "mpris"
-
-    [widget.battery]
-    capsule_group = "vol-bright-bat"
-
-    [widget.bluetooth]
-    capsule_group = "wifi-bt"
-
+    
     [widget.brightness]
-    capsule_group = "vol-bright-bat"
     show_label = false
 
     [widget.volume]
-    capsule_group = "vol-bright-bat"
     show_label = false
 
     [widget.recorder]
@@ -407,12 +401,13 @@ directory = "/home/sunny/Pictures/walls"
 
     [widget.media]
     max_length = 150
-    capsule_group = "mpris"
     title_scroll = "on_hover"
 
     [widget.mpvpaper]
-    capsule = true
     type = "noctalia/mpvpaper:mpvpaper"
+    
+    [widget.colorpicker]
+    type = "oldirtty/color_picker:colorpicker"
     
 [battery]
 warning_threshold = 20
@@ -420,5 +415,8 @@ warning_threshold = 20
 [plugin_settings."noctalia/mpvpaper"]
 video_directory = "/home/sunny/Pictures/walls/videos"
 
+[plugin_settings."oldirtty/color_picker"]
+hyprpicker-lowercase = true
+
 [plugins]
-enabled = [ "noctalia/screen_recorder", "noctalia/kaomoji", "noctalia/bongocat", "noctalia/mpvpaper" ]
+enabled = [ "noctalia/screen_recorder", "noctalia/kaomoji", "noctalia/bongocat", "noctalia/mpvpaper", "oldirtty/color_picker" ]
