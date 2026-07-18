@@ -50,7 +50,6 @@ stdenv.mkDerivation {
   nativeBuildInputs = [
     makeWrapper
     autoPatchelfHook
-    qt6.wrapQtAppsHook
   ];
 
   buildInputs = [
@@ -82,6 +81,8 @@ stdenv.mkDerivation {
     qt6.qtbase
   ];
 
+  dontWrapQtApps = true;
+
   autoPatchelfIgnoreMissingDeps = [
     "libQt5Core.so.5"
     "libQt5Gui.so.5"
@@ -101,6 +102,8 @@ stdenv.mkDerivation {
           libva
           pipewire
           libpulseaudio
+          gtk3
+          qt6.qtbase
         ]
       }"
 
