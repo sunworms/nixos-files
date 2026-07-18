@@ -17,9 +17,8 @@ url = "gh:in-a-dil-emma/declarative-flatpak/latest"
 [inputs.hjem]
 url = "gh:feel-co/hjem"
 
-[inputs.helix]
-url = "gh:helix-editor/helix"
-exclude_follow = ["nixpkgs"]
+[inputs.neovim-config]
+url = "git+https://git.gay/sunworms/neovim-config"
 
 [inputs.sops-nix]
 url = "gh:Mic92/sops-nix"

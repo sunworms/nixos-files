@@ -7,14 +7,6 @@
     "narHash": "sha256-VHIqXC5eKeY4fNRMId7F1rg4sJhG/ZIX62TksPkTkVg=",
     "lastModified": 1782495309
   },
-  "helix": {
-    "type": "github",
-    "owner": "helix-editor",
-    "repo": "helix",
-    "rev": "f6f3eb1fe4a73933466f30175843059a4381a985",
-    "narHash": "sha256-yfNBfV6HWAQU/xZXwrFoedsSYsDmCDIlTHRxAZI6teY=",
-    "lastModified": 1784219418
-  },
   "hjem": {
     "type": "github",
     "owner": "feel-co",
@@ -22,6 +14,14 @@
     "rev": "57f1dacffe7a2d7ad803ad224a0efa1817aa4d07",
     "narHash": "sha256-EyBAHpQYuXAdQlIx/sja+Auw9IpHJGjE4PZ9g39I7sQ=",
     "lastModified": 1784171173
+  },
+  "neovim-config": {
+    "type": "git",
+    "url": "https://git.gay/sunworms/neovim-config",
+    "ref": "HEAD",
+    "rev": "0f88a9fe9b9a57e854a5f562d14a32a3e308c12d",
+    "narHash": "sha256-lc/6dPmOD//mM7tPttn0Z4ssBtWd9gfwNELA86Wswl8=",
+    "lastModified": 1784395282
   },
   "nixpkgs": {
     "type": "tarball",
@@ -33,9 +33,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "52f7ec18e073b092b5bc7ddece9e458d0155beb6",
-    "narHash": "sha256-H9cQABMpK1p8SXfxB1esK6mk32IEzRqqWSadHB42lCI=",
-    "lastModified": 1784376408
+    "rev": "5a20c9cf0ecc398c9391aa52ac075a0401f720c9",
+    "narHash": "sha256-d6YSbdMQM3A3+X0BU7NFX506U/CaRgyh2Jwe9WhiBg0=",
+    "lastModified": 1784390676
   },
   "preservation": {
     "type": "github",

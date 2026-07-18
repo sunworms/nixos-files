@@ -50,7 +50,6 @@
 
       ".local/state/wireplumber"
       ".local/state/noctalia"
-      ".local/state/lazygit"
     ];
     files = [ ];
   };

@@ -6,7 +6,7 @@
     power-profiles-daemon.enable = false;
     watt = {
       enable = true;
-      package = inputs.watt.packages.${pkgs.stdenv.hostPlatform.system}.default;
+      package = (pkgs.callPackage "${inputs.watt}/nix/package.nix" { });
     };
   };
 }
