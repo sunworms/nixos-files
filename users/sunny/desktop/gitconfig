@@ -28,7 +28,7 @@
 	ui = "auto"
 
 [core]
-	editor = "nvim"
+	editor = "hx"
 	pager = "less"
 	whitespace = "fix,-indent-with-non-tab,trailing-space,cr-at-eol"
 
@@ -90,7 +90,7 @@
 	enabled = 1
 
 [sequence]
-	editor = "nvim"
+	editor = "hx"
 
 [tag]
 	sort = "version:refname"

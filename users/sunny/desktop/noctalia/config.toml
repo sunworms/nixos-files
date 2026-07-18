@@ -336,11 +336,6 @@ community_palette = "GruvboxAlt"
     [theme.templates]
     builtin_ids = [ "foot", "gtk3", "gtk4", "helix", "niri" ]
     community_ids = [ ]
-
-    [theme.templates.user.nvim-base16]
-    input_path = "~/.config/noctalia/templates/matugen-template.lua"
-    output_path = "~/.config/matugen/neovim.lua"
-    post_hook = 'pkill -SIGUSR1 nvim'
     
     [theme.templates.user.zathura]
     input_path = "~/.config/noctalia/templates/zathurarc"
