@@ -6,6 +6,7 @@
     ./fish
     ./niri
     ./noctalia
+    ./qt-kde.nix
   ];
 
   files = {
