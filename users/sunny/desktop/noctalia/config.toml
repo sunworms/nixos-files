@@ -334,7 +334,7 @@ wallpaper_scheme = "faithful"
 community_palette = "GruvboxAlt"
 
     [theme.templates]
-    builtin_ids = [ "foot", "gtk3", "gtk4", "helix", "niri", "kcolorscheme", "qt" ]
+    builtin_ids = [ "foot", "gtk3", "gtk4", "helix", "niri" ]
     community_ids = [ ]
 
     [theme.templates.user.nvim-base16]
