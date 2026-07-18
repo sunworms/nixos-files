@@ -1,9 +1,10 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
     ./packages
     ./desktop
+    ./helix
     ./ssh.nix
     ./browser.nix
   ];
@@ -11,8 +12,6 @@
   directory = "/home/sunny";
 
   packages = with pkgs; [
-    # nvim
-    (import inputs.neovim-config)
 
     # fish plugins
     fishPlugins.tide
