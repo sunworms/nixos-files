@@ -2,7 +2,7 @@
 
 {
   packages = with pkgs; [
-    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+    (import inputs.noctalia { }).package
 
     # needed for noctalia
     gpu-screen-recorder
@@ -27,7 +27,7 @@
     "noctalia/config.toml".source = (
       pkgs.replaceVars ./config.toml {
         NIXOS_IMAGE = builtins.toJSON "${
-          inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+          (import inputs.noctalia { }).package
         }/share/noctalia/assets/images/distros/nixos.svg";
       }
     );

@@ -1,10 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
     ./packages
     ./desktop
-    ./helix
     ./ssh.nix
     ./browser.nix
   ];
@@ -12,10 +11,8 @@
   directory = "/home/sunny";
 
   packages = with pkgs; [
-
-    # fish plugins
-    fishPlugins.tide
-    fishPlugins.git-abbr
+    # nvim
+    (import "${inputs.neovim-config}/legacy.nix" { inherit pkgs; })
 
     # theming
     adw-gtk3
