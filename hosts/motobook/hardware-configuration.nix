@@ -39,7 +39,7 @@
     fsType = "btrfs";
     options = [
       "noatime"
-      "compress=zstd"
+      "compress=zstd:5"
       "discard=async"
       "space_cache=v2"
       "ssd"
