@@ -50,7 +50,7 @@ order = [ "default", "right" ]
         enabled = true
         fill = "surface_variant"
         id = "mpv"
-        members = [ "mpvpaper", "widget" ]
+        members = [ "mpvpaper", "recorder", "widget" ]
         opacity = 0.9
         padding = 6.0
         radius = 8.0
@@ -102,7 +102,7 @@ order = [ "default", "right" ]
         [[bar.default.capsule_group]]
         fill = "surface_variant"
         id = "misc"
-        members = [ "launcher", "recorder", "wallpaper" ]
+        members = [ "launcher", "wallpaper" ]
         opacity = 0.9
         padding = 6.0
         radius = 8.0
