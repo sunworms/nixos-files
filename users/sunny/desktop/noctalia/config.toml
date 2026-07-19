@@ -310,7 +310,7 @@ clipboard_image_action_command = "satty -f -"
 
     [[shell.session.actions]]
     action = "command"
-    command = "pkill noctalia && noctalia -d"
+    command = "pkill noctalia; noctalia -d"
     enabled = true
     glyph = "noctalia"
     label = "Restart Noctalia"
