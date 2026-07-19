@@ -50,7 +50,7 @@ order = [ "default", "right" ]
         enabled = true
         fill = "surface_variant"
         id = "mpv"
-        members = [ "mpvpaper", "colorpicker" ]
+        members = [ "mpvpaper", "widget" ]
         opacity = 0.9
         padding = 6.0
         radius = 8.0
@@ -405,8 +405,8 @@ directory = "/home/sunny/Pictures/walls"
     [widget.mpvpaper]
     type = "noctalia/mpvpaper:mpvpaper"
     
-    [widget.colorpicker]
-    type = "oldirtty/color_picker:colorpicker"
+    [widget.widget]
+    type = "oldirtty/color_picker:widget"
     
 [battery]
 warning_threshold = 20
