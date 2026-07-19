@@ -11,9 +11,9 @@
     "type": "github",
     "owner": "feel-co",
     "repo": "hjem",
-    "rev": "3289cc5d2e62a2c0ba4e3e4f5565c9752fb39fb9",
-    "narHash": "sha256-rf8FWDqTlBF2MdKlmlrfYbgNZxQs7OPWl2xI1Y3Bua0=",
-    "lastModified": 1784423689
+    "rev": "052f9e64c80c2af4f2b27e020fd91e0dc900f555",
+    "narHash": "sha256-YWU97FrFrkk1eVNAc9M3YegJCAZkkMMnfzE0C8QOcm4=",
+    "lastModified": 1784479861
   },
   "neovim-config": {
     "type": "git",
@@ -33,9 +33,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "8de8c875fec545ac61bcc89b55e38b0010afa0d6",
-    "narHash": "sha256-of7FV8i5dULQR/WpCIWaYCcDsx94X5N23Je1UB1c7aU=",
-    "lastModified": 1784465503
+    "rev": "9b54388744e6f3ac2e2dd573a64eef1540c6401c",
+    "narHash": "sha256-u5wnbu0UBxi3uptK8lBy4vYkWtha85vtpWDeQiLdpP8=",
+    "lastModified": 1784482325
   },
   "preservation": {
     "type": "github",
