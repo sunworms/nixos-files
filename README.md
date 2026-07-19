@@ -3,11 +3,8 @@ Folder structure of my NixOS configuration:
 .
 ├── assets
 │   └── icons
-│       ├── eden.svg
-│       ├── haruta.jpg
-│       └── NixOS.png
-├── flake.lock
-├── flake.nix
+│       └── face
+├── default.nix
 ├── hosts
 │   └── motobook
 │       ├── configuration.nix
@@ -22,6 +19,7 @@ Folder structure of my NixOS configuration:
 │   └── generated.nix
 ├── system
 │   ├── core
+│   │   ├── battery.nix
 │   │   ├── boot.nix
 │   │   ├── default.nix
 │   │   ├── kanata.kbd
@@ -36,8 +34,10 @@ Folder structure of my NixOS configuration:
 │   └── packages
 │       ├── audio.nix
 │       ├── bluetooth.nix
+│       ├── chromium.nix
 │       ├── default.nix
 │       ├── desktop.nix
+│       ├── flatpaks.nix
 │       ├── fonts.nix
 │       ├── portals.nix
 │       └── programs.nix
@@ -50,33 +50,31 @@ Folder structure of my NixOS configuration:
         │   ├── fish
         │   │   ├── config.fish
         │   │   └── default.nix
+        │   ├── foot
+        │   │   ├── default.nix
+        │   │   └── foot.ini
         │   ├── gitconfig
         │   ├── hyfetch.json
-        │   ├── kitty
-        │   │   ├── default.nix
-        │   │   └── kitty.conf
         │   ├── mimeapps.list
         │   ├── niri
         │   │   ├── config.kdl
         │   │   └── default.nix
-        │   ├── noctalia
-        │   │   ├── default.nix
-        │   │   ├── plugins.json
-        │   │   └── settings.json
-        │   └── qt-kde
-        │       └── default.nix
-        ├── helix
-        │   ├── config.toml
-        │   ├── default.nix
-        │   └── languages.toml
+        │   └── noctalia
+        │       ├── config.toml
+        │       ├── default.nix
+        │       └── templates
+        │           ├── matugen-template.lua
+        │           └── zathurarc
+        ├── helium.nix
         ├── packages
         │   ├── browser-paths.patch
         │   ├── default.nix
         │   ├── eden.nix
         │   ├── ice-ssb.nix
-        │   └── pcsx2.nix
+        │   ├── pcsx2.nix
+        │   └── services.nix
         ├── preserve.nix
         └── ssh.nix
 
-20 directories, 57 files
+19 directories, 56 files
 ```
