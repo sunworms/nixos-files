@@ -16,7 +16,6 @@ background_opacity = 0.9
 order = [ "default", "right" ]
 
     [bar.right]
-    auto_hide = true
     background_opacity = 0.9
     center = []
     enabled = true
