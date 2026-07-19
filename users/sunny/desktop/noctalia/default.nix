@@ -26,9 +26,12 @@
   xdg.config.files = {
     "noctalia/config.toml".source = (
       pkgs.replaceVars ./config.toml {
-        NIXOS_IMAGE = builtins.toJSON "${
-          (import inputs.noctalia { }).package
-        }/share/noctalia/assets/images/distros/nixos.svg";
+        NIXOS_IMAGE = builtins.toJSON (
+          pkgs.fetchurl {
+            url = "https://upload.wikimedia.org/wikipedia/commons/3/35/Nix_Snowflake_Logo.svg";
+            hash = "sha256-SCuQlSPB14GFTq4XvExJ0QEuK2VIbrd5YYKHLRG/q5I=";
+          }
+        );
       }
     );
     "noctalia/templates".source = ./templates;
