@@ -28,4 +28,4 @@ url = "gh:noctalia-dev/noctalia/cachix"
 exclude_follow = ["nixpkgs"]
 
 [inputs.watt]
-url = "gh:NotAShelf/watt/pull/88/head"
+url = "gh:NotAShelf/watt"
