@@ -1,5 +1,5 @@
 {
-  "args": "-c examples/6.jsonc",
+  "args": "-c examples/13.jsonc",
   "auto_detect_light_dark": true,
   "backend": "fastfetch",
   "color_align": {
