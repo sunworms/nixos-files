@@ -1,4 +1,7 @@
-set default-bg "{{ colors.surface.default.hex }}"
-set render-loading-bg "{{ colors.surface.default.hex }}"
+set default-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 0.8)"
+set render-loading-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 0.8)"
+
+set statusbar-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 0.8)"
+set inputbar-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 0.8)"
 
 set selection-clipboard clipboard
