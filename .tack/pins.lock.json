@@ -11,17 +11,17 @@
     "type": "github",
     "owner": "feel-co",
     "repo": "hjem",
-    "rev": "da98f49312a31468137759756319324cdfb47f98",
-    "narHash": "sha256-oRa9hS/Mrw0ENKar89vej8A8B2t62klF6Bh83NgaUnw=",
-    "lastModified": 1784518440
+    "rev": "35e95ebb9557ac41a72fe00dd55218d1a7f21679",
+    "narHash": "sha256-rkpUOBv9pVG+GxhK90ebCrFpvjnfP4u2y/iGrzA42K4=",
+    "lastModified": 1784601896
   },
   "neovim-config": {
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "ea4392564294dd1666578dca54a431da4f8f043a",
-    "narHash": "sha256-cxKWBH5eauxoPbUUZG4PTDp2OAd0BZZyK4JMWcB/h6A=",
-    "lastModified": 1784562701
+    "rev": "9a4ac04669a0ed53c024c536825ee6c68202258c",
+    "narHash": "sha256-v9GzNt0CePbHN0p4FWaCqI1/03g79ahRtk8cqFeaDjs=",
+    "lastModified": 1784666261
   },
   "nixpkgs": {
     "type": "tarball",
@@ -33,9 +33,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "815635cf7dc810616c9e6ecf4b9b4f4c54e69905",
-    "narHash": "sha256-tlcP2x7d+ldS3BypTcInqrsOhi6BPuSSTeubfBMmm8Y=",
-    "lastModified": 1784556533
+    "rev": "5bec926eef1337d54e87134b917dab0633d71c0a",
+    "narHash": "sha256-6gaQAt5SRdcpn1+MPNlbAit04/aQlQk+skBuS+I+dHc=",
+    "lastModified": 1784663899
   },
   "preservation": {
     "type": "github",
@@ -57,8 +57,8 @@
     "type": "github",
     "owner": "NotAShelf",
     "repo": "watt",
-    "rev": "b87313b2545c1faf2e1a84bec9561aa9a4321f73",
-    "narHash": "sha256-YtmXb2Ka4kQSLR98yWTX2YGLN9d5cxYJpfAhL1Z4V0Q=",
-    "lastModified": 1784401830
+    "rev": "f36fc9d756d11754e42876f47be25f270902109f",
+    "narHash": "sha256-7/qp6ZKAUVdoCU8DnDg7Y/cSW7ytZfXrWrex3+0zMuA=",
+    "lastModified": 1784625427
   }
 }
