@@ -9,13 +9,6 @@
   ];
 
   files = {
-    ".gtkrc-2.0".text = ''
-      gtk-theme-name="adw-gtk3"
-      gtk-icon-theme-name="Adwaita"
-      gtk-cursor-theme-name="volantes_cursors"
-      gtk-cursor-theme-size=24
-    '';
-
     ".icons/default/index.theme".text = ''
       [Icon Theme]
       Name=Default
