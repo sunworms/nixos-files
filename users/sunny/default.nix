@@ -5,6 +5,7 @@
 }: {
   imports = [
     ./packages
+    ./fonts
     ./desktop
     ./ssh.nix
     ./theming.nix
