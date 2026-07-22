@@ -33,7 +33,8 @@
     yt-dlp
     satty
     qbittorrent
-    zathura
+    papers
+    qpdfview
     rclone
   ];
 }

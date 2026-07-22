@@ -344,10 +344,6 @@ community_palette = "GruvboxAlt"
     output_path = "~/.config/matugen/neovim.lua"
     post_hook = 'pkill -SIGUSR1 nvim'
     
-    [theme.templates.user.zathura]
-    input_path = "~/.config/noctalia/templates/zathurarc"
-    output_path = '~/.config/zathura/zathurarc'
-
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"
 
