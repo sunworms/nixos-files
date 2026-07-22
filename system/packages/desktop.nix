@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   services.displayManager.ly.enable = true;
 
   programs.niri = {

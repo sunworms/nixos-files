@@ -3,8 +3,7 @@
   makeDesktopItem,
   fetchurl,
   lib,
-}:
-let
+}: let
   sourcesJson = builtins.fromJSON (builtins.readFile ../../../_sources/generated.json);
 
   pname = "eden";
@@ -31,30 +30,30 @@ let
     ];
   };
 in
-stdenvNoCC.mkDerivation {
-  inherit
-    pname
-    version
-    desktopItem
-    ;
+  stdenvNoCC.mkDerivation {
+    inherit
+      pname
+      version
+      desktopItem
+      ;
 
-  src = fetchurl {
-    url = sourcesJson.eden.src.url;
-    hash = sourcesJson.eden.src.sha256;
-  };
+    src = fetchurl {
+      url = sourcesJson.eden.src.url;
+      hash = sourcesJson.eden.src.sha256;
+    };
 
-  dontUnpack = true;
-  dontBuild = true;
-  dontStrip = true;
+    dontUnpack = true;
+    dontBuild = true;
+    dontStrip = true;
 
-  installPhase = ''
-    runHook preInstall
+    installPhase = ''
+      runHook preInstall
 
-    mkdir -p $out/bin
-    mkdir -p $out/share
-    install -Dm755 $src $out/bin/eden
-    install -Dm644 ${desktopItem}/share/applications/* $out/share/applications/${pname}.desktop
+      mkdir -p $out/bin
+      mkdir -p $out/share
+      install -Dm755 $src $out/bin/eden
+      install -Dm644 ${desktopItem}/share/applications/* $out/share/applications/${pname}.desktop
 
-    runHook postInstall
-  '';
-}
+      runHook postInstall
+    '';
+  }

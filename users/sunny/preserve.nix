@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   preservation.preserveAt."/persist".users.sunny = {
     commonMountOptions = [
       "x-gvfs-hide"
@@ -51,6 +49,6 @@
       ".local/state/wireplumber"
       ".local/state/noctalia"
     ];
-    files = [ ];
+    files = [];
   };
 }

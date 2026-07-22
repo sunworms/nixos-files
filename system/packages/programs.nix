@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   programs.git = {
     enable = true;
     lfs.enable = true;
@@ -34,7 +32,7 @@
     # Nix LSPs
     nil
     nixd
-    nixfmt
+    alejandra
 
     # pins
     tack

@@ -1,6 +1,4 @@
-{ config, ... }:
-
-{
+{config, ...}: {
   sops.defaultSopsFile = ../../secrets/secrets.yaml;
   sops.age.keyFile = "/persist/var/lib/sops-nix/key.txt";
   sops.secrets = {

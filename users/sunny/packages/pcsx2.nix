@@ -2,8 +2,7 @@
   appimageTools,
   lib,
   fetchurl,
-}:
-let
+}: let
   sourcesJson = builtins.fromJSON (builtins.readFile ../../../_sources/generated.json);
 
   pcsx2-icon = fetchurl {
@@ -19,16 +18,16 @@ let
     hash = sourcesJson.pcsx2.src.sha256;
   };
 
-  appimageContents = appimageTools.extract { inherit pname version src; };
+  appimageContents = appimageTools.extract {inherit pname version src;};
 in
-appimageTools.wrapType2 {
-  inherit pname version src;
+  appimageTools.wrapType2 {
+    inherit pname version src;
 
-  extraInstallCommands = ''
-    mkdir -p $out/share/applications
-    install -m 444 -D ${appimageContents}/net.pcsx2.PCSX2.desktop $out/share/applications/pcsx2.desktop
-    substituteInPlace $out/share/applications/pcsx2.desktop \
-      --replace-fail 'Exec=pcsx2-qt' 'Exec=pcsx2' \
-      --replace-fail 'Icon=PCSX2' 'Icon=${pcsx2-icon}'
-  '';
-}
+    extraInstallCommands = ''
+      mkdir -p $out/share/applications
+      install -m 444 -D ${appimageContents}/net.pcsx2.PCSX2.desktop $out/share/applications/pcsx2.desktop
+      substituteInPlace $out/share/applications/pcsx2.desktop \
+        --replace-fail 'Exec=pcsx2-qt' 'Exec=pcsx2' \
+        --replace-fail 'Icon=PCSX2' 'Icon=${pcsx2-icon}'
+    '';
+  }

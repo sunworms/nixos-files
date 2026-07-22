@@ -1,6 +1,4 @@
-{ osConfig, ... }:
-
-{
+{osConfig, ...}: {
   files = {
     ".ssh/config" = {
       text = ''

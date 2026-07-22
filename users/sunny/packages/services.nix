@@ -1,27 +1,29 @@
-{ pkgs, lib, ... }:
-
 {
+  pkgs,
+  lib,
+  ...
+}: {
   systemd.services = {
     /*
-      arrpc = {
-        description = "arrpc Discord Rich Presence";
-        after = [ "network-online.target" ];
-        wants = [ "network-online.target" ];
-        wantedBy = [ "default.target" ];
+    arrpc = {
+      description = "arrpc Discord Rich Presence";
+      after = [ "network-online.target" ];
+      wants = [ "network-online.target" ];
+      wantedBy = [ "default.target" ];
 
-        serviceConfig = {
-          ExecStart = "${pkgs.arrpc}/bin/arrpc";
-          Restart = "on-failure";
-          RestartSec = 5;
-          Type = "simple";
-        };
+      serviceConfig = {
+        ExecStart = "${pkgs.arrpc}/bin/arrpc";
+        Restart = "on-failure";
+        RestartSec = 5;
+        Type = "simple";
       };
+    };
     */
 
     rclone-gdrive = {
       description = "Mount Google Drive via rclone";
-      after = [ "network-online.target" ];
-      wants = [ "network-online.target" ];
+      after = ["network-online.target"];
+      wants = ["network-online.target"];
       environment = {
         PATH = lib.mkForce "/run/wrappers/bin:/run/current-system/sw/bin:/etc/profiles/per-user/sunny/bin";
       };
@@ -45,7 +47,7 @@
         RestartSec = 5;
       };
 
-      wantedBy = [ "default.target" ];
+      wantedBy = ["default.target"];
     };
   };
 }
