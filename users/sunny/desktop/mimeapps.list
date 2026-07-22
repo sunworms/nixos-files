@@ -1,7 +1,7 @@
 [Default Applications]
-application/pdf=org.pwmt.zathura.desktop
-application/epub=org.pwmt.zathura.desktop
-image/vnd.djvu=org.pwmt.zathura.desktop
+application/pdf=org.gnome.Papers.desktop
+application/epub=org.gnome.Papers.desktop
+image/vnd.djvu=org.gnome.Papers.desktop
 text/plain=nvim.desktop
 text/x-markdown=nvim.desktop
 application/x-shellscript=nvim.desktop
@@ -41,9 +41,9 @@ audio/mp3=mpv.desktop
 application/x-flash-video=mpv.desktop
 
 [Added Associations]
-application/pdf=org.pwmt.zathura.desktop
-application/epub=org.pwmt.zathura.desktop
-image/vnd.djvu=org.pwmt.zathura.desktop
+application/pdf=org.gnome.Papers.desktop
+application/epub=org.gnome.Papers.desktop
+image/vnd.djvu=org.gnome.Papers.desktop
 x-scheme-handler/http=helium.desktop
 x-scheme-handler/https=helium.desktop
 x-scheme-handler/ftp=helium.desktop
