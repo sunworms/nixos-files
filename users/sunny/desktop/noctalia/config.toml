@@ -17,7 +17,6 @@ order = [ "default", "right" ]
 
     [bar.right]
     background_opacity = 0.9
-    center = []
     capsule = true
     capsule_opacity = 0.9
     capsule_radius = 8.0
@@ -28,6 +27,7 @@ order = [ "default", "right" ]
     radius_bottom_left = 10
     radius_top_left = 10
     start = [ "taskbar" ]
+    center = [ "clock" ]
     end = [ "group:net", "group:notif", "group:mpv" ]
     thickness = 30
 
@@ -65,7 +65,7 @@ order = [ "default", "right" ]
     capsule_radius = 8.0
     end = [ "tray", "group:sysmon", "group:osd" ]
     center = [ "workspaces" ]
-    start = [ "group:misc", "clock", "group:music" ]
+    start = [ "group:misc", "group:music" ]
     position = "left"
     widget_spacing = 10
     margin_edge = 0
@@ -97,7 +97,7 @@ order = [ "default", "right" ]
         [[bar.default.capsule_group]]
         fill = "surface_variant"
         id = "music"
-        members = [ "media", "cat" ]
+        members = [ "media", "cat", "audio_visualizer" ]
         opacity = 0.9
         padding = 6.0
         radius = 8.0
@@ -348,8 +348,9 @@ community_palette = "GruvboxAlt"
 directory = "/home/sunny/Pictures/walls"
 
     [widget.clock]
-    format = "{:%a:%m:%d:%H:%M}"
-    vertical_format = "{:%d\\n%m\\n-\\n%H\\n%M}"
+    format = "{:%a, %d.%m.%y, %H:%M}"
+    tooltip_format = "{:%a, %d %b %Y, %H:%M:%S}"
+    vertical_format = "{:%d\\n%m\\n%y\\n-\\n%H\\n%M}"
 
     [widget.taskbar]
     capsule = true
