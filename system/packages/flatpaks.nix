@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
   services.flatpak = {
     enable = true;
     remotes = {

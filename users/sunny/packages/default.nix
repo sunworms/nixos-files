@@ -1,19 +1,17 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   imports = [
     ./services.nix
   ];
 
   packages = with pkgs; [
-    (runCommand "wine-symlink" { } ''
+    (runCommand "wine-symlink" {} ''
       mkdir -p $out/bin
       ln -sf ${wineWow64Packages.unstableFull}/bin/wine $out/bin/wine64
     '')
     wineWow64Packages.unstableFull
     winetricks
-    (callPackage ./eden.nix { })
-    (callPackage ./pcsx2.nix { })
+    (callPackage ./eden.nix {})
+    (callPackage ./pcsx2.nix {})
     ppsspp-sdl-wayland
     melonds
     azahar

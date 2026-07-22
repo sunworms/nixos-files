@@ -1,9 +1,10 @@
-{ config, pkgs, ... }:
-
-let
-  keys = import ./keys.nix;
-in
 {
+  config,
+  pkgs,
+  ...
+}: let
+  keys = import ./keys.nix;
+in {
   users.mutableUsers = false;
 
   users.users.root.hashedPasswordFile = config.sops.secrets."root/password".path;

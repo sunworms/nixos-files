@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   fonts.packages = with pkgs; [
     nerd-fonts.d2coding
     noto-fonts
@@ -16,10 +14,10 @@
     subpixel.rgba = "rgb";
     cache32Bit = true;
     defaultFonts = {
-      serif = [ "Noto Serif" ];
-      sansSerif = [ "Noto Sans" ];
-      monospace = [ "D2CodingLigature Nerd Font Mono" ];
-      emoji = [ "Noto Color Emoji" ];
+      serif = ["Noto Serif"];
+      sansSerif = ["Noto Sans"];
+      monospace = ["D2CodingLigature Nerd Font Mono"];
+      emoji = ["Noto Color Emoji"];
     };
   };
 }

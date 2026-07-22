@@ -6,7 +6,6 @@
   autoPatchelfHook,
   pkgs,
 }:
-
 stdenvNoCC.mkDerivation rec {
   pname = "ice-ssb";
   version = "6.0.8";
@@ -18,7 +17,7 @@ stdenvNoCC.mkDerivation rec {
     hash = "sha256-gVcnNJEzU2rhzyBdO5HJUvh+moQ3q4AxNI4KcSboX5Q=";
   };
 
-  patches = [ ./browser-paths.patch ];
+  patches = [./browser-paths.patch];
 
   nativeBuildInputs = [
     autoPatchelfHook
@@ -64,6 +63,6 @@ stdenvNoCC.mkDerivation rec {
     homepage = "https://github.com/peppermintos/ice";
     license = lib.licenses.gpl2;
     platforms = lib.platforms.linux;
-    maintainers = with lib.maintainers; [ sunworms ];
+    maintainers = with lib.maintainers; [sunworms];
   };
 }

@@ -1,9 +1,7 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   packages = with pkgs; [
     foot
-    (runCommand "xdg-terminal-exec" { } ''
+    (runCommand "xdg-terminal-exec" {} ''
       mkdir -p $out/bin
       ln -sf ${foot}/bin/foot $out/bin/xdg-terminal-exec
     '')

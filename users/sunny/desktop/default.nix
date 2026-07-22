@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   imports = [
     ./foot
     ./fish
@@ -9,18 +7,6 @@
   ];
 
   files = {
-    ".icons/default/index.theme".text = ''
-      [Icon Theme]
-      Name=Default
-      Comment=Default Cursor Theme
-      Inherits=volantes_cursors
-    '';
-
-    ".Xresources".text = ''
-      Xcursor.theme:  volantes_cursors
-      Xcursor.size:   24
-    '';
-
     ".face".source = ../../../assets/icons/face;
   };
 

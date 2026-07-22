@@ -2,42 +2,40 @@ let
   inputs = import ./.tack;
   nixosSystem = import "${inputs.nixpkgs}/nixos/lib/eval-config.nix";
 
-  mkHost =
-    hostVars:
+  mkHost = hostVars:
     nixosSystem {
       specialArgs = {
         inherit inputs hostVars;
       };
 
-      modules = [
-        ./hosts/${hostVars.hostname}/configuration.nix
-        {
-          nix.nixPath = [
-            "nixpkgs=${inputs.nixpkgs}"
-          ];
-        }
-      ]
-      ++ (hostVars.modules or [ ]);
+      modules =
+        [
+          ./hosts/${hostVars.hostname}/configuration.nix
+          {
+            nix.nixPath = [
+              "nixpkgs=${inputs.nixpkgs}"
+            ];
+          }
+        ]
+        ++ (hostVars.modules or []);
     };
-
-in
-{
+in {
   motobook = mkHost {
     hostname = "motobook";
     modules = [
       (inputs.preservation + "/module.nix")
-      (import inputs.hjem { }).nixosModules.default
+      (import inputs.hjem {}).nixosModules.default
       (inputs.sops-nix + "/modules/sops")
       (inputs.flatpaks + "/nixos")
       {
         nixpkgs = {
           config.allowUnfree = true;
-          overlays = [ ];
+          overlays = [];
         };
 
         hjem = {
           clobberByDefault = true;
-          specialArgs = { inherit inputs; };
+          specialArgs = {inherit inputs;};
         };
       }
     ];

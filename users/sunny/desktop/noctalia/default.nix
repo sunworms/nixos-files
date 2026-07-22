@@ -1,8 +1,10 @@
-{ pkgs, inputs, ... }:
-
 {
+  pkgs,
+  inputs,
+  ...
+}: {
   packages = with pkgs; [
-    (import inputs.noctalia { }).package
+    (import inputs.noctalia {}).package
 
     # needed for noctalia
     gpu-screen-recorder
