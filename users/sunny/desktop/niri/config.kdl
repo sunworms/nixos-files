@@ -102,6 +102,7 @@ blur {
     saturation 1.5
 }
 
+spawn-sh-at-startup "niri-float-sticky -title 'Picture-in-Picture|Picture in picture'"
 spawn-at-startup "noctalia" "--daemon"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
@@ -144,7 +145,7 @@ window-rule {
 window-rule {
     match title="(^Picture-in-Picture$|^Picture in picture$)"
     open-floating true
-    default-floating-position x=1050 y=250
+    default-floating-position x=1000 y=250
 }
 
 window-rule {

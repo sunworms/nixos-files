@@ -23,6 +23,14 @@
     "narHash": "sha256-Mm138rXnatOLw2l390kgoswEmMBfdBfIvO/KKHDMDEU=",
     "lastModified": 1784728258
   },
+  "niri-float-sticky": {
+    "type": "github",
+    "owner": "probeldev",
+    "repo": "niri-float-sticky",
+    "rev": "b4805593eda05fc61e4cb88cfced9dd39913216e",
+    "narHash": "sha256-786xACvNk6ZE6l40gQ7wRsgqGp64Z4MseMX7gzMMNtg=",
+    "lastModified": 1778574608
+  },
   "nixpkgs": {
     "type": "tarball",
     "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1037713.241313f4e8e5/nixexprs.tar.xz",
@@ -33,9 +41,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "79530a6290fbf5ba5e34db61d4729abc7eea3920",
-    "narHash": "sha256-GhrQw9jeHxNc8nWcfl37hg82Ta1acLwrJPksBi8xkrI=",
-    "lastModified": 1784768158
+    "rev": "21ef18c4b60b42a06ac5485184b471ac441125eb",
+    "narHash": "sha256-vTVKd5DMEUOLrHC1RiVclJbfRP9OsGDiQxrRzGb6Lm4=",
+    "lastModified": 1784813422
   },
   "preservation": {
     "type": "github",
