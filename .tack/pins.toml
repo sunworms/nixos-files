@@ -17,6 +17,9 @@ url = "gh:in-a-dil-emma/declarative-flatpak/latest"
 [inputs.hjem]
 url = "gh:feel-co/hjem"
 
+[inputs.zen-browser]
+url = "gh:0xc000022070/zen-browser-flake/beta"
+
 [inputs.neovim-config]
 url = "git+https://git.gay/sunworms/neovim-config"
 

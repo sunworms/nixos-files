@@ -34,5 +34,6 @@
     papers
     qpdfview
     rclone
+    vesktop
   ];
 }
