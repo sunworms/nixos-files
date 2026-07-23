@@ -35,8 +35,8 @@
           Value = false;
           Status = "locked";
         };
-        "zen.window-sync.enabled" = {
-          Value = false;
+        "devtools.chrome.enabled" = {
+          Value = true;
           Status = "locked";
         };
       };
@@ -159,4 +159,26 @@ in {
       icon = "zen-browser";
     })
   ];
+
+  xdg.config.files = {
+    "zen/profiles.ini".text = ''
+      [Profile0]
+      Name=Sunny
+      IsRelative=1
+      Path=sunny
+      Default=1
+
+      [General]
+      StartWithLastProfile=1
+      Version=2
+    '';
+
+    "zen/sunny/user.js".text = ''
+      user_pref("zen.view.compact.enable-at-startup", true);
+      user_pref("zen.view.compact.hide-toolbar", true);
+      user_pref("zen.view.use-single-toolbar", false);
+      user_pref("zen.welcome-screen.seen", true);
+      user_pref("zen.window-sync.sync-only-pinned-tabs", true);
+    '';
+  };
 }
