@@ -34,11 +34,9 @@ Folder structure of my NixOS configuration:
 │   └── packages
 │       ├── audio.nix
 │       ├── bluetooth.nix
-│       ├── chromium.nix
 │       ├── default.nix
 │       ├── desktop.nix
 │       ├── flatpaks.nix
-│       ├── fonts.nix
 │       ├── portals.nix
 │       └── programs.nix
 └── users
@@ -63,9 +61,10 @@ Folder structure of my NixOS configuration:
         │       ├── config.toml
         │       ├── default.nix
         │       └── templates
-        │           ├── matugen-template.lua
-        │           └── zathurarc
-        ├── helium.nix
+        │           └── matugen-template.lua
+        ├── fonts
+        │   ├── default.nix
+        │   └── fonts.conf
         ├── packages
         │   ├── browser-paths.patch
         │   ├── default.nix
@@ -74,7 +73,8 @@ Folder structure of my NixOS configuration:
         │   ├── pcsx2.nix
         │   └── services.nix
         ├── preserve.nix
-        └── ssh.nix
+        ├── ssh.nix
+        └── theming.nix
 
-19 directories, 56 files
+20 directories, 55 files
 ```
