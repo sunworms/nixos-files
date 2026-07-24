@@ -22,7 +22,7 @@
 
     "custom/launcher": {
         "format": "",
-        "on-click": "fuzzel --no-icons",
+        "on-click": "fuzzel",
         "on-click-right": "fuzzel-logout-menu"
     },
     "niri/workspaces": {
@@ -31,7 +31,8 @@
     "wlr/taskbar": {
         "format": "{icon}",
         "tooltip-format": "{title}",
-        "on-click": "activate"
+        "on-click": "activate",
+        "on-click-middle": "close"
     },
     "niri/window": {
         "format": "{title}",
