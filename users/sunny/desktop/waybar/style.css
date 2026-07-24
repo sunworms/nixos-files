@@ -25,9 +25,18 @@ tooltip label {
     color: @on_surface;
 }
 
-#custom-launcher,
 #workspaces button,
-#taskbar button,
+#taskbar button {
+    border-radius: 4px;
+    background-color: @surface;
+    color: @on_surface;
+    margin: 4px;
+    padding: 4px;
+}
+
+#custom-launcher,
+#workspaces button.active,
+#taskbar button.active,
 #window {
     border-radius: 4px;    
     margin: 4px;
@@ -42,7 +51,7 @@ tooltip label {
     background-color: @primary;
 }
 
-window#waybar.empty,
+window#waybar.empty #window,
 #workspaces button.empty {
     color: transparent;
     background-color: transparent;
