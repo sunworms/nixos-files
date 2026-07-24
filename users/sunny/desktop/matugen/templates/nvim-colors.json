@@ -1,5 +1,5 @@
 {
-  "surface": "{{colors.surface.default.hex}}",
+  "surface": "{{colors.surface_container_low.default.hex}}",
   "surface_low": "{{colors.surface_container_low.default.hex}}",
   "surface_container": "{{colors.surface_container.default.hex}}",
   "surface_high": "{{colors.surface_container_high.default.hex}}",
@@ -25,9 +25,9 @@
   "error": "{{colors.error.default.hex}}",
   "error_container": "{{colors.error_container.default.hex}}",
 
-  "selection_bg": "{{colors.primary.default.hex}}33",
-  "word_highlight": "{{colors.secondary.default.hex}}33",
-  "word_highlight_strong": "{{colors.tertiary.default.hex}}33",
+  "selection_bg": "{{colors.primary_container.default.hex}}",
+  "word_highlight": "{{colors.surface_container_high.default.hex}}",
+  "word_highlight_strong": "{{colors.surface_container_highest.default.hex}}",
 
   "git_added": "{{colors.primary.default.hex}}",
   "git_modified": "{{colors.secondary.default.hex}}",

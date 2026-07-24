@@ -14,47 +14,73 @@
 
 window#waybar,
 window#waybar > box {
-    background: @surface;
+    background: @surface_container_low;
     color: @on_surface;
 }
 
 tooltip {
-    background: @surface;
+    background: @surface_container_high;
+    color: @on_surface;
+    border-radius: 6px;
 }
+
 tooltip label {
     color: @on_surface;
 }
 
 #workspaces button,
-#taskbar button {
-    border-radius: 4px;
-    background-color: @surface;
-    color: @on_surface;
+#taskbar button,
+#clock,
+#mpris,
+#tray,
+#idle_inhibitor,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#network,
+#backlight,
+#wireplumber.sink,
+#wireplumber.source,
+#window,
+#custom-launcher {
     margin: 4px;
-    padding: 4px;
+    padding: 4px 8px;
+    border-radius: 6px;
+
+    background: @surface_container;
+    color: @on_surface;
 }
 
-#custom-launcher,
 #workspaces button.active,
-#taskbar button.active,
-#window {
-    border-radius: 4px;    
-    margin: 4px;
-    padding: 4px;
-    background-color: @inverse_primary;
-    color: @on_surface;
+#taskbar button.active {
+    background: @primary_container;
+    color: @on_primary_container;
 }
 
-#image-nixos:hover,
 #workspaces button:hover,
-#taskbar button:hover {
-    background-color: @primary;
+#taskbar button:hover,
+#custom-launcher:hover {
+    background: @surface_container_high;
 }
 
 window#waybar.empty #window,
 #workspaces button.empty {
+    background: transparent;
     color: transparent;
-    background-color: transparent;
+}
+
+#tray > .passive {
+    opacity: 0.6;
+}
+
+#battery.warning {
+    color: @error;
+}
+
+#battery.critical {
+    color: @error;
+    font-weight: bold;
 }
 
 #custom-expand-icon {
@@ -71,49 +97,4 @@ window#waybar.empty #window,
 #quick-settings:hover .quick-settings-drawer {
     opacity: 1;
     margin-left: 4px;
-}
-
-#idle_inhibitor,
-#cpu,
-#memory,
-#temperature,
-#battery,
-#network,
-#backlight,
-#wireplumber.sink,
-#wireplumber.source {
-    border-radius: 4px;
-    margin: 4px;
-    padding: 4px;
-    background-color: @inverse_primary;
-    color: @on_surface;
-}
-
-#battery.warning {
-    color: @error;
-}
-
-#battery.critical {
-    color: @error;
-    font-weight: bold;
-}
-
-#tray {
-    margin: 4px;
-    border-radius: 4px;    
-    padding: 4px;
-    background-color: @inverse_primary;
-}
-
-#tray > .passive {
-    opacity: 0.6;
-}
-
-#clock,
-#mpris {
-    border-radius: 4px;    
-    margin: 4px;
-    padding: 4px;
-    background-color: @inverse_primary;
-    color: @on_surface;
 }
