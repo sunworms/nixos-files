@@ -28,5 +28,6 @@
     awww
     playerctl
     brightnessctl
+    pwvucontrol
   ];
 }
