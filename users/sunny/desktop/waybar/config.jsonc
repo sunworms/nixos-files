@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "bottom",
-    "height": 30,
+    "height": 35,
     "margin-top": 4,
 
     "modules-left": [
@@ -121,7 +121,6 @@
     },
 
     "tray": {
-        "icon-size": 16,
         "spacing": 8
     },
 
