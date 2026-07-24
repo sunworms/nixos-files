@@ -8,7 +8,7 @@ expr_postfix = "}}"
 block_prefix = "<*"
 block_postfix = "*>"
 contrast = 1.0
-source_color_index = 1
+source_color_index = 0
 
 [config.wallpaper]
 set = true
