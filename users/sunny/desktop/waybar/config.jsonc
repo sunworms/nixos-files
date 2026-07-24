@@ -72,12 +72,10 @@
         "tooltip-format-deactivated": "Idle inhibitor: off"
     },
     "cpu": {
-        "interval": 10,
         "format": "",
         "on-click-right": "foot btop"
     },
     "memory": {
-        "interval": 10,
         "format": "",
         "on-click-right": "foot btop"
     },
