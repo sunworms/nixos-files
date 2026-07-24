@@ -11,17 +11,17 @@
     "type": "github",
     "owner": "feel-co",
     "repo": "hjem",
-    "rev": "35e95ebb9557ac41a72fe00dd55218d1a7f21679",
-    "narHash": "sha256-rkpUOBv9pVG+GxhK90ebCrFpvjnfP4u2y/iGrzA42K4=",
-    "lastModified": 1784601896
+    "rev": "08d2b170a74a102c230c9651d8989fe6b39dfad8",
+    "narHash": "sha256-EAadJywc5P9CSIB7212S5jpQX48aTfYUbsJeAIbQaVI=",
+    "lastModified": 1784896036
   },
   "neovim-config": {
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "bc5c1070ee159d54aa3ed0ccfdad08f1d5791b9c",
-    "narHash": "sha256-Mm138rXnatOLw2l390kgoswEmMBfdBfIvO/KKHDMDEU=",
-    "lastModified": 1784728258
+    "rev": "b5ee091f600fae06f593679b97b3416a8bbc351a",
+    "narHash": "sha256-hwDaHmp/Sd80mzNVMwZD0Fz2uGTomFs14yeHxPLeIto=",
+    "lastModified": 1784924971
   },
   "niri-float-sticky": {
     "type": "github",
@@ -33,17 +33,9 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1037713.241313f4e8e5/nixexprs.tar.xz",
-    "rev": "241313f4e8e508cb9b13278c2b0fa25b9ca27163",
-    "narHash": "sha256-WhdsTtaih3DgTPP/PX023b36UNQyMzEoi6GkPyGx0y4="
-  },
-  "noctalia": {
-    "type": "github",
-    "owner": "noctalia-dev",
-    "repo": "noctalia",
-    "rev": "21ef18c4b60b42a06ac5485184b471ac441125eb",
-    "narHash": "sha256-vTVKd5DMEUOLrHC1RiVclJbfRP9OsGDiQxrRzGb6Lm4=",
-    "lastModified": 1784813422
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1040357.e2587caef70c/nixexprs.tar.xz",
+    "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
+    "narHash": "sha256-vwxWgF+Gj276WznzGb1LxGsK/39HaQwgQXiU3EkC844="
   },
   "preservation": {
     "type": "github",

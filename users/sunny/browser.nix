@@ -180,5 +180,13 @@ in {
       user_pref("zen.welcome-screen.seen", true);
       user_pref("zen.window-sync.sync-only-pinned-tabs", true);
     '';
+
+    "zen/sunny/chrome/userChrome.css".text = ''
+      @import "/home/sunny/.config/matugen/themes/zen-userChrome.css";
+    '';
+
+    "zen/sunny/chrome/userContent.css".text = ''
+      @import "/home/sunny/.config/matugen/themes/zen-userContent.css";
+    '';
   };
 }

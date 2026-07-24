@@ -25,7 +25,6 @@
         mpvScripts.mpris
       ];
     })
-    mpvpaper
     ffmpeg
     imagemagick
     yt-dlp
