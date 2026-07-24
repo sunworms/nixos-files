@@ -102,8 +102,14 @@ blur {
     saturation 1.5
 }
 
+spawn-at-startup "awww-daemon"
+spawn-at-startup "playerctld"
+spawn-at-startup "nm-applet"
+spawn-sh-at-startup "sleep 1 && waybar"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+spawn-sh-at-startup "swayidle -w timeout 300 'gtklock -d' timeout 600 'niri msg action power-off-monitors' after-resume 'niri msg action power-on-monitors' before-sleep 'gtklock -d'"
+spawn-at-startup "swaync"
 spawn-sh-at-startup "niri-float-sticky -title 'Picture-in-Picture|Picture in picture'"
-spawn-at-startup "noctalia" "--daemon"
 spawn-at-startup "sh" "-c" "sleep 1 && xrdb -merge ~/.Xresources"
 spawn-at-startup "apply-gtk-settings"
 
@@ -148,14 +154,6 @@ window-rule {
     default-floating-position x=1000 y=250
 }
 
-window-rule {
-    match app-id="^org.pwmt.zathura$"
-    background-effect {
-        blur true
-	      xray true
-    }
-}
-
 /-window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
@@ -174,13 +172,9 @@ window-rule {
 // layer rules
 
 layer-rule {
-    match namespace="^noctalia-wallpaper*"
+    match namespace="^awww-daemon$"
 		match namespace="^mpvpaper$"
     place-within-backdrop true
-}
-
-switch-events {
-    lid-close { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
 }
 
 prefer-no-csd
@@ -199,31 +193,30 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+T hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
-    Mod+Shift+T hotkey-overlay-title="Layers" { spawn "foot" "sh" "-c" "niri msg layers; fish"; }
+    Mod+Shift+T hotkey-overlay-title="Layers" { spawn "foot" "sh" "-c" "niri ipc" "call layers; fish"; }
 
-    Mod+A hotkey-overlay-title="Application Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
-    Mod+V hotkey-overlay-title="Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
-    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "noctalia" "msg" "panel-toggle" "session"; }
+    Mod+A hotkey-overlay-title="Application Launcher" { spawn "fuzzel"; }
+    Mod+V hotkey-overlay-title="Clipboard" { spawn "cliphist-fuzzel-img"; }
+    Mod+Escape hotkey-overlay-title="Power Menu" { spawn "fuzzel-logout-menu"; }
 
-    XF86Tools hotkey-overlay-title="Noctalia Settings" { spawn "noctalia" "msg" "settings-toggle"; }
-    XF86Launch5 hotkey-overlay-title="Lock the Screen" { spawn "noctalia" "msg" "session" "lock"; }
-    XF86Launch6 hotkey-overlay-title="Window Switcher" { spawn "noctalia" "msg" "window-switcher"; }
-    XF86Calculator hotkey-overlay-title="Open Calendar" { spawn "noctalia" "msg" "panel-toggle" "control-center" "calendar"; }
-    XF86Favorites hotkey-overlay-title="Emoji Selector" { spawn "noctalia" "msg" "panel-toggle" "launcher" "/emo"; }
-    XF86PowerOff hotkey-overlay-title="Lock and Suspend" { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
+//    XF86Tools hotkey-overlay-title="DMS Settings" { spawn ""; }
+    XF86Launch5 hotkey-overlay-title="Lock the Screen" { spawn "gtklock"; }
+    XF86Launch6 hotkey-overlay-title="Window Switcher" { spawn "niri-window-switcher"; }
+//    XF86Calculator hotkey-overlay-title="Open Calendar" { spawn "dms" "ipc" "call" "dash" "toggle" "wallpaper"; }
+    XF86Favorites hotkey-overlay-title="Emoji Selector" { spawn "rofimoji" "-a" "copy"; }
 
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "noctalia" "msg" "volume-up" "5"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "noctalia" "msg" "volume-down" "5"; }
-    XF86AudioMute allow-when-locked=true { spawn "noctalia" "msg" "volume-mute"; }
-    XF86AudioMicMute     allow-when-locked=true { spawn "noctalia" "msg" "mic-mute"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn "volume-osd" "up"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn "volume-osd" "down"; }
+    XF86AudioMute allow-when-locked=true { spawn "volume-osd" "mute"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_SOURCE@" "toggle"; }
     
-    XF86MonBrightnessUp allow-when-locked=true { spawn "noctalia" "msg" "brightness-up" "5"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia" "msg" "brightness-down" "5"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "bright-osd" "up"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "bright-osd" "down"; }
 
-    XF86AudioPlay        allow-when-locked=true { spawn "noctalia" "msg" "media" "toggle"; }
-    // XF86AudioStop        allow-when-locked=true { spawn "noctalia" "msg" "call" "media" "stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn "noctalia" "msg" "media" "previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn "noctalia" "msg" "media" "next"; }
+    XF86AudioPlay        allow-when-locked=true { spawn "playerctl" "play-pause"; }
+    XF86AudioStop        allow-when-locked=true { spawn "playerctl" "stop"; }
+    XF86AudioPrev        allow-when-locked=true { spawn "playerctl" "previous"; }
+    XF86AudioNext        allow-when-locked=true { spawn "playerctl" "next"; }
 
     Mod+Space repeat=false { toggle-overview; }
 
@@ -394,4 +387,4 @@ overview {
     }
 }
 
-include optional=true "noctalia.kdl"
+include optional=true "colors.kdl"

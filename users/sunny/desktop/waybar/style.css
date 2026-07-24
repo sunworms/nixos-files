@@ -1,0 +1,110 @@
+@import "colors.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+    box-shadow: none;
+    font-family: "D2CodingLigature Nerd Font Propo";
+    font-size: 13px;
+}
+
+window#waybar,
+window#waybar > box {
+    background: @surface;
+    color: @on_surface;
+}
+
+tooltip {
+    background: @surface;
+}
+tooltip label {
+    color: @on_surface;
+}
+
+#custom-launcher,
+#workspaces button,
+#taskbar button,
+#window {
+    border-radius: 4px;    
+    margin: 4px;
+    padding: 4px;
+    background-color: @inverse_primary;
+    color: @on_surface;
+}
+
+#image-nixos:hover,
+#workspaces button:hover,
+#taskbar button:hover {
+    background-color: @primary;
+}
+
+window#waybar.empty,
+#workspaces button.empty {
+    color: transparent;
+    background-color: transparent;
+}
+
+#custom-expand-icon {
+    margin: 4px;
+    padding: 4px;
+    color: @on_surface;
+}
+
+.quick-settings-drawer {
+    opacity: 0;
+    margin-left: 0;
+}
+
+#quick-settings:hover .quick-settings-drawer {
+    opacity: 1;
+    margin-left: 4px;
+}
+
+#idle_inhibitor,
+#cpu,
+#memory,
+#temperature,
+#battery,
+#network,
+#backlight,
+#wireplumber.sink,
+#wireplumber.source {
+    border-radius: 4px;
+    margin: 4px;
+    padding: 4px;
+    background-color: @inverse_primary;
+    color: @on_surface;
+}
+
+#battery.warning {
+    color: @error;
+}
+
+#battery.critical {
+    color: @error;
+    font-weight: bold;
+}
+
+#tray {
+    margin: 4px;
+    border-radius: 4px;    
+    padding: 4px;
+    background-color: @inverse_primary;
+}
+
+#tray > .passive {
+    opacity: 0.6;
+}
+
+#clock,
+#mpris {
+    border-radius: 4px;    
+    margin: 4px;
+    padding: 4px;
+    background-color: @inverse_primary;
+    color: @on_surface;
+}

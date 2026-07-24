@@ -18,8 +18,17 @@
       ".ssh"
       ".var/app"
 
+      ".cache/awww"
       ".cache/nix"
       ".cache/typst"
+
+      ".config/btop"
+      ".config/foot"
+      ".config/fuzzel"
+      ".config/niri"
+      ".config/matugen"
+      ".config/swaync"
+      ".config/waybar"
 
       ".config/zen"
       ".config/vesktop"
@@ -48,7 +57,6 @@
       ".local/share/containers"
 
       ".local/state/wireplumber"
-      ".local/state/noctalia"
     ];
     files = [];
   };

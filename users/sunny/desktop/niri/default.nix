@@ -7,7 +7,9 @@
     "niri/config.kdl".source = ./config.kdl;
   };
 
-  packages = [
-    (pkgs.callPackage "${inputs.niri-float-sticky}/package.nix" {})
+  packages = with pkgs; [
+    (callPackage "${inputs.niri-float-sticky}/package.nix" {})
+    gtklock
+    swayidle
   ];
 }

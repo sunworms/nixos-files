@@ -1,0 +1,69 @@
+[config]
+version_check = false
+fallback_color = "#ffbf9b"
+prefer = "closest-to-fallback"
+caching = false
+expr_prefix = "{{"
+expr_postfix = "}}"
+block_prefix = "<*"
+block_postfix = "*>"
+contrast = 1.0
+source_color_index = 1
+
+[config.wallpaper]
+set = true
+command = "awww img --transition-type none {{ image }}"
+
+[templates.btop]
+input_path = '~/.config/matugen/templates/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -USR2 btop || true'
+
+[templates.foot]
+input_path = "~/.config/matugen/templates/foot"
+output_path = "~/.config/foot/colors"
+
+[templates.fuzzel]
+input_path = "~/.config/matugen/templates/fuzzel.ini"
+output_path = "~/.config/fuzzel/colors.ini"
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+post_hook = '''
+dconf write /org/gnome/desktop/interface/gtk-theme "''"
+dconf write /org/gnome/desktop/interface/gtk-theme "'adw-gtk3'"
+'''
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+post_hook = 'apply-gtk4-theme'
+
+[templates.niri]
+input_path = '~/.config/matugen/templates/niri-colors.kdl'
+output_path = '~/.config/niri/colors.kdl'
+post_hook = 'niri msg action load-config-file'
+
+[templates.neovim]
+input_path = "~/.config/matugen/templates/nvim-colors.json"
+output_path = "~/.config/matugen/themes/nvim-colors.json"
+post_hook = "pkill -SIGUSR1 nvim"
+
+[templates.swaync]
+input_path = "~/.config/matugen/templates/swaync.css"
+output_path = "~/.config/swaync/colors.css"
+post_hook = "swaync-client -rs"
+
+[templates.waybar]
+input_path = "~/.config/matugen/templates/waybar.css"
+output_path = "~/.config/waybar/colors.css"
+post_hook = "pkill -SIGUSR2 waybar"
+
+[templates.zen_browser_chrome]
+input_path = "~/.config/matugen/templates/zen-userChrome.css"
+output_path = "~/.config/matugen/themes/zen-userChrome.css"
+
+[templates.zen_browser_content]
+input_path = "~/.config/matugen/templates/zen-userContent.css"
+output_path = "~/.config/matugen/themes/zen-userContent.css"

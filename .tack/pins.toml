@@ -26,13 +26,8 @@ url = "git+https://git.gay/sunworms/neovim-config"
 [inputs.sops-nix]
 url = "gh:Mic92/sops-nix"
 
-[inputs.noctalia]
-url = "gh:noctalia-dev/noctalia/cachix"
-exclude_follow = ["nixpkgs"]
-
 [inputs.watt]
 url = "gh:NotAShelf/watt"
 
 [inputs.niri-float-sticky]
 url = "gh:probeldev/niri-float-sticky"
-type = "fetch"
