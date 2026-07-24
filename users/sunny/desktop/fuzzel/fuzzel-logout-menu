@@ -13,7 +13,7 @@ case "$SELECTION" in
     *"Logout")
         niri msg action quit --skip-confirmation ;;
     *"Suspend")
-        gtklock && systemctl suspend ;;
+        systemctl suspend ;;
     *"Reboot")
         systemctl reboot ;;
     *"Power Off")
