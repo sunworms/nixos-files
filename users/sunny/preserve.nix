@@ -25,9 +25,9 @@
       ".config/btop"
       ".config/foot"
       ".config/fuzzel"
+      ".config/mako"
       ".config/niri"
       ".config/matugen"
-      ".config/swaync"
       ".config/waybar"
 
       ".config/zen"
