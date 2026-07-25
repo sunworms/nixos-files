@@ -1,0 +1,7 @@
+    "custom/network": {
+        "exec": "network-script",
+        "return-type": "json",
+        "restart-interval": 2,
+        "format": "{}",
+        "on-click-right": "nm-connection-editor"
+    },
