@@ -155,13 +155,10 @@ window-rule {
     default-floating-position x=1000 y=250
 }
 
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-
-    // block-out-from "screencast"
+window-rule {
+    match app-id="wl_mirror"
+    open-fullscreen true
+    open-focused false
 }
 
 window-rule {

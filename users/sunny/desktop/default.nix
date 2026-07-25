@@ -8,6 +8,8 @@
     ./matugen
     ./waybar
     ./fuzzel
+    ./scripts
+    ./desktop-files.nix
   ];
 
   files = {
