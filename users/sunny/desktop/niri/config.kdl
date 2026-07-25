@@ -178,6 +178,11 @@ layer-rule {
     place-within-backdrop true
 }
 
+layer-rule {
+    match namespace="^waybar$"
+    opacity 0.9999
+}
+
 prefer-no-csd
 
 recent-windows {
