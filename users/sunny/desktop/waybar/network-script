@@ -1,0 +1,72 @@
+human() {
+    local bytes=$1
+    local units=(B KiB MiB GiB TiB)
+    local i=0
+
+    while (( bytes >= 1024 && i < ${#units[@]} - 1 )); do
+        bytes=$((bytes * 10 / 1024))
+        ((i++))
+    done
+
+    printf "%d.%d %s/s" $((bytes / 10)) $((bytes % 10)) "${units[$i]}"
+}
+
+iface=""
+rx_prev=0
+tx_prev=0
+interval=2
+
+while true; do
+    new_iface=$(ip route show default | awk '{print $5; exit}')
+
+    if [[ -z $new_iface ]]; then
+        printf '{"text":"","tooltip":"Disconnected"}\n'
+        iface=""
+        sleep 1
+        continue
+    fi
+
+    if [[ $iface != "$new_iface" ]]; then
+        iface="$new_iface"
+        rx_prev=$(<"/sys/class/net/$iface/statistics/rx_bytes")
+        tx_prev=$(<"/sys/class/net/$iface/statistics/tx_bytes")
+        sleep 1
+        continue
+    fi
+
+    rx_now=$(<"/sys/class/net/$iface/statistics/rx_bytes")
+    tx_now=$(<"/sys/class/net/$iface/statistics/tx_bytes")
+
+    rx=$(((rx_now - rx_prev) / interval))
+    tx=$(((tx_now - tx_prev) / interval))
+
+    rx_prev=$rx_now
+    tx_prev=$tx_now
+
+    if [[ -d /sys/class/net/$iface/wireless ]]; then
+        icon="󰖩"
+
+        ssid=$(iwgetid -r)
+
+        signal_dbm=$(iw dev "$iface" link | awk -F': ' '/signal:/ {print int($2)}')
+
+        if [[ -n $signal_dbm ]]; then
+            signal=$(( 2 * (signal_dbm + 100) ))
+            ((signal < 0)) && signal=0
+            ((signal > 100)) && signal=100
+        else
+            signal="?"
+        fi
+
+        tooltip="${ssid:-Wi-Fi} (${signal}%)\nDown: $(human "$rx")\nUp: $(human "$tx")"
+    else
+        icon="󰈀"
+        tooltip="$iface\nDown: $(human "$rx")\nUp: $(human "$tx")"
+    fi
+
+    printf '{"text":"%s","tooltip":"%s"}\n' \
+        "$icon" \
+        "$tooltip"
+
+    sleep "$interval"
+done
