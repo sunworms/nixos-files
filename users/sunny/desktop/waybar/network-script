@@ -4,11 +4,23 @@ human() {
     local i=0
 
     while (( bytes >= 1024 && i < ${#units[@]} - 1 )); do
-        bytes=$((bytes * 10 / 1024))
+        bytes=$((bytes / 1024))
         ((i++))
     done
 
-    printf "%d.%d %s/s" $((bytes / 10)) $((bytes % 10)) "${units[$i]}"
+    if (( i == 0 ));
+    then
+        printf "%d %s/s" "$bytes" "${units[$i]}"
+    else
+        local integer_part=$((bytes))
+        local formatted
+        formatted=$(awk -v b="$1" -v idx="$i" 'BEGIN {
+            val = b
+            for (j = 0; j < idx; j++) val /= 1024
+            printf "%.1f", val
+        }')
+        printf "%s %s/s" "$formatted" "${units[$i]}"
+    fi
 }
 
 iface=""
