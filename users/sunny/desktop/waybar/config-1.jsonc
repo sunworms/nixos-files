@@ -98,7 +98,6 @@
         "format-plugged": "",
         "format-full": "󰁹",
         "tooltip-format": "{capacity}% ({timeTo})",
-        "on-update": "bash -c 'if [ \"{status}\" = \"Discharging\" ] && [ {capacity} -le 20 ]; then notify-send -u critical -h string:x-canonical-private-synchronous:bat-notify \"Battery Low\" \"Level at {capacity}%\"; elif [ \"{status}\" = \"Full\" ] || [ {capacity} -ge 99 ]; then notify-send -u normal -h string:x-canonical-private-synchronous:bat-notify \"Battery Charged\" \"Battery is fully charged!\"; fi'"
     },
     "custom/network": {
         "exec": "network-script",
