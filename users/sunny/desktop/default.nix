@@ -4,10 +4,10 @@
     ./foot
     ./fish
     ./niri
+    ./mako
     ./matugen
     ./waybar
     ./fuzzel
-    ./swaync
   ];
 
   files = {
