@@ -34,5 +34,6 @@
     qpdfview
     rclone
     vesktop
+    gpu-screen-recorder-gtk
   ];
 }
