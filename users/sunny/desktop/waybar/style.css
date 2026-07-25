@@ -76,28 +76,28 @@ window#waybar.empty #window,
 }
 
 #cpu.warning {
-    color: @tertiary;
+    color: @error;
 }
 #cpu.critical {
-    color: @error;
+    color: @error_container;
 }
 
 #memory.warning {
-    color: @tertiary;
+    color: @error;
 }
 #memory.critical {
-    color: @error;
+    color: @error_container;
 }
 
 #temperature.critical {
-    color: @error;
+    color: @error_container;
 }
 
 #battery.warning {
-    color: @tertiary;
+    color: @error;
 }
 #battery.critical:not(.charging) {
-    color: @error;
+    color: @error_container;
 }
 
 #custom-expand-icon {
