@@ -44,8 +44,8 @@ tooltip label {
 #wireplumber.source,
 #window,
 #custom-launcher {
-    margin: 4px;
-    padding: 4px 5px;
+    margin: 2px;
+    padding: 4px;
     border-radius: 6px;
 
     background: @surface_container;
@@ -84,7 +84,7 @@ window#waybar.empty #window,
 }
 
 #custom-expand-icon {
-    margin: 4px;
+    margin: 2px;
     padding: 4px;
     color: @on_surface;
 }
@@ -96,5 +96,4 @@ window#waybar.empty #window,
 
 #quick-settings:hover .quick-settings-drawer {
     opacity: 1;
-    margin-left: 4px;
 }
