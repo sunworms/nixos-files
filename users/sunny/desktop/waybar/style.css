@@ -75,13 +75,29 @@ window#waybar.empty #window,
     opacity: 0.6;
 }
 
-#battery.warning {
+#cpu.warning {
+    color: @tertiary;
+}
+#cpu.critical {
     color: @error;
 }
 
-#battery.critical {
+#memory.warning {
+    color: @tertiary;
+}
+#memory.critical {
     color: @error;
-    font-weight: bold;
+}
+
+#temperature.critical {
+    color: @error;
+}
+
+#battery.warning {
+    color: @tertiary;
+}
+#battery.critical:not(.charging) {
+    color: @error;
 }
 
 #custom-expand-icon {
