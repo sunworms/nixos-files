@@ -28,6 +28,7 @@ tooltip label {
     color: @on_surface;
 }
 
+#cava,
 #workspaces button,
 #taskbar button,
 #clock,
