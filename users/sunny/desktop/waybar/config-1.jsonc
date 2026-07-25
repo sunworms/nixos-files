@@ -66,23 +66,39 @@
     },
     "cpu": {
         "format": "",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        },
         "on-click-right": "foot btop"
     },
     "memory": {
         "format": "",
+        "states": {
+            "warning": 70,
+            "critical": 90
+        },
         "on-click-right": "foot btop"
     },
     "temperature": {
         "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+        "critical-threshold": 75,
         "format": "{icon}",
         "format-icons": [ "", "", "", "", "" ],
         "tooltip-format": "{temperatureC}°C"
     },
     "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 20
+        },
         "format": "{icon}",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
         "format-charging": "󰂄",
-        "tooltip-format": "{capacity}% ({timeTo})"
+        "format-plugged": "",
+        "format-full": "󰁹",
+        "tooltip-format": "{capacity}% ({timeTo})",
+        "on-update": "bash -c 'if [ \"{status}\" = \"Discharging\" ] && [ {capacity} -le 20 ]; then notify-send -u critical -h string:x-canonical-private-synchronous:bat-notify \"Battery Low\" \"Level at {capacity}%\"; elif [ \"{status}\" = \"Full\" ] || [ {capacity} -ge 99 ]; then notify-send -u normal -h string:x-canonical-private-synchronous:bat-notify \"Battery Charged\" \"Battery is fully charged!\"; fi'"
     },
     "custom/network": {
         "exec": "network-script",
