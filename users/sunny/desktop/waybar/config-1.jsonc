@@ -1,3 +1,88 @@
+{
+    "layer": "top",
+    "position": "left",
+
+    "modules-left": [
+        "custom/launcher",
+        "niri/window",
+    ],
+
+    "modules-center": [
+        "niri/workspaces"
+    ],
+
+    "modules-right": [
+        "group/quick-settings",
+    ],
+
+    "custom/launcher": {
+        "format": "",
+        "on-click": "fuzzel",
+        "on-click-right": "fuzzel-logout-menu"
+    },
+    "niri/workspaces": {
+        "format": "{index}"
+    },
+    "niri/window": {
+        "format": "{title}",
+        "max-length": 30,
+        "rotate": 90
+    },
+
+    "group/quick-settings": {
+        "orientation": "vertical",
+        "drawer": {
+            "transition-duration": 300,
+            "children-class": "quick-settings-drawer",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/expand-icon",
+            "idle_inhibitor",
+            "cpu",
+            "memory",
+            "temperature",
+            "battery",
+            "custom/network",
+            "backlight",
+            "wireplumber#sink",
+            "wireplumber#source"
+        ],
+    },
+    "custom/expand-icon": {
+        "format": "",
+        "tooltip": false,
+        "rotate": 270
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        },
+        "tooltip-format-activated": "Idle inhibitor: on",
+        "tooltip-format-deactivated": "Idle inhibitor: off"
+    },
+    "cpu": {
+        "format": "",
+        "on-click-right": "foot btop"
+    },
+    "memory": {
+        "format": "",
+        "on-click-right": "foot btop"
+    },
+    "temperature": {
+        "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
+        "format": "{icon}",
+        "format-icons": [ "", "", "", "", "" ],
+        "tooltip-format": "{temperatureC}°C"
+    },
+    "battery": {
+        "format": "{icon}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "format-charging": "󰂄",
+        "tooltip-format": "{capacity}% ({timeTo})"
+    },
     "custom/network": {
         "exec": "network-script",
         "return-type": "json",
@@ -5,3 +90,24 @@
         "format": "{}",
         "on-click-right": "nm-connection-editor"
     },
+    "backlight": {
+        "format": "{icon}",
+        "format-icons": ["󰛩", "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"],
+        "tooltip-format": "Brightness: {percent}%"
+    },
+    "wireplumber#sink": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "format-muted": "󰖁",
+        "tooltip-format": "Volume: {volume}%",
+        "on-click-right": "pwvucontrol"
+    },
+    "wireplumber#source": {
+        "node-type": "Audio/Source",
+        "format": "󰍬",
+        "format-muted": "󰍭",
+        "on-click-right": "pwvucontrol"
+    },
+}

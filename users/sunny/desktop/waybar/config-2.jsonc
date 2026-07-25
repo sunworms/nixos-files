@@ -1,0 +1,65 @@
+{
+    "layer": "top",
+    "position": "right",
+
+    "modules-left": [
+        "wlr/taskbar"
+    ],
+
+    "modules-center": [
+        "clock",
+    ],
+
+    "modules-right": [
+        "mpris",
+        "tray",
+    ],
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close"
+    },
+    "tray": {
+        "spacing": 8
+    },
+  "mpris": {
+      "format": "{player_icon} {dynamic}",
+      "format-paused": "{status_icon} {dynamic}",
+      "max-length": 30,
+      "player-icons": {
+        "default": "▶"
+      },
+      "status-icons": {
+        "paused": "⏸"
+      },
+      "rotate": 270
+    },
+    "clock": {
+        "format": "{:%a, %b %d %Y - %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+          "mode"             : "year",
+          "mode-mon-col"     : 3,
+          "weeks-pos"        : "right",
+          "first-day-of-week": 1,
+          "on-scroll"        : 1,
+          "on-click-right"   : "mode",
+          "format": {
+            "months":     "<span color='#ffead3'><b>{}</b></span>",
+            "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+            "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+            "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+            "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+          }
+        },
+        "actions": {
+          "on-click-right": "mode",
+          "on-click-forward": "tz_up",
+          "on-click-backward": "tz_down",
+          "on-scroll-up": "shift_up",
+          "on-scroll-down": "shift_down"
+        },
+        "rotate": 270
+    },
+}

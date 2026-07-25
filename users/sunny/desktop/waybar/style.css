@@ -45,7 +45,7 @@ tooltip label {
 #window,
 #custom-launcher {
     margin: 4px;
-    padding: 4px 8px;
+    padding: 4px 5px;
     border-radius: 6px;
 
     background: @surface_container;
