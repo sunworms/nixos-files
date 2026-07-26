@@ -2,9 +2,11 @@
   pkgs,
   inputs,
   ...
-}: {
+}: let
+  inherit (inputs.niri-nix.lib) validatedConfigFor mkNiriKDL;
+in {
   xdg.config.files = {
-    "niri/config.kdl".source = ./config.kdl;
+    "niri/config.kdl".source = validatedConfigFor pkgs.niri (mkNiriKDL (import ./config.nix));
   };
 
   packages = [

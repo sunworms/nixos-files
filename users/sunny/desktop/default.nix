@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   imports = [
     ./foot
     ./fish
@@ -11,9 +15,12 @@
   };
 
   xdg.config.files = {
-    "git/config".source = ./gitconfig;
-    "hyfetch.json".source = ./hyfetch.json;
-    "mimeapps.list".source = ./mimeapps.list;
+    "git/config".source = (pkgs.formats.gitIni {}).generate "gitconfig" (import ./gitconfig.nix);
+    "hyfetch.json".source = (pkgs.formats.json {}).generate "hyfetch.json" (import ./hyfetch.nix);
+    "mimeapps.list".source = (pkgs.formats.ini {}).generate "mimeapps.list" {
+      "Default Applications" = (import ./mimeapps.nix {inherit lib;}).defaultApps;
+      "Added Associations" = (import ./mimeapps.nix {inherit lib;}).addedApps;
+    };
   };
 
   packages = with pkgs; [

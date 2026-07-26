@@ -26,6 +26,9 @@ url = "git+https://git.gay/sunworms/neovim-config"
 [inputs.sops-nix]
 url = "gh:Mic92/sops-nix"
 
+[inputs.niri-nix]
+url = "git+https://codeberg.org/BANanaD3V/niri-nix"
+
 [inputs.noctalia]
 url = "gh:noctalia-dev/noctalia"
 

@@ -31,6 +31,14 @@
     "narHash": "sha256-786xACvNk6ZE6l40gQ7wRsgqGp64Z4MseMX7gzMMNtg=",
     "lastModified": 1778574608
   },
+  "niri-nix": {
+    "type": "git",
+    "url": "https://codeberg.org/BANanaD3V/niri-nix",
+    "ref": "HEAD",
+    "rev": "baa586fdd74462f853e478cd3f2c60c57cbd08ae",
+    "narHash": "sha256-yO+L8iSAjvDA6gm+9Jmr+pLt9FkGU5j5mT1DdFpz9Wk=",
+    "lastModified": 1784938247
+  },
   "nixpkgs": {
     "type": "tarball",
     "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1040357.e2587caef70c/nixexprs.tar.xz",
