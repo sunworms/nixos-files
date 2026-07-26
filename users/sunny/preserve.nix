@@ -35,7 +35,7 @@
       ".config/qBittorrent"
 
       ".local/share/flatpak"
-      ".local/share/gvfs-metadata"
+      ".local/share/zathura"
       ".local/share/fish"
       ".local/share/azahar-emu"
       ".local/share/eden"

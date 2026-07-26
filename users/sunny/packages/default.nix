@@ -31,8 +31,7 @@
     yt-dlp
     satty
     qbittorrent
-    papers
-    qpdfview
+    zathura
     rclone
     vesktop
     gpu-screen-recorder-gtk
