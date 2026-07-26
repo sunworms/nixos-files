@@ -7,5 +7,5 @@
     '')
   ];
 
-  xdg.config.files."foot/foot.ini".source = ./foot.ini;
+  xdg.config.files."foot/foot.ini".source = (pkgs.formats.ini {}).generate "foot.ini" (import ./foot.nix);
 }
