@@ -347,6 +347,10 @@ community_palette = "GruvboxAlt"
 [wallpaper]
 directory = "/home/sunny/Pictures/walls"
 
+    [widget.audio_visualizer]
+    centered = false
+    color_2 = "secondary"
+
     [widget.clock]
     format = "{:%a, %d.%m.%y, %H:%M}"
     tooltip_format = "{:%a, %d %b %Y, %H:%M:%S}"
