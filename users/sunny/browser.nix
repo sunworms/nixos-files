@@ -182,11 +182,11 @@ in {
     '';
 
     "zen/sunny/chrome/userChrome.css".text = ''
-      @import "/home/sunny/.config/matugen/themes/zen-userChrome.css";
+      @import "/home/sunny/.cache/noctalia/zen-browser/zen-userChrome.css";
     '';
 
     "zen/sunny/chrome/userContent.css".text = ''
-      @import "/home/sunny/.config/matugen/themes/zen-userContent.css";
+      @import "/home/sunny/.cache/noctalia/zen-browser/zen-userContent.css";
     '';
   };
 }

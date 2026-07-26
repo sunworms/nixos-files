@@ -1,15 +1,9 @@
 {pkgs, ...}: {
   imports = [
-    ./btop
     ./foot
     ./fish
     ./niri
-    ./mako
-    ./matugen
-    ./waybar
-    ./fuzzel
-    ./scripts
-    ./desktop-files.nix
+    ./noctalia
   ];
 
   files = {
@@ -27,9 +21,5 @@
     git
     xwayland-satellite
     nautilus
-    awww
-    playerctl
-    brightnessctl
-    pwvucontrol
   ];
 }

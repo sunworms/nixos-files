@@ -16,7 +16,7 @@
 
   packages = with pkgs; [
     # nvim
-    (import "${inputs.neovim-config}/legacy.nix" {inherit pkgs;})
+    inputs.neovim-config.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # image viewer
     imv

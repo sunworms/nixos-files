@@ -1,6 +1,32 @@
-{config, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   networking.networkmanager.enable = true;
   networking.firewall.checkReversePath = "loose";
+
+  networking.networkmanager.dispatcherScripts = [
+    {
+      source = pkgs.writeShellScript "warp-dispatcher" ''
+        IFACE="$1"
+        ACTION="$2"
+
+        case "$IFACE" in
+          eth*|en*|wl*|wlan*)
+            if [ "$ACTION" = "up" ]; then
+              ${pkgs.networkmanager}/bin/nm-online -q -t 30 &&
+                ${pkgs.networkmanager}/bin/nmcli connection up warp
+            fi
+
+            if [ "$ACTION" = "down" ]; then
+              ${pkgs.networkmanager}/bin/nmcli connection down warp || true
+            fi
+            ;;
+        esac
+      '';
+    }
+  ];
 
   networking.networkmanager.ensureProfiles = {
     environmentFiles = [
