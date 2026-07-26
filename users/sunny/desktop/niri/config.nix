@@ -657,5 +657,8 @@
     };
   };
 
-  include = ["noctalia.kdl"];
+  include = {
+    _args = ["noctalia.kdl"];
+    _props.optional = true;
+  };
 }
