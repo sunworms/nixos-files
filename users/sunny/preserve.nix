@@ -18,25 +18,13 @@
       ".ssh"
       ".var/app"
 
-      ".cache/awww"
       ".cache/nix"
       ".cache/typst"
-
-      ".config/btop"
-      ".config/foot"
-      ".config/fuzzel"
-      ".config/mako"
-      ".config/niri"
-      ".config/matugen"
-      ".config/waybar"
 
       ".config/zen"
       ".config/vesktop"
       ".config/rclone"
       ".config/fish"
-
-      ".config/gtk-3.0"
-      ".config/gtk-4.0"
 
       ".config/azahar-emu"
       ".config/eden"
@@ -57,6 +45,7 @@
       ".local/share/containers"
 
       ".local/state/wireplumber"
+      ".local/state/noctalia"
     ];
     files = [];
   };

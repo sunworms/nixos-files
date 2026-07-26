@@ -11,8 +11,6 @@
 
   programs.fuse.userAllowOther = true;
 
-  programs.gpu-screen-recorder.enable = true;
-
   hardware.graphics = {
     enable = true;
     enable32Bit = true;

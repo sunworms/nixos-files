@@ -19,9 +19,9 @@
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "b5ee091f600fae06f593679b97b3416a8bbc351a",
-    "narHash": "sha256-hwDaHmp/Sd80mzNVMwZD0Fz2uGTomFs14yeHxPLeIto=",
-    "lastModified": 1784924971
+    "rev": "87ae1013631a2917714bb2153082ecf79576fa8f",
+    "narHash": "sha256-6Dr9FuDXaWQg5Z/dhUfPIvlZxU6PD1Zfl8Geo9Q6fSM=",
+    "lastModified": 1785070683
   },
   "niri-float-sticky": {
     "type": "github",
@@ -36,6 +36,14 @@
     "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1040357.e2587caef70c/nixexprs.tar.xz",
     "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
     "narHash": "sha256-vwxWgF+Gj276WznzGb1LxGsK/39HaQwgQXiU3EkC844="
+  },
+  "noctalia": {
+    "type": "github",
+    "owner": "noctalia-dev",
+    "repo": "noctalia",
+    "rev": "7c6e754827ad7ad3283f2aee4627c7fa476b3b82",
+    "narHash": "sha256-Wg5mJuvDV/lg3+rtRumdkH/dI/xsdutuKY6RpXl7QgU=",
+    "lastModified": 1785070321
   },
   "preservation": {
     "type": "github",
