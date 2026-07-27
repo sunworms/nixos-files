@@ -4,7 +4,7 @@ Folder structure of my NixOS configuration:
 ├── assets
 │   └── icons
 │       └── face
-├── default.nix
+├── flake.nix
 ├── hosts
 │   └── motobook
 │       ├── configuration.nix
@@ -34,6 +34,7 @@ Folder structure of my NixOS configuration:
 │   └── packages
 │       ├── audio.nix
 │       ├── bluetooth.nix
+│       ├── chromium.nix
 │       ├── default.nix
 │       ├── desktop.nix
 │       ├── flatpaks.nix
@@ -46,25 +47,28 @@ Folder structure of my NixOS configuration:
         ├── desktop
         │   ├── default.nix
         │   ├── fish
-        │   │   ├── config.fish
+        │   │   ├── config.nix
         │   │   └── default.nix
         │   ├── foot
         │   │   ├── default.nix
-        │   │   └── foot.ini
-        │   ├── gitconfig
-        │   ├── hyfetch.json
-        │   ├── mimeapps.list
+        │   │   └── foot.nix
+        │   ├── gitconfig.nix
+        │   ├── hyfetch.nix
+        │   ├── mimeapps.nix
         │   ├── niri
-        │   │   ├── config.kdl
+        │   │   ├── config.nix
         │   │   └── default.nix
         │   └── noctalia
-        │       ├── config.toml
+        │       ├── config.nix
         │       ├── default.nix
         │       └── templates
-        │           └── matugen-template.lua
+        │           ├── matugen-template.lua
+        │           └── zathurarc
         ├── fonts
         │   ├── default.nix
-        │   └── fonts.conf
+        │   ├── fonts.nix
+        │   └── options.nix
+        ├── helium.nix
         ├── packages
         │   ├── browser-paths.patch
         │   ├── default.nix
@@ -76,5 +80,5 @@ Folder structure of my NixOS configuration:
         ├── ssh.nix
         └── theming.nix
 
-20 directories, 55 files
+20 directories, 59 files
 ```
