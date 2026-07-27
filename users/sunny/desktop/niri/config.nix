@@ -104,11 +104,20 @@
       default-column-width = {};
     }
     {
-      match._props.title = "(^Picture-in-Picture$|^Picture in picture$)";
+      match = [
+        {_props.title = "Picture-in-Picture";}
+        {_props.title = "Picture in picture";}
+      ];
       open-floating = true;
       default-floating-position._props = {
-        x = 850;
-        y = 175;
+        x = 1025;
+        y = 225;
+      };
+      default-column-width = {
+        fixed = 525;
+      };
+      default-window-height = {
+        fixed = 295;
       };
     }
     {
