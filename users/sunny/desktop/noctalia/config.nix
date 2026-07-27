@@ -387,7 +387,7 @@
     community_palette = "GruvboxAlt";
 
     templates = {
-      builtin_ids = ["foot" "gtk3" "gtk4" "niri"];
+      builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
       community_ids = [];
 
       user = {
