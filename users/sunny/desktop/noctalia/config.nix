@@ -341,6 +341,12 @@
       attach_session = true;
     };
 
+    launcher = {
+      app_grid = true;
+      compact = true;
+      sort_by_usage = false;
+    };
+
     session = {
       actions = [
         {
