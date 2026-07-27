@@ -23,5 +23,8 @@
 
     # other
     ripgrep
+    kanata
   ];
+
+  xdg.config.files."kanata/config.kbd".source = ./kanata.kbd;
 }

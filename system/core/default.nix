@@ -8,7 +8,6 @@
     ./battery.nix
     ./users.nix
     ./preserve.nix
-    ./kanata.nix
   ];
 
   # Time and locale
