@@ -11,9 +11,9 @@
     "type": "github",
     "owner": "feel-co",
     "repo": "hjem",
-    "rev": "08d2b170a74a102c230c9651d8989fe6b39dfad8",
-    "narHash": "sha256-EAadJywc5P9CSIB7212S5jpQX48aTfYUbsJeAIbQaVI=",
-    "lastModified": 1784896036
+    "rev": "26089c056ea561e695f74945f12872f24eb08e67",
+    "narHash": "sha256-wYo/odcGVHPpu78Y+EbINdfUDd30CWMpwC1UsN762Ck=",
+    "lastModified": 1785121190
   },
   "neovim-config": {
     "type": "git",
@@ -49,9 +49,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "7c6e754827ad7ad3283f2aee4627c7fa476b3b82",
-    "narHash": "sha256-Wg5mJuvDV/lg3+rtRumdkH/dI/xsdutuKY6RpXl7QgU=",
-    "lastModified": 1785070321
+    "rev": "1eb9dde9d9e78bbc7b6bc1619c1de70b646724e9",
+    "narHash": "sha256-klRyNcnNY+D1CHxH4qniEr5gBwa/lxQZaLHkZRAFhv8=",
+    "lastModified": 1785128489
   },
   "preservation": {
     "type": "github",
@@ -73,9 +73,9 @@
     "type": "github",
     "owner": "NotAShelf",
     "repo": "watt",
-    "rev": "f36fc9d756d11754e42876f47be25f270902109f",
-    "narHash": "sha256-7/qp6ZKAUVdoCU8DnDg7Y/cSW7ytZfXrWrex3+0zMuA=",
-    "lastModified": 1784625427
+    "rev": "a1b28eb2305e15266bcf69e8c39da0e91d7708f3",
+    "narHash": "sha256-Q0ZYPY5CH223ws+0CtQP1B0B/QkdM9JYIE6mR9lFUUk=",
+    "lastModified": 1785131374
   },
   "zen-browser": {
     "type": "github",
