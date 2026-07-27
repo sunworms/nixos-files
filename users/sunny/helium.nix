@@ -95,7 +95,7 @@ in
 
       mkdir --parents $out/bin
       makeWrapper $out/opt/helium/helium-wrapper $out/bin/helium \
-        --add-flags '--disk-cache-size=104857600' --add-flags '--media-cache-size=52428800' --prefix LD_LIBRARY_PATH : "${
+        --prefix LD_LIBRARY_PATH : "${
         lib.makeLibraryPath [
           libGL
           libva
@@ -104,7 +104,8 @@ in
           gtk3
           qt6.qtbase
         ]
-      }"
+      }
+      "
 
       mkdir --parents $out/share/applications
       cp $out/opt/helium/helium.desktop $out/share/applications/
