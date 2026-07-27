@@ -388,7 +388,7 @@
 
     templates = {
       builtin_ids = ["foot" "gtk3" "gtk4" "niri"];
-      community_ids = ["discord" "zen-browser"];
+      community_ids = [];
 
       user = {
         nvim-base16 = {

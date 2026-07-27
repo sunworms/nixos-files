@@ -53,4 +53,6 @@
     "/share/applications"
     "/share/fish"
   ];
+
+  environment.etc."chromium/policies/managed/default.json".source = (pkgs.formats.json {}).generate "chromium.json" (import ./chromium.nix);
 }

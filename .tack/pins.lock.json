@@ -76,13 +76,5 @@
     "rev": "a1b28eb2305e15266bcf69e8c39da0e91d7708f3",
     "narHash": "sha256-Q0ZYPY5CH223ws+0CtQP1B0B/QkdM9JYIE6mR9lFUUk=",
     "lastModified": 1785131374
-  },
-  "zen-browser": {
-    "type": "github",
-    "owner": "0xc000022070",
-    "repo": "zen-browser-flake",
-    "rev": "a8f9b6d014c9cfe0615dccb2bc7808713f6e62c2",
-    "narHash": "sha256-Mz4G81HXJlUtHoJtA31D+Ob7uma2BX7E/y7F9QazuFc=",
-    "lastModified": 1784985989
   }
 }
