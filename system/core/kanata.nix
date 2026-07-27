@@ -1,4 +1,4 @@
-{...}: {
+{lib, ...}: {
   services.kanata = {
     enable = true;
     keyboards = {
@@ -6,5 +6,10 @@
         configFile = "${./kanata.kbd}";
       };
     };
+  };
+
+  systemd.services.kanata-default = {
+    after = lib.mkForce ["graphical.target"];
+    wantedBy = lib.mkForce ["graphical.target"];
   };
 }
