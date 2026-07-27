@@ -181,10 +181,10 @@
 
     widget = {
       "login-box" = {
-        box_height = 70.0;
+        box_height = 103.0;
         box_width = 400.0;
         cx = 823.0;
-        cy = 910.0;
+        cy = 806.0;
         output = "eDP-1";
         rotation = 0.0;
         type = "login_box";
@@ -196,6 +196,7 @@
           input_opacity = 1.0;
           input_radius = 6.0;
           show_login_button = true;
+          layout = "compact";
         };
       };
 
@@ -268,10 +269,10 @@
       };
 
       media = {
-        box_height = 192.0;
-        box_width = 384.0;
+        box_height = 0.0;
+        box_width = 0.0;
         cx = 823.0;
-        cy = 498.5;
+        cy = 290.5;
         output = "eDP-1";
         rotation = 0.0;
         type = "media_player";
@@ -281,7 +282,7 @@
         box_height = 128.0;
         box_width = 208.0;
         cx = 823.0;
-        cy = 726.5;
+        cy = 578.5;
         output = "eDP-1";
         rotation = 0.0;
         type = "clock";
@@ -296,8 +297,8 @@
       weather = {
         box_height = 128.0;
         box_width = 208.0;
-        cx = 1063.0;
-        cy = 726.5;
+        cx = 1095.0;
+        cy = 578.5;
         output = "eDP-1";
         rotation = 0.0;
         type = "weather";
@@ -311,8 +312,8 @@
       sysmon = {
         box_height = 0.0;
         box_width = 0.0;
-        cx = 587.0;
-        cy = 725.5;
+        cx = 551.0;
+        cy = 578.5;
         output = "eDP-1";
         rotation = 0.0;
         type = "sysmon";
