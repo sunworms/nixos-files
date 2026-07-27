@@ -22,16 +22,16 @@
 
   mkAbbrs =
     lib.concatStringsSep "\n"
-    (lib.mapAttrsToList (k: v: "abbr --add -- ${k} ${lib.escapeShellArg v}") abbrs);
+    (lib.mapAttrsToList (k: v: "    abbr --add -- ${k} ${lib.escapeShellArg v}") abbrs);
 
   mkAliases =
     lib.concatStringsSep "\n"
-    (lib.mapAttrsToList (k: v: "alias ${k} ${lib.escapeShellArg v}") aliases);
+    (lib.mapAttrsToList (k: v: "    alias ${k} ${lib.escapeShellArg v}") aliases);
 in
   pkgs.writeText "config.fish" ''
     if status is-interactive
-        ${mkAbbrs}
-        ${mkAliases}
+    ${mkAbbrs}
+    ${mkAliases}
         set -g fish_greeting
         set -g fish_key_bindings fish_vi_key_bindings
     end
