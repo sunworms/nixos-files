@@ -33,7 +33,6 @@
     qbittorrent
     zathura
     rclone
-    vesktop
     gpu-screen-recorder-gtk
   ];
 }

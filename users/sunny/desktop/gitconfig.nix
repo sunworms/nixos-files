@@ -127,6 +127,6 @@
   };
 
   web = {
-    browser = "zen-beta";
+    browser = "helium";
   };
 }
