@@ -1,4 +1,4 @@
-{...}: {
+{lib, ...}: {
   services.flatpak = {
     enable = true;
     remotes = {
@@ -8,5 +8,10 @@
     packages = [
       "flathub:app/org.vinegarhq.Sober//stable"
     ];
+  };
+
+  systemd.services.manage-flatpaks-activation = {
+    after = lib.mkForce [];
+    wants = lib.mkForce [];
   };
 }
