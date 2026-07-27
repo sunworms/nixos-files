@@ -1,4 +1,8 @@
-{pkgs, ...}: let
+{
+  pkgs,
+  config,
+  ...
+}: let
   iosevkaLean = pkgs.iosevka.override {
     set = "term-lean";
     privateBuildPlan = {
@@ -80,24 +84,33 @@
     paths = map (pkg: "${pkg}/share/fonts") fontPackages;
   };
 in {
-  xdg.data.files."fonts" = {
-    source = combinedFonts;
+  imports = [
+    ./options.nix
+  ];
+
+  fonts = {
+    sansSerif = "Noto Sans";
+    serif = "Noto Serif";
+    monospace = "IosevkaTermLean Nerd Font Mono";
+    emoji = "Noto Color Emoji";
   };
 
-  xdg.config.files."fontconfig/fonts.conf".source = ./fonts.conf;
+  xdg.data.files."fonts".source = combinedFonts;
+
+  xdg.config.files."fontconfig/fonts.conf".text = import ./fonts.nix {inherit config;};
 
   systemd.services.refresh-font-cache = {
     description = "Refresh user fontconfig cache on home activation";
 
-    after = ["hjem-activate@sunny.service"];
-    wants = ["hjem-activate@sunny.service"];
+    after = ["basic.target"];
 
-    restartTriggers = [combinedFonts];
+    restartTriggers = ["${pkgs.writeText "font-trigger" (toString combinedFonts)}"];
 
     wantedBy = ["default.target"];
 
     serviceConfig = {
       Type = "oneshot";
+      RemainAfterExit = true;
       ExecStart = "${pkgs.fontconfig}/bin/fc-cache -f";
     };
   };
