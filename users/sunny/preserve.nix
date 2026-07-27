@@ -19,7 +19,12 @@
       ".var/app"
 
       ".cache/nix"
+      ".cache/mnw"
+      ".cache/fish"
       ".cache/typst"
+      ".cache/noctalia"
+      ".cache/fontconfig"
+      ".cache/net.imput.helium"
 
       ".config/net.imput.helium"
       ".config/rclone"
