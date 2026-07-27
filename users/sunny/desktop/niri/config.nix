@@ -96,7 +96,7 @@
     VISUAL = "nvim";
     TERMINAL = "foot";
     GTK_THEME = "adw-gtk3";
-    QT_QPA_PLATFORMTHEME = "gtk3";
+    QT_QPA_PLATFORMTHEME = "qt6ct";
   };
 
   animations = {};
