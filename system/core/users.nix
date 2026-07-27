@@ -15,6 +15,7 @@ in {
       "wheel"
       "networkmanager"
       "input"
+      "uinput"
     ];
     hashedPasswordFile = config.sops.secrets."sunny/password".path;
     shell = pkgs.fish;
