@@ -48,6 +48,8 @@ in {
     '')
     libsForQt5.qt5ct
     qt6Packages.qt6ct
+    xsettingsd
+    xrdb
   ];
 
   files = {

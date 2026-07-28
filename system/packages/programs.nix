@@ -42,10 +42,6 @@
 
     fastfetch
     wl-clipboard
-
-    # xwayland theming
-    xsettingsd
-    xrdb
   ];
 
   environment.pathsToLink = [
