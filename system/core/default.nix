@@ -25,6 +25,9 @@
     Defaults lecture="never"
   '';
 
+  # Disable command-not-found
+  programs.command-not-found.enable = false;
+
   # Logind config
   services.logind.settings.Login = {
     HandlePowerKey = "ignore";
