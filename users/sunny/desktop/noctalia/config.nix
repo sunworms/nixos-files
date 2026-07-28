@@ -42,7 +42,7 @@
           enabled = true;
           fill = "surface_variant";
           id = "net";
-          members = ["network" "bluetooth"];
+          members = ["network" "toggle" "bluetooth"];
           opacity = 0.9;
           padding = 6.0;
           radius = 8.0;
@@ -528,6 +528,7 @@
       "noctalia/mpvpaper"
       "oldirtty/color_picker"
       "elijaharch/wl-screen-mirror"
+      "cleboost/hotspot"
     ];
   };
 }
