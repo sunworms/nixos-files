@@ -2,12 +2,23 @@
   description = "A normal NixOS flake";
 
   outputs = {...} @ args: let
-    # Use inputs from tack, instead of flake inputs
     inputs = (import ./.tack) {
       overrides = args.tackOverrides or {};
     };
   in {
-    nixosConfigurations.motobook = inputs.nixpkgs.lib.nixosSystem {
+    nixosConfigurations.motobook = inputs.nixpkgs-patcher.lib.nixosSystem {
+      nixpkgsPatcher = {
+        nixpkgs = inputs.nixpkgs;
+        patches = pkgs:
+          with pkgs; [
+            (fetchurl {
+              name = "niri-fix.patch";
+              url = "https://github.com/NixOS/nixpkgs/pull/546004.diff";
+              hash = "sha256-dGgYOPiUf+dxtopuq2sg2BJClB0BjQ76GiXdVhQAbbs=";
+            })
+          ];
+      };
+
       modules = [
         ./hosts/motobook/configuration.nix
         inputs.preservation.nixosModules.default
