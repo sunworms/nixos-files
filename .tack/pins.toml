@@ -34,6 +34,3 @@ url = "gh:NotAShelf/watt"
 
 [inputs.niri-float-sticky]
 url = "gh:probeldev/niri-float-sticky"
-
-[inputs.nixpkgs-patcher]
-url = "gh:gepbird/nixpkgs-patcher"
