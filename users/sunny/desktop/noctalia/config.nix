@@ -33,7 +33,7 @@
       radius_bottom_left = 10;
       radius_top_left = 10;
       start = ["taskbar"];
-      center = ["clock"];
+      center = ["workspaces"];
       end = ["group:net" "group:notif" "group:mpv"];
       thickness = 30;
 
@@ -74,7 +74,7 @@
       capsule_opacity = 0.9;
       capsule_radius = 8.0;
       end = ["tray" "group:sysmon" "group:osd"];
-      center = ["workspaces"];
+      center = ["clock"];
       start = ["group:misc" "group:music"];
       position = "left";
       widget_spacing = 10;
