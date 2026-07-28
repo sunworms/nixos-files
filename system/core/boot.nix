@@ -1,8 +1,4 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   boot = {
     loader = {
       systemd-boot = {
@@ -11,7 +7,7 @@
       };
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = inputs.cachyos-kernel.legacyPackages.${pkgs.stdenv.hostPlatform.system}.linuxPackages-cachyos-bore-lto-x86_64-v3;
+    kernelPackages = pkgs.linuxPackages_latest;
     initrd.systemd.enable = true;
     zswap.enable = true;
   };

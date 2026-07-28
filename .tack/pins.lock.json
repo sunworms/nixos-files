@@ -1,12 +1,4 @@
 {
-  "cachyos-kernel": {
-    "type": "github",
-    "owner": "xddxdd",
-    "repo": "nix-cachyos-kernel",
-    "rev": "352b768201fa050f617e92a89b1b7b84822903e2",
-    "narHash": "sha256-eH1lMD3BQwYU7BvTQ16PO0pbdXIqVOG2cgxRxWF7SzI=",
-    "lastModified": 1785178839
-  },
   "flatpaks": {
     "type": "github",
     "owner": "in-a-dil-emma",
