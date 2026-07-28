@@ -17,8 +17,8 @@ url = "gh:feel-co/hjem"
 [inputs.neovim-config]
 url = "git+https://git.gay/sunworms/neovim-config"
 
-[inputs.sops-nix]
-url = "gh:Mic92/sops-nix"
+[inputs.agenix]
+url = "gh:ryantm/agenix"
 
 [inputs.niri-nix]
 url = "git+https://codeberg.org/BANanaD3V/niri-nix"
