@@ -394,9 +394,8 @@
     community_palette = "GruvboxAlt";
 
     templates = {
-      builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
-      community_ids = [];
       builtin_ids = ["kitty" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
+      community_ids = ["discord" "zen-browser"];
 
       user = {
         nvim-base16 = {
