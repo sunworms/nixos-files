@@ -16,17 +16,17 @@
       permissions = "600";
     };
     ".ssh/aur" = {
-      source = osConfig.age.secrets.aur-key.path;
+      source = osConfig.sops.secrets."sunny/aur_key".path;
       type = "copy";
       permissions = "600";
     };
     ".ssh/gitgay" = {
-      source = osConfig.age.secrets.gitgay-key.path;
+      source = osConfig.sops.secrets."sunny/gitgay_key".path;
       type = "copy";
       permissions = "600";
     };
     ".ssh/github" = {
-      source = osConfig.age.secrets.github-key.path;
+      source = osConfig.sops.secrets."sunny/github_key".path;
       type = "copy";
       permissions = "600";
     };

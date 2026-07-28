@@ -4,7 +4,7 @@
     ./boot.nix
     ./virtualisation.nix
     ./network.nix
-    ./age.nix
+    ./sops.nix
     ./battery.nix
     ./users.nix
   ];
