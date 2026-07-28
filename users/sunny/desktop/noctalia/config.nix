@@ -504,6 +504,10 @@
     mirror = {
       type = "elijaharch/wl-screen-mirror:mirror";
     };
+
+    toggle = {
+      type = "cleboost/hotspot:toggle";
+    };
   };
 
   battery = {
