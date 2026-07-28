@@ -30,7 +30,7 @@
 
   networking.networkmanager.ensureProfiles = {
     environmentFiles = [
-      config.age.secrets.warp-private-key.path
+      config.sops.secrets."root/warp-private-key".path
     ];
 
     profiles = {
