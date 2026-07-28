@@ -396,6 +396,7 @@
     templates = {
       builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
       community_ids = [];
+      builtin_ids = ["kitty" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
 
       user = {
         nvim-base16 = {
