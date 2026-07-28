@@ -2,6 +2,7 @@
   appimageTools,
   lib,
   fetchurl,
+  qt6Packages,
 }: let
   sourcesJson = builtins.fromJSON (builtins.readFile ../../../_sources/generated.json);
 
@@ -19,9 +20,15 @@
   };
 
   appimageContents = appimageTools.extract {inherit pname version src;};
+
+  qtPluginPrefix = qt6Packages.qtbase.qtPluginPrefix;
 in
   appimageTools.wrapType2 {
     inherit pname version src;
+
+    extraPackages = [
+      qt6Packages.qt6ct
+    ];
 
     extraInstallCommands = ''
       mkdir -p $out/share/applications
@@ -30,4 +37,9 @@ in
         --replace-fail 'Exec=pcsx2-qt' 'Exec=pcsx2' \
         --replace-fail 'Icon=PCSX2' 'Icon=${pcsx2-icon}'
     '';
+
+    extraBwrapArgs = [
+      "--setenv QT_QPA_PLATFORMTHEME qt6ct"
+      "--setenv QT_PLUGIN_PATH ${qt6Packages.qt6ct}/${qtPluginPrefix}"
+    ];
   }
