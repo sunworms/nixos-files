@@ -124,7 +124,10 @@
       };
     }
     {
-      match._props.app-id = "^org.pwmt.zathura$";
+      match = [
+        {_props.app-id = "^org.pwmt.zathura$";}
+        {_props.app-id = "^kitty$";}
+      ];
       background-effect = {
         blur = true;
         xray = true;
@@ -166,15 +169,15 @@
     "Mod+Shift+Slash".show-hotkey-overlay = [];
     "Mod+T" = {
       _props = {
-        hotkey-overlay-title = "Open a Terminal: foot";
+        hotkey-overlay-title = "Open a Terminal: kitty";
       };
-      spawn = "foot";
+      spawn = "kitty";
     };
     "Mod+Shift+T" = {
       _props = {
         hotkey-overlay-title = "Layers";
       };
-      spawn = ["foot" "sh" "-c" "niri msg layers; fish"];
+      spawn = ["kitty" "sh" "-c" "niri msg layers; fish"];
     };
     "Mod+A" = {
       _props = {
