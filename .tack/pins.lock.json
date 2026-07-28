@@ -19,9 +19,9 @@
     "type": "github",
     "owner": "feel-co",
     "repo": "hjem",
-    "rev": "26089c056ea561e695f74945f12872f24eb08e67",
-    "narHash": "sha256-wYo/odcGVHPpu78Y+EbINdfUDd30CWMpwC1UsN762Ck=",
-    "lastModified": 1785121190
+    "rev": "7dc2f4b1ee69c9ae3f223ab1fa4e95b93f72bc68",
+    "narHash": "sha256-QF9moiMJtq6OVOmzJhpjM78tlMAC5J+tvNWaOz4v9wY=",
+    "lastModified": 1785216864
   },
   "neovim-config": {
     "type": "git",
@@ -49,9 +49,10 @@
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1040357.e2587caef70c/nixexprs.tar.xz",
-    "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
-    "narHash": "sha256-vwxWgF+Gj276WznzGb1LxGsK/39HaQwgQXiU3EkC844="
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1042126.624af665418d/nixexprs.tar.xz",
+    "rev": "624af665418d3c65d544145b4d34ad696439570e",
+    "narHash": "sha256-JmPsbx37jA7Qga36iij0jsbwV4PVRACnqoVroAt/cAc="
+  },
   "nixpkgs-patcher": {
     "type": "github",
     "owner": "gepbird",
@@ -64,9 +65,9 @@
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "1eb9dde9d9e78bbc7b6bc1619c1de70b646724e9",
-    "narHash": "sha256-klRyNcnNY+D1CHxH4qniEr5gBwa/lxQZaLHkZRAFhv8=",
-    "lastModified": 1785128489
+    "rev": "9e406c6cd0f704f7f3fd795171c89209d4d491be",
+    "narHash": "sha256-2hTB7OIpToEIzgEswU2oasOzQX6ljGJrxMvRB3gBdnA=",
+    "lastModified": 1785210083
   },
   "preservation": {
     "type": "github",
@@ -88,8 +89,8 @@
     "type": "github",
     "owner": "NotAShelf",
     "repo": "watt",
-    "rev": "a1b28eb2305e15266bcf69e8c39da0e91d7708f3",
-    "narHash": "sha256-Q0ZYPY5CH223ws+0CtQP1B0B/QkdM9JYIE6mR9lFUUk=",
-    "lastModified": 1785131374
+    "rev": "ea6143c75ce690484dcce95997244870ad4ce3f4",
+    "narHash": "sha256-oCdqwzYt5WZgxpnypBWHQyXnTC2jIhBuyUyr4VPAreU=",
+    "lastModified": 1785216303
   }
 }
