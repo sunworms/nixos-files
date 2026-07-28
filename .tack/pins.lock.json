@@ -52,6 +52,13 @@
     "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1040357.e2587caef70c/nixexprs.tar.xz",
     "rev": "e2587caef70cea85dd97d7daab492899902dbf5d",
     "narHash": "sha256-vwxWgF+Gj276WznzGb1LxGsK/39HaQwgQXiU3EkC844="
+  "nixpkgs-patcher": {
+    "type": "github",
+    "owner": "gepbird",
+    "repo": "nixpkgs-patcher",
+    "rev": "d2abed2b94b7955e05b4e2e8a9b8ac45597ecf94",
+    "narHash": "sha256-ZRlWPq2Qms6KbesJrj7cUe2GN7s8BZISfp9ZbrCi2x0=",
+    "lastModified": 1781789965
   },
   "noctalia": {
     "type": "github",
