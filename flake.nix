@@ -9,7 +9,6 @@
     nixosConfigurations.motobook = inputs.nixpkgs.lib.nixosSystem {
       modules = [
         ./hosts/motobook/configuration.nix
-        inputs.preservation.nixosModules.default
         inputs.hjem.nixosModules.default
         inputs.sops-nix.nixosModules.default
         inputs.flatpaks.nixosModules.default
