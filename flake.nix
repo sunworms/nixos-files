@@ -10,7 +10,7 @@
       modules = [
         ./hosts/motobook/configuration.nix
         inputs.hjem.nixosModules.default
-        inputs.sops-nix.nixosModules.default
+        inputs.agenix.nixosModules.default
         inputs.flatpaks.nixosModules.default
         {
           nixpkgs = {
