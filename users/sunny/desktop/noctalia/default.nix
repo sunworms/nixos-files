@@ -7,6 +7,8 @@
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # needed for noctalia
+    iw
+    iproute2
     gpu-screen-recorder
     hyprpicker
     # grim
