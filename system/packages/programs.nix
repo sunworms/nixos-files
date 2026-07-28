@@ -1,8 +1,4 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   programs.git = {
     enable = true;
     lfs.enable = true;
@@ -46,7 +42,6 @@
 
     fastfetch
     wl-clipboard
-    inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   environment.pathsToLink = [
