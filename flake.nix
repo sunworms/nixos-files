@@ -6,19 +6,7 @@
       overrides = args.tackOverrides or {};
     };
   in {
-    nixosConfigurations.motobook = inputs.nixpkgs-patcher.lib.nixosSystem {
-      nixpkgsPatcher = {
-        nixpkgs = inputs.nixpkgs;
-        patches = pkgs:
-          with pkgs; [
-            (fetchurl {
-              name = "niri-fix.patch";
-              url = "https://github.com/NixOS/nixpkgs/pull/546004.diff";
-              hash = "sha256-dGgYOPiUf+dxtopuq2sg2BJClB0BjQ76GiXdVhQAbbs=";
-            })
-          ];
-      };
-
+    nixosConfigurations.motobook = inputs.nixpkgs.lib.nixosSystem {
       modules = [
         ./hosts/motobook/configuration.nix
         inputs.preservation.nixosModules.default
@@ -28,7 +16,22 @@
         {
           nixpkgs = {
             config.allowUnfree = true;
-            overlays = [];
+            overlays = [
+              (final: prev: {
+                niri = prev.niri.override {
+                  libdisplay-info = prev.libdisplay-info.overrideAttrs (old: {
+                    version = "0.3.0";
+                    src = prev.fetchFromGitLab {
+                      domain = "gitlab.freedesktop.org";
+                      owner = "emersion";
+                      repo = "libdisplay-info";
+                      rev = "0.3.0";
+                      hash = "sha256-nXf2KGovNKvcchlHlzKBkAOeySMJXgxMpbi5z9gLrdc=";
+                    };
+                  });
+                };
+              })
+            ];
           };
 
           hjem = {
