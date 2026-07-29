@@ -398,10 +398,14 @@
       community_ids = ["discord" "zen-browser"];
 
       user = {
-        nvim-base16 = {
-          input_path = "~/.config/noctalia/templates/matugen-template.lua";
-          output_path = "~/.config/matugen/neovim.lua";
-          post_hook = "pkill -SIGUSR1 nvim";
+        neovim-colors = {
+          input_path = "~/.config/noctalia/templates/neovim-colors.lua";
+          output_path = "~/.config/nvim/colors/base46-matugen.lua";
+        };
+
+        neovim-lualine = {
+          input_path = "~/.config/noctalia/templates/neovim-lualine.lua";
+          output_path = "~/.config/nvim/lua/lualine/themes/base46-matugen.lua";
         };
 
         zathura = {
