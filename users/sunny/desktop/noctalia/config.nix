@@ -395,7 +395,7 @@
 
     templates = {
       builtin_ids = ["kitty" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
-      community_ids = ["discord" "zen-browser"];
+      community_ids = ["discord" "pywalfox"];
 
       user = {
         nvim-base16 = {
