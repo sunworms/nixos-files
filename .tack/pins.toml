@@ -17,9 +17,6 @@ url = "gh:feel-co/hjem"
 [inputs.neovim-config]
 url = "git+https://git.gay/sunworms/neovim-config"
 
-[inputs.zen-browser]
-url = "gh:0xc000022070/zen-browser-flake"
-
 [inputs.sops-nix]
 url = "gh:Mic92/sops-nix"
 
