@@ -3,20 +3,19 @@
   lib,
   fetchurl,
   qt6Packages,
+  sources,
 }: let
-  sourcesJson = builtins.fromJSON (builtins.readFile ../../../_sources/generated.json);
-
   pcsx2-icon = fetchurl {
     url = "https://avatars.githubusercontent.com/u/6278711";
     hash = "sha256-6Pb8WnFtQ/YihH5C8EwgeZv1GaqeKi3/yXBMj6R8LHI=";
   };
 
   pname = "pcsx2";
-  version = lib.removePrefix "v" sourcesJson.pcsx2.version;
+  version = lib.removePrefix "v" sources.pcsx2.version;
 
   src = fetchurl {
-    url = sourcesJson.pcsx2.src.url;
-    hash = sourcesJson.pcsx2.src.sha256;
+    url = sources.pcsx2.src.url;
+    hash = sources.pcsx2.src.sha256;
   };
 
   appimageContents = appimageTools.extract {inherit pname version src;};
