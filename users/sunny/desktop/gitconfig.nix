@@ -127,6 +127,6 @@
   };
 
   web = {
-    browser = "zen-twilight";
+    browser = "helium";
   };
 }
