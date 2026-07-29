@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  sources,
+  ...
+}: {
   imports = [
     ./services.nix
   ];
@@ -10,8 +14,8 @@
     '')
     wineWow64Packages.unstableFull
     winetricks
-    (callPackage ./eden.nix {})
-    (callPackage ./pcsx2.nix {})
+    (callPackage ./eden.nix {inherit sources;})
+    (callPackage ./pcsx2.nix {inherit sources;})
     ppsspp-sdl-wayland
     melonds
     azahar

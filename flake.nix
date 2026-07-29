@@ -5,6 +5,8 @@
     inputs = (import ./.tack) {
       overrides = args.tackOverrides or {};
     };
+
+    sources = builtins.fromJSON (builtins.readFile ./_sources/generated.json);
   in {
     nixosConfigurations.motobook = inputs.nixpkgs.lib.nixosSystem {
       modules = [
@@ -35,12 +37,12 @@
 
           hjem = {
             clobberByDefault = true;
-            specialArgs = {inherit inputs;};
+            specialArgs = {inherit inputs sources;};
           };
         }
       ];
       specialArgs = {
-        inherit inputs;
+        inherit inputs sources;
       };
     };
   };

@@ -3,11 +3,10 @@
   makeDesktopItem,
   fetchurl,
   lib,
+  sources,
 }: let
-  sourcesJson = builtins.fromJSON (builtins.readFile ../../../_sources/generated.json);
-
   pname = "eden";
-  rawVersion = sourcesJson.eden.version;
+  rawVersion = sources.eden.version;
   baseName = baseNameOf rawVersion;
   version = lib.removePrefix "Eden-Linux-" baseName;
 
@@ -38,8 +37,8 @@ in
       ;
 
     src = fetchurl {
-      url = sourcesJson.eden.src.url;
-      hash = sourcesJson.eden.src.sha256;
+      url = sources.eden.src.url;
+      hash = sources.eden.src.sha256;
     };
 
     dontUnpack = true;
