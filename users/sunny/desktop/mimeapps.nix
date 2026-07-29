@@ -20,7 +20,7 @@
       "text/rhtml"
     ];
 
-    "zen-twilight.desktop" = [
+    "helium.desktop" = [
       "text/html"
       "x-scheme-handler/http"
       "x-scheme-handler/https"
