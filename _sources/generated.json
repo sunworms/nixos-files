@@ -14,21 +14,6 @@
         },
         "version": "v1785092351.39763e7321/Eden-Linux-39763e7321"
     },
-    "helium": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "helium",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-BmYX3xKpzVsyxRxmypMpXRnp6+Z5wLcaEY8aEYN+Zz0=",
-            "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.14.9.1/helium-0.14.9.1-x86_64_linux.tar.xz"
-        },
-        "version": "0.14.9.1"
-    },
     "pcsx2": {
         "cargoLock": null,
         "date": null,
