@@ -38,5 +38,6 @@
     zathura
     rclone
     gpu-screen-recorder-gtk
+    vesktop
   ];
 }
