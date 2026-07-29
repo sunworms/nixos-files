@@ -66,7 +66,7 @@
     }
   ];
   DefaultSearchProviderEnabled = true;
-  DefaultSearchProviderName = "Google (No AI)";
-  DefaultSearchProviderSearchURL = "https://www.google.com/search?q={searchTerms}&udm=14";
-  DefaultSearchProviderSuggestURL = "https://www.google.com/complete/search?q={searchTerms}&udm=14";
+  DefaultSearchProviderName = "DuckDuckGo (No AI)";
+  DefaultSearchProviderSearchURL = "https://noai.duckduckgo.com/?q={searchTerms}";
+  DefaultSearchProviderSuggestURL = "https://noai.duckduckgo.com/?q={searchTerms}&type=list";
 }
