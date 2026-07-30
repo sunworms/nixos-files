@@ -15,16 +15,16 @@
   };
 
   osd = {
-    background_opacity = 0.9;
+    background_opacity = 1.0;
   };
 
   bar = {
     order = ["default" "right"];
 
     right = {
-      background_opacity = 0.9;
+      background_opacity = 1.0;
       capsule = true;
-      capsule_opacity = 0.9;
+      capsule_opacity = 1.0;
       capsule_radius = 8.0;
       enabled = true;
       margin_ends = 0;
@@ -43,7 +43,7 @@
           fill = "surface_variant";
           id = "net";
           members = ["network" "toggle" "bluetooth"];
-          opacity = 0.9;
+          opacity = 1.0;
           padding = 6.0;
           radius = 8.0;
         }
@@ -52,7 +52,7 @@
           fill = "surface_variant";
           id = "notif";
           members = ["notifications" "clipboard"];
-          opacity = 0.9;
+          opacity = 1.0;
           padding = 6.0;
           radius = 8.0;
         }
@@ -61,7 +61,7 @@
           fill = "surface_variant";
           id = "mpv";
           members = ["recorder" "widget" "mirror"];
-          opacity = 0.9;
+          opacity = 1.0;
           padding = 6.0;
           radius = 8.0;
         }
@@ -69,9 +69,9 @@
     };
 
     default = {
-      background_opacity = 0.9;
+      background_opacity = 1.0;
       capsule = true;
-      capsule_opacity = 0.9;
+      capsule_opacity = 1.0;
       capsule_radius = 8.0;
       end = ["tray" "group:sysmon" "group:osd"];
       center = ["clock"];
@@ -93,7 +93,7 @@
           fill = "surface_variant";
           id = "sysmon";
           members = ["cpu" "ram" "temp"];
-          opacity = 0.9;
+          opacity = 1.0;
           padding = 6.0;
           radius = 8.0;
         }
@@ -101,7 +101,7 @@
           fill = "surface_variant";
           id = "osd";
           members = ["volume" "brightness" "battery"];
-          opacity = 0.9;
+          opacity = 1.0;
           padding = 6.0;
           radius = 8.0;
         }
@@ -109,7 +109,7 @@
           fill = "surface_variant";
           id = "music";
           members = ["media" "cat" "audio_visualizer"];
-          opacity = 0.9;
+          opacity = 1.0;
           padding = 6.0;
           radius = 8.0;
         }
@@ -117,7 +117,7 @@
           fill = "surface_variant";
           id = "misc";
           members = ["launcher" "wallpaper" "mpvpaper"];
-          opacity = 0.9;
+          opacity = 1.0;
           padding = 6.0;
           radius = 8.0;
         }
@@ -149,13 +149,13 @@
 
   dock = {
     auto_hide = true;
-    background_opacity = 0.9;
+    background_opacity = 1.0;
     enabled = false;
     position = "top";
   };
 
   notification = {
-    background_opacity = 0.9;
+    background_opacity = 1.0;
   };
 
   lockscreen_widgets = {
@@ -191,7 +191,7 @@
 
         settings = {
           background_color = "surface_variant";
-          background_opacity = 0.88;
+          background_opacity = 1.0;
           background_radius = 12.0;
           input_opacity = 1.0;
           input_radius = 6.0;
