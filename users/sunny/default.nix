@@ -31,6 +31,7 @@ in {
     ripdrag
     ripgrep
     fzf
+    bat
     kanata
   ];
 
