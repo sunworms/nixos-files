@@ -1,10 +1,6 @@
-{
-  pkgs,
-  lib,
-  ...
-}: {
+{pkgs, ...}: {
   xdg.config.files = {
-    "fish/config.fish".source = import ./config.nix {inherit pkgs lib;};
+    "fish/config.fish".source = ./config.fish;
   };
 
   packages = with pkgs.fishPlugins; [
