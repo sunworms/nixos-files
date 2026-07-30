@@ -22,12 +22,9 @@ Folder structure of my NixOS configuration:
 │   │   ├── battery.nix
 │   │   ├── boot.nix
 │   │   ├── default.nix
-│   │   ├── kanata.kbd
-│   │   ├── kanata.nix
 │   │   ├── keys.nix
 │   │   ├── network.nix
 │   │   ├── nix-settings.nix
-│   │   ├── preserve.nix
 │   │   ├── sops.nix
 │   │   ├── users.nix
 │   │   └── virtualisation.nix
@@ -47,8 +44,10 @@ Folder structure of my NixOS configuration:
         ├── desktop
         │   ├── default.nix
         │   ├── fish
-        │   │   ├── config.nix
-        │   │   └── default.nix
+        │   │   ├── config.fish
+        │   │   ├── default.nix
+        │   │   └── functions
+        │   │       └── y.fish
         │   ├── foot
         │   │   ├── default.nix
         │   │   └── foot.nix
@@ -62,13 +61,15 @@ Folder structure of my NixOS configuration:
         │       ├── config.nix
         │       ├── default.nix
         │       └── templates
-        │           ├── matugen-template.lua
+        │           ├── neovim-colors.lua
+        │           ├── neovim-lualine.lua
         │           └── zathurarc
         ├── fonts
         │   ├── default.nix
         │   ├── fonts.nix
         │   └── options.nix
         ├── helium.nix
+        ├── kanata.kbd
         ├── packages
         │   ├── browser-paths.patch
         │   ├── default.nix
@@ -76,9 +77,17 @@ Folder structure of my NixOS configuration:
         │   ├── ice-ssb.nix
         │   ├── pcsx2.nix
         │   └── services.nix
-        ├── preserve.nix
         ├── ssh.nix
-        └── theming.nix
+        ├── theming.nix
+        └── yazi
+            ├── default.nix
+            ├── init.lua
+            ├── keymaps
+            │   ├── default.nix
+            │   ├── gvfs.nix
+            │   ├── misc.nix
+            │   └── sudo.nix
+            └── yazi.nix
 
-20 directories, 59 files
+23 directories, 65 files
 ```
