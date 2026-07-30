@@ -17,6 +17,25 @@
       "qt6"
     ]
   );
+  gtkFiles = builtins.listToAttrs (
+    map
+    (gtk: {
+      name = "${gtk}/settings.ini";
+      value.text = ''
+        [Settings]
+        gtk-theme-name=adw-gtk3
+        gtk-icon-theme-name=Adwaita
+        gtk-font-name=Noto Sans 11
+        gtk-cursor-theme-name=volantes_cursors
+        gtk-cursor-theme-size=24
+        gtk-application-prefer-dark-theme=1
+      '';
+    })
+    [
+      "gtk-3.0"
+      "gtk-4.0"
+    ]
+  );
 in {
   xdg.config.files =
     {
@@ -28,29 +47,18 @@ in {
         [General]
         presentationInfo=4
       '';
-    }
-    // qtctFiles;
 
-  packages = with pkgs; [
-    adw-gtk3
-    volantes-cursors
-    adwaita-icon-theme
-    (writeShellScriptBin "apply-gtk-settings" ''
-      ${dconf}/bin/dconf write /org/gnome/desktop/interface/gtk-theme "'adw-gtk3'"
-      ${dconf}/bin/dconf write /org/gnome/desktop/interface/icon-theme "'Adwaita'"
-      ${dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-theme "'volantes_cursors'"
-      ${dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-size 24
-      ${dconf}/bin/dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
-      ${dconf}/bin/dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'small-plus'"
-      ${dconf}/bin/dconf write /org/gnome/nautilus/preferences/default-folder-viewer "'icon-view'"
-      ${dconf}/bin/dconf write /org/gnome/nautilus/preferences/migrated-gtk-settings true
-      ${dconf}/bin/dconf write /org/gtk/gtk4/settings/file-chooser/show-hidden true
-    '')
-    libsForQt5.qt5ct
-    qt6Packages.qt6ct
-    xsettingsd
-    xrdb
-  ];
+      "gtk-3.0/gtk.css".text = ''
+        @import url("noctalia.css");
+      '';
+
+      "gtk-4.0/gtk.css".text = ''
+        @import url("file://${pkgs.adw-gtk3}/share/themes/adw-gtk3/gtk-4.0/gtk.css");
+        @import url("noctalia.css");
+      '';
+    }
+    // qtctFiles
+    // gtkFiles;
 
   files = {
     ".icons/default/index.theme".text = ''
@@ -59,10 +67,13 @@ in {
       Comment=Default Cursor Theme
       Inherits=volantes_cursors
     '';
-
-    ".Xresources".text = ''
-      Xcursor.theme:  volantes_cursors
-      Xcursor.size:   24
-    '';
   };
+
+  packages = with pkgs; [
+    adw-gtk3
+    volantes-cursors
+    adwaita-icon-theme
+    libsForQt5.qt5ct
+    qt6Packages.qt6ct
+  ];
 }
