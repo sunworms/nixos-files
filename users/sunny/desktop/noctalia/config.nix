@@ -389,9 +389,9 @@
 
   theme = {
     builtin = "Noctalia";
-    source = "wallpaper";
+    source = "community";
     wallpaper_scheme = "faithful";
-    community_palette = "GruvboxAlt";
+    community_palette = "Catppuccin Lavender";
 
     templates = {
       builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
