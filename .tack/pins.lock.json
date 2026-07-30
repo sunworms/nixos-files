@@ -19,9 +19,9 @@
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "889887166a424680f3de1be0b7361fef11ed4a6c",
-    "narHash": "sha256-oAfFr+mWryH2KBXl5oQGyXvscaEKj+fpdLGDkqDVCYU=",
-    "lastModified": 1785416758
+    "rev": "015148a50aad6cad3a60efa311d37727def3cafc",
+    "narHash": "sha256-lcYD5txGw7bbq+VwV7UqQQ2ziOob6fh8XOI01F1hw3I=",
+    "lastModified": 1785426409
   },
   "niri-float-sticky": {
     "type": "github",
