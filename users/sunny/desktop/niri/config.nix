@@ -96,6 +96,7 @@
     VISUAL = "nvim";
     TERMINAL = "foot";
     GTK_THEME = "adw-gtk3";
+    GTK_USE_PORTAL = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
   };
 
@@ -131,6 +132,16 @@
       background-effect = {
         blur = true;
         xray = true;
+      };
+    }
+    {
+      match._props.app-id = "xdg_filechooser";
+      open-floating = true;
+      default-column-width = {
+        fixed = 900;
+      };
+      default-window-height = {
+        fixed = 600;
       };
     }
     {
