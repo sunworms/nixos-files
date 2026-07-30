@@ -66,13 +66,11 @@
 
   spawn-sh-at-startup = [
     {_args = ["niri-float-sticky -title 'Picture-in-Picture|Picture in picture'"];}
-    {_args = ["sleep 0.5 && xrdb -merge ~/.Xresources"];}
     {_args = ["sleep 0.5 && kanata --cfg ~/.config/kanata/config.kbd"];}
   ];
 
   spawn-at-startup = [
     {_args = ["noctalia" "--daemon"];}
-    {_args = ["apply-gtk-settings"];}
   ];
 
   hotkey-overlay = {
