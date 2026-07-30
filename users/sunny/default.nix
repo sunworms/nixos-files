@@ -36,6 +36,7 @@ in {
 
   xdg.config.files = {
     "kanata/config.kbd".source = ./kanata.kbd;
+
     "xdg-desktop-portal/niri-portals.conf".text = ''
       [preferred]
       default=gnome;gtk
@@ -45,7 +46,7 @@ in {
     "xdg-desktop-portal-termfilechooser/config".text = ''
       [filechooser]
       env=PATH='${launcherDeps}/bin'
-      env=TERMCMD='${pkgs.kitty}/bin/kitty --class=xdg_filechooser'
+      env=TERMCMD='${pkgs.foot}/bin/foot --app-id=xdg_filechooser'
       cmd='${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh'
       default_dir=$HOME
     '';

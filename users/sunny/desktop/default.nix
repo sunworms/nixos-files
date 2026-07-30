@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    ./kitty
+    ./foot
     ./fish
     ./niri
     ./noctalia
