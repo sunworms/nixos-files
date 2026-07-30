@@ -27,6 +27,5 @@
     hyfetch
     git
     xwayland-satellite
-    nautilus
   ];
 }
