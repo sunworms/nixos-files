@@ -6,6 +6,10 @@
       "image/vnd.djvu"
     ];
 
+    "yazi.desktop" = [
+      "inode/directory"
+    ];
+
     "nvim.desktop" = [
       "text/plain"
       "text/x-markdown"
