@@ -43,7 +43,8 @@
     };
 
     shadow = {
-      softness = 30;
+      on = [];
+      softness = 20;
       spread = 5;
       offset._props = {
         x = 0;
@@ -120,15 +121,6 @@
       };
       default-window-height = {
         fixed = 295;
-      };
-    }
-    {
-      match = [
-        {_props.app-id = "^org.pwmt.zathura$";}
-      ];
-      background-effect = {
-        blur = true;
-        xray = true;
       };
     }
     {
