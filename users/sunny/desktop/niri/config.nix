@@ -125,7 +125,6 @@
     {
       match = [
         {_props.app-id = "^org.pwmt.zathura$";}
-        {_props.app-id = "^kitty$";}
       ];
       background-effect = {
         blur = true;
@@ -178,15 +177,15 @@
     "Mod+Shift+Slash".show-hotkey-overlay = [];
     "Mod+T" = {
       _props = {
-        hotkey-overlay-title = "Open a Terminal: kitty";
+        hotkey-overlay-title = "Open a Terminal: foot";
       };
-      spawn = "kitty";
+      spawn = "foot";
     };
     "Mod+Shift+T" = {
       _props = {
         hotkey-overlay-title = "Layers";
       };
-      spawn = ["kitty" "sh" "-c" "niri msg layers; fish"];
+      spawn = ["foot" "sh" "-c" "niri msg layers; fish"];
     };
     "Mod+A" = {
       _props = {

@@ -394,7 +394,7 @@
     community_palette = "GruvboxAlt";
 
     templates = {
-      builtin_ids = ["kitty" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
+      builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
       community_ids = ["discord" "zen-browser"];
 
       user = {
