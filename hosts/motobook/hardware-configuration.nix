@@ -19,7 +19,10 @@
     "sd_mod"
     "rtsx_pci_sdmmc"
   ];
-  boot.kernelModules = ["kvm-intel"];
+  boot.kernelModules = [
+    "kvm-intel"
+    "intel_vpu"
+  ];
   boot.extraModulePackages = [];
 
   fileSystems."/" = {
