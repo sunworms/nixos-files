@@ -1,12 +1,4 @@
 {
-  "flatpaks": {
-    "type": "github",
-    "owner": "in-a-dil-emma",
-    "repo": "declarative-flatpak",
-    "rev": "841b6e3ff33d73f63555ecca777b81369fe39350",
-    "narHash": "sha256-VHIqXC5eKeY4fNRMId7F1rg4sJhG/ZIX62TksPkTkVg=",
-    "lastModified": 1782495309
-  },
   "hjem": {
     "type": "github",
     "owner": "feel-co",
