@@ -9,7 +9,7 @@
 }: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
-    (modulesPath + "/hardware/cpu/intel-npu.nix")
+    #(modulesPath + "/hardware/cpu/intel-npu.nix")
   ];
 
   boot.initrd.availableKernelModules = [
@@ -53,6 +53,6 @@
   ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.intel.npu.enable = true;
+  #hardware.cpu.intel.npu.enable = true;
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
