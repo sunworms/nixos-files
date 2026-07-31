@@ -10,68 +10,40 @@ function M.setup()
 		base05 = "{{colors.on_surface.default.hex}}",
 		base06 = "{{colors.on_surface.default.hex}}",
 		base07 = "{{colors.on_background.default.hex}}",
-		base08 = "{{colors.error.default.hex}}",
+
+		base08 = "{{colors.secondary.default.hex}}",
 		base09 = "{{colors.tertiary.default.hex}}",
-		base0A = "{{colors.secondary.default.hex}}",
+		base0A = "{{colors.tertiary_container.default.hex}}",
 		base0B = "{{colors.primary.default.hex}}",
 		base0C = "{{colors.tertiary_fixed_dim.default.hex}}",
 		base0D = "{{colors.primary_fixed_dim.default.hex}}",
 		base0E = "{{colors.secondary_fixed_dim.default.hex}}",
-		base0F = "{{colors.error_container.default.hex}}",
+		base0F = "{{colors.source_color.default.hex}}",
 	})
 
-	local function set_hl_multiple(groups, value)
-		for _, v in pairs(groups) do
-			vim.api.nvim_set_hl(0, v, value)
-		end
-	end
+	M.setup_treesitter()
+end
 
-	vim.api.nvim_set_hl(0, "CursorLine", {
-		bg = "{{colors.surface_container_highest.default.hex}}",
-	})
+function M.setup_treesitter()
+	local set = vim.api.nvim_set_hl
 
-	vim.api.nvim_set_hl(0, "Visual", {
-		bg = "{{colors.secondary_container.default.hex}}",
-		fg = "{{colors.on_secondary_container.default.hex}}",
-	})
+	set(0, "String", { fg = "{{colors.primary.default.hex}}" })
+	set(0, "Identifier", { fg = "{{colors.on_surface.default.hex}}" })
+	set(0, "Function", { fg = "{{colors.primary_fixed_dim.default.hex}}", bold = true })
+	set(0, "Keyword", { fg = "{{colors.secondary.default.hex}}", italic = true })
+	set(0, "Comment", { fg = "{{colors.outline.default.hex}}", italic = true })
 
-	set_hl_multiple({ "Keyword", "TSKeyword", "TSKeywordFunction", "TSRepeat", "Statement" }, {
-		fg = "{{colors.primary.default.hex}}",
-		bold = true,
-	})
+	set(0, "@variable", { fg = "{{colors.on_surface.default.hex}}" })
+	set(0, "@variable.builtin", { fg = "{{colors.secondary.default.hex}}" })
+	set(0, "@property", { fg = "{{colors.tertiary.default.hex}}" })
+	set(0, "@parameter", { fg = "{{colors.on_surface_variant.default.hex}}" })
 
-	set_hl_multiple({ "Comment", "TSComment" }, {
-		fg = "{{colors.on_surface_variant.default.hex}}",
-		italic = true,
-	})
+	set(0, "@string.special.url", { fg = "{{colors.tertiary.default.hex}}", underline = true })
+	set(0, "@string.path", { fg = "{{colors.primary.default.hex}}" })
 
-	set_hl_multiple({ "Function", "TSFunction", "Method", "TSMethod" }, {
-		fg = "{{colors.secondary.default.hex}}",
-	})
-
-	set_hl_multiple({ "String", "TSString" }, {
-		fg = "{{colors.tertiary.default.hex}}",
-	})
-
-	set_hl_multiple({ "Number", "Float", "Boolean", "Constant", "TSConstant" }, {
-		fg = "{{colors.tertiary_fixed.default.hex}}",
-	})
-
-	set_hl_multiple({ "Type", "TSType", "Structure" }, {
-		fg = "{{colors.secondary_fixed.default.hex}}",
-	})
-
-	set_hl_multiple({ "DiagnosticError", "ErrorMsg" }, {
-		fg = "{{colors.error.default.hex}}",
-	})
-
-	set_hl_multiple({ "DiagnosticWarn", "WarningMsg" }, {
-		fg = "{{colors.secondary_fixed_dim.default.hex}}",
-	})
-
-	set_hl_multiple({ "DiagnosticInfo", "DiagnosticHint" }, {
-		fg = "{{colors.primary_fixed_dim.default.hex}}",
-	})
+	set(0, "Error", { fg = "{{colors.error.default.hex}}" })
+	set(0, "@error", { fg = "{{colors.error.default.hex}}" })
+	set(0, "DiagnosticError", { fg = "{{colors.error.default.hex}}" })
 end
 
 return M
