@@ -34,7 +34,6 @@ Folder structure of my NixOS configuration:
 │       ├── chromium.nix
 │       ├── default.nix
 │       ├── desktop.nix
-│       ├── flatpaks.nix
 │       ├── portals.nix
 │       └── programs.nix
 └── users
@@ -55,14 +54,33 @@ Folder structure of my NixOS configuration:
         │   ├── hyfetch.nix
         │   ├── mimeapps.nix
         │   ├── niri
-        │   │   ├── config.nix
+        │   │   ├── config
+        │   │   │   ├── default.nix
+        │   │   │   ├── environment.nix
+        │   │   │   ├── input.nix
+        │   │   │   ├── layer-rules.nix
+        │   │   │   ├── layout.nix
+        │   │   │   ├── misc.nix
+        │   │   │   ├── other-binds.nix
+        │   │   │   ├── startup.nix
+        │   │   │   ├── user-binds.nix
+        │   │   │   └── window-rules.nix
         │   │   └── default.nix
         │   └── noctalia
-        │       ├── config.nix
+        │       ├── config
+        │       │   ├── bar.nix
+        │       │   ├── default.nix
+        │       │   ├── idle.nix
+        │       │   ├── lockscreen.nix
+        │       │   ├── plugins.nix
+        │       │   ├── shell.nix
+        │       │   ├── theme.nix
+        │       │   ├── various.nix
+        │       │   └── widgets.nix
         │       ├── default.nix
         │       └── templates
-        │           ├── neovim-colors.lua
-        │           ├── neovim-lualine.lua
+        │           ├── matugen.lua
+        │           ├── variables.fish
         │           └── zathurarc
         ├── fonts
         │   ├── default.nix
@@ -87,7 +105,8 @@ Folder structure of my NixOS configuration:
             │   ├── gvfs.nix
             │   ├── misc.nix
             │   └── sudo.nix
+            ├── plugins.nix
             └── yazi.nix
 
-23 directories, 65 files
+25 directories, 82 files
 ```
