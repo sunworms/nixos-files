@@ -28,7 +28,7 @@
   ];
 
   xdg.config.files = {
-    "noctalia/config.toml".source = (pkgs.formats.toml {}).generate "config.toml" (import ./config.nix {inherit pkgs;});
+    "noctalia/config.toml".source = (pkgs.formats.toml {}).generate "config.toml" (import ./config {inherit pkgs;});
     "noctalia/templates".source = ./templates;
   };
 }
