@@ -398,7 +398,8 @@
       community_ids = ["discord" "zen-browser"];
 
       user = {
-        neovim-colors = {
+        /*
+          neovim-colors = {
           input_path = "~/.config/noctalia/templates/neovim-colors.lua";
           output_path = "~/.config/nvim/colors/base46-matugen.lua";
         };
@@ -407,6 +408,7 @@
           input_path = "~/.config/noctalia/templates/neovim-lualine.lua";
           output_path = "~/.config/nvim/lua/lualine/themes/base46-matugen.lua";
         };
+        */
 
         zathura = {
           input_path = "~/.config/noctalia/templates/zathurarc";
