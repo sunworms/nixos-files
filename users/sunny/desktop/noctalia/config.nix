@@ -86,7 +86,6 @@
       scale = 1.0;
       shadow = false;
       thickness = 30;
-      attach_panels = true;
 
       capsule_group = [
         {
@@ -339,7 +338,6 @@
       transparency_mode = "glass";
       clipboard_placement = "attached";
       launcher_placement = "attached";
-      attach_session = true;
     };
 
     launcher = {
@@ -448,20 +446,20 @@
     };
 
     cpu = {
-      display = "gauge";
-      show_label = false;
+      visualization = "gauge";
+      show_value = false;
       type = "sysmon";
     };
 
     ram = {
-      display = "gauge";
-      show_label = false;
+      visualization = "gauge";
+      show_value = false;
       stat = "ram_used";
       type = "sysmon";
     };
 
     temp = {
-      show_label = false;
+      show_value = false;
       stat = "cpu_temp";
       type = "sysmon";
     };
