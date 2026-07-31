@@ -10,6 +10,11 @@
       community_ids = ["yazi"];
 
       user = {
+        variables = {
+          input_path = "~/.config/noctalia/templates/variables.fish";
+          output_path = "~/.config/foot/variables.fish";
+          post_hook = "chmod +x ~/.config/foot/variables.fish && ~/.config/foot/reload.fish";
+        };
         nvim-base16 = {
           input_path = "~/.config/noctalia/templates/matugen.lua";
           output_path = "~/.config/nvim/lua/matugen.lua";
