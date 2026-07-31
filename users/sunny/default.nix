@@ -9,7 +9,7 @@
       coreutils
       gnused
       bashInteractive
-      (import ./yazi {inherit pkgs;})
+      (import ./yazi {inherit pkgs inputs;})
     ];
   };
 in {
@@ -27,7 +27,7 @@ in {
   packages = with pkgs; [
     inputs.neovim-config.packages.${pkgs.stdenv.hostPlatform.system}.default
     imv
-    (import ./yazi {inherit pkgs;})
+    (import ./yazi {inherit pkgs inputs;})
     ripdrag
     ripgrep
     fzf
