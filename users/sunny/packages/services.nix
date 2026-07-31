@@ -4,22 +4,6 @@
   ...
 }: {
   systemd.services = {
-    /*
-    arrpc = {
-      description = "arrpc Discord Rich Presence";
-      after = [ "network-online.target" ];
-      wants = [ "network-online.target" ];
-      wantedBy = [ "default.target" ];
-
-      serviceConfig = {
-        ExecStart = "${pkgs.arrpc}/bin/arrpc";
-        Restart = "on-failure";
-        RestartSec = 5;
-        Type = "simple";
-      };
-    };
-    */
-
     rclone-gdrive = {
       description = "Mount Google Drive via rclone";
       after = ["network-online.target"];
@@ -32,15 +16,15 @@
         Type = "notify";
 
         ExecStartPre = ''
-          ${pkgs.coreutils}/bin/mkdir -p %h/Documents/gdrive
+          ${lib.getExe' pkgs.coreutils "mkdir"} -p %h/Documents/gdrive
         '';
 
         ExecStart = ''
-          ${pkgs.rclone}/bin/rclone mount gdrive: %h/Documents/gdrive --vfs-cache-mode writes
+          ${lib.getExe pkgs.rclone} mount gdrive: %h/Documents/gdrive --vfs-cache-mode writes
         '';
 
         ExecStop = ''
-          ${pkgs.fuse3}/bin/fusermount3 -u %h/Documents/gdrive
+          ${lib.getExe' pkgs.fuse3 "fusermount3"} -u %h/Documents/gdrive
         '';
 
         Restart = "on-failure";

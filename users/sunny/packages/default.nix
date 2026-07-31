@@ -1,5 +1,6 @@
 {
   pkgs,
+  lib,
   sources,
   ...
 }: {
@@ -10,7 +11,7 @@
   packages = with pkgs; [
     (runCommand "wine-symlink" {} ''
       mkdir -p $out/bin
-      ln -sf ${wineWow64Packages.unstableFull}/bin/wine $out/bin/wine64
+      ln -sf ${lib.getExe' wineWow64Packages.unstableFull "wine"} $out/bin/wine64
     '')
     wineWow64Packages.unstableFull
     winetricks

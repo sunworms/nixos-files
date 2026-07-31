@@ -1,5 +1,6 @@
 {
   pkgs,
+  lib,
   inputs,
   ...
 }: let
@@ -52,7 +53,7 @@ in {
     "xdg-desktop-portal-termfilechooser/config".text = ''
       [filechooser]
       env=PATH='${launcherDeps}/bin'
-      env=TERMCMD='${pkgs.foot}/bin/foot --app-id=xdg_filechooser'
+      env=TERMCMD='${lib.getExe pkgs.foot} --app-id=xdg_filechooser'
       cmd='${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh'
       default_dir=$HOME
     '';

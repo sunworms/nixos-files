@@ -1,5 +1,6 @@
 {
   pkgs,
+  lib,
   config,
   ...
 }: {
@@ -7,7 +8,7 @@
     foot
     (runCommand "xdg-terminal-exec" {} ''
       mkdir -p $out/bin
-      ln -sf ${foot}/bin/foot $out/bin/xdg-terminal-exec
+      ln -sf ${lib.getExe foot} $out/bin/xdg-terminal-exec
     '')
   ];
 

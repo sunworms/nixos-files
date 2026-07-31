@@ -1,5 +1,6 @@
 {
   pkgs,
+  lib,
   config,
   ...
 }: let
@@ -111,7 +112,7 @@ in {
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
-      ExecStart = "${pkgs.fontconfig}/bin/fc-cache -f";
+      ExecStart = "${lib.getExe' pkgs.fontconfig "fc-cache"} -f";
     };
   };
 }
