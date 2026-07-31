@@ -16,6 +16,9 @@ in {
       "networkmanager"
       "input"
       "uinput"
+      "video"
+      "render"
+      "accel"
     ];
     hashedPasswordFile = config.sops.secrets."sunny/password".path;
     shell = pkgs.fish;
