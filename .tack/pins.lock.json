@@ -68,5 +68,13 @@
     "rev": "db522b64c0ce29724edb7e91ecdc4fb71c8a96b8",
     "narHash": "sha256-1w8NCqJLMIO9H9bpCOHIcuMzPANX8fI3TzgY3+V5+HA=",
     "lastModified": 1785244524
+  },
+  "yazi-flavors": {
+    "type": "github",
+    "owner": "yazi-rs",
+    "repo": "flavors",
+    "rev": "1a5f7877c770ff4db380b0b78e0e1a2cb4206103",
+    "narHash": "sha256-rEoCpbb1wmvzJJXtQ6dDkBIUw/W3VWwJGBkjWhYTgYk=",
+    "lastModified": 1785237721
   }
 }
