@@ -8,9 +8,6 @@ nixpkgs = ["nixpkgs", "nixpkgs-lib"]
 [inputs.nixpkgs]
 url = "nixpkgs:nixos-unstable"
 
-[inputs.flatpaks]
-url = "gh:in-a-dil-emma/declarative-flatpak/latest"
-
 [inputs.hjem]
 url = "gh:feel-co/hjem"
 
