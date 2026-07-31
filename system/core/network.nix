@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   pkgs,
   ...
 }: {
@@ -15,12 +16,12 @@
         case "$IFACE" in
           eth*|en*|wl*|wlan*)
             if [ "$ACTION" = "up" ]; then
-              ${pkgs.networkmanager}/bin/nm-online -q -t 30 &&
-                ${pkgs.networkmanager}/bin/nmcli connection up warp
+              ${lib.getExe' pkgs.networkmanager "nm-online"} -q -t 30 &&
+                ${lib.getExe' pkgs.networkmanager "nmcli"} connection up warp
             fi
 
             if [ "$ACTION" = "down" ]; then
-              ${pkgs.networkmanager}/bin/nmcli connection down warp || true
+              ${lib.getExe' pkgs.networkmanager "nmcli"} connection down warp || true
             fi
             ;;
         esac
