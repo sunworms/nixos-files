@@ -1,33 +1,10 @@
-{
-  pkgs,
-  inputs,
-}:
-pkgs.yazi.override {
-  _7zz = pkgs._7zz-rar;
-
-  plugins = with pkgs.yaziPlugins; {
-    inherit git sudo gvfs yafg chmod mount clipboard full-border drag;
-  };
-
-  flavors = {
-    catppuccin-mocha = "${inputs.yazi-flavors}/catppuccin-mocha.yazi";
-    catppuccin-latte = "${inputs.yazi-flavors}/catppuccin-latte.yazi";
-  };
-
-  settings = {
-    keymap = {
+{pkgs, ...}: {
+  xdg.config.files = {
+    "yazi/keymap.toml".source = (pkgs.formats.toml {}).generate "keymap.toml" {
       mgr.prepend_keymap = import ./keymaps;
     };
-
-    theme = {
-      flavor = {
-        light = "catppuccin-latte";
-        dark = "catppuccin-mocha";
-      };
-    };
-
-    yazi = import ./yazi.nix;
+    "yazi/yazi.toml".source = (pkgs.formats.toml {}).generate "yazi.toml" (import ./yazi.nix);
+    "yazi/init.lua".source = ./init.lua;
+    "yazi/plugins".source = import ./plugins.nix {inherit pkgs;};
   };
-
-  initLua = ./init.lua;
 }

@@ -1,18 +1,18 @@
-set default-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 1.0)"
-set render-loading-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 1.0)"
+set default-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 0.85)"
+set render-loading-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 0.85)"
 
-set statusbar-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 1.0)"
-set inputbar-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 1.0)"
+set statusbar-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 0.85)"
+set inputbar-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 0.85)"
 
-set index-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 1.0)"
+set index-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 0.85)"
 
-set index-active-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 1.0)"
+set index-active-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 0.85)"
 set index-active-fg "rgb({{ colors.primary.default.red }}, {{ colors.primary.default.green }}, {{ colors.primary.default.blue }})"
 
-set completion-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 1.0)"
+set completion-bg "rgba({{ colors.surface_container.default.red }}, {{ colors.surface_container.default.green }}, {{ colors.surface_container.default.blue }}, 0.85)"
 
-set completion-highlight-bg "rgba({{ colors.primary.default.red }}, {{ colors.primary.default.green }}, {{ colors.primary.default.blue }}, 1.0)"
+set completion-highlight-bg "rgba({{ colors.primary.default.red }}, {{ colors.primary.default.green }}, {{ colors.primary.default.blue }}, 0.85)"
 
-set completion-group-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 1.0)"
+set completion-group-bg "rgba({{ colors.surface.default.red }}, {{ colors.surface.default.green }}, {{ colors.surface.default.blue }}, 0.85)"
 
 set selection-clipboard clipboard

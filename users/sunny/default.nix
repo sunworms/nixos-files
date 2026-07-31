@@ -3,17 +3,22 @@
   inputs,
   ...
 }: let
+  yaziUnfree = pkgs.yazi.override {
+    _7zz = pkgs._7zz-rar;
+  };
+
   launcherDeps = pkgs.buildEnv {
     name = "termfilechooser-deps";
     paths = with pkgs; [
       coreutils
       gnused
       bashInteractive
-      (import ./yazi {inherit pkgs inputs;})
+      yaziUnfree
     ];
   };
 in {
   imports = [
+    ./yazi
     ./packages
     ./fonts
     ./desktop
@@ -27,7 +32,7 @@ in {
   packages = with pkgs; [
     inputs.neovim-config.packages.${pkgs.stdenv.hostPlatform.system}.default
     imv
-    (import ./yazi {inherit pkgs inputs;})
+    yaziUnfree
     ripdrag
     ripgrep
     fzf

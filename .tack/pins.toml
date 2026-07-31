@@ -28,7 +28,3 @@ url = "gh:NotAShelf/watt"
 
 [inputs.niri-float-sticky]
 url = "gh:probeldev/niri-float-sticky"
-
-[inputs.yazi-flavors]
-url = "gh:yazi-rs/flavors"
-type = "fetch"
