@@ -11,6 +11,8 @@ pkgs.yazi.override {
       mgr.prepend_keymap = import ./keymaps;
     };
 
+    theme = import ./theme.nix;
+
     yazi = import ./yazi.nix;
   };
 
