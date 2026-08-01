@@ -21,7 +21,7 @@
     };
 
     workspaces = {
-      display = "none";
+      show_labels = false;
     };
 
     cpu = {
