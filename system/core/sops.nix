@@ -4,6 +4,11 @@
   sops.secrets = {
     "root/password".neededForUsers = true;
     "sunny/password".neededForUsers = true;
+    "sunny/catbox_userhash" = {
+      mode = "0600";
+      owner = config.users.users.sunny.name;
+      group = config.users.users.sunny.group;
+    };
     "sunny/aur_key" = {
       mode = "0600";
       owner = config.users.users.sunny.name;
