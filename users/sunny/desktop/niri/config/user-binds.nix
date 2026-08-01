@@ -135,11 +135,11 @@
     "Print".screenshot = [];
     "Ctrl+Print".screenshot-screen = [];
     "Alt+Print".screenshot-window = [];
-    "Mod+Print".spawn-sh = "wl-paste --type image | satty --filename -";
+    "Mod+Print".spawn-sh = "wl-paste --type image | satty --fullscreen --filename -";
     "Super+Shift+S".screenshot = [];
     "Ctrl+Super+Shift+S".screenshot-screen = [];
     "Alt+Super+Shift+S".screenshot-window = [];
-    "Ctrl+Alt+Super+Shift+S".spawn-sh = "wl-paste --type image | satty --filename -";
+    "Ctrl+Alt+Super+Shift+S".spawn-sh = "wl-paste --type image | satty --fullscreen --filename -";
     "Mod+Shift+Escape" = {
       _props = {
         allow-inhibiting = false;
