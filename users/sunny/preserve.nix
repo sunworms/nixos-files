@@ -1,4 +1,11 @@
-{...}: {
+{...}: let
+  symlinks = paths:
+    map (file: {
+      inherit file;
+      how = "symlink";
+    })
+    paths;
+in {
   preservation.preserveAt."/persist".users.sunny = {
     commonMountOptions = [
       "x-gvfs-hide"
@@ -20,7 +27,6 @@
 
       ".cache/nix"
 
-      ".config/net.imput.helium"
       ".config/rclone"
       ".config/fish"
 
@@ -43,7 +49,23 @@
 
       ".local/state/wireplumber"
       ".local/state/noctalia"
+
+      # helium
+      ".config/net.imput.helium/Default/Extensions"
+      ".config/net.imput.helium/Default/Local Extension Settings"
+      ".config/net.imput.helium/Default/Extension State"
+      ".config/net.imput.helium/Default/Sync Data"
+      ".config/net.imput.helium/Default/Local Storage"
+      ".config/net.imput.helium/Default/WebStorage"
     ];
-    files = [];
+    files = symlinks [
+      # helium
+      ".config/net.imput.helium/First Run"
+      ".config/net.imput.helium/Local State"
+      ".config/net.imput.helium/Default/Preferences"
+      ".config/net.imput.helium/Default/Secure Preferences"
+      ".config/net.imput.helium/Default/Cookies"
+      ".config/net.imput.helium/Default/History"
+    ];
   };
 }
