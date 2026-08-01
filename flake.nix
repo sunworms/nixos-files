@@ -11,6 +11,7 @@
     nixosConfigurations.motobook = inputs.nixpkgs.lib.nixosSystem {
       modules = [
         ./hosts/motobook/configuration.nix
+        inputs.nixos-core.nixosModules.default
         inputs.hjem.nixosModules.default
         inputs.sops-nix.nixosModules.default
         {

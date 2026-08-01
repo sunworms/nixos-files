@@ -8,7 +8,9 @@
       efi.canTouchEfiVariables = true;
     };
     kernelPackages = pkgs.linuxPackages_latest;
-    initrd.systemd.enable = true;
     zswap.enable = true;
+    initrd.systemd.enable = false;
   };
+
+  system.nixos-core.enable = true;
 }
