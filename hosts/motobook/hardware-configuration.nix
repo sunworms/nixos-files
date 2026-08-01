@@ -26,15 +26,40 @@
   boot.extraModulePackages = [];
 
   fileSystems."/" = {
+    device = "none";
+    fsType = "tmpfs";
+    options = [
+      "defaults"
+      "size=10%"
+      "mode=755"
+    ];
+  };
+
+  fileSystems."/nix" = {
     device = "/dev/disk/by-label/root";
     fsType = "btrfs";
     options = [
       "noatime"
-      "compress=zstd"
+      "compress=zstd:5"
       "discard=async"
       "space_cache=v2"
       "ssd"
+      "subvol=@nix"
     ];
+  };
+
+  fileSystems."/persist" = {
+    device = "/dev/disk/by-label/root";
+    fsType = "btrfs";
+    options = [
+      "noatime"
+      "compress=zstd:5"
+      "discard=async"
+      "space_cache=v2"
+      "ssd"
+      "subvol=@persist"
+    ];
+    neededForBoot = true;
   };
 
   fileSystems."/boot" = {

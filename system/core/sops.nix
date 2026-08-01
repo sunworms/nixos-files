@@ -1,6 +1,6 @@
 {config, ...}: {
   sops.defaultSopsFile = ../../secrets/secrets.yaml;
-  sops.age.keyFile = "/var/lib/key.txt";
+  sops.age.keyFile = "/persist/var/lib/sops-nix/key.txt";
   sops.secrets = {
     "root/password".neededForUsers = true;
     "sunny/password".neededForUsers = true;
