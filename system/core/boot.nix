@@ -9,8 +9,6 @@
     };
     kernelPackages = pkgs.linuxPackages_latest;
     zswap.enable = true;
-    initrd.systemd.enable = false;
+    initrd.systemd.enable = true;
   };
-
-  system.nixos-core.enable = true;
 }

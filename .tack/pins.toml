@@ -8,8 +8,8 @@ nixpkgs = ["nixpkgs", "nixpkgs-lib"]
 [inputs.nixpkgs]
 url = "nixpkgs:nixos-unstable"
 
-[inputs.nixos-core]
-url = "gh:manic-systems/nixos-core"
+[inputs.preservation]
+url = "gh:nix-community/preservation"
 
 [inputs.hjem]
 url = "gh:feel-co/hjem"

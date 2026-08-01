@@ -7,6 +7,7 @@
     ./sops.nix
     ./battery.nix
     ./users.nix
+    ./preserve.nix
   ];
 
   # Time and locale
