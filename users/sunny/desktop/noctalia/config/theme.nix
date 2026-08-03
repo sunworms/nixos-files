@@ -7,7 +7,7 @@
 
     templates = {
       builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
-      community_ids = ["fuzzel" "yazi"];
+      community_ids = ["yazi"];
 
       user = {
         variables = {

@@ -1,7 +1,6 @@
 {
   pkgs,
   inputs,
-  osConfig,
   ...
 }: {
   packages = with pkgs; [
@@ -13,15 +12,6 @@
     gpu-screen-recorder
     hyprpicker
     wl-mirror
-
-    # using fuzzel script till screen toolkit is ported
-    fuzzel
-    (writeShellScriptBin "screen-toolkit" (builtins.readFile (pkgs.replaceVars ./screen-toolkit.sh {
-      USERHASH_FILE = osConfig.sops.secrets."sunny/catbox_userhash".path;
-      DEFAULT_AUDIO_SINK = null;
-      DEFAULT_AUDIO_SOURCE = null;
-    })))
-    libnotify
     grim
     slurp
     wl-clipboard
@@ -32,10 +22,10 @@
     zbar
     curl
     jq
-    #translate-shell
+    translate-shell
     wl-screenrec
     ffmpeg
-    #gifski
+    bc
   ];
 
   xdg.config.files = {
@@ -57,22 +47,5 @@
         end
       '';
     };
-    "fuzzel/fuzzel.ini".text = ''
-      [main]
-      include=~/.config/fuzzel/themes/noctalia
-    '';
-  };
-
-  xdg.data.files = {
-    "applications/screen-toolkit.desktop".text = ''
-      [Desktop Entry]
-      Version=1.0
-      Type=Application
-      Name=Screen Toolkit
-      Comment=Screen capture, annotation, OCR, and utilities
-      Exec=screen-toolkit
-      Terminal=false
-      Categories=Utility;Graphics;
-    '';
   };
 }
