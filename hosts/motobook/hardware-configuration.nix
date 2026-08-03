@@ -33,7 +33,35 @@
       "discard=async"
       "space_cache=v2"
       "ssd"
+      "subvol=@root"
     ];
+  };
+
+  fileSystems."/nix" = {
+    device = "/dev/disk/by-label/root";
+    fsType = "btrfs";
+    options = [
+      "noatime"
+      "compress=zstd:5"
+      "discard=async"
+      "space_cache=v2"
+      "ssd"
+      "subvol=@nix"
+    ];
+  };
+
+  fileSystems."/persist" = {
+    device = "/dev/disk/by-label/root";
+    fsType = "btrfs";
+    options = [
+      "noatime"
+      "compress=zstd:5"
+      "discard=async"
+      "space_cache=v2"
+      "ssd"
+      "subvol=@persist"
+    ];
+    neededForBoot = true;
   };
 
   fileSystems."/boot" = {
