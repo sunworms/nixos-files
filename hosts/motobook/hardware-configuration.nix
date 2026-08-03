@@ -9,7 +9,6 @@
 }: {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
-    #(modulesPath + "/hardware/cpu/intel-npu.nix")
   ];
 
   boot.initrd.availableKernelModules = [
@@ -26,16 +25,6 @@
   boot.extraModulePackages = [];
 
   fileSystems."/" = {
-    device = "none";
-    fsType = "tmpfs";
-    options = [
-      "defaults"
-      "size=3G"
-      "mode=755"
-    ];
-  };
-
-  fileSystems."/nix" = {
     device = "/dev/disk/by-label/root";
     fsType = "btrfs";
     options = [
@@ -48,26 +37,12 @@
     ];
   };
 
-  fileSystems."/persist" = {
-    device = "/dev/disk/by-label/root";
-    fsType = "btrfs";
-    options = [
-      "noatime"
-      "compress=zstd:5"
-      "discard=async"
-      "space_cache=v2"
-      "ssd"
-      "subvol=@persist"
-    ];
-    neededForBoot = true;
-  };
-
   fileSystems."/boot" = {
     device = "/dev/disk/by-label/boot";
     fsType = "vfat";
     options = [
-      "fmask=0022"
-      "dmask=0022"
+      "fmask=0077"
+      "dmask=0077"
     ];
   };
 
@@ -78,6 +53,5 @@
   ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  #hardware.cpu.intel.npu.enable = true;
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
