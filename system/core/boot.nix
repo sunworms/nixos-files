@@ -12,8 +12,8 @@
       enable = true;
       maxPoolPercent = 40;
     };
-    initrd = {
-      systemd.enable = true;
+    initrd.systemd = {
+      enable = true;
       services.rollback = {
         description = "Rollback BTRFS root subvolume to a pristine state";
         wantedBy = ["initrd.target"];
