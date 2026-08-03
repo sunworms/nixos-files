@@ -46,6 +46,7 @@ in {
       ".local/share/SameBoy"
       ".local/share/keyrings"
       ".local/share/containers"
+      ".local/share/warp"
 
       ".local/state/wireplumber"
       ".local/state/noctalia"

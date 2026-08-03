@@ -24,6 +24,5 @@
       owner = config.users.users.sunny.name;
       group = config.users.users.sunny.group;
     };
-    "root/warp-private-key" = {};
   };
 }
