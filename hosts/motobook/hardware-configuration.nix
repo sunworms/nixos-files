@@ -33,7 +33,6 @@
       "discard=async"
       "space_cache=v2"
       "ssd"
-      "subvol=@nix"
     ];
   };
 
