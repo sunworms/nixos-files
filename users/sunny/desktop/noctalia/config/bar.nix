@@ -41,7 +41,7 @@
           enabled = true;
           fill = "surface_variant";
           id = "mpv";
-          members = ["recorder" "widget" "mirror"];
+          members = ["recorder" "widget_2" "mirror"];
           opacity = 1.0;
           padding = 6.0;
           radius = 8.0;

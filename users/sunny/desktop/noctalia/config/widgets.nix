@@ -80,8 +80,8 @@
       type = "noctalia/mpvpaper:mpvpaper";
     };
 
-    widget = {
-      type = "oldirtty/color_picker:widget";
+    widget_2 = {
+      type = "alexander/screen-toolkit:widget";
     };
 
     mirror = {
