@@ -8,7 +8,10 @@
       efi.canTouchEfiVariables = true;
     };
     kernelPackages = pkgs.linuxPackages_latest;
-    zswap.enable = true;
+    zswap = {
+      enable = true;
+      maxPoolPercent = 40;
+    };
     initrd.systemd.enable = true;
   };
 }
