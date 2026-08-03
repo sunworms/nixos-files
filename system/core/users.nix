@@ -31,7 +31,5 @@ in {
 
   programs.fish.enable = true;
 
-  services.userborn.enable = true;
-
   hjem.users.sunny = ../../users/sunny;
 }
