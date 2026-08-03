@@ -58,6 +58,10 @@ in {
       ".config/net.imput.helium/Default/Sync Data"
       ".config/net.imput.helium/Default/Local Storage"
       ".config/net.imput.helium/Default/WebStorage"
+      ".config/net.imput.helium/Default/IndexedDB"
+      ".config/net.imput.helium/Default/Service Worker"
+      ".config/net.imput.helium/Default/Session Storage"
+      ".config/net.imput.helium/Default/Managed Extension Settings"
     ];
     files = symlinks [
       # helium
