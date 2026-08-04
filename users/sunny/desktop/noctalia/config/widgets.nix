@@ -6,8 +6,8 @@
     };
 
     clock = {
-      format = "{:%a, %d.%m.%y, %H:%M}";
-      tooltip_format = "{:%a, %d %b %Y, %H:%M:%S}";
+      format = "{:%a, %d %b %Y, %H:%M}";
+      #tooltip_format = "{:%a, %d %b %Y, %H:%M:%S}";
       vertical_format = "{:%d\\n%m\\n%y\\n-\\n%H\\n%M}";
     };
 
@@ -74,13 +74,14 @@
     media = {
       max_length = 150;
       title_scroll = "on_hover";
+      album_art_only = true;
     };
 
     mpvpaper = {
       type = "noctalia/mpvpaper:mpvpaper";
     };
 
-    widget_2 = {
+    widget = {
       type = "alexander/screen-toolkit:widget";
     };
 
