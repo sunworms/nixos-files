@@ -14,6 +14,8 @@
 
   programs.gamescope.enable = true;
 
+  programs.nano.enable = false;
+
   hardware.uinput.enable = true;
 
   services.udev.extraRules = ''
