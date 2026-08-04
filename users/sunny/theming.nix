@@ -8,7 +8,7 @@
         color_scheme_path=/home/sunny/.config/${qt}ct/colors/noctalia.conf
         custom_palette=true
         icon_theme=Adwaita
-        standard_dialogs=default
+        standard_dialogs=xdgdesktopportal
         style=Fusion
       '';
     })
