@@ -1,11 +1,4 @@
-{...}: let
-  symlinks = paths:
-    map (file: {
-      inherit file;
-      how = "symlink";
-    })
-    paths;
-in {
+{...}: {
   preservation.preserveAt."/persist".users.sunny = {
     commonMountOptions = [
       "x-gvfs-hide"
@@ -62,7 +55,7 @@ in {
       ".config/net.imput.helium/Default/Session Storage"
       ".config/net.imput.helium/Default/Managed Extension Settings"
     ];
-    files = symlinks [
+    files = [
       # helium
       ".config/net.imput.helium/First Run"
       ".config/net.imput.helium/Local State"
