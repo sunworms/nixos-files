@@ -36,6 +36,7 @@
 
     helium-del-cache = {
       description = "Delete Helium Cache on login";
+      after = ["graphical-session.target"];
       wantedBy = ["graphical-session.target"];
       serviceConfig = {
         Type = "oneshot";
