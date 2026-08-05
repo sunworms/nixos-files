@@ -1,5 +1,10 @@
 {
   "$schema" = "https://starship.rs/config-schema.json";
+  right_format = "$time";
+  time = {
+    disabled = false;
+    format = "[$time]($style)";
+  };
   character = {
     success_symbol = "[🢂](cyan)";
     error_symbol = "[🢂](red)";
