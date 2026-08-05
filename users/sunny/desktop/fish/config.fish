@@ -9,8 +9,16 @@ if status is-interactive
     abbr --add -- oscd 'nh clean all --no-direnv'
     abbr --add -- oss 'nh os switch --ask ./. -H'
     abbr --add -- ost 'nh os test --ask ./. -H'
+
     alias vi nvim
     alias vim nvim
+
     set -g fish_greeting
     set -g fish_key_bindings fish_vi_key_bindings
+
+    function starship_transient_prompt_func
+        starship module character
+    end
+    starship init fish | source
+    enable_transience
 end
