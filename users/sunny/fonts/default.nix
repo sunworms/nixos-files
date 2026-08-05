@@ -9,7 +9,6 @@
     source-han-serif
     recursive
     noto-fonts-color-emoji
-    newcomputermodern
   ];
 
   combinedFonts = pkgs.symlinkJoin {
