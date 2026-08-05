@@ -1,15 +1,15 @@
 {
-  args = "-c examples/25.jsonc";
+  args = "-c examples/26.jsonc";
   auto_detect_light_dark = true;
   backend = "fastfetch";
   color_align = {
-    mode = "vertical";
+    mode = "horizontal";
   };
   custom_ascii_path = null;
   distro = null;
   light_dark = "dark";
   lightness = 0.65;
   mode = "rgb";
-  preset = "transmasculine";
+  preset = "transgender";
   pride_month_disable = false;
 }
