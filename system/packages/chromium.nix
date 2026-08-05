@@ -4,7 +4,7 @@
     "mnjggcdmjocbbbhaepdhchncahnbgone" # sponsorblock
     "gebbhagfogifgggkldgodflihgfeippi" # return youtube dislikes
     "jplgfhpmjnbigmhklmmbgecoobifkmpa" # proton vpn
-    "cbghhgpcnddeihccjmnadmkaejncjndb" # vencord web
+    "mcambpfmpjnncfoodejdmehedbkjepmi" # equicord web
   ];
 
   ManagedBookmarks = [
