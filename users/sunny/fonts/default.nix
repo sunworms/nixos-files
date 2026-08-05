@@ -22,9 +22,9 @@ in {
   ];
 
   fonts = {
-    sansSerif = "Recursive Sans Casual Static";
+    sansSerif = "Recursive Sans Linear Static";
     serif = "Literata";
-    monospace = "Recursive Mono Casual Static";
+    monospace = "Recursive Mono Linear Static";
     emoji = "Noto Color Emoji";
   };
 
