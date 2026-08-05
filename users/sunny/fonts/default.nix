@@ -8,6 +8,7 @@
     literata
     source-han-serif
     recursive
+    nerd-fonts.symbols-only
     noto-fonts-color-emoji
   ];
 
