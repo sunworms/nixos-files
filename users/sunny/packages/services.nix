@@ -33,5 +33,16 @@
 
       wantedBy = ["default.target"];
     };
+
+    helium-del-cache = {
+      description = "Delete Helium Cache on login";
+      wantedBy = ["graphical-session.target"];
+      serviceConfig = {
+        Type = "oneshot";
+        ExecStart = ''
+          ${lib.getExe' pkgs.coreutils "rm"} -rf "%h/.config/net.imput.helium/Default/AutofillAiModelCache" "%h/.config/net.imput.helium/Default/DawnGraphiteCache" "%h/.config/net.imput.helium/Default/DawnWebGPUCache" "%h/.config/net.imput.helium/Default/GPUCache" "%h/.config/net.imput.helium/Default/optimization_guide_hint_cache_store" "%h/.config/net.imput.helium/Default/Service Worker"
+        '';
+      };
+    };
   };
 }
