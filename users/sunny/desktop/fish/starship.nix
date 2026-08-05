@@ -6,12 +6,12 @@
     format = "[$time]($style)";
   };
   character = {
-    success_symbol = "[🢂](cyan)";
-    error_symbol = "[🢂](red)";
-    vimcmd_symbol = "[🢀](green)";
-    vimcmd_replace_symbol = "[🢁](bold purple)";
-    vimcmd_replace_one_symbol = "[🢁](bold purple)";
-    vimcmd_visual_symbol = "[🢁](bold yellow)";
+    success_symbol = "[→](cyan)";
+    error_symbol = "[→](red)";
+    vimcmd_symbol = "[←](green)";
+    vimcmd_replace_symbol = "[↑](bold purple)";
+    vimcmd_replace_one_symbol = "[↑](bold purple)";
+    vimcmd_visual_symbol = "[↑](bold yellow)";
   };
   azure = {
     symbol = "☁️ ";
