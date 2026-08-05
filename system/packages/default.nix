@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   imports = [
     ./audio.nix
     ./bluetooth.nix
@@ -11,6 +15,8 @@
     enable = true;
     package = pkgs.gvfs;
   };
+
+  fonts.packages = lib.mkForce [];
 
   programs.gamescope.enable = true;
 
