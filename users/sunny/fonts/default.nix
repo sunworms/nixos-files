@@ -8,7 +8,6 @@
     literata
     source-han-serif
     recursive
-    nerd-fonts.recursive-mono
     noto-fonts-color-emoji
     newcomputermodern
   ];
@@ -25,7 +24,7 @@ in {
   fonts = {
     sansSerif = "Recursive Sans Casual Static";
     serif = "Literata";
-    monospace = "RecMonoCasual Nerd Font Mono";
+    monospace = "Recursive Mono Casual Static";
     emoji = "Noto Color Emoji";
   };
 
