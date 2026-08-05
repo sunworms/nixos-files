@@ -20,6 +20,7 @@
 
       ".cache/nix"
 
+      ".config/net.imput.helium/Default"
       ".config/rclone"
       ".config/fish"
 
@@ -43,26 +44,12 @@
 
       ".local/state/wireplumber"
       ".local/state/noctalia"
-
-      # helium
-      ".config/net.imput.helium/Default/Extensions"
-      ".config/net.imput.helium/Default/Local Extension Settings"
-      ".config/net.imput.helium/Default/Extension State"
-      ".config/net.imput.helium/Default/Sync Data"
-      ".config/net.imput.helium/Default/Local Storage"
-      ".config/net.imput.helium/Default/WebStorage"
-      ".config/net.imput.helium/Default/IndexedDB"
-      ".config/net.imput.helium/Default/Session Storage"
-      ".config/net.imput.helium/Default/Managed Extension Settings"
     ];
     files = [
-      # helium
-      ".config/net.imput.helium/First Run"
-      ".config/net.imput.helium/Local State"
-      ".config/net.imput.helium/Default/Preferences"
-      ".config/net.imput.helium/Default/Secure Preferences"
-      ".config/net.imput.helium/Default/Cookies"
-      ".config/net.imput.helium/Default/History"
+      {
+        file = ".config/net.imput.helium/First Run";
+        how = "symlink";
+      }
     ];
   };
 }
