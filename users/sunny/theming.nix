@@ -1,4 +1,8 @@
-{pkgs, ...}: let
+{
+  config,
+  pkgs,
+  ...
+}: let
   qtctFiles = builtins.listToAttrs (
     map
     (qt: {
@@ -25,7 +29,7 @@
         [Settings]
         gtk-theme-name=adw-gtk3
         gtk-icon-theme-name=Adwaita
-        gtk-font-name=Noto Sans 11
+        gtk-font-name=${config.fonts.sansSerif} 11
         gtk-cursor-theme-name=volantes_cursors
         gtk-cursor-theme-size=24
         gtk-application-prefer-dark-theme=1
