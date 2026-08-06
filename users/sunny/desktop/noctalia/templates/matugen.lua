@@ -45,6 +45,9 @@ function M.setup_treesitter()
 	set(0, "@error", { fg = "{{colors.error.default.hex}}" })
 	set(0, "DiagnosticError", { fg = "{{colors.error.default.hex}}" })
 
+	set(0, "Substitute", { bg = "{{colors.tertiary.default.hex}}", fg = "{{colors.surface.default.hex}}" })
+	set(0, "PreProc", { fg = "{{colors.tertiary.default.hex}}", bold = true })
+
 	set(
 		0,
 		"Visual",
