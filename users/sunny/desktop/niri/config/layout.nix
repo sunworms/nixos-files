@@ -33,9 +33,6 @@
       };
     };
 
-    struts = {
-      left = 10;
-      right = 10;
-    };
+    struts = {};
   };
 }
