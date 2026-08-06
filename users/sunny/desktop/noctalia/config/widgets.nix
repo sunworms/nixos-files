@@ -7,7 +7,7 @@
 
     clock = {
       format = "{:%a, %d %b %Y, %H:%M}";
-      #tooltip_format = "{:%a, %d %b %Y, %H:%M:%S}";
+      tooltip_format = "{:%a, %d %b %Y, %H:%M:%S}";
       vertical_format = "{:%d\\n%m\\n%y\\n-\\n%H\\n%M}";
     };
 
