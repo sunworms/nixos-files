@@ -80,4 +80,18 @@ in {
     libsForQt5.qt5ct
     qt6Packages.qt6ct
   ];
+
+  systemd.services.set-gtk-settings = {
+    description = "Set GTK settings via dconf";
+    wantedBy = ["graphical-session.target"];
+    serviceConfig = {
+      Type = "oneshot";
+      ExecStart = ''
+        ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/font-name \"'${config.fonts.sansSerif} 11'\"
+        ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-theme-name \"'volantes_cursors'\"
+        ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/icon-theme-name \"'Adwaita'\"
+        ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/theme-name \"'adw-gtk3'\"
+      '';
+    };
+  };
 }
