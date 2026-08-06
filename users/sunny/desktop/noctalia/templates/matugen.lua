@@ -48,6 +48,9 @@ function M.setup_treesitter()
 	set(0, "Substitute", { bg = "{{colors.tertiary.default.hex}}", fg = "{{colors.surface.default.hex}}" })
 	set(0, "PreProc", { fg = "{{colors.tertiary.default.hex}}", bold = true })
 
+	set(0, "TSAttribute", { fg = "{{colors.tertiary.default.hex}}" })
+	set(0, "TSType", { fg = "{{colors.tertiary_fixed_dim.default.hex}}" })
+
 	set(
 		0,
 		"Visual",
