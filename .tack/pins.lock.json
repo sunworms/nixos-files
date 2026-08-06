@@ -3,17 +3,17 @@
     "type": "github",
     "owner": "feel-co",
     "repo": "hjem",
-    "rev": "d628ecda714785fddf86cad28ee4f506dc5b7eb9",
-    "narHash": "sha256-M9v4zyKLYSVv2RYB4iYTg2THKvW3mDlj+fR1KvW9G3w=",
-    "lastModified": 1785525782
+    "rev": "b610953d0c56da6b28fd39c21bd193b88e91341c",
+    "narHash": "sha256-qwppDYdtxqtDpI1iSp7bs8prOJ0KQSvhJchfROD04f0=",
+    "lastModified": 1785929776
   },
   "neovim-config": {
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "9c401a15db11f5c9f28ff6cf6884da379d81e0be",
-    "narHash": "sha256-ttyr29VjGtKlZsZsn57WewvYkebuo79aWcm9uB30zl8=",
-    "lastModified": 1785851172
+    "rev": "c8883f90065f387dd569ec4269e25c72527f4b40",
+    "narHash": "sha256-oP63J22c3OpYpcHdls1/49Y/t8kEG17dkTosgg7JQhM=",
+    "lastModified": 1786007843
   },
   "niri-float-sticky": {
     "type": "github",
@@ -27,23 +27,23 @@
     "type": "git",
     "url": "https://codeberg.org/BANanaD3V/niri-nix",
     "ref": "HEAD",
-    "rev": "9c8d5d6606801f6a2d3e408bc5bbbebb15cc8622",
-    "narHash": "sha256-W0g4JbM5jkE2H/roxwt2FSFp+4evBmCkrchU3nqM8Og=",
-    "lastModified": 1785801691
+    "rev": "acccaf2202bf1293c14403b3a8226d3c21c2a705",
+    "narHash": "sha256-wngn4nxLvyiv1MpWuLCQK7YRXGNS+KDu9SnBvw6K0eM=",
+    "lastModified": 1785923749
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1047536.e72e4f299401/nixexprs.tar.xz",
-    "rev": "e72e4f299401a3689d4b3d5fc6496b11db7064eb",
-    "narHash": "sha256-VFlH/0nM6kkWQox9IaTqx2eCT3pmkr8bB7iVZ1bkaLs="
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1048607.b7c2ada94fe9/nixexprs.tar.xz",
+    "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+    "narHash": "sha256-929m7iW8q2uv3mZHNwY8Um6XKj99rbIcZsWS9cT1vaI="
   },
   "noctalia": {
     "type": "github",
     "owner": "noctalia-dev",
     "repo": "noctalia",
-    "rev": "e41c99439605df6d2fa62409139f96ded6ac7345",
-    "narHash": "sha256-QbFIduUhpNIucJy/WcwRxsvTQocnwIXlSwnYEjmGMSQ=",
-    "lastModified": 1785809412
+    "rev": "364ffde1981526804e0e794a3129f6770ad91005",
+    "narHash": "sha256-hJjByYo/ZRCqPaXiZQDdyhOHJtAohGHkTBk07CULetI=",
+    "lastModified": 1785998449
   },
   "preservation": {
     "type": "github",
