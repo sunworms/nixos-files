@@ -5,11 +5,11 @@
   ...
 }: let
   fontPackages = with pkgs; [
-    literata
-    source-han-serif
-    recursive
-    nerd-fonts.symbols-only
+    (import ./iosevka-term.nix {inherit pkgs;})
+    (import ./iosevka-etoile.nix {inherit pkgs;})
+    (import ./iosevka-aile.nix {inherit pkgs;})
     noto-fonts-color-emoji
+    noto-fonts-cjk-sans
   ];
 
   combinedFonts = pkgs.symlinkJoin {
@@ -22,9 +22,9 @@ in {
   ];
 
   fonts = {
-    sansSerif = "Recursive Sans Linear Static";
-    serif = "Literata";
-    monospace = "Recursive Mono Linear Static";
+    sansSerif = "Iosevka Aile Lean";
+    serif = "Iosevka Etoile Lean";
+    monospace = "IosevkaTermLean Nerd Font Mono";
     emoji = "Noto Color Emoji";
   };
 
