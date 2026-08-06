@@ -4,6 +4,7 @@
     "mnjggcdmjocbbbhaepdhchncahnbgone" # sponsorblock
     "gebbhagfogifgggkldgodflihgfeippi" # return youtube dislikes
     "jplgfhpmjnbigmhklmmbgecoobifkmpa" # proton vpn
+    "clngdbkpkpeebahjckkjfobafhncgmne" # stylus
     "mcambpfmpjnncfoodejdmehedbkjepmi" # equicord web
   ];
 
