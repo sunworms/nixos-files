@@ -16,10 +16,10 @@
   };
   helium = {
     pname = "helium";
-    version = "0.15.1.1";
+    version = "0.15.2.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.15.1.1/helium-0.15.1.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-1RrtHYW5TwBhINTu22JSd4KjnxORlDK/77u1pElddZo=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.15.2.1/helium-0.15.2.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-+Bw3Ty77cLQA8nBhx1gjyXFUjBbn4RMTU/D9Fc9DaKw=";
     };
   };
   pcsx2 = {
