@@ -37,7 +37,6 @@
     alejandra
 
     # pins
-    tack
     npins
     nvfetcher
 
