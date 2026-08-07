@@ -23,12 +23,13 @@
       Exec=helium --app=https://discord.com/app
       Icon=${
         (pkgs.fetchurl {
-          url = "https://upload.wikimedia.org/wikipedia/fr/4/4f/Discord_Logo_sans_texte.svg";
-          hash = "sha256-fyh2K4xqb/xx1G9CocFagRLLtSu/x7jze5wITjEiTvk=";
+          url = "https://www.svgrepo.com/show/331368/discord-v2.svg";
+          hash = "sha256-ETdzE1AiggK2AKkQjAPII0/CIbF6MowF9zEA8fg8LDY=";
         })
       }
       Categories=Network;InstantMessaging;
       Terminal=false
+      StartupWMClass=chrome-discord.com__app-Default
     '';
     "applications/sable.desktop".text = ''
       [Desktop Entry]
@@ -45,6 +46,7 @@
       }
       Categories=Network;InstantMessaging;
       Terminal=false
+      StartupWMClass=chrome-dev.sable.moe__-Default
     '';
     "applications/spotify.desktop".text = ''
       [Desktop Entry]
@@ -61,6 +63,7 @@
       }
       Categories=Audio;Music;Player;AudioVideo;
       Terminal=false
+      StartupWMClass=chrome-open.spotify.com__-Default
     '';
   };
 }
