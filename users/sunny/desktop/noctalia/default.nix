@@ -4,7 +4,7 @@
   ...
 }: {
   packages = with pkgs; [
-    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+    (import inputs.noctalia {inherit pkgs;}).package
 
     # needed for noctalia
     iw
