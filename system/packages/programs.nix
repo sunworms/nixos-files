@@ -38,6 +38,7 @@
 
     # pins
     tack
+    npins
     nvfetcher
 
     fastfetch

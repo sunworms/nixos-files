@@ -3,13 +3,21 @@
   inputs,
   ...
 }: let
-  inherit (inputs.niri-nix.lib) validatedConfigFor mkNiriKDL;
+  niriNix = import "${inputs.niri-nix}/lib" {
+    self = {};
+    inherit (pkgs) lib;
+    nixpkgs = {
+      legacyPackages.${pkgs.stdenv.hostPlatform.system} = pkgs;
+    };
+  };
+
+  inherit (niriNix) validatedConfigFor mkNiriKDL;
 in {
   xdg.config.files = {
     "niri/config.kdl".source = validatedConfigFor pkgs.niri (mkNiriKDL (import ./config {inherit pkgs;}));
   };
 
   packages = [
-    inputs.niri-float-sticky.packages.${pkgs.stdenv.hostPlatform.system}.default
+    (pkgs.callPackage "${inputs.niri-float-sticky}/package.nix" {})
   ];
 }
