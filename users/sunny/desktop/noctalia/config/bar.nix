@@ -7,6 +7,7 @@
       capsule = true;
       capsule_opacity = 1.0;
       capsule_radius = 8.0;
+      scale = 1.05;
       enabled = true;
       margin_ends = 0;
       position = "right";
@@ -64,7 +65,7 @@
       radius = 0;
       radius_bottom_right = 10;
       radius_top_right = 10;
-      scale = 1.0;
+      scale = 1.05;
       shadow = false;
       thickness = 30;
 

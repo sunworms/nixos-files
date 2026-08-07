@@ -25,12 +25,18 @@
     auto_locate = false;
   };
 
+  accessibility = {
+    ui_scale = 1.05;
+  };
+
   notification = {
     background_opacity = 1.0;
+    scale = 1.05;
   };
 
   osd = {
     background_opacity = 1.0;
+    scale = 1.05;
   };
 
   battery = {
