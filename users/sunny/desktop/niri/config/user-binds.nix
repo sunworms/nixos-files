@@ -4,13 +4,13 @@
       _props = {
         hotkey-overlay-title = "Open a Terminal: foot";
       };
-      spawn = "foot";
+      spawn = "footclient";
     };
     "Mod+Shift+T" = {
       _props = {
         hotkey-overlay-title = "Layers";
       };
-      spawn = ["foot" "sh" "-c" "niri msg layers; fish"];
+      spawn = ["footclient" "sh" "-c" "niri msg layers; fish"];
     };
     "Mod+A" = {
       _props = {

@@ -6,5 +6,6 @@
 
   spawn-at-startup = [
     {_args = ["noctalia" "--daemon"];}
+    {_args = ["foot" "--server"];}
   ];
 }
