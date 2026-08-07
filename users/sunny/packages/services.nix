@@ -68,7 +68,6 @@
       wants = ["noctalia.service"];
       after = ["noctalia.service"];
       partOf = ["graphical-session.target"];
-      restartTriggers = [pkgs.foot];
       environment = {
         PATH = lib.mkForce null;
       };
