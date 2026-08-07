@@ -8,10 +8,10 @@
 {
   eden = {
     pname = "eden";
-    version = "v1785957437.a0f1cd1baf/Eden-Linux-a0f1cd1baf";
+    version = "v1786060276.a43664c0fd/Eden-Linux-a43664c0fd";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1785957437.a0f1cd1baf/Eden-Linux-a0f1cd1baf-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-gYgTaCk5FcBRPN5CMY7rePTF+HCxSBhKs4xohaRPIIU=";
+      url = "https://nightly.eden-emu.dev/v1786060276.a43664c0fd/Eden-Linux-a43664c0fd-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-BJIDey0beviPbA4iJKeIABgaP+WmQDaa4NIxquYpNvc=";
     };
   };
   helium = {
@@ -22,12 +22,20 @@
       sha256 = "sha256-+Bw3Ty77cLQA8nBhx1gjyXFUjBbn4RMTU/D9Fc9DaKw=";
     };
   };
+  iosevka-custom = {
+    pname = "iosevka-custom";
+    version = "34.8.0";
+    src = fetchurl {
+      url = "https://github.com/sunworms/iosevka-nerd/releases/download/v34.8.0/Iosevka-Custom-v34.8.0.zip";
+      sha256 = "sha256-eccecRTKLOANpCdks5Nvm+HVj5aykCASxF3NO6hqcTM=";
+    };
+  };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.514";
+    version = "v2.7.515";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.514/pcsx2-v2.7.514-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-Bv4y1rJbk6Te851kEjITMoi3QOp6e9x2Qw+m5r6DQyw=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.515/pcsx2-v2.7.515-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-ivEF4+Me/RspW4iO/1+xqcz3wGOUM54JJKfDxD3eUUE=";
     };
   };
 }
