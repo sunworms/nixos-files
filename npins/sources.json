@@ -23,9 +23,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "abb98d87aba84773a0c0984126fd63b3f1771ff8",
-      "url": "https://git.gay/sunworms/neovim-config/archive/abb98d87aba84773a0c0984126fd63b3f1771ff8.tar.gz",
-      "hash": "sha256-Hxc99jQKK0y5F/vCAzGYN9koQ7sVM59UCg7LSuljKSM="
+      "revision": "f8011cd9eb627470a1cfa98480da63a1c41bc648",
+      "url": "https://git.gay/sunworms/neovim-config/archive/f8011cd9eb627470a1cfa98480da63a1c41bc648.tar.gz",
+      "hash": "sha256-YmpAZlGG6vAWA2U1ysd3p6Af4J/s1mHw3FmeKYJ6ejQ="
     },
     "niri-float-sticky": {
       "type": "Git",
