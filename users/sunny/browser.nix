@@ -20,11 +20,27 @@
       Type=Application
       Name=Discord
       Comment=Chat, talk, and hang out
-      Exec=helium --app=https://discord.com/channels/@me
+      Exec=helium --app=https://discord.com/app
       Icon=${
         (pkgs.fetchurl {
           url = "https://upload.wikimedia.org/wikipedia/fr/4/4f/Discord_Logo_sans_texte.svg";
           hash = "sha256-fyh2K4xqb/xx1G9CocFagRLLtSu/x7jze5wITjEiTvk=";
+        })
+      }
+      Categories=Network;InstantMessaging;
+      Terminal=false
+    '';
+    "applications/sable.desktop".text = ''
+      [Desktop Entry]
+      Version=1.0
+      Type=Application
+      Name=Sable
+      Comment=Almost Stable Matrix Client
+      Exec=helium --app=https://dev.sable.moe
+      Icon=${
+        (pkgs.fetchurl {
+          url = "https://avatars.githubusercontent.com/u/266766652";
+          hash = "sha256-BeBCkapIxAcz2UowLhUyTbomccc9yER5T/HCjSxcem4=";
         })
       }
       Categories=Network;InstantMessaging;
