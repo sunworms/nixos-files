@@ -31,7 +31,7 @@ in {
   directory = "/home/sunny";
 
   packages = with pkgs; [
-    (import "${inputs.neovim-config}/package.nix" {inherit pkgs;})
+    (import inputs.neovim-config {inherit pkgs;})
     imv
     yaziUnfree
     ripdrag
