@@ -9,6 +9,7 @@
     (callPackage ./iosevka.nix {inherit sources;})
     noto-fonts-color-emoji
     noto-fonts-cjk-sans
+    noto-fonts
   ];
 
   combinedFonts = pkgs.symlinkJoin {
