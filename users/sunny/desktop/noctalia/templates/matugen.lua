@@ -50,6 +50,7 @@ function M.setup_treesitter()
 
 	set(0, "TSAttribute", { fg = "{{colors.tertiary.default.hex}}" })
 	set(0, "TSType", { fg = "{{colors.tertiary_fixed_dim.default.hex}}" })
+	set(0, "TSLabel", { fg = "{{colors.secondary_fixed_dim.default.hex}}" })
 
 	set(
 		0,
