@@ -46,35 +46,5 @@
         '';
       };
     };
-
-    noctalia = {
-      description = "Launch Noctalia on login";
-      wantedBy = ["graphical-session.target"];
-      after = ["graphical-session-pre.target"];
-      partOf = ["graphical-session.target"];
-      restartTriggers = [(import inputs.noctalia {inherit pkgs;}).package];
-      environment = {
-        PATH = lib.mkForce null;
-      };
-      serviceConfig = {
-        ExecStart = lib.getExe (import inputs.noctalia {inherit pkgs;}).package;
-        Restart = "on-failure";
-      };
-    };
-
-    foot-server = {
-      description = "Foot Server";
-      wantedBy = ["graphical-session.target"];
-      wants = ["noctalia.service"];
-      after = ["noctalia.service"];
-      partOf = ["graphical-session.target"];
-      environment = {
-        PATH = lib.mkForce null;
-      };
-      serviceConfig = {
-        ExecStart = "${lib.getExe pkgs.foot} --server";
-        Restart = "on-failure";
-      };
-    };
   };
 }
