@@ -13,11 +13,6 @@ let
       modules =
         [
           ./hosts/${hostVars.hostname}/configuration.nix
-          {
-            nix.nixPath = [
-              "nixpkgs=${inputs.nixpkgs}"
-            ];
-          }
         ]
         ++ (hostVars.modules or []);
     };
