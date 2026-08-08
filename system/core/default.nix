@@ -1,4 +1,8 @@
-{...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     ./nix-settings.nix
     ./boot.nix
@@ -25,8 +29,11 @@
     Defaults lecture="never"
   '';
 
-  # Disable command-not-found
-  programs.command-not-found.enable = false;
+  # Enable comma
+  programs.comma = {
+    enable = true;
+    package = (import inputs.nix-index-database {inherit pkgs;}).comma-with-db;
+  };
 
   # Logind config
   services.logind.settings.Login = {

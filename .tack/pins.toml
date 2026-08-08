@@ -40,3 +40,7 @@ type = "fetch"
 [inputs.niri-float-sticky]
 url = "gh:probeldev/niri-float-sticky"
 type = "fetch"
+
+[inputs.nix-index-database]
+url = "gh:nix-community/nix-index-database"
+type = "fetch"
