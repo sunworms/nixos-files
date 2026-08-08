@@ -1,0 +1,72 @@
+{
+  "hjem": {
+    "type": "github",
+    "owner": "feel-co",
+    "repo": "hjem",
+    "rev": "b610953d0c56da6b28fd39c21bd193b88e91341c",
+    "narHash": "sha256-qwppDYdtxqtDpI1iSp7bs8prOJ0KQSvhJchfROD04f0=",
+    "lastModified": 1785929776
+  },
+  "neovim-config": {
+    "type": "git",
+    "url": "https://git.gay/sunworms/neovim-config",
+    "ref": "HEAD",
+    "rev": "f8011cd9eb627470a1cfa98480da63a1c41bc648",
+    "narHash": "sha256-YmpAZlGG6vAWA2U1ysd3p6Af4J/s1mHw3FmeKYJ6ejQ=",
+    "lastModified": 1786114695
+  },
+  "niri-float-sticky": {
+    "type": "github",
+    "owner": "probeldev",
+    "repo": "niri-float-sticky",
+    "rev": "b4805593eda05fc61e4cb88cfced9dd39913216e",
+    "narHash": "sha256-786xACvNk6ZE6l40gQ7wRsgqGp64Z4MseMX7gzMMNtg=",
+    "lastModified": 1778574608
+  },
+  "niri-nix": {
+    "type": "git",
+    "url": "https://codeberg.org/BANanaD3V/niri-nix",
+    "ref": "HEAD",
+    "rev": "8ad4973263b6f966abe5286f3e5e0e1ee749892a",
+    "narHash": "sha256-ARwe4nwkEHnLHO7cJnXNCTjs//2gYM4vqjTRNmFzqnQ=",
+    "lastModified": 1785923749
+  },
+  "nixpkgs": {
+    "type": "tarball",
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1048607.b7c2ada94fe9/nixexprs.tar.xz",
+    "rev": "b7c2ada94fe99c15b0dbcf4d11fd7850b957a436",
+    "narHash": "sha256-929m7iW8q2uv3mZHNwY8Um6XKj99rbIcZsWS9cT1vaI="
+  },
+  "noctalia": {
+    "type": "github",
+    "owner": "noctalia-dev",
+    "repo": "noctalia",
+    "rev": "85ece6af77eef28c8633a47e0b3a08bd5aa3d9df",
+    "narHash": "sha256-fyCklN6/qVwPl5kdNVmQLrjCNhQUyqW6TmpoJQk9Qf4=",
+    "lastModified": 1786115669
+  },
+  "preservation": {
+    "type": "github",
+    "owner": "nix-community",
+    "repo": "preservation",
+    "rev": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
+    "narHash": "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=",
+    "lastModified": 1757436102
+  },
+  "sops-nix": {
+    "type": "github",
+    "owner": "Mic92",
+    "repo": "sops-nix",
+    "rev": "f1406619a3884cd5c47992a70b8b35c9c0fcb4c9",
+    "narHash": "sha256-aCWC8ngycU7OdJrU2+Je3qf+1a2ykuBvpPhZT/9tXMc=",
+    "lastModified": 1783174389
+  },
+  "watt": {
+    "type": "github",
+    "owner": "NotAShelf",
+    "repo": "watt",
+    "rev": "db522b64c0ce29724edb7e91ecdc4fb71c8a96b8",
+    "narHash": "sha256-1w8NCqJLMIO9H9bpCOHIcuMzPANX8fI3TzgY3+V5+HA=",
+    "lastModified": 1785244524
+  }
+}
