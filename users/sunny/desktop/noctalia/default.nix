@@ -3,10 +3,19 @@
   inputs,
   ...
 }: {
-  packages = with pkgs; [
-    (import inputs.noctalia {inherit pkgs;}).package
+  imports = [
+    ./hjem-module.nix
+  ];
 
-    # needed for noctalia
+  programs.noctalia = {
+    enable = true;
+    systemd.enable = true;
+    package = (import inputs.noctalia {inherit pkgs;}).package;
+    validateConfig = true;
+    settings = import ./config {inherit pkgs;};
+  };
+
+  packages = with pkgs; [
     iw
     iproute2
     gpu-screen-recorder
@@ -29,7 +38,6 @@
   ];
 
   xdg.config.files = {
-    "noctalia/config.toml".source = (pkgs.formats.toml {}).generate "config.toml" (import ./config {inherit pkgs;});
     "noctalia/templates".source = ./templates;
     "foot/reload.fish" = {
       executable = true;
