@@ -1,5 +1,5 @@
 let
-  inputs = import ./npins;
+  inputs = import ./.tack;
   sources = builtins.fromJSON (builtins.readFile ./_sources/generated.json);
 
   nixosSystem = import "${inputs.nixpkgs}/nixos/lib/eval-config.nix";
