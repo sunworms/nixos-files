@@ -14,6 +14,7 @@
       radius = 0;
       radius_bottom_left = 10;
       radius_top_left = 10;
+      shadow = true;
       start = ["taskbar"];
       center = ["workspaces"];
       end = ["group:net" "group:notif" "group:mpv"];
@@ -66,7 +67,7 @@
       radius_bottom_right = 10;
       radius_top_right = 10;
       scale = 1.05;
-      shadow = false;
+      shadow = true;
       thickness = 30;
 
       capsule_group = [
