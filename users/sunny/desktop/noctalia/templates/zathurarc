@@ -1,20 +1,45 @@
-set default-bg "{{ colors.surface.default.rgba | set_alpha: 0.85 }}"
-set render-loading-bg "{{ colors.surface.default.rgba | set_alpha: 0.85 }}"
+set default-bg                      "{{ colors.surface.default.rgba | set_alpha: 0.85 }}"
+set render-loading-bg               "{{ colors.surface.default.rgba | set_alpha: 0.85 }}"
 
-set statusbar-bg "{{ colors.surface_container.default.rgba | set_alpha: 0.85 }}"
-set inputbar-bg "{{ colors.surface_container.default.rgba | set_alpha: 0.85 }}"
-set inputbar-fg "{{ colors.primary.default.rgba }}"
+set default-fg                      "{{ colors.on_surface.default.rgba }}"
 
-set index-bg "{{ colors.surface.default.rgba | set_alpha: 0.85 }}"
+set statusbar-bg                    "{{ colors.surface_container.default.rgba | set_alpha: 0.85 }}"
+set statusbar-fg                    "{{ colors.primary.default.rgba }}"
 
-set index-active-bg "{{ colors.surface_container.default.rgba | set_alpha: 0.85 }}"
-set index-active-fg "{{ colors.primary.default.rgba }}"
+set inputbar-bg                    "{{ colors.surface_container.default.rgba | set_alpha: 0.85 }}"
+set inputbar-fg                    "{{ colors.primary.default.rgba }}"
 
-set completion-bg "{{ colors.surface_container.default.rgba | set_alpha: 0.85 }}"
+set index-bg                        "{{ colors.surface.default.rgba | set_alpha: 0.85 }}"
+set index-fg                        "{{ colors.on_surface.default.rgba }}"
 
-set completion-highlight-bg "{{ colors.primary.default.rgba | set_alpha: 0.85 }}"
+set index-active-bg                 "{{ colors.surface_container.default.rgba | set_alpha: 0.85 }}"
+set index-active-fg                 "{{ colors.primary.default.rgba }}"
 
-set completion-group-bg "{{ colors.surface.default.rgba | set_alpha: 0.85 }}"
+set completion-bg                   "{{ colors.surface_container.default.rgba | set_alpha: 0.85 }}"
+set completion-fg                   "{{ colors.on_surface_variant.default.rgba }}"
+
+set completion-group-bg             "{{ colors.surface.default.rgba | set_alpha: 0.85 }}"
+set completion-group-fg             "{{ colors.outline.default.rgba }}"
+
+set completion-highlight-bg         "{{ colors.primary.default.rgba | set_alpha: 0.85 }}"
+set completion-highlight-fg         "{{ colors.on_primary.default.rgba }}"
+
+set notification-bg                 "{{ colors.surface_container.default.rgba }}"
+set notification-fg                 "{{ colors.on_surface.default.rgba }}"
+
+set notification-warning-bg         "{{ colors.secondary_container.default.rgba }}"
+set notification-warning-fg         "{{ colors.on_secondary_container.default.rgba }}"
+
+set notification-error-bg           "{{ colors.error_container.default.rgba }}"
+set notification-error-fg           "{{ colors.on_error_container.default.rgba }}"
+
+set highlight-color                 "{{ colors.tertiary_container.default.rgba | set_alpha: 0.85 }}"
+set highlight-active-color          "{{ colors.tertiary.default.rgba | set_alpha: 0.85 }}"
+
+set select-text-bg                  "{{ colors.surface_variant.default.rgba | set_alpha: 0.85 }}"
+set select-text-fg                  "{{ colors.on_surface.default.rgba }}"
+
+set highlight-fg                    "{{ colors.primary.default.rgba }}"
 
 set selection-clipboard clipboard
 set incremental-search true
