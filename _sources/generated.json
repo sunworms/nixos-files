@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-BJIDey0beviPbA4iJKeIABgaP+WmQDaa4NIxquYpNvc=",
+            "sha256": "sha256-dgEzDUOmT7tKHBIX9iXhj/dtdb7QASTwETHSYcQa814=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1786060276.a43664c0fd/Eden-Linux-a43664c0fd-amd64-clang-pgo.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1786128130.5ec94b1971/Eden-Linux-5ec94b1971-amd64-clang-pgo.AppImage"
         },
-        "version": "v1786060276.a43664c0fd/Eden-Linux-a43664c0fd"
+        "version": "v1786128130.5ec94b1971/Eden-Linux-5ec94b1971"
     },
     "helium": {
         "cargoLock": null,
@@ -23,11 +23,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-+Bw3Ty77cLQA8nBhx1gjyXFUjBbn4RMTU/D9Fc9DaKw=",
+            "sha256": "sha256-IEYWTZ48ioufDCdzXgGy/TZw3dHh45mqZuPW0j3DoYY=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.15.2.1/helium-0.15.2.1-x86_64_linux.tar.xz"
+            "url": "https://github.com/imputnet/helium-linux/releases/download/0.15.3.1/helium-0.15.3.1-x86_64_linux.tar.xz"
         },
-        "version": "0.15.2.1"
+        "version": "0.15.3.1"
     },
     "iosevka-custom": {
         "cargoLock": null,
@@ -53,10 +53,10 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-ivEF4+Me/RspW4iO/1+xqcz3wGOUM54JJKfDxD3eUUE=",
+            "sha256": "sha256-DLmG0RSvq4d6lHh7zmiwejFR35ocdGqFX7rFK+Xnl04=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.515/pcsx2-v2.7.515-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.517/pcsx2-v2.7.517-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "v2.7.515"
+        "version": "v2.7.517"
     }
 }
