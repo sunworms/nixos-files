@@ -12,7 +12,7 @@
     EDITOR = "nvim";
     SUDO_EDITOR = "nvim";
     VISUAL = "nvim";
-    TERMINAL = "footclient";
+    TERMINAL = "foot";
     GTK_THEME = "adw-gtk3";
     GTK_USE_PORTAL = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
