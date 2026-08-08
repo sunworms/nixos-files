@@ -3,4 +3,8 @@
     {_args = ["niri-float-sticky -title 'Picture-in-Picture|Picture in picture'"];}
     {_args = ["kanata --cfg ~/.config/kanata/config.kbd"];}
   ];
+
+  spawn-at-startup = [
+    {_args = ["noctalia"];}
+  ];
 }

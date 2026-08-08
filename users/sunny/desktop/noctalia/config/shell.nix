@@ -39,7 +39,7 @@
         }
         {
           action = "command";
-          command = "systemctl --user restart noctalia.service";
+          command = "pkill noctalia && sleep 0.1 && noctalia";
           enabled = true;
           glyph = "noctalia";
           label = "Restart Noctalia";
