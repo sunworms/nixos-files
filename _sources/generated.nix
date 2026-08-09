@@ -41,12 +41,12 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "9a3b1d7e20c1f7d969d170e278cb64c565324ed0";
+    version = "55f12e0a434efa28f54f6361943e0673442d8390";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/9a3b1d7e20c1f7d969d170e278cb64c565324ed0.tar.gz";
-      sha256 = "sha256-ySgfQRCmFyDdWYfRiwWubC+NBji9F7VDvw1fA6dGFvU=";
+      url = "https://git.gay/sunworms/neovim-config/archive/55f12e0a434efa28f54f6361943e0673442d8390.tar.gz";
+      sha256 = "sha256-3cP7dPOBlPUrXrw++0TNghs4xbXm+CiVnw6Jejv3XoQ=";
     };
-    date = "2026-08-09";
+    date = "2026-08-10";
   };
   niri-float-sticky = {
     pname = "niri-float-sticky";
