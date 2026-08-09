@@ -21,24 +21,25 @@
     };
 
     workspaces = {
-      show_labels = false;
+      display = "none";
     };
 
     cpu = {
-      visualization = "gauge";
-      show_value = false;
+      display = "gauge";
+      show_label = false;
       type = "sysmon";
     };
 
     ram = {
-      visualization = "gauge";
-      show_value = false;
+      display = "gauge";
+      show_label = false;
       stat = "ram_used";
       type = "sysmon";
     };
 
     temp = {
-      show_value = false;
+      display = "gauge";
+      show_label = false;
       stat = "cpu_temp";
       type = "sysmon";
     };
