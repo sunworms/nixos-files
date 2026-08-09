@@ -1,13 +1,12 @@
 {
   stdenvNoCC,
   makeDesktopItem,
-  fetchurl,
   lib,
-  sources,
+  inputs,
   assets,
 }: let
   pname = "eden";
-  rawVersion = sources.eden.version;
+  rawVersion = inputs.eden.version;
   baseName = baseNameOf rawVersion;
   version = lib.removePrefix "Eden-Linux-" baseName;
 
@@ -34,10 +33,7 @@ in
       desktopItem
       ;
 
-    src = fetchurl {
-      url = sources.eden.src.url;
-      hash = sources.eden.src.sha256;
-    };
+    src = inputs.eden.src;
 
     dontUnpack = true;
     dontBuild = true;

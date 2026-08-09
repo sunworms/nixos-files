@@ -1,17 +1,13 @@
 {
   stdenvNoCC,
-  fetchurl,
   unzip,
-  sources,
+  inputs,
 }:
 stdenvNoCC.mkDerivation {
   pname = "iosevka-custom";
-  version = sources.iosevka-custom.version;
+  version = inputs.iosevka-custom.version;
 
-  src = fetchurl {
-    url = sources.iosevka-custom.src.url;
-    hash = sources.iosevka-custom.src.sha256;
-  };
+  src = inputs.iosevka-custom.src;
 
   nativeBuildInputs = [
     unzip

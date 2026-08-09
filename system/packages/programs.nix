@@ -36,7 +36,6 @@
     alejandra
 
     # pins
-    npins
     nvfetcher
 
     fastfetch

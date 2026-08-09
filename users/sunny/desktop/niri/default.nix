@@ -3,7 +3,7 @@
   inputs,
   ...
 }: let
-  niriNix = import "${inputs.niri-nix}/lib" {
+  niriNix = import "${inputs.niri-nix.src}/lib" {
     self = {};
     inherit (pkgs) lib;
     nixpkgs = {
@@ -18,6 +18,6 @@ in {
   };
 
   packages = [
-    (pkgs.callPackage "${inputs.niri-float-sticky}/package.nix" {})
+    (pkgs.callPackage "${inputs.niri-float-sticky.src}/package.nix" {})
   ];
 }

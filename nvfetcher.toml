@@ -1,7 +1,41 @@
+[nixpkgs]
+src.git = "https://github.com/NixOS/nixpkgs"
+src.branch = "nixos-unstable"
+fetch.tarball = "https://github.com/NixOS/nixpkgs/archive/$ver.tar.gz"
+
+[preservation]
+src.git = "https://github.com/nix-community/preservation"
+fetch.tarball = "https://github.com/nix-community/preservation/archive/$ver.tar.gz"
+
+[hjem]
+src.git = "https://github.com/feel-co/hjem"
+fetch.tarball = "https://github.com/feel-co/hjem/archive/$ver.tar.gz"
+
+[sops-nix]
+src.git = "https://github.com/Mic92/sops-nix"
+fetch.tarball = "https://github.com/Mic92/sops-nix/archive/$ver.tar.gz"
+
+[nix-index-database]
+src.git = "https://github.com/nix-community/nix-index-database"
+fetch.tarball = "https://github.com/nix-community/nix-index-database/archive/$ver.tar.gz"
+
+[niri-float-sticky]
+src.git = "https://github.com/probeldev/niri-float-sticky"
+fetch.tarball = "https://github.com/probeldev/niri-float-sticky/archive/$ver.tar.gz"
+
+[neovim-config]
+src.git = "https://git.gay/sunworms/neovim-config"
+fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"
+
+[niri-nix]
+src.git = "https://codeberg.org/bananad3v/niri-nix"
+fetch.tarball = "https://codeberg.org/bananad3v/niri-nix/archive/$ver.tar.gz"
+
 # binary packages
 [pcsx2]
 src.cmd = "curl -sL 'https://api.github.com/repos/PCSX2/pcsx2/releases?per_page=1' | grep -oP '\"tag_name\":\\s*\"\\K[^\"]+'"
-fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/$ver/pcsx2-$ver-linux-appimage-x64-Qt.AppImage"
+src.prefix = "v"
+fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/v$ver/pcsx2-v$ver-linux-appimage-x64-Qt.AppImage"
 
 [eden]
 src.webpage = "https://nightly.eden-emu.dev/latest/release.json"

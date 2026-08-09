@@ -22,6 +22,15 @@
       sha256 = "sha256-IEYWTZ48ioufDCdzXgGy/TZw3dHh45mqZuPW0j3DoYY=";
     };
   };
+  hjem = {
+    pname = "hjem";
+    version = "b610953d0c56da6b28fd39c21bd193b88e91341c";
+    src = fetchTarball {
+      url = "https://github.com/feel-co/hjem/archive/b610953d0c56da6b28fd39c21bd193b88e91341c.tar.gz";
+      sha256 = "sha256-qwppDYdtxqtDpI1iSp7bs8prOJ0KQSvhJchfROD04f0=";
+    };
+    date = "2026-08-05";
+  };
   iosevka-custom = {
     pname = "iosevka-custom";
     version = "34.8.0";
@@ -30,12 +39,75 @@
       sha256 = "sha256-eccecRTKLOANpCdks5Nvm+HVj5aykCASxF3NO6hqcTM=";
     };
   };
+  neovim-config = {
+    pname = "neovim-config";
+    version = "9a3b1d7e20c1f7d969d170e278cb64c565324ed0";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/neovim-config/archive/9a3b1d7e20c1f7d969d170e278cb64c565324ed0.tar.gz";
+      sha256 = "sha256-ySgfQRCmFyDdWYfRiwWubC+NBji9F7VDvw1fA6dGFvU=";
+    };
+    date = "2026-08-09";
+  };
+  niri-float-sticky = {
+    pname = "niri-float-sticky";
+    version = "b4805593eda05fc61e4cb88cfced9dd39913216e";
+    src = fetchTarball {
+      url = "https://github.com/probeldev/niri-float-sticky/archive/b4805593eda05fc61e4cb88cfced9dd39913216e.tar.gz";
+      sha256 = "sha256-786xACvNk6ZE6l40gQ7wRsgqGp64Z4MseMX7gzMMNtg=";
+    };
+    date = "2026-05-12";
+  };
+  niri-nix = {
+    pname = "niri-nix";
+    version = "d0e55a12ec2fc62524e3de621f77706a1854601b";
+    src = fetchTarball {
+      url = "https://codeberg.org/bananad3v/niri-nix/archive/d0e55a12ec2fc62524e3de621f77706a1854601b.tar.gz";
+      sha256 = "sha256-Sh2XpMoVod4BCJnDgL06XgHdxzxCCHJmdxE+GdQv2Ys=";
+    };
+    date = "2026-08-09";
+  };
+  nix-index-database = {
+    pname = "nix-index-database";
+    version = "14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6";
+    src = fetchTarball {
+      url = "https://github.com/nix-community/nix-index-database/archive/14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6.tar.gz";
+      sha256 = "sha256-Y2mSr+HLKYoOsjiackgilxkHXe8gkJ3z4hFFekjQX3I=";
+    };
+    date = "2026-08-09";
+  };
+  nixpkgs = {
+    pname = "nixpkgs";
+    version = "f13ff45afd1bb73e640eaa08a7066dbed07e3238";
+    src = fetchTarball {
+      url = "https://github.com/NixOS/nixpkgs/archive/f13ff45afd1bb73e640eaa08a7066dbed07e3238.tar.gz";
+      sha256 = "sha256-zDSUbpoeo/9ZmD2+wXnzxoo1+uhL8vxc0b8yuYMKYq0=";
+    };
+    date = "2026-08-07";
+  };
   pcsx2 = {
     pname = "pcsx2";
-    version = "v2.7.518";
+    version = "2.7.518";
     src = fetchurl {
       url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.518/pcsx2-v2.7.518-linux-appimage-x64-Qt.AppImage";
       sha256 = "sha256-/G1jtiG0HFx266gJ54sjAdqyyWMkyUF9Y3L2y3uBjaE=";
     };
+  };
+  preservation = {
+    pname = "preservation";
+    version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
+    src = fetchTarball {
+      url = "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz";
+      sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
+    };
+    date = "2025-09-09";
+  };
+  sops-nix = {
+    pname = "sops-nix";
+    version = "f1406619a3884cd5c47992a70b8b35c9c0fcb4c9";
+    src = fetchTarball {
+      url = "https://github.com/Mic92/sops-nix/archive/f1406619a3884cd5c47992a70b8b35c9c0fcb4c9.tar.gz";
+      sha256 = "sha256-aCWC8ngycU7OdJrU2+Je3qf+1a2ykuBvpPhZT/9tXMc=";
+    };
+    date = "2026-07-04";
   };
 }

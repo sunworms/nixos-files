@@ -1,11 +1,11 @@
 {
   pkgs,
-  sources,
+  inputs,
   assets,
   ...
 }: {
   packages = [
-    (pkgs.callPackage ./helium.nix {inherit sources;})
+    (pkgs.callPackage ./helium.nix {inherit inputs;})
   ];
 
   xdg.config.files = {

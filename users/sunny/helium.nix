@@ -1,7 +1,6 @@
 {
   lib,
   stdenv,
-  fetchurl,
   makeWrapper,
   autoPatchelfHook,
   qt6,
@@ -34,16 +33,13 @@
   libva,
   pipewire,
   libpulseaudio,
-  sources,
+  inputs,
 }:
 stdenv.mkDerivation {
   pname = "helium";
-  version = sources.helium.version;
+  version = inputs.helium.version;
 
-  src = fetchurl {
-    url = sources.helium.src.url;
-    hash = sources.helium.src.sha256;
-  };
+  src = inputs.helium.src;
 
   nativeBuildInputs = [
     makeWrapper
