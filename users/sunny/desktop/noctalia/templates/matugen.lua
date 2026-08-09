@@ -27,13 +27,12 @@ end
 function M.setup_treesitter()
 	local set = vim.api.nvim_set_hl
 
-	set(0, "String", { fg = "{{colors.primary.default.hex}}" })
-	set(0, "Identifier", { fg = "{{colors.on_surface.default.hex}}" })
-	set(0, "Function", { fg = "{{colors.primary_fixed_dim.default.hex}}", bold = true })
-	set(0, "Keyword", { fg = "{{colors.secondary.default.hex}}", italic = true })
-	set(0, "Comment", { fg = "{{colors.outline.default.hex}}", italic = true })
-
+	set(0, "@string", { fg = "{{colors.primary.default.hex}}" })
 	set(0, "@variable", { fg = "{{colors.on_surface.default.hex}}" })
+	set(0, "@function", { fg = "{{colors.primary_fixed_dim.default.hex}}", bold = true })
+	set(0, "@keyword", { fg = "{{colors.secondary.default.hex}}", italic = true })
+	set(0, "@comment", { fg = "{{colors.outline.default.hex}}", italic = true })
+
 	set(0, "@variable.builtin", { fg = "{{colors.secondary.default.hex}}" })
 	set(0, "@property", { fg = "{{colors.tertiary.default.hex}}" })
 	set(0, "@parameter", { fg = "{{colors.on_surface_variant.default.hex}}" })
@@ -41,17 +40,16 @@ function M.setup_treesitter()
 	set(0, "@string.special.url", { fg = "{{colors.tertiary.default.hex}}", underline = true })
 	set(0, "@string.path", { fg = "{{colors.primary.default.hex}}" })
 
-	set(0, "Error", { fg = "{{colors.error.default.hex}}" })
 	set(0, "@error", { fg = "{{colors.error.default.hex}}" })
 	set(0, "DiagnosticError", { fg = "{{colors.error.default.hex}}" })
+	set(0, "Error", { fg = "{{colors.error.default.hex}}" })
+
+	set(0, "@attribute", { fg = "{{colors.tertiary.default.hex}}" })
+	set(0, "@type", { fg = "{{colors.tertiary_fixed_dim.default.hex}}" })
+	set(0, "@label", { fg = "{{colors.secondary_fixed_dim.default.hex}}" })
+	set(0, "@preproc", { fg = "{{colors.tertiary.default.hex}}", bold = true })
 
 	set(0, "Substitute", { bg = "{{colors.tertiary.default.hex}}", fg = "{{colors.surface.default.hex}}" })
-	set(0, "PreProc", { fg = "{{colors.tertiary.default.hex}}", bold = true })
-
-	set(0, "TSAttribute", { fg = "{{colors.tertiary.default.hex}}" })
-	set(0, "TSType", { fg = "{{colors.tertiary_fixed_dim.default.hex}}" })
-	set(0, "TSLabel", { fg = "{{colors.secondary_fixed_dim.default.hex}}" })
-
 	set(
 		0,
 		"Visual",
