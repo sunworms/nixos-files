@@ -1,6 +1,7 @@
 {
   pkgs,
   lib,
+  assets,
   ...
 }: {
   imports = [
@@ -11,7 +12,7 @@
   ];
 
   files = {
-    ".face".source = ../../../assets/icons/face;
+    ".face".source = "${assets}/face";
   };
 
   xdg.config.files = {

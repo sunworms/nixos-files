@@ -2,6 +2,7 @@
   pkgs,
   lib,
   sources,
+  assets,
   ...
 }: {
   imports = [
@@ -15,8 +16,8 @@
     '')
     wineWow64Packages.unstableFull
     winetricks
-    (callPackage ./eden.nix {inherit sources;})
-    (callPackage ./pcsx2.nix {inherit sources;})
+    (callPackage ./eden.nix {inherit sources assets;})
+    (callPackage ./pcsx2.nix {inherit sources assets;})
     ppsspp-sdl-wayland
     melonds
     azahar

@@ -1,13 +1,14 @@
 let
   inputs = import ./npins;
   sources = builtins.fromJSON (builtins.readFile ./_sources/generated.json);
+  assets = ./assets;
 
   nixosSystem = import "${inputs.nixpkgs}/nixos/lib/eval-config.nix";
 
   mkHost = hostVars:
     nixosSystem {
       specialArgs = {
-        inherit inputs sources;
+        inherit inputs sources assets;
       };
 
       modules =
@@ -36,7 +37,7 @@ in {
 
         hjem = {
           clobberByDefault = true;
-          specialArgs = {inherit inputs sources;};
+          specialArgs = {inherit inputs sources assets;};
         };
       }
     ];
