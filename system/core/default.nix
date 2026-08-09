@@ -32,7 +32,7 @@
   # Enable comma
   programs.comma = {
     enable = true;
-    package = (import inputs.nix-index-database {inherit pkgs;}).comma-with-db;
+    package = (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db;
   };
 
   # Logind config

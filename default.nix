@@ -1,14 +1,18 @@
 let
-  inputs = import ./npins;
-  sources = builtins.fromJSON (builtins.readFile ./_sources/generated.json);
+  inputs = import ./_sources/generated.nix {
+    inherit (builtins) fetchurl;
+    fetchgit = null;
+    fetchFromGitHub = null;
+    dockerTools = null;
+  };
   assets = ./assets;
 
-  nixosSystem = import "${inputs.nixpkgs}/nixos/lib/eval-config.nix";
+  nixosSystem = import "${inputs.nixpkgs.src}/nixos/lib/eval-config.nix";
 
   mkHost = hostVars:
     nixosSystem {
       specialArgs = {
-        inherit inputs sources assets;
+        inherit inputs assets;
       };
 
       modules =
@@ -16,7 +20,7 @@ let
           ./hosts/${hostVars.hostname}/configuration.nix
           {
             nix.nixPath = [
-              "nixpkgs=${inputs.nixpkgs}"
+              "nixpkgs=${inputs.nixpkgs.src}"
             ];
           }
         ]
@@ -26,9 +30,9 @@ in {
   motobook = mkHost {
     hostname = "motobook";
     modules = [
-      (inputs.preservation + "/module.nix")
-      (import inputs.hjem {}).nixosModules.default
-      (inputs.sops-nix + "/modules/sops")
+      (inputs.preservation.src + "/module.nix")
+      (import inputs.hjem.src {}).nixosModules.default
+      (inputs.sops-nix.src + "/modules/sops")
       {
         nixpkgs = {
           config.allowUnfree = true;
@@ -37,7 +41,7 @@ in {
 
         hjem = {
           clobberByDefault = true;
-          specialArgs = {inherit inputs sources assets;};
+          specialArgs = {inherit inputs assets;};
         };
       }
     ];

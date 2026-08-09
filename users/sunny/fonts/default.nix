@@ -2,11 +2,11 @@
   pkgs,
   lib,
   config,
-  sources,
+  inputs,
   ...
 }: let
   fontPackages = with pkgs; [
-    (callPackage ./iosevka.nix {inherit sources;})
+    (callPackage ./iosevka.nix {inherit inputs;})
     noto-fonts-color-emoji
     noto-fonts-cjk-sans
     noto-fonts
