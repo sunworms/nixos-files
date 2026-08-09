@@ -74,19 +74,6 @@
       "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1049422.f13ff45afd1b/nixexprs.tar.xz",
       "hash": "sha256-CgKDSHL6rqAAQkkvg1xaZDQXb77+4XW73iGcUMJ+2w0="
     },
-    "noctalia": {
-      "type": "Git",
-      "repository": {
-        "type": "GitHub",
-        "owner": "noctalia-dev",
-        "repo": "noctalia"
-      },
-      "branch": "main",
-      "submodules": false,
-      "revision": "ad647ae1bc1a119eaafb849ccce5391e9fdb0918",
-      "url": "https://github.com/noctalia-dev/noctalia/archive/ad647ae1bc1a119eaafb849ccce5391e9fdb0918.tar.gz",
-      "hash": "sha256-JxVEUqGZH1PzNh4w6p0UjJRycm33uUxX1ryotRErf3A="
-    },
     "preservation": {
       "type": "Git",
       "repository": {
