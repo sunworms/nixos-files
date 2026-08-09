@@ -23,9 +23,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "d932036e348131218283b69fbd79cdca6305eb9a",
-      "url": "https://git.gay/sunworms/neovim-config/archive/d932036e348131218283b69fbd79cdca6305eb9a.tar.gz",
-      "hash": "sha256-YmpAZlGG6vAWA2U1ysd3p6Af4J/s1mHw3FmeKYJ6ejQ="
+      "revision": "9a3b1d7e20c1f7d969d170e278cb64c565324ed0",
+      "url": "https://git.gay/sunworms/neovim-config/archive/9a3b1d7e20c1f7d969d170e278cb64c565324ed0.tar.gz",
+      "hash": "sha256-ySgfQRCmFyDdWYfRiwWubC+NBji9F7VDvw1fA6dGFvU="
     },
     "niri-float-sticky": {
       "type": "Git",
@@ -50,9 +50,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "8ad4973263b6f966abe5286f3e5e0e1ee749892a",
-      "url": "https://codeberg.org/bananad3v/niri-nix/archive/8ad4973263b6f966abe5286f3e5e0e1ee749892a.tar.gz",
-      "hash": "sha256-ARwe4nwkEHnLHO7cJnXNCTjs//2gYM4vqjTRNmFzqnQ="
+      "revision": "d0e55a12ec2fc62524e3de621f77706a1854601b",
+      "url": "https://codeberg.org/bananad3v/niri-nix/archive/d0e55a12ec2fc62524e3de621f77706a1854601b.tar.gz",
+      "hash": "sha256-Sh2XpMoVod4BCJnDgL06XgHdxzxCCHJmdxE+GdQv2Ys="
     },
     "nix-index-database": {
       "type": "Git",
@@ -63,16 +63,16 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "dbc756c9d7287de19b3e0e38c928c47510d42c3e",
-      "url": "https://github.com/nix-community/nix-index-database/archive/dbc756c9d7287de19b3e0e38c928c47510d42c3e.tar.gz",
-      "hash": "sha256-q4kR7g+pCcz6NASvoVPYu+CWWUurX03wogtBqGmR4h0="
+      "revision": "14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6",
+      "url": "https://github.com/nix-community/nix-index-database/archive/14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6.tar.gz",
+      "hash": "sha256-Y2mSr+HLKYoOsjiackgilxkHXe8gkJ3z4hFFekjQX3I="
     },
     "nixpkgs": {
       "type": "Channel",
       "name": "nixos-unstable",
       "artifact": "nixexprs.tar.xz",
-      "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1048607.b7c2ada94fe9/nixexprs.tar.xz",
-      "hash": "sha256-929m7iW8q2uv3mZHNwY8Um6XKj99rbIcZsWS9cT1vaI="
+      "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1049422.f13ff45afd1b/nixexprs.tar.xz",
+      "hash": "sha256-CgKDSHL6rqAAQkkvg1xaZDQXb77+4XW73iGcUMJ+2w0="
     },
     "noctalia": {
       "type": "Git",
@@ -83,9 +83,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "85ece6af77eef28c8633a47e0b3a08bd5aa3d9df",
-      "url": "https://github.com/noctalia-dev/noctalia/archive/85ece6af77eef28c8633a47e0b3a08bd5aa3d9df.tar.gz",
-      "hash": "sha256-fyCklN6/qVwPl5kdNVmQLrjCNhQUyqW6TmpoJQk9Qf4="
+      "revision": "ad647ae1bc1a119eaafb849ccce5391e9fdb0918",
+      "url": "https://github.com/noctalia-dev/noctalia/archive/ad647ae1bc1a119eaafb849ccce5391e9fdb0918.tar.gz",
+      "hash": "sha256-JxVEUqGZH1PzNh4w6p0UjJRycm33uUxX1ryotRErf3A="
     },
     "preservation": {
       "type": "Git",
