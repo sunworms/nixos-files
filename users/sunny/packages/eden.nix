@@ -4,6 +4,7 @@
   fetchurl,
   lib,
   sources,
+  assets,
 }: let
   pname = "eden";
   rawVersion = sources.eden.version;
@@ -17,10 +18,7 @@
     genericName = "Eden";
     comment = "Nintendo Switch 1 Emulator";
     exec = "eden";
-    icon = fetchurl {
-      url = "https://git.eden-emu.dev/assets/img/logo.svg";
-      hash = "sha256-18Zae6k6C10mANg8rgOpia3zJxnI1Gq3wrKmc/H9jp0=";
-    };
+    icon = "${assets}/eden.png";
     terminal = false;
     startupNotify = true;
     categories = [

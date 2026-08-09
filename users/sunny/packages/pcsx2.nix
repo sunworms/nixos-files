@@ -4,12 +4,8 @@
   fetchurl,
   qt6Packages,
   sources,
+  assets,
 }: let
-  pcsx2-icon = fetchurl {
-    url = "https://avatars.githubusercontent.com/u/6278711";
-    hash = "sha256-6Pb8WnFtQ/YihH5C8EwgeZv1GaqeKi3/yXBMj6R8LHI=";
-  };
-
   pname = "pcsx2";
   version = lib.removePrefix "v" sources.pcsx2.version;
 
@@ -34,7 +30,7 @@ in
       install -m 444 -D ${appimageContents}/net.pcsx2.PCSX2.desktop $out/share/applications/pcsx2.desktop
       substituteInPlace $out/share/applications/pcsx2.desktop \
         --replace-fail 'Exec=pcsx2-qt' 'Exec=pcsx2' \
-        --replace-fail 'Icon=PCSX2' 'Icon=${pcsx2-icon}'
+        --replace-fail 'Icon=PCSX2' 'Icon=${assets}/pcsx2.png'
     '';
 
     extraBwrapArgs = [
