@@ -8,6 +8,7 @@
       "elijaharch/wl-screen-mirror"
       "cleboost/hotspot"
       "alexander/screen-toolkit"
+      "ezequiel/mango_layouts"
     ];
   };
 
@@ -26,6 +27,9 @@
     };
     "elijaharch/wl-screen-mirror" = {
       controls_open_near_click = false;
+    };
+    "ezequiel/mango_layouts" = {
+      panel_placement = "attached";
     };
   };
 }

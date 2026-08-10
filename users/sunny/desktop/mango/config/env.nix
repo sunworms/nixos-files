@@ -1,0 +1,14 @@
+{
+  env = [
+    "EDITOR,nvim"
+    "GTK_THEME,adw-gtk3"
+    "GTK_USE_PORTAL,1"
+    "QT_AUTO_SCREEN_SCALE_FACTOR,1"
+    "QT_QPA_PLATFORMTHEME,qt6ct"
+    "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
+    "SUDO_EDITOR,nvim"
+    "TERMINAL,foot"
+    "VISUAL,nvim"
+    "_JAVA_AWT_WM_NONREPARENTING,1"
+  ];
+}

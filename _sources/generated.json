@@ -8,11 +8,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-YOE+fkdNH9dyWLMII8UJmWbGUPIL7t5t1ct9ZIrdvGc=",
+            "sha256": "sha256-MT/7dFIO3dEQNJNx4hud2CDI54A0rPauHBgCkmyLpgg=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1786213455.c0ffc900cd/Eden-Linux-c0ffc900cd-amd64-clang-pgo.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1786300059.13d39f39aa/Eden-Linux-13d39f39aa-amd64-clang-pgo.AppImage"
         },
-        "version": "v1786213455.c0ffc900cd/Eden-Linux-c0ffc900cd"
+        "version": "v1786300059.13d39f39aa/Eden-Linux-13d39f39aa"
     },
     "helium": {
         "cargoLock": null,
@@ -72,34 +72,6 @@
         },
         "version": "55f12e0a434efa28f54f6361943e0673442d8390"
     },
-    "niri-float-sticky": {
-        "cargoLock": null,
-        "date": "2026-05-12",
-        "extract": null,
-        "name": "niri-float-sticky",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-786xACvNk6ZE6l40gQ7wRsgqGp64Z4MseMX7gzMMNtg=",
-            "type": "tarball",
-            "url": "https://github.com/probeldev/niri-float-sticky/archive/b4805593eda05fc61e4cb88cfced9dd39913216e.tar.gz"
-        },
-        "version": "b4805593eda05fc61e4cb88cfced9dd39913216e"
-    },
-    "niri-nix": {
-        "cargoLock": null,
-        "date": "2026-08-09",
-        "extract": null,
-        "name": "niri-nix",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-Sh2XpMoVod4BCJnDgL06XgHdxzxCCHJmdxE+GdQv2Ys=",
-            "type": "tarball",
-            "url": "https://codeberg.org/bananad3v/niri-nix/archive/d0e55a12ec2fc62524e3de621f77706a1854601b.tar.gz"
-        },
-        "version": "d0e55a12ec2fc62524e3de621f77706a1854601b"
-    },
     "nix-index-database": {
         "cargoLock": null,
         "date": "2026-08-09",
@@ -137,11 +109,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-/G1jtiG0HFx266gJ54sjAdqyyWMkyUF9Y3L2y3uBjaE=",
+            "sha256": "sha256-/ISS0KpAlzUBq6nRqepGcuLumrgsfMjhbV1tACGjQUc=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.518/pcsx2-v2.7.518-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.519/pcsx2-v2.7.519-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "2.7.518"
+        "version": "2.7.519"
     },
     "preservation": {
         "cargoLock": null,
