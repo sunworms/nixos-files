@@ -18,6 +18,11 @@
         "/var/lib/libvirt"
         "/var/lib/sops-nix"
         "/var/lib/containers"
+        {
+          directory = "/var/cache/tuigreet";
+          user = "greeter";
+          group = "greeter";
+        }
         "/etc/NetworkManager/system-connections"
       ];
       files = [

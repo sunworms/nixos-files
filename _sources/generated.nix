@@ -85,11 +85,19 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "f1406619a3884cd5c47992a70b8b35c9c0fcb4c9";
+    version = "d1337e05ba0a8e88a75d2c0e1595d82f3b3e2ac4";
     src = fetchTarball {
-      url = "https://github.com/Mic92/sops-nix/archive/f1406619a3884cd5c47992a70b8b35c9c0fcb4c9.tar.gz";
-      sha256 = "sha256-aCWC8ngycU7OdJrU2+Je3qf+1a2ykuBvpPhZT/9tXMc=";
+      url = "https://github.com/Mic92/sops-nix/archive/d1337e05ba0a8e88a75d2c0e1595d82f3b3e2ac4.tar.gz";
+      sha256 = "sha256-G7qDAT98nywA4EFmJCwIRO5wKvDlBBN3BWpsOnjAto8=";
     };
-    date = "2026-07-04";
+    date = "2026-08-10";
+  };
+  tuigreet = {
+    pname = "tuigreet";
+    version = "0.10.2";
+    src = fetchurl {
+      url = "https://github.com/NotAShelf/tuigreet/releases/download/0.10.2/tuigreet-0.10.2-x86_64";
+      sha256 = "sha256-YQu5+tAneDNlIVc3Q926rfn4J56iYsfdi8oFtw7viBI=";
+    };
   };
 }
