@@ -38,16 +38,33 @@ in {
     ripgrep
     fzf
     bat
+    wayfreeze
     kanata
+    fuzzel
   ];
 
   xdg.config.files = {
     "kanata/config.kbd".source = ./kanata.kbd;
 
-    "xdg-desktop-portal/niri-portals.conf".text = ''
+    "fuzzel/fuzzel.ini".text = ''
+      include=~/.config/fuzzel/themes/noctalia
+    '';
+
+    "xdg-desktop-portal/mango-portals.conf".text = ''
       [preferred]
-      default=gnome;gtk
+      default=gtk
+      org.freedesktop.impl.portal.Inhibit=gtk
       org.freedesktop.impl.portal.FileChooser=termfilechooser
+      org.freedesktop.impl.portal.ScreenCast=wlr
+      org.freedesktop.impl.portal.ScreenShot=wlr
+      org.freedesktop.impl.portal.Secret=gnome-keyring
+    '';
+
+    "xdg-desktop-portal-wlr/config".text = ''
+      [screencast]
+      chooser_type = dmenu
+      chooser_cmd = fuzzel -d
+      max_fps = 60
     '';
 
     "xdg-desktop-portal-termfilechooser/config".text = ''

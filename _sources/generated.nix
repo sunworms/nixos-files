@@ -8,10 +8,10 @@
 {
   eden = {
     pname = "eden";
-    version = "v1786213455.c0ffc900cd/Eden-Linux-c0ffc900cd";
+    version = "v1786300059.13d39f39aa/Eden-Linux-13d39f39aa";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1786213455.c0ffc900cd/Eden-Linux-c0ffc900cd-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-YOE+fkdNH9dyWLMII8UJmWbGUPIL7t5t1ct9ZIrdvGc=";
+      url = "https://nightly.eden-emu.dev/v1786300059.13d39f39aa/Eden-Linux-13d39f39aa-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-MT/7dFIO3dEQNJNx4hud2CDI54A0rPauHBgCkmyLpgg=";
     };
   };
   helium = {
@@ -48,24 +48,6 @@
     };
     date = "2026-08-10";
   };
-  niri-float-sticky = {
-    pname = "niri-float-sticky";
-    version = "b4805593eda05fc61e4cb88cfced9dd39913216e";
-    src = fetchTarball {
-      url = "https://github.com/probeldev/niri-float-sticky/archive/b4805593eda05fc61e4cb88cfced9dd39913216e.tar.gz";
-      sha256 = "sha256-786xACvNk6ZE6l40gQ7wRsgqGp64Z4MseMX7gzMMNtg=";
-    };
-    date = "2026-05-12";
-  };
-  niri-nix = {
-    pname = "niri-nix";
-    version = "d0e55a12ec2fc62524e3de621f77706a1854601b";
-    src = fetchTarball {
-      url = "https://codeberg.org/bananad3v/niri-nix/archive/d0e55a12ec2fc62524e3de621f77706a1854601b.tar.gz";
-      sha256 = "sha256-Sh2XpMoVod4BCJnDgL06XgHdxzxCCHJmdxE+GdQv2Ys=";
-    };
-    date = "2026-08-09";
-  };
   nix-index-database = {
     pname = "nix-index-database";
     version = "14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6";
@@ -86,10 +68,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.7.518";
+    version = "2.7.519";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.518/pcsx2-v2.7.518-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-/G1jtiG0HFx266gJ54sjAdqyyWMkyUF9Y3L2y3uBjaE=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.519/pcsx2-v2.7.519-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-/ISS0KpAlzUBq6nRqepGcuLumrgsfMjhbV1tACGjQUc=";
     };
   };
   preservation = {

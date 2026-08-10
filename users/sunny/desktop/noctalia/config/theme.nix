@@ -6,8 +6,8 @@
     community_palette = "Catppuccin Lavender";
 
     templates = {
-      builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
-      community_ids = ["yazi"];
+      builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "mango"];
+      community_ids = ["fuzzel" "yazi"];
 
       user = {
         variables = {

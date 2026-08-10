@@ -1,9 +1,8 @@
 {pkgs, ...}: {
   services.displayManager.ly.enable = true;
 
-  programs.niri = {
+  programs.mango = {
     enable = true;
-    package = pkgs.niri;
-    useNautilus = false;
+    package = pkgs.mango;
   };
 }
