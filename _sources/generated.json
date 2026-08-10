@@ -131,16 +131,31 @@
     },
     "sops-nix": {
         "cargoLock": null,
-        "date": "2026-07-04",
+        "date": "2026-08-10",
         "extract": null,
         "name": "sops-nix",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-aCWC8ngycU7OdJrU2+Je3qf+1a2ykuBvpPhZT/9tXMc=",
+            "sha256": "sha256-G7qDAT98nywA4EFmJCwIRO5wKvDlBBN3BWpsOnjAto8=",
             "type": "tarball",
-            "url": "https://github.com/Mic92/sops-nix/archive/f1406619a3884cd5c47992a70b8b35c9c0fcb4c9.tar.gz"
+            "url": "https://github.com/Mic92/sops-nix/archive/d1337e05ba0a8e88a75d2c0e1595d82f3b3e2ac4.tar.gz"
         },
-        "version": "f1406619a3884cd5c47992a70b8b35c9c0fcb4c9"
+        "version": "d1337e05ba0a8e88a75d2c0e1595d82f3b3e2ac4"
+    },
+    "tuigreet": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "tuigreet",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-YQu5+tAneDNlIVc3Q926rfn4J56iYsfdi8oFtw7viBI=",
+            "type": "url",
+            "url": "https://github.com/NotAShelf/tuigreet/releases/download/0.10.2/tuigreet-0.10.2-x86_64"
+        },
+        "version": "0.10.2"
     }
 }
