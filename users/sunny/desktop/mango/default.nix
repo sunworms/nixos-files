@@ -28,6 +28,14 @@ in {
   };
 
   packages = with pkgs; [
-    (writeShellScriptBin "mango-screenshot" (builtins.readFile ./scripts/screenshot.sh))
+    (writeShellScriptBin "squish-discord-share" ''
+      mmsg watch all-clients | jq --unbuffered -c '.. | objects | select(.title? // "" | test("is sharing a window\\.$"))' | while read -r obj; do
+          id=$(jq -r '.id' <<<"$obj")
+          w=$(jq -r '.width' <<<"$obj")
+          if [[ -n "$id" && "$w" != "1" ]]; then
+              mmsg dispatch resizewin,1,1 client,"$id"
+          fi
+      done
+    '')
   ];
 }
