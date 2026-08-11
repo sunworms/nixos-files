@@ -20,5 +20,6 @@
     "isfloating:1,isglobal:1,width:525,height:295,offsetx:95,offsety:-40,title:Picture-in-Picture"
     "isfloating:1,isglobal:1,width:525,height:295,offsetx:95,offsety:-40,title:Picture in picture"
     "force_fakemaximize:1,ignore_maximize:1,appid:helium"
+    "title:discord\.com is sharing a window\.,width:1,height:1,isnosizehint:1,isopensilent:1,isnoborder:1,isnoshadow:1,isnoanimation:1,noblur:1"
   ];
 }
