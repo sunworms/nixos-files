@@ -1,22 +1,9 @@
-{
-  pkgs,
-  lib,
-  ...
-}: {
-  services.greetd = {
+{pkgs, ...}: {
+  # so UWSM does not complain
+  systemd.targets.graphical = {
     enable = true;
-    settings = {
-      default_session = {
-        command = "${lib.getExe pkgs.tuigreet} --time --remember --remember-session";
-        user = "greeter";
-      };
-    };
-    useTextGreeter = true;
+    wantedBy = ["multi-user.target"];
   };
-
-  environment.systemPackages = with pkgs; [
-    volantes-cursors
-  ];
 
   programs.mango = {
     enable = true;
