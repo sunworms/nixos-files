@@ -1,37 +1,18 @@
-{
-  pkgs,
-  lib,
-  inputs,
-  ...
-}: let
-  rafTuigreet = pkgs.stdenvNoCC.mkDerivation {
-    pname = "tuigreet";
-    version = inputs.tuigreet.version;
-    src = inputs.tuigreet.src;
-    dontUnpack = true;
-    buildInputs = with pkgs; [
-      libgcc
-    ];
-    nativeBuildInputs = with pkgs; [
-      autoPatchelfHook
-    ];
-    installPhase = ''
-      runHook preinstall
-      install -Dm755 $src $out/bin/tuigreet
-      runHook postInstall
-    '';
-    meta.mainProgram = "tuigreet";
+{pkgs, ...}: let
+  sddm-astronaut = pkgs.sddm-astronaut.override {
+    embeddedTheme = "astronaut";
   };
 in {
-  services.greetd = {
+  environment.systemPackages = [sddm-astronaut];
+
+  services.displayManager.sddm = {
     enable = true;
-    settings = {
-      default_session = {
-        command = "${lib.getExe rafTuigreet} --time --remember --remember-session";
-        user = "greeter";
-      };
-    };
-    useTextGreeter = true;
+    wayland.enable = true;
+    package = pkgs.kdePackages.sddm;
+    extraPackages = with pkgs; [
+      kdePackages.qtmultimedia
+    ];
+    theme = "sddm-astronaut-theme";
   };
 
   programs.mango = {
