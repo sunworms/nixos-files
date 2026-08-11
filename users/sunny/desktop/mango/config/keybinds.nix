@@ -36,11 +36,19 @@
     "SUPER,Right,focusdir,right"
     "SUPER,Up,focusdir,up"
     "SUPER,Down,focusdir,down"
+    "SUPER,h,focusdir,left"
+    "SUPER,l,focusdir,right"
+    "SUPER,k,focusdir,up"
+    "SUPER,j,focusdir,down"
 
     "SUPER+SHIFT,Up,exchange_client,up"
     "SUPER+SHIFT,Down,exchange_client,down"
     "SUPER+SHIFT,Left,exchange_client,left"
     "SUPER+SHIFT,Right,exchange_client,right"
+    "SUPER+SHIFT,K,exchange_client,up"
+    "SUPER+SHIFT,J,exchange_client,down"
+    "SUPER+SHIFT,H,exchange_client,left"
+    "SUPER+SHIFT,L,exchange_client,right"
 
     "SUPER,g,toggleglobal,"
     "ALT,Tab,togglejump,"
@@ -49,9 +57,9 @@
     "SUPER,f,togglefullscreen,"
     "SUPER+SHIFT,f,togglefakefullscreen,"
 
-    "SUPER,i,minimized,"
+    "SUPER,d,minimized,"
     "SUPER,o,toggleoverlay,"
-    "SUPER+SHIFT,I,restore_minimized"
+    "SUPER+SHIFT,D,restore_minimized"
     "SUPER,z,toggle_scratchpad"
     "SUPER,r,switch_proportion_preset,"
 
