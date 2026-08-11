@@ -1,19 +1,26 @@
-{pkgs, ...}: let
-  sddm-astronaut = pkgs.sddm-astronaut.override {
-    embeddedTheme = "astronaut";
-  };
-in {
-  environment.systemPackages = [sddm-astronaut];
-
-  services.displayManager.sddm = {
+{
+  pkgs,
+  lib,
+  ...
+}: {
+  services.greetd = {
     enable = true;
-    wayland.enable = true;
-    package = pkgs.kdePackages.sddm;
-    extraPackages = with pkgs; [
-      kdePackages.qtmultimedia
-    ];
-    theme = "sddm-astronaut-theme";
+    settings = {
+      default_session = {
+        command = "/usr/bin/env XCURSOR_SIZE=48 XCURSOR_THEME=volantes_cursors QT_SCALE_FACTOR=1.75 ${lib.getExe pkgs.cage} -s -d -- ${lib.getExe pkgs.qtgreet}";
+        user = "greeter";
+      };
+    };
   };
+
+  # let greeter user access ~/.face
+  systemd.tmpfiles.rules = [
+    "z /home/sunny 711 sunny users -"
+  ];
+
+  environment.systemPackages = with pkgs; [
+    volantes-cursors
+  ];
 
   programs.mango = {
     enable = true;
