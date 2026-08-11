@@ -38,7 +38,6 @@ in {
     ripgrep
     fzf
     bat
-    wayfreeze
     kanata
     fuzzel
   ];

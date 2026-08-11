@@ -110,11 +110,8 @@
     "CTRL+ALT,Left,resizewin,-50,+0"
     "CTRL+ALT,Right,resizewin,+50,+0"
 
-    "SUPER,p,spawn,mango-screenshot fullscreen"
-    "SUPER+ALT,p,spawn,mango-screenshot region"
-    "SUPER+CTRL,p,spawn,mango-screenshot window"
-    "SUPER+SHIFT,p,spawn,mango-screenshot freeze"
-    "SUPER+SHIFT+ALT,p,spawn,mango-screenshot freeze-region"
-    "SUPER+CTRL+ALT,p,spawn,mango-screenshot annotate"
+    "SUPER+SHIFT,S,spawn,noctalia msg screenshot-region"
+    "SUPER+SHIFT+CTRL,S,spawn,noctalia msg screenshot-fullscreen all"
+    "SUPER+SHIFT+ALT,S,spawn,noctalia msg screenshot-fullscreen pick"
   ];
 }

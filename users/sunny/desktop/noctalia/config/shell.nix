@@ -20,6 +20,11 @@
       sort_by_usage = false;
     };
 
+    screenshot = {
+      directory = "~/Pictures/Screenshots";
+      remember_last_region = true;
+    };
+
     session = {
       actions = [
         {
