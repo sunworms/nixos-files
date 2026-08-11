@@ -40,6 +40,7 @@ in {
     bat
     kanata
     fuzzel
+    wl-clip-persist
   ];
 
   xdg.config.files = {
