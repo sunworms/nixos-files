@@ -41,12 +41,12 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "55f12e0a434efa28f54f6361943e0673442d8390";
+    version = "fe5f0e00b14c1e36db83f6e2fe4f11dd1ff7510f";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/55f12e0a434efa28f54f6361943e0673442d8390.tar.gz";
-      sha256 = "sha256-3cP7dPOBlPUrXrw++0TNghs4xbXm+CiVnw6Jejv3XoQ=";
+      url = "https://git.gay/sunworms/neovim-config/archive/fe5f0e00b14c1e36db83f6e2fe4f11dd1ff7510f.tar.gz";
+      sha256 = "sha256-94+9k5bxDcaICFuCBUVA/V3lB48JLsCpvVokEcP3ps8=";
     };
-    date = "2026-08-10";
+    date = "2026-08-11";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -91,13 +91,5 @@
       sha256 = "sha256-G7qDAT98nywA4EFmJCwIRO5wKvDlBBN3BWpsOnjAto8=";
     };
     date = "2026-08-10";
-  };
-  tuigreet = {
-    pname = "tuigreet";
-    version = "0.10.2";
-    src = fetchurl {
-      url = "https://github.com/NotAShelf/tuigreet/releases/download/0.10.2/tuigreet-0.10.2-x86_64";
-      sha256 = "sha256-YQu5+tAneDNlIVc3Q926rfn4J56iYsfdi8oFtw7viBI=";
-    };
   };
 }
