@@ -11,6 +11,7 @@
         user = "greeter";
       };
     };
+    useTextGreeter = true;
   };
 
   environment.systemPackages = with pkgs; [
