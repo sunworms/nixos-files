@@ -34,7 +34,7 @@
           enabled = true;
           fill = "surface_variant";
           id = "notif";
-          members = ["notifications" "clipboard" "btn"];
+          members = ["notifications" "clipboard"];
           opacity = 1.0;
           padding = 6.0;
           radius = 8.0;

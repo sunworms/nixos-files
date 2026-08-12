@@ -72,6 +72,34 @@
         },
         "version": "fe5f0e00b14c1e36db83f6e2fe4f11dd1ff7510f"
     },
+    "niri-float-sticky": {
+        "cargoLock": null,
+        "date": "2026-05-12",
+        "extract": null,
+        "name": "niri-float-sticky",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-786xACvNk6ZE6l40gQ7wRsgqGp64Z4MseMX7gzMMNtg=",
+            "type": "tarball",
+            "url": "https://github.com/probeldev/niri-float-sticky/archive/b4805593eda05fc61e4cb88cfced9dd39913216e.tar.gz"
+        },
+        "version": "b4805593eda05fc61e4cb88cfced9dd39913216e"
+    },
+    "niri-nix": {
+        "cargoLock": null,
+        "date": "2026-08-12",
+        "extract": null,
+        "name": "niri-nix",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-9WsXXV2KYl9AiwOVDfonoBRAJMIJIJfA0Fmg7a0SJ0U=",
+            "type": "tarball",
+            "url": "https://codeberg.org/bananad3v/niri-nix/archive/39cfb5f8e162859da69ac8b2524d255bc8b12d19.tar.gz"
+        },
+        "version": "39cfb5f8e162859da69ac8b2524d255bc8b12d19"
+    },
     "nix-index-database": {
         "cargoLock": null,
         "date": "2026-08-09",
