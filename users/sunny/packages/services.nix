@@ -1,7 +1,6 @@
 {
   pkgs,
   lib,
-  inputs,
   ...
 }: {
   systemd.services = {
@@ -37,8 +36,8 @@
 
     helium-del-cache = {
       description = "Delete Helium Cache on login";
-      after = ["graphical-session.target"];
-      wantedBy = ["graphical-session.target"];
+      after = ["default.target"];
+      wantedBy = ["default.target"];
       serviceConfig = {
         Type = "oneshot";
         ExecStart = ''
