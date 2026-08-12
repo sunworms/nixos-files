@@ -19,6 +19,11 @@
         "/var/lib/sops-nix"
         "/var/lib/containers"
         "/etc/NetworkManager/system-connections"
+        {
+          directory = "/var/cache/tuigreet";
+          user = "greeter";
+          group = "greeter";
+        }
       ];
       files = [
         {
