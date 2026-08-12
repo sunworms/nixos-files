@@ -15,6 +15,14 @@ fetch.tarball = "https://github.com/feel-co/hjem/archive/$ver.tar.gz"
 src.git = "https://github.com/Mic92/sops-nix"
 fetch.tarball = "https://github.com/Mic92/sops-nix/archive/$ver.tar.gz"
 
+[niri-nix]
+src.git = "https://codeberg.org/bananad3v/niri-nix"
+fetch.tarball = "https://codeberg.org/bananad3v/niri-nix/archive/$ver.tar.gz"
+
+[niri-float-sticky]
+src.git = "https://github.com/probeldev/niri-float-sticky"
+fetch.tarball = "https://github.com/probeldev/niri-float-sticky/archive/$ver.tar.gz"
+
 [nix-index-database]
 src.git = "https://github.com/nix-community/nix-index-database"
 fetch.tarball = "https://github.com/nix-community/nix-index-database/archive/$ver.tar.gz"

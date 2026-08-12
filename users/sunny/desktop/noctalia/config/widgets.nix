@@ -14,7 +14,7 @@
     taskbar = {
       capsule = true;
       group_by_workspace = true;
-      hide_empty_workspaces = true;
+      hide_empty_workspaces = false;
     };
 
     network = {
@@ -23,7 +23,7 @@
 
     workspaces = {
       display = "none";
-      hide_when_empty = true;
+      hide_when_empty = false;
     };
 
     cpu = {
@@ -94,10 +94,6 @@
 
     toggle = {
       type = "cleboost/hotspot:toggle";
-    };
-
-    btn = {
-      type = "ezequiel/mango_layouts:btn";
     };
   };
 }

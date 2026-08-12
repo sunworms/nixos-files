@@ -48,6 +48,24 @@
     };
     date = "2026-08-11";
   };
+  niri-float-sticky = {
+    pname = "niri-float-sticky";
+    version = "b4805593eda05fc61e4cb88cfced9dd39913216e";
+    src = fetchTarball {
+      url = "https://github.com/probeldev/niri-float-sticky/archive/b4805593eda05fc61e4cb88cfced9dd39913216e.tar.gz";
+      sha256 = "sha256-786xACvNk6ZE6l40gQ7wRsgqGp64Z4MseMX7gzMMNtg=";
+    };
+    date = "2026-05-12";
+  };
+  niri-nix = {
+    pname = "niri-nix";
+    version = "39cfb5f8e162859da69ac8b2524d255bc8b12d19";
+    src = fetchTarball {
+      url = "https://codeberg.org/bananad3v/niri-nix/archive/39cfb5f8e162859da69ac8b2524d255bc8b12d19.tar.gz";
+      sha256 = "sha256-9WsXXV2KYl9AiwOVDfonoBRAJMIJIJfA0Fmg7a0SJ0U=";
+    };
+    date = "2026-08-12";
+  };
   nix-index-database = {
     pname = "nix-index-database";
     version = "14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6";

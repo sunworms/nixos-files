@@ -39,32 +39,19 @@ in {
     fzf
     bat
     kanata
-    fuzzel
     wl-clip-persist
   ];
 
   xdg.config.files = {
     "kanata/config.kbd".source = ./kanata.kbd;
 
-    "fuzzel/fuzzel.ini".text = ''
-      include=~/.config/fuzzel/themes/noctalia
-    '';
-
-    "xdg-desktop-portal/mango-portals.conf".text = ''
+    "xdg-desktop-portal/niri-portals.conf".text = ''
       [preferred]
-      default=gtk
-      org.freedesktop.impl.portal.Inhibit=gtk
-      org.freedesktop.impl.portal.FileChooser=termfilechooser
-      org.freedesktop.impl.portal.ScreenCast=wlr
-      org.freedesktop.impl.portal.ScreenShot=wlr
-      org.freedesktop.impl.portal.Secret=gnome-keyring
-    '';
-
-    "xdg-desktop-portal-wlr/config".text = ''
-      [screencast]
-      chooser_type = dmenu
-      chooser_cmd = fuzzel -d
-      max_fps = 60
+      default=gnome;gtk;
+      org.freedesktop.impl.portal.Access=gtk;
+      org.freedesktop.impl.portal.Notification=gtk;
+      org.freedesktop.impl.portal.Secret=gnome-keyring;
+      org.freedesktop.impl.portal.FileChooser=termfilechooser;
     '';
 
     "xdg-desktop-portal-termfilechooser/config".text = ''

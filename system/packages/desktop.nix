@@ -5,19 +5,11 @@
     wantedBy = ["multi-user.target"];
   };
 
-  programs.mango = {
+  programs.niri = {
     enable = true;
-    package = pkgs.mango;
+    package = pkgs.niri;
+    useNautilus = false;
   };
 
-  programs.uwsm = {
-    enable = true;
-    waylandCompositors = {
-      mango = {
-        prettyName = "Mango";
-        comment = "Mango compositor managed by UWSM";
-        binPath = "/run/current-system/sw/bin/mango";
-      };
-    };
-  };
+  services.speechd.enable = false;
 }

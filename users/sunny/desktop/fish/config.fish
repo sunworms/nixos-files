@@ -1,8 +1,3 @@
-if status is-login
-    if uwsm check may-start; and uwsm select
-        exec uwsm start default
-    end
-end
 if status is-interactive
     abbr l 'ls -alh'
     abbr ll 'ls -l'
