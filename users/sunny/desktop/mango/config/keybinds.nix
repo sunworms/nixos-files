@@ -8,25 +8,11 @@
     "SUPER,Escape,spawn,noctalia msg panel-toggle session"
     "SUPER,v,spawn,noctalia msg panel-toggle clipboard"
 
-    "NONE,XF86PowerOff,spawn,noctalia msg session lock-and-suspend"
-
     "NONE,XF86Tools,spawn,noctalia msg settings-toggle"
     "NONE,XF86Launch6,spawn,noctalia msg window-switcher"
     "NONE,XF86Launch5,spawn,noctalia msg session lock"
     "NONE,XF86Favorites,spawn,noctalia msg panel-toggle launcher /emo"
     "NONE,XF86Calculator,spawn,noctalia msg panel-toggle control-center calendar"
-
-    "NONE,XF86AudioRaiseVolume,spawn,noctalia msg volume-up 5"
-    "NONE,XF86AudioLowerVolume,spawn,noctalia msg volume-down 5"
-    "NONE,XF86AudioMute,spawn,noctalia msg volume-mute"
-    "NONE,XF86AudioMicMute,spawn,noctalia msg mic-mute"
-
-    "NONE,XF86AudioPlay,spawn,noctalia msg media toggle"
-    "NONE,XF86AudioNext,spawn,noctalia msg media next"
-    "NONE,XF86AudioPrevious,spawn,noctalia msg media previous"
-
-    "NONE,XF86MonBrightnessUp,spawn,noctalia msg brightness-up 5"
-    "NONE,XF86MonBrightnessDown,spawn,noctalia msg brightness-down 5"
 
     "CTRL+ALT,Delete,quit"
     "SUPER,q,killclient,"
@@ -113,5 +99,21 @@
     "SUPER+SHIFT,S,spawn,noctalia msg screenshot-region"
     "SUPER+SHIFT+CTRL,S,spawn,noctalia msg screenshot-fullscreen all"
     "SUPER+SHIFT+ALT,S,spawn,noctalia msg screenshot-fullscreen pick"
+  ];
+
+  bindl = [
+    "NONE,XF86PowerOff,spawn,noctalia msg session lock-and-suspend"
+
+    "NONE,XF86AudioRaiseVolume,spawn,noctalia msg volume-up 5"
+    "NONE,XF86AudioLowerVolume,spawn,noctalia msg volume-down 5"
+    "NONE,XF86AudioMute,spawn,noctalia msg volume-mute"
+    "NONE,XF86AudioMicMute,spawn,noctalia msg mic-mute"
+
+    "NONE,XF86AudioPlay,spawn,noctalia msg media toggle"
+    "NONE,XF86AudioNext,spawn,noctalia msg media next"
+    "NONE,XF86AudioPrevious,spawn,noctalia msg media previous"
+
+    "NONE,XF86MonBrightnessUp,spawn,noctalia msg brightness-up 5"
+    "NONE,XF86MonBrightnessDown,spawn,noctalia msg brightness-down 5"
   ];
 }
