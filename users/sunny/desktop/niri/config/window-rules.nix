@@ -14,11 +14,9 @@
         x = 1025;
         y = 225;
       };
-      default-column-width = {
-        fixed = 525;
-      };
-      default-window-height = {
-        fixed = 295;
+      default-column-width.fixed = 525;
+      default-window-height.fixed = 295;
+    }
     {
       match._props.title = "discord.com is sharing a window.";
       default-floating-position._props = {
