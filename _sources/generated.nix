@@ -103,11 +103,11 @@
   };
   sops-nix = {
     pname = "sops-nix";
-    version = "d1337e05ba0a8e88a75d2c0e1595d82f3b3e2ac4";
+    version = "a8627b21b9107c5711c96b84f32a9a4b3d45295f";
     src = fetchTarball {
-      url = "https://github.com/Mic92/sops-nix/archive/d1337e05ba0a8e88a75d2c0e1595d82f3b3e2ac4.tar.gz";
-      sha256 = "sha256-G7qDAT98nywA4EFmJCwIRO5wKvDlBBN3BWpsOnjAto8=";
+      url = "https://github.com/Mic92/sops-nix/archive/a8627b21b9107c5711c96b84f32a9a4b3d45295f.tar.gz";
+      sha256 = "sha256-gkig4nPi1CWc4Z50GBsjE4ygSE7hMpl/TwID2an2Cck=";
     };
-    date = "2026-08-10";
+    date = "2026-08-13";
   };
 }
