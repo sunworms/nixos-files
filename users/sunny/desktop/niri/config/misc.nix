@@ -17,11 +17,6 @@
     };
   };
 
-  workspace = [
-    {_args = ["work"];}
-    {_args = ["fun"];}
-  ];
-
   blur = {
     passes = 3;
     offset = 3;
