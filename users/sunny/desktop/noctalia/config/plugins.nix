@@ -16,7 +16,6 @@
       video_directory = "/home/sunny/Pictures/walls/videos";
     };
     "alexander/screen-toolkit" = {
-      panel-full_placement = "attached";
       panel-legacy_placement = "attached";
       panel_placement = "attached";
       result_placement = "attached";
