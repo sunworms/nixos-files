@@ -59,12 +59,12 @@
   };
   niri-nix = {
     pname = "niri-nix";
-    version = "39cfb5f8e162859da69ac8b2524d255bc8b12d19";
+    version = "1b8c7cc028c0191ed870d924544737cd643dd797";
     src = fetchTarball {
-      url = "https://codeberg.org/bananad3v/niri-nix/archive/39cfb5f8e162859da69ac8b2524d255bc8b12d19.tar.gz";
-      sha256 = "sha256-9WsXXV2KYl9AiwOVDfonoBRAJMIJIJfA0Fmg7a0SJ0U=";
+      url = "https://codeberg.org/bananad3v/niri-nix/archive/1b8c7cc028c0191ed870d924544737cd643dd797.tar.gz";
+      sha256 = "sha256-T7W6KgP/e2IZq/9yYYjcJDfOn8aNTtezvEu5ESu3LF4=";
     };
-    date = "2026-08-12";
+    date = "2026-08-13";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -77,12 +77,12 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "2fcb964de67fcf60b43471c55d5d99e61a9ccb5a";
+    version = "867dcbc30bafe3c862ef88620f2e7a109d7d3be5";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/2fcb964de67fcf60b43471c55d5d99e61a9ccb5a.tar.gz";
-      sha256 = "sha256-RzPPiWeUtuvymnpuEWsdtzli5w4kjZs49FqEs3/1u+I=";
+      url = "https://github.com/NixOS/nixpkgs/archive/867dcbc30bafe3c862ef88620f2e7a109d7d3be5.tar.gz";
+      sha256 = "sha256-9dkt1i5JNbEfPb+EjLcSDNs8zqEHQ/1JlSaKgj0SBAg=";
     };
-    date = "2026-08-10";
+    date = "2026-08-12";
   };
   pcsx2 = {
     pname = "pcsx2";
