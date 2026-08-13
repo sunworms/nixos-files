@@ -20,7 +20,22 @@
     (callPackage ./pcsx2.nix {inherit inputs assets;})
     ppsspp-sdl-wayland
     melonds
-    azahar
+    (azahar.overrideAttrs {
+      version = "2126.0";
+      src = fetchFromGitHub {
+        owner = "azahar-emu";
+        repo = "azahar";
+        tag = "2126.0";
+        postCheckout = ''
+          git -C "$out/externals" submodule update --init \
+            teakra zstd discord-rpc spirv-headers spirv-tools sirit xxHash \
+            faad2/faad2 lodepng/lodepng dds-ktx nihstro "$out/dist/compatibility_list"
+          echo "2126.0" > "$out/GIT-TAG"
+          git -C "$out" rev-parse HEAD > "$out/GIT-COMMIT"
+        '';
+        hash = "sha256-/ON5YbwIHZmstjt3zAbw/uns9DVicjyJD3eDcY6JX24=";
+      };
+    })
     mgba
     sameboy
     p7zip-rar
