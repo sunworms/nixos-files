@@ -14,7 +14,8 @@
     taskbar = {
       capsule = true;
       group_by_workspace = true;
-      hide_empty_workspaces = false;
+      hide_empty_workspaces = true;
+      only_active_workspace = true;
     };
 
     network = {
@@ -23,7 +24,7 @@
 
     workspaces = {
       show_labels = false;
-      hide_when_empty = false;
+      hide_when_empty = true;
     };
 
     cpu = {
