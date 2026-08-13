@@ -19,6 +19,11 @@
       };
       default-window-height = {
         fixed = 295;
+    {
+      match._props.title = "discord.com is sharing a window.";
+      default-floating-position._props = {
+        x = 3000;
+        y = 2000;
       };
     }
     {
