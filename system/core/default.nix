@@ -30,6 +30,8 @@
   '';
 
   # Enable comma
+  programs.command-not-found.enable = false;
+  programs.nix-index.enable = false;
   programs.comma = {
     enable = true;
     package = (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db;
