@@ -16,7 +16,7 @@
         "/var/lib/nixos"
         "/var/lib/systemd"
         "/var/lib/libvirt"
-        "/var/lib/sops-nix"
+        "/var/lib/agenix"
         "/var/lib/containers"
         "/etc/NetworkManager/system-connections"
         {

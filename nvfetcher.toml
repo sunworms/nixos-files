@@ -11,9 +11,9 @@ fetch.tarball = "https://github.com/nix-community/preservation/archive/$ver.tar.
 src.git = "https://github.com/feel-co/hjem"
 fetch.tarball = "https://github.com/feel-co/hjem/archive/$ver.tar.gz"
 
-[sops-nix]
-src.git = "https://github.com/Mic92/sops-nix"
-fetch.tarball = "https://github.com/Mic92/sops-nix/archive/$ver.tar.gz"
+[agenix]
+src.git = "https://github.com/ryantm/agenix"
+fetch.tarball = "https://github.com/ryantm/agenix/archive/$ver.tar.gz"
 
 [niri-nix]
 src.git = "https://codeberg.org/bananad3v/niri-nix"
