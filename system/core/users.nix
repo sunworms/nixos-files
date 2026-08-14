@@ -7,7 +7,7 @@
 in {
   users.mutableUsers = false;
 
-  users.users.root.hashedPasswordFile = config.sops.secrets."root/password".path;
+  users.users.root.hashedPasswordFile = config.age.secrets.root-password.path;
 
   users.users.sunny = {
     isNormalUser = true;
@@ -20,7 +20,7 @@ in {
       "render"
       "accel"
     ];
-    hashedPasswordFile = config.sops.secrets."sunny/password".path;
+    hashedPasswordFile = config.age.secrets.sunny-password.path;
     shell = pkgs.fish;
     openssh.authorizedKeys.keys = [
       keys.sunny.aur

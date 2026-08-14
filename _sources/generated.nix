@@ -6,6 +6,15 @@
   dockerTools,
 }:
 {
+  agenix = {
+    pname = "agenix";
+    version = "b027ee29d959fda4b60b57566d64c98a202e0feb";
+    src = fetchTarball {
+      url = "https://github.com/ryantm/agenix/archive/b027ee29d959fda4b60b57566d64c98a202e0feb.tar.gz";
+      sha256 = "sha256-9VnK6Oqai65puVJ4WYtCTvlJeXxMzAp/69HhQuTdl/I=";
+    };
+    date = "2026-02-03";
+  };
   eden = {
     pname = "eden";
     version = "v1786387434.8648c27cbb/Eden-Linux-8648c27cbb";
@@ -59,12 +68,12 @@
   };
   niri-nix = {
     pname = "niri-nix";
-    version = "1b8c7cc028c0191ed870d924544737cd643dd797";
+    version = "96f2b99fb3bf6d5788756faf23b73087c67a4460";
     src = fetchTarball {
-      url = "https://codeberg.org/bananad3v/niri-nix/archive/1b8c7cc028c0191ed870d924544737cd643dd797.tar.gz";
-      sha256 = "sha256-T7W6KgP/e2IZq/9yYYjcJDfOn8aNTtezvEu5ESu3LF4=";
+      url = "https://codeberg.org/bananad3v/niri-nix/archive/96f2b99fb3bf6d5788756faf23b73087c67a4460.tar.gz";
+      sha256 = "sha256-Ye1UgeYHuUi+xagVwjGCQ1W60wfc8ZIDqhdvTml1Hn0=";
     };
-    date = "2026-08-13";
+    date = "2026-08-14";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -86,10 +95,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.7.519";
+    version = "2.7.520";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.519/pcsx2-v2.7.519-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-/ISS0KpAlzUBq6nRqepGcuLumrgsfMjhbV1tACGjQUc=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.520/pcsx2-v2.7.520-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-lMtMninuTIrgCT10DYK9R3cp8k7k2AHnmFUEv/AKKN8=";
     };
   };
   preservation = {
@@ -100,14 +109,5 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
-  };
-  sops-nix = {
-    pname = "sops-nix";
-    version = "a8627b21b9107c5711c96b84f32a9a4b3d45295f";
-    src = fetchTarball {
-      url = "https://github.com/Mic92/sops-nix/archive/a8627b21b9107c5711c96b84f32a9a4b3d45295f.tar.gz";
-      sha256 = "sha256-gkig4nPi1CWc4Z50GBsjE4ygSE7hMpl/TwID2an2Cck=";
-    };
-    date = "2026-08-13";
   };
 }

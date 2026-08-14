@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   programs.git = {
     enable = true;
     lfs.enable = true;
@@ -38,6 +42,7 @@
     # pins
     nvfetcher
 
+    (callPackage "${inputs.agenix.src}/pkgs/agenix.nix" {})
     fastfetch
     wl-clipboard
   ];

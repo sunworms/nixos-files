@@ -32,7 +32,7 @@ in {
     modules = [
       (inputs.preservation.src + "/module.nix")
       (import inputs.hjem.src {}).nixosModules.default
-      (inputs.sops-nix.src + "/modules/sops")
+      (inputs.agenix.src + "/modules/age.nix")
       {
         nixpkgs = {
           config.allowUnfree = true;

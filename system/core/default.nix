@@ -8,7 +8,7 @@
     ./boot.nix
     ./virtualisation.nix
     ./network.nix
-    ./sops.nix
+    ./age.nix
     ./battery.nix
     ./users.nix
     ./preserve.nix
