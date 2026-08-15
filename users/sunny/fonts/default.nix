@@ -2,11 +2,12 @@
   pkgs,
   lib,
   config,
-  inputs,
   ...
 }: let
   fontPackages = with pkgs; [
-    (callPackage ./iosevka.nix {inherit inputs;})
+    nerd-fonts.ubuntu-mono
+    ubuntu-sans
+    merriweather
     noto-fonts-color-emoji
     noto-fonts-cjk-sans
     noto-fonts
@@ -22,9 +23,9 @@ in {
   ];
 
   fonts = {
-    sansSerif = "Iosevka Aile Lean";
-    serif = "Iosevka Etoile Lean";
-    monospace = "IosevkaTermLean Nerd Font Mono";
+    sansSerif = "Ubuntu Sans";
+    serif = "Merriweather";
+    monospace = "UbuntuMono Nerd Font Mono";
     emoji = "Noto Color Emoji";
   };
 

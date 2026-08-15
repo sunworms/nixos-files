@@ -40,14 +40,6 @@
     };
     date = "2026-08-05";
   };
-  iosevka-custom = {
-    pname = "iosevka-custom";
-    version = "34.8.0";
-    src = fetchurl {
-      url = "https://github.com/sunworms/iosevka-nerd/releases/download/v34.8.0/Iosevka-Custom-v34.8.0.zip";
-      sha256 = "sha256-eccecRTKLOANpCdks5Nvm+HVj5aykCASxF3NO6hqcTM=";
-    };
-  };
   neovim-config = {
     pname = "neovim-config";
     version = "cd68d3a22ef48d5fa0553341d5f7bb150e14ff9f";
