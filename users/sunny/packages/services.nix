@@ -1,9 +1,12 @@
-{...}: {
+{lib, ...}: {
   systemd.services = {
     rclone-gdrive = {
       description = "Mount Google Drive via rclone";
       after = ["network-online.target"];
       wants = ["network-online.target"];
+      environment = {
+        PATH = lib.mkForce null;
+      };
       serviceConfig = {
         Type = "notify";
 
