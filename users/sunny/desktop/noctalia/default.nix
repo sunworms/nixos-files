@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   packages = with pkgs; [
     noctalia
     iw
@@ -23,7 +27,7 @@
   ];
 
   xdg.config.files = {
-    "noctalia/config.toml".source = (pkgs.formats.toml {}).generate "config.toml" (import ./config {inherit pkgs;});
+    "noctalia/config.toml".source = (pkgs.formats.toml {}).generate "config.toml" (import ./config {inherit lib;});
     "noctalia/templates".source = ./templates;
     "foot/reload.fish" = {
       executable = true;

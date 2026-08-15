@@ -1,4 +1,4 @@
-{pkgs}: {
+{
   widget = {
     audio_visualizer = {
       centered = false;
@@ -67,11 +67,7 @@
     };
 
     launcher = {
-      glyph = "niri";
-      custom_image = pkgs.fetchurl {
-        url = "https://upload.wikimedia.org/wikipedia/commons/2/28/Nix_snowflake.svg";
-        hash = "sha256-SCuQlSPB14GFTq4XvExJ0QEuK2VIbrd5YYKHLRG/q5I=";
-      };
+      glyph = "gender-transgender";
       custom_image_colorize = true;
     };
 

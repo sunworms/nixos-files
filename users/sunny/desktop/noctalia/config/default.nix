@@ -1,6 +1,4 @@
-{pkgs}: let
-  lib = pkgs.lib;
-
+{lib}: let
   configs = [
     (import ./bar.nix)
     (import ./idle.nix)
@@ -9,7 +7,7 @@
     (import ./shell.nix)
     (import ./theme.nix)
     (import ./various.nix)
-    (import ./widgets.nix {inherit pkgs;})
+    (import ./widgets.nix)
   ];
 in
   lib.foldl' lib.recursiveUpdate {} configs
