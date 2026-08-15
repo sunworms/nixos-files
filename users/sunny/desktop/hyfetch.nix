@@ -1,5 +1,5 @@
 {
-  args = "-c examples/26.jsonc";
+  args = "-c examples/25.jsonc";
   auto_detect_light_dark = true;
   backend = "fastfetch";
   color_align = {
