@@ -1,4 +1,8 @@
-{...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     ./nix-settings.nix
     ./boot.nix
@@ -31,6 +35,7 @@
     enable = true;
     comma.enable = true;
   };
+  programs.nix-index.package = (import inputs.nix-index-database.src {inherit pkgs;}).nix-index-with-small-db;
 
   # Logind config
   services.logind.settings.Login = {
