@@ -1,5 +1,6 @@
 {
   pkgs,
+  lib,
   config,
   inputs,
   ...
@@ -37,6 +38,10 @@ in {
     after = ["basic.target"];
 
     restartTriggers = ["${pkgs.writeText "font-trigger" (toString combinedFonts)}"];
+
+    environment = {
+      PATH = lib.mkForce null;
+    };
 
     wantedBy = ["default.target"];
 

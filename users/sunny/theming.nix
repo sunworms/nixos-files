@@ -1,5 +1,6 @@
 {
   config,
+  lib,
   pkgs,
   ...
 }: let
@@ -84,6 +85,9 @@ in {
   systemd.services.set-gtk-settings = {
     description = "Set GTK settings via dconf";
     wantedBy = ["graphical-session.target"];
+    environment = {
+      PATH = lib.mkForce null;
+    };
     serviceConfig = {
       Type = "oneshot";
       ExecStart = ''
