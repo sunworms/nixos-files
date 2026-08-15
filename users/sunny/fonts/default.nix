@@ -5,12 +5,10 @@
   ...
 }: let
   fontPackages = with pkgs; [
-    nerd-fonts.ubuntu-mono
-    ubuntu-sans
-    merriweather
-    noto-fonts-color-emoji
-    noto-fonts-cjk-sans
+    nerd-fonts.d2coding
     noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-color-emoji
   ];
 
   combinedFonts = pkgs.symlinkJoin {
@@ -23,9 +21,9 @@ in {
   ];
 
   fonts = {
-    sansSerif = "Ubuntu Sans";
-    serif = "Merriweather";
-    monospace = "UbuntuMono Nerd Font Mono";
+    sansSerif = "Noto Sans";
+    serif = "Noto Serif";
+    monospace = "D2KodingLigature Nerd Font Mono";
     emoji = "Noto Color Emoji";
   };
 
