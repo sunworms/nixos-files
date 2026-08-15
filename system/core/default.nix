@@ -1,8 +1,4 @@
-{
-  inputs,
-  pkgs,
-  ...
-}: {
+{...}: {
   imports = [
     ./nix-settings.nix
     ./boot.nix
@@ -31,10 +27,9 @@
 
   # Enable comma
   programs.command-not-found.enable = false;
-  programs.nix-index.enable = false;
-  programs.comma = {
+  programs.nix-index-database = {
     enable = true;
-    package = (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db;
+    comma.enable = true;
   };
 
   # Logind config
