@@ -1,7 +1,7 @@
 {config}: {
   main = {
     include = "~/.config/foot/themes/noctalia";
-    font = "${config.fonts.monospace}:size=11.5";
+    font = "${config.fonts.monospace}:size=12";
   };
 
   colors-dark = {
