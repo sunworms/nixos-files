@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-xparIulp51TMJ4Xd/sVVvxrluH/BPK/ZOWsyb2tdiNY=",
+            "sha256": "sha256-pNEOkAIP+yRiLsSu0Ty+IR6GJCBKKLZpipbgtc4aqH0=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1786387434.8648c27cbb/Eden-Linux-8648c27cbb-amd64-clang-pgo.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1786732908.e7a931d06b/Eden-Linux-e7a931d06b-amd64-clang-pgo.AppImage"
         },
-        "version": "v1786387434.8648c27cbb/Eden-Linux-8648c27cbb"
+        "version": "v1786732908.e7a931d06b/Eden-Linux-e7a931d06b"
     },
     "helium": {
         "cargoLock": null,
@@ -102,17 +102,17 @@
     },
     "niri-nix": {
         "cargoLock": null,
-        "date": "2026-08-14",
+        "date": "2026-08-15",
         "extract": null,
         "name": "niri-nix",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-Ye1UgeYHuUi+xagVwjGCQ1W60wfc8ZIDqhdvTml1Hn0=",
+            "sha256": "sha256-tmZRrERoCnWGZ9NtdPDD72kPa2kl+LmmJt194SSuU4o=",
             "type": "tarball",
-            "url": "https://codeberg.org/bananad3v/niri-nix/archive/96f2b99fb3bf6d5788756faf23b73087c67a4460.tar.gz"
+            "url": "https://codeberg.org/bananad3v/niri-nix/archive/01cb364fdb88786c0059fa80a2b539aa3a54e58e.tar.gz"
         },
-        "version": "96f2b99fb3bf6d5788756faf23b73087c67a4460"
+        "version": "01cb364fdb88786c0059fa80a2b539aa3a54e58e"
     },
     "nix-index-database": {
         "cargoLock": null,
