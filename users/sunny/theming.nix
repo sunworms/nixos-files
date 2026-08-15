@@ -87,10 +87,10 @@ in {
     serviceConfig = {
       Type = "oneshot";
       ExecStart = ''
-        ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/font-name \"'${config.fonts.sansSerif} 11'\"
-        ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/cursor-theme-name \"'volantes_cursors'\"
-        ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/icon-theme-name \"'Adwaita'\"
-        ${pkgs.dconf}/bin/dconf write /org/gnome/desktop/interface/theme-name \"'adw-gtk3'\"
+        /usr/bin/env dconf write /org/gnome/desktop/interface/font-name \"'${config.fonts.sansSerif} 11'\"
+        /usr/bin/env dconf write /org/gnome/desktop/interface/cursor-theme-name \"'volantes_cursors'\"
+        /usr/bin/env dconf write /org/gnome/desktop/interface/icon-theme-name \"'Adwaita'\"
+        /usr/bin/env dconf write /org/gnome/desktop/interface/theme-name \"'adw-gtk3'\"
       '';
     };
   };

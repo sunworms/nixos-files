@@ -1,6 +1,5 @@
 {
   pkgs,
-  lib,
   config,
   inputs,
   ...
@@ -44,7 +43,7 @@ in {
     serviceConfig = {
       Type = "oneshot";
       RemainAfterExit = true;
-      ExecStart = "${lib.getExe' pkgs.fontconfig "fc-cache"} -f";
+      ExecStart = "/usr/bin/env fc-cache -f";
     };
   };
 }
