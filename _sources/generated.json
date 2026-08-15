@@ -151,11 +151,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-lMtMninuTIrgCT10DYK9R3cp8k7k2AHnmFUEv/AKKN8=",
+            "sha256": "sha256-okXxrjKAeNCtBZT2vpDiGcJTfB20xvMT5+3TdTyC0RI=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.520/pcsx2-v2.7.520-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.521/pcsx2-v2.7.521-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "2.7.520"
+        "version": "2.7.521"
     },
     "preservation": {
         "cargoLock": null,
