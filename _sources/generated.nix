@@ -25,10 +25,10 @@
   };
   helium = {
     pname = "helium";
-    version = "0.15.4.1";
+    version = "0.15.5.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.15.4.1/helium-0.15.4.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-qx92G2VWfd3QYr0EYtNCoJlNfGOAvh71cQuFE5A8Hzw=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.15.5.1/helium-0.15.5.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-80oe4aarLjEJ2S45OVEqN8/mii8NIwtSXMFYn8GS/Zc=";
     };
   };
   hjem = {
@@ -69,12 +69,12 @@
   };
   nix-index-database = {
     pname = "nix-index-database";
-    version = "14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6";
+    version = "c7962dc97b45129df8d751bedaf37beb5a17706e";
     src = fetchTarball {
-      url = "https://github.com/nix-community/nix-index-database/archive/14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6.tar.gz";
-      sha256 = "sha256-Y2mSr+HLKYoOsjiackgilxkHXe8gkJ3z4hFFekjQX3I=";
+      url = "https://github.com/nix-community/nix-index-database/archive/c7962dc97b45129df8d751bedaf37beb5a17706e.tar.gz";
+      sha256 = "sha256-IM5CYtf86W4w8eUPpKcY/LpdHElmVBtJhaKnoTKxZEA=";
     };
-    date = "2026-08-09";
+    date = "2026-08-16";
   };
   nixpkgs = {
     pname = "nixpkgs";
