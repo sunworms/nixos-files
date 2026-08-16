@@ -1,7 +1,5 @@
 if status is-interactive
-    abbr l 'ls -alh'
-    abbr ll 'ls -l'
-    abbr ls 'ls --color=tty'
+    alias ls lsd
     abbr osb 'nh os boot --ask -f ./.'
     abbr osbu 'nh os build -f ./.'
     abbr osca 'nh clean all'

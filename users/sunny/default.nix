@@ -38,6 +38,7 @@ in {
     ripgrep
     fzf
     bat
+    lsd
     kanata
     wl-clip-persist
   ];
