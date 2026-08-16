@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-qx92G2VWfd3QYr0EYtNCoJlNfGOAvh71cQuFE5A8Hzw=",
+            "sha256": "sha256-80oe4aarLjEJ2S45OVEqN8/mii8NIwtSXMFYn8GS/Zc=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.15.4.1/helium-0.15.4.1-x86_64_linux.tar.xz"
+            "url": "https://github.com/imputnet/helium-linux/releases/download/0.15.5.1/helium-0.15.5.1-x86_64_linux.tar.xz"
         },
-        "version": "0.15.4.1"
+        "version": "0.15.5.1"
     },
     "hjem": {
         "cargoLock": null,
@@ -101,17 +101,17 @@
     },
     "nix-index-database": {
         "cargoLock": null,
-        "date": "2026-08-09",
+        "date": "2026-08-16",
         "extract": null,
         "name": "nix-index-database",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-Y2mSr+HLKYoOsjiackgilxkHXe8gkJ3z4hFFekjQX3I=",
+            "sha256": "sha256-IM5CYtf86W4w8eUPpKcY/LpdHElmVBtJhaKnoTKxZEA=",
             "type": "tarball",
-            "url": "https://github.com/nix-community/nix-index-database/archive/14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6.tar.gz"
+            "url": "https://github.com/nix-community/nix-index-database/archive/c7962dc97b45129df8d751bedaf37beb5a17706e.tar.gz"
         },
-        "version": "14d55b8069119e3b88da7aa2f6c97f86a2cd3cd6"
+        "version": "c7962dc97b45129df8d751bedaf37beb5a17706e"
     },
     "nixpkgs": {
         "cargoLock": null,
