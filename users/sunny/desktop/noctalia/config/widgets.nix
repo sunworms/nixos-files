@@ -15,7 +15,6 @@
       capsule = true;
       group_by_workspace = true;
       hide_empty_workspaces = true;
-      only_active_workspace = true;
     };
 
     network = {
