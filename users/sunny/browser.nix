@@ -51,5 +51,17 @@
       Terminal=false
       StartupWMClass=chrome-open.spotify.com__-Default
     '';
+    "applications/whatsapp.desktop".text = ''
+      [Desktop Entry]
+      Version=1.0
+      Type=Application
+      Name=WhatsApp
+      Comment=Simple. Secure. Reliable messaging
+      Exec=helium --app=https://web.whatsapp.com
+      Icon=${assets}/whatsapp.png
+      Categories=Network;InstantMessaging;
+      Terminal=false
+      StartupWMClass=chrome-web.whatsapp.com__-Default
+    '';
   };
 }
