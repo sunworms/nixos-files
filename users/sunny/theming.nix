@@ -44,15 +44,6 @@
 in {
   xdg.config.files =
     {
-      "kdeglobals".text = ''
-        [UiSettings]
-        ColorScheme=noctalia
-      '';
-      "okular.kmessagebox".text = ''
-        [General]
-        presentationInfo=4
-      '';
-
       "gtk-3.0/gtk.css".text = ''
         @import url("noctalia.css");
       '';
