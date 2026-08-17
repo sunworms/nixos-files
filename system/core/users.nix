@@ -1,8 +1,4 @@
-{
-  config,
-  pkgs,
-  ...
-}: let
+{config, ...}: let
   keys = import ./keys.nix;
 in {
   users.mutableUsers = false;
@@ -21,15 +17,12 @@ in {
       "accel"
     ];
     hashedPasswordFile = config.age.secrets.sunny-password.path;
-    shell = pkgs.fish;
     openssh.authorizedKeys.keys = [
       keys.sunny.aur
       keys.sunny.gitgay
       keys.sunny.github
     ];
   };
-
-  programs.fish.enable = true;
 
   hjem.users.sunny = ../../users/sunny;
 }
