@@ -17,10 +17,10 @@
   };
   eden = {
     pname = "eden";
-    version = "v1786732908.e7a931d06b/Eden-Linux-e7a931d06b";
+    version = "v1786904188.dc95cd09ee/Eden-Linux-dc95cd09ee";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1786732908.e7a931d06b/Eden-Linux-e7a931d06b-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-pNEOkAIP+yRiLsSu0Ty+IR6GJCBKKLZpipbgtc4aqH0=";
+      url = "https://nightly.eden-emu.dev/v1786904188.dc95cd09ee/Eden-Linux-dc95cd09ee-amd64-clang-pgo.AppImage";
+      sha256 = "sha256-DFixtIVSbXto8eEjYDOBdcwyCmateyPXWjjb6svT2WY=";
     };
   };
   helium = {
@@ -42,12 +42,12 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "cd68d3a22ef48d5fa0553341d5f7bb150e14ff9f";
+    version = "1fb7780018862d620ea85c421e3e68af23a65c8a";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/cd68d3a22ef48d5fa0553341d5f7bb150e14ff9f.tar.gz";
-      sha256 = "sha256-P8BIgC2X3fGx1VnxRbSLP0ZILCTdHp+vBH2vl13imVM=";
+      url = "https://git.gay/sunworms/neovim-config/archive/1fb7780018862d620ea85c421e3e68af23a65c8a.tar.gz";
+      sha256 = "sha256-3CuicZ4+nWjzP+v69okWEI/C5Vlcnt1Wn4HT0Qz1I6A=";
     };
-    date = "2026-08-13";
+    date = "2026-08-17";
   };
   niri-float-sticky = {
     pname = "niri-float-sticky";
@@ -60,12 +60,12 @@
   };
   niri-nix = {
     pname = "niri-nix";
-    version = "01cb364fdb88786c0059fa80a2b539aa3a54e58e";
+    version = "59dc01c8c5f43f7ad4e1225fd58953221d0b7780";
     src = fetchTarball {
-      url = "https://codeberg.org/bananad3v/niri-nix/archive/01cb364fdb88786c0059fa80a2b539aa3a54e58e.tar.gz";
-      sha256 = "sha256-tmZRrERoCnWGZ9NtdPDD72kPa2kl+LmmJt194SSuU4o=";
+      url = "https://codeberg.org/bananad3v/niri-nix/archive/59dc01c8c5f43f7ad4e1225fd58953221d0b7780.tar.gz";
+      sha256 = "sha256-4DE1SAxtJSiTNnt+o8bTOC4koT/itZlDX8zaKbXvIbU=";
     };
-    date = "2026-08-15";
+    date = "2026-08-17";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -78,12 +78,12 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "0e251e24a4f24e036a084b6b4b2d2491af4167f4";
+    version = "e5bdc4a41d4c072fe1e3787eaa0320a384741d44";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/0e251e24a4f24e036a084b6b4b2d2491af4167f4.tar.gz";
-      sha256 = "sha256-yNJd40f11EzXBjSByCB7IPpeFFAdeoSKKM67dGkfFoU=";
+      url = "https://github.com/NixOS/nixpkgs/archive/e5bdc4a41d4c072fe1e3787eaa0320a384741d44.tar.gz";
+      sha256 = "sha256-FBJRXmbGXiSUDvYEbfLYRkckayyZ6SK1UEqhCrIZ2Cs=";
     };
-    date = "2026-08-13";
+    date = "2026-08-16";
   };
   pcsx2 = {
     pname = "pcsx2";
