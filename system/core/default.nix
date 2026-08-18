@@ -29,14 +29,6 @@
     Defaults lecture="never"
   '';
 
-  # Enable comma
-  programs.command-not-found.enable = false;
-  programs.nix-index-database = {
-    enable = true;
-    comma.enable = true;
-  };
-  programs.nix-index.package = (import inputs.nix-index-database.src {inherit pkgs;}).nix-index-with-small-db;
-
   # Logind config
   services.logind.settings.Login = {
     HandlePowerKey = "ignore";

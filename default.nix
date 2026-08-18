@@ -33,7 +33,6 @@ in {
       (inputs.preservation.src + "/module.nix")
       (import inputs.hjem.src {}).nixosModules.default
       (inputs.agenix.src + "/modules/age.nix")
-      (inputs.nix-index-database.src + "/nixos-module.nix")
       {
         nixpkgs = {
           config.allowUnfree = true;
