@@ -25,7 +25,7 @@
       ".config/fish"
 
       ".config/azahar-emu"
-      ".config/eden"
+      ".config/Ryujinx"
       ".config/melonDS"
       ".config/mgba"
       ".config/PCSX2"
@@ -36,7 +36,6 @@
       ".local/share/fish"
       ".local/share/nvfetcher"
       ".local/share/azahar-emu"
-      ".local/share/eden"
       ".local/share/SameBoy"
       ".local/share/keyrings"
       ".local/share/containers"

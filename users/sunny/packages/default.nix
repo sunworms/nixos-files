@@ -16,7 +16,7 @@
     '')
     wineWow64Packages.unstableFull
     winetricks
-    (callPackage ./eden.nix {inherit inputs assets;})
+    (callPackage ./ryujinx.nix {inherit inputs assets;})
     (callPackage ./pcsx2.nix {inherit inputs assets;})
     ppsspp-sdl-wayland
     melonds

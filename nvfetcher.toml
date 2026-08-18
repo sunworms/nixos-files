@@ -36,12 +36,9 @@ src.cmd = "curl -sL 'https://api.github.com/repos/PCSX2/pcsx2/releases?per_page=
 src.prefix = "v"
 fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/v$ver/pcsx2-v$ver-linux-appimage-x64-Qt.AppImage"
 
-[eden]
-src.webpage = "https://nightly.eden-emu.dev/latest/release.json"
-src.regex = 'v\d+\.[0-9a-f]+'
-src.from_pattern = 'v(\d+)\.([a-f0-9]+)'
-src.to_pattern = 'v\1.\2/Eden-Linux-\2'
-fetch.url = "https://nightly.eden-emu.dev/$ver-amd64-clang-pgo.AppImage"
+[ryujinx]
+src.cmd = "curl -sL 'https://git.ryujinx.app/api/v1/repos/Ryubing/Canary/releases/latest' | grep -oP '\"tag_name\":\\s*\"\\K[^\"]+'"
+fetch.url = "https://git.ryujinx.app/Ryubing/Canary/releases/download/$ver/ryujinx-canary-$ver-x64.AppImage"
 
 [helium]
 src.github = "imputnet/helium-linux"
