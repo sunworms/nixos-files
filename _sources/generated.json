@@ -13,6 +13,21 @@
         },
         "version": "b027ee29d959fda4b60b57566d64c98a202e0feb"
     },
+    "eden": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "eden",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-Tzj1juHcRaqzVN9fMiERBIJ+wgBogTOq2yHPTQBGA8o=",
+            "type": "url",
+            "url": "https://nightly.eden-emu.dev/v1786991149.2000fdfb7b/Eden-Linux-2000fdfb7b-amd64-gcc-standard.AppImage"
+        },
+        "version": "v1786991149.2000fdfb7b/Eden-Linux-2000fdfb7b"
+    },
     "helium": {
         "cargoLock": null,
         "date": null,
@@ -140,20 +155,5 @@
             "url": "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz"
         },
         "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
-    },
-    "ryujinx": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "ryujinx",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-JaSaQn2axDu9LjSsS3myZRiEecd+CvqblqI++dud/wY=",
-            "type": "url",
-            "url": "https://git.ryujinx.app/Ryubing/Canary/releases/download/1.3.341/ryujinx-canary-1.3.341-x64.AppImage"
-        },
-        "version": "1.3.341"
     }
 }
