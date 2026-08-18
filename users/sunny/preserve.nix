@@ -25,7 +25,7 @@
       ".config/fish"
 
       ".config/azahar-emu"
-      ".config/Ryujinx"
+      ".config/eden"
       ".config/melonDS"
       ".config/mgba"
       ".config/PCSX2"
@@ -33,6 +33,7 @@
       ".config/qBittorrent"
 
       ".local/share/zathura"
+      ".local/share/eden"
       ".local/share/fish"
       ".local/share/nvfetcher"
       ".local/share/azahar-emu"

@@ -15,6 +15,14 @@
     };
     date = "2026-02-03";
   };
+  eden = {
+    pname = "eden";
+    version = "v1786991149.2000fdfb7b/Eden-Linux-2000fdfb7b";
+    src = fetchurl {
+      url = "https://nightly.eden-emu.dev/v1786991149.2000fdfb7b/Eden-Linux-2000fdfb7b-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-Tzj1juHcRaqzVN9fMiERBIJ+wgBogTOq2yHPTQBGA8o=";
+    };
+  };
   helium = {
     pname = "helium";
     version = "0.15.5.1";
@@ -92,13 +100,5 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
-  };
-  ryujinx = {
-    pname = "ryujinx";
-    version = "1.3.341";
-    src = fetchurl {
-      url = "https://git.ryujinx.app/Ryubing/Canary/releases/download/1.3.341/ryujinx-canary-1.3.341-x64.AppImage";
-      sha256 = "sha256-JaSaQn2axDu9LjSsS3myZRiEecd+CvqblqI++dud/wY=";
-    };
   };
 }
