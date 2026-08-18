@@ -115,17 +115,17 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-08-16",
+        "date": null,
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-FBJRXmbGXiSUDvYEbfLYRkckayyZ6SK1UEqhCrIZ2Cs=",
+            "sha256": "sha256-kSR/jfpR4cE26YRZ8exQkoRbEA30vyWimajwZANYYaE=",
             "type": "tarball",
-            "url": "https://github.com/NixOS/nixpkgs/archive/e5bdc4a41d4c072fe1e3787eaa0320a384741d44.tar.gz"
+            "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1055335.e5bdc4a41d4c/nixexprs.tar.zst"
         },
-        "version": "e5bdc4a41d4c072fe1e3787eaa0320a384741d44"
+        "version": "26.11pre1055335.e5bdc4a41d4c"
     },
     "pcsx2": {
         "cargoLock": null,
