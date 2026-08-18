@@ -15,14 +15,6 @@
     };
     date = "2026-02-03";
   };
-  eden = {
-    pname = "eden";
-    version = "v1786904188.dc95cd09ee/Eden-Linux-dc95cd09ee";
-    src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1786904188.dc95cd09ee/Eden-Linux-dc95cd09ee-amd64-clang-pgo.AppImage";
-      sha256 = "sha256-DFixtIVSbXto8eEjYDOBdcwyCmateyPXWjjb6svT2WY=";
-    };
-  };
   helium = {
     pname = "helium";
     version = "0.15.5.1";
@@ -86,10 +78,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.7.521";
+    version = "2.7.522";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.521/pcsx2-v2.7.521-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-okXxrjKAeNCtBZT2vpDiGcJTfB20xvMT5+3TdTyC0RI=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.522/pcsx2-v2.7.522-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-xScvcxdUAJg1TOOmMZ2JfznD5MENWZfF4u1uNZAKf7w=";
     };
   };
   preservation = {
@@ -100,5 +92,13 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
+  };
+  ryujinx = {
+    pname = "ryujinx";
+    version = "1.3.341";
+    src = fetchurl {
+      url = "https://git.ryujinx.app/Ryubing/Canary/releases/download/1.3.341/ryujinx-canary-1.3.341-x64.AppImage";
+      sha256 = "sha256-JaSaQn2axDu9LjSsS3myZRiEecd+CvqblqI++dud/wY=";
+    };
   };
 }

@@ -13,21 +13,6 @@
         },
         "version": "b027ee29d959fda4b60b57566d64c98a202e0feb"
     },
-    "eden": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "eden",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "name": null,
-            "sha256": "sha256-DFixtIVSbXto8eEjYDOBdcwyCmateyPXWjjb6svT2WY=",
-            "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1786904188.dc95cd09ee/Eden-Linux-dc95cd09ee-amd64-clang-pgo.AppImage"
-        },
-        "version": "v1786904188.dc95cd09ee/Eden-Linux-dc95cd09ee"
-    },
     "helium": {
         "cargoLock": null,
         "date": null,
@@ -136,11 +121,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-okXxrjKAeNCtBZT2vpDiGcJTfB20xvMT5+3TdTyC0RI=",
+            "sha256": "sha256-xScvcxdUAJg1TOOmMZ2JfznD5MENWZfF4u1uNZAKf7w=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.521/pcsx2-v2.7.521-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.7.522/pcsx2-v2.7.522-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "2.7.521"
+        "version": "2.7.522"
     },
     "preservation": {
         "cargoLock": null,
@@ -155,5 +140,20 @@
             "url": "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz"
         },
         "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
+    },
+    "ryujinx": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "ryujinx",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-JaSaQn2axDu9LjSsS3myZRiEecd+CvqblqI++dud/wY=",
+            "type": "url",
+            "url": "https://git.ryujinx.app/Ryubing/Canary/releases/download/1.3.341/ryujinx-canary-1.3.341-x64.AppImage"
+        },
+        "version": "1.3.341"
     }
 }
