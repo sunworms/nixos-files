@@ -65,11 +65,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-26vEz2aCjci0DAaikZdeCFx2Yhnpt5mgGfzMWs/REMs=",
+            "sha256": "sha256-RvKu38j5glMDFQVsmRgIXNWRJEBcMtBz1vi44Ymlqus=",
             "type": "tarball",
-            "url": "https://git.gay/sunworms/neovim-config/archive/e8dfed762914f4ce1a8bd03f0e5c240304847220.tar.gz"
+            "url": "https://git.gay/sunworms/neovim-config/archive/61f6c0e30422d80266e346c00b529c15cfd4c7bd.tar.gz"
         },
-        "version": "e8dfed762914f4ce1a8bd03f0e5c240304847220"
+        "version": "61f6c0e30422d80266e346c00b529c15cfd4c7bd"
     },
     "niri-float-sticky": {
         "cargoLock": null,
@@ -155,5 +155,19 @@
             "url": "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz"
         },
         "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
+    },
+    "steam-config-nix": {
+        "cargoLock": null,
+        "date": "2026-08-15",
+        "extract": null,
+        "name": "steam-config-nix",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-gif52G1Z57qQrvkHiwWHvn42qNkh6engloF2ZdTW950=",
+            "type": "tarball",
+            "url": "https://github.com/different-name/steam-config-nix/archive/30dc17418e7aff0b78ee14ef6c451b5f3422e792.tar.gz"
+        },
+        "version": "30dc17418e7aff0b78ee14ef6c451b5f3422e792"
     }
 }
