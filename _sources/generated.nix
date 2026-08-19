@@ -42,10 +42,10 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "e8dfed762914f4ce1a8bd03f0e5c240304847220";
+    version = "61f6c0e30422d80266e346c00b529c15cfd4c7bd";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/e8dfed762914f4ce1a8bd03f0e5c240304847220.tar.gz";
-      sha256 = "sha256-26vEz2aCjci0DAaikZdeCFx2Yhnpt5mgGfzMWs/REMs=";
+      url = "https://git.gay/sunworms/neovim-config/archive/61f6c0e30422d80266e346c00b529c15cfd4c7bd.tar.gz";
+      sha256 = "sha256-RvKu38j5glMDFQVsmRgIXNWRJEBcMtBz1vi44Ymlqus=";
     };
     date = "2026-08-19";
   };
@@ -100,5 +100,14 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
+  };
+  steam-config-nix = {
+    pname = "steam-config-nix";
+    version = "30dc17418e7aff0b78ee14ef6c451b5f3422e792";
+    src = fetchTarball {
+      url = "https://github.com/different-name/steam-config-nix/archive/30dc17418e7aff0b78ee14ef6c451b5f3422e792.tar.gz";
+      sha256 = "sha256-gif52G1Z57qQrvkHiwWHvn42qNkh6engloF2ZdTW950=";
+    };
+    date = "2026-08-15";
   };
 }

@@ -26,6 +26,10 @@ fetch.tarball = "https://github.com/probeldev/niri-float-sticky/archive/$ver.tar
 src.git = "https://github.com/nix-community/nix-index-database"
 fetch.tarball = "https://github.com/nix-community/nix-index-database/archive/$ver.tar.gz"
 
+[steam-config-nix]
+src.git = "https://github.com/different-name/steam-config-nix"
+fetch.tarball = "https://github.com/different-name/steam-config-nix/archive/$ver.tar.gz"
+
 [neovim-config]
 src.git = "https://git.gay/sunworms/neovim-config"
 fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"

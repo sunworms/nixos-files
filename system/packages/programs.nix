@@ -19,10 +19,15 @@
 
   hardware.graphics = {
     enable = true;
+    enable32Bit = true;
     extraPackages = with pkgs; [
       vpl-gpu-rt
       intel-vaapi-driver
       intel-media-driver
+    ];
+    extraPackages32 = with pkgs.pkgsi686Linux; [
+      intel-media-driver
+      intel-vaapi-driver
     ];
   };
 

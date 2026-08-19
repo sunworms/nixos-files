@@ -9,6 +9,7 @@
     ./desktop.nix
     ./portals.nix
     ./programs.nix
+    ./steam.nix
   ];
 
   services.gvfs = {

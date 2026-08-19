@@ -32,6 +32,7 @@
       ".config/ppsspp"
       ".config/qBittorrent"
 
+      ".local/share/Steam"
       ".local/share/zathura"
       ".local/share/eden"
       ".local/share/fish"
