@@ -42,12 +42,12 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "1fb7780018862d620ea85c421e3e68af23a65c8a";
+    version = "e8dfed762914f4ce1a8bd03f0e5c240304847220";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/1fb7780018862d620ea85c421e3e68af23a65c8a.tar.gz";
-      sha256 = "sha256-3CuicZ4+nWjzP+v69okWEI/C5Vlcnt1Wn4HT0Qz1I6A=";
+      url = "https://git.gay/sunworms/neovim-config/archive/e8dfed762914f4ce1a8bd03f0e5c240304847220.tar.gz";
+      sha256 = "sha256-26vEz2aCjci0DAaikZdeCFx2Yhnpt5mgGfzMWs/REMs=";
     };
-    date = "2026-08-17";
+    date = "2026-08-19";
   };
   niri-float-sticky = {
     pname = "niri-float-sticky";
@@ -60,12 +60,12 @@
   };
   niri-nix = {
     pname = "niri-nix";
-    version = "59dc01c8c5f43f7ad4e1225fd58953221d0b7780";
+    version = "ecd0e136e75dc37967f5a6a5fea5a99613c503c1";
     src = fetchTarball {
-      url = "https://codeberg.org/bananad3v/niri-nix/archive/59dc01c8c5f43f7ad4e1225fd58953221d0b7780.tar.gz";
-      sha256 = "sha256-4DE1SAxtJSiTNnt+o8bTOC4koT/itZlDX8zaKbXvIbU=";
+      url = "https://codeberg.org/bananad3v/niri-nix/archive/ecd0e136e75dc37967f5a6a5fea5a99613c503c1.tar.gz";
+      sha256 = "sha256-y5q/XFRPi5TBWdh5MhqxJZhfmzqJO0bYNLZHE7WTqso=";
     };
-    date = "2026-08-17";
+    date = "2026-08-19";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -78,18 +78,18 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "26.11pre1057119.ec2d622de077";
+    version = "26.11pre1057639.0ae2bc1419c3";
     src = fetchTarball {
-      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1057119.ec2d622de077/nixexprs.tar.zst";
-      sha256 = "sha256-6Qso3az0lZx+zxDQOhEvNUfJMqqq9tcjrLhsCAswAvs=";
+      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1057639.0ae2bc1419c3/nixexprs.tar.zst";
+      sha256 = "sha256-xe+M6F3syqECh9nH7Fmyxrjs13PtQV3S9o/EbutKz84=";
     };
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.7.522";
+    version = "2.7.523";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.522/pcsx2-v2.7.522-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-xScvcxdUAJg1TOOmMZ2JfznD5MENWZfF4u1uNZAKf7w=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.523/pcsx2-v2.7.523-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-pFMou1Dc+5MeRYgSLjiu7yU5lbN7Qh6TLdXuj1E7P6E=";
     };
   };
   preservation = {
