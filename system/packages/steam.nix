@@ -6,6 +6,11 @@
   programs.steam = {
     # nixos options
     enable = true;
+    package = pkgs.steam.override {
+      extraProfile = ''
+        export PROTON_ENABLE_WAYLAND=1
+      '';
+    };
     extraPackages = with pkgs; [
       volantes-cursors
       gamescope
