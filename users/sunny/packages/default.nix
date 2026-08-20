@@ -1,6 +1,5 @@
 {
   pkgs,
-  lib,
   inputs,
   assets,
   ...
@@ -10,12 +9,6 @@
   ];
 
   packages = with pkgs; [
-    (runCommand "wine-symlink" {} ''
-      mkdir -p $out/bin
-      ln -sf ${lib.getExe' wineWow64Packages.unstableFull "wine"} $out/bin/wine64
-    '')
-    wineWow64Packages.unstableFull
-    winetricks
     (callPackage ./eden.nix {inherit inputs assets;})
     (callPackage ./pcsx2.nix {inherit inputs assets;})
     ppsspp-sdl-wayland
