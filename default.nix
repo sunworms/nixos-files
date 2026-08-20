@@ -33,7 +33,6 @@ in {
       (inputs.preservation.src + "/module.nix")
       (import inputs.hjem.src {}).nixosModules.default
       (inputs.agenix.src + "/modules/age.nix")
-      (import "${inputs.steam-config-nix.src}/modules" {} "nixos")
       {
         nixpkgs = {
           config.allowUnfree = true;

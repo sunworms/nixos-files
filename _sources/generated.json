@@ -155,19 +155,5 @@
             "url": "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz"
         },
         "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
-    },
-    "steam-config-nix": {
-        "cargoLock": null,
-        "date": "2026-08-15",
-        "extract": null,
-        "name": "steam-config-nix",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-gif52G1Z57qQrvkHiwWHvn42qNkh6engloF2ZdTW950=",
-            "type": "tarball",
-            "url": "https://github.com/different-name/steam-config-nix/archive/30dc17418e7aff0b78ee14ef6c451b5f3422e792.tar.gz"
-        },
-        "version": "30dc17418e7aff0b78ee14ef6c451b5f3422e792"
     }
 }

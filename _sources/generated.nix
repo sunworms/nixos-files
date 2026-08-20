@@ -4,8 +4,7 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}:
-{
+}: {
   agenix = {
     pname = "agenix";
     version = "b027ee29d959fda4b60b57566d64c98a202e0feb";
@@ -100,14 +99,5 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
-  };
-  steam-config-nix = {
-    pname = "steam-config-nix";
-    version = "30dc17418e7aff0b78ee14ef6c451b5f3422e792";
-    src = fetchTarball {
-      url = "https://github.com/different-name/steam-config-nix/archive/30dc17418e7aff0b78ee14ef6c451b5f3422e792.tar.gz";
-      sha256 = "sha256-gif52G1Z57qQrvkHiwWHvn42qNkh6engloF2ZdTW950=";
-    };
-    date = "2026-08-15";
   };
 }

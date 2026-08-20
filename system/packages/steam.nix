@@ -1,16 +1,7 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   programs.steam = {
-    # nixos options
     enable = true;
-    package = pkgs.steam.override {
-      extraProfile = ''
-        export PROTON_ENABLE_WAYLAND=1
-      '';
-    };
+    package = pkgs.steam;
     extraPackages = with pkgs; [
       volantes-cursors
       gamescope
@@ -26,12 +17,5 @@
     ];
     gamescopeSession.enable = true;
     protontricks.enable = true;
-    # steam-config-nix options
-    config = {
-      enable = true;
-      package = pkgs.python3Packages.callPackage "${inputs.steam-config-nix.src}/pkgs/steam-config-patcher/package.nix" {};
-      onSteamRunning = "close";
-      defaultCompatTool = "GE-Proton";
-    };
   };
 }
