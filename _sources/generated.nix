@@ -4,7 +4,8 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   agenix = {
     pname = "agenix";
     version = "b027ee29d959fda4b60b57566d64c98a202e0feb";
@@ -24,20 +25,20 @@
   };
   helium = {
     pname = "helium";
-    version = "0.15.5.1";
+    version = "0.15.6.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.15.5.1/helium-0.15.5.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-80oe4aarLjEJ2S45OVEqN8/mii8NIwtSXMFYn8GS/Zc=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.15.6.1/helium-0.15.6.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-TVzi5ZWyvFsh6ovoBhU5DW0k3wlQ5/gUDD4+ykAQPTY=";
     };
   };
   hjem = {
     pname = "hjem";
-    version = "b610953d0c56da6b28fd39c21bd193b88e91341c";
+    version = "7cd7f1c567beaf5527781e0b51647a98acde54e6";
     src = fetchTarball {
-      url = "https://github.com/feel-co/hjem/archive/b610953d0c56da6b28fd39c21bd193b88e91341c.tar.gz";
-      sha256 = "sha256-qwppDYdtxqtDpI1iSp7bs8prOJ0KQSvhJchfROD04f0=";
+      url = "https://github.com/feel-co/hjem/archive/7cd7f1c567beaf5527781e0b51647a98acde54e6.tar.gz";
+      sha256 = "sha256-hMgbN6InoW+S5G/cqGrVwHUmOJcGIT/yUg1Xe6y7t8Q=";
     };
-    date = "2026-08-05";
+    date = "2026-08-20";
   };
   neovim-config = {
     pname = "neovim-config";
@@ -77,10 +78,10 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "26.11pre1057639.0ae2bc1419c3";
+    version = "26.11pre1058091.ffb3c9b700e7";
     src = fetchTarball {
-      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1057639.0ae2bc1419c3/nixexprs.tar.zst";
-      sha256 = "sha256-xe+M6F3syqECh9nH7Fmyxrjs13PtQV3S9o/EbutKz84=";
+      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1058091.ffb3c9b700e7/nixexprs.tar.zst";
+      sha256 = "sha256-M5/r2v++FjVhdsxXYMb4BDJ5YLAdCWFt3aZotcshocA=";
     };
   };
   pcsx2 = {
