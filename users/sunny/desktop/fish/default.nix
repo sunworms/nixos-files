@@ -5,7 +5,6 @@
   };
 
   packages = with pkgs; [
-    fish
     fishPlugins.tide
     fishPlugins.git-abbr
   ];
