@@ -1,5 +1,6 @@
 {
   ExtensionInstallForcelist = [
+    "eimadpbcbfnmbkopoojfekhnkhdbieeh" # dark reader
     "mnjggcdmjocbbbhaepdhchncahnbgone" # sponsorblock
     "gebbhagfogifgggkldgodflihgfeippi" # return youtube dislikes
     "jplgfhpmjnbigmhklmmbgecoobifkmpa" # proton vpn
