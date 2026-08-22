@@ -1,0 +1,17 @@
+{
+  "customized_flags": {},
+  "enabled_flags": [
+    "close-window-with-last-tab@1",
+    "enable-force-dark@1",
+    "enable-incognito-themes",
+    "enable-parallel-downloading@1",
+    "enable-quic@1",
+    "enable-vulkan@1",
+    "force-dark-mode",
+    "helium-middle-click-paste-enabled@2",
+    "import-export-flags@1",
+    "picture-in-picture-mute-control@1",
+    "quic-v2-only",
+    "smooth-scrolling@1"
+  ]
+}
