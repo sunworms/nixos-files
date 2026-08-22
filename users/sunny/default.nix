@@ -24,6 +24,7 @@ in {
     ./fonts
     ./desktop
     ./ssh.nix
+    ./bashrc.nix
     ./theming.nix
     ./browser.nix
   ];
