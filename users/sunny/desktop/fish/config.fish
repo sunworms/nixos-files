@@ -1,7 +1,5 @@
-if status is-interactive
-    set -g fish_greeting
-    set -g fish_key_bindings fish_vi_key_bindings
-end
+set -g fish_greeting
+set -g fish_key_bindings fish_vi_key_bindings
 
 abbr osb 'nh os boot --ask -f ./.'
 abbr osbu 'nh os build -f ./.'
