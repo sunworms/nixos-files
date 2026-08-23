@@ -17,10 +17,10 @@
   };
   eden = {
     pname = "eden";
-    version = "v1787336654.5c54abf353/Eden-Linux-5c54abf353";
+    version = "v1787422604.df05d3de23/Eden-Linux-df05d3de23";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1787336654.5c54abf353/Eden-Linux-5c54abf353-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-Z73IGQ3CEsyKTIPRr+OLUdN3SdVbecC+yjn4SrTGKS4=";
+      url = "https://nightly.eden-emu.dev/v1787422604.df05d3de23/Eden-Linux-df05d3de23-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-6qI8W4eSsZlsWgmq5JDc4vzY9Et96mgoBgtsp4swSLs=";
     };
   };
   helium = {
@@ -60,28 +60,28 @@
   };
   niri-nix = {
     pname = "niri-nix";
-    version = "ecd0e136e75dc37967f5a6a5fea5a99613c503c1";
+    version = "ca504406e24da7fc2e2d1140d5b619d45a57b718";
     src = fetchTarball {
-      url = "https://codeberg.org/bananad3v/niri-nix/archive/ecd0e136e75dc37967f5a6a5fea5a99613c503c1.tar.gz";
-      sha256 = "sha256-y5q/XFRPi5TBWdh5MhqxJZhfmzqJO0bYNLZHE7WTqso=";
+      url = "https://codeberg.org/bananad3v/niri-nix/archive/ca504406e24da7fc2e2d1140d5b619d45a57b718.tar.gz";
+      sha256 = "sha256-KzTiQ4vCnBEGK/Z+M8GgygRchah+PvmOfcQNNrBXfik=";
     };
-    date = "2026-08-19";
+    date = "2026-08-22";
   };
   nix-index-database = {
     pname = "nix-index-database";
-    version = "c7962dc97b45129df8d751bedaf37beb5a17706e";
+    version = "c51d5c2ba69c907a34e90c9b6b80cd2b93811745";
     src = fetchTarball {
-      url = "https://github.com/nix-community/nix-index-database/archive/c7962dc97b45129df8d751bedaf37beb5a17706e.tar.gz";
-      sha256 = "sha256-IM5CYtf86W4w8eUPpKcY/LpdHElmVBtJhaKnoTKxZEA=";
+      url = "https://github.com/nix-community/nix-index-database/archive/c51d5c2ba69c907a34e90c9b6b80cd2b93811745.tar.gz";
+      sha256 = "sha256-FJh4esFS3zqNNuKwvN3t6wrJGewqp1AUF9DAEvoKPD8=";
     };
-    date = "2026-08-16";
+    date = "2026-08-23";
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "26.11pre1058091.ffb3c9b700e7";
+    version = "26.11pre1059570.2c423e03bbaf";
     src = fetchTarball {
-      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1058091.ffb3c9b700e7/nixexprs.tar.zst";
-      sha256 = "sha256-M5/r2v++FjVhdsxXYMb4BDJ5YLAdCWFt3aZotcshocA=";
+      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1059570.2c423e03bbaf/nixexprs.tar.zst";
+      sha256 = "sha256-95aJfHyQTLWslCXFVNB0odgmVkpdmDezQwTg9mhqV1E=";
     };
   };
   pcsx2 = {
