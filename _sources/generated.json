@@ -57,6 +57,21 @@
         },
         "version": "7cd7f1c567beaf5527781e0b51647a98acde54e6"
     },
+    "iosevka-nerd": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "iosevka-nerd",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-bMwmYSMgPBuk5veXZ4emyrGqWfA0RwbtcPlKQtdyY4E=",
+            "type": "url",
+            "url": "https://github.com/sunworms/iosevka-nerd/releases/download/v34.8.1/Iosevka-Custom-v34.8.1.zip"
+        },
+        "version": "34.8.1"
+    },
     "neovim-config": {
         "cargoLock": null,
         "date": "2026-08-19",

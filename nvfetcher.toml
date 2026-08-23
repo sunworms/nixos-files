@@ -46,3 +46,8 @@ fetch.url = "https://nightly.eden-emu.dev/$ver-amd64-gcc-standard.AppImage"
 [helium]
 src.github = "imputnet/helium-linux"
 fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64_linux.tar.xz"
+
+[iosevka-nerd]
+src.github = "sunworms/iosevka-nerd"
+src.prefix = "v"
+fetch.url = "https://github.com/sunworms/iosevka-nerd/releases/download/v$ver/Iosevka-Custom-v$ver.zip"
