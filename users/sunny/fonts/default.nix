@@ -2,10 +2,11 @@
   pkgs,
   lib,
   config,
+  inputs,
   ...
 }: let
   fontPackages = with pkgs; [
-    nerd-fonts.d2coding
+    (callPackage ./iosevka.nix {inherit inputs;})
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
@@ -21,9 +22,9 @@ in {
   ];
 
   fonts = {
-    sansSerif = "Noto Sans";
-    serif = "Noto Serif";
-    monospace = "D2KodingLigature Nerd Font Mono";
+    sansSerif = "Iosevka Aile Lean";
+    serif = "Iosevka Etoile Lean";
+    monospace = "IosevkaTermLean Nerd Font Mono";
     emoji = "Noto Color Emoji";
   };
 
