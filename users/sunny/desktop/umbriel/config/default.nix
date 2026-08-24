@@ -1,14 +1,11 @@
-{pkgs}: let
-  lib = pkgs.lib;
-
+{lib}: let
   configs = [
-    (import ./environment.nix)
+    (import ./appearance.nix)
+    (import ./general.nix)
     (import ./input.nix)
-    (import ./layer-rules.nix)
     (import ./layout.nix)
     (import ./misc.nix)
     (import ./other-binds.nix)
-    (import ./startup.nix)
     (import ./user-binds.nix)
     (import ./window-rules.nix)
   ];

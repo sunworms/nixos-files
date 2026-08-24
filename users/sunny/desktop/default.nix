@@ -7,7 +7,7 @@
   imports = [
     ./foot
     ./fish
-    ./niri
+    ./umbriel
     ./noctalia
   ];
 

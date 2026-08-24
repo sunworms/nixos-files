@@ -1,6 +1,7 @@
 {
   pkgs,
   lib,
+  inputs,
   ...
 }: {
   services.greetd = {
@@ -14,14 +15,9 @@
     useTextGreeter = true;
   };
 
-  environment.systemPackages = with pkgs; [
-    volantes-cursors
-  ];
-
-  programs.niri = {
+  programs.umbriel = {
     enable = true;
-    package = pkgs.niri;
-    useNautilus = false;
+    portalPackage = inputs.xdg-desktop-portal-umbriel.packages.${pkgs.stdenv.hostPlatform.system}.default;
   };
 
   services.speechd.enable = false;

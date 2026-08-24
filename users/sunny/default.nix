@@ -32,7 +32,7 @@ in {
   directory = "/home/sunny";
 
   packages = with pkgs; [
-    (import inputs.neovim-config.src {inherit pkgs;})
+    (import inputs.neovim-config {inherit pkgs;})
     imv
     yaziUnfree
     ripdrag
@@ -47,12 +47,9 @@ in {
   xdg.config.files = {
     "kanata/config.kbd".source = ./kanata.kbd;
 
-    "xdg-desktop-portal/niri-portals.conf".text = ''
+    "xdg-desktop-portal/umbriel-portals.conf".text = ''
       [preferred]
-      default=gnome;gtk;
-      org.freedesktop.impl.portal.Access=gtk;
-      org.freedesktop.impl.portal.Notification=gtk;
-      org.freedesktop.impl.portal.Secret=gnome-keyring;
+      default=umbriel;gtk;
       org.freedesktop.impl.portal.FileChooser=termfilechooser;
     '';
 

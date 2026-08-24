@@ -2,11 +2,11 @@
   stdenvNoCC,
   makeDesktopItem,
   lib,
-  inputs,
+  sources,
   assets,
 }: let
   pname = "eden";
-  rawVersion = inputs.eden.version;
+  rawVersion = sources.eden.version;
   baseName = baseNameOf rawVersion;
   version = lib.removePrefix "Eden-Linux-" baseName;
 
@@ -33,7 +33,7 @@ in
       desktopItem
       ;
 
-    src = inputs.eden.src;
+    src = sources.eden.src;
 
     dontUnpack = true;
     dontBuild = true;
