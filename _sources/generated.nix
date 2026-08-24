@@ -20,18 +20,18 @@
   };
   eden = {
     pname = "eden";
-    version = "v1787509014.55acf5d260/Eden-Linux-55acf5d260";
+    version = "v1787596057.60a474b8df/Eden-Linux-60a474b8df";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1787509014.55acf5d260/Eden-Linux-55acf5d260-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-UWJbLN5rumXrfEdzvfRlWO1kqCeOy0C4fIe/sBZgbuM=";
+      url = "https://nightly.eden-emu.dev/v1787596057.60a474b8df/Eden-Linux-60a474b8df-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-orIQBCl6DCJJqlBAogooKlLzzB2sTh4CUdfa5Uu9EXM=";
     };
   };
   helium = {
     pname = "helium";
-    version = "0.15.6.1";
+    version = "0.15.7.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.15.6.1/helium-0.15.6.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-TVzi5ZWyvFsh6ovoBhU5DW0k3wlQ5/gUDD4+ykAQPTY=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.15.7.1/helium-0.15.7.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-MQKJLN69/g1R46Y44ADo1UvKAXxS2vKsq/XlAwBO+58=";
     };
   };
   hjem = {
@@ -97,15 +97,15 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "f0887075286bc4928ef29d1b629f8b4baa2309a8";
+    version = "8af073895d32bd93f0192c0092f76f40bd9d25a6";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "f0887075286bc4928ef29d1b629f8b4baa2309a8";
+      rev = "8af073895d32bd93f0192c0092f76f40bd9d25a6";
       fetchSubmodules = true;
-      sha256 = "sha256-9RpHQx9Cmyd56NnjnGfQ+ruaf+ellmWDilLkB0B+jGY=";
+      sha256 = "sha256-dz4zFy9Y731B9yW3CmyHeqVhKCQr8VAQuxdEuiP/T60=";
     };
-    date = "2026-08-24";
+    date = "2026-08-25";
   };
   xdg-desktop-portal-umbriel = {
     pname = "xdg-desktop-portal-umbriel";
