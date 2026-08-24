@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-6qI8W4eSsZlsWgmq5JDc4vzY9Et96mgoBgtsp4swSLs=",
+            "sha256": "sha256-UWJbLN5rumXrfEdzvfRlWO1kqCeOy0C4fIe/sBZgbuM=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1787422604.df05d3de23/Eden-Linux-df05d3de23-amd64-gcc-standard.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1787509014.55acf5d260/Eden-Linux-55acf5d260-amd64-gcc-standard.AppImage"
         },
-        "version": "v1787422604.df05d3de23/Eden-Linux-df05d3de23"
+        "version": "v1787509014.55acf5d260/Eden-Linux-55acf5d260"
     },
     "helium": {
         "cargoLock": null,
@@ -45,17 +45,17 @@
     },
     "hjem": {
         "cargoLock": null,
-        "date": "2026-08-20",
+        "date": "2026-08-23",
         "extract": null,
         "name": "hjem",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-hMgbN6InoW+S5G/cqGrVwHUmOJcGIT/yUg1Xe6y7t8Q=",
+            "sha256": "sha256-UrAlku7KST0DT+j1bdVGYI8tCz23PWL88uGMer3IZ2U=",
             "type": "tarball",
-            "url": "https://github.com/feel-co/hjem/archive/7cd7f1c567beaf5527781e0b51647a98acde54e6.tar.gz"
+            "url": "https://github.com/feel-co/hjem/archive/d248f0e4f7abd6e1f0eb9ace778dd7928481943e.tar.gz"
         },
-        "version": "7cd7f1c567beaf5527781e0b51647a98acde54e6"
+        "version": "d248f0e4f7abd6e1f0eb9ace778dd7928481943e"
     },
     "iosevka-nerd": {
         "cargoLock": null,
