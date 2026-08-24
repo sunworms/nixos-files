@@ -17,7 +17,8 @@
 
   programs.umbriel = {
     enable = true;
-    portalPackage = inputs.xdg-desktop-portal-umbriel.packages.${pkgs.stdenv.hostPlatform.system}.default;
+    package = pkgs.callPackage (inputs.umbriel + "/nix/package.nix") {};
+    portalPackage = pkgs.callPackage (inputs.xdg-desktop-portal-umbriel + "/nix/package.nix") {};
   };
 
   services.speechd.enable = false;
