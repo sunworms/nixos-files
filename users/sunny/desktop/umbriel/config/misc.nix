@@ -5,6 +5,7 @@
 
   output."eDP-1" = {
     scale = 1.75;
+    hdr = "auto";
   };
 
   workspaces = {
