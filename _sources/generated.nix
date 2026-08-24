@@ -17,10 +17,10 @@
   };
   eden = {
     pname = "eden";
-    version = "v1787422604.df05d3de23/Eden-Linux-df05d3de23";
+    version = "v1787509014.55acf5d260/Eden-Linux-55acf5d260";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1787422604.df05d3de23/Eden-Linux-df05d3de23-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-6qI8W4eSsZlsWgmq5JDc4vzY9Et96mgoBgtsp4swSLs=";
+      url = "https://nightly.eden-emu.dev/v1787509014.55acf5d260/Eden-Linux-55acf5d260-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-UWJbLN5rumXrfEdzvfRlWO1kqCeOy0C4fIe/sBZgbuM=";
     };
   };
   helium = {
@@ -33,12 +33,12 @@
   };
   hjem = {
     pname = "hjem";
-    version = "7cd7f1c567beaf5527781e0b51647a98acde54e6";
+    version = "d248f0e4f7abd6e1f0eb9ace778dd7928481943e";
     src = fetchTarball {
-      url = "https://github.com/feel-co/hjem/archive/7cd7f1c567beaf5527781e0b51647a98acde54e6.tar.gz";
-      sha256 = "sha256-hMgbN6InoW+S5G/cqGrVwHUmOJcGIT/yUg1Xe6y7t8Q=";
+      url = "https://github.com/feel-co/hjem/archive/d248f0e4f7abd6e1f0eb9ace778dd7928481943e.tar.gz";
+      sha256 = "sha256-UrAlku7KST0DT+j1bdVGYI8tCz23PWL88uGMer3IZ2U=";
     };
-    date = "2026-08-20";
+    date = "2026-08-23";
   };
   iosevka-nerd = {
     pname = "iosevka-nerd";
