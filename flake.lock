@@ -2,8 +2,8 @@
   "nodes": {
     "agenix": {
       "inputs": {
-        "darwin": "darwin",
-        "home-manager": "home-manager",
+        "darwin": [],
+        "home-manager": [],
         "nixpkgs": [
           "nixpkgs"
         ],
@@ -20,28 +20,6 @@
       "original": {
         "owner": "ryantm",
         "repo": "agenix",
-        "type": "github"
-      }
-    },
-    "darwin": {
-      "inputs": {
-        "nixpkgs": [
-          "agenix",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1744478979,
-        "narHash": "sha256-dyN+teG9G82G+m+PX/aSAagkC+vUv0SgUw3XkPhQodQ=",
-        "owner": "lnl7",
-        "repo": "nix-darwin",
-        "rev": "43975d782b418ebf4969e9ccba82466728c2851b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "lnl7",
-        "ref": "master",
-        "repo": "nix-darwin",
         "type": "github"
       }
     },
@@ -65,27 +43,6 @@
         "type": "github"
       }
     },
-    "home-manager": {
-      "inputs": {
-        "nixpkgs": [
-          "agenix",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1745494811,
-        "narHash": "sha256-YZCh2o9Ua1n9uCvrvi5pRxtuVNml8X2a03qIFfRKpFs=",
-        "owner": "nix-community",
-        "repo": "home-manager",
-        "rev": "abfad3d2958c9e6300a883bd443512c55dfeb1be",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "home-manager",
-        "type": "github"
-      }
-    },
     "neovim-config": {
       "flake": false,
       "locked": {
@@ -100,60 +57,6 @@
       "original": {
         "type": "git",
         "url": "https://git.gay/sunworms/neovim-config"
-      }
-    },
-    "niri-float-sticky": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1778574608,
-        "narHash": "sha256-786xACvNk6ZE6l40gQ7wRsgqGp64Z4MseMX7gzMMNtg=",
-        "owner": "probeldev",
-        "repo": "niri-float-sticky",
-        "rev": "b4805593eda05fc61e4cb88cfced9dd39913216e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "probeldev",
-        "repo": "niri-float-sticky",
-        "type": "github"
-      }
-    },
-    "niri-nix": {
-      "inputs": {
-        "niri-unstable": "niri-unstable",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "xwayland-satellite-unstable": "xwayland-satellite-unstable"
-      },
-      "locked": {
-        "lastModified": 1787425425,
-        "narHash": "sha256-KzTiQ4vCnBEGK/Z+M8GgygRchah+PvmOfcQNNrBXfik=",
-        "ref": "refs/heads/main",
-        "rev": "ca504406e24da7fc2e2d1140d5b619d45a57b718",
-        "revCount": 172,
-        "type": "git",
-        "url": "https://codeberg.org/BANanaD3V/niri-nix"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://codeberg.org/BANanaD3V/niri-nix"
-      }
-    },
-    "niri-unstable": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1787337984,
-        "narHash": "sha256-BNZUEVR2H96hCKENNKoLSSTFT8W4smp7v94hJc4Ehfc=",
-        "owner": "YaLTeR",
-        "repo": "niri",
-        "rev": "dd75865f547f0eac0e9b6c4d86d2cd00c0744252",
-        "type": "github"
-      },
-      "original": {
-        "owner": "YaLTeR",
-        "repo": "niri",
-        "type": "github"
       }
     },
     "nix-index-database": {
@@ -209,8 +112,6 @@
         "agenix": "agenix",
         "hjem": "hjem",
         "neovim-config": "neovim-config",
-        "niri-float-sticky": "niri-float-sticky",
-        "niri-nix": "niri-nix",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs",
         "preservation": "preservation",
@@ -240,11 +141,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1787541625,
-        "narHash": "sha256-O9c6TBNootco3RYwBh6XOPadD+YT2ZRmkcfdSDiWxr8=",
+        "lastModified": 1787571481,
+        "narHash": "sha256-ti+xYFGVWOlmdalSW4kCYxfeXkf8i7RUb0DVOSMCuqc=",
         "ref": "refs/heads/main",
-        "rev": "dd8b3565f9a776c9d7686fa879852c271542a53b",
-        "revCount": 484,
+        "rev": "25b4e0f488ea65d6a477167631cbf10bbef5e8f3",
+        "revCount": 487,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/noctalia-dev/umbriel"
@@ -261,32 +162,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1787562287,
-        "narHash": "sha256-rtsafsOrJJT9FPgVGtioyzT1nKw1qyaiC+61qnRT0t0=",
+        "lastModified": 1787567471,
+        "narHash": "sha256-obq1XDgWGjTgvEP6m3ygBMMywxzF/Nb6t+s8P/c9gM0=",
         "owner": "noctalia-dev",
         "repo": "xdg-desktop-portal-umbriel",
-        "rev": "9afc9d7c02bf860f985c80f6bee07dc503e41e4f",
+        "rev": "e5fd52a8b4aecd98c2fd3991859845fe4399b9dc",
         "type": "github"
       },
       "original": {
         "owner": "noctalia-dev",
         "repo": "xdg-desktop-portal-umbriel",
-        "type": "github"
-      }
-    },
-    "xwayland-satellite-unstable": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1786221058,
-        "narHash": "sha256-hF2atQzapHBLX5NFqJMcKZAWHfGkKQeNu1eQr46+AGg=",
-        "owner": "Supreeeme",
-        "repo": "xwayland-satellite",
-        "rev": "3bc915f09dd62bb2651a715114f9d140344bc6c1",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Supreeeme",
-        "repo": "xwayland-satellite",
         "type": "github"
       }
     }
