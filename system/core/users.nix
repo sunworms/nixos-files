@@ -1,4 +1,8 @@
-{config, ...}: let
+{
+  pkgs,
+  config,
+  ...
+}: let
   keys = import ./keys.nix;
 in {
   users.mutableUsers = false;
@@ -22,7 +26,12 @@ in {
       keys.sunny.gitgay
       keys.sunny.github
     ];
+    shell = pkgs.fish;
+    ignoreShellProgramCheck = true;
   };
+
+  environment.systemPackages = [pkgs.fish];
+  environment.shells = [pkgs.fish];
 
   hjem.users.sunny = ../../users/sunny;
 }
