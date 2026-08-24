@@ -1,6 +1,7 @@
 {lib}: let
   configs = [
     (import ./appearance.nix)
+    (import ./env.nix)
     (import ./general.nix)
     (import ./input.nix)
     (import ./layout.nix)
