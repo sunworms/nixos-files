@@ -33,13 +33,13 @@
   libva,
   pipewire,
   libpulseaudio,
-  sources,
+  inputs,
 }:
 stdenv.mkDerivation {
   pname = "helium";
-  version = sources.helium.version;
+  version = inputs.helium.version;
 
-  src = sources.helium.src;
+  src = inputs.helium.src;
 
   nativeBuildInputs = [
     makeWrapper

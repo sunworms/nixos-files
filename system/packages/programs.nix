@@ -45,10 +45,9 @@
     alejandra
 
     # pins
-    npins
     nvfetcher
 
-    (pkgs.callPackage (inputs.agenix + "/pkgs/agenix.nix") {})
+    (pkgs.callPackage (inputs.agenix.src + "/pkgs/agenix.nix") {})
     fastfetch
     wl-clipboard
   ];

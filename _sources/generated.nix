@@ -6,6 +6,18 @@
   dockerTools,
 }:
 {
+  agenix = {
+    pname = "agenix";
+    version = "b027ee29d959fda4b60b57566d64c98a202e0feb";
+    src = fetchFromGitHub {
+      owner = "ryantm";
+      repo = "agenix";
+      rev = "b027ee29d959fda4b60b57566d64c98a202e0feb";
+      fetchSubmodules = false;
+      sha256 = "sha256-9VnK6Oqai65puVJ4WYtCTvlJeXxMzAp/69HhQuTdl/I=";
+    };
+    date = "2026-02-03";
+  };
   eden = {
     pname = "eden";
     version = "v1787509014.55acf5d260/Eden-Linux-55acf5d260";
@@ -22,6 +34,47 @@
       sha256 = "sha256-TVzi5ZWyvFsh6ovoBhU5DW0k3wlQ5/gUDD4+ykAQPTY=";
     };
   };
+  hjem = {
+    pname = "hjem";
+    version = "d248f0e4f7abd6e1f0eb9ace778dd7928481943e";
+    src = fetchFromGitHub {
+      owner = "feel-co";
+      repo = "hjem";
+      rev = "d248f0e4f7abd6e1f0eb9ace778dd7928481943e";
+      fetchSubmodules = false;
+      sha256 = "sha256-UrAlku7KST0DT+j1bdVGYI8tCz23PWL88uGMer3IZ2U=";
+    };
+    date = "2026-08-23";
+  };
+  neovim-config = {
+    pname = "neovim-config";
+    version = "65eee558f5d001dd434dad531365169a51d9ce60";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/neovim-config/archive/65eee558f5d001dd434dad531365169a51d9ce60.tar.gz";
+      sha256 = "sha256-bm6IFxfvvUb3EHo7qlzNhP8Db2hGNciOq3wsZW1yn7Y=";
+    };
+    date = "2026-08-24";
+  };
+  nix-index-database = {
+    pname = "nix-index-database";
+    version = "c51d5c2ba69c907a34e90c9b6b80cd2b93811745";
+    src = fetchFromGitHub {
+      owner = "nix-community";
+      repo = "nix-index-database";
+      rev = "c51d5c2ba69c907a34e90c9b6b80cd2b93811745";
+      fetchSubmodules = false;
+      sha256 = "sha256-FJh4esFS3zqNNuKwvN3t6wrJGewqp1AUF9DAEvoKPD8=";
+    };
+    date = "2026-08-23";
+  };
+  nixpkgs = {
+    pname = "nixpkgs";
+    version = "26.11pre1060451.56c02bc00adc";
+    src = fetchTarball {
+      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1060451.56c02bc00adc/nixexprs.tar.zst";
+      sha256 = "sha256-FoOSoBG7tEvOlGRTpWnVdY506Ner4y7r7UYO3OGgmE8=";
+    };
+  };
   pcsx2 = {
     pname = "pcsx2";
     version = "2.7.524";
@@ -29,5 +82,41 @@
       url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.524/pcsx2-v2.7.524-linux-appimage-x64-Qt.AppImage";
       sha256 = "sha256-IeVNDULpv5Om4AvZf9hFYrx93Z8rBxOFdEjPdiUMp0k=";
     };
+  };
+  preservation = {
+    pname = "preservation";
+    version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
+    src = fetchFromGitHub {
+      owner = "nix-community";
+      repo = "preservation";
+      rev = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
+      fetchSubmodules = false;
+      sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
+    };
+    date = "2025-09-09";
+  };
+  umbriel = {
+    pname = "umbriel";
+    version = "f0887075286bc4928ef29d1b629f8b4baa2309a8";
+    src = fetchFromGitHub {
+      owner = "noctalia-dev";
+      repo = "umbriel";
+      rev = "f0887075286bc4928ef29d1b629f8b4baa2309a8";
+      fetchSubmodules = true;
+      sha256 = "sha256-9RpHQx9Cmyd56NnjnGfQ+ruaf+ellmWDilLkB0B+jGY=";
+    };
+    date = "2026-08-24";
+  };
+  xdg-desktop-portal-umbriel = {
+    pname = "xdg-desktop-portal-umbriel";
+    version = "515c9f70f13ba4b4b9e19930b3e899c4ac8a50a4";
+    src = fetchFromGitHub {
+      owner = "noctalia-dev";
+      repo = "xdg-desktop-portal-umbriel";
+      rev = "515c9f70f13ba4b4b9e19930b3e899c4ac8a50a4";
+      fetchSubmodules = false;
+      sha256 = "sha256-fqU58lZeFchlY5aqyQgIfrN5ec/jqbhXNwNxyL2lp/g=";
+    };
+    date = "2026-08-24";
   };
 }
