@@ -27,7 +27,7 @@
   ];
 
   xdg.config.files = {
-    "noctalia/config.toml".source = (pkgs.formats.toml {}).generate "config.toml" (import ./config {inherit lib;});
+    "noctalia/config.toml".source = (pkgs.formats.toml {}).generate "noctalia.toml" (import ./config {inherit lib;});
     "noctalia/templates".source = ./templates;
     "foot/reload.fish" = {
       executable = true;
