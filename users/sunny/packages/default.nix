@@ -1,7 +1,8 @@
 {
   pkgs,
-  inputs,
+  sources,
   assets,
+  inputs,
   ...
 }: {
   imports = [
@@ -9,8 +10,8 @@
   ];
 
   packages = with pkgs; [
-    (callPackage ./eden.nix {inherit inputs assets;})
-    (callPackage ./pcsx2.nix {inherit inputs assets;})
+    (callPackage ./eden.nix {inherit sources assets;})
+    (callPackage ./pcsx2.nix {inherit sources assets;})
     ppsspp-sdl-wayland
     melonds
     azahar
@@ -33,6 +34,6 @@
     zathura
     rclone
     gpu-screen-recorder-gtk
-    (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db
+    inputs.nix-index-database.packages.${pkgs.stdenv.hostPlatform.system}.comma-with-db
   ];
 }
