@@ -1,3 +1,36 @@
+[nixpkgs]
+src.cmd = "curl -s -o /dev/null -w '%{url_effective}' -L --range 0-0 https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst | grep -oP 'nixos-\\K[^/]+(?=/nixexprs)'"
+fetch.tarball = "https://releases.nixos.org/nixos/unstable/nixos-$ver/nixexprs.tar.zst"
+
+[preservation]
+src.git = "https://github.com/nix-community/preservation"
+fetch.github = "nix-community/preservation"
+
+[hjem]
+src.git = "https://github.com/feel-co/hjem"
+fetch.github = "feel-co/hjem"
+
+[agenix]
+src.git = "https://github.com/ryantm/agenix"
+fetch.github = "ryantm/agenix"
+
+[nix-index-database]
+src.git = "https://github.com/nix-community/nix-index-database"
+fetch.github = "nix-community/nix-index-database"
+
+[neovim-config]
+src.git = "https://git.gay/sunworms/neovim-config"
+fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"
+
+[umbriel]
+src.git = "https://github.com/noctalia-dev/umbriel"
+fetch.github = "noctalia-dev/umbriel"
+git.fetchSubmodules = true
+
+[xdg-desktop-portal-umbriel]
+src.git = "https://github.com/noctalia-dev/xdg-desktop-portal-umbriel"
+fetch.github = "noctalia-dev/xdg-desktop-portal-umbriel"
+
 # binary packages
 [pcsx2]
 src.cmd = "curl -sL 'https://api.github.com/repos/PCSX2/pcsx2/releases?per_page=1' | grep -oP '\"tag_name\":\\s*\"\\K[^\"]+'"

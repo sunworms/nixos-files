@@ -1,19 +1,50 @@
 let
-  inputs = import ./npins;
-  sources = import ./_sources/generated.nix {
-    inherit (builtins) fetchurl;
-    fetchgit = null;
-    fetchFromGitHub = null;
+  fetchurl = builtins.fetchurl;
+
+  fetchFromGitHub = {
+    owner,
+    repo,
+    rev,
+    sha256,
+    fetchSubmodules ? false,
+    ...
+  }:
+    if fetchSubmodules
+    then
+      fetchGit {
+        url = "https://github.com/${owner}/${repo}.git";
+        inherit rev;
+        submodules = true;
+      }
+    else
+      fetchTarball {
+        url = "https://github.com/${owner}/${repo}/archive/${rev}.tar.gz";
+        inherit sha256;
+      };
+
+  fetchgit = {
+    url,
+    rev,
+    ...
+  }:
+    fetchGit {
+      inherit url rev;
+    };
+
+  inputs = import ./_sources/generated.nix {
+    inherit fetchurl fetchgit fetchFromGitHub;
+
     dockerTools = null;
   };
-  assets = ./assets;
 
-  nixosSystem = import "${inputs.nixpkgs}/nixos/lib/eval-config.nix";
+  nixosSystem = import "${inputs.nixpkgs.src}/nixos/lib/eval-config.nix";
+
+  assets = ./assets;
 
   mkHost = hostVars:
     nixosSystem {
       specialArgs = {
-        inherit inputs sources assets;
+        inherit inputs assets;
       };
 
       modules =
@@ -21,7 +52,7 @@ let
           ./hosts/${hostVars.hostname}/configuration.nix
           {
             nix.nixPath = [
-              "nixpkgs=${inputs.nixpkgs}"
+              "nixpkgs=${inputs.nixpkgs.src}"
             ];
           }
         ]
@@ -30,11 +61,13 @@ let
 in {
   motobook = mkHost {
     hostname = "motobook";
+
     modules = [
-      (inputs.preservation + "/module.nix")
-      (import inputs.hjem {}).nixosModules.default
-      (inputs.agenix + "/modules/age.nix")
-      (inputs.umbriel + "/nix/nixos-module.nix")
+      (inputs.preservation.src + "/module.nix")
+      (import inputs.hjem.src {}).nixosModules.default
+      (inputs.agenix.src + "/modules/age.nix")
+      (inputs.umbriel.src + "/nix/nixos-module.nix")
+
       {
         nixpkgs = {
           config.allowUnfree = true;
@@ -43,7 +76,7 @@ in {
 
         hjem = {
           clobberByDefault = true;
-          specialArgs = {inherit inputs sources assets;};
+          specialArgs = {inherit inputs assets;};
         };
       }
     ];
