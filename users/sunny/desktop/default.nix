@@ -12,7 +12,7 @@
   ];
 
   files = {
-    ".face".source = "${assets}/face";
+    ".face".source = "${assets}/ima.jpeg";
   };
 
   xdg.config.files = {
