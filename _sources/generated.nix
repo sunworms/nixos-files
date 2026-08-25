@@ -20,10 +20,10 @@
   };
   eden = {
     pname = "eden";
-    version = "v1787596057.60a474b8df/Eden-Linux-60a474b8df";
+    version = "v1787682409.0295dc5fff/Eden-Linux-0295dc5fff";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1787596057.60a474b8df/Eden-Linux-60a474b8df-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-orIQBCl6DCJJqlBAogooKlLzzB2sTh4CUdfa5Uu9EXM=";
+      url = "https://nightly.eden-emu.dev/v1787682409.0295dc5fff/Eden-Linux-0295dc5fff-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-ChBatMAdr5xZ7qMRZRB4zzvupalYkPmU5kNR8HXtTeo=";
     };
   };
   helium = {
@@ -97,15 +97,15 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "8af073895d32bd93f0192c0092f76f40bd9d25a6";
+    version = "8097a9a8bdbea0644b5043ec16210a01299d4ff3";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "8af073895d32bd93f0192c0092f76f40bd9d25a6";
+      rev = "8097a9a8bdbea0644b5043ec16210a01299d4ff3";
       fetchSubmodules = true;
-      sha256 = "sha256-dz4zFy9Y731B9yW3CmyHeqVhKCQr8VAQuxdEuiP/T60=";
+      sha256 = "sha256-3fR+XS0zx3CwZk16mUzs8OUFsP5H0fhkOc/5HAjeijs=";
     };
-    date = "2026-08-25";
+    date = "2026-08-26";
   };
   xdg-desktop-portal-umbriel = {
     pname = "xdg-desktop-portal-umbriel";
