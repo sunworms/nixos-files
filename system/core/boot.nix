@@ -7,7 +7,7 @@
       };
       efi.canTouchEfiVariables = true;
     };
-    kernelPackages = pkgs.linuxPackages_xanmod_latest;
+    kernelPackages = pkgs.linuxPackages_testing;
     zswap = {
       enable = true;
       maxPoolPercent = 40;
