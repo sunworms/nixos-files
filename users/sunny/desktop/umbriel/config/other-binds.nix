@@ -24,6 +24,10 @@
     "Mod+U" = "workspace-next";
     "Mod+Page_Up" = "workspace-previous";
     "Mod+Page_Down" = "workspace-next";
+    "Mod+Shift+I" = "workspace-move-up";
+    "Mod+Shift+U" = "workspace-move-down";
+    "Mod+Shift+Page_Up" = "workspace-move-up";
+    "Mod+Shift+Page_Down" = "workspace-move-down";
     "Mod+Ctrl+I" = "window-move-to-workspace-previous";
     "Mod+Ctrl+U" = "window-move-to-workspace-next";
     "Mod+Ctrl+Page_Up" = "window-move-to-workspace-previous";
