@@ -97,13 +97,13 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "8097a9a8bdbea0644b5043ec16210a01299d4ff3";
+    version = "a438c194f30886662c1e4dcdba4c8450a6597fd7";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "8097a9a8bdbea0644b5043ec16210a01299d4ff3";
+      rev = "a438c194f30886662c1e4dcdba4c8450a6597fd7";
       fetchSubmodules = true;
-      sha256 = "sha256-3fR+XS0zx3CwZk16mUzs8OUFsP5H0fhkOc/5HAjeijs=";
+      sha256 = "sha256-6a5XqBpdKJxG9+s/monCXcdyFyl91pbFInBwniJnOXA=";
     };
     date = "2026-08-26";
   };
