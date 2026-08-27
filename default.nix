@@ -66,7 +66,9 @@ in {
       (inputs.preservation.src + "/module.nix")
       (import inputs.hjem.src {}).nixosModules.default
       (inputs.agenix.src + "/modules/age.nix")
-      (inputs.umbriel.src + "/nix/nixos-module.nix")
+      (import (inputs.umbriel.src + "/nix/nixos-module.nix") {
+        xdg-desktop-portal-umbriel = null;
+      })
 
       {
         nixpkgs = {
