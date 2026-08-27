@@ -4,7 +4,6 @@
     border_width = 2;
     outer_border_width = 0;
     corner_radius = 12;
-    animation_ms = 250;
 
     blur = {
       enabled = true;
@@ -21,4 +20,6 @@
       offset_y = 5;
     };
   };
+
+  animation.enabled = false;
 }
