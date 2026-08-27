@@ -20,10 +20,10 @@
   };
   eden = {
     pname = "eden";
-    version = "v1787682409.0295dc5fff/Eden-Linux-0295dc5fff";
+    version = "v1787773087.faaf1bac64/Eden-Linux-faaf1bac64";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1787682409.0295dc5fff/Eden-Linux-0295dc5fff-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-ChBatMAdr5xZ7qMRZRB4zzvupalYkPmU5kNR8HXtTeo=";
+      url = "https://nightly.eden-emu.dev/v1787773087.faaf1bac64/Eden-Linux-faaf1bac64-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-bHLN/VBuJ8QaJs3joe8eDviQMs6C/JwGfZqt/BZIFYE=";
     };
   };
   helium = {
@@ -69,10 +69,10 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "26.11pre1060451.56c02bc00adc";
+    version = "26.11pre1062397.9fbb54b33e91";
     src = fetchTarball {
-      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1060451.56c02bc00adc/nixexprs.tar.zst";
-      sha256 = "sha256-FoOSoBG7tEvOlGRTpWnVdY506Ner4y7r7UYO3OGgmE8=";
+      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1062397.9fbb54b33e91/nixexprs.tar.zst";
+      sha256 = "sha256-IkjmqLoWzeqBAi1VIkdhDLMGjQDJ4suEDp59Zwxpswg=";
     };
   };
   pcsx2 = {
@@ -97,15 +97,15 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "a438c194f30886662c1e4dcdba4c8450a6597fd7";
+    version = "ca62ba515b804b019e8c9bc1a2aa6f1e2ffaa2a6";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "a438c194f30886662c1e4dcdba4c8450a6597fd7";
+      rev = "ca62ba515b804b019e8c9bc1a2aa6f1e2ffaa2a6";
       fetchSubmodules = true;
-      sha256 = "sha256-6a5XqBpdKJxG9+s/monCXcdyFyl91pbFInBwniJnOXA=";
+      sha256 = "sha256-1NAI6+1vgPno6ktzeNGsETLtxX+zh9PmJazYNgoLD80=";
     };
-    date = "2026-08-26";
+    date = "2026-08-27";
   };
   xdg-desktop-portal-umbriel = {
     pname = "xdg-desktop-portal-umbriel";
