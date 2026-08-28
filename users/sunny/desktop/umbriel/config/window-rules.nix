@@ -27,7 +27,7 @@
       blur = true;
     }
     {
-      match.app_id = "^org.pwmt.zathura$|^foot$";
+      match.app_id = "^org.pwmt.zathura$|^foot$|^emacs$";
       blur = true;
     }
   ];

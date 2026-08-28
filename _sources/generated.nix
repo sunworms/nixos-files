@@ -26,12 +26,21 @@
       sha256 = "sha256-FVCnatKf1xocUfYLqAYb6rPswCPGMUpJOCOjUC1B038=";
     };
   };
+  emacs-config = {
+    pname = "emacs-config";
+    version = "272f652e5fe8a06ce6a431307a2bf97b4c244945";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/emacs-config/archive/272f652e5fe8a06ce6a431307a2bf97b4c244945.tar.gz";
+      sha256 = "sha256-Hu/Z5OTz0QmL/My6+Xz8kB6Z1hu2MTWoFTiH73xpzzw=";
+    };
+    date = "2026-08-28";
+  };
   helium = {
     pname = "helium";
-    version = "0.15.7.1";
+    version = "0.16.1.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.15.7.1/helium-0.15.7.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-MQKJLN69/g1R46Y44ADo1UvKAXxS2vKsq/XlAwBO+58=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.16.1.1/helium-0.16.1.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-u1L7/oXmST24AWEtrSiJDUwd7bm7fqp1gDj17kLWZuE=";
     };
   };
   hjem = {
@@ -45,15 +54,6 @@
       sha256 = "sha256-UrAlku7KST0DT+j1bdVGYI8tCz23PWL88uGMer3IZ2U=";
     };
     date = "2026-08-23";
-  };
-  neovim-config = {
-    pname = "neovim-config";
-    version = "65eee558f5d001dd434dad531365169a51d9ce60";
-    src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/65eee558f5d001dd434dad531365169a51d9ce60.tar.gz";
-      sha256 = "sha256-bm6IFxfvvUb3EHo7qlzNhP8Db2hGNciOq3wsZW1yn7Y=";
-    };
-    date = "2026-08-24";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -97,26 +97,26 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "26b292fce8937be40577915fd436387967453327";
+    version = "53358d84ce2672ee4201e65a96322fa38ace8f8b";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "26b292fce8937be40577915fd436387967453327";
+      rev = "53358d84ce2672ee4201e65a96322fa38ace8f8b";
       fetchSubmodules = true;
-      sha256 = "sha256-OIuFD+h2O8hY5SUEAE280saJ7opwjoefSrIWRiRvYOw=";
+      sha256 = "sha256-7ie6ifczGU0xXuneSFeavwKgs7Hd/pZnPsjsf/fz+qI=";
     };
     date = "2026-08-28";
   };
   xdg-desktop-portal-umbriel = {
     pname = "xdg-desktop-portal-umbriel";
-    version = "ebcf96d2c9f184aea332db4354583c89155e5e9a";
+    version = "0d083de87951244a4828096f5e1600f82349d4ce";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "xdg-desktop-portal-umbriel";
-      rev = "ebcf96d2c9f184aea332db4354583c89155e5e9a";
+      rev = "0d083de87951244a4828096f5e1600f82349d4ce";
       fetchSubmodules = false;
-      sha256 = "sha256-+NwioGIiTws3zavU2Bo3v8fhcCcub1MNXjrS27IIUK8=";
+      sha256 = "sha256-cy4VQcdAjd4tH8Fnn8dThFDFgvyRk7+k6SNaVRmW6Ko=";
     };
-    date = "2026-08-27";
+    date = "2026-08-28";
   };
 }

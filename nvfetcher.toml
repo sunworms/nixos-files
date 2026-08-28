@@ -18,9 +18,9 @@ fetch.github = "ryantm/agenix"
 src.git = "https://github.com/nix-community/nix-index-database"
 fetch.github = "nix-community/nix-index-database"
 
-[neovim-config]
-src.git = "https://git.gay/sunworms/neovim-config"
-fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"
+[emacs-config]
+src.git = "https://git.gay/sunworms/emacs-config"
+fetch.tarball = "https://git.gay/sunworms/emacs-config/archive/$ver.tar.gz"
 
 [umbriel]
 src.git = "https://github.com/noctalia-dev/umbriel"

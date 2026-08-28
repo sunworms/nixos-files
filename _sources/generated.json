@@ -35,6 +35,20 @@
         },
         "version": "v1787882247.119291dc77/Eden-Linux-119291dc77"
     },
+    "emacs-config": {
+        "cargoLock": null,
+        "date": "2026-08-28",
+        "extract": null,
+        "name": "emacs-config",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-Hu/Z5OTz0QmL/My6+Xz8kB6Z1hu2MTWoFTiH73xpzzw=",
+            "type": "tarball",
+            "url": "https://git.gay/sunworms/emacs-config/archive/272f652e5fe8a06ce6a431307a2bf97b4c244945.tar.gz"
+        },
+        "version": "272f652e5fe8a06ce6a431307a2bf97b4c244945"
+    },
     "helium": {
         "cargoLock": null,
         "date": null,
@@ -44,11 +58,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-MQKJLN69/g1R46Y44ADo1UvKAXxS2vKsq/XlAwBO+58=",
+            "sha256": "sha256-u1L7/oXmST24AWEtrSiJDUwd7bm7fqp1gDj17kLWZuE=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.15.7.1/helium-0.15.7.1-x86_64_linux.tar.xz"
+            "url": "https://github.com/imputnet/helium-linux/releases/download/0.16.1.1/helium-0.16.1.1-x86_64_linux.tar.xz"
         },
-        "version": "0.15.7.1"
+        "version": "0.16.1.1"
     },
     "hjem": {
         "cargoLock": null,
@@ -70,20 +84,6 @@
             "type": "github"
         },
         "version": "d248f0e4f7abd6e1f0eb9ace778dd7928481943e"
-    },
-    "neovim-config": {
-        "cargoLock": null,
-        "date": "2026-08-24",
-        "extract": null,
-        "name": "neovim-config",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-bm6IFxfvvUb3EHo7qlzNhP8Db2hGNciOq3wsZW1yn7Y=",
-            "type": "tarball",
-            "url": "https://git.gay/sunworms/neovim-config/archive/65eee558f5d001dd434dad531365169a51d9ce60.tar.gz"
-        },
-        "version": "65eee558f5d001dd434dad531365169a51d9ce60"
     },
     "nix-index-database": {
         "cargoLock": null,
@@ -170,16 +170,16 @@
             "name": null,
             "owner": "noctalia-dev",
             "repo": "umbriel",
-            "rev": "26b292fce8937be40577915fd436387967453327",
-            "sha256": "sha256-OIuFD+h2O8hY5SUEAE280saJ7opwjoefSrIWRiRvYOw=",
+            "rev": "53358d84ce2672ee4201e65a96322fa38ace8f8b",
+            "sha256": "sha256-7ie6ifczGU0xXuneSFeavwKgs7Hd/pZnPsjsf/fz+qI=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "26b292fce8937be40577915fd436387967453327"
+        "version": "53358d84ce2672ee4201e65a96322fa38ace8f8b"
     },
     "xdg-desktop-portal-umbriel": {
         "cargoLock": null,
-        "date": "2026-08-27",
+        "date": "2026-08-28",
         "extract": null,
         "name": "xdg-desktop-portal-umbriel",
         "passthru": null,
@@ -191,11 +191,11 @@
             "name": null,
             "owner": "noctalia-dev",
             "repo": "xdg-desktop-portal-umbriel",
-            "rev": "ebcf96d2c9f184aea332db4354583c89155e5e9a",
-            "sha256": "sha256-+NwioGIiTws3zavU2Bo3v8fhcCcub1MNXjrS27IIUK8=",
+            "rev": "0d083de87951244a4828096f5e1600f82349d4ce",
+            "sha256": "sha256-cy4VQcdAjd4tH8Fnn8dThFDFgvyRk7+k6SNaVRmW6Ko=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ebcf96d2c9f184aea332db4354583c89155e5e9a"
+        "version": "0d083de87951244a4828096f5e1600f82349d4ce"
     }
 }
