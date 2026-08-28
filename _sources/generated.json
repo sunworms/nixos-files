@@ -29,11 +29,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-bHLN/VBuJ8QaJs3joe8eDviQMs6C/JwGfZqt/BZIFYE=",
+            "sha256": "sha256-FVCnatKf1xocUfYLqAYb6rPswCPGMUpJOCOjUC1B038=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1787773087.faaf1bac64/Eden-Linux-faaf1bac64-amd64-gcc-standard.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1787882247.119291dc77/Eden-Linux-119291dc77-amd64-gcc-standard.AppImage"
         },
-        "version": "v1787773087.faaf1bac64/Eden-Linux-faaf1bac64"
+        "version": "v1787882247.119291dc77/Eden-Linux-119291dc77"
     },
     "helium": {
         "cargoLock": null,
@@ -158,7 +158,7 @@
     },
     "umbriel": {
         "cargoLock": null,
-        "date": "2026-08-27",
+        "date": "2026-08-28",
         "extract": null,
         "name": "umbriel",
         "passthru": null,
@@ -170,16 +170,16 @@
             "name": null,
             "owner": "noctalia-dev",
             "repo": "umbriel",
-            "rev": "ca62ba515b804b019e8c9bc1a2aa6f1e2ffaa2a6",
-            "sha256": "sha256-1NAI6+1vgPno6ktzeNGsETLtxX+zh9PmJazYNgoLD80=",
+            "rev": "26b292fce8937be40577915fd436387967453327",
+            "sha256": "sha256-OIuFD+h2O8hY5SUEAE280saJ7opwjoefSrIWRiRvYOw=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "ca62ba515b804b019e8c9bc1a2aa6f1e2ffaa2a6"
+        "version": "26b292fce8937be40577915fd436387967453327"
     },
     "xdg-desktop-portal-umbriel": {
         "cargoLock": null,
-        "date": "2026-08-24",
+        "date": "2026-08-27",
         "extract": null,
         "name": "xdg-desktop-portal-umbriel",
         "passthru": null,
@@ -191,11 +191,11 @@
             "name": null,
             "owner": "noctalia-dev",
             "repo": "xdg-desktop-portal-umbriel",
-            "rev": "515c9f70f13ba4b4b9e19930b3e899c4ac8a50a4",
-            "sha256": "sha256-fqU58lZeFchlY5aqyQgIfrN5ec/jqbhXNwNxyL2lp/g=",
+            "rev": "ebcf96d2c9f184aea332db4354583c89155e5e9a",
+            "sha256": "sha256-+NwioGIiTws3zavU2Bo3v8fhcCcub1MNXjrS27IIUK8=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "515c9f70f13ba4b4b9e19930b3e899c4ac8a50a4"
+        "version": "ebcf96d2c9f184aea332db4354583c89155e5e9a"
     }
 }
