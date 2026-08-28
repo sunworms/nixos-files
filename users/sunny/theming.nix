@@ -81,12 +81,14 @@ in {
     };
     serviceConfig = {
       Type = "oneshot";
-      ExecStart = ''
-        /usr/bin/env dconf write /org/gnome/desktop/interface/font-name \"'${config.fonts.sansSerif} 11'\"
-        /usr/bin/env dconf write /org/gnome/desktop/interface/cursor-theme-name \"'volantes_cursors'\"
-        /usr/bin/env dconf write /org/gnome/desktop/interface/icon-theme-name \"'Adwaita'\"
-        /usr/bin/env dconf write /org/gnome/desktop/interface/theme-name \"'adw-gtk3'\"
-      '';
+      ExecStart = "${
+        pkgs.writeShellScript "set-gtk-settings" ''
+          /usr/bin/env dconf write /org/gnome/desktop/interface/font-name "'${config.fonts.sansSerif} 11'"
+          /usr/bin/env dconf write /org/gnome/desktop/interface/cursor-theme-name "'volantes_cursors'"
+          /usr/bin/env dconf write /org/gnome/desktop/interface/icon-theme-name "'Adwaita'"
+          /usr/bin/env dconf write /org/gnome/desktop/interface/theme-name "'adw-gtk3'"
+        ''
+      }";
     };
   };
 }
