@@ -28,10 +28,10 @@
   };
   emacs-config = {
     pname = "emacs-config";
-    version = "3a32b0bcd7e4a3a82711e3ef8c4d7a53598ba30c";
+    version = "d9cc7e5fa1578c42b9ec699fc35ab385f7bccec6";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/emacs-config/archive/3a32b0bcd7e4a3a82711e3ef8c4d7a53598ba30c.tar.gz";
-      sha256 = "sha256-OiwWJKaJzhoKdJRk8ASCAjdWGVf9xunMMuFVmjM1DzY=";
+      url = "https://git.gay/sunworms/emacs-config/archive/d9cc7e5fa1578c42b9ec699fc35ab385f7bccec6.tar.gz";
+      sha256 = "sha256-If2v6myOEAuys+w5uhNQeNS+wB9cr8ibs6fp+hzUNCo=";
     };
     date = "2026-08-28";
   };
@@ -109,13 +109,13 @@
   };
   xdg-desktop-portal-umbriel = {
     pname = "xdg-desktop-portal-umbriel";
-    version = "0d083de87951244a4828096f5e1600f82349d4ce";
+    version = "4edf049e4f9982bd7c3d6c92e25379308fdaa8df";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "xdg-desktop-portal-umbriel";
-      rev = "0d083de87951244a4828096f5e1600f82349d4ce";
+      rev = "4edf049e4f9982bd7c3d6c92e25379308fdaa8df";
       fetchSubmodules = false;
-      sha256 = "sha256-cy4VQcdAjd4tH8Fnn8dThFDFgvyRk7+k6SNaVRmW6Ko=";
+      sha256 = "sha256-tDvkYDYCbQhi2BG5wtpNjUHa7iUrTmctC87ukbNJ0y4=";
     };
     date = "2026-08-28";
   };
