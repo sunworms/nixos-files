@@ -88,22 +88,22 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "98f430d30c61141bf34b6af5fdd18270ef42acba";
+    version = "e00d42d78f2aa21f186659f51b7de8f2af95b2f6";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "98f430d30c61141bf34b6af5fdd18270ef42acba";
+      rev = "e00d42d78f2aa21f186659f51b7de8f2af95b2f6";
       fetchSubmodules = true;
-      sha256 = "sha256-LRNzswGV4dsJTMjGkzWA/84AcgZewgKRKsq3fC/ogeA=";
+      sha256 = "sha256-S3H6jCfTjgukSNzQYHdqGCVyHMtg4v58se9P1ob3xMA=";
     };
     date = "2026-08-29";
   };
   vim-config = {
     pname = "vim-config";
-    version = "9c4785ed96c3c60af049062dce04c08a5c4ecbb4";
+    version = "380de78dc4ce422cdbf6277e55dd0493de662379";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/vim-config/archive/9c4785ed96c3c60af049062dce04c08a5c4ecbb4.tar.gz";
-      sha256 = "sha256-inEp12VcdhjLXQJuuSEWrQd4MH5kHk0Zm/2gds8/ILM=";
+      url = "https://git.gay/sunworms/vim-config/archive/380de78dc4ce422cdbf6277e55dd0493de662379.tar.gz";
+      sha256 = "sha256-dYB/TAf9ySDMZeimjmvwEUP8bP/t9jtJBqx8cZu/DGU=";
     };
     date = "2026-08-29";
   };
