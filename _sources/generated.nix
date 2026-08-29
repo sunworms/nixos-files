@@ -88,13 +88,14 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "b11a5986058521b0c20e7ecac29a123648e35f3a";
+    version = "a294a13de7b1a59796c52e3db5711661074de97c";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "b11a5986058521b0c20e7ecac29a123648e35f3a";
+      rev = "a294a13de7b1a59796c52e3db5711661074de97c";
       fetchSubmodules = true;
-      sha256 = "sha256-NOn2Ux4n98UpvngZqjk9KiFzQ0gClD+vopzizCRTaPo=";
+      sha256 = "sha256-+rLyr2UB/t1rdbI254Ajl4hQjiSiCxk1x0FdJcL/Zkc=";
+    };
     date = "2026-08-29";
   };
   vim-config = {
