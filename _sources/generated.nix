@@ -20,27 +20,27 @@
   };
   eden = {
     pname = "eden";
-    version = "v1787882247.119291dc77/Eden-Linux-119291dc77";
+    version = "v1787966474.54cd5fb8eb/Eden-Linux-54cd5fb8eb";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1787882247.119291dc77/Eden-Linux-119291dc77-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-FVCnatKf1xocUfYLqAYb6rPswCPGMUpJOCOjUC1B038=";
+      url = "https://nightly.eden-emu.dev/v1787966474.54cd5fb8eb/Eden-Linux-54cd5fb8eb-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-V5iTxGD1/kdzlz7YibaSEt4Ycmdp9+nxi+amIkZghhY=";
     };
   };
   emacs-config = {
     pname = "emacs-config";
-    version = "19d644a5342ed50da331708816e6c1b2ec2c4c17";
+    version = "3434e0ec33295cfa5316223a8c60f50c167887ea";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/emacs-config/archive/19d644a5342ed50da331708816e6c1b2ec2c4c17.tar.gz";
-      sha256 = "sha256-L8cMhXyYw1dwoTGBWS9YEhaK30S7AyuLkEJg03l5Hok=";
+      url = "https://git.gay/sunworms/emacs-config/archive/3434e0ec33295cfa5316223a8c60f50c167887ea.tar.gz";
+      sha256 = "sha256-riu09iajasBl+NkHKMFANbivn0Y9nogwige1SoC6FNY=";
     };
-    date = "2026-08-28";
+    date = "2026-08-29";
   };
   helium = {
     pname = "helium";
-    version = "0.16.1.1";
+    version = "0.16.2.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.16.1.1/helium-0.16.1.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-u1L7/oXmST24AWEtrSiJDUwd7bm7fqp1gDj17kLWZuE=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.16.2.1/helium-0.16.2.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-gAg4BpJyhwpvT8nq3wF8CBn32Jq/YHEXCAsHnUv3wBc=";
     };
   };
   hjem = {
@@ -77,10 +77,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.7.524";
+    version = "2.8.0";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.7.524/pcsx2-v2.7.524-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-IeVNDULpv5Om4AvZf9hFYrx93Z8rBxOFdEjPdiUMp0k=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.8.0/pcsx2-v2.8.0-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-8ONrMfyIXJzNtTOSdPHZmKnmm/c2uS3YZ0E0CR+ZKj8=";
     };
   };
   preservation = {
@@ -97,15 +97,15 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "35a07aa2bf1b8d5330be0ebd2f531add728d2807";
+    version = "b11a5986058521b0c20e7ecac29a123648e35f3a";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "35a07aa2bf1b8d5330be0ebd2f531add728d2807";
+      rev = "b11a5986058521b0c20e7ecac29a123648e35f3a";
       fetchSubmodules = true;
-      sha256 = "sha256-geqvggeMoFEpC+VivobuwVpkiORngMClGfJyPC1puog=";
+      sha256 = "sha256-NOn2Ux4n98UpvngZqjk9KiFzQ0gClD+vopzizCRTaPo=";
     };
-    date = "2026-08-28";
+    date = "2026-08-29";
   };
   xdg-desktop-portal-umbriel = {
     pname = "xdg-desktop-portal-umbriel";
