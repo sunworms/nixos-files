@@ -20,6 +20,4 @@
       offset_y = 5;
     };
   };
-
-  animation.enabled = false;
 }
