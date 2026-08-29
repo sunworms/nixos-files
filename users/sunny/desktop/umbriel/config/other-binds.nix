@@ -38,10 +38,8 @@
     "Mod+WheelDown" = "workspace-next";
 
     "Mod+Alt+V" = "window-toggle-floating";
-    "Mod+Comma" = "window-consume-left";
-    "Mod+Period" = "window-expel-right";
-    "Mod+BracketLeft" = "window-consume-left";
-    "Mod+BracketRight" = "window-expel-right";
+    "Mod+BracketLeft" = "window-consume-or-expel-left";
+    "Mod+BracketRight" = "window-consume-or-expel-right";
     "Mod+Ctrl+Down" = "window-move-down";
     "Mod+Ctrl+Up" = "window-move-up";
     "Mod+Ctrl+J" = "window-move-down";
