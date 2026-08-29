@@ -42,7 +42,6 @@
     # Nix LSPs
     nil
     nixd
-    rassumfrassum
     alejandra
 
     # pins

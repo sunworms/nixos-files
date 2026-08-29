@@ -7,3 +7,4 @@ abbr osca 'nh clean all'
 abbr oscd 'nh clean all --no-direnv'
 abbr oss 'nh os switch --ask -f ./.'
 abbr ost 'nh os test --ask -f ./.'
+abbr lg lazygit

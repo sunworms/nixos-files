@@ -6,7 +6,7 @@
     community_palette = "Catppuccin Lavender";
 
     templates = {
-      builtin_ids = ["emacs" "foot" "gtk3" "gtk4" "kcolorscheme" "qt" "umbriel"];
+      builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "umbriel"];
       community_ids = ["yazi"];
 
       user = {
@@ -15,10 +15,10 @@
           output_path = "~/.config/foot/variables.fish";
           post_hook = "chmod +x ~/.config/foot/variables.fish && ~/.config/foot/reload.fish";
         };
-        nvim-base16 = {
-          input_path = "~/.config/noctalia/templates/emacs.el";
-          output_path = "~/.config/emacs/themes/noctalia-theme.el";
-          post_hook = "pkill -SIGUSR1 emacs";
+        vim-colors = {
+          input_path = "~/.config/noctalia/templates/vim-colors.vim";
+          output_path = "~/.cache/noctalia/colors.vim";
+          post_hook = "pkill -USR1 vim";
         };
         zathura = {
           input_path = "~/.config/noctalia/templates/zathurarc";

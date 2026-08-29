@@ -35,20 +35,6 @@
         },
         "version": "v1787966474.54cd5fb8eb/Eden-Linux-54cd5fb8eb"
     },
-    "emacs-config": {
-        "cargoLock": null,
-        "date": "2026-08-29",
-        "extract": null,
-        "name": "emacs-config",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-riu09iajasBl+NkHKMFANbivn0Y9nogwige1SoC6FNY=",
-            "type": "tarball",
-            "url": "https://git.gay/sunworms/emacs-config/archive/3434e0ec33295cfa5316223a8c60f50c167887ea.tar.gz"
-        },
-        "version": "3434e0ec33295cfa5316223a8c60f50c167887ea"
-    },
     "helium": {
         "cargoLock": null,
         "date": null,
@@ -176,6 +162,19 @@
             "type": "github"
         },
         "version": "b11a5986058521b0c20e7ecac29a123648e35f3a"
+    "vim-config": {
+        "cargoLock": null,
+        "date": "2026-08-29",
+        "extract": null,
+        "name": "vim-config",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-myfDu242c+MVUhPcPFYiWieFTyK7ERwZjVMdoyM1jH8=",
+            "type": "tarball",
+            "url": "https://git.gay/sunworms/vim-config/archive/1fd49b56efe9e92e5ab65c232421dc5847b4c7c1.tar.gz"
+        },
+        "version": "1fd49b56efe9e92e5ab65c232421dc5847b4c7c1"
     },
     "xdg-desktop-portal-umbriel": {
         "cargoLock": null,
