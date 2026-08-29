@@ -31,7 +31,8 @@ in {
   directory = "/home/sunny";
 
   packages = with pkgs; [
-    (import inputs.emacs-config.src)
+    (import inputs.vim-config.src {inherit pkgs;})
+    lazygit
     imv
     yaziUnfree
     ripdrag

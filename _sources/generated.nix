@@ -26,15 +26,6 @@
       sha256 = "sha256-V5iTxGD1/kdzlz7YibaSEt4Ycmdp9+nxi+amIkZghhY=";
     };
   };
-  emacs-config = {
-    pname = "emacs-config";
-    version = "3434e0ec33295cfa5316223a8c60f50c167887ea";
-    src = fetchTarball {
-      url = "https://git.gay/sunworms/emacs-config/archive/3434e0ec33295cfa5316223a8c60f50c167887ea.tar.gz";
-      sha256 = "sha256-riu09iajasBl+NkHKMFANbivn0Y9nogwige1SoC6FNY=";
-    };
-    date = "2026-08-29";
-  };
   helium = {
     pname = "helium";
     version = "0.16.2.1";
@@ -104,6 +95,14 @@
       rev = "b11a5986058521b0c20e7ecac29a123648e35f3a";
       fetchSubmodules = true;
       sha256 = "sha256-NOn2Ux4n98UpvngZqjk9KiFzQ0gClD+vopzizCRTaPo=";
+    date = "2026-08-29";
+  };
+  vim-config = {
+    pname = "vim-config";
+    version = "1fd49b56efe9e92e5ab65c232421dc5847b4c7c1";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/vim-config/archive/1fd49b56efe9e92e5ab65c232421dc5847b4c7c1.tar.gz";
+      sha256 = "sha256-myfDu242c+MVUhPcPFYiWieFTyK7ERwZjVMdoyM1jH8=";
     };
     date = "2026-08-29";
   };
