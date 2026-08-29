@@ -65,6 +65,8 @@
     "Mod+K" = "window-focus-up";
     "Mod+Equal" = "window-modify-width:0.05";
     "Mod+Minus" = "window-modify-width:-0.05";
+    "Mod+Shift+Equal" = "window-modify-height:0.05";
+    "Mod+Shift+Minus" = "window-modify-height:-0.05";
     "Mod+F" = "window-toggle-maximize";
     "Mod+M" = "window-toggle-maximize-to-edges";
     "Mod+R" = "window-cycle-width";
