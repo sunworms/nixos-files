@@ -156,12 +156,12 @@
             "name": null,
             "owner": "noctalia-dev",
             "repo": "umbriel",
-            "rev": "98f430d30c61141bf34b6af5fdd18270ef42acba",
-            "sha256": "sha256-LRNzswGV4dsJTMjGkzWA/84AcgZewgKRKsq3fC/ogeA=",
+            "rev": "e00d42d78f2aa21f186659f51b7de8f2af95b2f6",
+            "sha256": "sha256-S3H6jCfTjgukSNzQYHdqGCVyHMtg4v58se9P1ob3xMA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "98f430d30c61141bf34b6af5fdd18270ef42acba"
+        "version": "e00d42d78f2aa21f186659f51b7de8f2af95b2f6"
     },
     "vim-config": {
         "cargoLock": null,
@@ -171,11 +171,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-inEp12VcdhjLXQJuuSEWrQd4MH5kHk0Zm/2gds8/ILM=",
+            "sha256": "sha256-dYB/TAf9ySDMZeimjmvwEUP8bP/t9jtJBqx8cZu/DGU=",
             "type": "tarball",
-            "url": "https://git.gay/sunworms/vim-config/archive/9c4785ed96c3c60af049062dce04c08a5c4ecbb4.tar.gz"
+            "url": "https://git.gay/sunworms/vim-config/archive/380de78dc4ce422cdbf6277e55dd0493de662379.tar.gz"
         },
-        "version": "9c4785ed96c3c60af049062dce04c08a5c4ecbb4"
+        "version": "380de78dc4ce422cdbf6277e55dd0493de662379"
     },
     "xdg-desktop-portal-umbriel": {
         "cargoLock": null,
