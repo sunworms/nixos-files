@@ -33,7 +33,7 @@ in {
   packages = with pkgs; [
     (import inputs.vim-config.src {inherit pkgs;})
     lazygit
-    imv
+    swayimg
     yaziUnfree
     ripdrag
     ripgrep
