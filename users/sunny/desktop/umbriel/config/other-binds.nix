@@ -10,16 +10,25 @@
     "Mod+7" = "workspace-switch:7";
     "Mod+8" = "workspace-switch:8";
     "Mod+9" = "workspace-switch:9";
-    "Mod+Ctrl+0" = "window-move-to-workspace:10";
-    "Mod+Ctrl+1" = "window-move-to-workspace:1";
-    "Mod+Ctrl+2" = "window-move-to-workspace:2";
-    "Mod+Ctrl+3" = "window-move-to-workspace:3";
-    "Mod+Ctrl+4" = "window-move-to-workspace:4";
-    "Mod+Ctrl+5" = "window-move-to-workspace:5";
-    "Mod+Ctrl+6" = "window-move-to-workspace:6";
-    "Mod+Ctrl+7" = "window-move-to-workspace:7";
-    "Mod+Ctrl+8" = "window-move-to-workspace:8";
-    "Mod+Ctrl+9" = "window-move-to-workspace:9";
+
+    "Mod+Ctrl+0" = "column-move-to-workspace:10";
+    "Mod+Ctrl+1" = "column-move-to-workspace:1";
+    "Mod+Ctrl+2" = "column-move-to-workspace:2";
+    "Mod+Ctrl+3" = "column-move-to-workspace:3";
+    "Mod+Ctrl+4" = "column-move-to-workspace:4";
+    "Mod+Ctrl+5" = "column-move-to-workspace:5";
+    "Mod+Ctrl+6" = "column-move-to-workspace:6";
+    "Mod+Ctrl+7" = "column-move-to-workspace:7";
+    "Mod+Ctrl+8" = "column-move-to-workspace:8";
+    "Mod+Ctrl+9" = "column-move-to-workspace:9";
+
+    "Mod+Ctrl+I" = "column-move-to-workspace-previous";
+    "Mod+Ctrl+U" = "column-move-to-workspace-next";
+    "Mod+Ctrl+Page_Up" = "column-move-to-workspace-previous";
+    "Mod+Ctrl+Page_Down" = "column-move-to-workspace-next";
+    "Mod+Ctrl+WheelUp" = "column-move-to-workspace-previous";
+    "Mod+Ctrl+WheelDown" = "column-move-to-workspace-next";
+
     "Mod+I" = "workspace-previous";
     "Mod+U" = "workspace-next";
     "Mod+Page_Up" = "workspace-previous";
@@ -28,18 +37,9 @@
     "Mod+Shift+U" = "workspace-move-down";
     "Mod+Shift+Page_Up" = "workspace-move-up";
     "Mod+Shift+Page_Down" = "workspace-move-down";
-    "Mod+Ctrl+I" = "window-move-to-workspace-previous";
-    "Mod+Ctrl+U" = "window-move-to-workspace-next";
-    "Mod+Ctrl+Page_Up" = "window-move-to-workspace-previous";
-    "Mod+Ctrl+Page_Down" = "window-move-to-workspace-next";
-    "Mod+Ctrl+WheelUp" = "window-move-to-workspace-previous";
-    "Mod+Ctrl+WheelDown" = "window-move-to-workspace-next";
     "Mod+WheelUp" = "workspace-previous";
     "Mod+WheelDown" = "workspace-next";
 
-    "Mod+Alt+V" = "window-toggle-floating";
-    "Mod+BracketLeft" = "window-consume-or-expel-left";
-    "Mod+BracketRight" = "window-consume-or-expel-right";
     "Mod+Ctrl+Down" = "window-move-down";
     "Mod+Ctrl+Up" = "window-move-up";
     "Mod+Ctrl+J" = "window-move-down";
@@ -48,11 +48,12 @@
     "Mod+Ctrl+L" = "column-move-right";
     "Mod+Ctrl+Left" = "column-move-left";
     "Mod+Ctrl+Right" = "column-move-right";
+
     "Mod+Ctrl+Shift+WheelUp" = "column-move-left";
     "Mod+Ctrl+Shift+WheelDown" = "column-move-right";
     "Mod+Ctrl+WheelLeft" = "column-move-left";
     "Mod+Ctrl+WheelRight" = "column-move-right";
-    "Mod+Ctrl+F" = "window-toggle-maximize";
+
     "Mod+Down" = "window-focus-down";
     "Mod+Up" = "window-focus-up";
     "Mod+H" = "window-focus-left";
@@ -61,18 +62,31 @@
     "Mod+Right" = "window-focus-right";
     "Mod+J" = "window-focus-down";
     "Mod+K" = "window-focus-up";
+
     "Mod+Equal" = "window-modify-width:0.05";
     "Mod+Minus" = "window-modify-width:-0.05";
     "Mod+Shift+Equal" = "window-modify-height:0.05";
     "Mod+Shift+Minus" = "window-modify-height:-0.05";
+
+    "Mod+Alt+V" = "window-toggle-floating";
     "Mod+F" = "window-toggle-maximize";
     "Mod+M" = "window-toggle-maximize-to-edges";
     "Mod+R" = "window-cycle-width";
     "Mod+Shift+F" = "window-toggle-fullscreen";
+    "Mod+Ctrl+F" = "window-toggle-maximize";
+
     "Mod+Shift+WheelUp" = "window-focus-left";
     "Mod+Shift+WheelDown" = "window-focus-right";
     "Mod+WheelLeft" = "window-focus-left";
     "Mod+WheelRight" = "window-focus-right";
+
+    "Mod+Home" = "column-focus-first";
+    "Mod+End" = "column-focus-last";
+    "Mod+Ctrl+Home" = "column-move-to-first";
+    "Mod+Ctrl+End" = "column-move-to-last";
+
+    "Mod+BracketLeft" = "window-consume-or-expel-left";
+    "Mod+BracketRight" = "window-consume-or-expel-right";
 
     "Mod+Shift+Down" = "output-focus-down";
     "Mod+Shift+Up" = "output-focus-up";
@@ -82,6 +96,7 @@
     "Mod+Shift+Right" = "output-focus-right";
     "Mod+Shift+J" = "output-focus-down";
     "Mod+Shift+K" = "output-focus-up";
+
     "Mod+Shift+Ctrl+Down" = "column-move-to-output-down";
     "Mod+Shift+Ctrl+H" = "column-move-to-output-left";
     "Mod+Shift+Ctrl+J" = "column-move-to-output-down";
@@ -90,6 +105,7 @@
     "Mod+Shift+Ctrl+Left" = "column-move-to-output-left";
     "Mod+Shift+Ctrl+Right" = "column-move-to-output-right";
     "Mod+Shift+Ctrl+Up" = "column-move-to-output-up";
+
     "Mod+Shift+P" = "dpms-off";
   };
 }
