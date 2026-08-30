@@ -8,5 +8,6 @@
     ];
     xwayland = true;
     show_cheatsheet = false;
+    focus_on_activate = true;
   };
 }
