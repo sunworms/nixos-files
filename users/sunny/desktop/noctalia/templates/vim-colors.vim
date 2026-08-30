@@ -188,3 +188,52 @@ hi! link SpecialChar Special
 hi! link Tag Special
 hi! link SpecialComment Comment
 hi! link Debug Special
+
+" ==========================================================================
+" vim-lsp (Diagnostics, Hover Windows, & Semantic Highlighting)
+" ==========================================================================
+hi LspErrorText           guibg=NONE guifg={{ colors.error.default.hex }}
+hi LspErrorLine           guibg={{ colors.error_container.default.hex }} guifg=NONE
+hi LspWarningText         guibg=NONE guifg={{ colors.tertiary.default.hex }}
+hi LspWarningLine         guibg={{ colors.tertiary_container.default.hex }} guifg=NONE
+hi LspInformationText     guibg=NONE guifg={{ colors.secondary.default.hex }}
+hi LspInformationLine     guibg={{ colors.secondary_container.default.hex }} guifg=NONE
+hi LspHintText            guibg=NONE guifg={{ colors.outline.default.hex }} gui=italic
+hi LspHintLine            guibg={{ colors.surface_container_low.default.hex }} guifg=NONE
+
+hi link LspErrorVirtualText       LspErrorText
+hi link LspWarningVirtualText     LspWarningText
+hi link LspInformationVirtualText LspInformationText
+hi link LspHintVirtualText        LspHintText
+
+hi LspErrorHighlight       guisp={{ colors.error.default.hex }} gui=undercurl guifg=NONE guibg=NONE
+hi LspWarningHighlight     guisp={{ colors.tertiary.default.hex }} gui=undercurl guifg=NONE guibg=NONE
+hi LspInformationHighlight guisp={{ colors.secondary.default.hex }} gui=undercurl guifg=NONE guibg=NONE
+hi LspHintHighlight        guisp={{ colors.outline.default.hex }} gui=undercurl guifg=NONE guibg=NONE
+
+hi LspFloatWin             guibg={{ colors.surface_container.default.hex }} guifg={{ colors.on_surface.default.hex }}
+hi LspFloatWinBorder       guibg={{ colors.surface_container.default.hex }} guifg={{ colors.outline.default.hex }}
+hi lspReference           guibg={{ colors.surface_container_high.default.hex }} guifg=NONE
+
+hi LspSemanticNamespace     guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
+hi LspSemanticType          guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
+hi LspSemanticClass         guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }} gui=bold
+hi LspSemanticEnum          guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
+hi LspSemanticInterface     guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=italic
+hi LspSemanticStruct        guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
+hi LspSemanticTypeParameter guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }} gui=italic
+hi LspSemanticParameter     guibg=NONE guifg={{ colors.secondary.default.hex }}
+hi LspSemanticVariable      guibg=NONE guifg={{ colors.on_surface_variant.default.hex }}
+hi LspSemanticProperty      guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
+hi LspSemanticEnumMember    guibg=NONE guifg={{ colors.tertiary.default.hex }}
+hi LspSemanticEvent         guibg=NONE guifg={{ colors.primary_fixed.default.hex }}
+hi LspSemanticFunction      guibg=NONE guifg={{ colors.primary.default.hex }}
+hi LspSemanticMethod        guibg=NONE guifg={{ colors.primary.default.hex }}
+hi LspSemanticMacro         guibg=NONE guifg={{ colors.tertiary.default.hex }}
+hi LspSemanticKeyword       guibg=NONE guifg={{ colors.primary_fixed.default.hex }} gui=bold
+hi LspSemanticModifier      guibg=NONE guifg={{ colors.primary.default.hex }}
+hi LspSemanticComment       guibg=NONE guifg={{ colors.outline.default.hex }} gui=italic
+hi LspSemanticString        guibg=NONE guifg={{ colors.secondary.default.hex }}
+hi LspSemanticNumber        guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
+hi LspSemanticRegexp        guibg=NONE guifg={{ colors.error_container.default.hex }}
+hi LspSemanticOperator      guibg=NONE guifg={{ colors.outline.default.hex }}
