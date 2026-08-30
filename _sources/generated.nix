@@ -20,10 +20,10 @@
   };
   eden = {
     pname = "eden";
-    version = "v1787966474.54cd5fb8eb/Eden-Linux-54cd5fb8eb";
+    version = "v1788034417.3df41c1e7a/Eden-Linux-3df41c1e7a";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1787966474.54cd5fb8eb/Eden-Linux-54cd5fb8eb-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-V5iTxGD1/kdzlz7YibaSEt4Ycmdp9+nxi+amIkZghhY=";
+      url = "https://nightly.eden-emu.dev/v1788034417.3df41c1e7a/Eden-Linux-3df41c1e7a-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-pIvt58CuIO33H6SISlQvOQy5GaoC+RvdMOZmAfyPuW8=";
     };
   };
   helium = {
@@ -60,10 +60,10 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "26.11pre1062397.9fbb54b33e91";
+    version = "26.11pre1063296.83199d0d373d";
     src = fetchTarball {
-      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1062397.9fbb54b33e91/nixexprs.tar.zst";
-      sha256 = "sha256-IkjmqLoWzeqBAi1VIkdhDLMGjQDJ4suEDp59Zwxpswg=";
+      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1063296.83199d0d373d/nixexprs.tar.zst";
+      sha256 = "sha256-5GWj0FI2uOwKNpXkmpWrSFDe1rCaNBCUQ8d+HDtFQPI=";
     };
   };
   pcsx2 = {
@@ -88,24 +88,24 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "e00d42d78f2aa21f186659f51b7de8f2af95b2f6";
+    version = "50d026d064003e326d0220507012b101e1c0f398";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "e00d42d78f2aa21f186659f51b7de8f2af95b2f6";
+      rev = "50d026d064003e326d0220507012b101e1c0f398";
       fetchSubmodules = true;
-      sha256 = "sha256-S3H6jCfTjgukSNzQYHdqGCVyHMtg4v58se9P1ob3xMA=";
+      sha256 = "sha256-7g3UwjIE7smoCkcgL6v9/qkprY1uFxqPo9fkptZBSnA=";
     };
-    date = "2026-08-29";
+    date = "2026-08-30";
   };
   vim-config = {
     pname = "vim-config";
-    version = "380de78dc4ce422cdbf6277e55dd0493de662379";
+    version = "d96f432a6aefb17f51b17f3b422b1f8151aeef64";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/vim-config/archive/380de78dc4ce422cdbf6277e55dd0493de662379.tar.gz";
-      sha256 = "sha256-dYB/TAf9ySDMZeimjmvwEUP8bP/t9jtJBqx8cZu/DGU=";
+      url = "https://git.gay/sunworms/vim-config/archive/d96f432a6aefb17f51b17f3b422b1f8151aeef64.tar.gz";
+      sha256 = "sha256-1IbozpZGMU+aYUNexxPcj8Gmc0UJPD/9K3Uqhl6c/wA=";
     };
-    date = "2026-08-29";
+    date = "2026-08-30";
   };
   xdg-desktop-portal-umbriel = {
     pname = "xdg-desktop-portal-umbriel";
