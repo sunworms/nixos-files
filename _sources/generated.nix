@@ -48,15 +48,15 @@
   };
   nix-index-database = {
     pname = "nix-index-database";
-    version = "c51d5c2ba69c907a34e90c9b6b80cd2b93811745";
+    version = "dbb978fa87faf13398e90ccbc52c343d21c7dd6d";
     src = fetchFromGitHub {
       owner = "nix-community";
       repo = "nix-index-database";
-      rev = "c51d5c2ba69c907a34e90c9b6b80cd2b93811745";
+      rev = "dbb978fa87faf13398e90ccbc52c343d21c7dd6d";
       fetchSubmodules = false;
-      sha256 = "sha256-FJh4esFS3zqNNuKwvN3t6wrJGewqp1AUF9DAEvoKPD8=";
+      sha256 = "sha256-n14luQo3F/ZLfCEHk1QieiI1nGnW92ZQZeZ0UIb0UMQ=";
     };
-    date = "2026-08-23";
+    date = "2026-08-30";
   };
   nixpkgs = {
     pname = "nixpkgs";
@@ -88,22 +88,22 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "50d026d064003e326d0220507012b101e1c0f398";
+    version = "1ce38c33b4c76b3bd3f5475751d8608633d3c5fd";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "50d026d064003e326d0220507012b101e1c0f398";
+      rev = "1ce38c33b4c76b3bd3f5475751d8608633d3c5fd";
       fetchSubmodules = true;
-      sha256 = "sha256-7g3UwjIE7smoCkcgL6v9/qkprY1uFxqPo9fkptZBSnA=";
+      sha256 = "sha256-uL/sVpg3iaNnlsZEzgGAjqk+DPmYc1S2SIo2DVxiJBQ=";
     };
     date = "2026-08-30";
   };
   vim-config = {
     pname = "vim-config";
-    version = "ec9dbc1b39fd849e5a7a92951bea34b74b33e676";
+    version = "edb107c2c057853eefa39cf63b27f359fcc6878c";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/vim-config/archive/ec9dbc1b39fd849e5a7a92951bea34b74b33e676.tar.gz";
-      sha256 = "sha256-6K8ArZunWHKFRac0ubfTKBIp8VoTizGc5A4yWr6nlGM=";
+      url = "https://git.gay/sunworms/vim-config/archive/edb107c2c057853eefa39cf63b27f359fcc6878c.tar.gz";
+      sha256 = "sha256-2lQdD/i8+90NshkJgng7n39THWeEdAN7zwexqa4yZP4=";
     };
     date = "2026-08-30";
   };
