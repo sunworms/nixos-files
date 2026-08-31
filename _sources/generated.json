@@ -29,11 +29,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-pIvt58CuIO33H6SISlQvOQy5GaoC+RvdMOZmAfyPuW8=",
+            "sha256": "sha256-Sf218uXBP75qP/s9oL8HxCl7vcObVUNtt7IH/ezWY6w=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1788034417.3df41c1e7a/Eden-Linux-3df41c1e7a-amd64-gcc-standard.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1788121209.106a61c943/Eden-Linux-106a61c943-amd64-gcc-standard.AppImage"
         },
-        "version": "v1788034417.3df41c1e7a/Eden-Linux-3df41c1e7a"
+        "version": "v1788121209.106a61c943/Eden-Linux-106a61c943"
     },
     "helium": {
         "cargoLock": null,
@@ -100,11 +100,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-5GWj0FI2uOwKNpXkmpWrSFDe1rCaNBCUQ8d+HDtFQPI=",
+            "sha256": "sha256-q/WSLUzcry6IHERr2wZ/Si63RvoHyez7AZ6P+oLDJ5k=",
             "type": "tarball",
-            "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1063296.83199d0d373d/nixexprs.tar.zst"
+            "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1064150.d2f679497988/nixexprs.tar.zst"
         },
-        "version": "26.11pre1063296.83199d0d373d"
+        "version": "26.11pre1064150.d2f679497988"
     },
     "pcsx2": {
         "cargoLock": null,
@@ -115,11 +115,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-8ONrMfyIXJzNtTOSdPHZmKnmm/c2uS3YZ0E0CR+ZKj8=",
+            "sha256": "sha256-3TwLjPfrsJZhytYJQW3w5TiH+qazwlQT9JTfbHOagUY=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.8.0/pcsx2-v2.8.0-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.8.1/pcsx2-v2.8.1-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "2.8.0"
+        "version": "2.8.1"
     },
     "preservation": {
         "cargoLock": null,
@@ -144,7 +144,7 @@
     },
     "umbriel": {
         "cargoLock": null,
-        "date": "2026-08-30",
+        "date": "2026-08-31",
         "extract": null,
         "name": "umbriel",
         "passthru": null,
@@ -156,26 +156,26 @@
             "name": null,
             "owner": "noctalia-dev",
             "repo": "umbriel",
-            "rev": "c5c9900dc273849a42ea058a0502f199e17e24c2",
-            "sha256": "sha256-rfSeKasV59lXzfmSgoBUw8QHTTLx7rPcFUD5l9So6N0=",
+            "rev": "236348480cbaf42166859172cc789fb6f1452674",
+            "sha256": "sha256-lWo9BwajC0xRWAmteVCA5uBugnTd78GMgye0FIq98eA=",
             "sparseCheckout": [],
             "type": "github"
         },
-        "version": "c5c9900dc273849a42ea058a0502f199e17e24c2"
+        "version": "236348480cbaf42166859172cc789fb6f1452674"
     },
     "vim-config": {
         "cargoLock": null,
-        "date": "2026-08-30",
+        "date": "2026-08-31",
         "extract": null,
         "name": "vim-config",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-ixwjQ4bpmF1CI0k+zOh9DMuR4WEYexcWPDDBn0eOzDw=",
+            "sha256": "sha256-wKmk9DFctns3ETctRzMiV+Zgi2MOi/PFtsa9eEx/pDY=",
             "type": "tarball",
-            "url": "https://git.gay/sunworms/vim-config/archive/dee36e12640cfa28621bc8c12a50b499da23212f.tar.gz"
+            "url": "https://git.gay/sunworms/vim-config/archive/3e52ae5677cf7c32787288d7ebf397d3f4fb6383.tar.gz"
         },
-        "version": "dee36e12640cfa28621bc8c12a50b499da23212f"
+        "version": "3e52ae5677cf7c32787288d7ebf397d3f4fb6383"
     },
     "xdg-desktop-portal-umbriel": {
         "cargoLock": null,
