@@ -77,10 +77,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.8.1";
+    version = "2.9.5";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.8.1/pcsx2-v2.8.1-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-3TwLjPfrsJZhytYJQW3w5TiH+qazwlQT9JTfbHOagUY=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.5/pcsx2-v2.9.5-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-V7uAmrNLnrvaqIZTJ+rT3erHWFs2Hxu/UdhdA9WWouw=";
     };
   };
   preservation = {
@@ -97,16 +97,13 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "236348480cbaf42166859172cc789fb6f1452674";
+    version = "e677dbbe2728ee65156bdbcc6775b0b36b388b64";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "236348480cbaf42166859172cc789fb6f1452674";
+      rev = "e677dbbe2728ee65156bdbcc6775b0b36b388b64";
       fetchSubmodules = true;
-      sha256 = "sha256-lWo9BwajC0xRWAmteVCA5uBugnTd78GMgye0FIq98eA=";
-    };
-    date = "2026-08-31";
-  };
+      sha256 = "sha256-ZrC4QWA8wMynzI+fO9gMzqLTgiS5kTpKN0HEdxQnAMQ=";
     };
     date = "2026-08-31";
   };
