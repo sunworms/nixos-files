@@ -33,7 +33,7 @@
   };
 
   core = {
-    editor = "vim";
+    editor = "nvim";
     pager = "less";
     whitespace = "fix,-indent-with-non-tab,trailing-space,cr-at-eol";
   };
@@ -108,7 +108,7 @@
   };
 
   sequence = {
-    editor = "vim";
+    editor = "nvim";
   };
 
   tag = {

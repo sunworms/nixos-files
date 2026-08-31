@@ -71,6 +71,20 @@
         },
         "version": "d248f0e4f7abd6e1f0eb9ace778dd7928481943e"
     },
+    "neovim-config": {
+        "cargoLock": null,
+        "date": "2026-08-31",
+        "extract": null,
+        "name": "neovim-config",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-voDllywXwuc71QwM+3Gyb7izZ58yBfaQoHkiIW/YjmE=",
+            "type": "tarball",
+            "url": "https://git.gay/sunworms/neovim-config/archive/2ddf08c3769fcf25257e71a8006dbf5afd300662.tar.gz"
+        },
+        "version": "2ddf08c3769fcf25257e71a8006dbf5afd300662"
+    },
     "nix-index-database": {
         "cargoLock": null,
         "date": "2026-08-30",
@@ -163,19 +177,6 @@
         },
         "version": "236348480cbaf42166859172cc789fb6f1452674"
     },
-    "vim-config": {
-        "cargoLock": null,
-        "date": "2026-08-31",
-        "extract": null,
-        "name": "vim-config",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-5Fv7sviAosWpZgxcRernKHfdxUNVzBcvKwpheABhzuQ=",
-            "type": "tarball",
-            "url": "https://git.gay/sunworms/vim-config/archive/9e4a5db431e470a3bed5a95de6dbd4dc7310e332.tar.gz"
-        },
-        "version": "9e4a5db431e470a3bed5a95de6dbd4dc7310e332"
     },
     "xdg-desktop-portal-umbriel": {
         "cargoLock": null,
