@@ -20,10 +20,10 @@
   };
   eden = {
     pname = "eden";
-    version = "v1788121209.106a61c943/Eden-Linux-106a61c943";
+    version = "v1788214426.cb9ec1dc1a/Eden-Linux-cb9ec1dc1a";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1788121209.106a61c943/Eden-Linux-106a61c943-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-Sf218uXBP75qP/s9oL8HxCl7vcObVUNtt7IH/ezWY6w=";
+      url = "https://nightly.eden-emu.dev/v1788214426.cb9ec1dc1a/Eden-Linux-cb9ec1dc1a-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-NzuVqVOAHhcHDK8iGRXv3f2c4O+tJ7R1SZtrtpNIZQI=";
     };
   };
   helium = {
@@ -48,12 +48,12 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "2ddf08c3769fcf25257e71a8006dbf5afd300662";
+    version = "69a9b632a1f9804fecbaf01330733f15e9de7fe3";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/2ddf08c3769fcf25257e71a8006dbf5afd300662.tar.gz";
-      sha256 = "sha256-voDllywXwuc71QwM+3Gyb7izZ58yBfaQoHkiIW/YjmE=";
+      url = "https://git.gay/sunworms/neovim-config/archive/69a9b632a1f9804fecbaf01330733f15e9de7fe3.tar.gz";
+      sha256 = "sha256-a66jmoUCJRdKaXK5KNwVR8MQLr0LrY3Y9qQUh2hMnOE=";
     };
-    date = "2026-08-31";
+    date = "2026-09-01";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -69,18 +69,18 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "26.11pre1064150.d2f679497988";
+    version = "26.11pre1064949.34ab99075ac4";
     src = fetchTarball {
-      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1064150.d2f679497988/nixexprs.tar.zst";
-      sha256 = "sha256-q/WSLUzcry6IHERr2wZ/Si63RvoHyez7AZ6P+oLDJ5k=";
+      url = "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1064949.34ab99075ac4/nixexprs.tar.zst";
+      sha256 = "sha256-maQBa7XmWJ+a6te4QwF++R1FIXUrjvki0AtGOOhyZn0=";
     };
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.5";
+    version = "2.9.9";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.5/pcsx2-v2.9.5-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-V7uAmrNLnrvaqIZTJ+rT3erHWFs2Hxu/UdhdA9WWouw=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.9/pcsx2-v2.9.9-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-7dB5bEhBtRFe+DBDn2f+gM5gWRqZznvaFPanL0ZxU6c=";
     };
   };
   preservation = {
@@ -97,26 +97,26 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "e677dbbe2728ee65156bdbcc6775b0b36b388b64";
+    version = "729e7eb521c2207dd562ca1284bc0fbf9aecd270";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "umbriel";
-      rev = "e677dbbe2728ee65156bdbcc6775b0b36b388b64";
+      rev = "729e7eb521c2207dd562ca1284bc0fbf9aecd270";
       fetchSubmodules = true;
-      sha256 = "sha256-ZrC4QWA8wMynzI+fO9gMzqLTgiS5kTpKN0HEdxQnAMQ=";
+      sha256 = "sha256-eTEgrUJ1ywm0wQcqG+8AqLC+prds9loid0SX4Ncz61E=";
     };
     date = "2026-08-31";
   };
   xdg-desktop-portal-umbriel = {
     pname = "xdg-desktop-portal-umbriel";
-    version = "4edf049e4f9982bd7c3d6c92e25379308fdaa8df";
+    version = "d996f0c2bd4e8c868c0a143f0c9ce060f3c47ed5";
     src = fetchFromGitHub {
       owner = "noctalia-dev";
       repo = "xdg-desktop-portal-umbriel";
-      rev = "4edf049e4f9982bd7c3d6c92e25379308fdaa8df";
+      rev = "d996f0c2bd4e8c868c0a143f0c9ce060f3c47ed5";
       fetchSubmodules = false;
-      sha256 = "sha256-tDvkYDYCbQhi2BG5wtpNjUHa7iUrTmctC87ukbNJ0y4=";
+      sha256 = "sha256-1mKBFkIO9RA3ERsLo1QZhyvS6bFSjG1lBpegQnPbIUY=";
     };
-    date = "2026-08-28";
+    date = "2026-08-31";
   };
 }
