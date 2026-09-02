@@ -1,39 +1,8 @@
 let
-  fetchurl = builtins.fetchurl;
-
-  fetchFromGitHub = {
-    owner,
-    repo,
-    rev,
-    sha256,
-    fetchSubmodules ? false,
-    ...
-  }:
-    if fetchSubmodules
-    then
-      fetchGit {
-        url = "https://github.com/${owner}/${repo}.git";
-        inherit rev;
-        submodules = true;
-      }
-    else
-      fetchTarball {
-        url = "https://github.com/${owner}/${repo}/archive/${rev}.tar.gz";
-        inherit sha256;
-      };
-
-  fetchgit = {
-    url,
-    rev,
-    ...
-  }:
-    fetchGit {
-      inherit url rev;
-    };
-
   inputs = import ./_sources/generated.nix {
-    inherit fetchurl fetchgit fetchFromGitHub;
-
+    inherit (builtins) fetchurl;
+    fetchgit = null;
+    fetchFromGitHub = null;
     dockerTools = null;
   };
 
