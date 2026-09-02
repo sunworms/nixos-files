@@ -8,14 +8,16 @@
     map
     (qt: {
       name = "${qt}ct/${qt}ct.conf";
-      value.text = ''
-        [Appearance]
-        color_scheme_path=/home/sunny/.config/${qt}ct/colors/noctalia.conf
-        custom_palette=true
-        icon_theme=Adwaita
-        standard_dialogs=xdgdesktopportal
-        style=Fusion
-      '';
+      value.text =
+        #ini
+        ''
+          [Appearance]
+          color_scheme_path=/home/sunny/.config/${qt}ct/colors/noctalia.conf
+          custom_palette=true
+          icon_theme=Adwaita
+          standard_dialogs=xdgdesktopportal
+          style=Fusion
+        '';
     })
     [
       "qt5"
@@ -26,15 +28,17 @@
     map
     (gtk: {
       name = "${gtk}/settings.ini";
-      value.text = ''
-        [Settings]
-        gtk-theme-name=adw-gtk3
-        gtk-icon-theme-name=Adwaita
-        gtk-font-name=${config.fonts.sansSerif} 11
-        gtk-cursor-theme-name=volantes_cursors
-        gtk-cursor-theme-size=24
-        gtk-application-prefer-dark-theme=1
-      '';
+      value.text =
+        #ini
+        ''
+          [Settings]
+          gtk-theme-name=adw-gtk3
+          gtk-icon-theme-name=Adwaita
+          gtk-font-name=${config.fonts.sansSerif} 11
+          gtk-cursor-theme-name=volantes_cursors
+          gtk-cursor-theme-size=24
+          gtk-application-prefer-dark-theme=1
+        '';
     })
     [
       "gtk-3.0"
@@ -44,25 +48,31 @@
 in {
   xdg.config.files =
     {
-      "gtk-3.0/gtk.css".text = ''
-        @import url("noctalia.css");
-      '';
+      "gtk-3.0/gtk.css".text =
+        #css
+        ''
+          @import url("noctalia.css");
+        '';
 
-      "gtk-4.0/gtk.css".text = ''
-        @import url("file://${pkgs.adw-gtk3}/share/themes/adw-gtk3/gtk-4.0/gtk.css");
-        @import url("noctalia.css");
-      '';
+      "gtk-4.0/gtk.css".text =
+        #css
+        ''
+          @import url("file://${pkgs.adw-gtk3}/share/themes/adw-gtk3/gtk-4.0/gtk.css");
+          @import url("noctalia.css");
+        '';
     }
     // qtctFiles
     // gtkFiles;
 
   files = {
-    ".icons/default/index.theme".text = ''
-      [Icon Theme]
-      Name=Default
-      Comment=Default Cursor Theme
-      Inherits=volantes_cursors
-    '';
+    ".icons/default/index.theme".text =
+      #ini
+      ''
+        [Icon Theme]
+        Name=Default
+        Comment=Default Cursor Theme
+        Inherits=volantes_cursors
+      '';
   };
 
   packages = with pkgs; [
