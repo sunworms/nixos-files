@@ -15,53 +15,61 @@
   };
 
   xdg.data.files = {
-    "applications/discord.desktop".text = ''
-      [Desktop Entry]
-      Version=1.0
-      Type=Application
-      Name=Discord
-      Comment=Chat, talk, and hang out
-      Exec=helium --app=https://discord.com/app
-      Icon=${assets}/discord.png
-      Categories=Network;InstantMessaging;
-      Terminal=false
-      StartupWMClass=chrome-discord.com__app-Default
-    '';
-    "applications/sable.desktop".text = ''
-      [Desktop Entry]
-      Version=1.0
-      Type=Application
-      Name=Sable
-      Comment=Almost Stable Matrix Client
-      Exec=helium --app=https://dev.sable.moe
-      Icon=${assets}/sable.png
-      Categories=Network;InstantMessaging;
-      Terminal=false
-      StartupWMClass=chrome-dev.sable.moe__-Default
-    '';
-    "applications/spotify.desktop".text = ''
-      [Desktop Entry]
-      Version=1.0
-      Type=Application
-      Name=Spotify
-      Comment=Music streaming service
-      Exec=helium --app=https://open.spotify.com
-      Icon=${assets}/spotify.png
-      Categories=Audio;Music;Player;AudioVideo;
-      Terminal=false
-      StartupWMClass=chrome-open.spotify.com__-Default
-    '';
-    "applications/whatsapp.desktop".text = ''
-      [Desktop Entry]
-      Version=1.0
-      Type=Application
-      Name=WhatsApp
-      Comment=Simple. Secure. Reliable messaging
-      Exec=helium --app=https://web.whatsapp.com
-      Icon=${assets}/whatsapp.png
-      Categories=Network;InstantMessaging;
-      Terminal=false
-      StartupWMClass=chrome-web.whatsapp.com__-Default
-    '';
+    "applications/discord.desktop".text =
+      #desktop
+      ''
+        [Desktop Entry]
+        Version=1.0
+        Type=Application
+        Name=Discord
+        Comment=Chat, talk, and hang out
+        Exec=helium --app=https://discord.com/app
+        Icon=${assets}/discord.png
+        Categories=Network;InstantMessaging;
+        Terminal=false
+        StartupWMClass=chrome-discord.com__app-Default
+      '';
+    "applications/sable.desktop".text =
+      #desktop
+      ''
+        [Desktop Entry]
+        Version=1.0
+        Type=Application
+        Name=Sable
+        Comment=Almost Stable Matrix Client
+        Exec=helium --app=https://dev.sable.moe
+        Icon=${assets}/sable.png
+        Categories=Network;InstantMessaging;
+        Terminal=false
+        StartupWMClass=chrome-dev.sable.moe__-Default
+      '';
+    "applications/spotify.desktop".text =
+      #desktop
+      ''
+        [Desktop Entry]
+        Version=1.0
+        Type=Application
+        Name=Spotify
+        Comment=Music streaming service
+        Exec=helium --app=https://open.spotify.com
+        Icon=${assets}/spotify.png
+        Categories=Audio;Music;Player;AudioVideo;
+        Terminal=false
+        StartupWMClass=chrome-open.spotify.com__-Default
+      '';
+    "applications/whatsapp.desktop".text =
+      #desktop
+      ''
+        [Desktop Entry]
+        Version=1.0
+        Type=Application
+        Name=WhatsApp
+        Comment=Simple. Secure. Reliable messaging
+        Exec=helium --app=https://web.whatsapp.com
+        Icon=${assets}/whatsapp.png
+        Categories=Network;InstantMessaging;
+        Terminal=false
+        StartupWMClass=chrome-web.whatsapp.com__-Default
+      '';
   };
 }
