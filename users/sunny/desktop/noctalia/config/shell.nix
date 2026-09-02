@@ -22,7 +22,7 @@
 
     screenshot = {
       directory = "~/Pictures/Screenshots";
-      remember_last_region = true;
+      remember_last_region = false;
     };
 
     session = {
