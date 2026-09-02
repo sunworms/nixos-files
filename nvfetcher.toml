@@ -4,19 +4,19 @@ fetch.tarball = "https://releases.nixos.org/nixos/unstable/nixos-$ver/nixexprs.t
 
 [preservation]
 src.git = "https://github.com/nix-community/preservation"
-fetch.github = "nix-community/preservation"
+fetch.tarball = "https://github.com/nix-community/preservation/archive/$ver.tar.gz"
 
 [hjem]
 src.git = "https://github.com/feel-co/hjem"
-fetch.github = "feel-co/hjem"
+fetch.tarball = "https://github.com/feel-co/hjem/archive/$ver.tar.gz"
 
 [agenix]
 src.git = "https://github.com/ryantm/agenix"
-fetch.github = "ryantm/agenix"
+fetch.tarball = "https://github.com/ryantm/agenix/archive/$ver.tar.gz"
 
 [nix-index-database]
 src.git = "https://github.com/nix-community/nix-index-database"
-fetch.github = "nix-community/nix-index-database"
+fetch.tarball = "https://github.com/nix-community/nix-index-database/archive/$ver.tar.gz"
 
 [neovim-config]
 src.git = "https://git.gay/sunworms/neovim-config"
@@ -24,12 +24,11 @@ fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"
 
 [umbriel]
 src.git = "https://github.com/noctalia-dev/umbriel"
-fetch.github = "noctalia-dev/umbriel"
-git.fetchSubmodules = true
+fetch.tarball = "https://github.com/noctalia-dev/umbriel/archive/$ver.tar.gz"
 
 [xdg-desktop-portal-umbriel]
 src.git = "https://github.com/noctalia-dev/xdg-desktop-portal-umbriel"
-fetch.github = "noctalia-dev/xdg-desktop-portal-umbriel"
+fetch.tarball = "https://github.com/noctalia-dev/xdg-desktop-portal-umbriel/archive/$ver.tar.gz"
 
 # binary packages
 [pcsx2]

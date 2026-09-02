@@ -9,11 +9,8 @@
   agenix = {
     pname = "agenix";
     version = "b027ee29d959fda4b60b57566d64c98a202e0feb";
-    src = fetchFromGitHub {
-      owner = "ryantm";
-      repo = "agenix";
-      rev = "b027ee29d959fda4b60b57566d64c98a202e0feb";
-      fetchSubmodules = false;
+    src = fetchTarball {
+      url = "https://github.com/ryantm/agenix/archive/b027ee29d959fda4b60b57566d64c98a202e0feb.tar.gz";
       sha256 = "sha256-9VnK6Oqai65puVJ4WYtCTvlJeXxMzAp/69HhQuTdl/I=";
     };
     date = "2026-02-03";
@@ -28,20 +25,17 @@
   };
   helium = {
     pname = "helium";
-    version = "0.16.2.1";
+    version = "0.16.3.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.16.2.1/helium-0.16.2.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-gAg4BpJyhwpvT8nq3wF8CBn32Jq/YHEXCAsHnUv3wBc=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.16.3.1/helium-0.16.3.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-Y07fuk0C6rUEjz6PHGRMJDfBL7TM2xlggXKtG4lWy+s=";
     };
   };
   hjem = {
     pname = "hjem";
     version = "d248f0e4f7abd6e1f0eb9ace778dd7928481943e";
-    src = fetchFromGitHub {
-      owner = "feel-co";
-      repo = "hjem";
-      rev = "d248f0e4f7abd6e1f0eb9ace778dd7928481943e";
-      fetchSubmodules = false;
+    src = fetchTarball {
+      url = "https://github.com/feel-co/hjem/archive/d248f0e4f7abd6e1f0eb9ace778dd7928481943e.tar.gz";
       sha256 = "sha256-UrAlku7KST0DT+j1bdVGYI8tCz23PWL88uGMer3IZ2U=";
     };
     date = "2026-08-23";
@@ -58,11 +52,8 @@
   nix-index-database = {
     pname = "nix-index-database";
     version = "dbb978fa87faf13398e90ccbc52c343d21c7dd6d";
-    src = fetchFromGitHub {
-      owner = "nix-community";
-      repo = "nix-index-database";
-      rev = "dbb978fa87faf13398e90ccbc52c343d21c7dd6d";
-      fetchSubmodules = false;
+    src = fetchTarball {
+      url = "https://github.com/nix-community/nix-index-database/archive/dbb978fa87faf13398e90ccbc52c343d21c7dd6d.tar.gz";
       sha256 = "sha256-n14luQo3F/ZLfCEHk1QieiI1nGnW92ZQZeZ0UIb0UMQ=";
     };
     date = "2026-08-30";
@@ -86,35 +77,26 @@
   preservation = {
     pname = "preservation";
     version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
-    src = fetchFromGitHub {
-      owner = "nix-community";
-      repo = "preservation";
-      rev = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
-      fetchSubmodules = false;
+    src = fetchTarball {
+      url = "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz";
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
   };
   umbriel = {
     pname = "umbriel";
-    version = "06de3bfacc1c4bd4d29619e36ba5dbb8a5eef90d";
-    src = fetchFromGitHub {
-      owner = "noctalia-dev";
-      repo = "umbriel";
-      rev = "06de3bfacc1c4bd4d29619e36ba5dbb8a5eef90d";
-      fetchSubmodules = true;
-      sha256 = "sha256-/+BbvIFHxzR/JxjiQBYj9CTlBgYQUGd22FSsjojMPPc=";
+    version = "1df9b3db0e746941c00deb3769f8533665c38412";
+    src = fetchTarball {
+      url = "https://github.com/noctalia-dev/umbriel/archive/1df9b3db0e746941c00deb3769f8533665c38412.tar.gz";
+      sha256 = "sha256-TBmAW1bA3H6dc1BajELp+dWFhoDGbX6t1VPjh5slSKU=";
     };
-    date = "2026-09-01";
+    date = "2026-09-02";
   };
   xdg-desktop-portal-umbriel = {
     pname = "xdg-desktop-portal-umbriel";
     version = "d996f0c2bd4e8c868c0a143f0c9ce060f3c47ed5";
-    src = fetchFromGitHub {
-      owner = "noctalia-dev";
-      repo = "xdg-desktop-portal-umbriel";
-      rev = "d996f0c2bd4e8c868c0a143f0c9ce060f3c47ed5";
-      fetchSubmodules = false;
+    src = fetchTarball {
+      url = "https://github.com/noctalia-dev/xdg-desktop-portal-umbriel/archive/d996f0c2bd4e8c868c0a143f0c9ce060f3c47ed5.tar.gz";
       sha256 = "sha256-1mKBFkIO9RA3ERsLo1QZhyvS6bFSjG1lBpegQnPbIUY=";
     };
     date = "2026-08-31";
