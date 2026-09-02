@@ -85,10 +85,10 @@
   };
   umbriel = {
     pname = "umbriel";
-    version = "1df9b3db0e746941c00deb3769f8533665c38412";
+    version = "50add0917be77a91b03bf91f20e0ca827520c4a0";
     src = fetchTarball {
-      url = "https://github.com/noctalia-dev/umbriel/archive/1df9b3db0e746941c00deb3769f8533665c38412.tar.gz";
-      sha256 = "sha256-TBmAW1bA3H6dc1BajELp+dWFhoDGbX6t1VPjh5slSKU=";
+      url = "https://github.com/noctalia-dev/umbriel/archive/50add0917be77a91b03bf91f20e0ca827520c4a0.tar.gz";
+      sha256 = "sha256-Z+LQdv0Xi/PafrBCApK4NcKK58XMn58zj+BItiBQG68=";
     };
     date = "2026-09-02";
   };

@@ -136,11 +136,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-TBmAW1bA3H6dc1BajELp+dWFhoDGbX6t1VPjh5slSKU=",
+            "sha256": "sha256-Z+LQdv0Xi/PafrBCApK4NcKK58XMn58zj+BItiBQG68=",
             "type": "tarball",
-            "url": "https://github.com/noctalia-dev/umbriel/archive/1df9b3db0e746941c00deb3769f8533665c38412.tar.gz"
+            "url": "https://github.com/noctalia-dev/umbriel/archive/50add0917be77a91b03bf91f20e0ca827520c4a0.tar.gz"
         },
-        "version": "1df9b3db0e746941c00deb3769f8533665c38412"
+        "version": "50add0917be77a91b03bf91f20e0ca827520c4a0"
     },
     "xdg-desktop-portal-umbriel": {
         "cargoLock": null,
