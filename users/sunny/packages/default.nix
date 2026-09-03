@@ -33,6 +33,6 @@
     zathura
     rclone
     gpu-screen-recorder-gtk
-    (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db
+    (import inputs.nix-index-database {inherit pkgs;}).comma-with-db
   ];
 }
