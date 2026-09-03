@@ -54,9 +54,9 @@ hi SignColumn    guibg=NONE guifg={{ colors.outline.default.hex }}
 hi FoldColumn    guibg=NONE guifg={{ colors.outline.default.hex }}
 hi Folded        guibg={{ colors.surface_container_low.default.hex }} guifg={{ colors.outline.default.hex }} gui=italic
 
-hi Visual        guibg={{ colors.surface_container_highest.default.hex }} guifg=NONE
-hi VisualNOS     guibg={{ colors.surface_container_highest.default.hex }} guifg=NONE
-hi Selection     guibg={{ colors.surface_container_highest.default.hex }} guifg={{ colors.on_surface.default.hex }}
+hi Visual        guibg={{ colors.primary_container.default.hex }} guifg={{ colors.on_surface.default.hex }}
+hi VisualNOS     guibg={{ colors.primary_container.default.hex }} guifg=guifg={{ colors.on_surface.default.hex }}
+hi Selection     guibg={{ colors.primary_container.default.hex }} guifg={{ colors.on_surface.default.hex }}
 
 hi Title         guibg=NONE guifg={{ colors.primary.default.hex }} gui=bold
 hi Directory     guibg=NONE guifg={{ colors.primary.default.hex }}
