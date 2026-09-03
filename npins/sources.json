@@ -36,9 +36,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "096911775a86ae4eabfa6e888bad15a38ac670c3",
-      "url": "https://git.gay/sunworms/neovim-config/archive/096911775a86ae4eabfa6e888bad15a38ac670c3.tar.gz",
-      "hash": "sha256-/CyVhz7vXLaW5OODYr7OIrLkkL1Cps6GDhMJsgYXggc="
+      "revision": "aa2b9d1dd44c6ec1f8feb9c0f4434791d73c4b32",
+      "url": "https://git.gay/sunworms/neovim-config/archive/aa2b9d1dd44c6ec1f8feb9c0f4434791d73c4b32.tar.gz",
+      "hash": "sha256-xP5ORFVlJdbJZ4Ih3S8zgDtpu37QPlfNYP54cV6kl/o="
     },
     "nix-index-database": {
       "type": "Git",
@@ -59,6 +59,19 @@
       "artifact": "nixexprs.tar.xz",
       "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1066106.3ed67ec0a4d3/nixexprs.tar.xz",
       "hash": "sha256-7VBL4mi5M72FJtZOQt7SbCGWpGbsuH1ga6Zeu8bjtWk="
+    },
+    "noctalia": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "noctalia-dev",
+        "repo": "noctalia"
+      },
+      "branch": "main",
+      "submodules": false,
+      "revision": "f95e95cafde8c23f1d3a62b969e2b5717c96d741",
+      "url": "https://github.com/noctalia-dev/noctalia/archive/f95e95cafde8c23f1d3a62b969e2b5717c96d741.tar.gz",
+      "hash": "sha256-diS3b69rt/IqehH/8Tsd8/JEQmogVc1ml6FP+iTwBzg="
     },
     "preservation": {
       "type": "Git",
@@ -82,9 +95,9 @@
       },
       "branch": "main",
       "submodules": false,
-      "revision": "bee0c438dcaaba04b9d3f1179785469e7b316903",
-      "url": "https://github.com/noctalia-dev/umbriel/archive/bee0c438dcaaba04b9d3f1179785469e7b316903.tar.gz",
-      "hash": "sha256-ziUtnk9l7YGh5PvPEXoBs0btrE9ijeBOBZ4jTVzHKLA="
+      "revision": "07994c03c16ab402a9cdafd199bdf4fb6e77c925",
+      "url": "https://github.com/noctalia-dev/umbriel/archive/07994c03c16ab402a9cdafd199bdf4fb6e77c925.tar.gz",
+      "hash": "sha256-z05sXjWqB78GmG8Mr5KC1YWCFaGMkxrEipfPhmquhjc="
     },
     "xdg-desktop-portal-umbriel": {
       "type": "Git",
