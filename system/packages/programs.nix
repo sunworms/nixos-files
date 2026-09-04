@@ -17,6 +17,8 @@
 
   programs.gpu-screen-recorder.enable = true;
 
+  programs.command-not-found.enable = false;
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -45,10 +47,9 @@
     alejandra
 
     # pins
-    npins
     nvfetcher
 
-    (pkgs.callPackage (inputs.agenix + "/pkgs/agenix.nix") {})
+    (pkgs.callPackage (inputs.agenix.src + "/pkgs/agenix.nix") {})
     fastfetch
     wl-clipboard
   ];

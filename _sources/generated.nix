@@ -6,6 +6,15 @@
   dockerTools,
 }:
 {
+  agenix = {
+    pname = "agenix";
+    version = "b027ee29d959fda4b60b57566d64c98a202e0feb";
+    src = fetchTarball {
+      url = "https://github.com/ryantm/agenix/archive/b027ee29d959fda4b60b57566d64c98a202e0feb.tar.gz";
+      sha256 = "sha256-9VnK6Oqai65puVJ4WYtCTvlJeXxMzAp/69HhQuTdl/I=";
+    };
+    date = "2026-02-03";
+  };
   eden = {
     pname = "eden";
     version = "v1788380429.1dcc574591/Eden-Linux-1dcc574591";
@@ -22,12 +31,57 @@
       sha256 = "sha256-aD7bp0q49q4KxycqPCf575RWkGKeFSU3CIexeBXO3L4=";
     };
   };
+  hjem = {
+    pname = "hjem";
+    version = "d248f0e4f7abd6e1f0eb9ace778dd7928481943e";
+    src = fetchTarball {
+      url = "https://github.com/feel-co/hjem/archive/d248f0e4f7abd6e1f0eb9ace778dd7928481943e.tar.gz";
+      sha256 = "sha256-UrAlku7KST0DT+j1bdVGYI8tCz23PWL88uGMer3IZ2U=";
+    };
+    date = "2026-08-23";
+  };
+  neovim-config = {
+    pname = "neovim-config";
+    version = "239af9a18e7438f1dd1e32be2cb36058d3fb569d";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/neovim-config/archive/239af9a18e7438f1dd1e32be2cb36058d3fb569d.tar.gz";
+      sha256 = "sha256-otN5r733npGtojNayuAidlZ3BGoN1DATJyvrMh5E3Vo=";
+    };
+    date = "2026-09-04";
+  };
+  nix-index-database = {
+    pname = "nix-index-database";
+    version = "dbb978fa87faf13398e90ccbc52c343d21c7dd6d";
+    src = fetchTarball {
+      url = "https://github.com/nix-community/nix-index-database/archive/dbb978fa87faf13398e90ccbc52c343d21c7dd6d.tar.gz";
+      sha256 = "sha256-n14luQo3F/ZLfCEHk1QieiI1nGnW92ZQZeZ0UIb0UMQ=";
+    };
+    date = "2026-08-30";
+  };
+  nixpkgs = {
+    pname = "nixpkgs";
+    version = "3ed67ec0a4d3c7ab4ae1f04f8ee8df07bfa506a2";
+    src = fetchTarball {
+      url = "https://github.com/NixOS/nixpkgs/archive/3ed67ec0a4d3c7ab4ae1f04f8ee8df07bfa506a2.tar.gz";
+      sha256 = "sha256-bc7rSpXIdn9QWGNqfWcPZWOhEVF8NoeAZkWq0XWnf/k=";
+    };
+    date = "2026-09-02";
+  };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.22";
+    version = "2.9.29";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.22/pcsx2-v2.9.22-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-TjCWQGyZ0NzNhSk4bEdOibsoH69a2yZjEbQzXekpQLA=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.29/pcsx2-v2.9.29-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-0V+MaQaLRQriEKkYe1xfelo3QJk7KWPzg21+YLgQwao=";
     };
+  };
+  preservation = {
+    pname = "preservation";
+    version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
+    src = fetchTarball {
+      url = "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz";
+      sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
+    };
+    date = "2025-09-09";
   };
 }
