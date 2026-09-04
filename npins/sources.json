@@ -71,7 +71,8 @@
       "submodules": false,
       "revision": "f95e95cafde8c23f1d3a62b969e2b5717c96d741",
       "url": "https://github.com/noctalia-dev/noctalia/archive/f95e95cafde8c23f1d3a62b969e2b5717c96d741.tar.gz",
-      "hash": "sha256-diS3b69rt/IqehH/8Tsd8/JEQmogVc1ml6FP+iTwBzg="
+      "hash": "sha256-diS3b69rt/IqehH/8Tsd8/JEQmogVc1ml6FP+iTwBzg=",
+      "frozen": true
     },
     "preservation": {
       "type": "Git",
