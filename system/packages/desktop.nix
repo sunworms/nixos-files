@@ -1,7 +1,6 @@
 {
   pkgs,
   lib,
-  inputs,
   ...
 }: {
   services.greetd = {
@@ -15,11 +14,7 @@
     useTextGreeter = true;
   };
 
-  programs.umbriel = {
-    enable = true;
-    package = pkgs.callPackage (inputs.umbriel + "/nix/package.nix") {};
-    portalPackage = pkgs.callPackage (inputs.xdg-desktop-portal-umbriel + "/nix/package.nix") {};
-  };
+  programs.umbriel.enable = true;
 
   services.speechd.enable = false;
 }

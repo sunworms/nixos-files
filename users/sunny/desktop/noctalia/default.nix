@@ -1,11 +1,10 @@
 {
   pkgs,
   lib,
-  inputs,
   ...
 }: {
   packages = with pkgs; [
-    (import inputs.noctalia {inherit pkgs;}).package
+    noctalia
     iw
     iproute2
     gpu-screen-recorder
