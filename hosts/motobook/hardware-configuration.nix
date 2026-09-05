@@ -12,10 +12,6 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  services.udev.extraRules = ''
-    ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0489", ATTR{idProduct}=="e111", ATTR{authorized}="0"
-  '';
-
   boot.initrd = {
     availableKernelModules = [
       "xhci_pci"
@@ -130,5 +126,6 @@
   ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
+  hardware.enableAllFirmware = true;
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
