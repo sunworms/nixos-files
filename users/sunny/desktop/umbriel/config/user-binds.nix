@@ -16,7 +16,6 @@
       repeat = false;
     };
     "Mod+Shift+Slash" = "cheatsheet-open";
-    "Mod+Shift+T" = "spawn:foot sh -c \"umbriel layers; fish\"";
 
     "Mod+T" = "spawn:foot";
 
