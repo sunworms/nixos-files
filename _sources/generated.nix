@@ -42,12 +42,12 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "239af9a18e7438f1dd1e32be2cb36058d3fb569d";
+    version = "82660f682e13125ea81cb71cdf0f24f0eceb3057";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/239af9a18e7438f1dd1e32be2cb36058d3fb569d.tar.gz";
-      sha256 = "sha256-otN5r733npGtojNayuAidlZ3BGoN1DATJyvrMh5E3Vo=";
+      url = "https://git.gay/sunworms/neovim-config/archive/82660f682e13125ea81cb71cdf0f24f0eceb3057.tar.gz";
+      sha256 = "sha256-+E7ciIP2jJGz0UEZ87rt/zk/bhw2q0ldPiTbRWO9/QY=";
     };
-    date = "2026-09-04";
+    date = "2026-09-05";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -60,12 +60,12 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "0968519e14f7aa7d3e9b389682bd74d2b51c8ce8";
+    version = "801bef6abd86b91e51083066b83fb354a11fc640";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/0968519e14f7aa7d3e9b389682bd74d2b51c8ce8.tar.gz";
-      sha256 = "sha256-lhEhY8X5EgkQ/eg6IFz4cc8jRuSYSvnxx1al7d1dvZ0=";
+      url = "https://github.com/NixOS/nixpkgs/archive/801bef6abd86b91e51083066b83fb354a11fc640.tar.gz";
+      sha256 = "sha256-hLD4l3QOGBQhkVp3mQ2lJ/YbEi99qUgKapb40KovZ88=";
     };
-    date = "2026-09-03";
+    date = "2026-09-04";
   };
   pcsx2 = {
     pname = "pcsx2";
