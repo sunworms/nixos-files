@@ -1,12 +1,16 @@
 {
   keybinds = {
-    "Ctrl+Print" = "spawn:noctalia msg screenshot-fullscreen all";
-    "Ctrl+Super+Shift+S" = "spawn:noctalia msg screenshot-fullscreen all";
-    "Print" = "spawn:noctalia msg screenshot-region";
-    "Super+Shift+S" = "spawn:noctalia msg screenshot-region";
+    "Print" = "spawn:umbriel-screenshot region --freeze";
+    "Ctrl+Print" = "spawn:umbriel-screenshot full";
+    "Alt+Print" = "spawn:umbriel-screenshot window";
+    "Mod+Print" = "spawn:wl-paste --type image | satty --filename -";
+
+    "Super+Shift+S" = "spawn:umbriel-screenshot region --freeze";
+    "Ctrl+Super+Shift+S" = "spawn:umbriel-screenshot full";
+    "Alt+Super+Shift+S" = "spawn:umbriel-screenshot window";
+    "Ctrl+Alt+Super+Shift+S" = "spawn:wl-paste --type image | satty --filename -";
 
     "Ctrl+Alt+Delete" = "session-quit";
-    "Ctrl+Alt+Super+Shift+S" = "spawn:wl-paste --type image | satty --filename -";
     "Mod+Q" = {
       action = "window-close";
       repeat = false;
