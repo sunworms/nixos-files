@@ -18,7 +18,7 @@
         vim-colors = {
           input_path = "~/.config/noctalia/templates/vim-colors.vim";
           output_path = "~/.cache/noctalia/colors.vim";
-          post_hook = "pkill -USR1 vim";
+          post_hook = "for s in $(vim --serverlist 2>/dev/null); do vim --servername \"$s\" --remote-send '<C-\\><C-N>:source ~/.cache/noctalia/colors.vim<CR>'; done";
         };
         zathura = {
           input_path = "~/.config/noctalia/templates/zathurarc";

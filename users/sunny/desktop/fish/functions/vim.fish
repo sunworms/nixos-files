@@ -1,3 +1,3 @@
 function vim
-    command nvim $argv
+    command vim --servername VIM $argv
 end
