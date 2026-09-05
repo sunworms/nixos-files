@@ -1,7 +1,7 @@
 {
   layout = {
     mode = "scrolling";
-    width_presets = [0.25 0.333 0.5 0.667 0.75 1.0];
+    width_presets = [0.5 0.75 1.0];
     scrolling = {
       default_width_fraction = 1.0;
     };
