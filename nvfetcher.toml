@@ -20,9 +20,9 @@ fetch.tarball = "https://github.com/ryantm/agenix/archive/$ver.tar.gz"
 src.git = "https://github.com/nix-community/nix-index-database"
 fetch.tarball = "https://github.com/nix-community/nix-index-database/archive/$ver.tar.gz"
 
-[neovim-config]
-src.git = "https://git.gay/sunworms/neovim-config"
-fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"
+[vim-config]
+src.git = "https://git.gay/sunworms/vim-config"
+fetch.tarball = "https://git.gay/sunworms/vim-config/archive/$ver.tar.gz"
 
 # binary packages
 [pcsx2]

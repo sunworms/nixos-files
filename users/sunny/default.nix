@@ -31,7 +31,7 @@ in {
   directory = "/home/sunny";
 
   packages = with pkgs; [
-    (import inputs.neovim-config.src {inherit pkgs;})
+    (import inputs.vim-config.src {inherit pkgs;})
     lazygit
     swayimg
     yaziUnfree
