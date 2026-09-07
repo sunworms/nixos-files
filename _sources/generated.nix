@@ -77,10 +77,10 @@
   };
   vim-config = {
     pname = "vim-config";
-    version = "b85583709321911153a3ece106ceb934df62708b";
+    version = "7f65691f6d507f589adc830a2da901837157f88c";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/vim-config/archive/b85583709321911153a3ece106ceb934df62708b.tar.gz";
-      sha256 = "sha256-IpXv5mmpi+ZNgRfz8LxoR/LoSyxoXKsMAe7Jw+ugQMw=";
+      url = "https://git.gay/sunworms/vim-config/archive/7f65691f6d507f589adc830a2da901837157f88c.tar.gz";
+      sha256 = "sha256-KEhzo0Uqg2EADgW1zewtrzzdT8V2FEi4SMt5sck8UfU=";
     };
     date = "2026-09-07";
   };
