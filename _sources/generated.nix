@@ -17,10 +17,10 @@
   };
   eden = {
     pname = "eden";
-    version = "v1788724149.11de264541/Eden-Linux-11de264541";
+    version = "v1788814629.753b57a8c2/Eden-Linux-753b57a8c2";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1788724149.11de264541/Eden-Linux-11de264541-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-eWE+wdh6u5L0SbF6alBqv6LoZ9Ks2Tgq9/A+aPn+SAM=";
+      url = "https://nightly.eden-emu.dev/v1788814629.753b57a8c2/Eden-Linux-753b57a8c2-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-qyaQQcNPwiq1fwoMZJ6b0PFRPmL2huvIWEhYou9qa2c=";
     };
   };
   helium = {
@@ -51,12 +51,12 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0";
+    version = "dc5d91f840324650bac8c379428c7037a416959a";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0.tar.gz";
-      sha256 = "sha256-7QYjT2vHLuX9Z1pdxHXDKCbh1CR3D/2rywB9Tx0MPRg=";
+      url = "https://github.com/NixOS/nixpkgs/archive/dc5d91f840324650bac8c379428c7037a416959a.tar.gz";
+      sha256 = "sha256-VaWGJ6+cIYN2erfSecbRV+4ljI185Ty2wUrXyvQbgOw=";
     };
-    date = "2026-09-05";
+    date = "2026-09-07";
   };
   pcsx2 = {
     pname = "pcsx2";
@@ -77,11 +77,11 @@
   };
   vim-config = {
     pname = "vim-config";
-    version = "7f65691f6d507f589adc830a2da901837157f88c";
+    version = "cd6564f706fac673fbb3e783434facd3e092072d";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/vim-config/archive/7f65691f6d507f589adc830a2da901837157f88c.tar.gz";
-      sha256 = "sha256-KEhzo0Uqg2EADgW1zewtrzzdT8V2FEi4SMt5sck8UfU=";
+      url = "https://git.gay/sunworms/vim-config/archive/cd6564f706fac673fbb3e783434facd3e092072d.tar.gz";
+      sha256 = "sha256-BsXQHyY5hChmVHDiiD0P1pC4shCiaYFIoU/vzEf3oHk=";
     };
-    date = "2026-09-07";
+    date = "2026-09-08";
   };
 }

@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-eWE+wdh6u5L0SbF6alBqv6LoZ9Ks2Tgq9/A+aPn+SAM=",
+            "sha256": "sha256-qyaQQcNPwiq1fwoMZJ6b0PFRPmL2huvIWEhYou9qa2c=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1788724149.11de264541/Eden-Linux-11de264541-amd64-gcc-standard.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1788814629.753b57a8c2/Eden-Linux-753b57a8c2-amd64-gcc-standard.AppImage"
         },
-        "version": "v1788724149.11de264541/Eden-Linux-11de264541"
+        "version": "v1788814629.753b57a8c2/Eden-Linux-753b57a8c2"
     },
     "helium": {
         "cargoLock": null,
@@ -73,17 +73,17 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-09-05",
+        "date": "2026-09-07",
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-7QYjT2vHLuX9Z1pdxHXDKCbh1CR3D/2rywB9Tx0MPRg=",
+            "sha256": "sha256-VaWGJ6+cIYN2erfSecbRV+4ljI185Ty2wUrXyvQbgOw=",
             "type": "tarball",
-            "url": "https://github.com/NixOS/nixpkgs/archive/c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0.tar.gz"
+            "url": "https://github.com/NixOS/nixpkgs/archive/dc5d91f840324650bac8c379428c7037a416959a.tar.gz"
         },
-        "version": "c043004d1c6985732bcc1cbc5a9c9aecbbb4e0f0"
+        "version": "dc5d91f840324650bac8c379428c7037a416959a"
     },
     "pcsx2": {
         "cargoLock": null,
@@ -116,16 +116,16 @@
     },
     "vim-config": {
         "cargoLock": null,
-        "date": "2026-09-07",
+        "date": "2026-09-08",
         "extract": null,
         "name": "vim-config",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-KEhzo0Uqg2EADgW1zewtrzzdT8V2FEi4SMt5sck8UfU=",
+            "sha256": "sha256-BsXQHyY5hChmVHDiiD0P1pC4shCiaYFIoU/vzEf3oHk=",
             "type": "tarball",
-            "url": "https://git.gay/sunworms/vim-config/archive/7f65691f6d507f589adc830a2da901837157f88c.tar.gz"
+            "url": "https://git.gay/sunworms/vim-config/archive/cd6564f706fac673fbb3e783434facd3e092072d.tar.gz"
         },
-        "version": "7f65691f6d507f589adc830a2da901837157f88c"
+        "version": "cd6564f706fac673fbb3e783434facd3e092072d"
     }
 }
