@@ -57,6 +57,20 @@
         },
         "version": "d248f0e4f7abd6e1f0eb9ace778dd7928481943e"
     },
+    "neovim-config": {
+        "cargoLock": null,
+        "date": "2026-09-08",
+        "extract": null,
+        "name": "neovim-config",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-H0uXfbUZq0fYOuvXfcOO3khIuz66BMFRvo+1MSag8Ck=",
+            "type": "tarball",
+            "url": "https://git.gay/sunworms/neovim-config/archive/28690c488b59f72e4a610c21f3a9730a731036f0.tar.gz"
+        },
+        "version": "28690c488b59f72e4a610c21f3a9730a731036f0"
+    },
     "nix-index-database": {
         "cargoLock": null,
         "date": "2026-09-06",
@@ -113,19 +127,5 @@
             "url": "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz"
         },
         "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
-    },
-    "vim-config": {
-        "cargoLock": null,
-        "date": "2026-09-08",
-        "extract": null,
-        "name": "vim-config",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-BsXQHyY5hChmVHDiiD0P1pC4shCiaYFIoU/vzEf3oHk=",
-            "type": "tarball",
-            "url": "https://git.gay/sunworms/vim-config/archive/cd6564f706fac673fbb3e783434facd3e092072d.tar.gz"
-        },
-        "version": "cd6564f706fac673fbb3e783434facd3e092072d"
     }
 }

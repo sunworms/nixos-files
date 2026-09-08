@@ -40,6 +40,15 @@
     };
     date = "2026-08-23";
   };
+  neovim-config = {
+    pname = "neovim-config";
+    version = "28690c488b59f72e4a610c21f3a9730a731036f0";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/neovim-config/archive/28690c488b59f72e4a610c21f3a9730a731036f0.tar.gz";
+      sha256 = "sha256-H0uXfbUZq0fYOuvXfcOO3khIuz66BMFRvo+1MSag8Ck=";
+    };
+    date = "2026-09-08";
+  };
   nix-index-database = {
     pname = "nix-index-database";
     version = "116ad1c2adb642405ef8916f6a94c8626f971344";
@@ -74,14 +83,5 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
-  };
-  vim-config = {
-    pname = "vim-config";
-    version = "cd6564f706fac673fbb3e783434facd3e092072d";
-    src = fetchTarball {
-      url = "https://git.gay/sunworms/vim-config/archive/cd6564f706fac673fbb3e783434facd3e092072d.tar.gz";
-      sha256 = "sha256-BsXQHyY5hChmVHDiiD0P1pC4shCiaYFIoU/vzEf3oHk=";
-    };
-    date = "2026-09-08";
   };
 }
