@@ -134,11 +134,11 @@ hi Terminal      guibg={{ colors.terminal_background.default.hex }} guifg={{ col
 hi Comment        guibg=NONE guifg={{ colors.outline.default.hex }} gui=italic
 
 hi Constant       guibg=NONE guifg={{ colors.tertiary.default.hex }}
-hi String         guibg=NONE guifg={{ colors.secondary.default.hex }}
-hi Character      guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
-hi Number         guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
+hi String         guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
+hi Character      guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
+hi Number         guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 hi Boolean        guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=bold
-hi Float          guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
+hi Float          guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 
 hi Identifier     guibg=NONE guifg={{ colors.on_surface_variant.default.hex }}
 hi Function       guibg=NONE guifg={{ colors.primary.default.hex }}
@@ -151,21 +151,21 @@ hi Operator       guibg=NONE guifg={{ colors.outline.default.hex }}
 hi Keyword        guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }} gui=bold
 hi Exception      guibg=NONE guifg={{ colors.error.default.hex }} gui=bold
 
-hi PreProc        guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
-hi Include        guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
-hi Define         guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
+hi PreProc        guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }}
+hi Include        guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }}
+hi Define         guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }}
 hi Macro          guibg=NONE guifg={{ colors.tertiary.default.hex }}
-hi PreCondit      guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
+hi PreCondit      guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }}
 
 hi Type           guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
 hi StorageClass   guibg=NONE guifg={{ colors.primary.default.hex }}
 hi Structure      guibg=NONE guifg={{ colors.secondary.default.hex }}
-hi Typedef        guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
+hi Typedef        guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
 
-hi Special        guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
+hi Special        guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 hi SpecialChar    guibg=NONE guifg={{ colors.tertiary.default.hex }}
 hi Tag            guibg=NONE guifg={{ colors.primary.default.hex }}
-hi Delimiter      guibg=NONE guifg={{ colors.outline_variant.default.hex }}
+hi Delimiter      guibg=NONE guifg={{ colors.outline.default.hex }}
 hi SpecialComment guibg=NONE guifg={{ colors.on_surface_variant.default.hex }} gui=italic
 hi Debug          guibg=NONE guifg={{ colors.error.default.hex }}
 
@@ -233,7 +233,7 @@ hi @variable                    guibg=NONE guifg={{ colors.on_surface.default.he
 hi @variable.builtin            guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=italic
 hi @variable.parameter          guibg=NONE guifg={{ colors.secondary.default.hex }}
 hi @variable.parameter.builtin  guibg=NONE guifg={{ colors.secondary.default.hex }} gui=italic
-hi @variable.member             guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
+hi @variable.member             guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 
 " Constants
 hi @constant         guibg=NONE guifg={{ colors.tertiary.default.hex }}
@@ -241,19 +241,19 @@ hi @constant.builtin guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=bold
 hi @constant.macro   guibg=NONE guifg={{ colors.tertiary.default.hex }}
 
 " Strings, characters, numbers
-hi @string                guibg=NONE guifg={{ colors.secondary.default.hex }}
-hi @string.documentation  guibg=NONE guifg={{ colors.secondary.default.hex }} gui=italic
+hi @string                guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
+hi @string.documentation  guibg=NONE guifg={{ colors.secondary_fixed.default.hex }} gui=italic
 hi @string.regexp         guibg=NONE guifg={{ colors.tertiary.default.hex }}
 hi @string.escape         guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=bold
-hi @string.special        guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
-hi @string.special.symbol guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
+hi @string.special        guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
+hi @string.special.symbol guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 hi @string.special.url    guibg=NONE guifg={{ colors.primary.default.hex }} gui=underline
-hi @character             guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
+hi @character             guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 hi @character.special     guibg=NONE guifg={{ colors.tertiary.default.hex }}
-hi @number                guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
-hi @number.float          guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
+hi @number                guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
+hi @number.float          guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 hi @boolean               guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=bold
-hi @float                 guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
+hi @float                 guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 
 " Functions
 hi @function             guibg=NONE guifg={{ colors.primary.default.hex }}
@@ -269,11 +269,11 @@ hi @keyword             guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex
 hi @keyword.function    guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }} gui=bold
 hi @keyword.operator    guibg=NONE guifg={{ colors.outline.default.hex }}
 hi @keyword.return      guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }} gui=bold
-hi @keyword.import      guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
+hi @keyword.import      guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }} gui=bold
 hi @keyword.repeat      guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=bold
 hi @keyword.conditional guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=bold
 hi @keyword.exception   guibg=NONE guifg={{ colors.error.default.hex }} gui=bold
-hi @keyword.directive   guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
+hi @keyword.directive   guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }}
 hi @keyword.modifier    guibg=NONE guifg={{ colors.primary.default.hex }}
 hi @keyword.coroutine   guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=bold
 
@@ -282,17 +282,17 @@ hi @type            guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
 hi @type.builtin    guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }} gui=italic
 hi @type.definition guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }} gui=bold
 hi @storageclass    guibg=NONE guifg={{ colors.primary.default.hex }}
-hi @attribute       guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
-hi @attribute.builtin guibg=NONE guifg={{ colors.secondary_fixed.default.hex }} gui=italic
-hi @property        guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
-hi @field           guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
+hi @attribute       guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }}
+hi @attribute.builtin guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }} gui=italic
+hi @property        guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
+hi @field           guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 hi @namespace       guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
 hi @module          guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
 
 " Punctuation
-hi @punctuation.delimiter guibg=NONE guifg={{ colors.outline_variant.default.hex }}
-hi @punctuation.bracket   guibg=NONE guifg={{ colors.outline_variant.default.hex }}
-hi @punctuation.special   guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
+hi @punctuation.delimiter guibg=NONE guifg={{ colors.outline.default.hex }}
+hi @punctuation.bracket   guibg=NONE guifg={{ colors.outline.default.hex }}
+hi @punctuation.special   guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 
 " Comments
 hi @comment               guibg=NONE guifg={{ colors.outline.default.hex }} gui=italic
@@ -328,7 +328,7 @@ hi @markup.list.unchecked guibg=NONE guifg={{ colors.outline.default.hex }}
 " Tags (HTML / JSX / XML)
 hi @tag           guibg=NONE guifg={{ colors.primary.default.hex }}
 hi @tag.attribute guibg=NONE guifg={{ colors.secondary.default.hex }} gui=italic
-hi @tag.delimiter guibg=NONE guifg={{ colors.outline_variant.default.hex }}
+hi @tag.delimiter guibg=NONE guifg={{ colors.outline.default.hex }}
 
 " Diff captures
 hi @diff.plus  guibg=NONE guifg={{ colors.secondary.default.hex }}
@@ -348,10 +348,10 @@ hi @lsp.type.keyword       guibg=NONE guifg={{ colors.primary_fixed_dim.default.
 hi @lsp.type.macro         guibg=NONE guifg={{ colors.tertiary.default.hex }}
 hi @lsp.type.method        guibg=NONE guifg={{ colors.primary.default.hex }}
 hi @lsp.type.namespace     guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
-hi @lsp.type.number        guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
+hi @lsp.type.number        guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 hi @lsp.type.operator      guibg=NONE guifg={{ colors.outline.default.hex }}
 hi @lsp.type.parameter     guibg=NONE guifg={{ colors.secondary.default.hex }}
-hi @lsp.type.property      guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }}
+hi @lsp.type.property      guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 hi @lsp.type.struct        guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
 hi @lsp.type.type          guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
 hi @lsp.type.variable      guibg=NONE guifg={{ colors.on_surface.default.hex }}
