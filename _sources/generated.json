@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-o4ErSOKYWRDdcrT53asWF9UEzqD3qnCISPtfokQY42c=",
+            "sha256": "sha256-hHcOzSrYS7hgc5YawbxgM0tH/oRuiztJhX85HPzkTlA=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1788899534.e5b8b10188/Eden-Linux-e5b8b10188-amd64-gcc-standard.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1788984876.5f142c7926/Eden-Linux-5f142c7926-amd64-gcc-standard.AppImage"
         },
-        "version": "v1788899534.e5b8b10188/Eden-Linux-e5b8b10188"
+        "version": "v1788984876.5f142c7926/Eden-Linux-5f142c7926"
     },
     "helium": {
         "cargoLock": null,
@@ -87,17 +87,17 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-09-08",
+        "date": "2026-09-10",
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-2V9GZGvPfrNzxFozhI9dcqV+c3QdA8YZrvAAzqEB+dI=",
+            "sha256": "sha256-xB8mKMOx1IA9vTDNLmJZ6n4wCMq/cuWBBOzGCRnqxrU=",
             "type": "tarball",
-            "url": "https://github.com/NixOS/nixpkgs/archive/d6524aaca2ff07876657ae2b323f24be4874944b.tar.gz"
+            "url": "https://github.com/NixOS/nixpkgs/archive/8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe.tar.gz"
         },
-        "version": "d6524aaca2ff07876657ae2b323f24be4874944b"
+        "version": "8ce4ef6cb6f871616146b9fe26d2a5ae594e94fe"
     },
     "pcsx2": {
         "cargoLock": null,
@@ -108,11 +108,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-gK6MNTL1RQZlDOJqAzXBKz0WnrE4BCSvy/JFwnayMzM=",
+            "sha256": "sha256-VlsoMuYUjOay/lnTWbat5mfXClsOS9whmsOWaz2LDmM=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.9.36/pcsx2-v2.9.36-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.9.37/pcsx2-v2.9.37-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "2.9.36"
+        "version": "2.9.37"
     },
     "preservation": {
         "cargoLock": null,
