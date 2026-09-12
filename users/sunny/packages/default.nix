@@ -30,10 +30,10 @@
     yt-dlp
     satty
     qbittorrent
-    zathura
     rclone
     gpu-screen-recorder-gtk
     nautilus
+    papers
     (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db
     (import inputs.nix-index-database.src {inherit pkgs;}).nix-index-with-small-db
   ];
