@@ -10,10 +10,10 @@
       default_width_fraction = 0.75;
     };
     struts = {
-      left = 15;
-      right = 15;
-      top = 15;
-      bottom = 15;
+      left = 10;
+      right = 10;
+      top = 10;
+      bottom = 10;
     };
   };
 }
