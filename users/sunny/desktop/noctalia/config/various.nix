@@ -26,17 +26,17 @@
   };
 
   accessibility = {
-    ui_scale = 1.05;
+    ui_scale = 1.0;
   };
 
   notification = {
     background_opacity = 1.0;
-    scale = 1.05;
+    scale = 1.0;
   };
 
   osd = {
     background_opacity = 1.0;
-    scale = 1.05;
+    scale = 1.0;
   };
 
   battery = {
