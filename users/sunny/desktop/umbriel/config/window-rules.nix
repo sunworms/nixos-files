@@ -21,10 +21,13 @@
       };
     }
     {
-      match.app_id = "xdg_filechooser|dev.noctalia.UmbrielSharePicker";
+      match.app_id = "^dev.noctalia.UmbrielSharePicker$";
       default_floating = true;
-      default_size = [900 600];
-      blur = true;
+    }
+    {
+      match.app_id = "^org.gnome.Nautilus$";
+      match.title = "^Pick Files$";
+      default_floating = true;
     }
     {
       match.app_id = "^org.pwmt.zathura$|^foot$|^emacs$";
