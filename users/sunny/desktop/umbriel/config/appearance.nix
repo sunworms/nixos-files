@@ -16,8 +16,8 @@
     shadow = {
       enabled = true;
       softness = 10;
-      offset_x = 0;
-      offset_y = 0;
+      offset_x = 3;
+      offset_y = 5;
     };
   };
 }
