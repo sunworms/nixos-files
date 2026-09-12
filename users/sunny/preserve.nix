@@ -33,7 +33,7 @@
       ".config/qBittorrent"
 
       ".local/share/Steam"
-      ".local/share/zathura"
+      ".local/share/gvfs-metadata"
       ".local/share/eden"
       ".local/share/fish"
       ".local/share/nvfetcher"
