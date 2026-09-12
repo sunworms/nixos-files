@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-hHcOzSrYS7hgc5YawbxgM0tH/oRuiztJhX85HPzkTlA=",
+            "sha256": "sha256-Qhj6zihYTaAbUHRoxERYJXuhwCFViVe2EFqCh60qPKo=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1788984876.5f142c7926/Eden-Linux-5f142c7926-amd64-gcc-standard.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1789157782.8a22f1845b/Eden-Linux-8a22f1845b-amd64-gcc-standard.AppImage"
         },
-        "version": "v1788984876.5f142c7926/Eden-Linux-5f142c7926"
+        "version": "v1789157782.8a22f1845b/Eden-Linux-8a22f1845b"
     },
     "helium": {
         "cargoLock": null,
@@ -37,11 +37,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-EAN0S0/5d5fH090S2ov3QnjF9Ok+kfFbQRtXr8/8LzE=",
+            "sha256": "sha256-UCOINeiJYlPUrxQqMDI1QRnB5vfnd5JsRTAZXHFP8/U=",
             "type": "url",
-            "url": "https://github.com/imputnet/helium-linux/releases/download/0.16.6.1/helium-0.16.6.1-x86_64_linux.tar.xz"
+            "url": "https://github.com/imputnet/helium-linux/releases/download/0.17.0.1/helium-0.17.0.1-x86_64_linux.tar.xz"
         },
-        "version": "0.16.6.1"
+        "version": "0.17.0.1"
     },
     "hjem": {
         "cargoLock": null,
@@ -59,17 +59,17 @@
     },
     "neovim-config": {
         "cargoLock": null,
-        "date": "2026-09-09",
+        "date": "2026-09-11",
         "extract": null,
         "name": "neovim-config",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-CQZMpHtOtRAzNFqvu5389F6DekBIC80hZudzoaR1+08=",
+            "sha256": "sha256-0ec9sB3p4YHeYJ9hP2QQizYhSxRhb2h5ACuIUjvXgis=",
             "type": "tarball",
-            "url": "https://git.gay/sunworms/neovim-config/archive/3b725737663cb4ec3cd6367f29593f3f82bcd418.tar.gz"
+            "url": "https://git.gay/sunworms/neovim-config/archive/d112e5ebddd692939470cdbcbed44acde10875ec.tar.gz"
         },
-        "version": "3b725737663cb4ec3cd6367f29593f3f82bcd418"
+        "version": "d112e5ebddd692939470cdbcbed44acde10875ec"
     },
     "nix-index-database": {
         "cargoLock": null,
@@ -108,11 +108,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-VlsoMuYUjOay/lnTWbat5mfXClsOS9whmsOWaz2LDmM=",
+            "sha256": "sha256-HVhLafJZjUUFbeaJmnAy6xzdSYCF/76FX8I5sf+xnQc=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.9.37/pcsx2-v2.9.37-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.9.41/pcsx2-v2.9.41-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "2.9.37"
+        "version": "2.9.41"
     },
     "preservation": {
         "cargoLock": null,
