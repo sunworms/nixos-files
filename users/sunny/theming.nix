@@ -101,6 +101,8 @@ in {
           /usr/bin/env dconf write /org/gnome/nautilus/preferences/migrated-gtk-settings true
           /usr/bin/env dconf write /org/gtk/gtk4/settings/file-chooser/show-hidden true
           /usr/bin/env dconf write /org/gtk/settings/file-chooser/show-hidden true
+          /usr/bin/env dconf write /com/github/stunkymonkey/nautilus-open-any-terminal/terminal "'foot'"
+          /usr/bin/env dconf write /com/github/stunkymonkey/nautilus-open-any-terminal/keybinding "'<Control><Alt>t'"
         ''
       }";
     };

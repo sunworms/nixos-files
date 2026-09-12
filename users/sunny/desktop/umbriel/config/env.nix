@@ -1,4 +1,4 @@
-{
+{pkgs}: {
   environment = {
     DIRENV_LOG_FORMAT = "";
     NIXOS_OZONE_WL = "1";
@@ -13,5 +13,6 @@
     GTK_USE_PORTAL = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
     MANPAGER = "nvim +Man!";
+    NAUTILUS_4_EXTENSION_DIR = "${pkgs.nautilus-python}/lib/nautilus/extensions-4";
   };
 }

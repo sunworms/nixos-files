@@ -1,7 +1,9 @@
-{lib}: let
+{pkgs}: let
+  lib = pkgs.lib;
+
   configs = [
     (import ./appearance.nix)
-    (import ./env.nix)
+    (import ./env.nix {inherit pkgs;})
     (import ./general.nix)
     (import ./input.nix)
     (import ./layout.nix)
