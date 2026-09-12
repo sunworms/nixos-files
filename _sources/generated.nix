@@ -42,12 +42,12 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "d112e5ebddd692939470cdbcbed44acde10875ec";
+    version = "7d7c4a7ffbd8999e25bfd8c21f26871c092dda98";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/d112e5ebddd692939470cdbcbed44acde10875ec.tar.gz";
-      sha256 = "sha256-0ec9sB3p4YHeYJ9hP2QQizYhSxRhb2h5ACuIUjvXgis=";
+      url = "https://git.gay/sunworms/neovim-config/archive/7d7c4a7ffbd8999e25bfd8c21f26871c092dda98.tar.gz";
+      sha256 = "sha256-nt4mIZiqCe8cO8f2KCqCHJfcLtvKAfbL3nh4qst2fpI=";
     };
-    date = "2026-09-11";
+    date = "2026-09-12";
   };
   nix-index-database = {
     pname = "nix-index-database";
