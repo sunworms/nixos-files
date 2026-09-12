@@ -1,4 +1,4 @@
-{
+{assets}: {
   widget = {
     audio_visualizer = {
       centered = false;
@@ -67,6 +67,7 @@
 
     launcher = {
       glyph = "gender-transgender";
+      custom_image = "${assets}/NixOS.svg";
       custom_image_colorize = true;
     };
 
