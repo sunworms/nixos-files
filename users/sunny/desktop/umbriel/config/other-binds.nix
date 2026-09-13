@@ -106,6 +106,9 @@
     "Mod+Shift+Ctrl+Right" = "column-move-to-output-right";
     "Mod+Shift+Ctrl+Up" = "column-move-to-output-up";
 
-    "Mod+Shift+P" = "dpms-off";
+    "Mod+Shift+P" = {
+      action = "dpms-off";
+      allow_when_locked = true;
+    };
   };
 }
