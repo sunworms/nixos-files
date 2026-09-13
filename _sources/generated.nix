@@ -51,12 +51,12 @@
   };
   nix-index-database = {
     pname = "nix-index-database";
-    version = "116ad1c2adb642405ef8916f6a94c8626f971344";
+    version = "a74e173407559083a412ea89a1cc58ea389c3b65";
     src = fetchTarball {
-      url = "https://github.com/nix-community/nix-index-database/archive/116ad1c2adb642405ef8916f6a94c8626f971344.tar.gz";
-      sha256 = "sha256-amGSoDobwmp4CFvCn841ws2iuitus+HUJdD/gKgsrJA=";
+      url = "https://github.com/nix-community/nix-index-database/archive/a74e173407559083a412ea89a1cc58ea389c3b65.tar.gz";
+      sha256 = "sha256-xVstyCdg0DpzjyrEacm72VJAIP9DMhfWJdPDzhWxHuo=";
     };
-    date = "2026-09-06";
+    date = "2026-09-13";
   };
   nixpkgs = {
     pname = "nixpkgs";
