@@ -42,10 +42,10 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "036b3890f39f8046fafb6225f8e714bb114e1a19";
+    version = "e538545cf4432f1081c3c8342065a46cdd3bf695";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/036b3890f39f8046fafb6225f8e714bb114e1a19.tar.gz";
-      sha256 = "sha256-tGXeUPwwNxcqzRhrw+NxOKYEoe7T//h7GRLwu30nWRY=";
+      url = "https://git.gay/sunworms/neovim-config/archive/e538545cf4432f1081c3c8342065a46cdd3bf695.tar.gz";
+      sha256 = "sha256-zVSKd4rQVjN319UIloud066nzTu4o8DwSDXM/7h0bOc=";
     };
     date = "2026-09-13";
   };
@@ -69,10 +69,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.43";
+    version = "2.9.45";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.43/pcsx2-v2.9.43-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-Y5DHAr384nlZK/Ajg4a92m92HcC/0yeeqJK7WVfX5SY=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.45/pcsx2-v2.9.45-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-YqKIFDx7zE4etKrYezjUtS8AJBvAsZbMZruHsgp3qJw=";
     };
   };
   preservation = {
