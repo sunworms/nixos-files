@@ -42,10 +42,10 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "4c1b17d4ff37f7e6ad7a943b22ae9acff2a42544";
+    version = "45d69ba9abc4c87e70246740d94824a137edfadf";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/4c1b17d4ff37f7e6ad7a943b22ae9acff2a42544.tar.gz";
-      sha256 = "sha256-KcxLyXwy+6BGYLVTPhvTIGRu2At/jKeMYVsZVFH6Jlg=";
+      url = "https://git.gay/sunworms/neovim-config/archive/45d69ba9abc4c87e70246740d94824a137edfadf.tar.gz";
+      sha256 = "sha256-bwKqHebcbxj/xRh5Y/9ckOD5C5o1ind/gNMhXPnXHvc=";
     };
     date = "2026-09-14";
   };
