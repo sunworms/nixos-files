@@ -26,7 +26,7 @@
     }
     {
       match.app_id = "^org.gnome.Nautilus$";
-      match.title = ".+?File*";
+      match.title = ".*Files?";
       default_floating = true;
     }
     {
