@@ -30,7 +30,7 @@
 
     "xdg-desktop-portal/umbriel-portals.conf".text = ''
       [preferred]
-      default=umbriel;gtk
+      default=umbriel;gtk;
       org.freedesktop.impl.portal.FileChooser=gnome;
     '';
   };
