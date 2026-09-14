@@ -40,6 +40,9 @@
 
     # glib
     glib
+    gsettings-desktop-schemas
+    gtk3
+    gtk4
 
     # Nix LSPs
     nil
@@ -58,6 +61,7 @@
     "/share/xdg-desktop-portal"
     "/share/applications"
     "/share/fish"
+    "/share/gsettings-schemas"
   ];
 
   environment.etc."chromium/policies/managed/default.json".source = (pkgs.formats.json {}).generate "chromium.json" (import ./chromium.nix);
