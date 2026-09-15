@@ -27,6 +27,14 @@ let
         ]
         ++ (hostVars.modules or []);
     };
+
+  droid-pkgs = import inputs.nixpkgs.src {system = "aarch64-linux";};
+
+  droid-eval = import "${inputs.nix-on-droid.src}/modules" {
+    pkgs = droid-pkgs;
+    config = ./hosts/android/configuration.nix;
+    home-manager-path = inputs.droid-hm.src;
+  };
 in {
   motobook = mkHost {
     hostname = "motobook";
@@ -49,4 +57,6 @@ in {
       }
     ];
   };
+
+  droid = droid-eval.activationPackage;
 }

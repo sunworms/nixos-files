@@ -15,6 +15,15 @@
     };
     date = "2026-02-03";
   };
+  droid-hm = {
+    pname = "droid-hm";
+    version = "efa3ccb4c3cc90d832eab232976379058fa75aa3";
+    src = fetchTarball {
+      url = "https://github.com/nix-community/home-manager/archive/efa3ccb4c3cc90d832eab232976379058fa75aa3.tar.gz";
+      sha256 = "sha256-pD3qVlQ4mUCFoTWrYtxecpSitQMsgJvJIN0FUIDZoEU=";
+    };
+    date = "2026-09-15";
+  };
   eden = {
     pname = "eden";
     version = "v1789420436.ee73920d28/Eden-Linux-ee73920d28";
@@ -42,10 +51,10 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "2f3120391ac3b784a492fbfb71746c46859a7835";
+    version = "b6b7296559ddc2f12b4c872db0a5b8e2526cee6d";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/2f3120391ac3b784a492fbfb71746c46859a7835.tar.gz";
-      sha256 = "sha256-9iw/xpyZopR1WCVWB8I9WGjn8YJoA7zTvcKSwERLTM4=";
+      url = "https://git.gay/sunworms/neovim-config/archive/b6b7296559ddc2f12b4c872db0a5b8e2526cee6d.tar.gz";
+      sha256 = "sha256-Ws9+wsrY3T/ezuFSwX5TA+7SbbiTEVpf5ZLRAUgdfoY=";
     };
     date = "2026-09-15";
   };
@@ -57,6 +66,15 @@
       sha256 = "sha256-xVstyCdg0DpzjyrEacm72VJAIP9DMhfWJdPDzhWxHuo=";
     };
     date = "2026-09-13";
+  };
+  nix-on-droid = {
+    pname = "nix-on-droid";
+    version = "df611d5358360092b1d2e7e756f94b23843bd9d6";
+    src = fetchTarball {
+      url = "https://github.com/nix-community/nix-on-droid/archive/df611d5358360092b1d2e7e756f94b23843bd9d6.tar.gz";
+      sha256 = "sha256-2MKUKRNV+5qs3nbQDmz7L6KRHSEHDy/lZjfIAYMZSOE=";
+    };
+    date = "2026-08-22";
   };
   nixpkgs = {
     pname = "nixpkgs";
