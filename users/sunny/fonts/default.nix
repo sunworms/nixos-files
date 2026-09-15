@@ -9,6 +9,10 @@
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
+    newcomputermodern
+    liberation_ttf
+    roboto
+    font-awesome_7
   ];
 
   combinedFonts = pkgs.symlinkJoin {
