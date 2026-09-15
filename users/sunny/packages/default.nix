@@ -69,6 +69,10 @@ in {
     papers
     (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db
     (import inputs.nix-index-database.src {inherit pkgs;}).nix-index-with-small-db
+    typst
+    tinymist
+    typstyle
+    websocat
   ];
 
   xdg.data.files."nautilus-python/extensions/nautilus_open_any_terminal.py" = {

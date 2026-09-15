@@ -17,10 +17,10 @@
   };
   eden = {
     pname = "eden";
-    version = "v1789329783.5d150cac5c/Eden-Linux-5d150cac5c";
+    version = "v1789420436.ee73920d28/Eden-Linux-ee73920d28";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1789329783.5d150cac5c/Eden-Linux-5d150cac5c-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-UyLLMs/BsUS2m6jLmU3rn+AkN+DbebCujBD6L4rNHQE=";
+      url = "https://nightly.eden-emu.dev/v1789420436.ee73920d28/Eden-Linux-ee73920d28-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-O7NtLYAEYcJTyI4xipIVyEq4xg5QgR8zYaCnNsfDaD4=";
     };
   };
   helium = {
@@ -42,12 +42,12 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "45d69ba9abc4c87e70246740d94824a137edfadf";
+    version = "2f3120391ac3b784a492fbfb71746c46859a7835";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/45d69ba9abc4c87e70246740d94824a137edfadf.tar.gz";
-      sha256 = "sha256-bwKqHebcbxj/xRh5Y/9ckOD5C5o1ind/gNMhXPnXHvc=";
+      url = "https://git.gay/sunworms/neovim-config/archive/2f3120391ac3b784a492fbfb71746c46859a7835.tar.gz";
+      sha256 = "sha256-9iw/xpyZopR1WCVWB8I9WGjn8YJoA7zTvcKSwERLTM4=";
     };
-    date = "2026-09-14";
+    date = "2026-09-15";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -69,10 +69,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.51";
+    version = "2.9.53";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.51/pcsx2-v2.9.51-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-EcIFhUoeKAnPyCuOwlhH1vorNoAlMKc+x8E5MxP7DtI=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.53/pcsx2-v2.9.53-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-5uoOf1euRiXRdHaefgwYVmjtL1PUnx6bGufvlaXirS8=";
     };
   };
   preservation = {
