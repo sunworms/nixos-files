@@ -36,11 +36,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-O7NtLYAEYcJTyI4xipIVyEq4xg5QgR8zYaCnNsfDaD4=",
+            "sha256": "sha256-tFrd/jsO8WAxepWZBF+2tfPKfooeScGwKeUL9ARIqAM=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1789420436.ee73920d28/Eden-Linux-ee73920d28-amd64-gcc-standard.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1789504925.b77308ced6/Eden-Linux-b77308ced6-amd64-gcc-standard.AppImage"
         },
-        "version": "v1789420436.ee73920d28/Eden-Linux-ee73920d28"
+        "version": "v1789504925.b77308ced6/Eden-Linux-b77308ced6"
     },
     "helium": {
         "cargoLock": null,
@@ -73,17 +73,17 @@
     },
     "neovim-config": {
         "cargoLock": null,
-        "date": "2026-09-15",
+        "date": "2026-09-16",
         "extract": null,
         "name": "neovim-config",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-Ws9+wsrY3T/ezuFSwX5TA+7SbbiTEVpf5ZLRAUgdfoY=",
+            "sha256": "sha256-WjHLk3gAJU5gs+Ql0GUlqU5XSPhwnrTMcnPcNSo5bH8=",
             "type": "tarball",
-            "url": "https://git.gay/sunworms/neovim-config/archive/b6b7296559ddc2f12b4c872db0a5b8e2526cee6d.tar.gz"
+            "url": "https://git.gay/sunworms/neovim-config/archive/df1c79b4bb357b69b4076e1f5780f512c4f693a9.tar.gz"
         },
-        "version": "b6b7296559ddc2f12b4c872db0a5b8e2526cee6d"
+        "version": "df1c79b4bb357b69b4076e1f5780f512c4f693a9"
     },
     "nix-index-database": {
         "cargoLock": null,
@@ -115,17 +115,17 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-09-13",
+        "date": "2026-09-14",
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-eiEK7cKZORNEvX0GeF3RtNEF/JXhgf2RqSp3230q13E=",
+            "sha256": "sha256-GnotcvKtbTMnoVx6G4E7ZdUX6487Dky74dqq3pU7iRk=",
             "type": "tarball",
-            "url": "https://github.com/NixOS/nixpkgs/archive/ef34387ddd751e1ab8857adf4676492d32eb24ec.tar.gz"
+            "url": "https://github.com/NixOS/nixpkgs/archive/efe6f071ede9d21c37462d2d6682d5e670099684.tar.gz"
         },
-        "version": "ef34387ddd751e1ab8857adf4676492d32eb24ec"
+        "version": "efe6f071ede9d21c37462d2d6682d5e670099684"
     },
     "pcsx2": {
         "cargoLock": null,
@@ -136,11 +136,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-5uoOf1euRiXRdHaefgwYVmjtL1PUnx6bGufvlaXirS8=",
+            "sha256": "sha256-PXPKAsJo8wX4riCtKqhL9ClnCeCiEy3mceTncn8AwxM=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.9.53/pcsx2-v2.9.53-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.9.54/pcsx2-v2.9.54-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "2.9.53"
+        "version": "2.9.54"
     },
     "preservation": {
         "cargoLock": null,
