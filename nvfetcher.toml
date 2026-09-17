@@ -24,14 +24,6 @@ fetch.tarball = "https://github.com/nix-community/nix-index-database/archive/$ve
 src.git = "https://git.gay/sunworms/neovim-config"
 fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"
 
-[nix-on-droid]
-src.git = "https://github.com/nix-community/nix-on-droid"
-fetch.tarball = "https://github.com/nix-community/nix-on-droid/archive/$ver.tar.gz"
-
-[droid-hm]
-src.git = "https://github.com/nix-community/home-manager"
-fetch.tarball = "https://github.com/nix-community/home-manager/archive/$ver.tar.gz"
-
 # binary packages
 [pcsx2]
 src.cmd = "curl -sL 'https://api.github.com/repos/PCSX2/pcsx2/releases?per_page=1' | grep -oP '\"tag_name\":\\s*\"\\K[^\"]+'"
