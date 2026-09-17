@@ -17,18 +17,18 @@
   };
   eden = {
     pname = "eden";
-    version = "v1789504925.b77308ced6/Eden-Linux-b77308ced6";
+    version = "v1789591352.c3f1e6562b/Eden-Linux-c3f1e6562b";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1789504925.b77308ced6/Eden-Linux-b77308ced6-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-tFrd/jsO8WAxepWZBF+2tfPKfooeScGwKeUL9ARIqAM=";
+      url = "https://nightly.eden-emu.dev/v1789591352.c3f1e6562b/Eden-Linux-c3f1e6562b-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-YfiHXIdvWpPWo1oltpY/ac6CqoK1zuvZo4npT4/K0pY=";
     };
   };
   helium = {
     pname = "helium";
-    version = "0.17.0.1";
+    version = "0.17.1.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.17.0.1/helium-0.17.0.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-UCOINeiJYlPUrxQqMDI1QRnB5vfnd5JsRTAZXHFP8/U=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.17.1.1/helium-0.17.1.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-aG072DMwZp19qANmSMWiUVYrOWO2JNoZ1en1aN3WWTA=";
     };
   };
   hjem = {
@@ -60,12 +60,12 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "efe6f071ede9d21c37462d2d6682d5e670099684";
+    version = "b1b875982b17dabde9b4a37f3e229e74913e6db3";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/efe6f071ede9d21c37462d2d6682d5e670099684.tar.gz";
-      sha256 = "sha256-GnotcvKtbTMnoVx6G4E7ZdUX6487Dky74dqq3pU7iRk=";
+      url = "https://github.com/NixOS/nixpkgs/archive/b1b875982b17dabde9b4a37f3e229e74913e6db3.tar.gz";
+      sha256 = "sha256-zVxLZiSnmaaPLwnhj7pwmqe3axBg/C6nG5JZsJMh2g4=";
     };
-    date = "2026-09-14";
+    date = "2026-09-16";
   };
   pcsx2 = {
     pname = "pcsx2";
