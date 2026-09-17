@@ -13,20 +13,6 @@
         },
         "version": "b027ee29d959fda4b60b57566d64c98a202e0feb"
     },
-    "droid-hm": {
-        "cargoLock": null,
-        "date": "2026-09-15",
-        "extract": null,
-        "name": "droid-hm",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-pD3qVlQ4mUCFoTWrYtxecpSitQMsgJvJIN0FUIDZoEU=",
-            "type": "tarball",
-            "url": "https://github.com/nix-community/home-manager/archive/efa3ccb4c3cc90d832eab232976379058fa75aa3.tar.gz"
-        },
-        "version": "efa3ccb4c3cc90d832eab232976379058fa75aa3"
-    },
     "eden": {
         "cargoLock": null,
         "date": null,
@@ -98,20 +84,6 @@
             "url": "https://github.com/nix-community/nix-index-database/archive/a74e173407559083a412ea89a1cc58ea389c3b65.tar.gz"
         },
         "version": "a74e173407559083a412ea89a1cc58ea389c3b65"
-    },
-    "nix-on-droid": {
-        "cargoLock": null,
-        "date": "2026-08-22",
-        "extract": null,
-        "name": "nix-on-droid",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-2MKUKRNV+5qs3nbQDmz7L6KRHSEHDy/lZjfIAYMZSOE=",
-            "type": "tarball",
-            "url": "https://github.com/nix-community/nix-on-droid/archive/df611d5358360092b1d2e7e756f94b23843bd9d6.tar.gz"
-        },
-        "version": "df611d5358360092b1d2e7e756f94b23843bd9d6"
     },
     "nixpkgs": {
         "cargoLock": null,
