@@ -14,6 +14,7 @@
     useTextGreeter = true;
   };
 
+  programs.niri.enable = true;
 
   services.speechd.enable = false;
 }
