@@ -42,4 +42,14 @@
   battery = {
     warning_threshold = 20;
   };
+
+  hooks.started = ''
+    /usr/bin/env gdbus call \
+      --session \
+      --dest org.freedesktop.portal.Desktop \
+      --object-path /org/freedesktop/portal/desktop \
+      --method org.freedesktop.portal.Settings.Read \
+      org.freedesktop.appearance \
+      color-scheme
+  '';
 }
