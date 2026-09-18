@@ -38,7 +38,7 @@
       "application/x-extension-xht"
     ];
 
-    "swayimg.desktop" = [
+    "imv.desktop" = [
       "image/png"
       "image/jpeg"
       "application/x-extension-webp"
