@@ -14,7 +14,6 @@
     useTextGreeter = true;
   };
 
-  programs.umbriel.enable = true;
 
   services.speechd.enable = false;
 }

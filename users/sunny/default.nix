@@ -28,11 +28,5 @@
 
   xdg.config.files = {
     "kanata/config.kbd".source = ./kanata.kbd;
-
-    "xdg-desktop-portal/umbriel-portals.conf".text = ''
-      [preferred]
-      default=umbriel;gtk;
-      org.freedesktop.impl.portal.FileChooser=gnome;
-    '';
   };
 }
