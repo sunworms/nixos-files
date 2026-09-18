@@ -34,10 +34,10 @@
     };
 
     struts = {
-      left = 20;
-      right = 20;
-      top = 20;
-      bottom = 20;
+      left = 15;
+      right = 15;
+      top = 15;
+      bottom = 15;
     };
   };
 }
