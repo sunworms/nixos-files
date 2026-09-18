@@ -7,7 +7,6 @@
     ./audio.nix
     ./bluetooth.nix
     ./desktop.nix
-    ./portals.nix
     ./programs.nix
   ];
 
