@@ -18,6 +18,13 @@
       default-window-height.fixed = 295;
     }
     {
+      match._props = {
+        app-id = "^org.gnome.Nautilus$";
+        title = ".*Files?";
+      };
+      open-floating = true;
+    }
+    {
       match._props.title = ".+?is sharing a window.$";
       default-floating-position._props = {
         x = 3000;
