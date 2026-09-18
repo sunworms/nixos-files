@@ -1,0 +1,22 @@
+{pkgs}: {
+  environment = {
+    DIRENV_LOG_FORMAT = "";
+    NIXOS_OZONE_WL = "1";
+    QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+    QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+    _JAVA_AWT_WM_NONREPARENTING = "1";
+    EDITOR = "nvim";
+    SUDO_EDITOR = "nvim";
+    VISUAL = "nvim";
+    TERMINAL = "foot";
+    GTK_THEME = "adw-gtk3";
+    QT_QPA_PLATFORMTHEME = "qt6ct";
+    MANPAGER = "nvim +Man!";
+    NAUTILUS_4_EXTENSION_DIR = "${pkgs.nautilus-python}/lib/nautilus/extensions-4";
+  };
+
+  cursor = {
+    xcursor-theme = "volantes_cursors";
+    xcursor-size = 24;
+  };
+}
