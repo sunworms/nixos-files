@@ -17,7 +17,7 @@
   packages = with pkgs; [
     (import inputs.neovim-config.src {inherit pkgs;})
     lazygit
-    swayimg
+    imv
     ripgrep
     fzf
     bat
