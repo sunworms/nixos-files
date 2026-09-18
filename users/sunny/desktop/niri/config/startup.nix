@@ -4,6 +4,7 @@
   ];
 
   spawn-at-startup = [
+    {_args = ["warp-taskbar"];}
     {_args = ["noctalia"];}
     {_args = ["nsticky"];}
     {_args = ["wl-clip-persist" "--clipboard" "regular"];}
