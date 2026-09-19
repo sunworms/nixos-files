@@ -25,10 +25,10 @@
   };
   helium = {
     pname = "helium";
-    version = "0.17.1.1";
+    version = "0.17.2.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.17.1.1/helium-0.17.1.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-aG072DMwZp19qANmSMWiUVYrOWO2JNoZ1en1aN3WWTA=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.17.2.1/helium-0.17.2.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-KmOd9U49BfQTz7tGIqTRpoWEsx2lp6r1juPNg8fD4pk=";
     };
   };
   hjem = {
@@ -51,12 +51,12 @@
   };
   niri-nix = {
     pname = "niri-nix";
-    version = "cc07aa2c81b784aa4078ed19e4b963663f5172ba";
+    version = "13b6326293fe9572d253cea76eb90978a4efb96c";
     src = fetchTarball {
-      url = "https://codeberg.org/BANanaD3V/niri-nix/archive/cc07aa2c81b784aa4078ed19e4b963663f5172ba.tar.gz";
-      sha256 = "sha256-5+GEhAx6YbMkP9jBoDlNlP5yiW9sPa4QdruKD+zbkVM=";
+      url = "https://codeberg.org/BANanaD3V/niri-nix/archive/13b6326293fe9572d253cea76eb90978a4efb96c.tar.gz";
+      sha256 = "sha256-w/QT4lDz/+L1nS160aibXh6fwcEqtYHMv1hyo8OP0jE=";
     };
-    date = "2026-09-18";
+    date = "2026-09-19";
   };
   nix-index-database = {
     pname = "nix-index-database";
@@ -86,10 +86,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.63";
+    version = "2.9.66";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.63/pcsx2-v2.9.63-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-7JDnvgSdsAH8CUij55gSTYYRBKnI0T12P1N3jKT0qHA=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.66/pcsx2-v2.9.66-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-c0yyiIwZSjQNDPjRCRkIYAbjUBoonAhVyJaCe6KJvcM=";
     };
   };
   preservation = {
