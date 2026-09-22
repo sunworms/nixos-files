@@ -97,12 +97,6 @@ in {
           /usr/bin/env dconf write /org/gnome/desktop/interface/cursor-theme-name "'volantes_cursors'"
           /usr/bin/env dconf write /org/gnome/desktop/interface/icon-theme-name "'Adwaita'"
           /usr/bin/env dconf write /org/gnome/desktop/interface/theme-name "'adw-gtk3'"
-          /usr/bin/env dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'small-plus'"
-          /usr/bin/env dconf write /org/gnome/nautilus/preferences/migrated-gtk-settings true
-          /usr/bin/env dconf write /org/gtk/gtk4/settings/file-chooser/show-hidden true
-          /usr/bin/env dconf write /org/gtk/settings/file-chooser/show-hidden true
-          /usr/bin/env dconf write /com/github/stunkymonkey/nautilus-open-any-terminal/terminal "'foot'"
-          /usr/bin/env dconf write /com/github/stunkymonkey/nautilus-open-any-terminal/keybinding "'<Control><Alt>t'"
         ''
       }";
     };
