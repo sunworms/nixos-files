@@ -36,9 +36,6 @@ set notification-error-fg           "{{ colors.on_error_container.default.rgba }
 set highlight-color                 "{{ colors.tertiary_container.default.rgba | set_alpha: 0.85 }}"
 set highlight-active-color          "{{ colors.tertiary.default.rgba | set_alpha: 0.85 }}"
 
-set select-text-bg                  "{{ colors.surface_variant.default.rgba | set_alpha: 0.85 }}"
-set select-text-fg                  "{{ colors.on_surface.default.rgba }}"
-
 set highlight-fg                    "{{ colors.primary.default.rgba }}"
 
 set selection-clipboard clipboard
