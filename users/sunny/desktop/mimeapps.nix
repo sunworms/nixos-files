@@ -5,7 +5,7 @@
       "image/vnd.djvu"
     ];
 
-    "org.gnome.Nautilus.desktop" = [
+    "yazi.desktop" = [
       "inode/directory"
     ];
 

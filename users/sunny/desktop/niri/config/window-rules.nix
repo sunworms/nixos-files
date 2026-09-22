@@ -25,6 +25,23 @@
       open-floating = true;
     }
     {
+      match._props.app-id = "xdg_filechooser";
+      open-floating = true;
+      default-column-width = {
+        fixed = 900;
+      };
+      default-window-height = {
+        fixed = 600;
+      };
+    }
+    {
+      match._props.app-id = "^org.pwmt.zathura$";
+      background-effect = {
+        blur = true;
+        xray = true;
+      };
+    }
+    {
       match._props.title = ".+?is sharing a window.$";
       default-floating-position._props = {
         x = 3000;
