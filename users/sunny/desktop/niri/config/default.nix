@@ -2,7 +2,7 @@
   lib = pkgs.lib;
 
   configs = [
-    (import ./environment.nix {inherit pkgs;})
+    (import ./environment.nix)
     (import ./input.nix)
     (import ./layer-rules.nix)
     (import ./layout.nix)
