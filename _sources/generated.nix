@@ -25,10 +25,10 @@
   };
   emacs-config = {
     pname = "emacs-config";
-    version = "c9f2e8790a03705aac268885dd08fbd2c86e16f8";
+    version = "03bdfa49531c86533451dfcd08fe81c064ad2db0";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/emacs-config/archive/c9f2e8790a03705aac268885dd08fbd2c86e16f8.tar.gz";
-      sha256 = "sha256-guGXHwGbJAifApeOpgPrfz7B9MOu9MmNhDrzI13GG/o=";
+      url = "https://git.gay/sunworms/emacs-config/archive/03bdfa49531c86533451dfcd08fe81c064ad2db0.tar.gz";
+      sha256 = "sha256-BPr186BvQ2sSbkr9KKMZxAD7ZP2H+qCu07R+8v3cBaE=";
     };
     date = "2026-09-25";
   };

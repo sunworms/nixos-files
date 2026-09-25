@@ -3,7 +3,7 @@
     builtin = "Noctalia";
     source = "community";
     wallpaper_scheme = "faithful";
-    community_palette = "Everforest Alt";
+    community_palette = "Catppuccin Mocha Lavender";
 
     templates = {
       builtin_ids = ["foot" "gtk3" "gtk4" "kcolorscheme" "qt" "niri"];
