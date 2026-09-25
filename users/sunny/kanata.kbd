@@ -4,17 +4,22 @@
 )
 
 (defsrc
-  esc                                                         ins  del 
+  esc                                                 ins  del 
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc 
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            ralt
+  lctl lmet lalt              spc              ralt
 )
 
 (defvar
   tap-time 200
   hold-time 300
+)
+
+(defalias
+  esc-mod  (tap-hold $tap-time $hold-time caps esc)  ;; Tap: Caps Lock, Hold: Escape
+  caps-mod (tap-hold $tap-time $hold-time esc lctl)  ;; Tap: Escape, Hold: Left Ctrl
 )
 
 (defchordsv2
@@ -25,10 +30,10 @@
 )
 
 (deflayer base
-  caps                                                        _    _
+  @esc-mod                                            _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  esc  _    _    _    _    _    _    _    _    _    _    _    _
+  @caps-mod _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _              _              _
 )

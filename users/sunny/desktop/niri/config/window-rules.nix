@@ -35,7 +35,7 @@
       };
     }
     {
-      match._props.app-id = "^org.pwmt.zathura$";
+      match._props.app-id = "^org.pwmt.zathura$|^emacs$";
       background-effect = {
         blur = true;
         xray = true;
