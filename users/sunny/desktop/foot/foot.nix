@@ -1,5 +1,6 @@
 {config}: {
   main = {
+    term = "xterm-direct";
     include = "~/.config/foot/themes/noctalia";
     font = "${config.fonts.monospace}:size=11.25";
   };

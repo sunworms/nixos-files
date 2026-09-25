@@ -36,11 +36,11 @@
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-BPr186BvQ2sSbkr9KKMZxAD7ZP2H+qCu07R+8v3cBaE=",
+            "sha256": "sha256-DMpN7X7/LqMm16OZRP2lZvzYPhI7fgzGrzQe3VssRIU=",
             "type": "tarball",
-            "url": "https://git.gay/sunworms/emacs-config/archive/03bdfa49531c86533451dfcd08fe81c064ad2db0.tar.gz"
+            "url": "https://git.gay/sunworms/emacs-config/archive/9d160e98c8259a1507888d4aab490b1a048aaf9c.tar.gz"
         },
-        "version": "03bdfa49531c86533451dfcd08fe81c064ad2db0"
+        "version": "9d160e98c8259a1507888d4aab490b1a048aaf9c"
     },
     "helium": {
         "cargoLock": null,
