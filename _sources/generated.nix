@@ -23,6 +23,15 @@
       sha256 = "sha256-SXIidIZdUXYeurjujNQaB+kNHShuHRFNLT7HNe1407s=";
     };
   };
+  emacs-config = {
+    pname = "emacs-config";
+    version = "c9f2e8790a03705aac268885dd08fbd2c86e16f8";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/emacs-config/archive/c9f2e8790a03705aac268885dd08fbd2c86e16f8.tar.gz";
+      sha256 = "sha256-guGXHwGbJAifApeOpgPrfz7B9MOu9MmNhDrzI13GG/o=";
+    };
+    date = "2026-09-25";
+  };
   helium = {
     pname = "helium";
     version = "0.18.1.1";
@@ -39,15 +48,6 @@
       sha256 = "sha256-tycoVCB2KSVdy9ERT1lJGHdP9Hf4FHanaEY25hUxylw=";
     };
     date = "2026-09-22";
-  };
-  neovim-config = {
-    pname = "neovim-config";
-    version = "02f0c389ac81ecb51f69678f01b7d9fa6a61f243";
-    src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/02f0c389ac81ecb51f69678f01b7d9fa6a61f243.tar.gz";
-      sha256 = "sha256-ZB7VUWKllLBcYcVaZfwaKgdFn3Z1MdxdEKne+2bPpYo=";
-    };
-    date = "2026-09-23";
   };
   niri-nix = {
     pname = "niri-nix";
@@ -86,10 +86,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.81";
+    version = "2.9.84";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.81/pcsx2-v2.9.81-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-i2tCo5QGi5F+c8EpKz2POxEUhz2s8XN2h975jbNuKzY=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.84/pcsx2-v2.9.84-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-kXnOKPjkeES+ppB0ZJMCedRT1fZjrx9kuytdOcrenL4=";
     };
   };
   preservation = {
