@@ -33,10 +33,15 @@
       default-window-height = {
         fixed = 600;
       };
+      background-effect = {
+        blur = true;
+        xray = true;
+      };
     }
     {
       match = [
         {_props.app-id = "^org.pwmt.zathura$";}
+        {_props.app-id = "^kitty$";}
         {_props.app-id = "^emacs$";}
         {_props.app-id = "^Emacs$";}
       ];
