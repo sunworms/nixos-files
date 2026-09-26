@@ -2,9 +2,9 @@
   binds = {
     "Mod+T" = {
       _props = {
-        hotkey-overlay-title = "Open a Terminal: foot";
+        hotkey-overlay-title = "Open a Terminal: kitty";
       };
-      spawn = "foot";
+      spawn = "kitty";
     };
     "Mod+Shift+T" = {
       _props = {
