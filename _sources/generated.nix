@@ -8,10 +8,10 @@
 {
   agenix = {
     pname = "agenix";
-    version = "3683254a858be188d482661d2d40dce345497435";
+    version = "07a33319a408a0c770f0fe5d0d98f5e7b4e5a5e7";
     src = fetchTarball {
-      url = "https://github.com/ryantm/agenix/archive/3683254a858be188d482661d2d40dce345497435.tar.gz";
-      sha256 = "sha256-M1UINOIb0bKg3qGSsHNyo+1Dw7k5Msog2ArYAUkSfag=";
+      url = "https://github.com/ryantm/agenix/archive/07a33319a408a0c770f0fe5d0d98f5e7b4e5a5e7.tar.gz";
+      sha256 = "sha256-dLq4qfJvm2ZfkwGGdgWl/nsA2aavpQMrPQbNqbkLXKE=";
     };
     date = "2026-09-26";
   };
@@ -42,10 +42,10 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "e8d36c233ccd1699d3d6660b95ff92d0b7e36b58";
+    version = "2e52d08f266e87186159f1bf8598a2ec18cfa030";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/e8d36c233ccd1699d3d6660b95ff92d0b7e36b58.tar.gz";
-      sha256 = "sha256-REilY+IKFdlsrdHxSk2MvyKt9kTejV3sI7b48TulbdI=";
+      url = "https://git.gay/sunworms/neovim-config/archive/2e52d08f266e87186159f1bf8598a2ec18cfa030.tar.gz";
+      sha256 = "sha256-i/256SKf4g1yjys8DbliUmtuk1knjZEYMEfvoaZBei0=";
     };
     date = "2026-09-26";
   };
@@ -86,10 +86,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.87";
+    version = "2.9.88";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.87/pcsx2-v2.9.87-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-XWyfU0vJB5aqRnFhNdQJG3zHFLpfoH8FsppRZjWw4YM=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.88/pcsx2-v2.9.88-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-Jg1TneHMRtHo7/LNQeQU0yb3IuJBhgVFAgMFsJV2CCM=";
     };
   };
   preservation = {
