@@ -1,17 +1,17 @@
 {
     "agenix": {
         "cargoLock": null,
-        "date": "2026-02-03",
+        "date": "2026-09-26",
         "extract": null,
         "name": "agenix",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-9VnK6Oqai65puVJ4WYtCTvlJeXxMzAp/69HhQuTdl/I=",
+            "sha256": "sha256-M1UINOIb0bKg3qGSsHNyo+1Dw7k5Msog2ArYAUkSfag=",
             "type": "tarball",
-            "url": "https://github.com/ryantm/agenix/archive/b027ee29d959fda4b60b57566d64c98a202e0feb.tar.gz"
+            "url": "https://github.com/ryantm/agenix/archive/3683254a858be188d482661d2d40dce345497435.tar.gz"
         },
-        "version": "b027ee29d959fda4b60b57566d64c98a202e0feb"
+        "version": "3683254a858be188d482661d2d40dce345497435"
     },
     "eden": {
         "cargoLock": null,
@@ -22,11 +22,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-SXIidIZdUXYeurjujNQaB+kNHShuHRFNLT7HNe1407s=",
+            "sha256": "sha256-40otBPqoS1Vl6eF/iaHjRmgZhitGUQPX5HtohD8Rsns=",
             "type": "url",
-            "url": "https://nightly.eden-emu.dev/v1790283511.dbeb73ee01/Eden-Linux-dbeb73ee01-amd64-gcc-standard.AppImage"
+            "url": "https://nightly.eden-emu.dev/v1790369717.bebc19da32/Eden-Linux-bebc19da32-amd64-gcc-standard.AppImage"
         },
-        "version": "v1790283511.dbeb73ee01/Eden-Linux-dbeb73ee01"
+        "version": "v1790369717.bebc19da32/Eden-Linux-bebc19da32"
     },
     "helium": {
         "cargoLock": null,
@@ -73,17 +73,17 @@
     },
     "niri-nix": {
         "cargoLock": null,
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "extract": null,
         "name": "niri-nix",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-bA+hNskqF72V2rv7UAR1xEObZRPi9ttpNlWxEMBI4jI=",
+            "sha256": "sha256-vE1BM9nWfusQ437QX9beTLhs5S2zAvdlmnrT9XYbacs=",
             "type": "tarball",
-            "url": "https://codeberg.org/BANanaD3V/niri-nix/archive/2eec2d4c88015d35a4708b8df5ca48833ad8a9e7.tar.gz"
+            "url": "https://codeberg.org/BANanaD3V/niri-nix/archive/926ca86fab82738fd1461b022ee11b4d61b9bf2e.tar.gz"
         },
-        "version": "2eec2d4c88015d35a4708b8df5ca48833ad8a9e7"
+        "version": "926ca86fab82738fd1461b022ee11b4d61b9bf2e"
     },
     "nix-index-database": {
         "cargoLock": null,
@@ -101,17 +101,17 @@
     },
     "nixpkgs": {
         "cargoLock": null,
-        "date": "2026-09-23",
+        "date": "2026-09-25",
         "extract": null,
         "name": "nixpkgs",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-xJ+X4hBtOcAFGBOe5nAMyMUeF9foJBmIOu3NjBqBycU=",
+            "sha256": "sha256-VVTPf+Hyd5ebpjBMHmrLMSBIeW6ls48Bqtosj7CNKLA=",
             "type": "tarball",
-            "url": "https://github.com/NixOS/nixpkgs/archive/4975466d324710c576dc11ad614684e6bd8cad8e.tar.gz"
+            "url": "https://github.com/NixOS/nixpkgs/archive/e94cb152ed51bd6e24eb4a41f1460252beb52cd2.tar.gz"
         },
-        "version": "4975466d324710c576dc11ad614684e6bd8cad8e"
+        "version": "e94cb152ed51bd6e24eb4a41f1460252beb52cd2"
     },
     "nsticky": {
         "cargoLock": null,
@@ -136,11 +136,11 @@
         "pinned": false,
         "src": {
             "name": null,
-            "sha256": "sha256-kXnOKPjkeES+ppB0ZJMCedRT1fZjrx9kuytdOcrenL4=",
+            "sha256": "sha256-XWyfU0vJB5aqRnFhNdQJG3zHFLpfoH8FsppRZjWw4YM=",
             "type": "url",
-            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.9.84/pcsx2-v2.9.84-linux-appimage-x64-Qt.AppImage"
+            "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.9.87/pcsx2-v2.9.87-linux-appimage-x64-Qt.AppImage"
         },
-        "version": "2.9.84"
+        "version": "2.9.87"
     },
     "preservation": {
         "cargoLock": null,
