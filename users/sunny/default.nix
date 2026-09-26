@@ -31,7 +31,7 @@ in {
   directory = "/home/sunny";
 
   packages = with pkgs; [
-    (import inputs.emacs-config.src)
+    (import inputs.neovim-config.src {inherit pkgs;})
     yaziUnfree
     lazygit
     imv

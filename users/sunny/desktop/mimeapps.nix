@@ -9,7 +9,7 @@
       "inode/directory"
     ];
 
-    "emacs.desktop" = [
+    "nvim.desktop" = [
       "text/plain"
       "text/x-markdown"
       "application/x-shellscript"

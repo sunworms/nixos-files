@@ -28,20 +28,6 @@
         },
         "version": "v1790283511.dbeb73ee01/Eden-Linux-dbeb73ee01"
     },
-    "emacs-config": {
-        "cargoLock": null,
-        "date": "2026-09-25",
-        "extract": null,
-        "name": "emacs-config",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-DMpN7X7/LqMm16OZRP2lZvzYPhI7fgzGrzQe3VssRIU=",
-            "type": "tarball",
-            "url": "https://git.gay/sunworms/emacs-config/archive/9d160e98c8259a1507888d4aab490b1a048aaf9c.tar.gz"
-        },
-        "version": "9d160e98c8259a1507888d4aab490b1a048aaf9c"
-    },
     "helium": {
         "cargoLock": null,
         "date": null,
@@ -70,6 +56,20 @@
             "url": "https://github.com/feel-co/hjem/archive/cef02450f2c18a7e2b9297ea8d366f9a597254f7.tar.gz"
         },
         "version": "cef02450f2c18a7e2b9297ea8d366f9a597254f7"
+    },
+    "neovim-config": {
+        "cargoLock": null,
+        "date": "2026-09-26",
+        "extract": null,
+        "name": "neovim-config",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-REilY+IKFdlsrdHxSk2MvyKt9kTejV3sI7b48TulbdI=",
+            "type": "tarball",
+            "url": "https://git.gay/sunworms/neovim-config/archive/e8d36c233ccd1699d3d6660b95ff92d0b7e36b58.tar.gz"
+        },
+        "version": "e8d36c233ccd1699d3d6660b95ff92d0b7e36b58"
     },
     "niri-nix": {
         "cargoLock": null,

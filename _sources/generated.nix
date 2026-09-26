@@ -23,15 +23,6 @@
       sha256 = "sha256-SXIidIZdUXYeurjujNQaB+kNHShuHRFNLT7HNe1407s=";
     };
   };
-  emacs-config = {
-    pname = "emacs-config";
-    version = "9d160e98c8259a1507888d4aab490b1a048aaf9c";
-    src = fetchTarball {
-      url = "https://git.gay/sunworms/emacs-config/archive/9d160e98c8259a1507888d4aab490b1a048aaf9c.tar.gz";
-      sha256 = "sha256-DMpN7X7/LqMm16OZRP2lZvzYPhI7fgzGrzQe3VssRIU=";
-    };
-    date = "2026-09-25";
-  };
   helium = {
     pname = "helium";
     version = "0.18.1.1";
@@ -48,6 +39,15 @@
       sha256 = "sha256-tycoVCB2KSVdy9ERT1lJGHdP9Hf4FHanaEY25hUxylw=";
     };
     date = "2026-09-22";
+  };
+  neovim-config = {
+    pname = "neovim-config";
+    version = "e8d36c233ccd1699d3d6660b95ff92d0b7e36b58";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/neovim-config/archive/e8d36c233ccd1699d3d6660b95ff92d0b7e36b58.tar.gz";
+      sha256 = "sha256-REilY+IKFdlsrdHxSk2MvyKt9kTejV3sI7b48TulbdI=";
+    };
+    date = "2026-09-26";
   };
   niri-nix = {
     pname = "niri-nix";

@@ -28,9 +28,9 @@ fetch.tarball = "https://codeberg.org/BANanaD3V/niri-nix/archive/$ver.tar.gz"
 src.github_tag = "lonerOrz/nsticky"
 fetch.tarball = "https://github.com/lonerOrz/nsticky/archive/$ver.tar.gz"
 
-[emacs-config]
-src.git = "https://git.gay/sunworms/emacs-config"
-fetch.tarball = "https://git.gay/sunworms/emacs-config/archive/$ver.tar.gz"
+[neovim-config]
+src.git = "https://git.gay/sunworms/neovim-config"
+fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"
 
 # binary packages
 [pcsx2]
