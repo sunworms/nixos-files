@@ -6,12 +6,6 @@
       };
       spawn = "kitty";
     };
-    "Mod+Shift+T" = {
-      _props = {
-        hotkey-overlay-title = "Layers";
-      };
-      spawn = ["foot" "sh" "-c" "niri msg layers; fish"];
-    };
     "Mod+A" = {
       _props = {
         hotkey-overlay-title = "Application Launcher";
