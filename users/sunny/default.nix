@@ -47,9 +47,12 @@ in {
   xdg.config.files = {
     "kanata/config.kbd".source = ./kanata.kbd;
 
-    "xdg-desktop-portal/umbriel-portals.conf".text = ''
+    "xdg-desktop-portal/niri-portals.conf".text = ''
       [preferred]
-      default=umbriel;gtk;
+      default=gnome;gtk;
+      org.freedesktop.impl.portal.Access=gtk;
+      org.freedesktop.impl.portal.Notification=gtk;
+      org.freedesktop.impl.portal.Secret=gnome-keyring;
       org.freedesktop.impl.portal.FileChooser=termfilechooser;
     '';
 

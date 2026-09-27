@@ -14,7 +14,10 @@
     useTextGreeter = true;
   };
 
-  programs.umbriel.enable = true;
+  programs.niri = {
+    enable = true;
+    useNautilus = false;
+  };
 
   xdg.portal.extraPortals = [
     pkgs.xdg-desktop-portal-termfilechooser
