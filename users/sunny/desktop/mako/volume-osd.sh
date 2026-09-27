@@ -20,7 +20,7 @@ if echo "$STATUS" | grep -q MUTED; then
         -u low \
         -h string:x-canonical-private-synchronous:volume \
         -h int:value:0 \
-        "󰝟 Muted"
+        "󰝟  Muted"
     exit 0
 fi
 
