@@ -59,7 +59,7 @@
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["volume-osd" "up"];
+      spawn = ["volume-osd" "mute"];
     };
     "XF86AudioMicMute" = {
       _props = {
