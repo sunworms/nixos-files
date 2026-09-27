@@ -73,6 +73,14 @@ input_path = "~/.config/matugen/templates/waybar.css"
 output_path = "~/.config/waybar/colors.css"
 post_hook = "pkill waybar && waybar -c ~/.config/waybar/config-1.jsonc > /dev/null 2>&1 & waybar -c ~/.config/waybar/config-2.jsonc > /dev/null 2>&1 &"
 
+[templates.yazi]
+input_path = "~/.config/matugen/templates/yazi.toml"
+output_path = "~/.config/yazi/flavors/matugen.yazi/flavor.toml"
+
+[templates.yazi-syntax]
+input_path = "~/.config/matugen/templates/yazi.tmTheme"
+output_path = "~/.config/yazi/flavors/matugen.yazi/tmtheme.xml"
+
 [templates.zathura]
 input_path = "~/.config/matugen/templates/zathurarc"
 output_path = "~/.config/zathura/zathurarc"

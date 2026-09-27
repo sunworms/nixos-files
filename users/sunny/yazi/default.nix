@@ -6,5 +6,11 @@
     "yazi/yazi.toml".source = (pkgs.formats.toml {}).generate "yazi.toml" (import ./yazi.nix);
     "yazi/init.lua".source = ./init.lua;
     "yazi/plugins".source = import ./plugins.nix {inherit pkgs;};
+    "yazi/theme.toml".source = (pkgs.formats.toml {}).generate "theme.toml" {
+      flavor = {
+        dark = "matugen";
+        light = "matugen";
+      };
+    };
   };
 }

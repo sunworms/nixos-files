@@ -33,6 +33,7 @@
       ".config/gtk-4.0"
       ".config/qt5ct"
       ".config/qt6ct"
+      ".config/yazi"
       ".config/zathura"
 
       ".config/net.imput.helium/Default"
