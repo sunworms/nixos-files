@@ -35,7 +35,7 @@
           gtk-theme-name=adw-gtk3
           gtk-icon-theme-name=Adwaita
           gtk-font-name=${config.fonts.sansSerif} 11
-          gtk-cursor-theme-name=volantes_cursors
+          gtk-cursor-theme-name=Adwaita
           gtk-cursor-theme-size=24
           gtk-application-prefer-dark-theme=1
         '';
@@ -71,13 +71,19 @@ in {
         [Icon Theme]
         Name=Default
         Comment=Default Cursor Theme
-        Inherits=volantes_cursors
+        Inherits=Adwaita
       '';
   };
 
   packages = with pkgs; [
     adw-gtk3
-    volantes-cursors
+    (gnome-themes-extra.overrideAttrs (oldAttrs: {
+      configureFlags = (oldAttrs.configureFlags or []) ++ ["--disable-gtk2-engine"];
+      buildInputs =
+        builtins.filter
+        (pkg: pkg.pname != "gtk+" && pkg.pname != "gtk-engine-murrine")
+        oldAttrs.buildInputs;
+    }))
     adwaita-icon-theme
     libsForQt5.qt5ct
     qt6Packages.qt6ct
@@ -94,7 +100,7 @@ in {
       ExecStart = "${
         pkgs.writeShellScript "set-gtk-settings" ''
           /usr/bin/env dconf write /org/gnome/desktop/interface/font-name "'${config.fonts.sansSerif} 11'"
-          /usr/bin/env dconf write /org/gnome/desktop/interface/cursor-theme-name "'volantes_cursors'"
+          /usr/bin/env dconf write /org/gnome/desktop/interface/cursor-theme-name "'Adwaita'"
           /usr/bin/env dconf write /org/gnome/desktop/interface/icon-theme-name "'Adwaita'"
           /usr/bin/env dconf write /org/gnome/desktop/interface/theme-name "'adw-gtk3'"
         ''

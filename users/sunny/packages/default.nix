@@ -10,7 +10,13 @@
   extraCompatPaths = lib.makeSearchPathOutput "steamcompattool" "" extraCompatPackages;
 
   extraPkgsList = with pkgs; [
-    volantes-cursors
+    (gnome-themes-extra.overrideAttrs (oldAttrs: {
+      configureFlags = (oldAttrs.configureFlags or []) ++ ["--disable-gtk2-engine"];
+      buildInputs =
+        builtins.filter
+        (pkg: pkg.pname != "gtk+" && pkg.pname != "gtk-engine-murrine")
+        oldAttrs.buildInputs;
+    }))
     gamescope
     libGLU
     noto-fonts

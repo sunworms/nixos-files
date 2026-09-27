@@ -16,7 +16,7 @@
   };
 
   cursor = {
-    xcursor-theme = "volantes_cursors";
+    xcursor-theme = "Adwaita";
     xcursor-size = 24;
   };
 }
