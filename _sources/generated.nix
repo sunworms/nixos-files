@@ -4,22 +4,23 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}: {
+}:
+{
   agenix = {
     pname = "agenix";
-    version = "07a33319a408a0c770f0fe5d0d98f5e7b4e5a5e7";
+    version = "9353cb29366a8535ac9483065284785fd48012a2";
     src = fetchTarball {
-      url = "https://github.com/ryantm/agenix/archive/07a33319a408a0c770f0fe5d0d98f5e7b4e5a5e7.tar.gz";
-      sha256 = "sha256-dLq4qfJvm2ZfkwGGdgWl/nsA2aavpQMrPQbNqbkLXKE=";
+      url = "https://github.com/ryantm/agenix/archive/9353cb29366a8535ac9483065284785fd48012a2.tar.gz";
+      sha256 = "sha256-/FjF9A8HVLVftjdmz1MPA2G0wSYWRaC628NTAsCqeyI=";
     };
-    date = "2026-09-26";
+    date = "2026-09-27";
   };
   eden = {
     pname = "eden";
-    version = "v1790369717.bebc19da32/Eden-Linux-bebc19da32";
+    version = "v1790454393.37fe911952/Eden-Linux-37fe911952";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1790369717.bebc19da32/Eden-Linux-bebc19da32-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-40otBPqoS1Vl6eF/iaHjRmgZhitGUQPX5HtohD8Rsns=";
+      url = "https://nightly.eden-emu.dev/v1790454393.37fe911952/Eden-Linux-37fe911952-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-Y+++1SwZoP0F2I7UVOhBQ9YOrFJFBFgSr9Z8VRSGCxM=";
     };
   };
   helium = {
@@ -41,10 +42,10 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "968696f5cda109f9d21bc3f2e814b64afbf9758b";
+    version = "d0725b92968dcaa7280c510e4166af54369b9591";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/968696f5cda109f9d21bc3f2e814b64afbf9758b.tar.gz";
-      sha256 = "sha256-Y+mGznJ6F+tBtx8C+71O64AMXFZh230BjARiHJzpgFE=";
+      url = "https://git.gay/sunworms/neovim-config/archive/d0725b92968dcaa7280c510e4166af54369b9591.tar.gz";
+      sha256 = "sha256-fFVYa7KW6jFFNC0rrhhkVdfsRh9S3Z4WhV8Ud7Sz48M=";
     };
     date = "2026-09-27";
   };
@@ -67,28 +68,28 @@
   };
   nix-index-database = {
     pname = "nix-index-database";
-    version = "9ad722673ab3b3f91f02135e53775825b240b869";
+    version = "161d7c91accd93034bb3c295224d9d895a778573";
     src = fetchTarball {
-      url = "https://github.com/nix-community/nix-index-database/archive/9ad722673ab3b3f91f02135e53775825b240b869.tar.gz";
-      sha256 = "sha256-Dkg4VKPmDPqTwaiw2WH5br73tXoL1qrOO0xJnR4TlcA=";
+      url = "https://github.com/nix-community/nix-index-database/archive/161d7c91accd93034bb3c295224d9d895a778573.tar.gz";
+      sha256 = "sha256-Gbf/U9ptJhQh0qnDnJ/+a8MAcq1HXunbArUTHR2wNYk=";
     };
-    date = "2026-09-20";
+    date = "2026-09-27";
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "e94cb152ed51bd6e24eb4a41f1460252beb52cd2";
+    version = "e158d9ed9b51c98974c5e66e1ba1c9e0255fecaa";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/e94cb152ed51bd6e24eb4a41f1460252beb52cd2.tar.gz";
-      sha256 = "sha256-VVTPf+Hyd5ebpjBMHmrLMSBIeW6ls48Bqtosj7CNKLA=";
+      url = "https://github.com/NixOS/nixpkgs/archive/e158d9ed9b51c98974c5e66e1ba1c9e0255fecaa.tar.gz";
+      sha256 = "sha256-hKlVl12B1dF0Q5vd9dY3lIJM5mFGWYSlXwSLAqHZ1+s=";
     };
-    date = "2026-09-25";
+    date = "2026-09-26";
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.88";
+    version = "2.9.92";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.88/pcsx2-v2.9.88-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-Jg1TneHMRtHo7/LNQeQU0yb3IuJBhgVFAgMFsJV2CCM=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.92/pcsx2-v2.9.92-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-K9nMu6Ag+UvsfsegtaAZzIrmziKnygb0Mqqv4Tz9er4=";
     };
   };
   preservation = {
