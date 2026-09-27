@@ -7,7 +7,7 @@
   imports = [
     ./kitty
     ./fish
-    ./niri
+    ./umbriel
     ./noctalia
   ];
 
