@@ -3,6 +3,7 @@
     "Mod+T" = {
       _props = {
         hotkey-overlay-title = "Open a Terminal: kitty";
+        repeat = false;
       };
       spawn = "kitty";
     };
@@ -10,109 +11,97 @@
       _props = {
         hotkey-overlay-title = "Application Launcher";
       };
-      spawn = ["noctalia" "msg" "panel-toggle" "launcher"];
+      spawn = ["fuzzel"];
     };
     "Mod+V" = {
       _props = {
         hotkey-overlay-title = "Clipboard";
       };
-      spawn = ["noctalia" "msg" "panel-toggle" "clipboard"];
+      spawn = ["cliphist-fuzzel-img"];
     };
     "Mod+Escape" = {
       _props = {
         hotkey-overlay-title = "Power Menu";
       };
-      spawn = ["noctalia" "msg" "panel-toggle" "session"];
-    };
-    "XF86Tools" = {
-      _props = {
-        hotkey-overlay-title = "Noctalia Settings";
-      };
-      spawn = ["noctalia" "msg" "settings-toggle"];
+      spawn = ["fuzzel-logout-menu"];
     };
     "XF86Launch5" = {
       _props = {
         hotkey-overlay-title = "Lock the Screen";
       };
-      spawn = ["noctalia" "msg" "session" "lock"];
+      spawn = ["gtklock"];
     };
     "XF86Launch6" = {
       _props = {
         hotkey-overlay-title = "Window Switcher";
       };
-      spawn = ["noctalia" "msg" "window-switcher"];
-    };
-    "XF86Calculator" = {
-      _props = {
-        hotkey-overlay-title = "Open Calendar";
-      };
-      spawn = ["noctalia" "msg" "panel-toggle" "control-center" "calendar"];
+      spawn = ["niri-window-switcher"];
     };
     "XF86Favorites" = {
       _props = {
         hotkey-overlay-title = "Emoji Selector";
       };
-      spawn = ["noctalia" "msg" "panel-toggle" "launcher" "/emo"];
-    };
-    "XF86PowerOff" = {
-      _props = {
-        hotkey-overlay-title = "Lock and Suspend";
-      };
-      spawn = ["noctalia" "msg" "session" "lock-and-suspend"];
+      spawn = ["rofimoji" "-a" "copy"];
     };
     "XF86AudioRaiseVolume" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["noctalia" "msg" "volume-up" "5"];
+      spawn = ["volume-osd" "up"];
     };
     "XF86AudioLowerVolume" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["noctalia" "msg" "volume-down" "5"];
+      spawn = ["volume-osd" "down"];
     };
     "XF86AudioMute" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["noctalia" "msg" "volume-mute"];
+      spawn = ["volume-osd" "up"];
     };
     "XF86AudioMicMute" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["noctalia" "msg" "mic-mute"];
+      spawn = ["wpctl" "set-mute" "@DEFAULT_SOURCE@" "toggle"];
     };
     "XF86MonBrightnessUp" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["noctalia" "msg" "brightness-up" "5"];
+      spawn = ["bright-osd" "up"];
     };
     "XF86MonBrightnessDown" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["noctalia" "msg" "brightness-down" "5"];
+      spawn = ["bright-osd" "down"];
     };
     "XF86AudioPlay" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["noctalia" "msg" "media" "toggle"];
+      spawn = ["playerctl" "play-pause"];
+    };
+    "XF86AudioStop" = {
+      _props = {
+        allow-when-locked = true;
+      };
+      spawn = ["playerctl" "stop"];
     };
     "XF86AudioPrev" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["noctalia" "msg" "media" "previous"];
+      spawn = ["playerctl" "previous"];
     };
     "XF86AudioNext" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["noctalia" "msg" "media" "next"];
+      spawn = ["playerctl" "next"];
     };
     "Mod+Space" = {
       _props = {

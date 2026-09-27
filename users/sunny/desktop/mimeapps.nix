@@ -1,6 +1,6 @@
 {lib}: let
   apps = {
-    "org.gnome.Papers.desktop" = [
+    "org.pwmt.zathura.desktop" = [
       "application/pdf"
       "image/vnd.djvu"
     ];

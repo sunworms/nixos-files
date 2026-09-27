@@ -23,5 +23,7 @@
     pkgs.xdg-desktop-portal-termfilechooser
   ];
 
+  security.pam.services.gtklock = {};
+
   services.speechd.enable = false;
 }

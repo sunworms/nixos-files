@@ -1,6 +1,6 @@
 {
   include = {
-    _args = ["noctalia.kdl"];
+    _args = ["colors.kdl"];
     _props.optional = true;
   };
 

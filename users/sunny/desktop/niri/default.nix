@@ -17,7 +17,10 @@ in {
     "niri/config.kdl".source = validatedConfigFor pkgs.niri (mkNiriKDL (import ./config {inherit pkgs;}));
   };
 
-  packages = [
-    (pkgs.callPackage "${inputs.niri-float-sticky.src}/package.nix" {})
+  packages = with pkgs; [
+    (callPackage "${inputs.niri-float-sticky.src}/package.nix" {})
+    gtklock
+    swayidle
+    soteria
   ];
 }

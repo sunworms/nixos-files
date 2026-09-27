@@ -1,6 +1,6 @@
 {config}: {
   include = [
-    "themes/noctalia.conf"
+    "themes/Matugen.conf"
   ];
   font_family = "${config.fonts.monospace}";
   font_size = 11.25;

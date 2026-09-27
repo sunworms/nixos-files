@@ -59,17 +59,17 @@
     },
     "neovim-config": {
         "cargoLock": null,
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "extract": null,
         "name": "neovim-config",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-i/256SKf4g1yjys8DbliUmtuk1knjZEYMEfvoaZBei0=",
+            "sha256": "sha256-Y+mGznJ6F+tBtx8C+71O64AMXFZh230BjARiHJzpgFE=",
             "type": "tarball",
-            "url": "https://git.gay/sunworms/neovim-config/archive/2e52d08f266e87186159f1bf8598a2ec18cfa030.tar.gz"
+            "url": "https://git.gay/sunworms/neovim-config/archive/968696f5cda109f9d21bc3f2e814b64afbf9758b.tar.gz"
         },
-        "version": "2e52d08f266e87186159f1bf8598a2ec18cfa030"
+        "version": "968696f5cda109f9d21bc3f2e814b64afbf9758b"
     },
     "niri-float-sticky": {
         "cargoLock": null,

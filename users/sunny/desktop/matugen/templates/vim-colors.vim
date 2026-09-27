@@ -11,22 +11,22 @@ set background=dark
 " Terminal Colors (g:terminal_color_x)
 " ==========================================================================
 if has('nvim')
-  let g:terminal_color_0  = "{{ colors.terminal_normal_black.default.hex }}"
-  let g:terminal_color_1  = "{{ colors.terminal_normal_red.default.hex }}"
-  let g:terminal_color_2  = "{{ colors.terminal_normal_green.default.hex }}"
-  let g:terminal_color_3  = "{{ colors.terminal_normal_yellow.default.hex }}"
-  let g:terminal_color_4  = "{{ colors.terminal_normal_blue.default.hex }}"
-  let g:terminal_color_5  = "{{ colors.terminal_normal_magenta.default.hex }}"
-  let g:terminal_color_6  = "{{ colors.terminal_normal_cyan.default.hex }}"
-  let g:terminal_color_7  = "{{ colors.terminal_normal_white.default.hex }}"
-  let g:terminal_color_8  = "{{ colors.terminal_bright_black.default.hex }}"
-  let g:terminal_color_9  = "{{ colors.terminal_bright_red.default.hex }}"
-  let g:terminal_color_10 = "{{ colors.terminal_bright_green.default.hex }}"
-  let g:terminal_color_11 = "{{ colors.terminal_bright_yellow.default.hex }}"
-  let g:terminal_color_12 = "{{ colors.terminal_bright_blue.default.hex }}"
-  let g:terminal_color_13 = "{{ colors.terminal_bright_magenta.default.hex }}"
-  let g:terminal_color_14 = "{{ colors.terminal_bright_cyan.default.hex }}"
-  let g:terminal_color_15 = "{{ colors.terminal_bright_white.default.hex }}"
+  let g:terminal_color_0  = "{{ base16.base00.default.hex }}"
+  let g:terminal_color_1  = "{{ base16.base01.default.hex }}"
+  let g:terminal_color_2  = "{{ base16.base02.default.hex }}"
+  let g:terminal_color_3  = "{{ base16.base03.default.hex }}"
+  let g:terminal_color_4  = "{{ base16.base04.default.hex }}"
+  let g:terminal_color_5  = "{{ base16.base05.default.hex }}"
+  let g:terminal_color_6  = "{{ base16.base06.default.hex }}"
+  let g:terminal_color_7  = "{{ base16.base07.default.hex }}"
+  let g:terminal_color_8  = "{{ base16.base08.default.hex }}"
+  let g:terminal_color_9  = "{{ base16.base09.default.hex }}"
+  let g:terminal_color_10 = "{{ base16.base0a.default.hex }}"
+  let g:terminal_color_11 = "{{ base16.base0b.default.hex }}"
+  let g:terminal_color_12 = "{{ base16.base0c.default.hex }}"
+  let g:terminal_color_13 = "{{ base16.base0d.default.hex }}"
+  let g:terminal_color_14 = "{{ base16.base0e.default.hex }}"
+  let g:terminal_color_15 = "{{ base16.base0f.default.hex }}"
 endif
 
 " ==========================================================================
@@ -48,15 +48,15 @@ hi CursorColumn  guibg={{ colors.surface_container_low.default.hex }} guifg=NONE
 hi ColorColumn   guibg={{ colors.surface_container_low.default.hex }} guifg=NONE
 hi MatchParen    guibg={{ colors.primary_container.default.hex }} guifg={{ colors.on_primary_container.default.hex }} gui=bold
 
-hi LineNr        guibg=NONE guifg={{ colors.outline_variant.default.hex }}
-hi CursorLineNr  guibg=NONE guifg={{ colors.primary.default.hex }} gui=bold
+hi LineNr        guibg=NONE guifg={{ colors.outline.default.hex }}
+hi CursorLineNr  guibg=NONE guifg={{ colors.surface_tint.default.hex }} gui=bold
 hi SignColumn    guibg=NONE guifg={{ colors.outline.default.hex }}
 hi FoldColumn    guibg=NONE guifg={{ colors.outline.default.hex }}
-hi Folded        guibg={{ colors.surface_container_low.default.hex }} guifg={{ colors.outline.default.hex }} gui=italic
+hi Folded        guibg={{ colors.surface_container_low.default.hex }} guifg={{ colors.on_surface_variant.default.hex }} gui=italic
 
-hi Visual        guibg={{ colors.primary_container.default.hex }} guifg={{ colors.on_surface.default.hex }}
-hi VisualNOS     guibg={{ colors.primary_container.default.hex }} guifg={{ colors.on_surface.default.hex }}
-hi Selection     guibg={{ colors.primary_container.default.hex }} guifg={{ colors.on_surface.default.hex }}
+hi Visual        guibg={{ colors.primary_container.default.hex }} guifg={{ colors.on_primary_container.default.hex }}
+hi VisualNOS     guibg={{ colors.primary_container.default.hex }} guifg={{ colors.on_primary_container.default.hex }}
+hi Selection     guibg={{ colors.primary_container.default.hex }} guifg={{ colors.on_primary_container.default.hex }}
 
 hi Title         guibg=NONE guifg={{ colors.primary.default.hex }} gui=bold
 hi Directory     guibg=NONE guifg={{ colors.primary.default.hex }}
@@ -126,12 +126,12 @@ hi Question      guibg=NONE guifg={{ colors.primary.default.hex }}
 " ==========================================================================
 " :terminal buffers
 " ==========================================================================
-hi Terminal      guibg={{ colors.terminal_background.default.hex }} guifg={{ colors.terminal_foreground.default.hex }}
+hi Terminal      guibg={{ base16.base00.default.hex }} guifg={{ base16.base05.default.hex }}
 
 " ==========================================================================
 " Legacy Syntax Highlighting
 " ==========================================================================
-hi Comment        guibg=NONE guifg={{ colors.outline.default.hex }} gui=italic
+hi Comment        guibg=NONE guifg={{ colors.on_surface_variant.default.hex }} gui=italic
 
 hi Constant       guibg=NONE guifg={{ colors.tertiary.default.hex }}
 hi String         guibg=NONE guifg={{ colors.secondary_fixed.default.hex }}
@@ -295,8 +295,8 @@ hi @punctuation.bracket   guibg=NONE guifg={{ colors.outline.default.hex }}
 hi @punctuation.special   guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }}
 
 " Comments
-hi @comment               guibg=NONE guifg={{ colors.outline.default.hex }} gui=italic
-hi @comment.documentation guibg=NONE guifg={{ colors.outline.default.hex }} gui=italic
+hi @comment               guibg=NONE guifg={{ colors.on_surface_variant.default.hex }} gui=italic
+hi @comment.documentation guibg=NONE guifg={{ colors.on_surface_variant.default.hex }} gui=italic
 hi @comment.error         guibg=NONE guifg={{ colors.error.default.hex }} gui=bold
 hi @comment.warning       guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=bold
 hi @comment.todo          guibg=NONE guifg={{ colors.error.default.hex }} gui=bold,underline
@@ -314,7 +314,7 @@ hi @markup.heading.3     guibg=NONE guifg={{ colors.tertiary.default.hex }} gui=
 hi @markup.heading.4     guibg=NONE guifg={{ colors.primary_fixed_dim.default.hex }} gui=bold
 hi @markup.heading.5     guibg=NONE guifg={{ colors.secondary_fixed_dim.default.hex }} gui=bold
 hi @markup.heading.6     guibg=NONE guifg={{ colors.tertiary_fixed_dim.default.hex }} gui=bold
-hi @markup.quote         guibg=NONE guifg={{ colors.outline.default.hex }} gui=italic
+hi @markup.quote         guibg=NONE guifg={{ colors.on_surface_variant.default.hex }} gui=italic
 hi @markup.math          guibg=NONE guifg={{ colors.tertiary.default.hex }}
 hi @markup.link          guibg=NONE guifg={{ colors.primary.default.hex }} gui=underline
 hi @markup.link.label    guibg=NONE guifg={{ colors.secondary.default.hex }}
@@ -339,7 +339,7 @@ hi @diff.delta guibg=NONE guifg={{ colors.tertiary.default.hex }}
 " Native Neovim LSP Semantic Tokens (@lsp.type.*)
 " --------------------------------------------------------------------------
 hi @lsp.type.class         guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
-hi @lsp.type.comment       guibg=NONE guifg={{ colors.outline.default.hex }} gui=italic
+hi @lsp.type.comment       guibg=NONE guifg={{ colors.on_surface_variant.default.hex }} gui=italic
 hi @lsp.type.enum          guibg=NONE guifg={{ colors.tertiary_fixed.default.hex }}
 hi @lsp.type.enumMember    guibg=NONE guifg={{ colors.tertiary.default.hex }}
 hi @lsp.type.function      guibg=NONE guifg={{ colors.primary.default.hex }}
@@ -369,7 +369,7 @@ hi GitSignsDelete guibg=NONE guifg={{ colors.error.default.hex }}
 hi TelescopeNormal          guibg={{ colors.surface_container.default.hex }} guifg={{ colors.on_surface.default.hex }}
 hi TelescopeBorder          guibg={{ colors.surface_container.default.hex }} guifg={{ colors.outline.default.hex }}
 hi TelescopePromptNormal    guibg={{ colors.surface_container_high.default.hex }} guifg={{ colors.on_surface.default.hex }}
-hi TelescopePromptBorder    guibg={{ colors.surface_container_high.default.hex }} guifg={{ colors.surface_container_high.default.hex }}
+hi TelescopePromptBorder    guibg={{ colors.surface_container_high.default.hex }} guifg={{ colors.outline_variant.default.hex }}
 hi TelescopePromptTitle     guibg={{ colors.primary.default.hex }} guifg={{ colors.on_primary.default.hex }} gui=bold
 hi TelescopeSelection       guibg={{ colors.surface_container_highest.default.hex }} guifg={{ colors.on_surface.default.hex }}
 hi TelescopeSelectionCaret  guibg={{ colors.surface_container_highest.default.hex }} guifg={{ colors.primary.default.hex }}

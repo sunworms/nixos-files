@@ -2,11 +2,19 @@
   spawn-sh-at-startup = [
     {_args = ["kanata --cfg ~/.config/kanata/config.kbd"];}
     {_args = ["niri-float-sticky -title '^Picture-in-Picture$|^Picture in picture$'"];}
+    {_args = ["waybar -c ~/.config/waybar/config-1.jsonc"];}
+    {_args = ["waybar -c ~/.config/waybar/config-2.jsonc"];}
+    {_args = ["swayidle -w timeout 300 'gtklock -d' timeout 600 'niri msg action power-off-monitors' after-resume 'niri msg action power-on-monitors' before-sleep 'gtklock -d'"];}
   ];
 
   spawn-at-startup = [
+    {_args = ["soteria"];}
+    {_args = ["awww-daemon"];}
+    {_args = ["playerctld"];}
+    {_args = ["nm-applet"];}
+    {_args = ["wl-paste" "--watch" "cliphist" "store"];}
+    {_args = ["mako"];}
     {_args = ["warp-taskbar"];}
-    {_args = ["noctalia"];}
     {_args = ["wl-clip-persist" "--clipboard" "regular"];}
   ];
 }

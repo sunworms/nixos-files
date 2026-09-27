@@ -5,10 +5,16 @@
   ...
 }: {
   imports = [
+    ./btop
     ./kitty
     ./fish
     ./niri
-    ./noctalia
+    ./mako
+    ./matugen
+    ./waybar
+    ./fuzzel
+    ./scripts
+    ./desktop-files.nix
   ];
 
   files = {
@@ -28,5 +34,9 @@
     hyfetch
     git
     xwayland-satellite
+    awww
+    playerctl
+    brightnessctl
+    pwvucontrol
   ];
 }
