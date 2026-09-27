@@ -18,6 +18,7 @@
 
       ".ssh"
 
+      ".cache/cliphist"
       ".cache/awww"
       ".cache/nix"
 
