@@ -71,6 +71,20 @@
         },
         "version": "2e52d08f266e87186159f1bf8598a2ec18cfa030"
     },
+    "niri-float-sticky": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "niri-float-sticky",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "sha256": "sha256-yXrVjHJEK1hoVywiD4YxOYzXqa8kC+qGOlkKb/JRz2g=",
+            "type": "tarball",
+            "url": "https://github.com/probeldev/niri-float-sticky/archive/v0.0.9.tar.gz"
+        },
+        "version": "v0.0.9"
+    },
     "niri-nix": {
         "cargoLock": null,
         "date": "2026-09-26",
@@ -112,20 +126,6 @@
             "url": "https://github.com/NixOS/nixpkgs/archive/e94cb152ed51bd6e24eb4a41f1460252beb52cd2.tar.gz"
         },
         "version": "e94cb152ed51bd6e24eb4a41f1460252beb52cd2"
-    },
-    "nsticky": {
-        "cargoLock": null,
-        "date": null,
-        "extract": null,
-        "name": "nsticky",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-ysKHQwPbiPFYUzAbewYKUF3o2IAjR3Jt2a6uBgqRgGU=",
-            "type": "tarball",
-            "url": "https://github.com/lonerOrz/nsticky/archive/v0.4.0.tar.gz"
-        },
-        "version": "v0.4.0"
     },
     "pcsx2": {
         "cargoLock": null,

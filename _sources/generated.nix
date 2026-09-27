@@ -4,8 +4,7 @@
   fetchurl,
   fetchFromGitHub,
   dockerTools,
-}:
-{
+}: {
   agenix = {
     pname = "agenix";
     version = "07a33319a408a0c770f0fe5d0d98f5e7b4e5a5e7";
@@ -49,6 +48,14 @@
     };
     date = "2026-09-26";
   };
+  niri-float-sticky = {
+    pname = "niri-float-sticky";
+    version = "v0.0.9";
+    src = fetchTarball {
+      url = "https://github.com/probeldev/niri-float-sticky/archive/v0.0.9.tar.gz";
+      sha256 = "sha256-yXrVjHJEK1hoVywiD4YxOYzXqa8kC+qGOlkKb/JRz2g=";
+    };
+  };
   niri-nix = {
     pname = "niri-nix";
     version = "926ca86fab82738fd1461b022ee11b4d61b9bf2e";
@@ -75,14 +82,6 @@
       sha256 = "sha256-VVTPf+Hyd5ebpjBMHmrLMSBIeW6ls48Bqtosj7CNKLA=";
     };
     date = "2026-09-25";
-  };
-  nsticky = {
-    pname = "nsticky";
-    version = "v0.4.0";
-    src = fetchTarball {
-      url = "https://github.com/lonerOrz/nsticky/archive/v0.4.0.tar.gz";
-      sha256 = "sha256-ysKHQwPbiPFYUzAbewYKUF3o2IAjR3Jt2a6uBgqRgGU=";
-    };
   };
   pcsx2 = {
     pname = "pcsx2";
