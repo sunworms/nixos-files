@@ -10,11 +10,6 @@
       community_ids = ["yazi"];
 
       user = {
-        variables = {
-          input_path = "~/.config/noctalia/templates/variables.fish";
-          output_path = "~/.config/foot/variables.fish";
-          post_hook = "chmod +x ~/.config/foot/variables.fish && ~/.config/foot/reload.fish";
-        };
         vim-colors = {
           input_path = "~/.config/noctalia/templates/vim-colors.vim";
           output_path = "~/.cache/noctalia/colors.vim";
