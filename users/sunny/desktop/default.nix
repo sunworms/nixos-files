@@ -38,5 +38,6 @@
     playerctl
     brightnessctl
     pwvucontrol
+    blueman
   ];
 }
