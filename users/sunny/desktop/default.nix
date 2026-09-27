@@ -39,5 +39,6 @@
     brightnessctl
     pwvucontrol
     blueman
+    copyq
   ];
 }

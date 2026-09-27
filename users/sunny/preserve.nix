@@ -38,6 +38,7 @@
       ".config/net.imput.helium/Default"
       ".config/rclone"
       ".config/fish"
+      ".config/copyq"
 
       ".config/azahar-emu"
       ".config/eden"
@@ -47,6 +48,7 @@
       ".config/ppsspp"
       ".config/qBittorrent"
 
+      ".local/share/copyq"
       ".local/share/color-schemes"
       ".local/share/Steam"
       ".local/share/gvfs-metadata"

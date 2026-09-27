@@ -17,7 +17,7 @@
       _props = {
         hotkey-overlay-title = "Clipboard";
       };
-      spawn = ["cliphist-fuzzel-img"];
+      spawn = ["copyq" "toggle"];
     };
     "Mod+Escape" = {
       _props = {

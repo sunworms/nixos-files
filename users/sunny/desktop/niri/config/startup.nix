@@ -13,9 +13,9 @@
     {_args = ["playerctld"];}
     {_args = ["nm-applet"];}
     {_args = ["blueman-applet"];}
-    {_args = ["wl-paste" "--watch" "cliphist" "store"];}
     {_args = ["mako"];}
     {_args = ["warp-taskbar"];}
+    {_args = ["copyq"];}
     {_args = ["wl-clip-persist" "--clipboard" "regular"];}
   ];
 }

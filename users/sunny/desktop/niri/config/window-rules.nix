@@ -25,7 +25,10 @@
       open-floating = true;
     }
     {
-      match._props.app-id = "xdg_filechooser";
+      match = [
+        {_props.app-id = "^xdg_filechooser";}
+        {_props.app-id._raw = ''r#"^com\.github\.hluk\.copyq$"#'';}
+      ];
       open-floating = true;
       default-column-width = {
         fixed = 900;
