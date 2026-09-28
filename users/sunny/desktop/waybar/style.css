@@ -15,14 +15,20 @@
 
 window#waybar,
 window#waybar > box {
-    background: @base;
+    background: @crust;
     color: @text;
 }
 
 tooltip {
-    background: @crust;
+    background: @base;
     color: @text;
     border-radius: 6px;
+}
+
+#tray menu {
+    background: @base;
+    color: @text;
+    padding: 4px;
 }
 
 tooltip label {
@@ -50,20 +56,20 @@ tooltip label {
     padding: 4px;
     border-radius: 6px;
 
-    background: @crust;
+    background: @base;
     color: @text;
 }
 
 #workspaces button.active,
 #taskbar button.active {
     background: @blue;
-    color: @crust;
+    color: @base;
 }
 
 #workspaces button:hover,
 #taskbar button:hover,
 #custom-launcher:hover {
-    background: @crust;
+    background: @base;
     color: @subtext0;
 }
 
