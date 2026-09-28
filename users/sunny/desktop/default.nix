@@ -10,7 +10,6 @@
     ./fish
     ./niri
     ./mako
-    ./waybar
     ./fuzzel
     ./clipse
     ./scripts
@@ -29,6 +28,7 @@
       "Added Associations" = (import ./mimeapps.nix {inherit lib;}).addedApps;
     };
     "zathura/zathurarc".source = ./zathurarc;
+    "ironbar".source = ./ironbar;
   };
 
   packages = with pkgs; [
@@ -36,9 +36,11 @@
     git
     xwayland-satellite
     awww
+    ironbar
     playerctl
     brightnessctl
     pwvucontrol
     blueman
+    networkmanagerapplet
   ];
 }

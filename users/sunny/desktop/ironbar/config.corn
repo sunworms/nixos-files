@@ -1,0 +1,65 @@
+let {
+	$clock = {
+		type = "clock"
+		format = "%d/%m/%y %H:%M"
+		format_popup = ""
+	}
+	
+	$hint_label = {
+		type = "label"
+		name = "hint_label"
+		label = ""
+		on_mouse_enter = "ironbar bar main_bar show"
+	}
+	
+	$tray_menu = {
+		type = "tray"
+    icon_size = 24
+    on_click_left = "default"
+    on_click_right = "menu"
+	}
+	
+	$workspaces = {
+		type = "workspaces"
+	}
+
+  $battery = {
+    type = "battery"
+    show_if = "ls /sys/class/power_supply/ | grep --quiet '^BAT'"
+  }
+	
+	$left = [ $workspaces ]
+	$middle = [ $clock ]
+	$right = [ $tray_menu $battery ]
+}
+
+in {
+	icon_theme = "Adwaita"
+	
+	monitors.eDP-1 = [
+		{
+			name = "hint_bar"
+			position = "bottom"
+			anchor_to_edges = false
+			exclusive_zone = false
+			height = 1 // Real height is the font-size for the #hint_label in the style.css
+			
+			start = []
+			center = [ $hint_label ]
+			end = []
+		}
+		{
+			name = "main_bar"
+			position = "bottom"
+			anchor_to_edges = false
+			height = 42
+			autohide = 200
+			popup_gap = 4
+      popup_autohide = true
+			
+			start = $left
+			center = $middle
+			end = $right
+		}
+	]
+}

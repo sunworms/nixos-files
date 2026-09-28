@@ -59,7 +59,7 @@
       };
     }
     {
-      geometry-corner-radius = 0;
+      geometry-corner-radius = 6;
       clip-to-geometry = true;
       draw-border-with-background = false;
     }
