@@ -21,3 +21,7 @@ width=240
 height=60
 default-timeout=1500
 anchor=top-right
+
+[actionable]
+on-button-right=exec makoctl menu -n "$id" "fuzzel -d"
+on-button-left=invoke-default-action
