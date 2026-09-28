@@ -85,6 +85,10 @@ popover contents {
 	background-color: @base;
 }
 
+.popup-clock .calendar grid label.day-number.today:selected {
+  color: @base;
+}
+
 .popup-clock .calendar-clock {
 	font-size: 0px;
 }
