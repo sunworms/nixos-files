@@ -27,7 +27,7 @@
     {
       match = [
         {_props.app-id = "^xdg_filechooser";}
-        {_props.app-id._raw = ''r#"^com\.github\.hluk\.copyq$"#'';}
+        {_props.app-id = "^clipse$";}
       ];
       open-floating = true;
       default-column-width = {

@@ -1,0 +1,1 @@
+  packages = with pkgs; [clipse];

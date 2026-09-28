@@ -15,7 +15,7 @@
     {_args = ["blueman-applet"];}
     {_args = ["mako"];}
     {_args = ["warp-taskbar"];}
-    {_args = ["copyq"];}
+    {_args = ["clipse" "-listen"];}
     {_args = ["wl-clip-persist" "--clipboard" "regular"];}
   ];
 }

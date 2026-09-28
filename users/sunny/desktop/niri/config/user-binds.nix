@@ -17,7 +17,7 @@
       _props = {
         hotkey-overlay-title = "Clipboard";
       };
-      spawn = ["copyq" "toggle"];
+      spawn = ["kitty" "--app-id" "clipse" "clipse"];
     };
     "Mod+Escape" = {
       _props = {
