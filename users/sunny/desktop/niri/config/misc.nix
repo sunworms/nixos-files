@@ -32,12 +32,6 @@
 
   animations = {};
 
-  switch-events = {
-    lid-close = {
-      spawn = ["noctalia" "msg" "session" "lock-and-suspend"];
-    };
-  };
-
   prefer-no-csd = [];
 
   recent-windows = {
