@@ -89,7 +89,7 @@ popover contents {
 	font-size: 0px;
 }
 
-#tray {
+#tray_popup {
 	min-width: 34px;
 	min-height: 32px;
 }

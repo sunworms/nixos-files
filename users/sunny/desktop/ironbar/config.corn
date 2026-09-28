@@ -11,12 +11,25 @@ let {
 		label = ""
 		on_mouse_enter = "ironbar bar main_bar show"
 	}
+
+  $tray_button = {
+		type = "button"
+		name = "tray_button"
+		label = "<span font_size='18pt'></span>"
+		on_click = "popup:toggle"
+	}
+
+	$tray_popup = {
+		type = "tray"
+		name = "tray_popup"
+    icon_size = 24
+	}
 	
 	$tray_menu = {
-		type = "tray"
-    icon_size = 24
-    on_click_left = "default"
-    on_click_right = "menu"
+		type = "custom"
+		name = "tray_menu"
+		bar = [ $tray_button ]
+		popup = [ $tray_popup ]
 	}
 	
 	$workspaces = {
