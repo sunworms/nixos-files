@@ -20,7 +20,7 @@ let
         [
           ./hosts/${hostVars.hostname}/configuration.nix
           {
-            nix.nixPath = [
+            nix.settings.nix-path = [
               "nixpkgs=${inputs.nixpkgs.src}"
             ];
           }
