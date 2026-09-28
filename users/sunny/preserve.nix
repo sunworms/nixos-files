@@ -24,6 +24,7 @@
       ".config/net.imput.helium/Default"
       ".config/rclone"
       ".config/fish"
+      ".config/clipse"
 
       ".config/azahar-emu"
       ".config/eden"
