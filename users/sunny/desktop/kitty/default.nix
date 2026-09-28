@@ -32,5 +32,8 @@ in {
     '')
   ];
 
-  xdg.config.files."kitty/kitty.conf".text = toKittyConfig (import ./kitty.nix {inherit config;});
+  xdg.config.files = {
+    "kitty/kitty.conf".text = toKittyConfig (import ./kitty.nix {inherit config;});
+    "kitty/themes/mocha.conf".source = ./mocha.conf;
+  };
 }

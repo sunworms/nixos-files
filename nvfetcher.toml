@@ -32,6 +32,10 @@ fetch.tarball = "https://github.com/probeldev/niri-float-sticky/archive/$ver.tar
 src.git = "https://git.gay/sunworms/neovim-config"
 fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"
 
+[yazi-flavors]
+src.git = "https://github.com/yazi-rs/flavors"
+fetch.tarball = "https://github.com/yazi-rs/flavors/archive/$ver.tar.gz"
+
 # binary packages
 [pcsx2]
 src.cmd = "curl -sL 'https://api.github.com/repos/PCSX2/pcsx2/releases?per_page=1' | grep -oP '\"tag_name\":\\s*\"\\K[^\"]+'"

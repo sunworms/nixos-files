@@ -10,9 +10,9 @@
     ./fish
     ./niri
     ./mako
-    ./matugen
     ./waybar
     ./fuzzel
+    ./clipse
     ./scripts
     ./desktop-files.nix
   ];
@@ -28,6 +28,7 @@
       "Default Applications" = (import ./mimeapps.nix {inherit lib;}).defaultApps;
       "Added Associations" = (import ./mimeapps.nix {inherit lib;}).addedApps;
     };
+    "zathura/zathurarc".source = ./zathurarc;
   };
 
   packages = with pkgs; [
@@ -39,6 +40,5 @@
     brightnessctl
     pwvucontrol
     blueman
-    copyq
   ];
 }

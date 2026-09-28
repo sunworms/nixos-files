@@ -5,4 +5,6 @@
     (writeShellScriptBin "volume-osd" (builtins.readFile ./volume-osd.sh))
     (writeShellScriptBin "bright-osd" (builtins.readFile ./bright-osd.sh))
   ];
+
+  xdg.config.files."mako/config".source = ./config;
 }

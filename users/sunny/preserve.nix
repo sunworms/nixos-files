@@ -18,28 +18,12 @@
 
       ".ssh"
 
-      ".cache/cliphist"
       ".cache/awww"
       ".cache/nix"
-
-      ".config/btop"
-      ".config/kitty"
-      ".config/fuzzel"
-      ".config/mako"
-      ".config/niri"
-      ".config/matugen"
-      ".config/waybar"
-      ".config/gtk-3.0"
-      ".config/gtk-4.0"
-      ".config/qt5ct"
-      ".config/qt6ct"
-      ".config/yazi"
-      ".config/zathura"
 
       ".config/net.imput.helium/Default"
       ".config/rclone"
       ".config/fish"
-      ".config/copyq"
 
       ".config/azahar-emu"
       ".config/eden"
@@ -49,8 +33,6 @@
       ".config/ppsspp"
       ".config/qBittorrent"
 
-      ".local/share/copyq"
-      ".local/share/color-schemes"
       ".local/share/Steam"
       ".local/share/gvfs-metadata"
       ".local/share/eden"

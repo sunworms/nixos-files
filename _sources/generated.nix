@@ -42,12 +42,12 @@
   };
   neovim-config = {
     pname = "neovim-config";
-    version = "d0725b92968dcaa7280c510e4166af54369b9591";
+    version = "4fefd95281b38d19fe3b0c5306b9611d3f0d7581";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/d0725b92968dcaa7280c510e4166af54369b9591.tar.gz";
-      sha256 = "sha256-fFVYa7KW6jFFNC0rrhhkVdfsRh9S3Z4WhV8Ud7Sz48M=";
+      url = "https://git.gay/sunworms/neovim-config/archive/4fefd95281b38d19fe3b0c5306b9611d3f0d7581.tar.gz";
+      sha256 = "sha256-R8fTQ3BZ330n0wfRD9KDNgikKfVTUweLDswOjC82hLI=";
     };
-    date = "2026-09-27";
+    date = "2026-09-28";
   };
   niri-float-sticky = {
     pname = "niri-float-sticky";
@@ -100,5 +100,14 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
+  };
+  yazi-flavors = {
+    pname = "yazi-flavors";
+    version = "20b47bfd78880c2674899597fd26bc01b21ff48c";
+    src = fetchTarball {
+      url = "https://github.com/yazi-rs/flavors/archive/20b47bfd78880c2674899597fd26bc01b21ff48c.tar.gz";
+      sha256 = "sha256-NGnfrQdsnQITKCZ0oh6DCxeCR2ozJoPAZetsi3ghHAI=";
+    };
+    date = "2026-08-22";
   };
 }

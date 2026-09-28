@@ -1,6 +1,7 @@
-@import "colors.css";
+@import "mocha.css";
 
 * {
+    all: initial;
     padding: 0;
     margin: 0;
     min-height: 0;
@@ -14,18 +15,18 @@
 
 window#waybar,
 window#waybar > box {
-    background: @surface_container_low;
-    color: @on_surface;
+    background: @base;
+    color: @text;
 }
 
 tooltip {
-    background: @surface_container_high;
-    color: @on_surface;
+    background: @crust;
+    color: @text;
     border-radius: 6px;
 }
 
 tooltip label {
-    color: @on_surface;
+    color: @text;
 }
 
 #cava,
@@ -49,20 +50,21 @@ tooltip label {
     padding: 4px;
     border-radius: 6px;
 
-    background: @surface_container;
-    color: @on_surface;
+    background: @crust;
+    color: @text;
 }
 
 #workspaces button.active,
 #taskbar button.active {
-    background: @primary_container;
-    color: @on_primary_container;
+    background: @blue;
+    color: @crust;
 }
 
 #workspaces button:hover,
 #taskbar button:hover,
 #custom-launcher:hover {
-    background: @surface_container_high;
+    background: @crust;
+    color: @subtext0;
 }
 
 window#waybar.empty #window,
@@ -76,34 +78,34 @@ window#waybar.empty #window,
 }
 
 #cpu.warning {
-    color: @error;
+    color: @maroon;
 }
 #cpu.critical {
-    color: @error_container;
+    color: @red;
 }
 
 #memory.warning {
-    color: @error;
+    color: @maroon;
 }
 #memory.critical {
-    color: @error_container;
+    color: @red;
 }
 
 #temperature.critical {
-    color: @error_container;
+    color: @red;
 }
 
 #battery.warning {
-    color: @error;
+    color: @maroon;
 }
 #battery.critical:not(.charging) {
-    color: @error_container;
+    color: @red;
 }
 
 #custom-expand-icon {
     margin: 2px;
     padding: 4px;
-    color: @on_surface;
+    color: @text;
 }
 
 .quick-settings-drawer {

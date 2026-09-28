@@ -6,5 +6,8 @@
     (writeShellScriptBin "niri-window-switcher" (builtins.readFile ./niri-window-switcher))
   ];
 
-  xdg.config.files."fuzzel/fuzzel.ini".source = ./fuzzel.ini;
+  xdg.config.files = {
+    "fuzzel/fuzzel.ini".source = ./fuzzel.ini;
+    "fuzzel/themes/mocha.ini".source = ./mocha-lavender.ini;
+  };
 }

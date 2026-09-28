@@ -11,5 +11,6 @@
     "waybar/config-1.jsonc".source = ./config-1.jsonc;
     "waybar/config-2.jsonc".source = ./config-2.jsonc;
     "waybar/style.css".source = ./style.css;
+    "waybar/mocha.css".source = ./mocha.css;
   };
 }

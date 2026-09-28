@@ -9,14 +9,13 @@
     SUDO_EDITOR = "nvim";
     VISUAL = "nvim";
     TERMINAL = "kitty";
-    GTK_THEME = "adw-gtk3";
     GTK_USE_PORTAL = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
     MANPAGER = "nvim +Man!";
   };
 
   cursor = {
-    xcursor-theme = "Adwaita";
+    xcursor-theme = "volantes_cursors";
     xcursor-size = 24;
   };
 }
