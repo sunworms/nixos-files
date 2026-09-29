@@ -96,6 +96,7 @@ in {
       swaync-client --reload-config && swaync-client --reload-css
       niri msg action load-config-file
       pkill -SIGUSR1 nvim || true
+      ya emit-to 0 app:theme || true
 
       zathura_instances=$(dbus-send --session \
           --dest=org.freedesktop.DBus \
