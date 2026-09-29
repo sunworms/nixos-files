@@ -1,6 +1,6 @@
 {
   include = {
-    _args = ["colors.kdl"];
+    _args = ["~/.cache/wal/niri-colors.kdl"];
     _props.optional = true;
   };
 

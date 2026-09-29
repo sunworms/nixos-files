@@ -6,13 +6,13 @@
   ];
 
   spawn-at-startup = [
-    {_args = ["ironbar"];}
+    {_args = ["waybar"];}
     {_args = ["soteria"];}
     {_args = ["awww-daemon"];}
     {_args = ["playerctld"];}
     {_args = ["nm-applet"];}
     {_args = ["blueman-applet"];}
-    {_args = ["mako"];}
+    {_args = ["swaync"];}
     {_args = ["warp-taskbar"];}
     {_args = ["clipse" "-listen"];}
     {_args = ["wl-clip-persist" "--clipboard" "regular"];}

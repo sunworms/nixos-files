@@ -6,12 +6,14 @@
 }: {
   imports = [
     ./btop
-    ./kitty
+    ./foot
     ./fish
     ./niri
-    ./mako
     ./fuzzel
     ./clipse
+    ./waybar
+    ./wal
+    ./swaync
     ./scripts
     ./desktop-files.nix
   ];
@@ -27,8 +29,6 @@
       "Default Applications" = (import ./mimeapps.nix {inherit lib;}).defaultApps;
       "Added Associations" = (import ./mimeapps.nix {inherit lib;}).addedApps;
     };
-    "zathura/zathurarc".source = ./zathurarc;
-    "ironbar".source = ./ironbar;
   };
 
   packages = with pkgs; [
@@ -36,7 +36,6 @@
     git
     xwayland-satellite
     awww
-    ironbar
     playerctl
     brightnessctl
     pwvucontrol

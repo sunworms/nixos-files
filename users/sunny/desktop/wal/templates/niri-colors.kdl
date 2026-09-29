@@ -1,0 +1,38 @@
+layout {{
+    focus-ring {{
+        active-gradient from="{color4}" to="{color6}" angle=45 relative-to="workspace-view"
+        inactive-color "{color8}"
+        urgent-color "{foreground}"
+    }}
+
+    border {{
+        active-gradient from="{color4}" to="{color6}" angle=45 relative-to="workspace-view"
+        inactive-color "{color8}"
+        urgent-color "{foreground}"
+    }}
+
+    shadow {{
+        color "{color0}70"
+    }}
+
+    tab-indicator {{
+        active-color "{color6}"
+        inactive-color "{color8}"
+        urgent-color "{foreground}"
+    }}
+
+    insert-hint {{
+        color "{color4}80"
+    }}
+}}
+
+overview {{
+    backdrop-color "{background}"
+}}
+
+recent-windows {{
+    highlight {{
+        active-color "{color6}"
+        urgent-color "{foreground}"
+    }}
+}}

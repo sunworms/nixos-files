@@ -59,17 +59,17 @@
     },
     "neovim-config": {
         "cargoLock": null,
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "extract": null,
         "name": "neovim-config",
         "passthru": null,
         "pinned": false,
         "src": {
-            "sha256": "sha256-8RqERT6H3ph9ZMMQSD146hkGvldMorr+bythbu6dhsw=",
+            "sha256": "sha256-8hxxNiV95YdPy+6/BGx8N5I0seGmNIhNLsNGxZVYtwg=",
             "type": "tarball",
-            "url": "https://git.gay/sunworms/neovim-config/archive/45c4a215880e1bc16c9f25ae07dcf7a7aad05e7e.tar.gz"
+            "url": "https://git.gay/sunworms/neovim-config/archive/7d3574cd1e616b04c82d46c7b0e040d9b5b4c445.tar.gz"
         },
-        "version": "45c4a215880e1bc16c9f25ae07dcf7a7aad05e7e"
+        "version": "7d3574cd1e616b04c82d46c7b0e040d9b5b4c445"
     },
     "niri-float-sticky": {
         "cargoLock": null,
@@ -155,19 +155,5 @@
             "url": "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz"
         },
         "version": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11"
-    },
-    "yazi-flavors": {
-        "cargoLock": null,
-        "date": "2026-08-22",
-        "extract": null,
-        "name": "yazi-flavors",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "sha256": "sha256-NGnfrQdsnQITKCZ0oh6DCxeCR2ozJoPAZetsi3ghHAI=",
-            "type": "tarball",
-            "url": "https://github.com/yazi-rs/flavors/archive/20b47bfd78880c2674899597fd26bc01b21ff48c.tar.gz"
-        },
-        "version": "20b47bfd78880c2674899597fd26bc01b21ff48c"
     }
 }

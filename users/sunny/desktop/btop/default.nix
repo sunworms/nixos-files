@@ -4,8 +4,6 @@
   ];
 
   xdg.config.files."btop/btop.conf".text = ''
-    color_theme = "mocha"
+    color_theme = "pywal"
   '';
-
-  xdg.config.files."btop/themes/mocha.theme".source = ./catppuccin_mocha.theme;
 }

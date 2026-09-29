@@ -4,16 +4,6 @@
   pkgs,
   ...
 }: let
-  catppuccin-mocha-lavender-gtk = pkgs.catppuccin-gtk.override {
-    accents = ["lavender"];
-    variant = "mocha";
-  };
-
-  catppuccin-mocha-lavender-kvantum = pkgs.catppuccin-kvantum.override {
-    accent = "lavender";
-    variant = "mocha";
-  };
-
   qtctFiles = builtins.listToAttrs (
     map
     (qt: {
@@ -22,10 +12,11 @@
         #ini
         ''
           [Appearance]
+          color_scheme_path=/home/sunny/.cache/wal/qtct-colors.conf
           custom_palette=true
           icon_theme=Adwaita
           standard_dialogs=xdgdesktopportal
-          style=kvantum
+          style=Fusion
         '';
     })
     [
@@ -42,7 +33,7 @@
         #ini
         ''
           [Settings]
-          gtk-theme-name=catppuccin-mocha-lavender-standard
+          gtk-theme-name=adw-gtk3
           gtk-icon-theme-name=Adwaita
           gtk-font-name=${config.fonts.sansSerif} 11
           gtk-cursor-theme-name=volantes_cursors
@@ -58,18 +49,17 @@
 in {
   xdg.config.files =
     {
+      "gtk-3.0/gtk.css".text =
+        #css
+        ''
+          @import url("/home/sunny/.cache/wal/gtk-colors.css");
+        '';
       "gtk-4.0/gtk.css".text =
         #css
         ''
-          @import url("file://${catppuccin-mocha-lavender-gtk}/share/themes/catppuccin-mocha-lavender-standard/gtk-4.0/gtk.css");
+          @import url("file://${pkgs.adw-gtk3}/share/themes/adw-gtk3/gtk-4.0/gtk.css");
+          @import url("/home/sunny/.cache/wal/gtk-colors.css");
         '';
-      "Kvantum/kvantum.kvconfig".text =
-        #ini
-        ''
-          [General]
-          theme=catppuccin-mocha-lavender
-        '';
-      "Kvantum/catppuccin-mocha-lavender".source = "${catppuccin-mocha-lavender-kvantum}/share/Kvantum/catppuccin-mocha-lavender";
     }
     // qtctFiles
     // gtkFiles;
@@ -86,14 +76,11 @@ in {
   };
 
   packages = with pkgs; [
-    catppuccin-mocha-lavender-gtk
-    catppuccin-mocha-lavender-kvantum
+    adw-gtk3
     volantes-cursors
     adwaita-icon-theme
     libsForQt5.qt5ct
     qt6Packages.qt6ct
-    libsForQt5.qtstyleplugin-kvantum
-    qt6Packages.qtstyleplugin-kvantum
   ];
 
   systemd.services.set-gtk-settings = {
@@ -109,7 +96,8 @@ in {
           /usr/bin/env dconf write /org/gnome/desktop/interface/font-name "'${config.fonts.sansSerif} 11'"
           /usr/bin/env dconf write /org/gnome/desktop/interface/cursor-theme "'volantes_cursors'"
           /usr/bin/env dconf write /org/gnome/desktop/interface/icon-theme "'Adwaita'"
-          /usr/bin/env dconf write /org/gnome/desktop/interface/gtk-theme "'catppuccin-mocha-lavender-standard'"
+          /usr/bin/env dconf write /org/gnome/desktop/interface/gtk-theme "'adw-gtk3'"
+          /usr/bin/env dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
         ''
       }";
     };

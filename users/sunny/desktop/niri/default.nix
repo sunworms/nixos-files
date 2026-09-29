@@ -15,7 +15,6 @@
 in {
   xdg.config.files = {
     "niri/config.kdl".source = validatedConfigFor pkgs.niri (mkNiriKDL (import ./config {inherit pkgs;}));
-    "niri/colors.kdl".source = ./mocha.kdl;
   };
 
   packages = with pkgs; [

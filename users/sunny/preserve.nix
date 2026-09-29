@@ -18,6 +18,7 @@
 
       ".ssh"
 
+      ".cache/wal"
       ".cache/awww"
       ".cache/nix"
 

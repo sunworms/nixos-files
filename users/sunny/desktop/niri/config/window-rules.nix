@@ -44,7 +44,7 @@
     {
       match = [
         {_props.app-id = "^org.pwmt.zathura$";}
-        {_props.app-id = "^kitty$";}
+        {_props.app-id = "^foot$";}
       ];
       background-effect = {
         blur = true;
