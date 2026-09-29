@@ -173,13 +173,13 @@ label:focus {
 }
 
 tooltip {
-    background-color: @color4;
+    background-color: @muted;
     border: 1px solid @bordercolor;
     border-radius: 0.5rem;
 }
 
 tooltip label {
-    color: @fg;
+    color: @surface;
     font-size: 1rem;
     font-weight: normal;
 }
