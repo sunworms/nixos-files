@@ -16,6 +16,7 @@ STATUS=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
 
 if echo "$STATUS" | grep -q MUTED; then
     notify-send \
+        -t 1500 \
         -a osd \
         -u low \
         -h string:x-canonical-private-synchronous:volume \
@@ -27,6 +28,7 @@ fi
 VOL=$(echo "$STATUS" | awk '{printf "%.0f", $2*100}')
 
 notify-send \
+    -t 1500 \
     -a osd \
     -u low \
     -h string:x-canonical-private-synchronous:volume \

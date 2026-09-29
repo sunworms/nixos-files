@@ -1,10 +1,13 @@
 {pkgs, ...}: {
   packages = with pkgs; [
-    mako
+    swaynotificationcenter
     libnotify
     (writeShellScriptBin "volume-osd" (builtins.readFile ./volume-osd.sh))
     (writeShellScriptBin "bright-osd" (builtins.readFile ./bright-osd.sh))
   ];
 
-  xdg.config.files."mako/config".source = ./config;
+  xdg.config.files = {
+    "swaync/config.json".source = ./config.json;
+    "swaync/style.css".source = ./style.css;
+  };
 }

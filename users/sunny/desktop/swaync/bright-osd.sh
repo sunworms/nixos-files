@@ -12,6 +12,7 @@ esac
 BRIGHTNESS=$(brightnessctl -m | cut -d',' -f4 | tr -d '%')
 
 notify-send \
+    -t 1500 \
     -a osd \
     -u low \
     -h string:x-canonical-private-synchronous:brightness \
