@@ -88,8 +88,6 @@ in {
       fi
     '')
     (pkgs.writeShellScriptBin "wal-post-hook" ''
-      set -euo pipefail
-
       pkill -SIGUSR2 waybar || true
       pkill -USR2 btop || true
       dconf write /org/gnome/desktop/interface/gtk-theme "\'\'"
@@ -97,7 +95,7 @@ in {
       apply-gtk4-theme
       swaync-client --reload-config && swaync-client --reload-css
       niri msg action load-config-file
-      pkill -SIGUSR1 nvim
+      pkill -SIGUSR1 nvim || true
       chmod +x ~/.config/foot/variables.fish && ~/.config/foot/reload.fish
 
       zathura_instances=$(dbus-send --session \
