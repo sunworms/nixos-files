@@ -1,0 +1,177 @@
+/* fragile file path */
+@import url("/home/sunny/.cache/wal/waybar.css");
+
+/* Use Pywal16 colors  */
+@define-color fg alpha(@background, 1.0);
+@define-color bg alpha(@foreground, 1.0);
+@define-color bordercolor alpha(@background, 1.0);
+@define-color alert #F14241;
+@define-color disabled #A5A5A5;
+@define-color highlight #D49621;
+@define-color activegreen #26A65B;
+
+* {
+  min-height: 0;
+  font-family: "D2KodingLigature Nerd Font Propo", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem; /* Adjust font using gtk-font size, like nwg-look or lxappearance */
+}
+
+window#waybar {
+  color: @fg;
+  background-color: @bg;
+  background: none;
+}
+#window,
+#workspaces {
+  color: @bordercolor;
+  background-color: @bg;
+  border: 0.1rem solid @bordercolor;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  margin: 0.1rem;
+}
+#workspaces button {
+  color: @bordercolor;
+  background-color: @bg;
+  border: 0rem solid @bordercolor;
+  padding: 0.1rem;
+  margin: 0.1rem;
+}
+
+#clock,
+#cava,
+#battery,
+#bluetooth,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#language,
+#backlight,
+#backlight-slider,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#taskbar,
+#tray,
+#tray menu,
+#tray > .needs-attention,
+#tray > .passive,
+#tray > .active,
+#mode,
+#scratchpad,
+#custom-notification,
+#custom-temp,
+#custom-wifi,
+#custom-kdeconnect,
+#custom-bluetooth,
+#custom-power,
+#custom-separator,
+#custom-group,
+#idle_inhibitor,
+#window,
+#mpd {
+  color: @bordercolor;
+  background-color: @bg;
+  border: 0.1rem solid @bordercolor;
+  border-radius: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  margin: 0.1rem;
+}
+
+#bluetooth {
+  color: @bordercolor;
+  background-color: @color1;
+}
+#battery,
+#network {
+  color: @bordercolor;
+  background-color: @color2;
+}
+#cpu {
+  color: @bordercolor;
+  background-color: @color3;
+}
+#memory {
+  color: @bordercolor;
+  background-color: @color4;
+}
+#temperature {
+  color: @bordercolor;
+  background-color: @color5;
+}
+#custom-notification,
+#backlight {
+  color: @bordercolor;
+  background-color: @color6;
+}
+#pulseaudio,
+#wireplumber {
+  color: @bordercolor;
+  background-color: @color3;
+}
+#clock {
+  color: @bordercolor;
+  background-color: @color9;
+}
+
+#workspaces,
+#workspaces button {
+  color: @bordercolor;
+  background-color: @color4;
+}
+#tray,
+#tray menu,
+#tray > .needs-attention,
+#tray > .passive,
+#tray > .active,
+#custom-wifi,
+#custom-kdeconnect,
+#custom-bluetooth,
+#custom-power,
+#custom-group,
+#idle_inhibitor {
+  color: @bordercolor;
+  background-color: @color5;
+  border: 0rem solid @bordercolor;
+}
+#window {
+  color: @bordercolor;
+  background-color: @color6;
+}
+
+#custom-group {
+  border: 0.1rem solid @bordercolor;
+}
+
+#custom-separator {
+  color: @disabled;
+}
+
+#network.disconnected,
+#pulseaudio.muted,
+#wireplumber.muted {
+  background-color: @alert;
+}
+
+#battery.charging,
+#battery.plugged {
+  background-color: @activegreen;
+}
+
+label:focus {
+  background-color: @bg;
+}
+
+tooltip {
+    background-color: @color4;
+    border: 1px solid @bordercolor;
+    border-radius: 0.5rem;
+}
+
+tooltip label {
+    color: @fg;
+    font-size: 1rem;
+    font-weight: normal;
+}
