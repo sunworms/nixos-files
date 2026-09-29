@@ -96,7 +96,6 @@ in {
       swaync-client --reload-config && swaync-client --reload-css
       niri msg action load-config-file
       pkill -SIGUSR1 nvim || true
-      chmod +x ~/.config/foot/variables.fish && ~/.config/foot/reload.fish
 
       zathura_instances=$(dbus-send --session \
           --dest=org.freedesktop.DBus \
@@ -119,23 +118,5 @@ in {
 
   xdg.config.files = {
     "wal/templates".source = ./templates;
-    "foot/reload.fish" = {
-      executable = true;
-      text =
-        #fish
-        ''
-          #!${pkgs.fish}/bin/fish
-
-          set -l theme_script "$HOME/.cache/wal/variables.fish"
-
-          if test -f $theme_script
-            for tty in /dev/pts/*
-              if test -w $tty
-                $theme_script > $tty 2>/dev/null
-              end
-            end
-          end
-        '';
-    };
   };
 }
