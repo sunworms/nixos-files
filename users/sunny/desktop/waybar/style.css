@@ -21,6 +21,14 @@ window#waybar {
   background-color: @bg;
   background: none;
 }
+
+window#waybar.empty #window {
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  padding: 0;
+}
+
 #window,
 #workspaces {
   color: @bordercolor;
