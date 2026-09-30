@@ -1,6 +1,6 @@
 {
   lib,
-  stdenv,
+  stdenvNoCC,
   makeWrapper,
   autoPatchelfHook,
   qt6,
@@ -35,7 +35,7 @@
   libpulseaudio,
   sources,
 }:
-stdenv.mkDerivation {
+stdenvNoCC.mkDerivation {
   pname = "helium";
   version = sources.helium.version;
 
