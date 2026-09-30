@@ -11,5 +11,12 @@
       match._props.namespace = "^waybar$";
       opacity = 0.999;
     }
+    {
+      match._props.namespace = "^launcher$";
+      background-effect = {
+        blur = true;
+        xray = true;
+      };
+    }
   ];
 }
