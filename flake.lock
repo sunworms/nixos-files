@@ -1,0 +1,139 @@
+{
+  "nodes": {
+    "agenix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790734419,
+        "narHash": "sha256-n7wew722m1OTBT9DOIMxNX/NF4zfsSUABAO5eW3wikE=",
+        "owner": "ryantm",
+        "repo": "agenix",
+        "rev": "3daa710894355fa2fad8243380af373a2b4046ef",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ryantm",
+        "repo": "agenix",
+        "type": "github"
+      }
+    },
+    "hjem": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790081753,
+        "narHash": "sha256-tycoVCB2KSVdy9ERT1lJGHdP9Hf4FHanaEY25hUxylw=",
+        "owner": "feel-co",
+        "repo": "hjem",
+        "rev": "cef02450f2c18a7e2b9297ea8d366f9a597254f7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "feel-co",
+        "repo": "hjem",
+        "type": "github"
+      }
+    },
+    "neovim-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1790777009,
+        "narHash": "sha256-hXLA0beWowbMWcyxhyC956gCQsbSKjkMYzg29a+Ximg=",
+        "ref": "refs/heads/main",
+        "rev": "9e2e2c7522d3b89e476f366e4d67e0424114a84a",
+        "revCount": 165,
+        "type": "git",
+        "url": "https://git.gay/sunworms/neovim-config"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://git.gay/sunworms/neovim-config"
+      }
+    },
+    "niri-float-sticky": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1788698372,
+        "narHash": "sha256-kQiZEjeviamwC/kUhc2p089cqNpjkcjzzIAv1UWW4tw=",
+        "owner": "probeldev",
+        "repo": "niri-float-sticky",
+        "rev": "b3e79bd99bf99b993c3348f0051564f9d25f65e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "probeldev",
+        "repo": "niri-float-sticky",
+        "type": "github"
+      }
+    },
+    "niri-nix": {
+      "inputs": {
+        "niri-unstable": [],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "xwayland-satellite-unstable": []
+      },
+      "locked": {
+        "lastModified": 1790381013,
+        "narHash": "sha256-vE1BM9nWfusQ437QX9beTLhs5S2zAvdlmnrT9XYbacs=",
+        "ref": "refs/heads/main",
+        "rev": "926ca86fab82738fd1461b022ee11b4d61b9bf2e",
+        "revCount": 200,
+        "type": "git",
+        "url": "https://codeberg.org/BANanaD3V/niri-nix"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/BANanaD3V/niri-nix"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1790689126,
+        "narHash": "sha256-VyUI5WA3WdOB9kjb04A0pxE6XTWC6cG95ZkoPSv58F0=",
+        "rev": "b4fd65b198c599cbe814fcb9f42d25d021595ec9",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1082427.b4fd65b198c5/nixexprs.tar.zst"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst"
+      }
+    },
+    "preservation": {
+      "locked": {
+        "lastModified": 1757436102,
+        "narHash": "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=",
+        "owner": "nix-community",
+        "repo": "preservation",
+        "rev": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "preservation",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "agenix": "agenix",
+        "hjem": "hjem",
+        "neovim-config": "neovim-config",
+        "niri-float-sticky": "niri-float-sticky",
+        "niri-nix": "niri-nix",
+        "nixpkgs": "nixpkgs",
+        "preservation": "preservation"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

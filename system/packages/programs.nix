@@ -13,11 +13,12 @@
 
   programs.dconf.enable = true;
 
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+  };
+
   programs.fuse.userAllowOther = true;
-
-  programs.gpu-screen-recorder.enable = true;
-
-  programs.command-not-found.enable = false;
 
   hardware.graphics = {
     enable = true;
@@ -52,7 +53,7 @@
     # pins
     nvfetcher
 
-    (pkgs.callPackage (inputs.agenix.src + "/pkgs/agenix.nix") {})
+    inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
     fastfetch
     wl-clipboard
   ];

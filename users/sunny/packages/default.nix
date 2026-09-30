@@ -1,7 +1,7 @@
 {
   pkgs,
   assets,
-  inputs,
+  sources,
   osConfig,
   lib,
   ...
@@ -40,8 +40,8 @@ in {
     sunnySteam
     sunnySteam.run
     sunnyProtontricks
-    (callPackage ./eden.nix {inherit inputs assets;})
-    (callPackage ./pcsx2.nix {inherit inputs assets;})
+    (callPackage ./eden.nix {inherit sources assets;})
+    (callPackage ./pcsx2.nix {inherit sources assets;})
     ppsspp-sdl-wayland
     melonds
     azahar
@@ -62,10 +62,9 @@ in {
     satty
     qbittorrent
     rclone
+    gpu-screen-recorder
     gpu-screen-recorder-gtk
     zathura
-    (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db
-    (import inputs.nix-index-database.src {inherit pkgs;}).nix-index-with-small-db
     typst
     tinymist
     typstyle

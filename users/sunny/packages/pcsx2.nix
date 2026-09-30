@@ -1,13 +1,13 @@
 {
   appimageTools,
   qt6Packages,
-  inputs,
+  sources,
   assets,
 }: let
   pname = "pcsx2";
-  version = inputs.pcsx2.version;
+  version = sources.pcsx2.version;
 
-  src = inputs.pcsx2.src;
+  src = sources.pcsx2.src;
 
   appimageContents = appimageTools.extract {inherit pname version src;};
 
