@@ -94,6 +94,26 @@
         "url": "https://codeberg.org/BANanaD3V/niri-nix"
       }
     },
+    "nix-index-database": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790499302,
+        "narHash": "sha256-Gbf/U9ptJhQh0qnDnJ/+a8MAcq1HXunbArUTHR2wNYk=",
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "rev": "161d7c91accd93034bb3c295224d9d895a778573",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1790689126,
@@ -129,6 +149,7 @@
         "neovim-config": "neovim-config",
         "niri-float-sticky": "niri-float-sticky",
         "niri-nix": "niri-nix",
+        "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs",
         "preservation": "preservation"
       }

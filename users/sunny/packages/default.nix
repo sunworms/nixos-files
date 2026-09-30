@@ -2,6 +2,7 @@
   pkgs,
   assets,
   sources,
+  inputs,
   osConfig,
   lib,
   ...
@@ -69,5 +70,6 @@ in {
     tinymist
     typstyle
     websocat
+    inputs.nix-index-database.packages.${pkgs.stdenv.hostPlatform.system}.comma-with-db
   ];
 }
