@@ -7,6 +7,6 @@
   ];
 
   xdg.config.files = {
-    "fuzzel/fuzzel.ini".source = ./fuzzel.ini;
+    "fuzzel/fuzzel.ini".source = (pkgs.formats.ini {}).generate "fuzzel.ini" (import ./fuzzel.nix);
   };
 }

@@ -7,7 +7,7 @@
   ];
 
   xdg.config.files = {
-    "swaync/config.json".source = ./config.json;
+    "swaync/config.json".source = (pkgs.formats.json {}).generate "swaync.json" (import ./config.nix);
     "swaync/style.css".source = ./style.css;
   };
 }
