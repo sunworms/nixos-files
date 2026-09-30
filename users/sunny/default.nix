@@ -17,6 +17,8 @@
       yaziUnfree
     ];
   };
+
+  sunnyNvim = import inputs.neovim-config {inherit pkgs;};
 in {
   imports = [
     ./yazi
@@ -31,15 +33,24 @@ in {
   directory = "/home/sunny";
 
   packages = with pkgs; [
-    (import inputs.neovim-config {inherit pkgs;})
     yaziUnfree
+    sunnyNvim
+    (writeShellScriptBin "ls" ''
+      exec ${lib.getExe pkgs.lsd} "$@"
+    '')
+    (writeShellScriptBin "vi" ''
+      exec ${lib.getExe sunnyNvim} "$@"
+    '')
+    (writeShellScriptBin "vim" ''
+      exec ${lib.getExe sunnyNvim} "$@"
+    '')
+    lsd
     lazygit
     imv
     ripdrag
     ripgrep
     fzf
     bat
-    lsd
     kanata
     wl-clip-persist
   ];
