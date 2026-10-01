@@ -19,7 +19,8 @@
     "memory"
     "temperature"
     "backlight"
-    "wireplumber"
+    "wireplumber#sink"
+    "wireplumber#source"
     "battery"
     "clock"
   ];
@@ -56,11 +57,11 @@
       on-scroll = 1;
       on-click-right = "mode";
       format = {
-        months = "<span color='#ffead3'><b>{}</b></span>";
-        days = "<span color='#ecc6d9'><b>{}</b></span>";
-        weeks = "<span color='#99ffdd'><b>W{}</b></span>";
-        weekdays = "<span color='#ffcc66'><b>{}</b></span>";
-        today = "<span color='#ff6699'><b><u>{}</u></b></span>";
+        months = "<span color='#5E81AC'><b>{}</b></span>";
+        days = "<span color='#2E3440'><b>{}</b></span>";
+        weeks = "<span color='#4C566A'><b>W{}</b></span>";
+        weekdays = "<span color='#D08770'><b>{}</b></span>";
+        today = "<span color='#BF616A'><b><u>{}</u></b></span>";
       };
     };
     actions = {
@@ -123,7 +124,7 @@
     format-disconnected = "󰀦 Disconnected";
     format-alt = "{ifname}: {gwaddr}/{cidr}";
   };
-  wireplumber = {
+  "wireplumber#sink" = {
     format = "{icon} {volume:>3}%";
     format-muted = "󰖁 {volume:>3}%";
     format-icons = [
@@ -131,6 +132,12 @@
       ""
       ""
     ];
+    on-click-right = "pwvucontrol";
+  };
+  "wireplumber#source" = {
+    node-type = "Audio/Source";
+    format = "";
+    format-muted = "";
     on-click-right = "pwvucontrol";
   };
   bluetooth = {

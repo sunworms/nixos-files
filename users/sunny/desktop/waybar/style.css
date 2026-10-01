@@ -47,35 +47,21 @@ window#waybar.empty #window {
 }
 
 #clock,
-#cava,
 #battery,
 #bluetooth,
 #cpu,
 #memory,
-#disk,
 #temperature,
-#language,
 #backlight,
-#backlight-slider,
 #network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#taskbar,
+#wireplumber.sink,
+#wireplumber.source,
 #tray,
 #tray menu,
 #tray > .needs-attention,
 #tray > .passive,
 #tray > .active,
-#mode,
-#scratchpad,
 #custom-notification,
-#custom-temp,
-#custom-wifi,
-#custom-kdeconnect,
-#custom-bluetooth,
-#custom-power,
-#custom-separator,
 #custom-group,
 #idle_inhibitor,
 #window,
@@ -97,6 +83,7 @@ window#waybar.empty #window {
   color: @bordercolor;
   background-color: @color2;
 }
+
 #cpu {
   color: @bordercolor;
   background-color: @color3;
@@ -105,7 +92,8 @@ window#waybar.empty #window {
   color: @bordercolor;
   background-color: @color4;
 }
-#temperature {
+#temperature,
+#wireplumber.source {
   color: @bordercolor;
   background-color: @color5;
 }
@@ -115,7 +103,7 @@ window#waybar.empty #window {
   background-color: @color6;
 }
 #pulseaudio,
-#wireplumber {
+#wireplumber.sink {
   color: @bordercolor;
   background-color: @color3;
 }
@@ -134,16 +122,13 @@ window#waybar.empty #window {
 #tray > .needs-attention,
 #tray > .passive,
 #tray > .active,
-#custom-wifi,
-#custom-kdeconnect,
-#custom-bluetooth,
-#custom-power,
 #custom-group,
 #idle_inhibitor {
   color: @bordercolor;
   background-color: @color5;
   border: 0rem solid @bordercolor;
 }
+
 #window {
   color: @bordercolor;
   background-color: @color6;
@@ -153,13 +138,9 @@ window#waybar.empty #window {
   border: 0.1rem solid @bordercolor;
 }
 
-#custom-separator {
-  color: @disabled;
-}
-
 #network.disconnected,
-#pulseaudio.muted,
-#wireplumber.muted {
+#wireplumber.sink.muted,
+#wireplumber.source.muted {
   background-color: @alert;
 }
 
@@ -173,7 +154,7 @@ label:focus {
 }
 
 tooltip {
-    background-color: @muted;
+    background-color: @color7;
     border: 1px solid @bordercolor;
     border-radius: 0.5rem;
 }
