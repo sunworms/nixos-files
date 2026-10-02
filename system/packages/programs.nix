@@ -42,8 +42,6 @@
     # glib
     glib
     gsettings-desktop-schemas
-    gtk3
-    gtk4
 
     # Nix LSPs
     nil
