@@ -11,7 +11,7 @@
       _props = {
         hotkey-overlay-title = "Application Launcher";
       };
-      spawn = ["fuzzel"];
+      spawn = ["fuzzel" "--no-icons"];
     };
     "Mod+V" = {
       _props = {
