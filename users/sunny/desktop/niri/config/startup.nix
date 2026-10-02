@@ -12,7 +12,7 @@
     {_args = ["playerctld"];}
     {_args = ["nm-applet"];}
     {_args = ["blueman-applet"];}
-    {_args = ["swaync"];}
+    {_args = ["mako"];}
     {_args = ["warp-taskbar"];}
     {_args = ["clipse" "-listen"];}
     {_args = ["wl-clip-persist" "--clipboard" "regular"];}

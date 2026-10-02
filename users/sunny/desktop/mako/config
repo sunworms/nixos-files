@@ -1,0 +1,17 @@
+include=~/.cache/wal/mako-colors
+
+default-timeout=5000
+
+[urgency=high]
+default-timeout=0
+
+[mode=do-not-disturb]
+invisible=1
+on-notify=none
+
+[mode=silent]
+on-notify=none
+
+[actionable]
+on-button-right=exec makoctl menu -n "$id" "fuzzel -d"
+on-button-left=invoke-default-action

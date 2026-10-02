@@ -47,19 +47,19 @@
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["volume-osd" "up"];
+      spawn = ["wpctl" "set-volume" "-l" "1.5" "@DEFAULT_AUDIO_SINK@" "5%+"];
     };
     "XF86AudioLowerVolume" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["volume-osd" "down"];
+      spawn = ["wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"];
     };
     "XF86AudioMute" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["volume-osd" "mute"];
+      spawn = ["wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"];
     };
     "XF86AudioMicMute" = {
       _props = {
@@ -71,13 +71,13 @@
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["bright-osd" "up"];
+      spawn = ["brightnessctl" "set" "+5%"];
     };
     "XF86MonBrightnessDown" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["bright-osd" "down"];
+      spawn = ["brightnessctl" "set" "5%-"];
     };
     "XF86AudioPlay" = {
       _props = {

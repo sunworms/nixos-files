@@ -13,7 +13,7 @@
     ./clipse
     ./waybar
     ./wal
-    ./swaync
+    ./mako
     ./scripts
     ./desktop-files.nix
   ];
