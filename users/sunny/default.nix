@@ -18,7 +18,7 @@
     ];
   };
 
-  sunnyNvim = import inputs.neovim-config {inherit pkgs;};
+  sunnyEmacs = inputs.emacs-config.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in {
   imports = [
     ./yazi
@@ -34,15 +34,15 @@ in {
 
   packages = with pkgs; [
     yaziUnfree
-    sunnyNvim
+    sunnyEmacs
     (writeShellScriptBin "ls" ''
       exec ${lib.getExe pkgs.lsd} "$@"
     '')
-    (writeShellScriptBin "vi" ''
-      exec ${lib.getExe sunnyNvim} "$@"
+    (writeShellScriptBin "e" ''
+      exec ${lib.getExe sunnyEmacs} "$@" & disown
     '')
-    (writeShellScriptBin "vim" ''
-      exec ${lib.getExe sunnyNvim} "$@"
+    (writeShellScriptBin "et" ''
+      exec ${lib.getExe sunnyEmacs} -nw "$@"
     '')
     lsd
     lazygit

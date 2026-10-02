@@ -45,6 +45,8 @@
       match = [
         {_props.app-id = "^org.pwmt.zathura$";}
         {_props.app-id = "^foot$";}
+        {_props.app-id = "^emacs$";}
+        {_props.app-id = "^Emacs$";}
       ];
       background-effect = {
         blur = true;

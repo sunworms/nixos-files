@@ -57,9 +57,9 @@
       inputs.niri-unstable.follows = "";
       inputs.xwayland-satellite-unstable.follows = "";
     };
-    neovim-config = {
-      url = "git+https://git.gay/sunworms/neovim-config";
-      flake = false;
+    emacs-config = {
+      url = "github:sunworms/emacs-config";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     niri-float-sticky = {
       url = "github:probeldev/niri-float-sticky";
