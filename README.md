@@ -1,9 +1,18 @@
 Folder structure of my NixOS configuration:
-```
+```tree
 .
+├── agenix-rules.nix
 ├── assets
-│   └── icons
-│       └── face
+│   ├── discord.png
+│   ├── eden.png
+│   ├── ima.jpeg
+│   ├── kako.jpeg
+│   ├── NixOS.svg
+│   ├── pcsx2.png
+│   ├── sable.png
+│   ├── spotify.png
+│   └── whatsapp.png
+├── flake.lock
 ├── flake.nix
 ├── hosts
 │   └── motobook
@@ -13,19 +22,24 @@ Folder structure of my NixOS configuration:
 ├── nvfetcher.toml
 ├── README.md
 ├── secrets
-│   └── secrets.yaml
+│   ├── aur-key.age
+│   ├── gitgay-key.age
+│   ├── github-key.age
+│   ├── root-password.age
+│   └── sunny-password.age
 ├── _sources
 │   ├── generated.json
 │   └── generated.nix
 ├── system
 │   ├── core
+│   │   ├── age.nix
 │   │   ├── battery.nix
 │   │   ├── boot.nix
 │   │   ├── default.nix
 │   │   ├── keys.nix
 │   │   ├── network.nix
 │   │   ├── nix-settings.nix
-│   │   ├── sops.nix
+│   │   ├── preserve.nix
 │   │   ├── users.nix
 │   │   └── virtualisation.nix
 │   └── packages
@@ -34,14 +48,19 @@ Folder structure of my NixOS configuration:
 │       ├── chromium.nix
 │       ├── default.nix
 │       ├── desktop.nix
-│       ├── portals.nix
+│       ├── flags-chromium.json
 │       └── programs.nix
 └── users
     └── sunny
         ├── browser.nix
         ├── default.nix
         ├── desktop
+        │   ├── btop
+        │   │   └── default.nix
+        │   ├── clipse
+        │   │   └── default.nix
         │   ├── default.nix
+        │   ├── desktop-files.nix
         │   ├── fish
         │   │   ├── config.fish
         │   │   ├── default.nix
@@ -50,8 +69,16 @@ Folder structure of my NixOS configuration:
         │   ├── foot
         │   │   ├── default.nix
         │   │   └── foot.nix
+        │   ├── fuzzel
+        │   │   ├── default.nix
+        │   │   ├── fuzzel-logout-menu
+        │   │   ├── fuzzel.nix
+        │   │   └── niri-window-switcher
         │   ├── gitconfig.nix
         │   ├── hyfetch.nix
+        │   ├── mako
+        │   │   ├── config
+        │   │   └── default.nix
         │   ├── mimeapps.nix
         │   ├── niri
         │   │   ├── config
@@ -66,22 +93,31 @@ Folder structure of my NixOS configuration:
         │   │   │   ├── user-binds.nix
         │   │   │   └── window-rules.nix
         │   │   └── default.nix
-        │   └── noctalia
-        │       ├── config
-        │       │   ├── bar.nix
-        │       │   ├── default.nix
-        │       │   ├── idle.nix
-        │       │   ├── lockscreen.nix
-        │       │   ├── plugins.nix
-        │       │   ├── shell.nix
-        │       │   ├── theme.nix
-        │       │   ├── various.nix
-        │       │   └── widgets.nix
+        │   ├── scripts
+        │   │   ├── default.nix
+        │   │   ├── mirror-toggle.sh
+        │   │   └── screen-toolkit.sh
+        │   ├── wal
+        │   │   ├── default.nix
+        │   │   └── templates
+        │   │       ├── btop.theme
+        │   │       ├── clipse.json
+        │   │       ├── foot.ini
+        │   │       ├── fuzzel.ini
+        │   │       ├── gtk-colors.css
+        │   │       ├── mako-colors
+        │   │       ├── niri-colors.kdl
+        │   │       ├── Pywal.colors
+        │   │       ├── qtct-colors.conf
+        │   │       ├── vim-colors.vim
+        │   │       ├── waybar.css
+        │   │       ├── yazi.tmTheme
+        │   │       ├── yazi.toml
+        │   │       └── zathurarc
+        │   └── waybar
+        │       ├── config.nix
         │       ├── default.nix
-        │       └── templates
-        │           ├── matugen.lua
-        │           ├── variables.fish
-        │           └── zathurarc
+        │       └── style.css
         ├── fonts
         │   ├── default.nix
         │   ├── fonts.nix
@@ -95,6 +131,7 @@ Folder structure of my NixOS configuration:
         │   ├── ice-ssb.nix
         │   ├── pcsx2.nix
         │   └── services.nix
+        ├── preserve.nix
         ├── ssh.nix
         ├── theming.nix
         └── yazi
@@ -103,10 +140,9 @@ Folder structure of my NixOS configuration:
             ├── keymaps
             │   ├── default.nix
             │   ├── gvfs.nix
-            │   ├── misc.nix
-            │   └── sudo.nix
+            │   └── misc.nix
             ├── plugins.nix
             └── yazi.nix
 
-25 directories, 82 files
+29 directories, 114 files
 ```
