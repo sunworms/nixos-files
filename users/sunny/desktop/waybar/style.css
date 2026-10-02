@@ -61,11 +61,9 @@ window#waybar.empty #window {
 #tray > .needs-attention,
 #tray > .passive,
 #tray > .active,
-#custom-notification,
 #custom-group,
 #idle_inhibitor,
-#window,
-#mpd {
+#window {
   color: @bordercolor;
   background-color: @bg;
   border: 0.1rem solid @bordercolor;
@@ -74,49 +72,13 @@ window#waybar.empty #window {
   margin: 0.1rem;
 }
 
-#bluetooth {
+#workspaces,
+#workspaces button,
+#clock {
   color: @bordercolor;
   background-color: @color1;
 }
-#battery,
-#network {
-  color: @bordercolor;
-  background-color: @color2;
-}
 
-#cpu {
-  color: @bordercolor;
-  background-color: @color3;
-}
-#memory {
-  color: @bordercolor;
-  background-color: @color4;
-}
-#temperature,
-#wireplumber.source {
-  color: @bordercolor;
-  background-color: @color5;
-}
-#custom-notification,
-#backlight {
-  color: @bordercolor;
-  background-color: @color6;
-}
-#pulseaudio,
-#wireplumber.sink {
-  color: @bordercolor;
-  background-color: @color3;
-}
-#clock {
-  color: @bordercolor;
-  background-color: @color9;
-}
-
-#workspaces,
-#workspaces button {
-  color: @bordercolor;
-  background-color: @color4;
-}
 #tray,
 #tray menu,
 #tray > .needs-attention,
@@ -125,13 +87,63 @@ window#waybar.empty #window {
 #custom-group,
 #idle_inhibitor {
   color: @bordercolor;
-  background-color: @color5;
+  background-color: @color2;
   border: 0rem solid @bordercolor;
 }
 
 #window {
   color: @bordercolor;
+  background-color: @color3;
+}
+
+#bluetooth {
+  color: @bordercolor;
+  background-color: @color4;
+}
+
+#network {
+  color: @bordercolor;
+  background-color: @color5;
+}
+
+#cpu {
+  color: @bordercolor;
   background-color: @color6;
+}
+
+#memory {
+  color: @bordercolor;
+  background-color: @color9;
+}
+
+#temperature {
+  color: @bordercolor;
+  background-color: @color10;
+}
+
+#backlight {
+  color: @bordercolor;
+  background-color: @color11;
+}
+
+#wireplumber.sink {
+  color: @bordercolor;
+  background-color: @color12;
+}
+
+#wireplumber.source {
+  color: @bordercolor;
+  background-color: @color13;
+}
+
+#battery {
+  color: @bordercolor;
+  background-color: @color14;
+}
+
+#tray menu menuitem:hover, 
+#tray menu menuitem:hover * {
+    color: @surface;
 }
 
 #custom-group {
@@ -155,7 +167,7 @@ label:focus {
 
 tooltip {
     background-color: @color7;
-    border: 1px solid @bordercolor;
+    border: 0.1rem solid @bordercolor;
     border-radius: 0.5rem;
 }
 

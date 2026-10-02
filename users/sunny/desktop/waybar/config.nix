@@ -12,7 +12,6 @@
   modules-center = [
   ];
   modules-right = [
-    "custom/notification"
     "bluetooth"
     "network"
     "cpu"
@@ -132,6 +131,7 @@
       ""
       ""
     ];
+    max-volume = 150;
     on-click-right = "pwvucontrol";
   };
   "wireplumber#source" = {
@@ -167,15 +167,5 @@
       activated = "󰈈";
       deactivated = "󰈉";
     };
-  };
-  "custom/notification" = {
-    tooltip = true;
-    format = " {}";
-    return-type = "json";
-    exec-if = "which swaync-client";
-    exec = "swaync-client -swb";
-    on-click = "swaync-client -t -sw";
-    on-click-right = "swaync-client -d -sw";
-    escape = true;
   };
 }
