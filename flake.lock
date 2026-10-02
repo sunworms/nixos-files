@@ -28,11 +28,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790952414,
-        "narHash": "sha256-cF7vuapPIPLeKNXEb599FWJk9ZCP2V1cUkKS5qwNEig=",
+        "lastModified": 1790956091,
+        "narHash": "sha256-kJYELSguuaZ8V4h5evME3NbzQ7CMv2rddmBIWmq7HnM=",
         "owner": "sunworms",
         "repo": "emacs-config",
-        "rev": "187c1b5a43862b5ddcdaa37794593ba2838ef979",
+        "rev": "66b6b3b5518e287adb6d0b4d795f49de5e85476f",
         "type": "github"
       },
       "original": {
