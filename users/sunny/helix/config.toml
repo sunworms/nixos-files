@@ -27,3 +27,14 @@ C-d = ":half-page-down-smooth"
 C-u = ":half-page-up-smooth"
 pageup = ":page-up-smooth"
 pagedown = ":page-down-smooth"
+
+C-left  = ["move_prev_word_start", "collapse_selection"]
+C-right = ["move_next_word_start", "collapse_selection"]
+
+[keys.insert]
+C-left  = ["move_prev_word_start", "collapse_selection"]
+C-right = ["move_next_word_start", "collapse_selection"]
+
+[keys.select]
+C-left  = "extend_prev_word_start"
+C-right = "extend_next_word_start"
