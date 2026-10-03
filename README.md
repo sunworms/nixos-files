@@ -5,6 +5,7 @@ nixos-files
 ├── assets
 │   ├── discord.png
 │   ├── eden.png
+│   ├── helix.png
 │   ├── ima.jpeg
 │   ├── kako.jpeg
 │   ├── NixOS.svg
@@ -126,8 +127,8 @@ nixos-files
         ├── helix
         │   ├── config.toml
         │   ├── default.nix
-        │   ├── init.scm
-        │   └── languages.toml
+        │   ├── languages.toml
+        │   └── package.nix
         ├── kanata.kbd
         ├── packages
         │   ├── browser-paths.patch
@@ -149,4 +150,4 @@ nixos-files
             ├── plugins.nix
             └── yazi.nix
 ```
-30 directories, 118 files
+30 directories, 119 files
