@@ -10,6 +10,11 @@ cursorline = true
 render-mode = "multiple"
 separator = "│"
 
+# only in gj1118/helix
+[editor.notifications]
+enable = true
+style = "statusline"
+
 [editor.workspace-trust]
 level = "servers"
 prompt = true
