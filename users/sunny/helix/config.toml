@@ -1,9 +1,14 @@
 theme = "pywal"
 
 [editor]
-bufferline = "multiple"
+#bufferline = "multiple" #for official helix
 line-number = "relative"
 cursorline = true
+
+# only in gj1118/helix
+[editor.bufferline]
+render-mode = "multiple"
+separator = "│"
 
 [editor.workspace-trust]
 level = "servers"
@@ -17,16 +22,16 @@ select = "underline"
 [editor.soft-wrap]
 enable = true
 
+# only in gj1118/helix
+[editor.auto-reload]
+focus-gained = true
+
 [keys]
 
 [keys.normal]
 "C-m" = ':lsp-workspace-command tinymist.pinMain "%sh{realpath %{buffer_name}}"'
 "C-p" = ':lsp-workspace-command tinymist.startDefaultPreview'
 "A-p" = ':lsp-workspace-command tinymist.doKillPreview "default_preview"'
-C-d = ":half-page-down-smooth"
-C-u = ":half-page-up-smooth"
-pageup = ":page-up-smooth"
-pagedown = ":page-down-smooth"
 
 C-left  = ["move_prev_word_start", "collapse_selection"]
 C-right = ["move_next_word_start", "collapse_selection"]

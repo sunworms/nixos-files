@@ -29,6 +29,21 @@
         },
         "version": "0.18.2.1"
     },
+    "helix-fork": {
+        "cargoLock": null,
+        "date": null,
+        "extract": null,
+        "name": "helix-fork",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-A99dkZVANZlxyUDfcxjmLJIlsOiIwcpTe20G6N1fBlM=",
+            "type": "url",
+            "url": "https://github.com/gj1118/helix/releases/download/26.09.02/helix-26.09.02-x86_64-linux.tar.xz"
+        },
+        "version": "26.09.02"
+    },
     "pcsx2": {
         "cargoLock": null,
         "date": null,

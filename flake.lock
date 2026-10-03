@@ -20,27 +20,6 @@
         "type": "github"
       }
     },
-    "helix-plugins": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "systems": "systems"
-      },
-      "locked": {
-        "lastModified": 1790803764,
-        "narHash": "sha256-U1G2gdSnq+Y2nGaa4iQuVDHaKx73NvkGDXD6qz5vpdk=",
-        "owner": "maxschipper",
-        "repo": "helix-plugins-nix",
-        "rev": "9d5dbb77eaed7259aa2dff85146bdfa70b25a438",
-        "type": "github"
-      },
-      "original": {
-        "owner": "maxschipper",
-        "repo": "helix-plugins-nix",
-        "type": "github"
-      }
-    },
     "hjem": {
       "inputs": {
         "nixpkgs": [
@@ -150,29 +129,12 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
-        "helix-plugins": "helix-plugins",
         "hjem": "hjem",
         "niri-float-sticky": "niri-float-sticky",
         "niri-nix": "niri-nix",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs",
         "preservation": "preservation"
-      }
-    },
-    "systems": {
-      "locked": {
-        "lastModified": 1774449309,
-        "narHash": "sha256-brhZ8DmuGtzkCYHJg4HEd602amKm89Y9ytsFZ5uWD1w=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "c29398b59d2048c4ab79345812849c9bd15e9150",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "ref": "future-26.11",
-        "repo": "default",
-        "type": "github"
       }
     }
   },

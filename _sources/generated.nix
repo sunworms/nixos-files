@@ -22,6 +22,14 @@
       sha256 = "sha256-RJPXVrmK++P9fUXA7CFcI/WgVR+ucVWG/mzjsimLFVw=";
     };
   };
+  helix-fork = {
+    pname = "helix-fork";
+    version = "26.09.02";
+    src = fetchurl {
+      url = "https://github.com/gj1118/helix/releases/download/26.09.02/helix-26.09.02-x86_64-linux.tar.xz";
+      sha256 = "sha256-A99dkZVANZlxyUDfcxjmLJIlsOiIwcpTe20G6N1fBlM=";
+    };
+  };
   pcsx2 = {
     pname = "pcsx2";
     version = "2.9.94";
