@@ -1,6 +1,6 @@
 Folder structure of my NixOS configuration:
 ```tree
-.
+nixos-files
 ├── agenix-rules.nix
 ├── assets
 │   ├── discord.png
@@ -108,8 +108,8 @@ Folder structure of my NixOS configuration:
         │   │       ├── mako-colors
         │   │       ├── niri-colors.kdl
         │   │       ├── Pywal.colors
+        │   │       ├── pywal.toml
         │   │       ├── qtct-colors.conf
-        │   │       ├── vim-colors.vim
         │   │       ├── waybar.css
         │   │       ├── yazi.tmTheme
         │   │       ├── yazi.toml
@@ -123,6 +123,11 @@ Folder structure of my NixOS configuration:
         │   ├── fonts.nix
         │   └── options.nix
         ├── helium.nix
+        ├── helix
+        │   ├── config.toml
+        │   ├── default.nix
+        │   ├── init.scm
+        │   └── languages.toml
         ├── kanata.kbd
         ├── packages
         │   ├── browser-paths.patch
@@ -143,6 +148,5 @@ Folder structure of my NixOS configuration:
             │   └── misc.nix
             ├── plugins.nix
             └── yazi.nix
-
-29 directories, 114 files
 ```
+30 directories, 118 files
