@@ -14,7 +14,7 @@
     genericName = "Text Editor";
     tryExec = "hx";
     exec = "hx %F";
-    terminal = false;
+    terminal = true;
     type = "Application";
     keywords = [
       "Text"
