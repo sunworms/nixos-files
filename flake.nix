@@ -3,18 +3,16 @@
 
   outputs = {self, ...} @ inputs: let
     assets = ./assets;
-
-    sources = import ./_sources/generated.nix {
-      inherit (builtins) fetchurl;
-      fetchFromGitHub = null;
-      fetchgit = null;
-      dockerTools = null;
-    };
   in {
     nixosConfigurations = {
       motobook = inputs.nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = {inherit inputs sources assets;};
+        specialArgs = {
+          inherit inputs assets;
+          sources = import ./_sources/generated.nix {
+            inherit (inputs.nixpkgs.legacyPackages.x86_64-linux) fetchurl fetchFromGitHub fetchgit dockerTools;
+          };
+        };
         modules = [
           ./hosts/motobook/configuration.nix
           inputs.preservation.nixosModules.default
@@ -28,7 +26,12 @@
 
             hjem = {
               clobberByDefault = true;
-              specialArgs = {inherit inputs sources assets;};
+              specialArgs = {
+                inherit inputs assets;
+                sources = import ./_sources/generated.nix {
+                  inherit (inputs.nixpkgs.legacyPackages.x86_64-linux) fetchurl fetchFromGitHub fetchgit dockerTools;
+                };
+              };
             };
           }
         ];
