@@ -95,7 +95,7 @@
 "ui.menu" = {{ fg = "foreground", bg = "color0" }}
 "ui.menu.selected" = {{ fg = "background", bg = "color4", modifiers = ["bold"] }}
 
-"ui.selection" = {{ bg = "color8" }}
+"ui.selection" = {{ fg = "background", bg = "color4" }}
 
 "ui.highlight" = {{ bg = "color8", modifiers = ["bold"] }}
 
