@@ -7,6 +7,7 @@
     # only in gj1118/helix
     bufferline = {
       render-mode = "multiple";
+      separator = "";
     };
     # only in gj1118/helix
     notifications = {
