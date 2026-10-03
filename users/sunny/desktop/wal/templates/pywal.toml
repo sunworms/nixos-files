@@ -1,0 +1,137 @@
+# Syntax highlighting
+# -------------------
+"attribute" = {{ fg = "color3", modifiers = ["bold"] }}
+
+"type" = "color3"
+"type.enum.variant" = "color11"
+
+"constructor" = "color6"
+
+"constant" = "color9"
+"constant.character" = "color10"
+"constant.character.escape" = "color14"
+
+"string" = {{ fg = "color2" }}
+"string.regexp" = {{ fg = "color10" }}
+"string.special" = {{ fg = "color2" }}
+"string.special.symbol" = {{ fg = "color2" }}
+"string.special.path" = {{ fg = "color6", underline = {{ color = "color6", style = "line" }} }}
+
+"path" = {{ fg = "color6", underline = {{ color = "color6", style = "line" }} }}
+
+"comment" = {{ fg = "color8", modifiers = ["italic"] }}
+
+"variable" = "foreground"
+"variable.builtin" = "color1"
+"variable.parameter" = {{ fg = "color7", modifiers = ["italic"] }}
+"variable.other.member" = "color4"
+
+"label" = "color5"
+
+"punctuation" = "color8"
+
+"keyword" = {{ fg = "color5", modifiers = ["bold"] }}
+"keyword.control.conditional" = {{ fg = "color13", modifiers = ["italic", "bold"] }}
+
+"operator" = {{ fg = "color6", modifiers = ["bold"] }}
+
+"function" = "color4"
+"function.macro" = "color12"
+
+"tag" = "color1"
+
+"namespace" = {{ fg = "color6", modifiers = ["italic"] }}
+
+"special" = "color6"
+
+"markup.heading" = "color4"
+"markup.list" = "foreground"
+"markup.bold" = {{ fg = "color3", modifiers = ["bold"] }}
+"markup.italic" = {{ fg = "color5", modifiers = ["italic"] }}
+"markup.link.url" = {{ fg = "color6", modifiers = ["italic", "underlined"] }}
+"markup.link.label" = "color4"
+"markup.raw" = "foreground"
+"markup.quote" = "color8"
+
+"diff.plus" = "color2"
+"diff.minus" = "color1"
+"diff.delta" = "color4"
+
+# User Interface
+# --------------
+"ui.background" = "none"
+
+"ui.cursor" = {{ fg = "background", bg = "cursor" }}
+"ui.cursor.match" = {{ fg = "background", bg = "color3", modifiers = ["bold"] }}
+"ui.cursor.primary" = {{ fg = "background", bg = "cursor" }}
+
+"ui.linenr" = {{ fg = "color8" }}
+"ui.linenr.selected" = {{ fg = "color4" }}
+
+"ui.statusline" = {{ fg = "foreground", bg = "color0" }}
+"ui.statusline.inactive" = {{ fg = "color8", bg = "color0" }}
+"ui.statusline.normal" = {{ fg = "background", bg = "color4", modifiers = ["bold"] }}
+"ui.statusline.insert" = {{ fg = "background", bg = "color2", modifiers = ["bold"] }}
+"ui.statusline.select" = {{ fg = "background", bg = "color5", modifiers = ["bold"] }}
+
+"ui.bufferline" = {{ fg = "foreground", bg = "color0" }}
+"ui.bufferline.active" = {{ fg = "foreground", bg = "color8", underline = {{ color = "color4", style = "line" }} }}
+"ui.bufferline.background" = {{ bg = "color0" }}
+
+"ui.popup" = {{ fg = "foreground", bg = "color0" }}
+
+"ui.window" = {{ fg = "color8" }}
+"ui.help" = {{ fg = "foreground", bg = "color0" }}
+
+"ui.text" = {{ fg = "foreground" }}
+"ui.text.focus" = {{ fg = "foreground", bg = "color8", modifiers = ["bold"] }}
+
+"ui.virtual" = "color8"
+"ui.virtual.ruler" = {{ bg = "color0" }}
+"ui.virtual.indent-guide" = "color8"
+"ui.virtual.inlay-hint" = {{ fg = "color8", modifiers = ["dim"] }}
+"ui.virtual.jump-label" = {{ fg = "color4", modifiers = ["bold"] }}
+
+"ui.menu" = {{ fg = "foreground", bg = "color0" }}
+"ui.menu.selected" = {{ fg = "background", bg = "color4", modifiers = ["bold"] }}
+
+"ui.selection" = {{ bg = "color8" }}
+
+"ui.highlight" = {{ bg = "color8", modifiers = ["bold"] }}
+
+"ui.cursorline" = {{ bg = "color0" }}
+"ui.cursorline.primary" = {{ bg = "color0" }}
+"ui.cursorline.secondary" = {{ bg = "color0" }}
+
+error = "color1"
+warning = "color3"
+info = "color4"
+hint = "color6"
+
+"diagnostic.hint" = {{ underline = {{ color = "color6", style = "curl" }} }}
+"diagnostic.info" = {{ underline = {{ color = "color4", style = "curl" }} }}
+"diagnostic.warning" = {{ underline = {{ color = "color3", style = "curl" }} }}
+"diagnostic.error" = {{ underline = {{ color = "color1", style = "curl" }} }}
+"diagnostic.unnecessary" = {{ modifiers = ["dim"] }}
+
+[palette]
+background = "{background}"
+foreground = "{foreground}"
+cursor = "{cursor}"
+
+color0 = "{color0}"
+color1 = "{color1}"
+color2 = "{color2}"
+color3 = "{color3}"
+color4 = "{color4}"
+color5 = "{color5}"
+color6 = "{color6}"
+color7 = "{color7}"
+color8 = "{color8}"
+color9 = "{color9}"
+color10 = "{color10}"
+color11 = "{color11}"
+color12 = "{color12}"
+color13 = "{color13}"
+color14 = "{color14}"
+color15 = "{color15}"

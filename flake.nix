@@ -23,12 +23,13 @@
           {
             nixpkgs = {
               config.allowUnfree = true;
-              overlays = [];
+              overlays = [inputs.helix-plugins.overlays.default];
             };
 
             hjem = {
               clobberByDefault = true;
               specialArgs = {inherit inputs sources assets;};
+              extraModules = [inputs.helix-plugins.hjemModules.default];
             };
           }
         ];
@@ -57,8 +58,8 @@
       inputs.niri-unstable.follows = "";
       inputs.xwayland-satellite-unstable.follows = "";
     };
-    emacs-config = {
-      url = "github:sunworms/emacs-config";
+    helix-plugins = {
+      url = "github:maxschipper/helix-plugins-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     niri-float-sticky = {

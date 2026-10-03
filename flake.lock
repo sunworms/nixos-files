@@ -20,48 +20,24 @@
         "type": "github"
       }
     },
-    "emacs-config": {
-      "inputs": {
-        "emacs-overlay": "emacs-overlay",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1790956091,
-        "narHash": "sha256-kJYELSguuaZ8V4h5evME3NbzQ7CMv2rddmBIWmq7HnM=",
-        "owner": "sunworms",
-        "repo": "emacs-config",
-        "rev": "66b6b3b5518e287adb6d0b4d795f49de5e85476f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sunworms",
-        "repo": "emacs-config",
-        "type": "github"
-      }
-    },
-    "emacs-overlay": {
+    "helix-plugins": {
       "inputs": {
         "nixpkgs": [
-          "emacs-config",
           "nixpkgs"
         ],
-        "nixpkgs-stable": [
-          "emacs-config"
-        ]
+        "systems": "systems"
       },
       "locked": {
-        "lastModified": 1790916044,
-        "narHash": "sha256-sN7ufb/NmjuFy3n7bMzYILf14hS1ObIbyDzYZKSRGB4=",
-        "owner": "nix-community",
-        "repo": "emacs-overlay",
-        "rev": "b7d303d9194603403f9e17f92f396de2ec7db936",
+        "lastModified": 1790803764,
+        "narHash": "sha256-U1G2gdSnq+Y2nGaa4iQuVDHaKx73NvkGDXD6qz5vpdk=",
+        "owner": "maxschipper",
+        "repo": "helix-plugins-nix",
+        "rev": "9d5dbb77eaed7259aa2dff85146bdfa70b25a438",
         "type": "github"
       },
       "original": {
-        "owner": "nix-community",
-        "repo": "emacs-overlay",
+        "owner": "maxschipper",
+        "repo": "helix-plugins-nix",
         "type": "github"
       }
     },
@@ -174,13 +150,29 @@
     "root": {
       "inputs": {
         "agenix": "agenix",
-        "emacs-config": "emacs-config",
+        "helix-plugins": "helix-plugins",
         "hjem": "hjem",
         "niri-float-sticky": "niri-float-sticky",
         "niri-nix": "niri-nix",
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs",
         "preservation": "preservation"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1774449309,
+        "narHash": "sha256-brhZ8DmuGtzkCYHJg4HEd602amKm89Y9ytsFZ5uWD1w=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "c29398b59d2048c4ab79345812849c9bd15e9150",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "ref": "future-26.11",
+        "repo": "default",
+        "type": "github"
       }
     }
   },

@@ -9,7 +9,7 @@
       "inode/directory"
     ];
 
-    "emacs.desktop" = [
+    "Helix.desktop" = [
       "text/plain"
       "text/x-markdown"
       "application/x-shellscript"

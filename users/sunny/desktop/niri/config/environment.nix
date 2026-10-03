@@ -5,9 +5,9 @@
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     _JAVA_AWT_WM_NONREPARENTING = "1";
-    EDITOR = "emacs";
-    SUDO_EDITOR = "emacs";
-    VISUAL = "emacs";
+    EDITOR = "hx";
+    SUDO_EDITOR = "hx";
+    VISUAL = "hx";
     TERMINAL = "foot";
     GTK_USE_PORTAL = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";

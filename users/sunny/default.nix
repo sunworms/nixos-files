@@ -1,7 +1,6 @@
 {
   lib,
   pkgs,
-  inputs,
   ...
 }: let
   yaziUnfree = pkgs.yazi.override {
@@ -17,11 +16,10 @@
       yaziUnfree
     ];
   };
-
-  sunnyEmacs = inputs.emacs-config.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in {
   imports = [
     ./yazi
+    ./helix
     ./packages
     ./fonts
     ./desktop
@@ -34,15 +32,8 @@ in {
 
   packages = with pkgs; [
     yaziUnfree
-    sunnyEmacs
     (writeShellScriptBin "ls" ''
       exec ${lib.getExe pkgs.lsd} "$@"
-    '')
-    (writeShellScriptBin "e" ''
-      exec ${lib.getExe sunnyEmacs} "$@" & disown
-    '')
-    (writeShellScriptBin "et" ''
-      exec ${lib.getExe sunnyEmacs} -nw "$@"
     '')
     lsd
     lazygit

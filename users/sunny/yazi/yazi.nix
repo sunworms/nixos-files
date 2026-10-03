@@ -19,9 +19,8 @@
   opener = {
     edit = [
       {
-        run = "emacs %s";
-        block = false;
-        orphan = true;
+        run = "hx %s";
+        block = true;
       }
     ];
   };

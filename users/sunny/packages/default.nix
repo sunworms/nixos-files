@@ -70,6 +70,7 @@ in {
     tinymist
     typstyle
     websocat
+    steelix
     inputs.nix-index-database.packages.${pkgs.stdenv.hostPlatform.system}.comma-with-db
   ];
 }
