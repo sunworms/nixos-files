@@ -9,7 +9,7 @@
       "inode/directory"
     ];
 
-    "Helix.desktop" = [
+    "nvim.desktop" = [
       "text/plain"
       "text/x-markdown"
       "application/x-shellscript"

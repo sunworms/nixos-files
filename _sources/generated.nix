@@ -31,14 +31,6 @@
       sha256 = "sha256-ib2WLKXlFZkWpMS++lqaCPVA0tjNeU8vlV6NXUpGO/I=";
     };
   };
-  helix-fork = {
-    pname = "helix-fork";
-    version = "26.09.02";
-    src = fetchurl {
-      url = "https://github.com/gj1118/helix/releases/download/26.09.02/helix-26.09.02-x86_64-linux.tar.xz";
-      sha256 = "sha256-A99dkZVANZlxyUDfcxjmLJIlsOiIwcpTe20G6N1fBlM=";
-    };
-  };
   hjem = {
     pname = "hjem";
     version = "2b155694ce412300f240de06735c93779f9e19a4";
@@ -47,6 +39,15 @@
       sha256 = "sha256-JdmZVrzGDRRcOAwsYujnE7f/d1YZ9Xtk4z/1MWmQXxM=";
     };
     date = "2026-10-06";
+  };
+  mnw = {
+    pname = "mnw";
+    version = "a582dbedf7c8ec7effa6939ac5bdd23b27267d1b";
+    src = fetchTarball {
+      url = "https://github.com/Gerg-L/mnw/archive/a582dbedf7c8ec7effa6939ac5bdd23b27267d1b.tar.gz";
+      sha256 = "sha256-6IWPAMEotKY/nQvs1kU6qwMwCXTeW5HlOhw2RwFHFdI=";
+    };
+    date = "2026-09-25";
   };
   niri-float-sticky = {
     pname = "niri-float-sticky";
@@ -86,10 +87,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.104";
+    version = "2.9.106";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.104/pcsx2-v2.9.104-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-tmQVhi0o8Wwj+qDnASXcxIb4iViabuLL6pddg6xKTiA=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.106/pcsx2-v2.9.106-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-Pw7bGX0z+8a95IFjsmO7u6EmDjDOPWAnwoMf0GI/WKg=";
     };
   };
   preservation = {

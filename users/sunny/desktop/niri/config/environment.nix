@@ -5,12 +5,13 @@
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     _JAVA_AWT_WM_NONREPARENTING = "1";
-    EDITOR = "hx";
-    SUDO_EDITOR = "hx";
-    VISUAL = "hx";
+    EDITOR = "nvim";
+    SUDO_EDITOR = "nvim";
+    VISUAL = "nvim";
     TERMINAL = "foot";
     GTK_USE_PORTAL = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
+    MANPAGER = "nvim +Man!";
   };
 
   cursor = {

@@ -1,0 +1,35 @@
+return {
+	"journal",
+	cmd = {
+		"Journal",
+		"Today",
+		"Yesterday",
+		"Tomorrow",
+		"JournalNew",
+		"JournalTodo",
+		"JournalQuicknote",
+		"JournalToggle",
+		"JournalAddTodo",
+		"JournalTimestamp",
+		"JournalGrep",
+		"JournalTodos",
+		"JournalDone",
+		"JournalRandom",
+	},
+	keys = {
+		{ "<leader>jj", "<cmd>Today<CR>", desc = "Journal: Today" },
+		{ "<leader>jt", "<cmd>JournalTodo<CR>", desc = "Journal: Todo" },
+		{ "<leader>jq", "<cmd>JournalQuicknote<CR>", desc = "Journal: Quick Note" },
+		{ "<leader>jx", "<cmd>JournalToggle<CR>", desc = "Journal: Toggle Task" },
+		{ "<leader>ja", "<cmd>JournalAddTodo<CR>", desc = "Journal: Add Task" },
+		{ "<leader>jT", "<cmd>JournalTimestamp<CR>", desc = "Journal: Insert Timestamp" },
+		{ "<leader>jy", "<cmd>Yesterday<CR>", desc = "Journal: Yesterday" },
+		{ "<leader>jo", "<cmd>Tomorrow<CR>", desc = "Journal: Tomorrow" },
+		{ "<leader>jg", ":JournalGrep ", desc = "Journal: Grep Pattern" },
+		{ "<leader>ju", "<cmd>JournalTodos<CR>", desc = "Journal: Find Pending Tasks" },
+		{ "<leader>jd", "<cmd>JournalDone<CR>", desc = "Journal: Find Completed Tasks" },
+	},
+	after = function()
+		require("journal").setup()
+	end,
+}
