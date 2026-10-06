@@ -99,6 +99,13 @@ key.set("n", "<C-k>", "<C-w>k")
 key.set("n", "<C-l>", "<C-w>l")
 key.set("n", "<C-v>", "<C-w>v")
 
+key.set("n", "j", "gj")
+key.set("n", "k", "gk")
+key.set("n", "<Down>", "gj")
+key.set("n", "<Up>", "gk")
+key.set("i", "<Down>", "<C-o>gj")
+key.set("i", "<Up>", "<C-o>gk")
+
 key.set("n", "<leader><space>", function()
 	vim.cmd("nohlsearch")
 	vim.fn.clearmatches()
