@@ -6,6 +6,15 @@
   dockerTools,
 }:
 {
+  agenix = {
+    pname = "agenix";
+    version = "3daa710894355fa2fad8243380af373a2b4046ef";
+    src = fetchTarball {
+      url = "https://github.com/ryantm/agenix/archive/3daa710894355fa2fad8243380af373a2b4046ef.tar.gz";
+      sha256 = "sha256-n7wew722m1OTBT9DOIMxNX/NF4zfsSUABAO5eW3wikE=";
+    };
+    date = "2026-09-29";
+  };
   eden = {
     pname = "eden";
     version = "v1791243079.10bcd2d849/Eden-Linux-10bcd2d849";
@@ -30,6 +39,51 @@
       sha256 = "sha256-A99dkZVANZlxyUDfcxjmLJIlsOiIwcpTe20G6N1fBlM=";
     };
   };
+  hjem = {
+    pname = "hjem";
+    version = "2b155694ce412300f240de06735c93779f9e19a4";
+    src = fetchTarball {
+      url = "https://github.com/feel-co/hjem/archive/2b155694ce412300f240de06735c93779f9e19a4.tar.gz";
+      sha256 = "sha256-JdmZVrzGDRRcOAwsYujnE7f/d1YZ9Xtk4z/1MWmQXxM=";
+    };
+    date = "2026-10-06";
+  };
+  niri-float-sticky = {
+    pname = "niri-float-sticky";
+    version = "b3e79bd99bf99b993c3348f0051564f9d25f65e4";
+    src = fetchTarball {
+      url = "https://github.com/probeldev/niri-float-sticky/archive/b3e79bd99bf99b993c3348f0051564f9d25f65e4.tar.gz";
+      sha256 = "sha256-kQiZEjeviamwC/kUhc2p089cqNpjkcjzzIAv1UWW4tw=";
+    };
+    date = "2026-09-06";
+  };
+  niri-nix = {
+    pname = "niri-nix";
+    version = "926ca86fab82738fd1461b022ee11b4d61b9bf2e";
+    src = fetchTarball {
+      url = "https://codeberg.org/bananad3v/niri-nix/archive/926ca86fab82738fd1461b022ee11b4d61b9bf2e.tar.gz";
+      sha256 = "sha256-vE1BM9nWfusQ437QX9beTLhs5S2zAvdlmnrT9XYbacs=";
+    };
+    date = "2026-09-26";
+  };
+  nix-index-database = {
+    pname = "nix-index-database";
+    version = "e740bc4e9d8918d7819a51486d5099930c65c72e";
+    src = fetchTarball {
+      url = "https://github.com/nix-community/nix-index-database/archive/e740bc4e9d8918d7819a51486d5099930c65c72e.tar.gz";
+      sha256 = "sha256-oTM7QFgRQ+vxBpMBMc7hEYpqBtpXAzXu2xuB/tru84U=";
+    };
+    date = "2026-10-04";
+  };
+  nixpkgs = {
+    pname = "nixpkgs";
+    version = "151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4";
+    src = fetchTarball {
+      url = "https://github.com/NixOS/nixpkgs/archive/151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4.tar.gz";
+      sha256 = "sha256-Miqqk/ammqnTUxaoCyvtwoPeLbI1ksFyLxi/CazZpWY=";
+    };
+    date = "2026-10-06";
+  };
   pcsx2 = {
     pname = "pcsx2";
     version = "2.9.103";
@@ -37,5 +91,14 @@
       url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.103/pcsx2-v2.9.103-linux-appimage-x64-Qt.AppImage";
       sha256 = "sha256-ZxJygVZWl+82kzl++xZ4PrYUhP/8wx1orCVx0hr8ePc=";
     };
+  };
+  preservation = {
+    pname = "preservation";
+    version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
+    src = fetchTarball {
+      url = "https://github.com/nix-community/preservation/archive/93416f4614ad2dfed5b0dcf12f27e57d27a5ab11.tar.gz";
+      sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
+    };
+    date = "2025-09-09";
   };
 }

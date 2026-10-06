@@ -1,6 +1,6 @@
 {
   assets,
-  sources,
+  inputs,
   autoPatchelfHook,
   stdenv,
   installShellFiles,
@@ -48,8 +48,8 @@
 
   helixUnwrapped = stdenv.mkDerivation {
     pname = "helix-unwrapped";
-    version = sources.helix-fork.version;
-    src = sources.helix-fork.src;
+    version = inputs.helix-fork.version;
+    src = inputs.helix-fork.src;
 
     buildInputs = [
       stdenv.cc.cc.lib

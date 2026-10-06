@@ -1,10 +1,10 @@
 {
   pkgs,
-  sources,
+  inputs,
   assets,
   ...
 }: {
-  packages = [(pkgs.callPackage ./package.nix {inherit sources assets;})];
+  packages = [(pkgs.callPackage ./package.nix {inherit inputs assets;})];
 
   xdg.config.files = {
     "helix/config.toml".source = (pkgs.formats.toml {}).generate "helix-config.toml" (import ./config.nix);

@@ -1,7 +1,6 @@
 {
   pkgs,
   assets,
-  sources,
   inputs,
   osConfig,
   lib,
@@ -41,8 +40,8 @@ in {
     sunnySteam
     sunnySteam.run
     sunnyProtontricks
-    (callPackage ./eden.nix {inherit sources assets;})
-    (callPackage ./pcsx2.nix {inherit sources assets;})
+    (callPackage ./eden.nix {inherit inputs assets;})
+    (callPackage ./pcsx2.nix {inherit inputs assets;})
     ppsspp-sdl-wayland
     melonds
     azahar
@@ -70,6 +69,7 @@ in {
     tinymist
     typstyle
     websocat
-    inputs.nix-index-database.packages.${pkgs.stdenv.hostPlatform.system}.comma-with-db
+    (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db
+    (import inputs.nix-index-database.src {inherit pkgs;}).nix-index-with-small-db
   ];
 }

@@ -51,7 +51,7 @@
     # pins
     nvfetcher
 
-    inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
+    (callPackage "${inputs.agenix.src}/pkgs/agenix.nix" {})
     fastfetch
     wl-clipboard
   ];
