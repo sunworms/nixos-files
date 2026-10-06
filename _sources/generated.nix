@@ -40,15 +40,6 @@
     };
     date = "2026-10-06";
   };
-  mnw = {
-    pname = "mnw";
-    version = "a582dbedf7c8ec7effa6939ac5bdd23b27267d1b";
-    src = fetchTarball {
-      url = "https://github.com/Gerg-L/mnw/archive/a582dbedf7c8ec7effa6939ac5bdd23b27267d1b.tar.gz";
-      sha256 = "sha256-6IWPAMEotKY/nQvs1kU6qwMwCXTeW5HlOhw2RwFHFdI=";
-    };
-    date = "2026-09-25";
-  };
   niri-float-sticky = {
     pname = "niri-float-sticky";
     version = "b3e79bd99bf99b993c3348f0051564f9d25f65e4";
