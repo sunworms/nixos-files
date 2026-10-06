@@ -25,7 +25,6 @@ in {
     ./desktop
     ./ssh.nix
     ./theming.nix
-    ./browser.nix
   ];
 
   directory = "/home/sunny";

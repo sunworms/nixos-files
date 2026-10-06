@@ -18,6 +18,7 @@
         "/var/lib/libvirt"
         "/var/lib/agenix"
         "/var/lib/containers"
+        "/etc/chromium"
         "/etc/NetworkManager/system-connections"
         {
           directory = "/var/cache/tuigreet";
@@ -30,10 +31,6 @@
           file = "/etc/machine-id";
           how = "symlink";
           inInitrd = true;
-        }
-        {
-          file = "/etc/ly/save.txt";
-          how = "symlink";
         }
       ];
     };
