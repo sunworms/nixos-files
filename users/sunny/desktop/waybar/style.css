@@ -166,7 +166,7 @@ label:focus {
 }
 
 tooltip {
-    background-color: @color7;
+    background-color: mix(@color6, @color5, 0.5);
     border: 0.1rem solid @bordercolor;
     border-radius: 0.5rem;
 }

@@ -56,11 +56,11 @@
       on-scroll = 1;
       on-click-right = "mode";
       format = {
-        months = "<span color='#5E81AC'><b>{}</b></span>";
+        months = "<span color='#1F51FF'><b>{}</b></span>";
         days = "<span color='#2E3440'><b>{}</b></span>";
-        weeks = "<span color='#4C566A'><b>W{}</b></span>";
-        weekdays = "<span color='#D08770'><b>{}</b></span>";
-        today = "<span color='#BF616A'><b><u>{}</u></b></span>";
+        weeks = "<span color='#FF5F1F'><b>W{}</b></span>";
+        weekdays = "<span color='#CCFF00'><b>{}</b></span>";
+        today = "<span color='#FF0000'><b><u>{}</u></b></span>";
       };
     };
     actions = {
