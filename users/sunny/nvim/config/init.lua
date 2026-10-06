@@ -138,8 +138,6 @@ signal:start(
 	end)
 )
 
-vim.cmd.colorscheme("catppuccin-nvim")
-
 vim.api.nvim_create_autocmd("FileType", {
 	callback = function(args)
 		local lang = vim.treesitter.language.get_lang(vim.bo[args.buf].filetype)
