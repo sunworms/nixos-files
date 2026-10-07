@@ -1,0 +1,96 @@
+{assets}: {
+  widget = {
+    audio_visualizer = {
+      centered = false;
+      color_2 = "secondary";
+    };
+
+    clock = {
+      format = "{:%a, %d %b %Y, %H:%M}";
+      tooltip_format = "{:%a, %d %b %Y, %H:%M:%S}";
+      vertical_format = "{:%d\\n%m\\n%y\\n-\\n%H\\n%M}";
+    };
+
+    taskbar = {
+      capsule = true;
+      group_by_workspace = true;
+      hide_empty_workspaces = true;
+    };
+
+    network = {
+      show_label = false;
+    };
+
+    workspaces = {
+      show_labels = false;
+      hide_when_empty = true;
+    };
+
+    cpu = {
+      visualization = "gauge";
+      show_value = false;
+      type = "sysmon";
+    };
+
+    ram = {
+      visualization = "gauge";
+      show_value = false;
+      stat = "ram_used";
+      type = "sysmon";
+    };
+
+    temp = {
+      visualization = "gauge";
+      show_value = false;
+      stat = "cpu_temp";
+      type = "sysmon";
+    };
+
+    brightness = {
+      show_label = false;
+    };
+
+    volume = {
+      show_label = false;
+    };
+
+    recorder = {
+      type = "noctalia/screen_recorder:recorder";
+    };
+
+    cat = {
+      audio_spectrum = true;
+      tappy_mode = true;
+      type = "noctalia/bongocat:cat";
+      use_mpris_filter = true;
+    };
+
+    launcher = {
+      glyph = "gender-transgender";
+      custom_image = "${assets}/NixOS.svg";
+      custom_image_colorize = true;
+    };
+
+    media = {
+      max_length = 150;
+      title_scroll = "on_hover";
+      album_art_only = true;
+    };
+
+    mpvpaper = {
+      type = "noctalia/mpvpaper:mpvpaper";
+    };
+
+    widget = {
+      type = "alexander/screen-toolkit:widget";
+    };
+
+    mirror = {
+      type = "elijaharch/wl-screen-mirror:mirror";
+    };
+
+    toggle = {
+      type = "cleboost/hotspot:toggle";
+    };
+  };
+}
