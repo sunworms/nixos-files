@@ -2,7 +2,7 @@
   theme = {
     builtin = "Noctalia";
     source = "wallpaper";
-    wallpaper_scheme = "vibrant";
+    wallpaper_scheme = "faithful";
     community_palette = "Catppuccin Mocha Lavender";
 
     templates = {
