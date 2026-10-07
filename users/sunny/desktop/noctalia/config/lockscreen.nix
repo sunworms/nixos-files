@@ -1,4 +1,6 @@
 {
+  lockscreen.transition = [];
+
   lockscreen_widgets = {
     enabled = true;
     schema_version = 2;
@@ -44,8 +46,8 @@
       logout = {
         box_height = 48.0;
         box_width = 48.0;
-        cx = 727.0;
-        cy = 986.5;
+        cx = 712.5;
+        cy = 932.5;
         output = "eDP-1";
         rotation = 0.0;
         type = "button";
@@ -61,8 +63,8 @@
       shutdown = {
         box_height = 48.0;
         box_width = 48.0;
-        cx = 919.0;
-        cy = 986.5;
+        cx = 927.0;
+        cy = 932.5;
         output = "eDP-1";
         rotation = 0.0;
         type = "button";
@@ -78,8 +80,8 @@
       reboot = {
         box_height = 48.0;
         box_width = 48.0;
-        cx = 855.0;
-        cy = 986.5;
+        cx = 856.5;
+        cy = 932.5;
         output = "eDP-1";
         rotation = 0.0;
         type = "button";
@@ -95,8 +97,8 @@
       suspend = {
         box_height = 48.0;
         box_width = 48.0;
-        cx = 791.0;
-        cy = 986.5;
+        cx = 784.5;
+        cy = 932.5;
         output = "eDP-1";
         rotation = 0.0;
         type = "button";
