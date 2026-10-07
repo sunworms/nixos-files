@@ -83,4 +83,13 @@
     };
     date = "2025-09-09";
   };
+  sunny-nvim = {
+    pname = "sunny-nvim";
+    version = "f2f021e61e263dc0285437e5f9510af47552d515";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/neovim-config/archive/f2f021e61e263dc0285437e5f9510af47552d515.tar.gz";
+      sha256 = "sha256-M/DzEw/73QSKsQsWP5LkT6ZB/QeuCnNnB1wrCuKMuSA=";
+    };
+    date = "2026-10-07";
+  };
 }
