@@ -1,10 +1,8 @@
 {
   lib,
   pkgs,
-  inputs,
   ...
 }: let
-  sunnyNvim = import inputs.sunny-nvim.src {inherit pkgs;};
   yaziUnfree = pkgs.yazi.override {
     _7zz = pkgs._7zz-rar;
   };
@@ -21,6 +19,7 @@
 in {
   imports = [
     ./yazi
+    ./helix
     ./packages
     ./fonts
     ./desktop
@@ -32,16 +31,10 @@ in {
 
   packages = with pkgs; [
     yaziUnfree
-    sunnyNvim
-    (writeShellScriptBin "vi" ''
-      exec ${lib.getExe sunnyNvim} "$@"
-    '')
-    (writeShellScriptBin "vim" ''
-      exec ${lib.getExe sunnyNvim} "$@"
-    '')
     (writeShellScriptBin "ls" ''
       exec ${lib.getExe pkgs.lsd} "$@"
     '')
+    w3m
     lsd
     lazygit
     imv
