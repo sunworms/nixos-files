@@ -78,10 +78,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.106";
+    version = "2.9.108";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.106/pcsx2-v2.9.106-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-Pw7bGX0z+8a95IFjsmO7u6EmDjDOPWAnwoMf0GI/WKg=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.108/pcsx2-v2.9.108-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-Rgys3aEgE9Ag1Q45O2XfWJMOb1ylf4+buRFnfMgUzIw=";
     };
   };
   preservation = {
