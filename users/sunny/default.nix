@@ -19,7 +19,7 @@
 in {
   imports = [
     ./yazi
-    ./nvim
+    ./helix
     ./packages
     ./fonts
     ./desktop

@@ -36,3 +36,7 @@ fetch.url = "https://nightly.eden-emu.dev/$ver-amd64-gcc-standard.AppImage"
 [helium]
 src.github = "imputnet/helium-linux"
 fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64_linux.tar.xz"
+
+[helix-fork]
+src.github = "gj1118/helix"
+fetch.url = "https://github.com/gj1118/helix/releases/download/$ver/helix-$ver-x86_64-linux.tar.xz"
