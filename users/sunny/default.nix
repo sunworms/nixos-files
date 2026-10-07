@@ -34,6 +34,7 @@ in {
     (writeShellScriptBin "ls" ''
       exec ${lib.getExe pkgs.lsd} "$@"
     '')
+    w3m
     lsd
     lazygit
     imv
