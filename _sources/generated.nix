@@ -59,19 +59,19 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4";
+    version = "e7439b6b14ad3cc35d05608ebca9bce01a25f5f8";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4.tar.gz";
-      sha256 = "sha256-Miqqk/ammqnTUxaoCyvtwoPeLbI1ksFyLxi/CazZpWY=";
+      url = "https://github.com/NixOS/nixpkgs/archive/e7439b6b14ad3cc35d05608ebca9bce01a25f5f8.tar.gz";
+      sha256 = "sha256-H83yz/do+hjOO0uujHyH8RgtIQP2v7Mw+cLwcZK/xKc=";
     };
-    date = "2026-10-06";
+    date = "2026-10-08";
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.111";
+    version = "2.9.112";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.111/pcsx2-v2.9.111-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-CrrUurCDEq9lgZ+ujpxe/dr4RJj9oH7TzDcGNYmnAMQ=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.112/pcsx2-v2.9.112-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-Y8kSaRZt6OkW0x9At/xwC1HhLEV23sJjvhEgMI89y6I=";
     };
   };
   preservation = {
