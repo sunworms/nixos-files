@@ -28,6 +28,5 @@
   packages = with pkgs; [
     hyfetch
     git
-    xwayland-satellite
   ];
 }
