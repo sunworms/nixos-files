@@ -8,7 +8,7 @@
         height = 295;
       };
       default_position = {
-        x = 1025;
+        x = 975;
         y = 225;
         anchor = "top_left";
       };
