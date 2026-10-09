@@ -5,11 +5,17 @@
   ...
 }: {
   imports = [
-    ./browser
+    ./btop
     ./foot
     ./fish
-    ./noctalia
-    ./umbriel
+    ./niri
+    ./fuzzel
+    ./clipse
+    ./waybar
+    ./wal
+    ./mako
+    ./scripts
+    ./desktop-files.nix
   ];
 
   files = {
@@ -28,5 +34,12 @@
   packages = with pkgs; [
     hyfetch
     git
+    xwayland-satellite
+    awww
+    playerctl
+    brightnessctl
+    pwvucontrol
+    blueman
+    networkmanagerapplet
   ];
 }

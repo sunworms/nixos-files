@@ -1,0 +1,72 @@
+set default-bg                      "{background.rgba}"
+set render-loading-bg               "{background.rgba}"
+
+set default-fg                      "{foreground.rgba}"
+
+set statusbar-bg                    "{color8.rgba}"
+set statusbar-fg                    "{color4.rgba}"
+
+set inputbar-bg                    "{color8.rgba}"
+set inputbar-fg                    "{color4.rgba}"
+
+set index-bg                        "{background.rgba}"
+set index-fg                        "{foreground.rgba}"
+
+set index-active-bg                 "{color8.rgba}"
+set index-active-fg                 "{color4.rgba}"
+
+set completion-bg                   "{color8.rgba}"
+set completion-fg                   "{color15.rgba}"
+
+set completion-group-bg             "{background.rgba}"
+set completion-group-fg             "{color15.rgba}"
+
+set completion-highlight-bg         "{color4.rgba}"
+set completion-highlight-fg         "{color8.rgba}"
+
+set notification-bg                 "{color8.rgba}"
+set notification-fg                 "{foreground.rgba}"
+
+set notification-warning-bg         "{color11.rgba}"
+set notification-warning-fg         "{foreground.rgba}"
+
+set notification-error-bg           "{color9.rgba}"
+set notification-error-fg           "{foreground.rgba}"
+
+set highlight-color                 "{color10.rgba}"
+set highlight-active-color          "{color2.rgba}"
+
+set highlight-fg                    "{color4.rgba}"
+
+set selection-clipboard clipboard
+set incremental-search true
+set search-hadjust true
+set adjust-open width
+set guioptions none
+
+map [normal]     z zoom in
+map [normal]     Z zoom out
+map [fullscreen] z zoom in
+map [fullscreen] Z zoom out
+
+map [normal]     D toggle_page_mode
+map [fullscreen] D toggle_page_mode
+
+map [normal]     u scroll half-up
+map [normal]     d scroll half-down
+map [fullscreen] u scroll half-up
+map [fullscreen] d scroll half-down
+
+map [normal]     f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+map [normal]     <C-r> reload
+map [fullscreen] <C-r> reload
+
+map [normal]     b toggle_statusbar
+map [fullscreen] b toggle_statusbar
+
+map [normal]     H adjust_window best-fit
+map [normal]     W adjust_window width
+map [fullscreen] H adjust_window best-fit
+map [fullscreen] W adjust_window width

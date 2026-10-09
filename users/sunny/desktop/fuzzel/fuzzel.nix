@@ -1,0 +1,6 @@
+{
+  main = {
+    include = "~/.cache/wal/fuzzel.ini";
+    terminal = "foot";
+  };
+}

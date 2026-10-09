@@ -48,6 +48,24 @@
     };
     date = "2026-10-06";
   };
+  niri-float-sticky = {
+    pname = "niri-float-sticky";
+    version = "b3e79bd99bf99b993c3348f0051564f9d25f65e4";
+    src = fetchTarball {
+      url = "https://github.com/probeldev/niri-float-sticky/archive/b3e79bd99bf99b993c3348f0051564f9d25f65e4.tar.gz";
+      sha256 = "sha256-kQiZEjeviamwC/kUhc2p089cqNpjkcjzzIAv1UWW4tw=";
+    };
+    date = "2026-09-06";
+  };
+  niri-nix = {
+    pname = "niri-nix";
+    version = "926ca86fab82738fd1461b022ee11b4d61b9bf2e";
+    src = fetchTarball {
+      url = "https://codeberg.org/bananad3v/niri-nix/archive/926ca86fab82738fd1461b022ee11b4d61b9bf2e.tar.gz";
+      sha256 = "sha256-vE1BM9nWfusQ437QX9beTLhs5S2zAvdlmnrT9XYbacs=";
+    };
+    date = "2026-09-26";
+  };
   nix-index-database = {
     pname = "nix-index-database";
     version = "e740bc4e9d8918d7819a51486d5099930c65c72e";
@@ -59,19 +77,19 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "e7439b6b14ad3cc35d05608ebca9bce01a25f5f8";
+    version = "151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/e7439b6b14ad3cc35d05608ebca9bce01a25f5f8.tar.gz";
-      sha256 = "sha256-H83yz/do+hjOO0uujHyH8RgtIQP2v7Mw+cLwcZK/xKc=";
+      url = "https://github.com/NixOS/nixpkgs/archive/151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4.tar.gz";
+      sha256 = "sha256-Miqqk/ammqnTUxaoCyvtwoPeLbI1ksFyLxi/CazZpWY=";
     };
-    date = "2026-10-08";
+    date = "2026-10-06";
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.112";
+    version = "2.9.103";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.112/pcsx2-v2.9.112-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-Y8kSaRZt6OkW0x9At/xwC1HhLEV23sJjvhEgMI89y6I=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.103/pcsx2-v2.9.103-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-ZxJygVZWl+82kzl++xZ4PrYUhP/8wx1orCVx0hr8ePc=";
     };
   };
   preservation = {

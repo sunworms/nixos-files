@@ -8,8 +8,8 @@
     "yazi/plugins".source = import ./plugins.nix {inherit pkgs;};
     "yazi/theme.toml".source = (pkgs.formats.toml {}).generate "theme.toml" {
       flavor = {
-        dark = "noctalia";
-        light = "noctalia";
+        dark = "pywal";
+        light = "pywal";
       };
     };
   };

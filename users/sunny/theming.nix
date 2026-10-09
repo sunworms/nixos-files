@@ -12,7 +12,7 @@
         #ini
         ''
           [Appearance]
-          color_scheme_path=/home/sunny/.config/${qt}ct/colors/noctalia.conf
+          color_scheme_path=/home/sunny/.cache/wal/qtct-colors.conf
           custom_palette=true
           icon_theme=Adwaita
           standard_dialogs=xdgdesktopportal
@@ -52,13 +52,13 @@ in {
       "gtk-3.0/gtk.css".text =
         #css
         ''
-          @import url("noctalia.css");
+          @import url("/home/sunny/.cache/wal/gtk-colors.css");
         '';
       "gtk-4.0/gtk.css".text =
         #css
         ''
           @import url("file://${pkgs.adw-gtk3}/share/themes/adw-gtk3/gtk-4.0/gtk.css");
-          @import url("noctalia.css");
+          @import url("/home/sunny/.cache/wal/gtk-colors.css");
         '';
     }
     // qtctFiles

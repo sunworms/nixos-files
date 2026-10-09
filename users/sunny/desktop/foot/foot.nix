@@ -1,6 +1,6 @@
 {config}: {
   main = {
-    include = "~/.config/foot/themes/noctalia";
+    include = "~/.cache/wal/foot.ini";
     font = "${config.fonts.monospace}:size=11.25";
   };
 

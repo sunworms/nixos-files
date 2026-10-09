@@ -1,0 +1,13 @@
+{
+  input = {
+    keyboard = {
+      xkb = {};
+      numlock = [];
+    };
+
+    touchpad = {
+      tap = [];
+      natural-scroll = [];
+    };
+  };
+}

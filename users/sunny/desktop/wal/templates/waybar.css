@@ -1,0 +1,35 @@
+/*
+ * Pywal colors
+ */
+@define-color background {background};
+@define-color foreground {foreground};
+@define-color cursor {cursor};
+@define-color color0 {color0};
+@define-color color1 {color1};
+@define-color color2 {color2};
+@define-color color3 {color3};
+@define-color color4 {color4};
+@define-color color5 {color5};
+@define-color color6 {color6};
+@define-color color7 {color7};
+@define-color color8 {color8};
+@define-color color9 {color9};
+@define-color color10 {color10};
+@define-color color11 {color11};
+@define-color color12 {color12};
+@define-color color13 {color13};
+@define-color color14 {color14};
+@define-color color15 {color15};
+
+/*
+ * Semantic tokens (use these in style.css instead of raw colorN)
+ * surface* are subtle tints of the foreground over the background, so they
+ * keep good text contrast on any wallpaper.
+ */
+@define-color surface        mix(@background, @foreground, 0.08);
+@define-color surface_hover  mix(@background, @foreground, 0.16);
+@define-color surface_active mix(@background, @foreground, 0.24);
+@define-color muted          mix(@background, @foreground, 0.55);
+@define-color accent         @color4;
+@define-color accent_bright  @color6;
+@define-color urgent         @foreground;
