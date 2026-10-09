@@ -17,18 +17,18 @@
   };
   eden = {
     pname = "eden";
-    version = "v1791243079.10bcd2d849/Eden-Linux-10bcd2d849";
+    version = "v1791499301.67bada77f8/Eden-Linux-67bada77f8";
     src = fetchurl {
-      url = "https://nightly.eden-emu.dev/v1791243079.10bcd2d849/Eden-Linux-10bcd2d849-amd64-gcc-standard.AppImage";
-      sha256 = "sha256-bO75AggwVOL6z9eUXcx401pzmsf2Af8KW5XRoRTTaVg=";
+      url = "https://nightly.eden-emu.dev/v1791499301.67bada77f8/Eden-Linux-67bada77f8-amd64-gcc-standard.AppImage";
+      sha256 = "sha256-fdKZMdLBGSx2H2TNQntmYULe7An8BbXqcPFqc0jqLPo=";
     };
   };
   helium = {
     pname = "helium";
-    version = "0.18.3.1";
+    version = "0.19.1.2";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.18.3.1/helium-0.18.3.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-ib2WLKXlFZkWpMS++lqaCPVA0tjNeU8vlV6NXUpGO/I=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.19.1.2/helium-0.19.1.2-x86_64_linux.tar.xz";
+      sha256 = "sha256-0x6n9kY3k0rFRDj7mlzS02U+md+jm74fQyuTtjGur60=";
     };
   };
   helix-fork = {
@@ -77,19 +77,19 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4";
+    version = "e7439b6b14ad3cc35d05608ebca9bce01a25f5f8";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/151fa4e8ddfdd8dd25d945ad94ed54a13de9f6e4.tar.gz";
-      sha256 = "sha256-Miqqk/ammqnTUxaoCyvtwoPeLbI1ksFyLxi/CazZpWY=";
+      url = "https://github.com/NixOS/nixpkgs/archive/e7439b6b14ad3cc35d05608ebca9bce01a25f5f8.tar.gz";
+      sha256 = "sha256-H83yz/do+hjOO0uujHyH8RgtIQP2v7Mw+cLwcZK/xKc=";
     };
-    date = "2026-10-06";
+    date = "2026-10-08";
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.103";
+    version = "2.9.114";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.103/pcsx2-v2.9.103-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-ZxJygVZWl+82kzl++xZ4PrYUhP/8wx1orCVx0hr8ePc=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.114/pcsx2-v2.9.114-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-A5cbfqVUAOaFitQM0aVZDxosspGz/ykW3tGJvfxQCQo=";
     };
   };
   preservation = {
