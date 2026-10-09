@@ -1,7 +1,4 @@
-require("yafg"):setup({
-	editor = "nvim",
-	args = { "--noplugin" },
-})
+require("yafg"):setup({})
 
 require("gvfs"):setup({})
 

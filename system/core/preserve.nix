@@ -18,6 +18,7 @@
         "/var/lib/libvirt"
         "/var/lib/agenix"
         "/var/lib/containers"
+        "/etc/chromium"
         "/etc/NetworkManager/system-connections"
         {
           directory = "/var/cache/tuigreet";
