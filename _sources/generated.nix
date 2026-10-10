@@ -25,10 +25,10 @@
   };
   helium = {
     pname = "helium";
-    version = "0.19.1.2";
+    version = "0.19.2.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.19.1.2/helium-0.19.1.2-x86_64_linux.tar.xz";
-      sha256 = "sha256-0x6n9kY3k0rFRDj7mlzS02U+md+jm74fQyuTtjGur60=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.19.2.1/helium-0.19.2.1-x86_64_linux.tar.xz";
+      sha256 = "sha256-cHzzGeOj0qoGHKFddUh3vRi4sokghzjIKfywhzvH7Ns=";
     };
   };
   helix-fork = {
@@ -86,10 +86,10 @@
   };
   pcsx2 = {
     pname = "pcsx2";
-    version = "2.9.114";
+    version = "2.9.115";
     src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.114/pcsx2-v2.9.114-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-A5cbfqVUAOaFitQM0aVZDxosspGz/ykW3tGJvfxQCQo=";
+      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.115/pcsx2-v2.9.115-linux-appimage-x64-Qt.AppImage";
+      sha256 = "sha256-9qyck0c7EqTcrS+or0gp5A2WBO5bDgiKZrNL2Z5TEII=";
     };
   };
   preservation = {
