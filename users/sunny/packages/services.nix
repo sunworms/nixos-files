@@ -81,17 +81,5 @@ in {
 
       wantedBy = ["default.target"];
     };
-
-    helium-del-cache = {
-      description = "Delete Helium Cache on login";
-      after = ["default.target"];
-      wantedBy = ["default.target"];
-      serviceConfig = {
-        Type = "oneshot";
-        ExecStart = ''
-          /usr/bin/env rm -rf "%h/.config/net.imput.helium/Default/AutofillAiModelCache" "%h/.config/net.imput.helium/Default/DawnGraphiteCache" "%h/.config/net.imput.helium/Default/DawnWebGPUCache" "%h/.config/net.imput.helium/Default/GPUCache" "%h/.config/net.imput.helium/Default/optimization_guide_hint_cache_store" "%h/.config/net.imput.helium/Default/Service Worker"
-        '';
-      };
-    };
   };
 }

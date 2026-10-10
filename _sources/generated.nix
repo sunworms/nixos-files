@@ -23,14 +23,6 @@
       sha256 = "sha256-fdKZMdLBGSx2H2TNQntmYULe7An8BbXqcPFqc0jqLPo=";
     };
   };
-  helium = {
-    pname = "helium";
-    version = "0.19.2.1";
-    src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.19.2.1/helium-0.19.2.1-x86_64_linux.tar.xz";
-      sha256 = "sha256-cHzzGeOj0qoGHKFddUh3vRi4sokghzjIKfywhzvH7Ns=";
-    };
-  };
   helix-fork = {
     pname = "helix-fork";
     version = "26.09.02";
@@ -100,5 +92,13 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
+  };
+  vencord = {
+    pname = "vencord";
+    version = "v1.15.11";
+    src = fetchurl {
+      url = "https://github.com/Vendicated/Vencord/releases/download/devbuild/extension-firefox.zip";
+      sha256 = "sha256-DGxXqaYSVWToVs1YZrKt2VNu1UxKvxcn8fQ3srEWYec=";
+    };
   };
 }

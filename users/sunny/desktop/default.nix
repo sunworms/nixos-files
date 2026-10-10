@@ -5,7 +5,6 @@
   ...
 }: {
   imports = [
-    ./browser
     ./btop
     ./foot
     ./fish
@@ -16,6 +15,7 @@
     ./wal
     ./mako
     ./scripts
+    ./browser.nix
     ./desktop-files.nix
   ];
 

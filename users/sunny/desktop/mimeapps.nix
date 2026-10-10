@@ -23,7 +23,7 @@
       "text/rhtml"
     ];
 
-    "helium.desktop" = [
+    "firefox-esr.desktop" = [
       "text/html"
       "x-scheme-handler/http"
       "x-scheme-handler/https"
