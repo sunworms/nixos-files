@@ -49,6 +49,12 @@
 in {
   xdg.config.files =
     {
+      "kdeglobals".text =
+        #ini
+        ''
+          [UiSettings]
+          ColorScheme=Pywal
+        '';
       "gtk-3.0/gtk.css".text =
         #css
         ''
