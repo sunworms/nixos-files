@@ -13,11 +13,6 @@
 
   programs.dconf.enable = true;
 
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-  };
-
   programs.fuse.userAllowOther = true;
 
   hardware.graphics = {
@@ -54,10 +49,14 @@
     (callPackage "${inputs.agenix.src}/pkgs/agenix.nix" {})
     fastfetch
     wl-clipboard
+    busybox
   ];
 
   environment.sessionVariables = {
     GSETTINGS_SCHEMA_DIR = "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}/glib-2.0/schemas";
+    EDITOR = "vi";
+    VISUAL = "vi";
+    SUDO_EDITOR = "vi";
   };
 
   environment.pathsToLink = [
