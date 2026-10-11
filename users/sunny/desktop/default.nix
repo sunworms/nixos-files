@@ -15,7 +15,7 @@
     ./wal
     ./mako
     ./scripts
-    ./browser.nix
+    ./browser
     ./desktop-files.nix
   ];
 

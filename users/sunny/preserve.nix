@@ -22,7 +22,7 @@
       ".cache/awww"
       ".cache/nix"
 
-      ".config/mozilla"
+      ".config/net.imput.helium/Default"
       ".config/rclone"
       ".config/fish"
       ".config/clipse"
@@ -35,7 +35,6 @@
       ".config/ppsspp"
       ".config/qBittorrent"
 
-      ".local/share/applications"
       ".local/share/Steam"
       ".local/share/gvfs-metadata"
       ".local/share/eden"

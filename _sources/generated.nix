@@ -23,6 +23,14 @@
       sha256 = "sha256-fdKZMdLBGSx2H2TNQntmYULe7An8BbXqcPFqc0jqLPo=";
     };
   };
+  helium = {
+    pname = "helium";
+    version = "0.19.2.1";
+    src = fetchurl {
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.19.2.1/helium-0.19.2.1-x86_64.AppImage";
+      sha256 = "sha256-oEVQo8fHC9rTrNOkQw7ajSr8C/cXOpxYpAP+q5UXCH8=";
+    };
+  };
   helix-fork = {
     pname = "helix-fork";
     version = "26.09.02";
