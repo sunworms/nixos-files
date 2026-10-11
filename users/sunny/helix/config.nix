@@ -1,18 +1,8 @@
 {
   theme = "pywal";
   editor = {
-    #bufferline = "multiple"; #for official helix
+    bufferline = "multiple";
     cursorline = true;
-    # only in gj1118/helix
-    bufferline = {
-      render-mode = "multiple";
-      separator = "";
-    };
-    # only in gj1118/helix
-    notifications = {
-      enable = true;
-      style = "statusline";
-    };
     workspace-trust = {
       level = "servers";
       prompt = true;
@@ -24,10 +14,6 @@
     };
     soft-wrap = {
       enable = true;
-    };
-    # only in gj1118/helix
-    auto-reload = {
-      focus-gained = true;
     };
   };
 

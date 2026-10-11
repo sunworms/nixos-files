@@ -31,14 +31,6 @@
       sha256 = "sha256-oEVQo8fHC9rTrNOkQw7ajSr8C/cXOpxYpAP+q5UXCH8=";
     };
   };
-  helix-fork = {
-    pname = "helix-fork";
-    version = "26.09.02";
-    src = fetchurl {
-      url = "https://github.com/gj1118/helix/releases/download/26.09.02/helix-26.09.02-x86_64-linux.tar.xz";
-      sha256 = "sha256-A99dkZVANZlxyUDfcxjmLJIlsOiIwcpTe20G6N1fBlM=";
-    };
-  };
   hjem = {
     pname = "hjem";
     version = "2b155694ce412300f240de06735c93779f9e19a4";
@@ -68,12 +60,12 @@
   };
   nix-index-database = {
     pname = "nix-index-database";
-    version = "e740bc4e9d8918d7819a51486d5099930c65c72e";
+    version = "9a2dd40780eeab8543aa97c59c26f11267025616";
     src = fetchTarball {
-      url = "https://github.com/nix-community/nix-index-database/archive/e740bc4e9d8918d7819a51486d5099930c65c72e.tar.gz";
-      sha256 = "sha256-oTM7QFgRQ+vxBpMBMc7hEYpqBtpXAzXu2xuB/tru84U=";
+      url = "https://github.com/nix-community/nix-index-database/archive/9a2dd40780eeab8543aa97c59c26f11267025616.tar.gz";
+      sha256 = "sha256-LpIhxnuO0tYeZ4k7BbNMxsPs2zJpB4hWXO1jdhUuE7Q=";
     };
-    date = "2026-10-04";
+    date = "2026-10-11";
   };
   nixpkgs = {
     pname = "nixpkgs";
