@@ -18,7 +18,7 @@ in
 
     extraInstallCommands = ''
       wrapProgram $out/bin/${pname} \
-          --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations --enable-wayland-ime=true}}"
+          --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations --enable-wayland-ime=true --gtk-version=4}}"
 
       install -m 444 -D ${appimageContents}/${pname}.desktop -t $out/share/applications
       cp -r ${appimageContents}/usr/share/icons $out/share
