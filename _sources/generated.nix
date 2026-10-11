@@ -93,12 +93,4 @@
     };
     date = "2025-09-09";
   };
-  vencord = {
-    pname = "vencord";
-    version = "v1.15.11";
-    src = fetchurl {
-      url = "https://github.com/Vendicated/Vencord/releases/download/devbuild/extension-firefox.zip";
-      sha256 = "sha256-DGxXqaYSVWToVs1YZrKt2VNu1UxKvxcn8fQ3srEWYec=";
-    };
-  };
 }
