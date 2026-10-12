@@ -40,6 +40,14 @@
     };
     date = "2026-10-06";
   };
+  mitos = {
+    pname = "mitos";
+    version = "0.1.0";
+    src = fetchurl {
+      url = "https://github.com/mitos-editor/mitos/releases/download/v0.1.0/mitos-v0.1.0-x86_64-linux.tar.xz";
+      sha256 = "sha256-gEZnyBXcz3gp1F1MnCYJP/DQIowJ3g1Dhve8Qe3DFx8=";
+    };
+  };
   niri-float-sticky = {
     pname = "niri-float-sticky";
     version = "b3e79bd99bf99b993c3348f0051564f9d25f65e4";

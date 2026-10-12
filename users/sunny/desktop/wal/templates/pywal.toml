@@ -3,11 +3,15 @@
 "attribute" = {{ fg = "color3", modifiers = ["bold"] }}
 
 "type" = "color3"
+"type.builtin" = {{ fg = "color3", modifiers = ["italic"] }}
+"type.parameter" = {{ fg = "color11", modifiers = ["italic"] }}
 "type.enum.variant" = "color11"
 
 "constructor" = "color6"
 
 "constant" = "color9"
+"constant.builtin" = {{ fg = "color9", modifiers = ["italic"] }}
+"constant.builtin.boolean" = {{ fg = "color9", modifiers = ["italic", "bold"] }}
 "constant.character" = "color10"
 "constant.character.escape" = "color14"
 
@@ -16,55 +20,116 @@
 "string.special" = {{ fg = "color2" }}
 "string.special.symbol" = {{ fg = "color2" }}
 "string.special.path" = {{ fg = "color6", underline = {{ color = "color6", style = "line" }} }}
+"string.special.url" = {{ fg = "color6", underline = {{ color = "color6", style = "line" }} }}
 
 "path" = {{ fg = "color6", underline = {{ color = "color6", style = "line" }} }}
 
 "comment" = {{ fg = "color8", modifiers = ["italic"] }}
+"comment.line.documentation" = {{ fg = "color7", modifiers = ["italic"] }}
+"comment.block.documentation" = {{ fg = "color7", modifiers = ["italic"] }}
+"comment.unused" = {{ fg = "color8", modifiers = ["dim", "italic"] }}
 
 "variable" = "foreground"
 "variable.builtin" = "color1"
 "variable.parameter" = {{ fg = "color7", modifiers = ["italic"] }}
 "variable.other.member" = "color4"
+"variable.other.member.private" = {{ fg = "color4", modifiers = ["italic"] }}
+"variable.mutable" = {{ fg = "foreground", underline = {{ color = "color8", style = "dotted" }} }}
+"variable.builtin.mutable" = {{ fg = "color1", underline = {{ color = "color8", style = "dotted" }} }}
+"variable.parameter.mutable" = {{ fg = "color7", modifiers = ["italic"], underline = {{ color = "color8", style = "dotted" }} }}
 
 "label" = "color5"
 
 "punctuation" = "color8"
+"punctuation.delimiter" = "color8"
+"punctuation.bracket" = "color7"
+"punctuation.special" = "color6"
 
 "keyword" = {{ fg = "color5", modifiers = ["bold"] }}
 "keyword.control.conditional" = {{ fg = "color13", modifiers = ["italic", "bold"] }}
+"keyword.control.repeat" = {{ fg = "color13", modifiers = ["italic", "bold"] }}
+"keyword.control.import" = {{ fg = "color5", modifiers = ["italic", "bold"] }}
+"keyword.control.return" = {{ fg = "color13", modifiers = ["bold"] }}
+"keyword.control.exception" = {{ fg = "color1", modifiers = ["bold"] }}
+"keyword.operator" = {{ fg = "color6", modifiers = ["bold"] }}
+"keyword.directive" = "color12"
+"keyword.storage.modifier" = {{ fg = "color5", modifiers = ["italic"] }}
 
 "operator" = {{ fg = "color6", modifiers = ["bold"] }}
 
 "function" = "color4"
+"function.builtin" = {{ fg = "color4", modifiers = ["italic"] }}
 "function.macro" = "color12"
+"function.special" = "color12"
 
 "tag" = "color1"
+"tag.builtin" = {{ fg = "color1", modifiers = ["italic"] }}
 
 "namespace" = {{ fg = "color6", modifiers = ["italic"] }}
 
 "special" = "color6"
 
+"embedded" = "foreground"
+
 "markup.heading" = "color4"
+"markup.heading.marker" = "color8"
+"markup.heading.1" = {{ fg = "color4", modifiers = ["bold"] }}
+"markup.heading.2" = {{ fg = "color5", modifiers = ["bold"] }}
+"markup.heading.3" = {{ fg = "color6", modifiers = ["bold"] }}
+"markup.heading.4" = {{ fg = "color2", modifiers = ["bold"] }}
+"markup.heading.5" = {{ fg = "color3", modifiers = ["bold"] }}
+"markup.heading.6" = {{ fg = "color8", modifiers = ["bold"] }}
 "markup.list" = "foreground"
+"markup.list.unnumbered" = "color3"
+"markup.list.numbered" = "color3"
+"markup.list.checked" = "color2"
+"markup.list.unchecked" = "color8"
 "markup.bold" = {{ fg = "color3", modifiers = ["bold"] }}
 "markup.italic" = {{ fg = "color5", modifiers = ["italic"] }}
+"markup.strikethrough" = {{ modifiers = ["crossed_out"] }}
 "markup.link.url" = {{ fg = "color6", modifiers = ["italic", "underlined"] }}
 "markup.link.label" = "color4"
+"markup.link.text" = "color6"
 "markup.raw" = "foreground"
+"markup.raw.inline" = "color6"
+"markup.raw.block" = "foreground"
 "markup.quote" = "color8"
 
+"markup.normal.completion" = "foreground"
+"markup.normal.hover" = "foreground"
+"markup.heading.completion" = {{ fg = "color4", modifiers = ["bold"] }}
+"markup.heading.hover" = {{ fg = "color4", modifiers = ["bold"] }}
+"markup.raw.inline.completion" = "color6"
+"markup.raw.inline.hover" = "color6"
+
 "diff.plus" = "color2"
+"diff.plus.gutter" = "color2"
 "diff.minus" = "color1"
+"diff.minus.gutter" = "color1"
 "diff.delta" = "color4"
+"diff.delta.gutter" = "color4"
+"diff.delta.moved" = "color5"
+"diff.delta.conflict" = {{ fg = "color3", modifiers = ["bold"] }}
 
 # User Interface
 # --------------
 "ui.background" = "none"
+"ui.background.separator" = "color8"
 
 "ui.cursor" = {{ fg = "background", bg = "cursor" }}
+"ui.cursor.normal" = {{ fg = "background", bg = "cursor" }}
+"ui.cursor.insert" = {{ fg = "background", bg = "color2" }}
+"ui.cursor.select" = {{ fg = "background", bg = "color5" }}
 "ui.cursor.match" = {{ fg = "background", bg = "color3", modifiers = ["bold"] }}
 "ui.cursor.primary" = {{ fg = "background", bg = "cursor" }}
+"ui.cursor.primary.normal" = {{ fg = "background", bg = "cursor" }}
+"ui.cursor.primary.insert" = {{ fg = "background", bg = "color2" }}
+"ui.cursor.primary.select" = {{ fg = "background", bg = "color5" }}
 
+"ui.debug.breakpoint" = {{ fg = "color1" }}
+"ui.debug.active" = {{ fg = "color3" }}
+
+"ui.gutter.selected" = {{ bg = "color0" }}
 "ui.linenr" = {{ fg = "color8" }}
 "ui.linenr.selected" = {{ fg = "color4" }}
 
@@ -73,46 +138,79 @@
 "ui.statusline.normal" = {{ fg = "background", bg = "color4", modifiers = ["bold"] }}
 "ui.statusline.insert" = {{ fg = "background", bg = "color2", modifiers = ["bold"] }}
 "ui.statusline.select" = {{ fg = "background", bg = "color5", modifiers = ["bold"] }}
+"ui.statusline.separator" = {{ fg = "color8" }}
 
 "ui.bufferline" = {{ fg = "foreground", bg = "color0" }}
 "ui.bufferline.active" = {{ fg = "foreground", bg = "color8", underline = {{ color = "color4", style = "line" }} }}
 "ui.bufferline.background" = {{ bg = "color0" }}
 
 "ui.popup" = {{ fg = "foreground", bg = "color0" }}
+"ui.popup.info" = {{ fg = "foreground", bg = "color0" }}
+
+"ui.picker.header" = {{ fg = "color8", bg = "color0" }}
+"ui.picker.header.column" = {{ fg = "color8", bg = "color0" }}
+"ui.picker.header.column.active" = {{ fg = "color4", bg = "color0", modifiers = ["bold"], underline = {{ color = "color4", style = "line" }} }}
 
 "ui.window" = {{ fg = "color8" }}
 "ui.help" = {{ fg = "foreground", bg = "color0" }}
 
 "ui.text" = {{ fg = "foreground" }}
 "ui.text.focus" = {{ fg = "foreground", bg = "color8", modifiers = ["bold"] }}
+"ui.text.inactive" = {{ fg = "color8" }}
+"ui.text.info" = {{ fg = "color4" }}
+"ui.text.directory" = {{ fg = "color4" }}
+"ui.text.symlink" = {{ fg = "color6" }}
 
 "ui.virtual" = "color8"
 "ui.virtual.ruler" = {{ bg = "color0" }}
+"ui.virtual.whitespace" = {{ fg = "color8", modifiers = ["dim"] }}
 "ui.virtual.indent-guide" = "color8"
+"ui.virtual.wrap" = {{ fg = "color8" }}
 "ui.virtual.inlay-hint" = {{ fg = "color8", modifiers = ["dim"] }}
+"ui.virtual.inlay-hint.parameter" = {{ fg = "color8", modifiers = ["dim", "italic"] }}
+"ui.virtual.inlay-hint.type" = {{ fg = "color4", modifiers = ["dim"] }}
+"ui.virtual.inline-completion" = {{ fg = "color8", modifiers = ["italic"] }}
+"ui.virtual.code-lens" = {{ fg = "color8", modifiers = ["dim", "italic"] }}
 "ui.virtual.jump-label" = {{ fg = "color4", modifiers = ["bold"] }}
 
 "ui.menu" = {{ fg = "foreground", bg = "color0" }}
 "ui.menu.selected" = {{ fg = "background", bg = "color4", modifiers = ["bold"] }}
+"ui.menu.scroll" = {{ fg = "color8", bg = "color0" }}
 
+# Non-primary selections inherit this too; add "ui.selection.primary" if you want to distinguish them
 "ui.selection" = {{ fg = "background", bg = "color4" }}
 
 "ui.highlight" = {{ bg = "color8", modifiers = ["bold"] }}
+"ui.highlight.frameline" = {{ bg = "color8" }}
 
 "ui.cursorline" = {{ bg = "color0" }}
 "ui.cursorline.primary" = {{ bg = "color0" }}
 "ui.cursorline.secondary" = {{ bg = "color0" }}
+"ui.cursorcolumn.primary" = {{ bg = "color0" }}
+"ui.cursorcolumn.secondary" = {{ bg = "color0" }}
 
 error = "color1"
 warning = "color3"
 info = "color4"
 hint = "color6"
 
+"error.diagnostic.inline" = {{ fg = "color1", modifiers = ["italic"] }}
+"warning.diagnostic.inline" = {{ fg = "color3", modifiers = ["italic"] }}
+"info.diagnostic.inline" = {{ fg = "color4", modifiers = ["italic"] }}
+"hint.diagnostic.inline" = {{ fg = "color6", modifiers = ["italic"] }}
+
+"diagnostic" = {{ underline = {{ color = "color8", style = "curl" }} }}
 "diagnostic.hint" = {{ underline = {{ color = "color6", style = "curl" }} }}
 "diagnostic.info" = {{ underline = {{ color = "color4", style = "curl" }} }}
 "diagnostic.warning" = {{ underline = {{ color = "color3", style = "curl" }} }}
 "diagnostic.error" = {{ underline = {{ color = "color1", style = "curl" }} }}
 "diagnostic.unnecessary" = {{ modifiers = ["dim"] }}
+"diagnostic.deprecated" = {{ modifiers = ["crossed_out"] }}
+"diagnostic.spelling" = {{ underline = {{ color = "color5", style = "dotted" }} }}
+
+"tabstop" = {{ fg = "foreground", bg = "color8" }}
+
+rainbow = ["color1", "color3", "color2", "color6", "color4", "color5"]
 
 [palette]
 background = "{background}"

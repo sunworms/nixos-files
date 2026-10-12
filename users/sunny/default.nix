@@ -19,7 +19,7 @@
 in {
   imports = [
     ./yazi
-    ./helix
+    ./mitos
     ./packages
     ./fonts
     ./desktop

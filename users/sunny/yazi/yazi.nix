@@ -19,7 +19,7 @@
   opener = {
     edit = [
       {
-        run = "hx %s";
+        run = "ms %s";
         block = true;
       }
     ];

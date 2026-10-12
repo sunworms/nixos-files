@@ -95,7 +95,7 @@ in {
       apply-gtk4-theme
       pywalfox update
       niri msg action load-config-file
-      pkill -USR1 hx || true
+      pkill -USR1 ms || true
       ya emit-to 0 app:theme || true
       makoctl reload || true
 

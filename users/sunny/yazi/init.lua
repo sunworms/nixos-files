@@ -1,4 +1,6 @@
-require("yafg"):setup({})
+require("yafg"):setup({
+	editor = "ms",
+})
 
 require("gvfs"):setup({})
 

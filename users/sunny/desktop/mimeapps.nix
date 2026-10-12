@@ -9,7 +9,7 @@
       "inode/directory"
     ];
 
-    "Helix.desktop" = [
+    "Mitos.desktop" = [
       "text/plain"
       "text/x-markdown"
       "application/x-shellscript"

@@ -44,3 +44,8 @@ fetch.url = "https://nightly.eden-emu.dev/$ver-amd64-gcc-standard.AppImage"
 [helium]
 src.github = "imputnet/helium-linux"
 fetch.url = "https://github.com/imputnet/helium-linux/releases/download/$ver/helium-$ver-x86_64.AppImage"
+
+[mitos]
+src.github = "mitos-editor/mitos"
+src.prefix = "v"
+fetch.url = "https://github.com/mitos-editor/mitos/releases/download/v$ver/mitos-v$ver-x86_64-linux.tar.xz"
