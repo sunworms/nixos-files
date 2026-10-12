@@ -3,7 +3,7 @@
   inputs,
   ...
 }: let
-  niriNix = import "${inputs.niri-nix.src}/lib" {
+  niriNix = import "${inputs.niri-nix}/lib" {
     self = {};
     inherit (pkgs) lib;
     nixpkgs = {
@@ -18,7 +18,7 @@ in {
   };
 
   packages = with pkgs; [
-    (callPackage "${inputs.niri-float-sticky.src}/package.nix" {})
+    (callPackage "${inputs.niri-float-sticky}/package.nix" {})
     gtklock
     swayidle
     soteria

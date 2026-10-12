@@ -46,8 +46,8 @@
 in
   stdenv.mkDerivation {
     pname = "mitos";
-    version = inputs.mitos.version;
-    src = inputs.mitos.src;
+    version = inputs._meta.mitos.version;
+    src = inputs.mitos;
 
     buildInputs = [
       stdenv.cc.cc.lib

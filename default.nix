@@ -1,12 +1,7 @@
 let
-  inputs = import ./_sources/generated.nix {
-    inherit (builtins) fetchurl;
-    fetchgit = null;
-    fetchFromGitHub = null;
-    dockerTools = null;
-  };
+  inputs = import ./.tack;
 
-  nixosSystem = import "${inputs.nixpkgs.src}/nixos/lib/eval-config.nix";
+  nixosSystem = import "${inputs.nixpkgs}/nixos/lib/eval-config.nix";
 
   assets = ./assets;
 
@@ -21,7 +16,7 @@ let
           ./hosts/${hostVars.hostname}/configuration.nix
           {
             nix.nixPath = [
-              "nixpkgs=${inputs.nixpkgs.src}"
+              "nixpkgs=${inputs.nixpkgs}"
             ];
           }
         ]
@@ -32,9 +27,9 @@ in {
     hostname = "motobook";
 
     modules = [
-      (inputs.preservation.src + "/module.nix")
-      (import inputs.hjem.src {}).nixosModules.default
-      (inputs.agenix.src + "/modules/age.nix")
+      (inputs.preservation + "/module.nix")
+      (import inputs.hjem {}).nixosModules.default
+      (inputs.agenix + "/modules/age.nix")
 
       {
         nixpkgs = {

@@ -5,8 +5,8 @@
   inputs,
 }: let
   pname = "helium";
-  version = inputs.helium.version;
-  src = inputs.helium.src;
+  version = inputs._meta.helium.version;
+  src = inputs.helium;
   appimageContents = appimageTools.extract {
     inherit pname version src;
   };
