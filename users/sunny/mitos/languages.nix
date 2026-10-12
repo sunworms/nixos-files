@@ -37,6 +37,9 @@
     };
     tinymist-preview = {
       command = "tinymist";
+      config = {
+        projectResolution = "lockDatabase";
+      };
     };
     nil = {
       config = {
