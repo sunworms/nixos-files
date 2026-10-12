@@ -30,12 +30,19 @@
       "Default Applications" = (import ./mimeapps.nix {inherit lib;}).defaultApps;
       "Added Associations" = (import ./mimeapps.nix {inherit lib;}).addedApps;
     };
+    "lazygit/config.yml".source = (pkgs.formats.yaml {}).generate "lazygit.yml" {
+      os = {
+        edit = "ms {{filename}}";
+        editAtLine = "ms {{filename}}:{{line}}";
+      };
+    };
   };
 
   packages = with pkgs; [
     hyfetch
     git
     xwayland-satellite
+    lazygit
     awww
     playerctl
     brightnessctl

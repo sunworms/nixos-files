@@ -36,7 +36,6 @@ in {
     '')
     w3m
     lsd
-    lazygit
     imv
     ripdrag
     ripgrep
