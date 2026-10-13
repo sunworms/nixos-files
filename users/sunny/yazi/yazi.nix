@@ -16,12 +16,4 @@
       group = "git";
     }
   ];
-  opener = {
-    edit = [
-      {
-        run = "ms %s";
-        block = true;
-      }
-    ];
-  };
 }

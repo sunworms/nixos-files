@@ -1,5 +1,5 @@
 require("yafg"):setup({
-	editor = "ms",
+	editor = "nvim",
 })
 
 require("gvfs"):setup({})

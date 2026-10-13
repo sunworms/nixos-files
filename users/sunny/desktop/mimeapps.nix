@@ -9,7 +9,7 @@
       "inode/directory"
     ];
 
-    "Mitos.desktop" = [
+    "nvim.desktop" = [
       "text/plain"
       "text/x-markdown"
       "application/x-shellscript"

@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  inputs,
   ...
 }: let
   yaziUnfree = pkgs.yazi.override {
@@ -16,10 +17,11 @@
       yaziUnfree
     ];
   };
+
+  sunnyNvim = import inputs.sunny-nvim.src {inherit pkgs;};
 in {
   imports = [
     ./yazi
-    ./mitos
     ./packages
     ./fonts
     ./desktop
@@ -31,10 +33,16 @@ in {
 
   packages = with pkgs; [
     yaziUnfree
+    sunnyNvim
+    (writeShellScriptBin "vi" ''
+      exec ${lib.getExe sunnyNvim} "$@"
+    '')
+    (writeShellScriptBin "vim" ''
+      exec ${lib.getExe sunnyNvim} "$@"
+    '')
     (writeShellScriptBin "ls" ''
       exec ${lib.getExe pkgs.lsd} "$@"
     '')
-    w3m
     lsd
     imv
     ripdrag

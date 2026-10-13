@@ -40,14 +40,6 @@
     };
     date = "2026-10-12";
   };
-  mitos = {
-    pname = "mitos";
-    version = "0.1.0";
-    src = fetchurl {
-      url = "https://github.com/mitos-editor/mitos/releases/download/v0.1.0/mitos-v0.1.0-x86_64-linux.tar.xz";
-      sha256 = "sha256-gEZnyBXcz3gp1F1MnCYJP/DQIowJ3g1Dhve8Qe3DFx8=";
-    };
-  };
   niri-float-sticky = {
     pname = "niri-float-sticky";
     version = "b3e79bd99bf99b993c3348f0051564f9d25f65e4";
@@ -100,5 +92,14 @@
       sha256 = "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=";
     };
     date = "2025-09-09";
+  };
+  sunny-nvim = {
+    pname = "sunny-nvim";
+    version = "d32ccae45c5fc3e3ee9073eba26ca879c69d2b74";
+    src = fetchTarball {
+      url = "https://git.gay/sunworms/neovim-config/archive/d32ccae45c5fc3e3ee9073eba26ca879c69d2b74.tar.gz";
+      sha256 = "sha256-jLil5O3dYobokro59uMzobTO6jhfYSq+96fUTZFF1Xc=";
+    };
+    date = "2026-10-13";
   };
 }
