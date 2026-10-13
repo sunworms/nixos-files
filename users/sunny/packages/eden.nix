@@ -6,10 +6,9 @@
   assets,
 }: let
   pname = "eden";
-  filename = baseNameOf inputs._meta.eden.url;
-  version = lib.removePrefix "Eden-Linux-" (
-    lib.removeSuffix "-amd64-gcc-standard.AppImage" filename
-  );
+  rawVersion = inputs.eden.version;
+  baseName = baseNameOf rawVersion;
+  version = lib.removePrefix "Eden-Linux-" baseName;
 
   desktopItem = makeDesktopItem {
     type = "Application";
@@ -34,7 +33,7 @@ in
       desktopItem
       ;
 
-    src = inputs.eden;
+    src = inputs.eden.src;
 
     dontUnpack = true;
     dontBuild = true;

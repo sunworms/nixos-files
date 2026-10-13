@@ -44,9 +44,9 @@
     alejandra
 
     # pins
-    (callPackage "${inputs.tack}/nix/package.nix" {})
+    nvfetcher
 
-    (callPackage "${inputs.agenix}/pkgs/agenix.nix" {})
+    (callPackage "${inputs.agenix.src}/pkgs/agenix.nix" {})
     fastfetch
     wl-clipboard
     busybox

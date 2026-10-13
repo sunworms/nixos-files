@@ -5,9 +5,9 @@
   assets,
 }: let
   pname = "pcsx2";
-  version = inputs._meta.pcsx2.version;
+  version = inputs.pcsx2.version;
 
-  src = inputs.pcsx2;
+  src = inputs.pcsx2.src;
 
   appimageContents = appimageTools.extract {inherit pname version src;};
 

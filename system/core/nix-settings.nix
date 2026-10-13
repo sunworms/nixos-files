@@ -12,8 +12,8 @@
       trusted-users = [
         "@wheel"
       ];
-      substituters = ["https://cache.manic.systems"];
-      trusted-public-keys = ["cache.manic.systems-1:s6OZanN8Us8vRi0jVivP3qlMn0cYHBjBALKrNe5nH8s="];
+      substituters = [];
+      trusted-public-keys = [];
     };
   };
 }
