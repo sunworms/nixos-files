@@ -16,8 +16,6 @@ SOURCE=$(echo "$OUTPUTS" | fuzzel --dmenu --prompt="Mirror Source: ")
 DESTINATION=$(echo "$OUTPUTS" | grep -v "^${SOURCE}$" | fuzzel --dmenu --prompt="Mirror Destination: ")
 [ -z "$DESTINATION" ] && exit 0
 
-niri msg action focus-output "$DESTINATION"
-wl-mirror -S "$SOURCE" &
-niri msg action focus-output "$SOURCE"
+wl-mirror --fullscreen-output "$DESTINATION" "$SOURCE" &
 
 notify-send "wl-mirror" "Mirroring $SOURCE onto $DESTINATION"
