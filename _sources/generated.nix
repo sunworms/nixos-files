@@ -25,10 +25,10 @@
   };
   helium = {
     pname = "helium";
-    version = "0.19.2.1";
+    version = "0.19.3.1";
     src = fetchurl {
-      url = "https://github.com/imputnet/helium-linux/releases/download/0.19.2.1/helium-0.19.2.1-x86_64.AppImage";
-      sha256 = "sha256-oEVQo8fHC9rTrNOkQw7ajSr8C/cXOpxYpAP+q5UXCH8=";
+      url = "https://github.com/imputnet/helium-linux/releases/download/0.19.3.1/helium-0.19.3.1-x86_64.AppImage";
+      sha256 = "sha256-Rg5tKlyG0DkhYkItGyF6NmMb2DD40h5WUYyWAgl5eQY=";
     };
   };
   hjem = {
@@ -69,12 +69,12 @@
   };
   nixpkgs = {
     pname = "nixpkgs";
-    version = "7fd4004d0511991fff3a0524856a9be09e28c5f0";
+    version = "55bfb4d7437bd4e09ab7cba58a43bd68eb310044";
     src = fetchTarball {
-      url = "https://github.com/NixOS/nixpkgs/archive/7fd4004d0511991fff3a0524856a9be09e28c5f0.tar.gz";
-      sha256 = "sha256-i5qk1kLiit98rRbh1AXmWBNT9QXC/y4l5Wk/u5EdpDQ=";
+      url = "https://github.com/NixOS/nixpkgs/archive/55bfb4d7437bd4e09ab7cba58a43bd68eb310044.tar.gz";
+      sha256 = "sha256-jBYGPi4udQ9uo4KQp9m2J0546nJVQitG15gvZSaVVAs=";
     };
-    date = "2026-10-11";
+    date = "2026-10-14";
   };
   pcsx2 = {
     pname = "pcsx2";
