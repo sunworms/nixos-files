@@ -68,7 +68,7 @@ in {
     "xdg-desktop-portal-termfilechooser/config".text = ''
       [filechooser]
       env=PATH='${launcherDeps}/bin'
-      env=TERMCMD='${lib.getExe pkgs.ghostty} --class=com.me.xdg_filechooser -e'
+      env=TERMCMD='${lib.getExe pkgs.foot} --app-id=xdg_filechooser'
       cmd='${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh'
       default_dir=$HOME
     '';

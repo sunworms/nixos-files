@@ -2,10 +2,10 @@
   binds = {
     "Mod+T" = {
       _props = {
-        hotkey-overlay-title = "Open a Terminal: ghostty";
+        hotkey-overlay-title = "Open a Terminal: foot";
         repeat = false;
       };
-      spawn = "ghostty";
+      spawn = "foot";
     };
     "Mod+A" = {
       _props = {
@@ -17,7 +17,7 @@
       _props = {
         hotkey-overlay-title = "Clipboard";
       };
-      spawn = ["ghostty" "--class=com.me.clipse" "-e" "clipse"];
+      spawn = ["foot" "--app-id" "clipse" "clipse"];
     };
     "Mod+Escape" = {
       _props = {
