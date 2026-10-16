@@ -1,7 +1,7 @@
 {config}: {
   main = {
     include = "~/.cache/wal/foot.ini";
-    font = "${config.fonts.monospace}:size=11";
+    font = "${config.fonts.monospace}:size=11.25";
   };
 
   colors-dark = {

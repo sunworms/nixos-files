@@ -5,7 +5,7 @@
   ...
 }: let
   fontPackages = with pkgs; [
-    nerd-fonts.googlesanscode
+    nerd-fonts."m+"
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
@@ -27,7 +27,7 @@ in {
   fonts = {
     sansSerif = "Noto Sans";
     serif = "Noto Serif";
-    monospace = "GoogleSansCode Nerd Font Mono";
+    monospace = "M+1Code Nerd Font Mono";
     emoji = "Noto Color Emoji";
   };
 
