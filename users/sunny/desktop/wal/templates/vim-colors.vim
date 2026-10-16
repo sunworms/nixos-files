@@ -56,9 +56,9 @@ hi CursorLineSign guibg={color0} guifg={foreground}
 hi CursorLineFold guibg={color0} guifg={foreground}
 hi Folded        guibg={background} guifg={color15} gui=italic
 
-hi Visual        guibg={color15} guifg={color0}
-hi VisualNOS     guibg={color15} guifg={color0}
-hi Selection     guibg={color15} guifg={color0}
+hi Visual        guibg={color14} guifg={color0}
+hi VisualNOS     guibg={color14} guifg={color0}
+hi Selection     guibg={color14} guifg={color0}
 
 hi Title         guibg=NONE guifg={color4} gui=bold
 hi Directory     guibg=NONE guifg={color4}
