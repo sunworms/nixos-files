@@ -95,11 +95,11 @@
   };
   sunny-nvim = {
     pname = "sunny-nvim";
-    version = "ae389e0e382bde16c4e077480cea11394484bb8b";
+    version = "8bdf60d2a5aed7609499b74a4c536630750aa383";
     src = fetchTarball {
-      url = "https://git.gay/sunworms/neovim-config/archive/ae389e0e382bde16c4e077480cea11394484bb8b.tar.gz";
-      sha256 = "sha256-/5RtAOppJ43ECWblujIzS/QH0qkSRFYsLqkH7u4XkmE=";
+      url = "https://git.gay/sunworms/neovim-config/archive/8bdf60d2a5aed7609499b74a4c536630750aa383.tar.gz";
+      sha256 = "sha256-tZ8zWLjjIfNkaX9oqgdy/nZR/pgayAzKU3e10fZ9/5o=";
     };
-    date = "2026-10-15";
+    date = "2026-10-16";
   };
 }
