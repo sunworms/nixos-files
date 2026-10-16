@@ -1,6 +1,6 @@
 {
   main = {
     include = "~/.cache/wal/fuzzel.ini";
-    terminal = "foot";
+    terminal = "ghostty -e";
   };
 }

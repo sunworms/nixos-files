@@ -26,8 +26,8 @@
     }
     {
       match = [
-        {_props.app-id = "^xdg_filechooser";}
-        {_props.app-id = "^clipse$";}
+        {_props.app-id = "^com.me.xdg_filechooser";}
+        {_props.app-id = "^com.me.clipse$";}
       ];
       open-floating = true;
       default-column-width = {
@@ -44,7 +44,7 @@
     {
       match = [
         {_props.app-id = "^org.pwmt.zathura$";}
-        {_props.app-id = "^foot$";}
+        {_props.app-id = "^com.mitchellh.ghostty$";}
         {_props.app-id = "^emacs$";}
         {_props.app-id = "^Emacs$";}
       ];

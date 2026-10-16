@@ -6,7 +6,7 @@
 }: {
   imports = [
     ./btop
-    ./foot
+    ./ghostty
     ./fish
     ./niri
     ./fuzzel

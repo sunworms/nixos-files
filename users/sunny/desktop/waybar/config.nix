@@ -87,12 +87,12 @@
   cpu = {
     interval = 2;
     format = "  {usage:>2}%";
-    on-click-right = "foot btop";
+    on-click-right = "ghostty -e btop";
   };
   memory = {
     interval = 2;
     format = "  {used:0.1f}G/{total:0.1f}G";
-    on-click-right = "foot btop";
+    on-click-right = "ghostty -e btop";
   };
   disk = {
     interval = 15;
