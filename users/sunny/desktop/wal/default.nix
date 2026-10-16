@@ -93,7 +93,6 @@ in {
       dconf write /org/gnome/desktop/interface/gtk-theme "\'\'"
       dconf write /org/gnome/desktop/interface/gtk-theme "'adw-gtk3'"
       apply-gtk4-theme
-      pywalfox update
       niri msg action load-config-file
       pkill -SIGUSR1 nvim || true
       ya emit-to 0 app:theme || true
