@@ -12,8 +12,9 @@
 
 * {
   min-height: 0;
-  font-family: "M+1Code Nerd Font Propo", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "FantasqueSansM Nerd Font Propo", Roboto, Helvetica, Arial, sans-serif;
   font-size: 1rem; /* Adjust font using gtk-font size, like nwg-look or lxappearance */
+  letter-spacing: -0.075rem;
 }
 
 window#waybar {
