@@ -1,6 +1,7 @@
 vicinae theme set pywal || true
 niri msg action load-config-file
 pkill -SIGUSR1 nvim || true
+pkill -SIGUSR2 kitty || true
 ya emit-to 0 app:theme || true
 makoctl reload || true
 
