@@ -11,7 +11,7 @@
       ];
       open-floating = true;
       default-floating-position._props = {
-        x = 1025;
+        x = 1100;
         y = 225;
       };
       default-column-width.fixed = 525;
