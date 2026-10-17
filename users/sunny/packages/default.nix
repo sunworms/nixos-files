@@ -47,7 +47,7 @@ in {
     sunnySteam.run
     sunnyProtontricks
     (callPackage ./eden.nix {inherit inputs assets;})
-    (callPackage ./pcsx2.nix {inherit inputs assets;})
+    pcsx2
     ppsspp-sdl-wayland
     melonds
     azahar

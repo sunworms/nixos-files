@@ -33,11 +33,6 @@ src.git = "https://git.gay/sunworms/neovim-config"
 fetch.tarball = "https://git.gay/sunworms/neovim-config/archive/$ver.tar.gz"
 
 # binary packages
-[pcsx2]
-src.cmd = "curl -sL 'https://api.github.com/repos/PCSX2/pcsx2/releases?per_page=1' | grep -oP '\"tag_name\":\\s*\"\\K[^\"]+'"
-src.prefix = "v"
-fetch.url = "https://github.com/PCSX2/pcsx2/releases/download/v$ver/pcsx2-v$ver-linux-appimage-x64-Qt.AppImage"
-
 [eden]
 src.webpage = "https://stable.eden-emu.dev/latest/release.json"
 src.regex = 'v\d+\.\d+\.\d+(?:-rc\d+)?'

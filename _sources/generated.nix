@@ -76,14 +76,6 @@
     };
     date = "2026-10-14";
   };
-  pcsx2 = {
-    pname = "pcsx2";
-    version = "2.9.129";
-    src = fetchurl {
-      url = "https://github.com/PCSX2/pcsx2/releases/download/v2.9.129/pcsx2-v2.9.129-linux-appimage-x64-Qt.AppImage";
-      sha256 = "sha256-t8qXa9XFYBUTBOxm1gLZ6nVf1LTvl0TZglD350xbJJ0=";
-    };
-  };
   preservation = {
     pname = "preservation";
     version = "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11";
