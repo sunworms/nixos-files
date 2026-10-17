@@ -26,8 +26,7 @@
     }
     {
       match = [
-        {_props.app-id = "^xdg_filechooser";}
-        {_props.app-id = "^clipse$";}
+        {_props.app-id = "^xdg_filechooser$";}
       ];
       open-floating = true;
       default-column-width = {
@@ -44,9 +43,10 @@
     {
       match = [
         {_props.app-id = "^org.pwmt.zathura$";}
-        {_props.app-id = "^foot$";}
+        {_props.app-id = "^kitty$";}
         {_props.app-id = "^emacs$";}
         {_props.app-id = "^Emacs$";}
+        {_props.app-id = ".+?.desktop$";}
       ];
       background-effect = {
         blur = true;

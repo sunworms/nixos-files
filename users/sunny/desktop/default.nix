@@ -6,7 +6,7 @@
 }: {
   imports = [
     ./btop
-    ./foot
+    ./kitty
     ./fish
     ./niri
     ./vicinae

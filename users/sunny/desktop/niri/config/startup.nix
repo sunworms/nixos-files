@@ -7,6 +7,7 @@
 
   spawn-at-startup = [
     {_args = ["vicinae" "server"];}
+    {_args = ["kitty" "--start-as=hidden" "--single-instance"];}
     {_args = ["soteria"];}
     {_args = ["awww-daemon"];}
     {_args = ["playerctld"];}
