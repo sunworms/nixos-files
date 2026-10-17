@@ -28,7 +28,6 @@ url = "gh:nix-community/nix-index-database"
 
 [inputs.sunny-nvim]
 url = "git+https://git.gay/sunworms/neovim-config"
-type = "fetch"
 
 [inputs.tack]
 url = "gh:manic-systems/tack"

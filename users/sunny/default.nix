@@ -18,7 +18,7 @@
     ];
   };
 
-  sunnyNvim = import inputs.sunny-nvim {inherit pkgs;};
+  sunnyNvim = inputs.sunny-nvim.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in {
   imports = [
     ./yazi
