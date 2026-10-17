@@ -48,7 +48,7 @@ purple = "{color5}"
 
 [colors.text]
 default = "{foreground}"
-muted = "{color8}"
+muted = {{ name = "{color7}", opacity = 0.7 }}
 danger = "{color1}"
 success = "{color2}"
 placeholder = {{ name = "{color8}", opacity = 0.6 }}
