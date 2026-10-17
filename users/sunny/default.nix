@@ -18,7 +18,7 @@
     ];
   };
 
-  sunnyNvim = import inputs.sunny-nvim.src {inherit pkgs;};
+  sunnyNvim = import inputs.sunny-nvim {inherit pkgs;};
 in {
   imports = [
     ./yazi

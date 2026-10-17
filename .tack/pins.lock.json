@@ -1,0 +1,111 @@
+{
+  "$declared": {
+    "agenix": "github:ryantm/agenix",
+    "eden": "https://stable.eden-emu.dev/v{version}/Eden-Linux-v{version}-amd64-clang-pgo.AppImage",
+    "helium": "https://github.com/imputnet/helium-linux/releases/download/{version}/helium-{version}-x86_64.AppImage",
+    "hjem": "github:feel-co/hjem",
+    "niri-float-sticky": "github:probeldev/niri-float-sticky",
+    "niri-nix": "git+https://codeberg.org/bananad3v/niri-nix",
+    "nix-index-database": "github:nix-community/nix-index-database",
+    "nixpkgs": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz",
+    "preservation": "github:nix-community/preservation",
+    "sunny-nvim": "git+https://git.gay/sunworms/neovim-config",
+    "tack": "github:manic-systems/tack",
+    "vicinae-ext": "github:vicinaehq/extensions"
+  },
+  "agenix": {
+    "type": "github",
+    "owner": "ryantm",
+    "repo": "agenix",
+    "rev": "3daa710894355fa2fad8243380af373a2b4046ef",
+    "narHash": "sha256-n7wew722m1OTBT9DOIMxNX/NF4zfsSUABAO5eW3wikE=",
+    "lastModified": 1790734419
+  },
+  "eden": {
+    "type": "fixed",
+    "url": "https://stable.eden-emu.dev/v0.2.1/Eden-Linux-v0.2.1-amd64-clang-pgo.AppImage",
+    "sha256": "sha256-eii/mIsGSIMZiXIr26qQqzE3G0A4CBmYE+DqfIslum0=",
+    "unpack": "file",
+    "tag": "v0.2.1",
+    "version": "0.2.1"
+  },
+  "helium": {
+    "type": "fixed",
+    "url": "https://github.com/imputnet/helium-linux/releases/download/0.19.4.1/helium-0.19.4.1-x86_64.AppImage",
+    "sha256": "sha256-Wy2zkrPth/JKqESTYFnWisqYvCBUjqqg3s+jwoCioKc=",
+    "unpack": "file",
+    "tag": "0.19.4.1",
+    "version": "0.19.4.1"
+  },
+  "hjem": {
+    "type": "github",
+    "owner": "feel-co",
+    "repo": "hjem",
+    "rev": "6b2cc57463bbbac3d7c61206ab365a2c928861a4",
+    "narHash": "sha256-Q5hGcKBaqz1L0neSRDfQgQPBKmSCkV1N5YBRwp+RtUc=",
+    "lastModified": 1791807571
+  },
+  "niri-float-sticky": {
+    "type": "github",
+    "owner": "probeldev",
+    "repo": "niri-float-sticky",
+    "rev": "b3e79bd99bf99b993c3348f0051564f9d25f65e4",
+    "narHash": "sha256-kQiZEjeviamwC/kUhc2p089cqNpjkcjzzIAv1UWW4tw=",
+    "lastModified": 1788698372
+  },
+  "niri-nix": {
+    "type": "git",
+    "url": "https://codeberg.org/bananad3v/niri-nix",
+    "ref": "HEAD",
+    "rev": "926ca86fab82738fd1461b022ee11b4d61b9bf2e",
+    "narHash": "sha256-vE1BM9nWfusQ437QX9beTLhs5S2zAvdlmnrT9XYbacs=",
+    "lastModified": 1790381013
+  },
+  "nix-index-database": {
+    "type": "github",
+    "owner": "nix-community",
+    "repo": "nix-index-database",
+    "rev": "9a2dd40780eeab8543aa97c59c26f11267025616",
+    "narHash": "sha256-LpIhxnuO0tYeZ4k7BbNMxsPs2zJpB4hWXO1jdhUuE7Q=",
+    "lastModified": 1791711434
+  },
+  "nixpkgs": {
+    "type": "tarball",
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1092090.55bfb4d7437b/nixexprs.tar.xz?rev=55bfb4d7437bd4e09ab7cba58a43bd68eb310044&lastModified=1791956154",
+    "rev": "55bfb4d7437bd4e09ab7cba58a43bd68eb310044",
+    "narHash": "sha256-gJX2+xcImvxBCI3bp7zXKLUX2AwsdTxMgJ1UX/5Hm/o=",
+    "lastModified": 1791956154
+  },
+  "preservation": {
+    "type": "github",
+    "owner": "nix-community",
+    "repo": "preservation",
+    "rev": "93416f4614ad2dfed5b0dcf12f27e57d27a5ab11",
+    "narHash": "sha256-mMI9IanU+Xw+pVogD2oT0I2kTmvz2Un/Apc5+CwUpEY=",
+    "lastModified": 1757436102
+  },
+  "sunny-nvim": {
+    "type": "git",
+    "url": "https://git.gay/sunworms/neovim-config",
+    "ref": "HEAD",
+    "rev": "8bdf60d2a5aed7609499b74a4c536630750aa383",
+    "narHash": "sha256-tZ8zWLjjIfNkaX9oqgdy/nZR/pgayAzKU3e10fZ9/5o=",
+    "lastModified": 1792157671
+  },
+  "tack": {
+    "type": "github",
+    "owner": "manic-systems",
+    "repo": "tack",
+    "rev": "d785e637b7f6d0694a53951588c484f32397335e",
+    "narHash": "sha256-q3o87E0s55Z09YVhFJtws2Dvv1IRCoGxOOtomZsJEXA=",
+    "lastModified": 1792090744
+  },
+  "vicinae-ext": {
+    "type": "github",
+    "owner": "vicinaehq",
+    "repo": "extensions",
+    "rev": "0e3953058fb787d2a96e5ac0cec462440c07cd07",
+    "narHash": "sha256-kc51qTJKEnSiiN4mAkoXHkjq8In28rPHbW4+Hm9CLWY=",
+    "lastModified": 1791891664
+  }
+}

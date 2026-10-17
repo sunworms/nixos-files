@@ -1,0 +1,51 @@
+[shorturls]
+gh = "github:{path}"
+nixpkgs = "https://channels.nixos.org/{path}/nixexprs.tar.xz"
+
+[all_follow]
+nixpkgs = ["nixpkgs", "nixpkgs-lib"]
+
+[inputs.nixpkgs]
+url = "nixpkgs:nixos-unstable"
+
+[inputs.preservation]
+url = "gh:nix-community/preservation"
+
+[inputs.hjem]
+url = "gh:feel-co/hjem"
+
+[inputs.agenix]
+url = "gh:ryantm/agenix"
+
+[inputs.niri-nix]
+url = "git+https://codeberg.org/bananad3v/niri-nix"
+
+[inputs.niri-float-sticky]
+url = "gh:probeldev/niri-float-sticky"
+
+[inputs.nix-index-database]
+url = "gh:nix-community/nix-index-database"
+
+[inputs.sunny-nvim]
+url = "git+https://git.gay/sunworms/neovim-config"
+type = "fetch"
+
+[inputs.tack]
+url = "gh:manic-systems/tack"
+exclude_follows = "nixpkgs"
+
+[inputs.vicinae-ext]
+url = "gh:vicinaehq/extensions"
+
+[inputs.eden]
+url = "https://stable.eden-emu.dev/v{version}/Eden-Linux-v{version}-amd64-clang-pgo.AppImage"
+type = "fixed"
+unpack = "file"
+tag = "v{version}"
+tags_from = "https://stable.eden-emu.dev/latest/release.json"
+
+[inputs.helium]
+url = "https://github.com/imputnet/helium-linux/releases/download/{version}/helium-{version}-x86_64.AppImage"
+type = "fixed"
+unpack = "file"
+tag = "{version}"

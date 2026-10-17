@@ -75,7 +75,6 @@ in {
     tinymist
     typstyle
     websocat
-    (import inputs.nix-index-database.src {inherit pkgs;}).comma-with-db
-    (import inputs.nix-index-database.src {inherit pkgs;}).nix-index-with-small-db
+    inputs.nix-index-database.packages.${pkgs.stdenv.hostPlatform.system}.comma-with-db
   ];
 }

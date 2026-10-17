@@ -49,9 +49,9 @@
     alejandra
 
     # pins
-    nvfetcher
+    inputs.tack.packages.${pkgs.stdenv.hostPlatform.system}.default
 
-    (callPackage "${inputs.agenix.src}/pkgs/agenix.nix" {})
+    inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
     fastfetch
     wl-clipboard
   ];
