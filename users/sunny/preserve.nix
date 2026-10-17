@@ -25,7 +25,6 @@
       ".config/net.imput.helium/Default"
       ".config/rclone"
       ".config/fish"
-      ".config/clipse"
 
       ".config/azahar-emu"
       ".config/eden"
@@ -45,10 +44,12 @@
       ".local/share/keyrings"
       ".local/share/containers"
       ".local/share/warp"
+      ".local/share/vicinae"
 
       ".local/state/wireplumber"
       ".local/state/noctalia"
       ".local/state/lazygit"
+      ".local/state/vicinae"
     ];
     files = [
       {

@@ -50,7 +50,6 @@ in {
     fzf
     bat
     kanata
-    wl-clip-persist
   ];
 
   xdg.config.files = {

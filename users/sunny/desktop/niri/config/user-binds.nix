@@ -11,19 +11,19 @@
       _props = {
         hotkey-overlay-title = "Application Launcher";
       };
-      spawn = ["fuzzel"];
+      spawn = ["vicinae" "vicinae://launch/applications"];
     };
     "Mod+V" = {
       _props = {
         hotkey-overlay-title = "Clipboard";
       };
-      spawn = ["foot" "--app-id" "clipse" "clipse"];
+      spawn = ["vicinae" "vicinae://launch/clipboard/history"];
     };
     "Mod+Escape" = {
       _props = {
         hotkey-overlay-title = "Power Menu";
       };
-      spawn = ["fuzzel-logout-menu"];
+      spawn = ["vicinae" "vicinae://launch/power"];
     };
     "XF86Launch5" = {
       _props = {
@@ -33,51 +33,57 @@
     };
     "XF86Launch6" = {
       _props = {
-        hotkey-overlay-title = "Window Switcher";
+        hotkey-overlay-title = "Niri Commands";
       };
-      spawn = ["niri-window-switcher"];
+      spawn = ["vicinae" "vicinae://launch/@knoopx/vicinae-extension-niri-0"];
     };
     "XF86Favorites" = {
       _props = {
         hotkey-overlay-title = "Emoji Selector";
       };
-      spawn = ["rofimoji" "-a" "copy"];
+      spawn = ["vicinae" "vicinae://launch/core/search-emojis"];
+    };
+    "XF86Calculator" = {
+      _props = {
+        hotkey-overlay-title = "System Tray";
+      };
+      spawn = ["vicinae" "vicinae://launch/core/search-tray"];
     };
     "XF86AudioRaiseVolume" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["wpctl" "set-volume" "-l" "1.5" "@DEFAULT_AUDIO_SINK@" "5%+"];
+      spawn = ["volume-osd" "up"];
     };
     "XF86AudioLowerVolume" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-"];
+      spawn = ["volume-osd" "down"];
     };
     "XF86AudioMute" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"];
+      spawn = ["volume-osd" "mute"];
     };
     "XF86AudioMicMute" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["wpctl" "set-mute" "@DEFAULT_SOURCE@" "toggle"];
+      spawn = ["mic-osd" "toggle"];
     };
     "XF86MonBrightnessUp" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["brightnessctl" "set" "+5%"];
+      spawn = ["bright-osd" "up"];
     };
     "XF86MonBrightnessDown" = {
       _props = {
         allow-when-locked = true;
       };
-      spawn = ["brightnessctl" "set" "5%-"];
+      spawn = ["bright-osd" "down"];
     };
     "XF86AudioPlay" = {
       _props = {
@@ -104,6 +110,12 @@
       spawn = ["playerctl" "next"];
     };
     "Mod+Space" = {
+      _props = {
+        hotkey-overlay-title = "Open Vicinae Main Window";
+      };
+      spawn = ["vicinae" "toggle"];
+    };
+    "Mod+Alt+Space" = {
       _props = {
         repeat = false;
       };

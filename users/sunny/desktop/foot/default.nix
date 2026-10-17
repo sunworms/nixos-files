@@ -12,5 +12,10 @@
     '')
   ];
 
-  xdg.config.files."foot/foot.ini".source = (pkgs.formats.ini {}).generate "foot.ini" (import ./foot.nix {inherit config;});
+  xdg.config.files = {
+    "foot/foot.ini".source = (pkgs.formats.ini {}).generate "foot.ini" (import ./foot.nix {inherit config;});
+    "xdg-terminals.list".text = ''
+      foot.desktop
+    '';
+  };
 }

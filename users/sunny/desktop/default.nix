@@ -9,9 +9,7 @@
     ./foot
     ./fish
     ./niri
-    ./fuzzel
-    ./clipse
-    ./waybar
+    ./vicinae
     ./wal
     ./mako
     ./scripts

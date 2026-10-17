@@ -6,7 +6,7 @@
   ];
 
   spawn-at-startup = [
-    {_args = ["waybar"];}
+    {_args = ["vicinae" "server"];}
     {_args = ["soteria"];}
     {_args = ["awww-daemon"];}
     {_args = ["playerctld"];}
@@ -14,7 +14,5 @@
     {_args = ["blueman-applet"];}
     {_args = ["mako"];}
     {_args = ["warp-taskbar"];}
-    {_args = ["clipse" "-listen"];}
-    {_args = ["wl-clip-persist" "--clipboard" "regular"];}
   ];
 }
