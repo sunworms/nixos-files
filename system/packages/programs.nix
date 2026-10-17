@@ -15,6 +15,11 @@
 
   programs.fuse.userAllowOther = true;
 
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+  };
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -49,14 +54,10 @@
     (callPackage "${inputs.agenix.src}/pkgs/agenix.nix" {})
     fastfetch
     wl-clipboard
-    micro
   ];
 
   environment.sessionVariables = {
     GSETTINGS_SCHEMA_DIR = "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}/glib-2.0/schemas";
-    EDITOR = "micro";
-    VISUAL = "micro";
-    SUDO_EDITOR = "micro";
   };
 
   environment.pathsToLink = [
