@@ -12,7 +12,6 @@
     ./vicinae
     ./wal
     ./mako
-    ./scripts
     ./browser
     ./desktop-files.nix
   ];
