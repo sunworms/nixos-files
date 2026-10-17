@@ -13,7 +13,6 @@
     ./wal
     ./mako
     ./browser
-    ./desktop-files.nix
   ];
 
   files = {
