@@ -37,6 +37,12 @@ in {
   ];
 
   packages = with pkgs; [
+    (runCommand "wine-symlink" {} ''
+      mkdir -p $out/bin
+      ln -sf ${lib.getExe pkgs.wineWow64Packages.unstableFull} $out/bin/wine64
+    '')
+    wineWow64Packages.unstableFull
+    winetricks
     sunnySteam
     sunnySteam.run
     sunnyProtontricks
