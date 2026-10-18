@@ -72,8 +72,7 @@ window#waybar.empty #window {
   margin: 0.1rem;
 }
 
-#workspaces,
-#workspaces button,
+#window,
 #clock {
   color: @bordercolor;
   background-color: @color1;
@@ -91,7 +90,8 @@ window#waybar.empty #window {
   border: 0rem solid @bordercolor;
 }
 
-#window {
+#workspaces,
+#workspaces button {
   color: @bordercolor;
   background-color: @color3;
 }
