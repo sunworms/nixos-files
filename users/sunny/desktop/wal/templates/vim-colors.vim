@@ -424,12 +424,12 @@ hi IblIndent guifg={color8} gui=nocombine
 hi IblScope  guifg={color15} gui=nocombine
 
 " mini.statusline (used by require("mini.statusline").setup())
-hi MiniStatuslineModeNormal  guibg={color1} guifg={background}
-hi MiniStatuslineModeInsert  guibg={color2} guifg={background}
-hi MiniStatuslineModeVisual  guibg={color3} guifg={background}
-hi MiniStatuslineModeReplace guibg={color4} guifg={background}
-hi MiniStatuslineModeCommand guibg={color5} guifg={background}
-hi MiniStatuslineModeOther   guibg={color6} guifg={background}
+hi MiniStatuslineModeNormal  guibg={color4} guifg={background}
+hi MiniStatuslineModeInsert  guibg={color12} guifg={background}
+hi MiniStatuslineModeVisual  guibg={color5} guifg={background}
+hi MiniStatuslineModeReplace guibg={color13} guifg={background}
+hi MiniStatuslineModeCommand guibg={color6} guifg={background}
+hi MiniStatuslineModeOther   guibg={color14} guifg={background}
 hi MiniStatuslineFilename    guibg=NONE guifg={foreground}
 hi MiniStatuslineFileinfo    guibg=NONE guifg={foreground}
 hi MiniStatuslineDevinfo     guibg=NONE guifg={foreground}
