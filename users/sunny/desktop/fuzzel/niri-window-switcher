@@ -1,0 +1,20 @@
+windows="$(niri msg --json windows)"
+
+[ "$(echo "$windows" | jq 'length')" -eq 0 ] && exit 0
+
+choice="$(
+    echo "$windows" |
+    jq -r '
+        map("\(.title // .app_id)\u0000icon\u001f\(.app_id)")
+        | .[]
+    ' |
+    fuzzel --dmenu --index -p "Window:"
+)"
+
+[ -z "$choice" ] && exit 0
+
+index="${choice%%:*}"
+
+id="$(echo "$windows" | jq -r ".[$index].id")"
+
+niri msg action focus-window --id "$id"

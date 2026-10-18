@@ -1,4 +1,5 @@
-vicinae theme set pywal || true
+pkill -SIGUSR2 waybar || true
+pkill -USR2 btop || true
 niri msg action load-config-file
 pkill -SIGUSR1 nvim || true
 pkill -SIGUSR2 kitty || true

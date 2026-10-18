@@ -9,10 +9,14 @@
     ./kitty
     ./fish
     ./niri
-    ./vicinae
+    ./clipse
+    ./fuzzel
+    ./scripts
+    ./waybar
     ./wal
     ./mako
     ./browser
+    ./desktop-files.nix
   ];
 
   files = {
@@ -22,7 +26,6 @@
   xdg.config.files = {
     "git/config".source = (pkgs.formats.gitIni {}).generate "gitconfig" (import ./gitconfig.nix);
     "hyfetch.json".source = (pkgs.formats.json {}).generate "hyfetch.json" (import ./hyfetch.nix);
-    "fastfetch/config.jsonc".source = (pkgs.formats.json {}).generate "fastfetch.jsonc" (import ./fastfetch.nix);
     "mimeapps.list".source = (pkgs.formats.ini {}).generate "mimeapps.list" {
       "Default Applications" = (import ./mimeapps.nix {inherit lib;}).defaultApps;
       "Added Associations" = (import ./mimeapps.nix {inherit lib;}).addedApps;

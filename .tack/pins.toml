@@ -33,9 +33,6 @@ url = "git+https://git.gay/sunworms/neovim-config"
 url = "gh:manic-systems/tack"
 exclude_follows = "nixpkgs"
 
-[inputs.vicinae-ext]
-url = "gh:vicinaehq/extensions"
-
 [inputs.eden]
 url = "https://stable.eden-emu.dev/v{version}/Eden-Linux-v{version}-amd64-clang-pgo.AppImage"
 type = "fixed"

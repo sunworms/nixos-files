@@ -10,8 +10,7 @@
     "nixpkgs": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz",
     "preservation": "github:nix-community/preservation",
     "sunny-nvim": "git+https://git.gay/sunworms/neovim-config",
-    "tack": "github:manic-systems/tack",
-    "vicinae-ext": "github:vicinaehq/extensions"
+    "tack": "github:manic-systems/tack"
   },
   "agenix": {
     "type": "github",
@@ -99,13 +98,5 @@
     "rev": "d785e637b7f6d0694a53951588c484f32397335e",
     "narHash": "sha256-q3o87E0s55Z09YVhFJtws2Dvv1IRCoGxOOtomZsJEXA=",
     "lastModified": 1792090744
-  },
-  "vicinae-ext": {
-    "type": "github",
-    "owner": "vicinaehq",
-    "repo": "extensions",
-    "rev": "0e3953058fb787d2a96e5ac0cec462440c07cd07",
-    "narHash": "sha256-kc51qTJKEnSiiN4mAkoXHkjq8In28rPHbW4+Hm9CLWY=",
-    "lastModified": 1791891664
   }
 }

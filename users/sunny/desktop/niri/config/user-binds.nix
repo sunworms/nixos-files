@@ -11,19 +11,19 @@
       _props = {
         hotkey-overlay-title = "Application Launcher";
       };
-      spawn = ["vicinae" "vicinae://launch/applications"];
+      spawn = ["fuzzel"];
     };
     "Mod+V" = {
       _props = {
         hotkey-overlay-title = "Clipboard";
       };
-      spawn = ["vicinae" "vicinae://launch/clipboard/history"];
+      spawn = ["kitty" "--single-instance" "--app-id=clipse" "clipse"];
     };
     "Mod+Escape" = {
       _props = {
         hotkey-overlay-title = "Power Menu";
       };
-      spawn = ["vicinae" "vicinae://launch/power"];
+      spawn = ["fuzzel-logout-menu"];
     };
     "XF86Launch5" = {
       _props = {
@@ -33,21 +33,15 @@
     };
     "XF86Launch6" = {
       _props = {
-        hotkey-overlay-title = "Niri Commands";
+        hotkey-overlay-title = "Niri Window Switcher";
       };
-      spawn = ["vicinae" "vicinae://launch/@knoopx/vicinae-extension-niri-0"];
+      spawn = ["niri-window-switcher"];
     };
     "XF86Favorites" = {
       _props = {
         hotkey-overlay-title = "Emoji Selector";
       };
-      spawn = ["vicinae" "vicinae://launch/core/search-emojis"];
-    };
-    "XF86Calculator" = {
-      _props = {
-        hotkey-overlay-title = "System Tray";
-      };
-      spawn = ["vicinae" "vicinae://launch/core/search-tray"];
+      spawn = ["rofimoji" "-a" "copy"];
     };
     "XF86AudioRaiseVolume" = {
       _props = {
@@ -110,12 +104,6 @@
       spawn = ["playerctl" "next"];
     };
     "Mod+Space" = {
-      _props = {
-        hotkey-overlay-title = "Open Vicinae Main Window";
-      };
-      spawn = ["vicinae" "toggle"];
-    };
-    "Mod+Alt+Space" = {
       _props = {
         repeat = false;
       };
