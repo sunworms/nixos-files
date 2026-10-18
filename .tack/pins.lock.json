@@ -56,9 +56,9 @@
     "type": "git",
     "url": "https://codeberg.org/bananad3v/niri-nix",
     "ref": "HEAD",
-    "rev": "926ca86fab82738fd1461b022ee11b4d61b9bf2e",
-    "narHash": "sha256-vE1BM9nWfusQ437QX9beTLhs5S2zAvdlmnrT9XYbacs=",
-    "lastModified": 1790381013
+    "rev": "ccd09f30f5230f95d88efe2dda58580037a09983",
+    "narHash": "sha256-cZf9K9vcq6D6tdObtBZHQyOpKHr4zmAs31u0cMohhh0=",
+    "lastModified": 1792329424
   },
   "nix-index-database": {
     "type": "github",
@@ -87,9 +87,9 @@
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "7a17a81fe7d92de9b712685eaab324e2825be6ac",
-    "narHash": "sha256-e1lRhUjwZ4rTkG86FfqGNpmHZgxWxh2nNokocm6htHg=",
-    "lastModified": 1792320990
+    "rev": "df62a98f5ab0af2471393e97a332e6c55f807dc0",
+    "narHash": "sha256-+zCXYVsN16Uxjbv/Wx40PKTBcYdZc7mACaie9Ks8ric=",
+    "lastModified": 1792335279
   },
   "tack": {
     "type": "github",
