@@ -12,7 +12,6 @@
       directories = [
         "/var/log"
         "/var/lib/bluetooth"
-        "/var/lib/cloudflare-warp"
         "/var/lib/nixos"
         "/var/lib/systemd"
         "/var/lib/libvirt"
