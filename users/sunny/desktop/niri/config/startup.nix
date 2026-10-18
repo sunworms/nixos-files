@@ -15,6 +15,5 @@
     {_args = ["nm-applet"];}
     {_args = ["blueman-applet"];}
     {_args = ["mako"];}
-    {_args = ["warp-taskbar"];}
   ];
 }
