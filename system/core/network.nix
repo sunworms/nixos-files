@@ -102,7 +102,7 @@
           method = "manual";
         };
         ipv6 = {
-          address1 = "2606:4700:110:89fb:adfd:9223:9216:505b/128";
+          address1 = "2606:4700:110:84fa:cf7a:1adf:9f0e:83f9/128";
           dns = "2606:4700:4700::1111;2606:4700:4700::1001;";
           dns-search = "~;";
           method = "manual";
