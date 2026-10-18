@@ -15,6 +15,8 @@
   rootSecrets = withUser "root" {
     root-password.file = ../../secrets/root-password.age;
     sunny-password.file = ../../secrets/sunny-password.age;
+    wgcf-account.file = ../../secrets/wgcf-account.age;
+    wgcf-private-key.file = ../../secrets/wgcf-private-key.age;
   };
 
   sunnySecrets = withUser "sunny" {

@@ -6,4 +6,6 @@ in {
   "secrets/aur-key.age".publicKeys = [ageKey];
   "secrets/github-key.age".publicKeys = [ageKey];
   "secrets/gitgay-key.age".publicKeys = [ageKey];
+  "secrets/wgcf-account.age".publicKeys = [ageKey];
+  "secrets/wgcf-private-key.age".publicKeys = [ageKey];
 }
