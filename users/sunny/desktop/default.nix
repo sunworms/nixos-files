@@ -36,6 +36,7 @@
     hyfetch
     git
     xwayland-satellite
+    wl-clip-persist
     lazygit
     awww
     playerctl
