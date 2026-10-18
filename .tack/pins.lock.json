@@ -65,16 +65,16 @@
     "type": "github",
     "owner": "nix-community",
     "repo": "nix-index-database",
-    "rev": "9a2dd40780eeab8543aa97c59c26f11267025616",
-    "narHash": "sha256-LpIhxnuO0tYeZ4k7BbNMxsPs2zJpB4hWXO1jdhUuE7Q=",
-    "lastModified": 1791711434
+    "rev": "1b4d1758fa6053c5d6284254a793134fa602fbff",
+    "narHash": "sha256-2DAEMk8YkV8OF6N2uw9jQ016cYoNkcgnq50AShwWxNw=",
+    "lastModified": 1792309949
   },
   "nixpkgs": {
     "type": "tarball",
-    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1092090.55bfb4d7437b/nixexprs.tar.xz?rev=55bfb4d7437bd4e09ab7cba58a43bd68eb310044&lastModified=1791956154",
-    "rev": "55bfb4d7437bd4e09ab7cba58a43bd68eb310044",
-    "narHash": "sha256-gJX2+xcImvxBCI3bp7zXKLUX2AwsdTxMgJ1UX/5Hm/o=",
-    "lastModified": 1791956154
+    "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1093333.fe13242281a6/nixexprs.tar.xz?rev=fe13242281a67641c0102cdb1087f0ebe586c7df&lastModified=1792094642",
+    "rev": "fe13242281a67641c0102cdb1087f0ebe586c7df",
+    "narHash": "sha256-LPFRbrCWWyNsdQLO3SX1B/5UMkFK0hfe7bZR6lENvpc=",
+    "lastModified": 1792094642
   },
   "preservation": {
     "type": "github",
@@ -88,9 +88,9 @@
     "type": "git",
     "url": "https://git.gay/sunworms/neovim-config",
     "ref": "HEAD",
-    "rev": "41bd5aeabeb4d90dcef6b6d942a6622066b6e1bc",
-    "narHash": "sha256-A3mYA+pgpAlE2CLQrl0gLd1wjrtt5eAhAbg/bT7U/qM=",
-    "lastModified": 1792251810
+    "rev": "7a17a81fe7d92de9b712685eaab324e2825be6ac",
+    "narHash": "sha256-e1lRhUjwZ4rTkG86FfqGNpmHZgxWxh2nNokocm6htHg=",
+    "lastModified": 1792320990
   },
   "tack": {
     "type": "github",
