@@ -1,18 +1,5 @@
-{
-  pkgs,
-  lib,
-  ...
-}: {
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${lib.getExe pkgs.tuigreet} --time --remember --remember-session";
-        user = "greeter";
-      };
-    };
-    useTextGreeter = true;
-  };
+{pkgs, ...}: {
+  services.displayManager.ly.enable = true;
 
   programs.niri = {
     enable = true;
