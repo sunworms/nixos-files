@@ -15,6 +15,6 @@
     {_args = ["nm-applet"];}
     {_args = ["blueman-applet"];}
     {_args = ["mako"];}
-    {_args = ["wl-clip-persist"];}
+    {_args = ["wl-clip-persist" "--clipboard" "regular"];}
   ];
 }
