@@ -16,9 +16,9 @@
     "type": "github",
     "owner": "ryantm",
     "repo": "agenix",
-    "rev": "3daa710894355fa2fad8243380af373a2b4046ef",
-    "narHash": "sha256-n7wew722m1OTBT9DOIMxNX/NF4zfsSUABAO5eW3wikE=",
-    "lastModified": 1790734419
+    "rev": "847720f0e73a77ce6503b63fba6c357c742c28a7",
+    "narHash": "sha256-Ptf4Drj8JYQDpNGEo9o+Tc7+hyjYxe+zrYO3J4jrYT4=",
+    "lastModified": 1792369191
   },
   "eden": {
     "type": "fixed",
@@ -40,9 +40,9 @@
     "type": "github",
     "owner": "feel-co",
     "repo": "hjem",
-    "rev": "6b2cc57463bbbac3d7c61206ab365a2c928861a4",
-    "narHash": "sha256-Q5hGcKBaqz1L0neSRDfQgQPBKmSCkV1N5YBRwp+RtUc=",
-    "lastModified": 1791807571
+    "rev": "7fec35f695f1d8784d2485be6871f85dc0d0f522",
+    "narHash": "sha256-E3vrGA6k5Suh2NDP18PO+HTaL5zCQMfGW5toKoVqcQ8=",
+    "lastModified": 1792374494
   },
   "niri-float-sticky": {
     "type": "github",
@@ -56,9 +56,9 @@
     "type": "git",
     "url": "https://codeberg.org/bananad3v/niri-nix",
     "ref": "HEAD",
-    "rev": "ccd09f30f5230f95d88efe2dda58580037a09983",
-    "narHash": "sha256-cZf9K9vcq6D6tdObtBZHQyOpKHr4zmAs31u0cMohhh0=",
-    "lastModified": 1792329424
+    "rev": "b9c3b91307b35dd22a2513437994e11fbea13f0d",
+    "narHash": "sha256-PEMefgNtT4R0eAsJJTKJmxCyF0BqaXt5RvWtf6XRCyw=",
+    "lastModified": 1792415325
   },
   "nix-index-database": {
     "type": "github",
@@ -95,8 +95,8 @@
     "type": "github",
     "owner": "manic-systems",
     "repo": "tack",
-    "rev": "d785e637b7f6d0694a53951588c484f32397335e",
-    "narHash": "sha256-q3o87E0s55Z09YVhFJtws2Dvv1IRCoGxOOtomZsJEXA=",
-    "lastModified": 1792090744
+    "rev": "8573f1f1bda4aa467fa341b33f6004661833c022",
+    "narHash": "sha256-wwkmmsr5u8MknxrF9ZdIN90wk09weXCaVQp8aeWdYaE=",
+    "lastModified": 1792416927
   }
 }
