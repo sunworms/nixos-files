@@ -43,6 +43,21 @@
         Terminal=false
         StartupWMClass=chrome-dev.sable.moe__-Default
       '';
+    "applications/yt-music.desktop".text =
+      #desktop
+      ''
+        [Desktop Entry]
+        Version=1.0
+        Type=Application
+        Name=YT Music
+        Comment=Youtube Music
+        Exec=helium --app=https://music.youtube.com
+        Icon=${assets}/yt-music.png
+        Categories=Audio;Music;Player;AudioVideo;
+        Terminal=false
+        StartupWMClass=chrome-music.youtube.com__-Default
+      '';
+
     "applications/spotify.desktop".text =
       #desktop
       ''
