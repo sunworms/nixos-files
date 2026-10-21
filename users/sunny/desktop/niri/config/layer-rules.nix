@@ -13,6 +13,7 @@
     }
     {
       match._props.namespace = "^launcher$";
+      geometry-corner-radius = 8;
       background-effect = {
         blur = true;
         xray = true;
