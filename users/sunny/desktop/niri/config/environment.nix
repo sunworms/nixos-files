@@ -8,7 +8,7 @@
     EDITOR = "nvim";
     SUDO_EDITOR = "nvim";
     VISUAL = "nvim";
-    TERMINAL = "kitty";
+    TERMINAL = "foot";
     GTK_USE_PORTAL = "1";
     QT_QPA_PLATFORMTHEME = "qt6ct";
     MANPAGER = "nvim +Man!";

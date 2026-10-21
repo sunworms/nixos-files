@@ -17,7 +17,7 @@
         quit = "q,esc";
       };
       imageDisplay = {
-        type = "kitty";
+        type = "sixel";
       };
     };
   };

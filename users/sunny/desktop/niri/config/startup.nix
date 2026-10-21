@@ -7,7 +7,6 @@
 
   spawn-at-startup = [
     {_args = ["waybar"];}
-    {_args = ["kitty" "--start-as=hidden" "--single-instance"];}
     {_args = ["clipse" "-listen"];}
     {_args = ["soteria"];}
     {_args = ["awww-daemon"];}
