@@ -76,6 +76,17 @@
 in {
   packages = [
     pywal16
+    (pkgs.writeShellScriptBin "apply-gtk4-theme" ''
+      current=$(dconf read /org/gnome/desktop/interface/color-scheme)
+
+      if [[ "$current" == "'prefer-dark'" ]]; then
+          dconf write /org/gnome/desktop/interface/color-scheme "'prefer-light'"
+          dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
+      else
+          dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
+          dconf write /org/gnome/desktop/interface/color-scheme "'prefer-light'"
+      fi
+    '')
     (pkgs.writeShellScriptBin "wal-theme" (builtins.readFile ./wal-theme.sh))
     (pkgs.writeShellScriptBin "wal-post-hook" (builtins.readFile ./wal-post-hook.sh))
   ];
