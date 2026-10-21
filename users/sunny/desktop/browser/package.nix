@@ -18,7 +18,7 @@ in
 
     extraInstallCommands = ''
       wrapProgram $out/bin/${pname} \
-          --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations --enable-wayland-ime=true --gtk-version=4}}"
+          --add-flags "\''${NIXOS_OZONE_WL:+\''${WAYLAND_DISPLAY:+--ozone-platform-hint=auto --enable-features=WaylandWindowDecorations --enable-wayland-ime=true --gtk-version=4 --load-extension=/home/sunny/.cache/wal/helium-theme}}"
 
       install -m 444 -D ${appimageContents}/${pname}.desktop -t $out/share/applications
       cp -r ${appimageContents}/usr/share/icons $out/share
@@ -27,6 +27,7 @@ in
     extraBwrapArgs = [
       "--ro-bind-try ${(formats.json {}).generate "policies.json" (import ./preferences.nix)} /etc/chromium/policies/managed/default.json"
       "--ro-bind-try /etc/xdg/ /etc/xdg/"
+      "--ro-bind-try /home/sunny/.cache/wal/ /home/sunny/.cache/wal/"
     ];
 
     meta = {

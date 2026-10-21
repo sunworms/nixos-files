@@ -1,0 +1,45 @@
+{{
+  "manifest_version": 2,
+  "name": "Pywal",
+  "version": "1.2.0",
+  "description": "Pywal16 palette theme for Chromium. Load this folder unpacked once: chrome://extensions -> Developer mode -> Load unpacked.",
+  "theme": {{
+    "colors": {{
+      "frame": [{background.rgb}],
+      "frame_inactive": [{background.rgb}],
+      "frame_incognito": [{background.rgb}],
+      "frame_incognito_inactive": [{background.rgb}],
+
+      "toolbar": [{color0.rgb}],
+      "toolbar_button_icon": [{color6.rgb}],
+      "button_background": [{color0.rgb}],
+      "control_background": [{color0.rgb}],
+
+      "tab_text": [{foreground.rgb}],
+      "background_tab": [{background.rgb}],
+      "background_tab_inactive": [{background.rgb}],
+      "tab_background_text": [{color8.rgb}],
+      "tab_background_text_inactive": [{color8.rgb}],
+      "background_tab_incognito": [{background.rgb}],
+      "background_tab_incognito_inactive": [{background.rgb}],
+
+      "bookmark_text": [{foreground.rgb}],
+
+      "ntp_background": [{color0.lighten(5).rgb}],
+      "ntp_text": [{foreground.rgb}],
+      "ntp_link": [{color4.rgb}],
+      "ntp_header": [{background.rgb}],
+      "ntp_section": [{color0.rgb}],
+      "ntp_section_text": [{foreground.rgb}],
+      "ntp_section_link": [{color6.rgb}]
+    }},
+    "tints": {{
+      "buttons": [0.15, 0.6, 0.75],
+      "frame": [-1, -1, -1],
+      "frame_inactive": [-1, -1, -1],
+      "tab_text": [-1, -1, -1],
+      "tab_background_text": [-1, -1, -1],
+      "toolbar": [-1, -1, -1]
+    }}
+  }}
+}}
