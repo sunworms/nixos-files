@@ -13,7 +13,7 @@
     ./fuzzel
     ./scripts
     ./waybar
-    ./wal
+    ./pywal
     ./mako
     ./browser
     ./desktop-files.nix

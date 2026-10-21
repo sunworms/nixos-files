@@ -1,7 +1,0 @@
-background-color={background}
-text-color={foreground}
-border-color={color4}
-progress-color=over {color8}
-
-[urgency=high]
-border-color={color1}
