@@ -63,15 +63,18 @@
       withFastColorthief = true;
       withHaishoku = true;
       withModernColorthief = true;
-    }).overrideAttrs (oldAttrs: {
-      makeWrapperArgs =
-        (oldAttrs.makeWrapperArgs or [])
-        ++ [
-          "--prefix PATH : ${pkgs.lib.makeBinPath [
-            okthief
-            schemer2
-          ]}"
-        ];
+    }).overrideAttrs (_: {
+      makeWrapperArgs = [
+        "--prefix"
+        "PATH"
+        ":"
+        (pkgs.lib.makeBinPath [
+          pkgs.imagemagick
+          pkgs.colorz
+          okthief
+          schemer2
+        ])
+      ];
     });
 in {
   packages = [
