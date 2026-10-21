@@ -1,11 +1,9 @@
 {pkgs, ...}: {
   packages = with pkgs; [
-    mako
+    dunst
     libnotify
-    (writeShellScriptBin "volume-osd" (builtins.readFile ./volume-osd.sh))
     (writeShellScriptBin "bright-osd" (builtins.readFile ./bright-osd.sh))
     (writeShellScriptBin "mic-osd" (builtins.readFile ./mic-osd.sh))
+    (writeShellScriptBin "volume-osd" (builtins.readFile ./volume-osd.sh))
   ];
-
-  xdg.config.files."mako/config".source = ./config;
 }

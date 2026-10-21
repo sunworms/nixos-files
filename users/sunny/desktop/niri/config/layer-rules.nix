@@ -12,7 +12,10 @@
       opacity = 0.999;
     }
     {
-      match._props.namespace = "^launcher$";
+      match = [
+        {_props.namespace = "^launcher$";}
+        {_props.namespace = "^notifications$";}
+      ];
       geometry-corner-radius = 8;
       background-effect = {
         blur = true;

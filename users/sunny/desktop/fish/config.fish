@@ -11,11 +11,12 @@ if status is-interactive
     abbr lg lazygit
 end
 if status is-login
-    mkdir -p ~/.local/share/color-schemes ~/.config/yazi/flavors/pywal.yazi ~/.config/btop/themes ~/.config/zathura ~/.cache/wal/helium-theme
+    mkdir -p ~/.local/share/color-schemes ~/.config/yazi/flavors/pywal.yazi ~/.config/btop/themes ~/.config/zathura ~/.cache/wal/helium-theme ~/.config/dunst
     ln -sf ~/.cache/wal/btop.theme ~/.config/btop/themes/pywal.theme
     ln -sf ~/.cache/wal/Pywal.colors ~/.local/share/color-schemes/Pywal.colors
     ln -sf ~/.cache/wal/yazi.tmTheme ~/.config/yazi/flavors/pywal.yazi/tmtheme.xml
     ln -sf ~/.cache/wal/yazi.toml ~/.config/yazi/flavors/pywal.yazi/flavor.toml
     ln -sf ~/.cache/wal/zathurarc ~/.config/zathura/zathurarc
     ln -sf ~/.cache/wal/manifest.json ~/.cache/wal/helium-theme/manifest.json
+    ln -sf ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc; dunstctl reload
 end

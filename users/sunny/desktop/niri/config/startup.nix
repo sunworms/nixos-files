@@ -14,7 +14,7 @@
     {_args = ["playerctld"];}
     {_args = ["nm-applet"];}
     {_args = ["blueman-applet"];}
-    {_args = ["mako"];}
+    {_args = ["dunst"];}
     {_args = ["wl-clip-persist" "--clipboard" "regular"];}
   ];
 }

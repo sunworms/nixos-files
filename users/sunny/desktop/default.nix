@@ -14,7 +14,7 @@
     ./scripts
     ./waybar
     ./pywal
-    ./mako
+    ./dunst
     ./browser
     ./desktop-files.nix
   ];
